@@ -1,0 +1,383 @@
+import { useEffect, useRef, useState } from "react";
+import { AuthScreen } from "./components/AuthScreen.jsx";
+import { HomeScreen } from "./components/HomeScreen.jsx";
+import { QuizScreen } from "./components/QuizScreen.jsx";
+import { ResultsScreen } from "./components/ResultsScreen.jsx";
+import { StatsScreen } from "./components/StatsScreen.jsx";
+import { useAuth } from "./contexts/AuthContext.jsx";
+import { useStats } from "./contexts/StatsContext.jsx";
+import { useAppRouter } from "./hooks/useAppRouter.js";
+import {
+  PRACTICE_QUESTIONS,
+  QUESTIONS,
+  practiceGroups,
+  topics,
+  totalPracticeQuestionCount,
+  totalQuestionCount,
+} from "./data/index.js";
+import {
+  buildMcqQuizQuestions,
+  buildPracticeQuestionPool,
+  resolvePracticeQuiz,
+} from "./utils/quizPlan.js";
+import { getOriginalOptionIndex } from "./utils/shuffle.js";
+import { createAnswerRecord } from "./utils/scoring/index.js";
+import {
+  consumeTutorUse,
+  createTutorUseState,
+} from "./utils/tutorLimit.js";
+import {
+  chapterPath,
+  isQuizStartRoute,
+  isResultsRoute,
+  practicePath,
+  resultsPathForRoute,
+  ROUTES,
+} from "./routes.js";
+
+export default function App() {
+  const { user, loading: authLoading, signOut } = useAuth();
+  const { summary: statsSummary, saveSession } = useStats();
+  const { route, navigate } = useAppRouter();
+  const [selectedTopicIndex, setSelectedTopicIndex] = useState(null);
+  const [selectedPracticeLabel, setSelectedPracticeLabel] = useState(null);
+  const [questions, setQuestions] = useState([]);
+  const [questionIndex, setQuestionIndex] = useState(0);
+  const [currentAnswer, setCurrentAnswer] = useState(null);
+  const [showExplanation, setShowExplanation] = useState(false);
+  const [score, setScore] = useState(0);
+  const [answers, setAnswers] = useState([]);
+  const [mode, setMode] = useState("all");
+  const [miniSize, setMiniSize] = useState(10);
+  const [quizStartedAt, setQuizStartedAt] = useState(null);
+  const [planLoading, setPlanLoading] = useState(false);
+  const [planRationale, setPlanRationale] = useState(null);
+  const [showPlanRationale, setShowPlanRationale] = useState(true);
+  const [tutorUses, setTutorUses] = useState(() => createTutorUseState());
+  const savedSessionRef = useRef(false);
+  const activeQuizPathRef = useRef(null);
+
+  const resetQuizState = () => {
+    setQuestionIndex(0);
+    setCurrentAnswer(null);
+    setShowExplanation(false);
+    setScore(0);
+    setAnswers([]);
+    setQuizStartedAt(Date.now());
+    setShowPlanRationale(true);
+    setTutorUses(createTutorUseState());
+    savedSessionRef.current = false;
+  };
+
+  const clearQuizSession = () => {
+    activeQuizPathRef.current = null;
+    setQuestions([]);
+    setSelectedTopicIndex(null);
+    setSelectedPracticeLabel(null);
+  };
+
+  const handleConsumeTutorUse = () => {
+    let consumed = false;
+    setTutorUses((current) => {
+      const result = consumeTutorUse(current);
+      consumed = result.consumed;
+      return result.state;
+    });
+    return consumed;
+  };
+
+  const startMcqQuiz = ({ nextMode, topicIndex = null, size = null, quizPath }) => {
+    const topic = topicIndex !== null ? topics[topicIndex] : null;
+    const nextQuestions = buildMcqQuizQuestions(nextMode, topic, size);
+
+    if (topicIndex !== null) setSelectedTopicIndex(topicIndex);
+    else setSelectedTopicIndex(null);
+    setSelectedPracticeLabel(null);
+
+    setQuestions(nextQuestions);
+    setPlanRationale(null);
+    setMode(nextMode);
+    if (size !== null) setMiniSize(size);
+    resetQuizState();
+    activeQuizPathRef.current = quizPath;
+    navigate(quizPath, { replace: true });
+  };
+
+  const startChapterQuiz = (topicIndex) =>
+    startMcqQuiz({
+      nextMode: "topic",
+      topicIndex,
+      quizPath: chapterPath(topics[topicIndex]),
+    });
+
+  const startPracticeGroup = async (label) => {
+    setPlanLoading(true);
+
+    try {
+      const quizPath = practicePath(label);
+      const { pool, payload, questionType } = buildPracticeQuestionPool(label);
+      const { questions: practiceQuestions, rationale } = await resolvePracticeQuiz(
+        payload,
+        pool,
+        questionType
+      );
+
+      setSelectedTopicIndex(null);
+      setSelectedPracticeLabel(label);
+      setQuestions(practiceQuestions);
+      setPlanRationale(rationale);
+      setMode("practice");
+      resetQuizState();
+      activeQuizPathRef.current = quizPath;
+      navigate(quizPath, { replace: true });
+    } catch (error) {
+      console.error("Failed to start practice quiz:", error);
+      navigate(ROUTES.home, { replace: true });
+    } finally {
+      setPlanLoading(false);
+    }
+  };
+
+  const startFullExam = () =>
+    startMcqQuiz({ nextMode: "all", quizPath: ROUTES.quizExam });
+
+  const startMiniQuiz = (size) =>
+    startMcqQuiz({ nextMode: "mini", size, quizPath: ROUTES.quizMini(size) });
+
+  const handleSubmitAnswer = (response) => {
+    if (currentAnswer) return;
+    const question = questions[questionIndex];
+    let normalizedResponse = response;
+
+    if (question.displayOptions && typeof response?.selectedIndex === "number") {
+      normalizedResponse = {
+        ...response,
+        selectedIndex: getOriginalOptionIndex(question, response.selectedIndex),
+      };
+    }
+
+    const answerRecord = createAnswerRecord(question, normalizedResponse);
+
+    setCurrentAnswer(answerRecord);
+    setShowExplanation(true);
+    setScore((current) => current + answerRecord.evaluation.scoreAwarded);
+
+    setAnswers((current) => [
+      ...current,
+      {
+        ...answerRecord,
+        questionIndex,
+        topic: question.topic,
+        question: question.prompt ?? question.q,
+      },
+    ]);
+  };
+
+  const handleNext = () => {
+    if (questionIndex + 1 >= questions.length) {
+      navigate(resultsPathForRoute(route));
+      return;
+    }
+
+    setQuestionIndex((current) => current + 1);
+    setCurrentAnswer(null);
+    setShowExplanation(false);
+  };
+
+  const handleRetry = () => {
+    if (mode === "mini") startMiniQuiz(miniSize);
+    else if (mode === "topic" && selectedTopicIndex !== null) startChapterQuiz(selectedTopicIndex);
+    else if (mode === "practice" && selectedPracticeLabel) startPracticeGroup(selectedPracticeLabel);
+    else startFullExam();
+  };
+
+  useEffect(() => {
+    if (route.name === "not-found") {
+      clearQuizSession();
+      navigate(ROUTES.home, { replace: true });
+    }
+  }, [route.name, navigate]);
+
+  useEffect(() => {
+    if (authLoading || route.name === "not-found") return;
+
+    if (isResultsRoute(route) && questions.length === 0) {
+      navigate(ROUTES.home, { replace: true });
+      return;
+    }
+
+    if (!isQuizStartRoute(route) || planLoading) return;
+    if (activeQuizPathRef.current === window.location.pathname && questions.length > 0) return;
+
+    if (route.name === "quiz-mini") startMiniQuiz(route.size);
+    else if (route.name === "quiz-exam") startFullExam();
+    else if (route.name === "quiz-chapter") startChapterQuiz(route.topicIndex);
+    else if (route.name === "quiz-practice") startPracticeGroup(route.label);
+  }, [route, authLoading, planLoading, questions.length, navigate]);
+
+  useEffect(() => {
+    if (!isQuizStartRoute(route) && !isResultsRoute(route)) {
+      if (route.name === "home" || route.name === "auth" || route.name === "stats") {
+        if (questions.length > 0 || activeQuizPathRef.current) {
+          clearQuizSession();
+        }
+      }
+    }
+  }, [route.name, questions.length]);
+
+  useEffect(() => {
+    if (!isResultsRoute(route) || savedSessionRef.current || questions.length === 0) return;
+
+    const modeLabel =
+      mode === "mini"
+        ? `Mini Quiz (${questions.length} Qs)`
+        : mode === "all"
+          ? "Full Exam"
+          : mode === "practice"
+            ? selectedPracticeLabel
+            : topics[selectedTopicIndex];
+    const maxScore = questions.reduce(
+      (sum, question) => sum + (typeof question.points === "number" ? question.points : question.type === "written" ? 0 : 1),
+      0
+    );
+
+    saveSession({
+      mode,
+      modeLabel,
+      topic: mode === "topic" ? topics[selectedTopicIndex] : null,
+      questions,
+      answers,
+      score,
+      maxScore,
+      startedAt: quizStartedAt,
+    }).catch((error) => {
+      console.error("Failed to save quiz session:", error);
+    });
+
+    savedSessionRef.current = true;
+  }, [
+    route,
+    mode,
+    selectedTopicIndex,
+    selectedPracticeLabel,
+    questions,
+    answers,
+    score,
+    quizStartedAt,
+    saveSession,
+  ]);
+
+  if (authLoading) {
+    return (
+      <div
+        style={{
+          minHeight: "100vh",
+          display: "grid",
+          placeItems: "center",
+          background: "var(--color-bg)",
+          color: "var(--color-text-secondary)",
+          fontFamily: 'ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif',
+        }}
+      >
+        Loading...
+      </div>
+    );
+  }
+
+  if (route.name === "auth") {
+    return (
+      <AuthScreen
+        onBack={() => navigate(ROUTES.home)}
+        onAuthenticated={() => navigate(ROUTES.home)}
+      />
+    );
+  }
+
+  if (route.name === "home") {
+    return (
+      <HomeScreen
+        topics={topics}
+        practiceGroups={practiceGroups}
+        questions={{ ...QUESTIONS, ...PRACTICE_QUESTIONS }}
+        totalQuestionCount={totalQuestionCount}
+        totalPracticeQuestionCount={totalPracticeQuestionCount}
+        statsSummary={statsSummary}
+        planLoading={planLoading}
+        user={user}
+        onSignIn={() => navigate(ROUTES.auth)}
+        onSignOut={() => signOut()}
+        onStartMini={(size) => navigate(ROUTES.quizMini(size))}
+        onStartAll={() => navigate(ROUTES.quizExam)}
+        onStartChapter={(topicIndex) => navigate(chapterPath(topics[topicIndex]))}
+        onStartPracticeGroup={(label) => navigate(practicePath(label))}
+        onOpenStats={() => navigate(ROUTES.stats)}
+      />
+    );
+  }
+
+  if (route.name === "stats") {
+    return <StatsScreen onBack={() => navigate(ROUTES.home)} />;
+  }
+
+  if (isQuizStartRoute(route) && !questions[questionIndex]) {
+    return (
+      <div
+        style={{
+          minHeight: "100vh",
+          display: "grid",
+          placeItems: "center",
+          background: "var(--color-bg)",
+          color: "var(--color-text-secondary)",
+          fontFamily: 'ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif',
+        }}
+      >
+        {planLoading ? "Building your quiz..." : "Loading quiz..."}
+      </div>
+    );
+  }
+
+  if (isQuizStartRoute(route) && questions[questionIndex]) {
+    return (
+      <QuizScreen
+        mode={mode}
+        topics={topics}
+        selectedTopicIndex={selectedTopicIndex}
+        questions={questions}
+        questionIndex={questionIndex}
+        currentAnswer={currentAnswer}
+        showExplanation={showExplanation}
+        score={score}
+        planRationale={showPlanRationale ? planRationale : null}
+        onDismissPlanRationale={() => setShowPlanRationale(false)}
+        onBack={() => navigate(ROUTES.home)}
+        onSubmitAnswer={handleSubmitAnswer}
+        onNext={handleNext}
+        tutorUses={tutorUses}
+        onConsumeTutorUse={handleConsumeTutorUse}
+      />
+    );
+  }
+
+  if (isResultsRoute(route)) {
+    return (
+      <ResultsScreen
+        mode={mode}
+        topics={topics}
+        selectedTopicIndex={selectedTopicIndex}
+        questions={questions}
+        score={score}
+        maxScore={questions.reduce(
+          (sum, question) => sum + (typeof question.points === "number" ? question.points : question.type === "written" ? 0 : 1),
+          0
+        )}
+        answers={answers}
+        onRetry={handleRetry}
+        onHome={() => navigate(ROUTES.home)}
+        tutorUses={tutorUses}
+        onConsumeTutorUse={handleConsumeTutorUse}
+      />
+    );
+  }
+
+  return null;
+}
