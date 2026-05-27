@@ -1,12 +1,17 @@
+import { ankiMcqs } from "./ch09-anki-mcqs.js";
+
 export const title = "Ch 9: Liabilities";
 
-export const questions = [
+const coreMcqs = [
   { q: "A provision is recognised when:", options: ["A possible obligation exists but is unlikely", "A present obligation exists, it is probable that resources will flow out, and the amount can be reliably estimated", "Any future expense is anticipated", "A liability is certain but the amount is unknown"], answer: 1, explanation: "Under accounting standards, a provision requires: a present obligation from a past event, probable outflow of resources, and reliable estimation." },
   { q: "Unearned revenue is classified as a:", options: ["Non-current asset", "Current liability", "Equity item", "Revenue account"], answer: 1, explanation: "Unearned revenue is a current liability because the business has received cash but owes goods/services to the customer." },
   { q: "The times interest earned ratio is calculated as:", options: ["Profit ÷ Interest Expense", "Profit before income tax and interest expense ÷ Interest Expense", "Interest Expense ÷ Total Liabilities", "Net Cash from Operations ÷ Interest Expense"], answer: 1, explanation: "Times Interest Earned = (Profit before income tax + Interest expense) ÷ Interest expense. It measures ability to meet interest payments." },
   { q: "A contingent liability is:", options: ["A definite obligation recorded on the balance sheet", "A possible obligation whose existence depends on the outcome of a future event", "An accrued expense that has been paid", "A provision for employee benefits"], answer: 1, explanation: "A contingent liability is a possible obligation that depends on uncertain future events — it is disclosed in notes rather than recognised on the statement of financial position (unless probable and estimable)." },
   { q: "The current portion of a long-term loan is classified as:", options: ["A non-current liability", "A current liability", "Equity", "An expense"], answer: 1, explanation: "The portion of a long-term loan due within 12 months is reclassified as a current liability." },
   { q: "When a company issues a bond at a discount:", options: ["The issue price exceeds face value", "The issue price is below face value", "The coupon rate equals the market rate", "No interest expense is recorded"], answer: 1, explanation: "A bond is issued at a discount when the market interest rate exceeds the coupon rate, causing investors to pay less than face value." },
+];
+
+const practiceQuestions = [
   {
     id: "ch09-journal-entry-earned-unearned-revenue",
     type: "journal_entry",
@@ -61,3 +66,5 @@ export const questions = [
     tags: ["balance_sheet", "financial_statements"],
   },
 ];
+
+export const questions = [...coreMcqs, ...ankiMcqs, ...practiceQuestions];

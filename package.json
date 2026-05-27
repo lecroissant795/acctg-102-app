@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "$HOME/.bun/bin/bun --hot ./index.ts",
     "start": "$HOME/.bun/bin/bun ./index.ts",
-    "build": "bun build ./index.html --outdir dist"
+    "build": "bun build ./index.html --outdir dist --minify"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.106.2",

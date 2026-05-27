@@ -1,11 +1,16 @@
+import { ankiMcqs } from "./ch07-anki-mcqs.js";
+
 export const title = "Ch 7: Cash & Receivables";
 
-export const questions = [
+const coreMcqs = [
   { q: "The allowance method for doubtful debts involves:", options: ["Writing off bad debts only when they are certain", "Estimating uncollectable amounts at period-end and recording an allowance", "Debiting Cash and crediting Bad Debts Expense", "Ignoring uncollectable debts until cash is received"], answer: 1, explanation: "The allowance method estimates uncollectable receivables at period-end and creates a contra-asset (Allowance for Doubtful Debts)." },
   { q: "When a specific account is written off using the allowance method:", options: ["Total assets decrease", "Bad debts expense increases", "The allowance account is debited and accounts receivable is credited", "Net realisable value of receivables changes"], answer: 2, explanation: "Writing off: Dr Allowance for Doubtful Debts, Cr Accounts Receivable. Total assets and net receivables are unchanged." },
   { q: "The accounts receivable turnover ratio measures:", options: ["How quickly inventory is sold", "How many times receivables are collected during the period", "The percentage of bad debts", "Total credit sales for the period"], answer: 1, explanation: "Receivables Turnover = Net Credit Sales ÷ Average Accounts Receivable. It shows how efficiently the company collects from customers." },
   { q: "A bank reconciliation is prepared to:", options: ["Determine the amount of profit for the period", "Explain differences between the bank statement balance and the cash book balance", "Record all sales transactions", "Calculate interest earned on bank deposits"], answer: 1, explanation: "A bank reconciliation identifies and explains timing differences and errors between the bank statement and the company's cash records." },
   { q: "Internal controls over cash receipts should include:", options: ["Allowing one person to handle all cash functions", "Segregation of duties between receiving, recording, and depositing cash", "Depositing cash once a month", "Keeping cash in an unlocked drawer for easy access"], answer: 1, explanation: "Segregation of duties is a key internal control: different people should handle receiving cash, recording it, and making bank deposits." },
+];
+
+const practiceQuestions = [
   {
     id: "ch07-numeric-allowance-estimate",
     type: "numeric_input",
@@ -85,3 +90,5 @@ export const questions = [
     tags: ["bank_reconciliation", "financial_statements"],
   },
 ];
+
+export const questions = [...coreMcqs, ...ankiMcqs, ...practiceQuestions];

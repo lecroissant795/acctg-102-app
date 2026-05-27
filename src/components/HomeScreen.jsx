@@ -1,11 +1,10 @@
 import { MINI_QUIZ_SIZES, TOPIC_COLORS } from "../constants/topicColors.js";
 import { theme, pageTitleStyle, sectionLabelStyle } from "../styles/theme.js";
+import { AppNavMenu } from "./AppNavMenu.jsx";
 import {
   AppShell,
   SidebarCollapseButton,
   SidebarDivider,
-  SidebarItem,
-  SidebarSection,
 } from "./AppShell.jsx";
 
 function Callout({ icon, title, description, children, variant = "default" }) {
@@ -162,96 +161,22 @@ function HomeSidebar({
 
       <SidebarDivider />
 
-      <div style={{ flex: 1, overflowY: "auto", paddingBottom: 8 }}>
-        <SidebarSection label="Quick Start">
-          {MINI_QUIZ_SIZES.map((size) => (
-            <SidebarItem
-              key={size}
-              icon="⚡"
-              label={`Mini Quiz · ${size} Qs`}
-              disabled={planLoading}
-              onClick={() => onStartMini(size)}
-            />
-          ))}
-          <SidebarItem
-            icon="🎯"
-            label={`Full Exam · ${totalQuestionCount} Qs`}
-            disabled={planLoading}
-            onClick={onStartAll}
-          />
-        </SidebarSection>
-
-        <SidebarDivider />
-
-        <SidebarSection label="Chapters">
-          {topics.map((topic, index) => (
-            <SidebarItem
-              key={topic}
-              label={topic}
-              badge={`${questions[topic].length}`}
-              indent
-              disabled={planLoading}
-              onClick={() => onStartChapter(index)}
-            />
-          ))}
-        </SidebarSection>
-
-        <SidebarDivider />
-
-        <SidebarSection label="Practice">
-          {practiceGroups.map((group) => (
-            <SidebarItem
-              key={group.label}
-              label={group.label}
-              badge={`${questions[group.label].length}`}
-              indent
-              disabled={planLoading}
-              onClick={() => onStartPracticeGroup(group.label)}
-            />
-          ))}
-        </SidebarSection>
-
-        {statsSummary.totalQuizzes > 0 && (
-          <>
-            <SidebarDivider />
-            <SidebarSection>
-              <SidebarItem
-                icon="📊"
-                label="Quiz Stats"
-                badge={`${statsSummary.accuracy}%`}
-                onClick={onOpenStats}
-              />
-            </SidebarSection>
-          </>
-        )}
-      </div>
-
-      <div
-        style={{
-          borderTop: `1px solid ${theme.colors.border}`,
-          padding: "10px 12px",
-        }}
-      >
-        {user ? (
-          <div>
-            <div
-              style={{
-                fontSize: 12,
-                color: theme.colors.textSecondary,
-                padding: "4px 12px 6px",
-                overflow: "hidden",
-                textOverflow: "ellipsis",
-                whiteSpace: "nowrap",
-              }}
-            >
-              {user.email}
-            </div>
-            <SidebarItem label="Sign out" onClick={onSignOut} />
-          </div>
-        ) : (
-          <SidebarItem icon="👤" label="Sign in" onClick={onSignIn} />
-        )}
-      </div>
+      <AppNavMenu
+        topics={topics}
+        practiceGroups={practiceGroups}
+        questions={questions}
+        totalQuestionCount={totalQuestionCount}
+        statsSummary={statsSummary}
+        planLoading={planLoading}
+        user={user}
+        onSignIn={onSignIn}
+        onSignOut={onSignOut}
+        onStartMini={onStartMini}
+        onStartAll={onStartAll}
+        onStartChapter={onStartChapter}
+        onStartPracticeGroup={onStartPracticeGroup}
+        onOpenStats={onOpenStats}
+      />
     </>
   );
 }

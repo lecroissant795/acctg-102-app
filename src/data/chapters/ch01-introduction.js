@@ -102,4 +102,31 @@ export const questions = [
     points: 2,
     tags: ["financial_statements", "debit_credit"],
   },
+  {
+    id: "ch01-gss-q1-signal-classification",
+    type: "table_classification",
+    q: "Holding all other factors constant, classify each signal as generally good news or bad news about an entity.",
+    columns: ["Good News", "Bad News"],
+    rows: [
+      { id: "sig1", text: "Increase in the profit margin" },
+      { id: "sig2", text: "Increase in the current ratio" },
+      { id: "sig3", text: "Decrease in the debt to total assets ratio" },
+      { id: "sig4", text: "Increase in current cash debt coverage" },
+    ],
+    answer: {
+      mapping: {
+        sig1: "Good News",
+        sig2: "Good News",
+        sig3: "Good News",
+        sig4: "Good News",
+      },
+    },
+    explanation: "A higher profit margin, stronger current ratio, lower debt-to-assets ratio, and stronger cash debt coverage all generally point to improved profitability, liquidity, or solvency.",
+    points: 2,
+    tags: ["financial_statements", "balance_sheet", "income_statement"],
+    metadata: {
+      source: "Week 01 Chapter 01 Guided Self-Study Problems",
+      sourceQuestion: 1,
+    },
+  },
 ];

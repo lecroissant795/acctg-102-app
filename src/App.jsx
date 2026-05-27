@@ -1,10 +1,12 @@
 import { useEffect, useRef, useState } from "react";
 import { AuthScreen } from "./components/AuthScreen.jsx";
 import { HomeScreen } from "./components/HomeScreen.jsx";
+import { MobileMenu } from "./components/MobileMenu.jsx";
 import { QuizScreen } from "./components/QuizScreen.jsx";
 import { ResultsScreen } from "./components/ResultsScreen.jsx";
 import { StatsScreen } from "./components/StatsScreen.jsx";
 import { useAuth } from "./contexts/AuthContext.jsx";
+import { NavigationProvider } from "./contexts/NavigationContext.jsx";
 import { useStats } from "./contexts/StatsContext.jsx";
 import { useAppRouter } from "./hooks/useAppRouter.js";
 import {
@@ -284,17 +286,35 @@ export default function App() {
     );
   }
 
+  const navigation = {
+    topics,
+    practiceGroups,
+    questions: { ...QUESTIONS, ...PRACTICE_QUESTIONS },
+    totalQuestionCount,
+    statsSummary,
+    planLoading,
+    user,
+    onSignIn: () => navigate(ROUTES.auth),
+    onSignOut: () => signOut(),
+    onStartMini: (size) => navigate(ROUTES.quizMini(size)),
+    onStartAll: () => navigate(ROUTES.quizExam),
+    onStartChapter: (topicIndex) => navigate(chapterPath(topics[topicIndex])),
+    onStartPracticeGroup: (label) => navigate(practicePath(label)),
+    onOpenStats: () => navigate(ROUTES.stats),
+    onHome: () => navigate(ROUTES.home),
+  };
+
+  let screen = null;
+
   if (route.name === "auth") {
-    return (
+    screen = (
       <AuthScreen
         onBack={() => navigate(ROUTES.home)}
         onAuthenticated={() => navigate(ROUTES.home)}
       />
     );
-  }
-
-  if (route.name === "home") {
-    return (
+  } else if (route.name === "home") {
+    screen = (
       <HomeScreen
         topics={topics}
         practiceGroups={practiceGroups}
@@ -313,14 +333,10 @@ export default function App() {
         onOpenStats={() => navigate(ROUTES.stats)}
       />
     );
-  }
-
-  if (route.name === "stats") {
-    return <StatsScreen onBack={() => navigate(ROUTES.home)} />;
-  }
-
-  if (isQuizStartRoute(route) && !questions[questionIndex]) {
-    return (
+  } else if (route.name === "stats") {
+    screen = <StatsScreen onBack={() => navigate(ROUTES.home)} />;
+  } else if (isQuizStartRoute(route) && !questions[questionIndex]) {
+    screen = (
       <div
         style={{
           minHeight: "100vh",
@@ -334,10 +350,8 @@ export default function App() {
         {planLoading ? "Building your quiz..." : "Loading quiz..."}
       </div>
     );
-  }
-
-  if (isQuizStartRoute(route) && questions[questionIndex]) {
-    return (
+  } else if (isQuizStartRoute(route) && questions[questionIndex]) {
+    screen = (
       <QuizScreen
         mode={mode}
         topics={topics}
@@ -356,10 +370,8 @@ export default function App() {
         onConsumeTutorUse={handleConsumeTutorUse}
       />
     );
-  }
-
-  if (isResultsRoute(route)) {
-    return (
+  } else if (isResultsRoute(route)) {
+    screen = (
       <ResultsScreen
         mode={mode}
         topics={topics}
@@ -379,5 +391,10 @@ export default function App() {
     );
   }
 
-  return null;
+  return (
+    <NavigationProvider value={navigation}>
+      <MobileMenu />
+      {screen}
+    </NavigationProvider>
+  );
 }
