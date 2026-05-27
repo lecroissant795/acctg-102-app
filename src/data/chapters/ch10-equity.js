@@ -37,6 +37,40 @@ const practiceQuestions = [
     points: 2,
     tags: ["equity", "balance_sheet", "financial_statements"],
   },
+  {
+    id: "ch10-journal-entry-dividend-declaration",
+    type: "journal_entry",
+    q: "Record the declaration of cash dividends of $3,600.",
+    answer: {
+      lines: [
+        { account: "Retained Earnings", side: "debit", amount: 3600 },
+        { account: "Dividends Payable", side: "credit", amount: 3600 },
+      ],
+      rules: {
+        requireBalancedEntry: true,
+      },
+    },
+    explanation: "Declaring dividends creates a liability and reduces retained earnings. Cash is not affected until payment.",
+    points: 2,
+    tags: ["equity", "debit_credit"],
+  },
+  {
+    id: "ch10-journal-entry-dividend-payment",
+    type: "journal_entry",
+    q: "Record the payment of previously declared cash dividends of $3,600.",
+    answer: {
+      lines: [
+        { account: "Dividends Payable", side: "debit", amount: 3600 },
+        { account: "Cash", side: "credit", amount: 3600 },
+      ],
+      rules: {
+        requireBalancedEntry: true,
+      },
+    },
+    explanation: "Paying the dividend settles the liability and reduces cash.",
+    points: 2,
+    tags: ["equity", "debit_credit"],
+  },
 ];
 
 export const questions = [...coreMcqs, ...ankiMcqs, ...practiceQuestions];

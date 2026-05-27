@@ -3,9 +3,11 @@ import {
   applyQuizPlan,
   applyPracticeQuiz,
   buildMcqQuizQuestions,
+  buildPracticePlanNotice,
   buildPracticeQuestionPool,
   fallbackPracticeQuiz,
   fallbackQuizPlan,
+  getPracticeLoadingMessage,
   resolvePracticeQuiz,
   resolveQuizPlan,
 } from "./quizPlan.js";
@@ -136,6 +138,37 @@ describe("fallbackPracticeQuiz", () => {
   });
 });
 
+describe("practice helpers", () => {
+  test("builds a practice loading message with question count", () => {
+    const message = getPracticeLoadingMessage("Journal Entries", 27);
+    expect(message).toContain("27 questions");
+    expect(message).toContain("30–60 seconds");
+  });
+
+  test("builds warning notice when AI fallback is used", () => {
+    const notice = buildPracticePlanNotice({
+      usedFallback: true,
+      label: "Journal Entries",
+      errorMessage: "Practice quiz request failed (503)",
+    });
+
+    expect(notice.variant).toBe("warning");
+    expect(notice.title).toContain("original questions");
+    expect(notice.message).toContain("503");
+  });
+
+  test("builds info notice when AI generation succeeds", () => {
+    const notice = buildPracticePlanNotice({
+      usedFallback: false,
+      label: "Journal Entries",
+      rationale: "Fresh journal scenarios based on your weak areas.",
+    });
+
+    expect(notice.variant).toBe("info");
+    expect(notice.message).toContain("Fresh journal scenarios");
+  });
+});
+
 describe("resolvePracticeQuiz", () => {
   test("falls back when practice API fails", async () => {
     const originalFetch = globalThis.fetch;
@@ -148,7 +181,35 @@ describe("resolvePracticeQuiz", () => {
 
       expect(result.usedFallback).toBe(true);
       expect(result.questions.length).toBe(pool.length);
-      expect(result.rationale).toContain("original practice questions");
+      expect(result.errorMessage).toContain("Unavailable");
+      expect(result.questions.every((question) => !question.metadata?.aiGenerated)).toBe(true);
+    } finally {
+      globalThis.fetch = originalFetch;
+    }
+  });
+
+  test("treats server offline fallback as non-AI questions", async () => {
+    const originalFetch = globalThis.fetch;
+
+    try {
+      const { pool, payload, questionType } = buildPracticeQuestionPool("Numeric Input");
+      globalThis.fetch = async () =>
+        new Response(
+          JSON.stringify({
+            strategy: "offline_fallback",
+            rationale: "Using original practice questions — AI generation is unavailable.",
+            questions: pool.map((entry) => ({
+              sourceId: entry.id,
+              question: entry.question,
+            })),
+          }),
+          { status: 200 }
+        );
+
+      const result = await resolvePracticeQuiz(payload, pool, questionType);
+
+      expect(result.usedFallback).toBe(true);
+      expect(result.questions.every((question) => !question.metadata?.aiGenerated)).toBe(true);
     } finally {
       globalThis.fetch = originalFetch;
     }

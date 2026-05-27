@@ -42,6 +42,86 @@ const practiceQuestions = [
     points: 2,
     tags: ["inventory", "balance_sheet"],
   },
+  {
+    id: "ch05-numeric-gross-profit-comparison",
+    type: "numeric_input",
+    q: "Net sales are $120,000 and cost of sales under FIFO is $78,500. Calculate gross profit.",
+    answer: {
+      value: 41500,
+      tolerance: 0.01,
+    },
+    explanation: "Gross profit = Net sales − Cost of sales = $120,000 − $78,500 = $41,500.",
+    points: 1,
+    tags: ["income_statement", "inventory", "financial_statements"],
+  },
+  {
+    id: "ch05-table-inventory-statement-effects",
+    type: "table_classification",
+    q: "Classify each inventory-related measure by the financial statement where it is primarily reported or derived.",
+    columns: ["Statement of Financial Position", "Income Statement", "Derived Ratio / Analysis"],
+    rows: [
+      { id: "inv1", text: "Ending Inventory" },
+      { id: "inv2", text: "Cost of Sales" },
+      { id: "inv3", text: "Gross Profit" },
+      { id: "inv4", text: "Inventory Turnover" },
+    ],
+    answer: {
+      mapping: {
+        inv1: "Statement of Financial Position",
+        inv2: "Income Statement",
+        inv3: "Income Statement",
+        inv4: "Derived Ratio / Analysis",
+      },
+    },
+    explanation: "Ending inventory is a balance sheet amount, cost of sales and gross profit appear in the income statement, and inventory turnover is a ratio derived from reported amounts.",
+    points: 2,
+    tags: ["financial_statements", "balance_sheet", "income_statement", "inventory"],
+  },
+  {
+    id: "ch05-case-inventory-valuation-statements",
+    type: "case_set",
+    q: "Use the inventory valuation information below to answer the questions.",
+    scenario: "A business has inventory recorded at cost of $18,500 at year-end. Net realisable value is estimated at $17,200. Net sales for the year are $96,000 and cost of sales before any write-down is $61,400.",
+    subquestions: [
+      {
+        id: "ivs-1",
+        type: "numeric_input",
+        prompt: "What should the inventory balance be reported at year-end?",
+        points: 1,
+        answer: { value: 17200, tolerance: 0.01 },
+      },
+      {
+        id: "ivs-2",
+        type: "numeric_input",
+        prompt: "What is the inventory write-down amount?",
+        points: 1,
+        answer: { value: 1300, tolerance: 0.01 },
+      },
+      {
+        id: "ivs-3",
+        type: "numeric_input",
+        prompt: "What is adjusted gross profit after recognising the write-down?",
+        points: 1,
+        answer: { value: 33300, tolerance: 0.01 },
+      },
+      {
+        id: "ivs-4",
+        type: "mcq",
+        prompt: "Which statement is correct?",
+        options: [
+          "The write-down increases assets",
+          "The write-down increases gross profit",
+          "The write-down reduces ending inventory and profit",
+          "The write-down affects only the statement of cash flows",
+        ],
+        answer: { correctIndex: 2 },
+        points: 1,
+      },
+    ],
+    explanation: "LCNRV requires inventory to be reported at $17,200, producing a $1,300 write-down. Adjusted cost of sales becomes $62,700, so gross profit is $96,000 − $62,700 = $33,300.",
+    points: 4,
+    tags: ["financial_statements", "balance_sheet", "income_statement", "inventory"],
+  },
 ];
 
 export const questions = [...coreMcqs, ...ankiMcqs, ...practiceQuestions];

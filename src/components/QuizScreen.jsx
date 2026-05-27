@@ -800,8 +800,8 @@ export function QuizScreen({
   currentAnswer,
   showExplanation,
   score,
-  planRationale,
-  onDismissPlanRationale,
+  planNotice,
+  onDismissPlanNotice,
   onBack,
   onSubmitAnswer,
   onNext,
@@ -853,13 +853,16 @@ export function QuizScreen({
 
         <ProgressBar current={questionIndex + 1} total={questions.length} />
 
-        {planRationale && questionIndex === 0 && (
+        {planNotice && questionIndex === 0 && (
           <div
             style={{
               marginTop: 16,
               marginBottom: 4,
               padding: "12px 14px",
-              background: theme.colors.calloutBlue,
+              background:
+                planNotice.variant === "warning"
+                  ? theme.colors.calloutOrange
+                  : theme.colors.calloutBlue,
               border: `1px solid ${theme.colors.border}`,
               borderRadius: theme.radius.lg,
               fontSize: 14,
@@ -870,10 +873,13 @@ export function QuizScreen({
               alignItems: "flex-start",
             }}
           >
-            <span style={{ flex: 1 }}>{planRationale}</span>
+            <div style={{ flex: 1 }}>
+              <div style={{ fontWeight: 600, marginBottom: 4 }}>{planNotice.title}</div>
+              <div>{planNotice.message}</div>
+            </div>
             <button
               type="button"
-              onClick={onDismissPlanRationale}
+              onClick={onDismissPlanNotice}
               style={{
                 background: "none",
                 border: "none",
@@ -883,7 +889,7 @@ export function QuizScreen({
                 lineHeight: 1,
                 padding: 0,
               }}
-              aria-label="Dismiss quiz plan"
+              aria-label="Dismiss quiz notice"
             >
               ×
             </button>

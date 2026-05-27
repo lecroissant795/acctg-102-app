@@ -146,7 +146,36 @@ export async function fetchPracticeQuiz(payload) {
   return response.json();
 }
 
-export function applyPracticeQuiz(pool, quiz, questionType) {
+export function getPracticeLoadingMessage(label, seedCount) {
+  const count = seedCount ?? PRACTICE_QUESTIONS[label]?.length ?? 0;
+  const questionLabel = count === 1 ? "question" : "questions";
+
+  return `Generating fresh ${label.toLowerCase()} with AI (${count} ${questionLabel}). This usually takes 30–60 seconds — please keep this tab open.`;
+}
+
+export function buildPracticePlanNotice({ usedFallback, rationale, label, errorMessage }) {
+  if (usedFallback) {
+    const detail = errorMessage
+      ? `AI request failed: ${errorMessage}.`
+      : "AI generation was unavailable for this session.";
+
+    return {
+      variant: "warning",
+      title: "Using original questions",
+      message: `${detail} You're practicing with the built-in ${label.toLowerCase()} set, reordered by your past performance.`,
+    };
+  }
+
+  return {
+    variant: "info",
+    title: "Fresh AI practice set",
+    message:
+      rationale ||
+      `New ${label.toLowerCase()} variants were generated for this session.`,
+  };
+}
+
+export function applyPracticeQuiz(pool, quiz, questionType, { aiGenerated = true } = {}) {
   const seedsById = new Map(pool.map((entry) => [entry.id, entry]));
 
   return quiz.questions.map(({ sourceId, question }) => {
@@ -161,7 +190,7 @@ export function applyPracticeQuiz(pool, quiz, questionType) {
         id: question.id ?? `${sourceId}::ai-variant`,
         metadata: {
           ...(question.metadata ?? {}),
-          aiGenerated: true,
+          aiGenerated,
           sourceId,
         },
       },
@@ -188,17 +217,22 @@ export function fallbackPracticeQuiz(pool) {
 export async function resolvePracticeQuiz(payload, pool, questionType) {
   try {
     const quiz = await fetchPracticeQuiz(payload);
+    const usedFallback = quiz.strategy === "offline_fallback";
+
     return {
-      questions: applyPracticeQuiz(pool, quiz, questionType),
+      questions: applyPracticeQuiz(pool, quiz, questionType, { aiGenerated: !usedFallback }),
       rationale: quiz.rationale,
-      usedFallback: false,
+      usedFallback,
     };
-  } catch {
+  } catch (error) {
     const quiz = fallbackPracticeQuiz(pool);
+    const errorMessage = error instanceof Error ? error.message : null;
+
     return {
-      questions: applyPracticeQuiz(pool, quiz, questionType),
+      questions: applyPracticeQuiz(pool, quiz, questionType, { aiGenerated: false }),
       rationale: quiz.rationale,
       usedFallback: true,
+      errorMessage,
     };
   }
 }

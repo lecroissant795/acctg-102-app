@@ -20,6 +20,8 @@ import {
 import {
   buildMcqQuizQuestions,
   buildPracticeQuestionPool,
+  buildPracticePlanNotice,
+  getPracticeLoadingMessage,
   resolvePracticeQuiz,
 } from "./utils/quizPlan.js";
 import { getOriginalOptionIndex } from "./utils/shuffle.js";
@@ -53,7 +55,11 @@ export default function App() {
   const [miniSize, setMiniSize] = useState(10);
   const [quizStartedAt, setQuizStartedAt] = useState(null);
   const [planLoading, setPlanLoading] = useState(false);
+  const [planLoadingLabel, setPlanLoadingLabel] = useState(null);
   const [planRationale, setPlanRationale] = useState(null);
+  const [planUsedFallback, setPlanUsedFallback] = useState(false);
+  const [planFallbackReason, setPlanFallbackReason] = useState(null);
+  const [planError, setPlanError] = useState(null);
   const [showPlanRationale, setShowPlanRationale] = useState(true);
   const [tutorUses, setTutorUses] = useState(() => createTutorUseState());
   const savedSessionRef = useRef(false);
@@ -113,30 +119,42 @@ export default function App() {
     });
 
   const startPracticeGroup = async (label) => {
+    setPlanLoadingLabel(label);
     setPlanLoading(true);
+    setPlanError(null);
+    setPlanFallbackReason(null);
 
     try {
       const quizPath = practicePath(label);
       const { pool, payload, questionType } = buildPracticeQuestionPool(label);
-      const { questions: practiceQuestions, rationale } = await resolvePracticeQuiz(
-        payload,
-        pool,
-        questionType
-      );
+      const {
+        questions: practiceQuestions,
+        rationale,
+        usedFallback,
+        errorMessage,
+      } = await resolvePracticeQuiz(payload, pool, questionType);
 
       setSelectedTopicIndex(null);
       setSelectedPracticeLabel(label);
       setQuestions(practiceQuestions);
       setPlanRationale(rationale);
+      setPlanUsedFallback(usedFallback);
+      setPlanFallbackReason(errorMessage ?? null);
       setMode("practice");
       resetQuizState();
       activeQuizPathRef.current = quizPath;
       navigate(quizPath, { replace: true });
     } catch (error) {
       console.error("Failed to start practice quiz:", error);
+      setPlanError(
+        error instanceof Error
+          ? `Could not start ${label}: ${error.message}`
+          : `Could not start ${label}. Please try again.`
+      );
       navigate(ROUTES.home, { replace: true });
     } finally {
       setPlanLoading(false);
+      setPlanLoadingLabel(null);
     }
   };
 
@@ -323,6 +341,9 @@ export default function App() {
         totalPracticeQuestionCount={totalPracticeQuestionCount}
         statsSummary={statsSummary}
         planLoading={planLoading}
+        planLoadingLabel={planLoadingLabel}
+        planError={planError}
+        onDismissPlanError={() => setPlanError(null)}
         user={user}
         onSignIn={() => navigate(ROUTES.auth)}
         onSignOut={() => signOut()}
@@ -336,6 +357,11 @@ export default function App() {
   } else if (route.name === "stats") {
     screen = <StatsScreen onBack={() => navigate(ROUTES.home)} />;
   } else if (isQuizStartRoute(route) && !questions[questionIndex]) {
+    const loadingMessage =
+      planLoading && planLoadingLabel
+        ? getPracticeLoadingMessage(planLoadingLabel, PRACTICE_QUESTIONS[planLoadingLabel]?.length)
+        : null;
+
     screen = (
       <div
         style={{
@@ -345,9 +371,19 @@ export default function App() {
           background: "var(--color-bg)",
           color: "var(--color-text-secondary)",
           fontFamily: 'ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif',
+          padding: "24px",
         }}
       >
-        {planLoading ? "Building your quiz..." : "Loading quiz..."}
+        <div style={{ maxWidth: 420, textAlign: "center" }}>
+          <div style={{ fontSize: 18, fontWeight: 600, color: "var(--color-text)", marginBottom: 8 }}>
+            {planLoading && planLoadingLabel
+              ? `Preparing ${planLoadingLabel}...`
+              : "Loading quiz..."}
+          </div>
+          {loadingMessage && (
+            <div style={{ fontSize: 14, lineHeight: 1.6 }}>{loadingMessage}</div>
+          )}
+        </div>
       </div>
     );
   } else if (isQuizStartRoute(route) && questions[questionIndex]) {
@@ -361,8 +397,17 @@ export default function App() {
         currentAnswer={currentAnswer}
         showExplanation={showExplanation}
         score={score}
-        planRationale={showPlanRationale ? planRationale : null}
-        onDismissPlanRationale={() => setShowPlanRationale(false)}
+        planNotice={
+          showPlanRationale && mode === "practice" && selectedPracticeLabel
+            ? buildPracticePlanNotice({
+                usedFallback: planUsedFallback,
+                rationale: planRationale,
+                label: selectedPracticeLabel,
+                errorMessage: planFallbackReason,
+              })
+            : null
+        }
+        onDismissPlanNotice={() => setShowPlanRationale(false)}
         onBack={() => navigate(ROUTES.home)}
         onSubmitAnswer={handleSubmitAnswer}
         onNext={handleNext}

@@ -30,6 +30,23 @@ const practiceQuestions = [
     tags: ["adjusting_entries", "debit_credit"],
   },
   {
+    id: "ch09-journal-entry-interest-accrual",
+    type: "journal_entry",
+    q: "Interest of $540 has accrued on a bank loan at period-end but has not yet been paid. Record the adjusting entry.",
+    answer: {
+      lines: [
+        { account: "Interest Expense", side: "debit", amount: 540 },
+        { account: "Interest Payable", side: "credit", amount: 540 },
+      ],
+      rules: {
+        requireBalancedEntry: true,
+      },
+    },
+    explanation: "Accrued interest is recognised with an expense and a corresponding payable.",
+    points: 2,
+    tags: ["adjusting_entries", "debit_credit"],
+  },
+  {
     id: "ch09-select-multi-current-liabilities",
     type: "select_multiple",
     q: "Which of the following are typically reported as current liabilities?",

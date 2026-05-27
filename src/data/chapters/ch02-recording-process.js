@@ -125,4 +125,72 @@ export const questions = [
     points: 3,
     tags: ["gst", "debit_credit"],
   },
+  {
+    id: "ch02-journal-entry-share-issue",
+    type: "journal_entry",
+    q: "Record the issue of ordinary shares for cash of $12,000.",
+    answer: {
+      lines: [
+        { account: "Cash", side: "debit", amount: 12000 },
+        { account: "Share Capital", side: "credit", amount: 12000 },
+      ],
+      rules: {
+        requireBalancedEntry: true,
+      },
+    },
+    explanation: "Issuing shares increases cash and increases contributed equity.",
+    points: 2,
+    tags: ["equity", "debit_credit"],
+  },
+  {
+    id: "ch02-journal-entry-supplies-on-account",
+    type: "journal_entry",
+    q: "Record the purchase of office supplies on account for $1,450.",
+    answer: {
+      lines: [
+        { account: "Supplies", side: "debit", amount: 1450 },
+        { account: "Accounts Payable", side: "credit", amount: 1450 },
+      ],
+      rules: {
+        requireBalancedEntry: true,
+      },
+    },
+    explanation: "The supplies asset increases and the payable to the supplier increases.",
+    points: 2,
+    tags: ["debit_credit"],
+  },
+  {
+    id: "ch02-journal-entry-cash-rent-expense",
+    type: "journal_entry",
+    q: "Record payment of rent expense in cash of $980.",
+    answer: {
+      lines: [
+        { account: "Rent Expense", side: "debit", amount: 980 },
+        { account: "Cash", side: "credit", amount: 980 },
+      ],
+      rules: {
+        requireBalancedEntry: true,
+      },
+    },
+    explanation: "Paying an expense decreases cash and decreases equity through the expense account.",
+    points: 2,
+    tags: ["expense_recognition", "debit_credit"],
+  },
+  {
+    id: "ch02-journal-entry-loan-repayment",
+    type: "journal_entry",
+    q: "Record repayment of a bank loan principal of $2,500 in cash.",
+    answer: {
+      lines: [
+        { account: "Bank Loan Payable", side: "debit", amount: 2500 },
+        { account: "Cash", side: "credit", amount: 2500 },
+      ],
+      rules: {
+        requireBalancedEntry: true,
+      },
+    },
+    explanation: "Repaying principal reduces the liability and reduces cash. It does not create an expense unless interest is also paid.",
+    points: 2,
+    tags: ["asset_liability_changes", "debit_credit"],
+  },
 ];

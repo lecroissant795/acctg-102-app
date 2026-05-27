@@ -42,6 +42,135 @@ const practiceQuestions = [
     points: 3,
     tags: ["inventory_purchases", "gst", "debit_credit"],
   },
+  {
+    id: "ch04-journal-entry-credit-purchase-gst",
+    type: "journal_entry",
+    q: "Record the credit purchase of inventory for $6,600 including GST.",
+    answer: {
+      lines: [
+        { account: "Inventory", side: "debit", amount: 6000 },
+        { account: "GST Receivable", side: "debit", amount: 600 },
+        { account: "Accounts Payable", side: "credit", amount: 6600 },
+      ],
+      rules: {
+        requireBalancedEntry: true,
+      },
+    },
+    explanation: "Inventory is recorded net of GST, with the GST input tax credit recorded separately.",
+    points: 3,
+    tags: ["inventory_purchases", "gst", "debit_credit"],
+  },
+  {
+    id: "ch04-journal-entry-cash-sale-perpetual",
+    type: "journal_entry",
+    q: "Under a perpetual system, record a cash sale of inventory for $2,750 including GST. The inventory sold cost $1,400.",
+    answer: {
+      lines: [
+        { account: "Cash", side: "debit", amount: 2750 },
+        { account: "Sales Revenue", side: "credit", amount: 2500 },
+        { account: "GST Payable", side: "credit", amount: 250 },
+        { account: "Cost of Sales", side: "debit", amount: 1400 },
+        { account: "Inventory", side: "credit", amount: 1400 },
+      ],
+      rules: {
+        requireBalancedEntry: true,
+      },
+    },
+    explanation: "A perpetual inventory sale requires one entry for the GST-inclusive sale and another for the cost transferred out of inventory.",
+    points: 5,
+    tags: ["inventory_sales", "gst", "debit_credit"],
+  },
+  {
+    id: "ch04-journal-entry-sales-return",
+    type: "journal_entry",
+    q: "Under a perpetual system, a customer returns goods originally sold on credit for $550 including GST. The goods had cost $300. Record the return.",
+    answer: {
+      lines: [
+        { account: "Sales Returns and Allowances", side: "debit", amount: 500 },
+        { account: "GST Payable", side: "debit", amount: 50 },
+        { account: "Accounts Receivable", side: "credit", amount: 550 },
+        { account: "Inventory", side: "debit", amount: 300 },
+        { account: "Cost of Sales", side: "credit", amount: 300 },
+      ],
+      rules: {
+        requireBalancedEntry: true,
+        acceptedAccountAliases: {
+          "Accounts Receivable": ["Debtors"],
+        },
+      },
+    },
+    explanation: "A sales return reverses part of the sale and GST, reduces the receivable, and restores the returned inventory while reversing cost of sales.",
+    points: 5,
+    tags: ["inventory_sales", "gst", "debit_credit"],
+  },
+  {
+    id: "ch04-table-gross-profit-components",
+    type: "table_classification",
+    q: "Classify each item according to where it contributes in the income statement for a merchandising business.",
+    columns: ["Net Sales Section", "Cost of Sales Section", "Gross Profit Result"],
+    rows: [
+      { id: "gp1", text: "Sales Revenue" },
+      { id: "gp2", text: "Sales Returns and Allowances" },
+      { id: "gp3", text: "Inventory sold to customers" },
+      { id: "gp4", text: "Difference between net sales and cost of sales" },
+    ],
+    answer: {
+      mapping: {
+        gp1: "Net Sales Section",
+        gp2: "Net Sales Section",
+        gp3: "Cost of Sales Section",
+        gp4: "Gross Profit Result",
+      },
+    },
+    explanation: "Net sales is built from sales revenue less returns/discounts, cost of sales reflects inventory consumed, and gross profit is the resulting subtotal.",
+    points: 2,
+    tags: ["income_statement", "financial_statements", "inventory_sales"],
+  },
+  {
+    id: "ch04-case-perpetual-system-financial-effects",
+    type: "case_set",
+    q: "Use the perpetual inventory information below to answer the questions.",
+    scenario: "During the month, a business records the following: (1) credit sales of $8,800 including GST, (2) cost of inventory sold $4,900, (3) customer returns of $1,100 including GST relating to goods that cost $620, and (4) sales discounts of $180 allowed to customers.",
+    subquestions: [
+      {
+        id: "psi-1",
+        type: "numeric_input",
+        prompt: "What is net sales excluding GST after the return and discount?",
+        points: 1,
+        answer: { value: 6820, tolerance: 0.01 },
+      },
+      {
+        id: "psi-2",
+        type: "numeric_input",
+        prompt: "What is final cost of sales after the return?",
+        points: 1,
+        answer: { value: 4280, tolerance: 0.01 },
+      },
+      {
+        id: "psi-3",
+        type: "numeric_input",
+        prompt: "What is gross profit?",
+        points: 1,
+        answer: { value: 2540, tolerance: 0.01 },
+      },
+      {
+        id: "psi-4",
+        type: "mcq",
+        prompt: "Which statement is correct?",
+        options: [
+          "Sales discounts increase gross profit",
+          "Customer returns increase net sales",
+          "Customer returns reduce both net sales and cost of sales under a perpetual system",
+          "GST payable is unaffected by sales returns",
+        ],
+        answer: { correctIndex: 2 },
+        points: 1,
+      },
+    ],
+    explanation: "Convert the sale and return to net-of-GST amounts for income-statement reporting: sales $8,000, sales return $1,000, less discount $180, giving net sales of $6,820. Cost of sales is $4,900 − $620 = $4,280, so gross profit is $2,540.",
+    points: 4,
+    tags: ["financial_statements", "income_statement", "inventory_sales", "gst"],
+  },
 ];
 
 export const questions = [...coreMcqs, ...ankiMcqs, ...practiceQuestions];

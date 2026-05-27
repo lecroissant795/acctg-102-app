@@ -54,9 +54,17 @@ export function buildFallbackHint(question) {
   const topic = question.topic ?? "this topic";
   const tags = Array.isArray(question.tags) ? question.tags.join(", ") : "";
 
+  if (question.type === "journal_entry") {
+    return {
+      message: tags
+        ? `Review the ${tags.replaceAll("_", " ")} concept for ${topic}. What type of transaction is described, and which part of the accounting equation does it affect?`
+        : `Identify the transaction type, then decide which elements of the accounting equation increase or decrease — without naming specific accounts yet.`,
+    };
+  }
+
   return {
     message: tags
-      ? `Review ${tags.replaceAll("_", " ")} for ${topic}. What accounts change, and do they increase or decrease?`
+      ? `Review the ${tags.replaceAll("_", " ")} rules for ${topic}. What is the question really asking you to apply?`
       : `Re-read the question and identify which accounting rule from ${topic} applies before choosing an answer.`,
   };
 }

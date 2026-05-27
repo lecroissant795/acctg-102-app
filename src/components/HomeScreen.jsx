@@ -1,6 +1,7 @@
 import { MINI_QUIZ_SIZES, TOPIC_COLORS } from "../constants/topicColors.js";
 import { theme, pageTitleStyle, sectionLabelStyle } from "../styles/theme.js";
 import { AppNavMenu } from "./AppNavMenu.jsx";
+import { getPracticeLoadingMessage } from "../utils/quizPlan.js";
 import {
   AppShell,
   SidebarCollapseButton,
@@ -189,6 +190,9 @@ export function HomeScreen({
   totalPracticeQuestionCount,
   statsSummary,
   planLoading,
+  planLoadingLabel,
+  planError,
+  onDismissPlanError,
   user,
   onSignIn,
   onSignOut,
@@ -237,11 +241,48 @@ export function HomeScreen({
         </div>
       </header>
 
-      {planLoading && (
+      {planLoading && planLoadingLabel && (
+        <Callout
+          icon="⏳"
+          title={`Preparing ${planLoadingLabel}...`}
+          description={getPracticeLoadingMessage(
+            planLoadingLabel,
+            questions[planLoadingLabel]?.length
+          )}
+          variant="blue"
+        />
+      )}
+
+      {planError && (
+        <Callout
+          icon="⚠️"
+          title="Practice quiz could not use AI"
+          description={planError}
+          variant="orange"
+        >
+          <button
+            type="button"
+            onClick={onDismissPlanError}
+            style={{
+              padding: "6px 10px",
+              background: theme.colors.bg,
+              border: `1px solid ${theme.colors.borderStrong}`,
+              borderRadius: theme.radius.md,
+              color: theme.colors.text,
+              fontSize: 13,
+              cursor: "pointer",
+            }}
+          >
+            Dismiss
+          </button>
+        </Callout>
+      )}
+
+      {!planLoadingLabel && planLoading && (
         <Callout
           icon="⏳"
           title="Building your quiz..."
-          description="Please wait a moment"
+          description="Please wait a moment."
           variant="blue"
         />
       )}

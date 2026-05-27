@@ -9,8 +9,9 @@ import * as ch07 from "./chapters/ch07-cash-receivables.js";
 import * as ch08 from "./chapters/ch08-non-current-assets.js";
 import * as ch09 from "./chapters/ch09-liabilities.js";
 import * as ch10 from "./chapters/ch10-equity.js";
+import * as chJournalPack from "./chapters/ch-practice-journal-entries.js";
 
-export const CHAPTERS = [ch01, ch02, ch03, ch04, ch05, ch07, ch08, ch09, ch10];
+export const CHAPTERS = [ch01, ch02, ch03, ch04, ch05, ch07, ch08, ch09, ch10, chJournalPack];
 export const WRITTEN_CHAPTERS = [ch01Written];
 export const ALL_CATEGORIES = [...CHAPTERS, ...WRITTEN_CHAPTERS];
 

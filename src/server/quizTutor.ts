@@ -62,7 +62,23 @@ function getPromptText(question: Record<string, unknown>) {
   return String(question.prompt ?? question.q ?? "");
 }
 
-function buildSystemPrompt(intent: TutorIntent): string {
+function buildHintPrompt(question?: Record<string, unknown>): string {
+  const baseRules = `- Do NOT reveal the correct answer, option letter, numeric result, or journal entry solution.
+- Do NOT name specific account titles (for example: Cash, Accounts Receivable, GST Payable, Share Capital).
+- Do NOT state debit/credit sides, dollar amounts, or how many journal lines are required.
+- Do NOT write journal lines or say "debit X / credit Y".
+- ONLY nudge toward the underlying rule, formula, or concept in general terms.
+- If they already received hints, go slightly deeper without giving away the answer.`;
+
+  if (question?.type === "journal_entry") {
+    return `${baseRules}
+- For journal entries: ask what kind of transaction occurred and which category of the accounting equation is affected (asset, liability, equity, revenue, expense) — never map to specific ledger accounts.`;
+  }
+
+  return baseRules;
+}
+
+function buildSystemPrompt(intent: TutorIntent, question?: Record<string, unknown>): string {
   const base =
     "You are a friendly ACCTG 102 accounting tutor. Use clear, exam-focused language. Keep responses concise (2-4 short paragraphs max unless the student asks for more).";
 
@@ -71,9 +87,7 @@ function buildSystemPrompt(intent: TutorIntent): string {
       return `${base}
 
 Give a helpful hint for the current question.
-- Do NOT reveal the correct answer, option letter, numeric result, or journal entry solution.
-- Nudge the student toward the relevant rule, formula, or concept.
-- If they already received hints, go slightly deeper without giving away the answer.`;
+${buildHintPrompt(question)}`;
     case "explain":
       return `${base}
 
@@ -122,11 +136,11 @@ export async function createTutorResponse(request: TutorRequest): Promise<TutorR
 
   const content = await chatCompletion(
     [
-      { role: "system", content: buildSystemPrompt(request.intent) },
+      { role: "system", content: buildSystemPrompt(request.intent, request.question) },
       ...history,
       { role: "user", content: buildUserPrompt(request) },
     ],
-    { temperature: request.intent === "hint" ? 0.5 : 0.4 }
+    { temperature: request.intent === "hint" ? 0.3 : 0.4 }
   );
 
   return { message: content.trim() };
@@ -139,9 +153,17 @@ export function buildFallbackTutorResponse(request: TutorRequest): TutorResponse
   const explanation = String(request.question.explanation ?? "");
 
   if (request.intent === "hint") {
+    if (request.question.type === "journal_entry") {
+      return {
+        message: tags
+          ? `Review the ${tags.replaceAll("_", " ")} concept for ${topic}. What type of transaction is described, and which part of the accounting equation does it affect?`
+          : `Identify the transaction type in this question, then decide which elements of the accounting equation increase or decrease — without writing specific account names yet.`,
+      };
+    }
+
     return {
       message: tags
-        ? `Think about the ${tags.replaceAll("_", " ")} rules for ${topic}. Break the question into what is being asked and which accounts or statements are involved.`
+        ? `Review the ${tags.replaceAll("_", " ")} rules for ${topic}. What is the question really asking you to apply?`
         : `Focus on the core concept in "${prompt.slice(0, 80)}${prompt.length > 80 ? "..." : ""}" and recall the related chapter notes for ${topic}.`,
     };
   }

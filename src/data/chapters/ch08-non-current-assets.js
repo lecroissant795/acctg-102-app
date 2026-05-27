@@ -11,4 +11,67 @@ const coreMcqs = [
   { q: "Which of the following is a revenue expenditure (not capitalised)?", options: ["Purchase of a new delivery vehicle", "Installation costs for new machinery", "Routine maintenance and repairs", "Addition of a new wing to a building"], answer: 2, explanation: "Routine maintenance and repairs are revenue expenditures — they maintain (rather than enhance) the asset and are expensed immediately." },
 ];
 
-export const questions = [...coreMcqs, ...ankiMcqs];
+const practiceQuestions = [
+  {
+    id: "ch08-journal-entry-depreciation",
+    type: "journal_entry",
+    q: "Record annual straight-line depreciation of $4,800 on equipment.",
+    answer: {
+      lines: [
+        { account: "Depreciation Expense", side: "debit", amount: 4800 },
+        { account: "Accumulated Depreciation - Equipment", side: "credit", amount: 4800 },
+      ],
+      rules: {
+        requireBalancedEntry: true,
+        acceptedAccountAliases: {
+          "Accumulated Depreciation - Equipment": ["Accumulated Depreciation—Equipment", "Accumulated Depreciation Equipment"],
+        },
+      },
+    },
+    explanation: "Depreciation recognises the period's asset usage and increases accumulated depreciation rather than directly crediting the equipment account.",
+    points: 2,
+    tags: ["adjusting_entries", "debit_credit"],
+  },
+  {
+    id: "ch08-journal-entry-ppe-purchase",
+    type: "journal_entry",
+    q: "A business purchases equipment for $22,000 cash and pays $1,100 for installation. Record the acquisition.",
+    answer: {
+      lines: [
+        { account: "Equipment", side: "debit", amount: 23100 },
+        { account: "Cash", side: "credit", amount: 23100 },
+      ],
+      rules: {
+        requireBalancedEntry: true,
+      },
+    },
+    explanation: "All costs necessary to acquire and prepare the equipment for use are capitalised as part of the asset's cost.",
+    points: 2,
+    tags: ["debit_credit"],
+  },
+  {
+    id: "ch08-journal-entry-asset-disposal",
+    type: "journal_entry",
+    q: "Equipment with cost $18,000 and accumulated depreciation $11,500 is sold for cash of $7,200. Record the disposal.",
+    answer: {
+      lines: [
+        { account: "Cash", side: "debit", amount: 7200 },
+        { account: "Accumulated Depreciation - Equipment", side: "debit", amount: 11500 },
+        { account: "Gain on Disposal of Equipment", side: "credit", amount: 700 },
+        { account: "Equipment", side: "credit", amount: 18000 },
+      ],
+      rules: {
+        requireBalancedEntry: true,
+        acceptedAccountAliases: {
+          "Accumulated Depreciation - Equipment": ["Accumulated Depreciation Equipment"],
+          "Gain on Disposal of Equipment": ["Gain on Sale of Equipment"],
+        },
+      },
+    },
+    explanation: "The carrying amount is $6,500 ($18,000 cost less $11,500 accumulated depreciation). Selling for $7,200 results in a gain of $700.",
+    points: 4,
+    tags: ["debit_credit"],
+  },
+];
+
+export const questions = [...coreMcqs, ...ankiMcqs, ...practiceQuestions];
