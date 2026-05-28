@@ -7,7 +7,7 @@ export function AppFooter({ showAttribution = false }) {
       <ThemeToggleSwitch />
       {showAttribution && (
         <span className="app-footer__attribution" style={{ color: theme.colors.textTertiary }}>
-          Built by Tom Nguyen
+          Built by Tom Nguyen 🥐
         </span>
       )}
     </footer>
