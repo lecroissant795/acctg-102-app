@@ -281,9 +281,9 @@ export const ankiMcqs = [
     "q": "What is the journal entry for issuing ordinary shares for cash?",
     "options": [
       "Dr Cash / Cr Share Capital.",
-      "Dr Cash / Cr Share Capital",
       "Dr Retained Earnings / Cr Dividends Payable",
-      "Dr Dividends Payable / Cr Cash"
+      "Dr Dividends Payable / Cr Cash",
+      "The residual interest in the assets of an entity after deducting liabilities."
     ],
     "answer": 0,
     "explanation": "Dr Cash / Cr Share Capital.",
@@ -450,8 +450,8 @@ export const ankiMcqs = [
     "options": [
       "Retained earnings.",
       "Share capital",
-      "Retained earnings",
-      "Reserves"
+      "Reserves",
+      "The residual interest in the assets of an entity after deducting liabilities."
     ],
     "answer": 0,
     "explanation": "Retained earnings.",
@@ -510,8 +510,8 @@ export const ankiMcqs = [
     "options": [
       "Dr Retained Earnings / Cr Dividends Payable.",
       "Dr Cash / Cr Share Capital",
-      "Dr Retained Earnings / Cr Dividends Payable",
-      "Dr Dividends Payable / Cr Cash"
+      "Dr Dividends Payable / Cr Cash",
+      "The residual interest in the assets of an entity after deducting liabilities."
     ],
     "answer": 0,
     "explanation": "Dr Retained Earnings / Cr Dividends Payable.",
@@ -543,7 +543,7 @@ export const ankiMcqs = [
       "Dr Dividends Payable / Cr Cash.",
       "Dr Cash / Cr Share Capital",
       "Dr Retained Earnings / Cr Dividends Payable",
-      "Dr Dividends Payable / Cr Cash"
+      "The residual interest in the assets of an entity after deducting liabilities."
     ],
     "answer": 0,
     "explanation": "Dr Dividends Payable / Cr Cash.",
@@ -617,9 +617,9 @@ export const ankiMcqs = [
     "q": "What is the retained earnings formula?",
     "options": [
       "Opening Retained Earnings + Profit − Dividends = Closing Retained Earnings.",
-      "Opening Retained Earnings + Profit − Dividends = Closing Retained Earnings",
       "Profit available to ordinary shareholders ÷ Average ordinary shareholders' equity",
-      "Profit available to ordinary shareholders ÷ Weighted average ordinary shares outstanding"
+      "Profit available to ordinary shareholders ÷ Weighted average ordinary shares outstanding",
+      "The residual interest in the assets of an entity after deducting liabilities."
     ],
     "answer": 0,
     "explanation": "Opening Retained Earnings + Profit − Dividends = Closing Retained Earnings.",
@@ -677,9 +677,9 @@ export const ankiMcqs = [
     "q": "What is the journal entry for issuing shares for cash?",
     "options": [
       "Dr Cash / Cr Share Capital.",
-      "Dr Cash / Cr Share Capital",
       "Dr Retained Earnings / Cr Dividends Payable",
-      "Dr Dividends Payable / Cr Cash"
+      "Dr Dividends Payable / Cr Cash",
+      "The residual interest in the assets of an entity after deducting liabilities."
     ],
     "answer": 0,
     "explanation": "Dr Cash / Cr Share Capital.",
@@ -1006,8 +1006,8 @@ export const ankiMcqs = [
     "options": [
       "Profit available to ordinary shareholders ÷ Average ordinary shareholders' equity.",
       "Opening Retained Earnings + Profit − Dividends = Closing Retained Earnings",
-      "Profit available to ordinary shareholders ÷ Average ordinary shareholders' equity",
-      "Profit available to ordinary shareholders ÷ Weighted average ordinary shares outstanding"
+      "Profit available to ordinary shareholders ÷ Weighted average ordinary shares outstanding",
+      "The residual interest in the assets of an entity after deducting liabilities."
     ],
     "answer": 0,
     "explanation": "Profit available to ordinary shareholders ÷ Average ordinary shareholders' equity.",
@@ -1039,7 +1039,7 @@ export const ankiMcqs = [
       "Profit available to ordinary shareholders ÷ Weighted average ordinary shares outstanding.",
       "Opening Retained Earnings + Profit − Dividends = Closing Retained Earnings",
       "Profit available to ordinary shareholders ÷ Average ordinary shareholders' equity",
-      "Profit available to ordinary shareholders ÷ Weighted average ordinary shares outstanding"
+      "The residual interest in the assets of an entity after deducting liabilities."
     ],
     "answer": 0,
     "explanation": "Profit available to ordinary shareholders ÷ Weighted average ordinary shares outstanding.",
@@ -1386,9 +1386,9 @@ export const ankiMcqs = [
     "q": "Formula: Closing retained earnings.",
     "options": [
       "Opening Retained Earnings + Profit − Dividends = Closing Retained Earnings.",
-      "Opening Retained Earnings + Profit − Dividends = Closing Retained Earnings",
       "Profit available to ordinary shareholders ÷ Average ordinary shareholders' equity",
-      "Profit available to ordinary shareholders ÷ Weighted average ordinary shares outstanding"
+      "Profit available to ordinary shareholders ÷ Weighted average ordinary shares outstanding",
+      "The residual interest in the assets of an entity after deducting liabilities."
     ],
     "answer": 0,
     "explanation": "Opening Retained Earnings + Profit − Dividends = Closing Retained Earnings.",
@@ -1402,8 +1402,8 @@ export const ankiMcqs = [
     "options": [
       "Profit available to ordinary shareholders ÷ Average ordinary shareholders' equity.",
       "Opening Retained Earnings + Profit − Dividends = Closing Retained Earnings",
-      "Profit available to ordinary shareholders ÷ Average ordinary shareholders' equity",
-      "Profit available to ordinary shareholders ÷ Weighted average ordinary shares outstanding"
+      "Profit available to ordinary shareholders ÷ Weighted average ordinary shares outstanding",
+      "The residual interest in the assets of an entity after deducting liabilities."
     ],
     "answer": 0,
     "explanation": "Profit available to ordinary shareholders ÷ Average ordinary shareholders' equity.",
@@ -1419,7 +1419,7 @@ export const ankiMcqs = [
       "Profit available to ordinary shareholders ÷ Weighted average ordinary shares outstanding.",
       "Opening Retained Earnings + Profit − Dividends = Closing Retained Earnings",
       "Profit available to ordinary shareholders ÷ Average ordinary shareholders' equity",
-      "Profit available to ordinary shareholders ÷ Weighted average ordinary shares outstanding"
+      "The residual interest in the assets of an entity after deducting liabilities."
     ],
     "answer": 0,
     "explanation": "Profit available to ordinary shareholders ÷ Weighted average ordinary shares outstanding.",
@@ -1481,9 +1481,9 @@ export const ankiMcqs = [
     "q": "Journalise issuing ordinary shares for cash.",
     "options": [
       "Dr Cash / Cr Share Capital.",
-      "Dr Cash / Cr Share Capital",
       "Dr Retained Earnings / Cr Dividends Payable",
-      "Dr Dividends Payable / Cr Cash"
+      "Dr Dividends Payable / Cr Cash",
+      "The residual interest in the assets of an entity after deducting liabilities."
     ],
     "answer": 0,
     "explanation": "Dr Cash / Cr Share Capital.",
@@ -1498,8 +1498,8 @@ export const ankiMcqs = [
     "options": [
       "Dr Retained Earnings / Cr Dividends Payable.",
       "Dr Cash / Cr Share Capital",
-      "Dr Retained Earnings / Cr Dividends Payable",
-      "Dr Dividends Payable / Cr Cash"
+      "Dr Dividends Payable / Cr Cash",
+      "The residual interest in the assets of an entity after deducting liabilities."
     ],
     "answer": 0,
     "explanation": "Dr Retained Earnings / Cr Dividends Payable.",
@@ -1515,7 +1515,7 @@ export const ankiMcqs = [
       "Dr Dividends Payable / Cr Cash.",
       "Dr Cash / Cr Share Capital",
       "Dr Retained Earnings / Cr Dividends Payable",
-      "Dr Dividends Payable / Cr Cash"
+      "The residual interest in the assets of an entity after deducting liabilities."
     ],
     "answer": 0,
     "explanation": "Dr Dividends Payable / Cr Cash.",

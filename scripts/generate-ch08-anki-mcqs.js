@@ -172,45 +172,95 @@ const FLASHCARDS = [
   { id: "ch08-anki-113", q: "Formula: Average age of PPE.", a: "Accumulated Depreciation ÷ Depreciation Expense.", pool: "formulas", tags: ["financial_statements"] },
 ];
 
+function normalizeOptionText(option) {
+  return String(option)
+    .toLowerCase()
+    .replace(/[\u2018\u2019]/g, "'")
+    .replace(/[\u201c\u201d]/g, "\"")
+    .replace(/[.,;:!?]+$/g, "")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
 function pickDistractors(card) {
-  if (card.distractors?.length >= 3) {
-    return card.distractors.slice(0, 3);
+  const normalizedAnswer = normalizeOptionText(card.a);
+  const unique = [];
+  const seen = new Set([normalizedAnswer]);
+  const appendUnique = (option) => {
+    const key = normalizeOptionText(option);
+    if (!key || seen.has(key)) return;
+    seen.add(key);
+    unique.push(option);
+  };
+
+  for (const option of card.distractors ?? []) {
+    appendUnique(option);
+    if (unique.length === 3) return unique;
   }
 
   const pool = card.pool ? DISTRACTOR_POOLS[card.pool] ?? [] : [];
-  const normalizedAnswer = card.a.trim().toLowerCase();
-  const candidates = pool.filter((option) => option.trim().toLowerCase() !== normalizedAnswer);
-
-  if (candidates.length >= 3) {
-    return candidates.slice(0, 3);
+  for (const option of pool) {
+    appendUnique(option);
+    if (unique.length === 3) return unique;
   }
 
-  const fallback = [
-    ...candidates,
-    ...Object.values(DISTRACTOR_POOLS)
-      .flat()
-      .filter((option) => option.trim().toLowerCase() !== normalizedAnswer),
-  ];
-
-  const unique = [];
-  for (const option of fallback) {
-    const key = option.trim().toLowerCase();
-    if (key === normalizedAnswer) continue;
-    if (unique.some((existing) => existing.trim().toLowerCase() === key)) continue;
-    unique.push(option);
-    if (unique.length === 3) break;
+  for (const option of Object.values(DISTRACTOR_POOLS).flat()) {
+    appendUnique(option);
+    if (unique.length === 3) return unique;
   }
 
+  let variant = 1;
   while (unique.length < 3) {
-    unique.push(`None of the above (variant ${unique.length + 1})`);
+    appendUnique(`None of the above (variant ${variant})`);
+    variant += 1;
   }
 
-  return unique.slice(0, 3);
+  return unique;
+}
+
+function ensureUniqueOptions(answer, distractors) {
+  const options = [answer];
+  const seen = new Set([normalizeOptionText(answer)]);
+
+  const pushUnique = (option) => {
+    const key = normalizeOptionText(option);
+    if (!key || seen.has(key)) return;
+    seen.add(key);
+    options.push(option);
+  };
+
+  for (const option of distractors) {
+    pushUnique(option);
+    if (options.length === 4) return options;
+  }
+
+  for (const option of Object.values(DISTRACTOR_POOLS).flat()) {
+    pushUnique(option);
+    if (options.length === 4) return options;
+  }
+
+  const fillers = [
+    "None of the above.",
+    "All of the above.",
+    "Not enough information to determine.",
+  ];
+  for (const option of fillers) {
+    pushUnique(option);
+    if (options.length === 4) return options;
+  }
+
+  let variant = 1;
+  while (options.length < 4) {
+    pushUnique(`Fallback option ${variant}`);
+    variant += 1;
+  }
+
+  return options;
 }
 
 function toMcq(card) {
   const distractors = pickDistractors(card);
-  const options = [card.a, ...distractors];
+  const options = ensureUniqueOptions(card.a, distractors);
   return {
     id: card.id,
     q: card.q,

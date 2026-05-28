@@ -82,9 +82,9 @@ export const ankiMcqs = [
     "q": "Which accounting standard governs PPE?",
     "options": [
       "AASB 116 / IAS 16.",
-      "AASB 116 / IAS 16",
       "AASB 136 / IAS 36",
-      "AASB 138"
+      "AASB 138",
+      "Long-term assets used in business operations that provide future economic benefits over more than one accounting period."
     ],
     "answer": 0,
     "explanation": "AASB 116 / IAS 16.",
@@ -219,7 +219,7 @@ export const ankiMcqs = [
       "Cost minus accumulated depreciation.",
       "(Cost − Residual Value) ÷ Useful Life",
       "(Cost − Residual Value) ÷ Total Estimated Units",
-      "Cost minus accumulated depreciation"
+      "Long-term assets used in business operations that provide future economic benefits over more than one accounting period."
     ],
     "answer": 0,
     "explanation": "Cost minus accumulated depreciation.",
@@ -292,9 +292,9 @@ export const ankiMcqs = [
     "q": "What is the journal entry for depreciation?",
     "options": [
       "Dr Depreciation Expense / Cr Accumulated Depreciation.",
-      "Dr Depreciation Expense / Cr Accumulated Depreciation",
       "Dr Amortisation Expense / Cr Accumulated Amortisation",
-      "Dr Impairment Loss / Cr Accumulated Impairment Loss"
+      "Dr Impairment Loss / Cr Accumulated Impairment Loss",
+      "Long-term assets used in business operations that provide future economic benefits over more than one accounting period."
     ],
     "answer": 0,
     "explanation": "Dr Depreciation Expense / Cr Accumulated Depreciation.",
@@ -308,9 +308,9 @@ export const ankiMcqs = [
     "q": "What is the straight-line depreciation formula?",
     "options": [
       "(Cost − Residual Value) ÷ Useful Life.",
-      "(Cost − Residual Value) ÷ Useful Life",
       "(Cost − Residual Value) ÷ Total Estimated Units",
-      "Cost minus accumulated depreciation"
+      "Cost minus accumulated depreciation",
+      "Long-term assets used in business operations that provide future economic benefits over more than one accounting period."
     ],
     "answer": 0,
     "explanation": "(Cost − Residual Value) ÷ Useful Life.",
@@ -338,9 +338,9 @@ export const ankiMcqs = [
     "q": "Under straight-line depreciation, is annual depreciation expense constant?",
     "options": [
       "Yes.",
-      "Yes",
       "No",
-      "Only under revaluation basis"
+      "Only under revaluation basis",
+      "Long-term assets used in business operations that provide future economic benefits over more than one accounting period."
     ],
     "answer": 0,
     "explanation": "Yes.",
@@ -429,8 +429,8 @@ export const ankiMcqs = [
     "options": [
       "(Cost − Residual Value) ÷ Total Estimated Units.",
       "(Cost − Residual Value) ÷ Useful Life",
-      "(Cost − Residual Value) ÷ Total Estimated Units",
-      "Cost minus accumulated depreciation"
+      "Cost minus accumulated depreciation",
+      "Long-term assets used in business operations that provide future economic benefits over more than one accounting period."
     ],
     "answer": 0,
     "explanation": "(Cost − Residual Value) ÷ Total Estimated Units.",
@@ -609,8 +609,8 @@ export const ankiMcqs = [
     "options": [
       "AASB 136 / IAS 36.",
       "AASB 116 / IAS 16",
-      "AASB 136 / IAS 36",
-      "AASB 138"
+      "AASB 138",
+      "Long-term assets used in business operations that provide future economic benefits over more than one accounting period."
     ],
     "answer": 0,
     "explanation": "AASB 136 / IAS 36.",
@@ -700,7 +700,7 @@ export const ankiMcqs = [
       "Dr Impairment Loss / Cr Accumulated Impairment Loss.",
       "Dr Depreciation Expense / Cr Accumulated Depreciation",
       "Dr Amortisation Expense / Cr Accumulated Amortisation",
-      "Dr Impairment Loss / Cr Accumulated Impairment Loss"
+      "Long-term assets used in business operations that provide future economic benefits over more than one accounting period."
     ],
     "answer": 0,
     "explanation": "Dr Impairment Loss / Cr Accumulated Impairment Loss.",
@@ -996,7 +996,7 @@ export const ankiMcqs = [
       "AASB 138.",
       "AASB 116 / IAS 16",
       "AASB 136 / IAS 36",
-      "AASB 138"
+      "Long-term assets used in business operations that provide future economic benefits over more than one accounting period."
     ],
     "answer": 0,
     "explanation": "AASB 138.",
@@ -1025,8 +1025,8 @@ export const ankiMcqs = [
     "options": [
       "Dr Amortisation Expense / Cr Accumulated Amortisation.",
       "Dr Depreciation Expense / Cr Accumulated Depreciation",
-      "Dr Amortisation Expense / Cr Accumulated Amortisation",
-      "Dr Impairment Loss / Cr Accumulated Impairment Loss"
+      "Dr Impairment Loss / Cr Accumulated Impairment Loss",
+      "Long-term assets used in business operations that provide future economic benefits over more than one accounting period."
     ],
     "answer": 0,
     "explanation": "Dr Amortisation Expense / Cr Accumulated Amortisation.",
@@ -1071,8 +1071,8 @@ export const ankiMcqs = [
     "options": [
       "No.",
       "Yes",
-      "No",
-      "Only under revaluation basis"
+      "Only under revaluation basis",
+      "Long-term assets used in business operations that provide future economic benefits over more than one accounting period."
     ],
     "answer": 0,
     "explanation": "No.",
@@ -1569,9 +1569,9 @@ export const ankiMcqs = [
     "q": "Formula: Straight-line depreciation.",
     "options": [
       "(Cost − Residual Value) ÷ Useful Life.",
-      "(Cost − Residual Value) ÷ Useful Life",
       "(Cost − Residual Value) ÷ Total Estimated Units",
-      "Cost minus accumulated depreciation"
+      "Cost minus accumulated depreciation",
+      "Long-term assets used in business operations that provide future economic benefits over more than one accounting period."
     ],
     "answer": 0,
     "explanation": "(Cost − Residual Value) ÷ Useful Life.",
@@ -1600,8 +1600,8 @@ export const ankiMcqs = [
     "options": [
       "(Cost − Residual Value) ÷ Total Estimated Units.",
       "(Cost − Residual Value) ÷ Useful Life",
-      "(Cost − Residual Value) ÷ Total Estimated Units",
-      "Cost minus accumulated depreciation"
+      "Cost minus accumulated depreciation",
+      "Long-term assets used in business operations that provide future economic benefits over more than one accounting period."
     ],
     "answer": 0,
     "explanation": "(Cost − Residual Value) ÷ Total Estimated Units.",

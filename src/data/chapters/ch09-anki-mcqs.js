@@ -102,9 +102,9 @@ export const ankiMcqs = [
     "q": "Are notes payable commonly interest-bearing?",
     "options": [
       "Yes.",
-      "Yes",
       "No",
-      "Only if probable and estimable"
+      "Only if probable and estimable",
+      "A present obligation arising from past events that is expected to result in an outflow of economic benefits."
     ],
     "answer": 0,
     "explanation": "Yes.",
@@ -117,9 +117,9 @@ export const ankiMcqs = [
     "q": "What is the journal entry when a note payable is issued?",
     "options": [
       "Dr Cash / Cr Notes Payable.",
-      "Dr Cash / Cr Notes Payable",
       "Dr Interest Expense / Cr Interest Payable",
-      "Dr Cash / Cr Revenue Received in Advance"
+      "Dr Cash / Cr Revenue Received in Advance",
+      "A present obligation arising from past events that is expected to result in an outflow of economic benefits."
     ],
     "answer": 0,
     "explanation": "Dr Cash / Cr Notes Payable.",
@@ -132,9 +132,9 @@ export const ankiMcqs = [
     "q": "What is the formula for interest expense?",
     "options": [
       "Principal × Interest Rate × Time.",
-      "Principal × Interest Rate × Time",
       "Current Assets − Current Liabilities",
-      "Current Assets ÷ Current Liabilities"
+      "Current Assets ÷ Current Liabilities",
+      "A present obligation arising from past events that is expected to result in an outflow of economic benefits."
     ],
     "answer": 0,
     "explanation": "Principal × Interest Rate × Time.",
@@ -149,8 +149,8 @@ export const ankiMcqs = [
     "options": [
       "Dr Interest Expense / Cr Interest Payable.",
       "Dr Cash / Cr Notes Payable",
-      "Dr Interest Expense / Cr Interest Payable",
-      "Dr Cash / Cr Revenue Received in Advance"
+      "Dr Cash / Cr Revenue Received in Advance",
+      "A present obligation arising from past events that is expected to result in an outflow of economic benefits."
     ],
     "answer": 0,
     "explanation": "Dr Interest Expense / Cr Interest Payable.",
@@ -336,7 +336,7 @@ export const ankiMcqs = [
       "Dr Cash / Cr Revenue Received in Advance.",
       "Dr Cash / Cr Notes Payable",
       "Dr Interest Expense / Cr Interest Payable",
-      "Dr Cash / Cr Revenue Received in Advance"
+      "A present obligation arising from past events that is expected to result in an outflow of economic benefits."
     ],
     "answer": 0,
     "explanation": "Dr Cash / Cr Revenue Received in Advance.",
@@ -579,9 +579,9 @@ export const ankiMcqs = [
     "q": "What is the journal entry when notes are issued at face value?",
     "options": [
       "Dr Cash / Cr Notes Payable.",
-      "Dr Cash / Cr Notes Payable",
       "Dr Interest Expense / Cr Interest Payable",
-      "Dr Cash / Cr Revenue Received in Advance"
+      "Dr Cash / Cr Revenue Received in Advance",
+      "A present obligation arising from past events that is expected to result in an outflow of economic benefits."
     ],
     "answer": 0,
     "explanation": "Dr Cash / Cr Notes Payable.",
@@ -1102,8 +1102,8 @@ export const ankiMcqs = [
     "options": [
       "Current Assets − Current Liabilities.",
       "Principal × Interest Rate × Time",
-      "Current Assets − Current Liabilities",
-      "Current Assets ÷ Current Liabilities"
+      "Current Assets ÷ Current Liabilities",
+      "A present obligation arising from past events that is expected to result in an outflow of economic benefits."
     ],
     "answer": 0,
     "explanation": "Current Assets − Current Liabilities.",
@@ -1133,7 +1133,7 @@ export const ankiMcqs = [
       "Current Assets ÷ Current Liabilities.",
       "Principal × Interest Rate × Time",
       "Current Assets − Current Liabilities",
-      "Current Assets ÷ Current Liabilities"
+      "A present obligation arising from past events that is expected to result in an outflow of economic benefits."
     ],
     "answer": 0,
     "explanation": "Current Assets ÷ Current Liabilities.",
@@ -1418,9 +1418,9 @@ export const ankiMcqs = [
     "q": "Formula: Interest expense.",
     "options": [
       "Principal × Interest Rate × Time.",
-      "Principal × Interest Rate × Time",
       "Current Assets − Current Liabilities",
-      "Current Assets ÷ Current Liabilities"
+      "Current Assets ÷ Current Liabilities",
+      "A present obligation arising from past events that is expected to result in an outflow of economic benefits."
     ],
     "answer": 0,
     "explanation": "Principal × Interest Rate × Time.",
@@ -1434,8 +1434,8 @@ export const ankiMcqs = [
     "options": [
       "Current Assets − Current Liabilities.",
       "Principal × Interest Rate × Time",
-      "Current Assets − Current Liabilities",
-      "Current Assets ÷ Current Liabilities"
+      "Current Assets ÷ Current Liabilities",
+      "A present obligation arising from past events that is expected to result in an outflow of economic benefits."
     ],
     "answer": 0,
     "explanation": "Current Assets − Current Liabilities.",
@@ -1450,7 +1450,7 @@ export const ankiMcqs = [
       "Current Assets ÷ Current Liabilities.",
       "Principal × Interest Rate × Time",
       "Current Assets − Current Liabilities",
-      "Current Assets ÷ Current Liabilities"
+      "A present obligation arising from past events that is expected to result in an outflow of economic benefits."
     ],
     "answer": 0,
     "explanation": "Current Assets ÷ Current Liabilities.",
@@ -1508,9 +1508,9 @@ export const ankiMcqs = [
     "q": "Journalise issuing a short-term note payable.",
     "options": [
       "Dr Cash / Cr Notes Payable.",
-      "Dr Cash / Cr Notes Payable",
       "Dr Interest Expense / Cr Interest Payable",
-      "Dr Cash / Cr Revenue Received in Advance"
+      "Dr Cash / Cr Revenue Received in Advance",
+      "A present obligation arising from past events that is expected to result in an outflow of economic benefits."
     ],
     "answer": 0,
     "explanation": "Dr Cash / Cr Notes Payable.",
@@ -1524,8 +1524,8 @@ export const ankiMcqs = [
     "options": [
       "Dr Interest Expense / Cr Interest Payable.",
       "Dr Cash / Cr Notes Payable",
-      "Dr Interest Expense / Cr Interest Payable",
-      "Dr Cash / Cr Revenue Received in Advance"
+      "Dr Cash / Cr Revenue Received in Advance",
+      "A present obligation arising from past events that is expected to result in an outflow of economic benefits."
     ],
     "answer": 0,
     "explanation": "Dr Interest Expense / Cr Interest Payable.",
@@ -1541,7 +1541,7 @@ export const ankiMcqs = [
       "Dr Cash / Cr Revenue Received in Advance.",
       "Dr Cash / Cr Notes Payable",
       "Dr Interest Expense / Cr Interest Payable",
-      "Dr Cash / Cr Revenue Received in Advance"
+      "A present obligation arising from past events that is expected to result in an outflow of economic benefits."
     ],
     "answer": 0,
     "explanation": "Dr Cash / Cr Revenue Received in Advance.",

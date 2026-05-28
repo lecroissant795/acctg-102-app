@@ -204,9 +204,9 @@ export const ankiMcqs = [
     "q": "What is the journal entry for purchasing inventory on credit under the periodic system?",
     "options": [
       "Dr Purchases / Cr Accounts Payable.",
-      "Dr Purchases / Cr Accounts Payable",
       "Dr Inventory / Cr Accounts Payable",
-      "Dr Accounts Payable / Cr Purchase Returns & Allowances"
+      "Dr Accounts Payable / Cr Purchase Returns & Allowances",
+      "Inventory is goods held for sale in the ordinary course of business, or materials used to produce goods for sale."
     ],
     "answer": 0,
     "explanation": "Dr Purchases / Cr Accounts Payable.",
@@ -222,7 +222,7 @@ export const ankiMcqs = [
       "Dr Accounts Payable / Cr Purchase Returns & Allowances.",
       "Dr Purchases / Cr Accounts Payable",
       "Dr Inventory / Cr Accounts Payable",
-      "Dr Accounts Payable / Cr Purchase Returns & Allowances"
+      "Inventory is goods held for sale in the ordinary course of business, or materials used to produce goods for sale."
     ],
     "answer": 0,
     "explanation": "Dr Accounts Payable / Cr Purchase Returns & Allowances.",
@@ -346,9 +346,9 @@ export const ankiMcqs = [
     "q": "Under which system is the inventory balance always current?",
     "options": [
       "Perpetual inventory system.",
-      "Perpetual inventory system",
       "Periodic inventory system",
-      "A system updated only at year-end"
+      "A system updated only at year-end",
+      "Inventory is goods held for sale in the ordinary course of business, or materials used to produce goods for sale."
     ],
     "answer": 0,
     "explanation": "Perpetual inventory system.",
@@ -362,8 +362,8 @@ export const ankiMcqs = [
     "options": [
       "Periodic inventory system.",
       "Perpetual inventory system",
-      "Periodic inventory system",
-      "A system updated only at year-end"
+      "A system updated only at year-end",
+      "Inventory is goods held for sale in the ordinary course of business, or materials used to produce goods for sale."
     ],
     "answer": 0,
     "explanation": "Periodic inventory system.",
@@ -426,7 +426,7 @@ export const ankiMcqs = [
       "Dr Accounts Payable / Cr Purchase Returns & Allowances.",
       "Dr Purchases / Cr Accounts Payable",
       "Dr Inventory / Cr Accounts Payable",
-      "Dr Accounts Payable / Cr Purchase Returns & Allowances"
+      "Inventory is goods held for sale in the ordinary course of business, or materials used to produce goods for sale."
     ],
     "answer": 0,
     "explanation": "Dr Accounts Payable / Cr Purchase Returns & Allowances.",
@@ -488,7 +488,7 @@ export const ankiMcqs = [
       "Beginning Inventory + Net Purchases.",
       "Beginning Inventory + Net Purchases − Ending Inventory",
       "Purchases + Freight-in − Purchase Returns & Allowances − Purchase Discounts",
-      "Beginning Inventory + Net Purchases"
+      "Inventory is goods held for sale in the ordinary course of business, or materials used to produce goods for sale."
     ],
     "answer": 0,
     "explanation": "Beginning Inventory + Net Purchases.",
@@ -501,9 +501,9 @@ export const ankiMcqs = [
     "q": "What is the formula for cost of sales under the periodic system?",
     "options": [
       "Beginning Inventory + Net Purchases − Ending Inventory.",
-      "Beginning Inventory + Net Purchases − Ending Inventory",
       "Purchases + Freight-in − Purchase Returns & Allowances − Purchase Discounts",
-      "Beginning Inventory + Net Purchases"
+      "Beginning Inventory + Net Purchases",
+      "Inventory is goods held for sale in the ordinary course of business, or materials used to produce goods for sale."
     ],
     "answer": 0,
     "explanation": "Beginning Inventory + Net Purchases − Ending Inventory.",
@@ -1416,9 +1416,9 @@ export const ankiMcqs = [
     "q": "If ending inventory is overstated, what happens to cost of sales in the current period?",
     "options": [
       "Cost of sales is understated.",
-      "Cost of sales is understated",
       "Cost of sales is overstated",
-      "Profit is overstated"
+      "Profit is overstated",
+      "Inventory is goods held for sale in the ordinary course of business, or materials used to produce goods for sale."
     ],
     "answer": 0,
     "explanation": "Cost of sales is understated.",
@@ -1434,7 +1434,7 @@ export const ankiMcqs = [
       "Profit is overstated.",
       "Cost of sales is understated",
       "Cost of sales is overstated",
-      "Profit is overstated"
+      "Inventory is goods held for sale in the ordinary course of business, or materials used to produce goods for sale."
     ],
     "answer": 0,
     "explanation": "Profit is overstated.",
@@ -1465,8 +1465,8 @@ export const ankiMcqs = [
     "options": [
       "Cost of sales is overstated.",
       "Cost of sales is understated",
-      "Cost of sales is overstated",
-      "Profit is overstated"
+      "Profit is overstated",
+      "Inventory is goods held for sale in the ordinary course of business, or materials used to produce goods for sale."
     ],
     "answer": 0,
     "explanation": "Cost of sales is overstated.",
@@ -1751,9 +1751,9 @@ export const ankiMcqs = [
     "q": "Journalise: Bought inventory on credit under periodic system.",
     "options": [
       "Dr Purchases / Cr Accounts Payable.",
-      "Dr Purchases / Cr Accounts Payable",
       "Dr Inventory / Cr Accounts Payable",
-      "Dr Accounts Payable / Cr Purchase Returns & Allowances"
+      "Dr Accounts Payable / Cr Purchase Returns & Allowances",
+      "Inventory is goods held for sale in the ordinary course of business, or materials used to produce goods for sale."
     ],
     "answer": 0,
     "explanation": "Dr Purchases / Cr Accounts Payable.",
@@ -1768,8 +1768,8 @@ export const ankiMcqs = [
     "options": [
       "Dr Inventory / Cr Accounts Payable.",
       "Dr Purchases / Cr Accounts Payable",
-      "Dr Inventory / Cr Accounts Payable",
-      "Dr Accounts Payable / Cr Purchase Returns & Allowances"
+      "Dr Accounts Payable / Cr Purchase Returns & Allowances",
+      "Inventory is goods held for sale in the ordinary course of business, or materials used to produce goods for sale."
     ],
     "answer": 0,
     "explanation": "Dr Inventory / Cr Accounts Payable.",
@@ -1817,7 +1817,7 @@ export const ankiMcqs = [
       "Dr Accounts Payable / Cr Purchase Returns & Allowances.",
       "Dr Purchases / Cr Accounts Payable",
       "Dr Inventory / Cr Accounts Payable",
-      "Dr Accounts Payable / Cr Purchase Returns & Allowances"
+      "Inventory is goods held for sale in the ordinary course of business, or materials used to produce goods for sale."
     ],
     "answer": 0,
     "explanation": "Dr Accounts Payable / Cr Purchase Returns & Allowances.",
@@ -1912,8 +1912,8 @@ export const ankiMcqs = [
     "options": [
       "Purchases + Freight-in − Purchase Returns & Allowances − Purchase Discounts.",
       "Beginning Inventory + Net Purchases − Ending Inventory",
-      "Purchases + Freight-in − Purchase Returns & Allowances − Purchase Discounts",
-      "Beginning Inventory + Net Purchases"
+      "Beginning Inventory + Net Purchases",
+      "Inventory is goods held for sale in the ordinary course of business, or materials used to produce goods for sale."
     ],
     "answer": 0,
     "explanation": "Purchases + Freight-in − Purchase Returns & Allowances − Purchase Discounts.",
@@ -1928,7 +1928,7 @@ export const ankiMcqs = [
       "Beginning Inventory + Net Purchases.",
       "Beginning Inventory + Net Purchases − Ending Inventory",
       "Purchases + Freight-in − Purchase Returns & Allowances − Purchase Discounts",
-      "Beginning Inventory + Net Purchases"
+      "Inventory is goods held for sale in the ordinary course of business, or materials used to produce goods for sale."
     ],
     "answer": 0,
     "explanation": "Beginning Inventory + Net Purchases.",
@@ -1941,9 +1941,9 @@ export const ankiMcqs = [
     "q": "Formula: Cost of sales under periodic system.",
     "options": [
       "Beginning Inventory + Net Purchases − Ending Inventory.",
-      "Beginning Inventory + Net Purchases − Ending Inventory",
       "Purchases + Freight-in − Purchase Returns & Allowances − Purchase Discounts",
-      "Beginning Inventory + Net Purchases"
+      "Beginning Inventory + Net Purchases",
+      "Inventory is goods held for sale in the ordinary course of business, or materials used to produce goods for sale."
     ],
     "answer": 0,
     "explanation": "Beginning Inventory + Net Purchases − Ending Inventory.",

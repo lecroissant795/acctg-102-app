@@ -68,9 +68,9 @@ export const ankiMcqs = [
     "q": "Do merchandising businesses have inventory?",
     "options": [
       "Yes.",
-      "Yes",
       "No",
-      "Only for periodic systems"
+      "Only for periodic systems",
+      "A service business provides services, while a merchandising business buys and resells goods."
     ],
     "answer": 0,
     "explanation": "Yes.",
@@ -206,9 +206,9 @@ export const ankiMcqs = [
     "q": "What is a perpetual inventory system?",
     "options": [
       "A system where inventory records are updated continuously with every purchase and sale.",
-      "A system where inventory records are updated continuously with every purchase and sale",
       "A system where inventory records are not continuously updated",
-      "A system that records inventory only at year-end"
+      "A system that records inventory only at year-end",
+      "A service business provides services, while a merchandising business buys and resells goods."
     ],
     "answer": 0,
     "explanation": "A system where inventory records are updated continuously with every purchase and sale.",
@@ -253,8 +253,8 @@ export const ankiMcqs = [
     "options": [
       "A system where inventory records are not continuously updated.",
       "A system where inventory records are updated continuously with every purchase and sale",
-      "A system where inventory records are not continuously updated",
-      "A system that records inventory only at year-end"
+      "A system that records inventory only at year-end",
+      "A service business provides services, while a merchandising business buys and resells goods."
     ],
     "answer": 0,
     "explanation": "A system where inventory records are not continuously updated.",
@@ -358,9 +358,9 @@ export const ankiMcqs = [
     "q": "What is the journal entry to purchase inventory on credit?",
     "options": [
       "Debit Inventory; Credit Accounts Payable.",
-      "Debit Inventory; Credit Accounts Payable",
       "Debit Accounts Payable; Credit Inventory",
-      "Debit Cash; Credit Sales Revenue"
+      "Debit Cash; Credit Sales Revenue",
+      "A service business provides services, while a merchandising business buys and resells goods."
     ],
     "answer": 0,
     "explanation": "Debit Inventory; Credit Accounts Payable.",
@@ -436,8 +436,8 @@ export const ankiMcqs = [
     "options": [
       "Debit Accounts Payable; Credit Inventory.",
       "Debit Inventory; Credit Accounts Payable",
-      "Debit Accounts Payable; Credit Inventory",
-      "Debit Cash; Credit Sales Revenue"
+      "Debit Cash; Credit Sales Revenue",
+      "A service business provides services, while a merchandising business buys and resells goods."
     ],
     "answer": 0,
     "explanation": "Debit Accounts Payable; Credit Inventory.",
@@ -482,9 +482,9 @@ export const ankiMcqs = [
     "q": "How is freight-in treated under the perpetual system?",
     "options": [
       "Added to the cost of inventory.",
-      "Added to the cost of inventory",
       "Recorded as an operating expense",
-      "Deducted from sales revenue"
+      "Deducted from sales revenue",
+      "A service business provides services, while a merchandising business buys and resells goods."
     ],
     "answer": 0,
     "explanation": "Added to the cost of inventory.",
@@ -529,8 +529,8 @@ export const ankiMcqs = [
     "options": [
       "No.",
       "Yes",
-      "No",
-      "Only for periodic systems"
+      "Only for periodic systems",
+      "A service business provides services, while a merchandising business buys and resells goods."
     ],
     "answer": 0,
     "explanation": "No.",
@@ -697,8 +697,8 @@ export const ankiMcqs = [
     "options": [
       "No.",
       "Yes",
-      "No",
-      "Only for periodic systems"
+      "Only for periodic systems",
+      "A service business provides services, while a merchandising business buys and resells goods."
     ],
     "answer": 0,
     "explanation": "No.",
@@ -776,7 +776,7 @@ export const ankiMcqs = [
       "Debit Cash; Credit Sales Revenue.",
       "Debit Inventory; Credit Accounts Payable",
       "Debit Accounts Payable; Credit Inventory",
-      "Debit Cash; Credit Sales Revenue"
+      "A service business provides services, while a merchandising business buys and resells goods."
     ],
     "answer": 0,
     "explanation": "Debit Cash; Credit Sales Revenue.",
@@ -1196,9 +1196,9 @@ export const ankiMcqs = [
     "q": "State the formula for gross profit rate.",
     "options": [
       "Gross Profit ÷ Net Sales × 100.",
-      "Gross Profit ÷ Net Sales × 100",
       "Operating Expenses ÷ Net Sales × 100",
-      "Net Sales ÷ Cost of Sales × 100"
+      "Net Sales ÷ Cost of Sales × 100",
+      "A service business provides services, while a merchandising business buys and resells goods."
     ],
     "answer": 0,
     "explanation": "Gross Profit ÷ Net Sales × 100.",
@@ -1244,8 +1244,8 @@ export const ankiMcqs = [
     "options": [
       "Operating Expenses ÷ Net Sales × 100.",
       "Gross Profit ÷ Net Sales × 100",
-      "Operating Expenses ÷ Net Sales × 100",
-      "Net Sales ÷ Cost of Sales × 100"
+      "Net Sales ÷ Cost of Sales × 100",
+      "A service business provides services, while a merchandising business buys and resells goods."
     ],
     "answer": 0,
     "explanation": "Operating Expenses ÷ Net Sales × 100.",
@@ -1289,8 +1289,8 @@ export const ankiMcqs = [
     "options": [
       "10%.",
       "5%",
-      "10%",
-      "12%"
+      "12%",
+      "A service business provides services, while a merchandising business buys and resells goods."
     ],
     "answer": 0,
     "explanation": "10%.",
@@ -1349,8 +1349,8 @@ export const ankiMcqs = [
     "options": [
       "A liability.",
       "An asset",
-      "A liability",
-      "Revenue"
+      "Revenue",
+      "A service business provides services, while a merchandising business buys and resells goods."
     ],
     "answer": 0,
     "explanation": "A liability.",
@@ -1363,9 +1363,9 @@ export const ankiMcqs = [
     "q": "GST paid to suppliers is recorded as what?",
     "options": [
       "An asset.",
-      "An asset",
       "A liability",
-      "Revenue"
+      "Revenue",
+      "A service business provides services, while a merchandising business buys and resells goods."
     ],
     "answer": 0,
     "explanation": "An asset.",

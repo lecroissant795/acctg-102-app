@@ -548,9 +548,9 @@ export const ankiMcqs = [
     "q": "In a bank reconciliation, how are outstanding deposits treated?",
     "options": [
       "Added to the bank statement balance.",
-      "Added to the bank statement balance",
       "Subtracted from the bank statement balance",
-      "Added to the cash book balance"
+      "Added to the cash book balance",
+      "Because it is readily convertible into any other asset and can be used immediately to settle obligations."
     ],
     "answer": 0,
     "explanation": "Added to the bank statement balance.",
@@ -564,8 +564,8 @@ export const ankiMcqs = [
     "options": [
       "Subtracted from the bank statement balance.",
       "Added to the bank statement balance",
-      "Subtracted from the bank statement balance",
-      "Added to the cash book balance"
+      "Added to the cash book balance",
+      "Because it is readily convertible into any other asset and can be used immediately to settle obligations."
     ],
     "answer": 0,
     "explanation": "Subtracted from the bank statement balance.",
@@ -638,9 +638,9 @@ export const ankiMcqs = [
     "q": "What journal entry records bank charges?",
     "options": [
       "Dr Bank Charges Expense / Cr Cash at Bank.",
-      "Dr Bank Charges Expense / Cr Cash at Bank",
       "Dr Accounts Receivable / Cr Cash at Bank",
-      "Dr Bad Debts Expense / Cr Accounts Receivable"
+      "Dr Bad Debts Expense / Cr Accounts Receivable",
+      "Because it is readily convertible into any other asset and can be used immediately to settle obligations."
     ],
     "answer": 0,
     "explanation": "Dr Bank Charges Expense / Cr Cash at Bank.",
@@ -655,8 +655,8 @@ export const ankiMcqs = [
     "options": [
       "Dr Accounts Receivable / Cr Cash at Bank.",
       "Dr Bank Charges Expense / Cr Cash at Bank",
-      "Dr Accounts Receivable / Cr Cash at Bank",
-      "Dr Bad Debts Expense / Cr Accounts Receivable"
+      "Dr Bad Debts Expense / Cr Accounts Receivable",
+      "Because it is readily convertible into any other asset and can be used immediately to settle obligations."
     ],
     "answer": 0,
     "explanation": "Dr Accounts Receivable / Cr Cash at Bank.",
@@ -865,9 +865,9 @@ export const ankiMcqs = [
     "q": "What is the formula for cash to daily cash expenses ratio?",
     "options": [
       "Cash ÷ Average Daily Cash Expenses.",
-      "Cash ÷ Average Daily Cash Expenses",
       "Allowance for Doubtful Debts ÷ Accounts Receivable",
-      "Net Credit Sales ÷ Average Net Receivables"
+      "Net Credit Sales ÷ Average Net Receivables",
+      "Because it is readily convertible into any other asset and can be used immediately to settle obligations."
     ],
     "answer": 0,
     "explanation": "Cash ÷ Average Daily Cash Expenses.",
@@ -989,7 +989,7 @@ export const ankiMcqs = [
       "Dr Bad Debts Expense / Cr Accounts Receivable.",
       "Dr Bank Charges Expense / Cr Cash at Bank",
       "Dr Accounts Receivable / Cr Cash at Bank",
-      "Dr Bad Debts Expense / Cr Accounts Receivable"
+      "Because it is readily convertible into any other asset and can be used immediately to settle obligations."
     ],
     "answer": 0,
     "explanation": "Dr Bad Debts Expense / Cr Accounts Receivable.",
@@ -1345,8 +1345,8 @@ export const ankiMcqs = [
     "options": [
       "Allowance for Doubtful Debts ÷ Accounts Receivable.",
       "Cash ÷ Average Daily Cash Expenses",
-      "Allowance for Doubtful Debts ÷ Accounts Receivable",
-      "Net Credit Sales ÷ Average Net Receivables"
+      "Net Credit Sales ÷ Average Net Receivables",
+      "Because it is readily convertible into any other asset and can be used immediately to settle obligations."
     ],
     "answer": 0,
     "explanation": "Allowance for Doubtful Debts ÷ Accounts Receivable.",
@@ -1377,7 +1377,7 @@ export const ankiMcqs = [
       "Net Credit Sales ÷ Average Net Receivables.",
       "Cash ÷ Average Daily Cash Expenses",
       "Allowance for Doubtful Debts ÷ Accounts Receivable",
-      "Net Credit Sales ÷ Average Net Receivables"
+      "Because it is readily convertible into any other asset and can be used immediately to settle obligations."
     ],
     "answer": 0,
     "explanation": "Net Credit Sales ÷ Average Net Receivables.",
@@ -1675,9 +1675,9 @@ export const ankiMcqs = [
     "q": "Formula: Cash to daily cash expenses ratio.",
     "options": [
       "Cash ÷ Average Daily Cash Expenses.",
-      "Cash ÷ Average Daily Cash Expenses",
       "Allowance for Doubtful Debts ÷ Accounts Receivable",
-      "Net Credit Sales ÷ Average Net Receivables"
+      "Net Credit Sales ÷ Average Net Receivables",
+      "Because it is readily convertible into any other asset and can be used immediately to settle obligations."
     ],
     "answer": 0,
     "explanation": "Cash ÷ Average Daily Cash Expenses.",
@@ -1691,8 +1691,8 @@ export const ankiMcqs = [
     "options": [
       "Allowance for Doubtful Debts ÷ Accounts Receivable.",
       "Cash ÷ Average Daily Cash Expenses",
-      "Allowance for Doubtful Debts ÷ Accounts Receivable",
-      "Net Credit Sales ÷ Average Net Receivables"
+      "Net Credit Sales ÷ Average Net Receivables",
+      "Because it is readily convertible into any other asset and can be used immediately to settle obligations."
     ],
     "answer": 0,
     "explanation": "Allowance for Doubtful Debts ÷ Accounts Receivable.",
@@ -1708,7 +1708,7 @@ export const ankiMcqs = [
       "Net Credit Sales ÷ Average Net Receivables.",
       "Cash ÷ Average Daily Cash Expenses",
       "Allowance for Doubtful Debts ÷ Accounts Receivable",
-      "Net Credit Sales ÷ Average Net Receivables"
+      "Because it is readily convertible into any other asset and can be used immediately to settle obligations."
     ],
     "answer": 0,
     "explanation": "Net Credit Sales ÷ Average Net Receivables.",

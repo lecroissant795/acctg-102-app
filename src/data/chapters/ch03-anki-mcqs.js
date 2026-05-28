@@ -307,9 +307,9 @@ export const ankiMcqs = [
     "q": "What is step 1 of the IFRS 15 five-step model?",
     "options": [
       "Identify the contract with the customer.",
-      "Identify the contract with the customer",
       "Identify the performance obligations in the contract",
-      "Determine the transaction price"
+      "Determine the transaction price",
+      "Timing: recognising revenues and expenses in the correct accounting period, regardless of when cash is received or paid."
     ],
     "answer": 0,
     "explanation": "Identify the contract with the customer.",
@@ -323,8 +323,8 @@ export const ankiMcqs = [
     "options": [
       "Identify the performance obligations in the contract.",
       "Identify the contract with the customer",
-      "Identify the performance obligations in the contract",
-      "Determine the transaction price"
+      "Determine the transaction price",
+      "Timing: recognising revenues and expenses in the correct accounting period, regardless of when cash is received or paid."
     ],
     "answer": 0,
     "explanation": "Identify the performance obligations in the contract.",
@@ -339,7 +339,7 @@ export const ankiMcqs = [
       "Determine the transaction price.",
       "Identify the contract with the customer",
       "Identify the performance obligations in the contract",
-      "Determine the transaction price"
+      "Timing: recognising revenues and expenses in the correct accounting period, regardless of when cash is received or paid."
     ],
     "answer": 0,
     "explanation": "Determine the transaction price.",
@@ -622,9 +622,9 @@ export const ankiMcqs = [
     "q": "What is the adjusting entry for a prepaid expense as it is used?",
     "options": [
       "Debit Expense; Credit Asset.",
-      "Debit Expense; Credit Asset",
       "Debit Depreciation Expense; Credit Accumulated Depreciation",
-      "Debit Liability; Credit Revenue"
+      "Debit Liability; Credit Revenue",
+      "Timing: recognising revenues and expenses in the correct accounting period, regardless of when cash is received or paid."
     ],
     "answer": 0,
     "explanation": "Debit Expense; Credit Asset.",
@@ -716,8 +716,8 @@ export const ankiMcqs = [
     "options": [
       "Debit Depreciation Expense; Credit Accumulated Depreciation.",
       "Debit Expense; Credit Asset",
-      "Debit Depreciation Expense; Credit Accumulated Depreciation",
-      "Debit Liability; Credit Revenue"
+      "Debit Liability; Credit Revenue",
+      "Timing: recognising revenues and expenses in the correct accounting period, regardless of when cash is received or paid."
     ],
     "answer": 0,
     "explanation": "Debit Depreciation Expense; Credit Accumulated Depreciation.",
@@ -965,9 +965,9 @@ export const ankiMcqs = [
     "q": "What is the debit/credit pattern for prepaid expenses?",
     "options": [
       "Debit Expense; Credit Asset.",
-      "Debit Expense; Credit Asset",
       "Debit Depreciation Expense; Credit Accumulated Depreciation",
-      "Debit Liability; Credit Revenue"
+      "Debit Liability; Credit Revenue",
+      "Timing: recognising revenues and expenses in the correct accounting period, regardless of when cash is received or paid."
     ],
     "answer": 0,
     "explanation": "Debit Expense; Credit Asset.",
@@ -982,8 +982,8 @@ export const ankiMcqs = [
     "options": [
       "Debit Depreciation Expense; Credit Accumulated Depreciation.",
       "Debit Expense; Credit Asset",
-      "Debit Depreciation Expense; Credit Accumulated Depreciation",
-      "Debit Liability; Credit Revenue"
+      "Debit Liability; Credit Revenue",
+      "Timing: recognising revenues and expenses in the correct accounting period, regardless of when cash is received or paid."
     ],
     "answer": 0,
     "explanation": "Debit Depreciation Expense; Credit Accumulated Depreciation.",
@@ -999,7 +999,7 @@ export const ankiMcqs = [
       "Debit Liability; Credit Revenue.",
       "Debit Expense; Credit Asset",
       "Debit Depreciation Expense; Credit Accumulated Depreciation",
-      "Debit Liability; Credit Revenue"
+      "Timing: recognising revenues and expenses in the correct accounting period, regardless of when cash is received or paid."
     ],
     "answer": 0,
     "explanation": "Debit Liability; Credit Revenue.",
@@ -1045,9 +1045,9 @@ export const ankiMcqs = [
     "q": "Which adjusting entry type starts with cash already paid?",
     "options": [
       "Prepaid expenses.",
-      "Prepaid expenses",
       "Revenue received in advance",
-      "Accrued revenues"
+      "Accrued revenues",
+      "Timing: recognising revenues and expenses in the correct accounting period, regardless of when cash is received or paid."
     ],
     "answer": 0,
     "explanation": "Prepaid expenses.",
@@ -1061,8 +1061,8 @@ export const ankiMcqs = [
     "options": [
       "Revenue received in advance.",
       "Prepaid expenses",
-      "Revenue received in advance",
-      "Accrued revenues"
+      "Accrued revenues",
+      "Timing: recognising revenues and expenses in the correct accounting period, regardless of when cash is received or paid."
     ],
     "answer": 0,
     "explanation": "Revenue received in advance.",
@@ -1150,9 +1150,9 @@ export const ankiMcqs = [
     "q": "Which statement uses revenue and expense accounts?",
     "options": [
       "Statement of Profit or Loss.",
-      "Statement of Profit or Loss",
       "Statement of Financial Position",
-      "Statement of Cash Flows"
+      "Statement of Cash Flows",
+      "Timing: recognising revenues and expenses in the correct accounting period, regardless of when cash is received or paid."
     ],
     "answer": 0,
     "explanation": "Statement of Profit or Loss.",
@@ -1167,8 +1167,8 @@ export const ankiMcqs = [
     "options": [
       "Statement of Financial Position.",
       "Statement of Profit or Loss",
-      "Statement of Financial Position",
-      "Statement of Cash Flows"
+      "Statement of Cash Flows",
+      "Timing: recognising revenues and expenses in the correct accounting period, regardless of when cash is received or paid."
     ],
     "answer": 0,
     "explanation": "Statement of Financial Position.",
@@ -1258,9 +1258,9 @@ export const ankiMcqs = [
     "q": "What is the entry to close revenue accounts?",
     "options": [
       "Debit Revenue; Credit Income Summary.",
-      "Debit Revenue; Credit Income Summary",
       "Debit Income Summary; Credit Expenses",
-      "Debit Income Summary; Credit Retained Earnings"
+      "Debit Income Summary; Credit Retained Earnings",
+      "Timing: recognising revenues and expenses in the correct accounting period, regardless of when cash is received or paid."
     ],
     "answer": 0,
     "explanation": "Debit Revenue; Credit Income Summary.",
@@ -1290,8 +1290,8 @@ export const ankiMcqs = [
     "options": [
       "Debit Income Summary; Credit Expenses.",
       "Debit Revenue; Credit Income Summary",
-      "Debit Income Summary; Credit Expenses",
-      "Debit Income Summary; Credit Retained Earnings"
+      "Debit Income Summary; Credit Retained Earnings",
+      "Timing: recognising revenues and expenses in the correct accounting period, regardless of when cash is received or paid."
     ],
     "answer": 0,
     "explanation": "Debit Income Summary; Credit Expenses.",
@@ -1307,7 +1307,7 @@ export const ankiMcqs = [
       "Debit Income Summary; Credit Retained Earnings.",
       "Debit Revenue; Credit Income Summary",
       "Debit Income Summary; Credit Expenses",
-      "Debit Income Summary; Credit Retained Earnings"
+      "Timing: recognising revenues and expenses in the correct accounting period, regardless of when cash is received or paid."
     ],
     "answer": 0,
     "explanation": "Debit Income Summary; Credit Retained Earnings.",
@@ -1442,9 +1442,9 @@ export const ankiMcqs = [
     "q": "What is step 1 of the accounting cycle?",
     "options": [
       "Analyse transactions.",
-      "Analyse transactions",
       "Journalise transactions in the general journal",
-      "Post to the general ledger"
+      "Post to the general ledger",
+      "Timing: recognising revenues and expenses in the correct accounting period, regardless of when cash is received or paid."
     ],
     "answer": 0,
     "explanation": "Analyse transactions.",
@@ -1458,8 +1458,8 @@ export const ankiMcqs = [
     "options": [
       "Journalise transactions in the general journal.",
       "Analyse transactions",
-      "Journalise transactions in the general journal",
-      "Post to the general ledger"
+      "Post to the general ledger",
+      "Timing: recognising revenues and expenses in the correct accounting period, regardless of when cash is received or paid."
     ],
     "answer": 0,
     "explanation": "Journalise transactions in the general journal.",
@@ -1474,7 +1474,7 @@ export const ankiMcqs = [
       "Post to the general ledger.",
       "Analyse transactions",
       "Journalise transactions in the general journal",
-      "Post to the general ledger"
+      "Timing: recognising revenues and expenses in the correct accounting period, regardless of when cash is received or paid."
     ],
     "answer": 0,
     "explanation": "Post to the general ledger.",
@@ -1683,8 +1683,8 @@ export const ankiMcqs = [
     "options": [
       "Revenue received in advance.",
       "Prepaid expenses",
-      "Revenue received in advance",
-      "Accrued revenues"
+      "Accrued revenues",
+      "Timing: recognising revenues and expenses in the correct accounting period, regardless of when cash is received or paid."
     ],
     "answer": 0,
     "explanation": "Revenue received in advance.",
@@ -1789,9 +1789,9 @@ export const ankiMcqs = [
     "q": "What happens if expired prepaid expenses are not adjusted?",
     "options": [
       "Expenses will be understated, assets overstated, and profit overstated.",
-      "Expenses will be understated, assets overstated, and profit overstated",
       "Revenue will be understated, liabilities overstated, and profit understated",
-      "Assets and liabilities will both be understated"
+      "Assets and liabilities will both be understated",
+      "Timing: recognising revenues and expenses in the correct accounting period, regardless of when cash is received or paid."
     ],
     "answer": 0,
     "explanation": "Expenses will be understated, assets overstated, and profit overstated.",
