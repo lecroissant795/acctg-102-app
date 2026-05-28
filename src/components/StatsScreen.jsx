@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { ContributionGraph } from "./ContributionGraph.jsx";
+import { StatsCharts } from "./StatsCharts.jsx";
 import { useAuth } from "../contexts/AuthContext.jsx";
 import { useStats } from "../contexts/StatsContext.jsx";
 import { formatDateTime, formatDuration } from "../utils/stats.js";
@@ -13,7 +14,9 @@ import {
 import { theme, backButtonStyle, pageTitleStyle, sectionLabelStyle } from "../styles/theme.js";
 
 function formatScore(value) {
-  return Number.isInteger(value) ? String(value) : value.toFixed(2);
+  const n = Number(value ?? 0);
+  if (!Number.isFinite(n)) return "0";
+  return Number.isInteger(n) ? String(n) : n.toFixed(2);
 }
 
 function SummaryCard({ label, value, color = theme.colors.text }) {
@@ -241,6 +244,8 @@ export function StatsScreen({ onBack }) {
             <SummaryCard label="Accuracy" value={`${summary.accuracy}%`} />
           </div>
 
+          <StatsCharts summary={summary} />
+
           <ContributionGraph sessions={summary.sessions} />
 
           {summary.weakQuestions.length > 0 && (
@@ -277,7 +282,7 @@ export function StatsScreen({ onBack }) {
                       {entry.incorrect} wrong
                     </div>
                     <div style={{ color: theme.colors.textSecondary, fontSize: 11, marginTop: 2 }}>
-                      {formatScore(entry.scoreAwarded)}/{formatScore(entry.maxScoreAwarded)} points
+                      {formatScore(entry.scoreAwarded ?? 0)}/{formatScore(entry.maxScoreAwarded ?? 0)} points
                     </div>
                   </div>
                 </div>
