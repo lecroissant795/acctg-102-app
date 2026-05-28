@@ -42,13 +42,6 @@ export const topics = CHAPTERS
 
 export const PRACTICE_GROUPS = [
   {
-    type: QUESTION_TYPES.WRITTEN,
-    label: "Written Practice",
-    accent: "rgba(144, 101, 176, 0.08)",
-    border: "rgba(144, 101, 176, 0.2)",
-    textColor: "#9065b0",
-  },
-  {
     type: QUESTION_TYPES.NUMERIC_INPUT,
     label: "Numeric Input",
     accent: "rgba(35, 131, 226, 0.08)",
@@ -98,7 +91,10 @@ export const totalQuestionCount = topics.reduce(
   0
 );
 
-export const totalWrittenQuestionCount = PRACTICE_QUESTIONS["Written Practice"]?.length ?? 0;
+export const totalWrittenQuestionCount = WRITTEN_CHAPTERS.reduce(
+  (sum, chapter) => sum + chapter.questions.length,
+  0
+);
 
 export const totalPracticeQuestionCount = practiceGroups.reduce(
   (sum, group) => sum + PRACTICE_QUESTIONS[group.label].length,

@@ -41,11 +41,7 @@ describe("parseRoute", () => {
       topic,
     });
 
-    expect(parseRoute("/quiz/practice/written-practice")).toMatchObject({
-      name: "quiz-practice",
-      slug: "written-practice",
-      label: "Written Practice",
-    });
+    expect(parseRoute("/quiz/practice/written-practice")).toEqual({ name: "not-found" });
   });
 
   test("returns not-found for unknown paths", () => {
