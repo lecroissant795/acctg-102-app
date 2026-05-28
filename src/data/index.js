@@ -10,8 +10,25 @@ import * as ch08 from "./chapters/ch08-non-current-assets.js";
 import * as ch09 from "./chapters/ch09-liabilities.js";
 import * as ch10 from "./chapters/ch10-equity.js";
 import * as chJournalPack from "./chapters/ch-practice-journal-entries.js";
+import * as chNumericPack from "./chapters/ch-practice-numeric-input.js";
+import * as chTablePack from "./chapters/ch-practice-table-classification.js";
+import * as chCasePack from "./chapters/ch-practice-case-sets.js";
 
-export const CHAPTERS = [ch01, ch02, ch03, ch04, ch05, ch07, ch08, ch09, ch10, chJournalPack];
+export const CHAPTERS = [
+  ch01,
+  ch02,
+  ch03,
+  ch04,
+  ch05,
+  ch07,
+  ch08,
+  ch09,
+  ch10,
+  chJournalPack,
+  chNumericPack,
+  chTablePack,
+  chCasePack,
+];
 export const WRITTEN_CHAPTERS = [ch01Written];
 export const ALL_CATEGORIES = [...CHAPTERS, ...WRITTEN_CHAPTERS];
 

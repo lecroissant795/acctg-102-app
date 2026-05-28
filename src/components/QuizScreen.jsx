@@ -18,6 +18,46 @@ function getStoredResponse(currentAnswer) {
   return currentAnswer.evaluation?.responseSummary ?? currentAnswer.response ?? null;
 }
 
+const NON_MCQ_TYPES = new Set([
+  QUESTION_TYPES.MATCHING,
+  QUESTION_TYPES.ORDERING,
+  QUESTION_TYPES.SELECT_MULTIPLE,
+  QUESTION_TYPES.NUMERIC_INPUT,
+  QUESTION_TYPES.JOURNAL_ENTRY,
+  QUESTION_TYPES.TABLE_CLASSIFICATION,
+  QUESTION_TYPES.CASE_SET,
+  QUESTION_TYPES.WRITTEN,
+]);
+
+function prefersDesktopKeyboard() {
+  return typeof window !== "undefined" && window.matchMedia("(pointer: fine)").matches;
+}
+
+function isEditableElement(element) {
+  if (!(element instanceof HTMLElement)) return false;
+  const tagName = element.tagName;
+  if (tagName === "INPUT" || tagName === "TEXTAREA" || tagName === "SELECT") return true;
+  return element.isContentEditable;
+}
+
+function isModalOpen() {
+  return Boolean(document.querySelector('[role="dialog"][aria-modal="true"]'));
+}
+
+function isMcqQuestion(question) {
+  if (question.type === QUESTION_TYPES.MCQ) return true;
+  if (question.type && NON_MCQ_TYPES.has(question.type)) return false;
+  return Array.isArray(question.options) && question.options.length > 0;
+}
+
+function getMcqOptionIndexFromEvent(event) {
+  if (event.key >= "1" && event.key <= "4") {
+    return Number(event.key) - 1;
+  }
+  const codeMatch = event.code.match(/^(?:Numpad|Digit)([1-4])$/);
+  return codeMatch ? Number(codeMatch[1]) - 1 : null;
+}
+
 function AnswerResultBanner({ correct }) {
   return (
     <div
@@ -966,6 +1006,45 @@ export function QuizScreen({
   const accentColor = mode === "mini" ? theme.colors.warning : theme.colors.accent;
   const isLastQuestion = questionIndex + 1 >= questions.length;
   const headerLabel = currentQuestion.type === QUESTION_TYPES.WRITTEN ? "Completed" : "Points";
+
+  useEffect(() => {
+    if (!prefersDesktopKeyboard()) return undefined;
+
+    const handleKeyDown = (event) => {
+      if (event.repeat || isEditableElement(event.target) || isModalOpen()) return;
+
+      if (isMcqQuestion(currentQuestion) && !currentAnswer) {
+        const optionIndex = getMcqOptionIndexFromEvent(event);
+        const optionCount = (currentQuestion.displayOptions ?? currentQuestion.options ?? []).length;
+        if (optionIndex != null && optionIndex < optionCount) {
+          event.preventDefault();
+          onSubmitAnswer({ selectedIndex: optionIndex });
+          return;
+        }
+      }
+
+      if (event.key === "ArrowLeft" && questionIndex > 0) {
+        event.preventDefault();
+        onPrevious();
+        return;
+      }
+
+      if (event.key === "ArrowRight" || event.key === " ") {
+        event.preventDefault();
+        onNext();
+      }
+    };
+
+    window.addEventListener("keydown", handleKeyDown);
+    return () => window.removeEventListener("keydown", handleKeyDown);
+  }, [
+    currentQuestion,
+    currentAnswer,
+    questionIndex,
+    onSubmitAnswer,
+    onNext,
+    onPrevious,
+  ]);
 
   return (
     <Page padding="32px 24px 64px" centered>

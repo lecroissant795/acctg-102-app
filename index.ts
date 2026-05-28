@@ -1,5 +1,6 @@
 // Bun auto-loads .env — set OPENAI_API_KEY for AI quiz planning.
 import index from "./index.html";
+import { getServerEnvStatus, logServerEnvWarnings } from "./src/server/env.ts";
 import { createQuizPlan, type QuizPlanRequest } from "./src/server/quizPlanner.ts";
 import {
   buildFallbackPracticeQuiz,
@@ -22,10 +23,7 @@ const server = Bun.serve({
     "/quiz/*": index,
     "/api/config": {
       GET() {
-        const supabaseUrl = process.env.SUPABASE_URL ?? "";
-        const supabaseAnonKey = process.env.SUPABASE_ANON_KEY ?? "";
-
-        return Response.json({ supabaseUrl, supabaseAnonKey });
+        return Response.json(getServerEnvStatus());
       },
     },
     "/api/quiz-plan": {
@@ -80,4 +78,5 @@ const server = Bun.serve({
   },
 });
 
+logServerEnvWarnings();
 console.log(`ACCTG 102 Exam Prep running at http://localhost:${server.port}`);
