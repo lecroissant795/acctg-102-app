@@ -20,7 +20,6 @@ import {
 import {
   buildMcqQuizQuestions,
   buildPracticeQuestionPool,
-  buildPracticePlanNotice,
   getPracticeLoadingMessage,
   resolvePracticeQuiz,
 } from "./utils/quizPlan.js";
@@ -56,11 +55,7 @@ export default function App() {
   const [quizStartedAt, setQuizStartedAt] = useState(null);
   const [planLoading, setPlanLoading] = useState(false);
   const [planLoadingLabel, setPlanLoadingLabel] = useState(null);
-  const [planRationale, setPlanRationale] = useState(null);
-  const [planUsedFallback, setPlanUsedFallback] = useState(false);
-  const [planFallbackReason, setPlanFallbackReason] = useState(null);
   const [planError, setPlanError] = useState(null);
-  const [showPlanRationale, setShowPlanRationale] = useState(true);
   const [tutorUses, setTutorUses] = useState(() => createTutorUseState());
   const savedSessionRef = useRef(false);
   const activeQuizPathRef = useRef(null);
@@ -72,7 +67,6 @@ export default function App() {
     setScore(0);
     setAnswers([]);
     setQuizStartedAt(Date.now());
-    setShowPlanRationale(true);
     setTutorUses(createTutorUseState());
     savedSessionRef.current = false;
   };
@@ -103,7 +97,6 @@ export default function App() {
     setSelectedPracticeLabel(null);
 
     setQuestions(nextQuestions);
-    setPlanRationale(null);
     setMode(nextMode);
     if (size !== null) setMiniSize(size);
     resetQuizState();
@@ -122,24 +115,18 @@ export default function App() {
     setPlanLoadingLabel(label);
     setPlanLoading(true);
     setPlanError(null);
-    setPlanFallbackReason(null);
-
     try {
       const quizPath = practicePath(label);
       const { pool, payload, questionType } = buildPracticeQuestionPool(label);
-      const {
-        questions: practiceQuestions,
-        rationale,
-        usedFallback,
-        errorMessage,
-      } = await resolvePracticeQuiz(payload, pool, questionType);
+      const { questions: practiceQuestions } = await resolvePracticeQuiz(
+        payload,
+        pool,
+        questionType
+      );
 
       setSelectedTopicIndex(null);
       setSelectedPracticeLabel(label);
       setQuestions(practiceQuestions);
-      setPlanRationale(rationale);
-      setPlanUsedFallback(usedFallback);
-      setPlanFallbackReason(errorMessage ?? null);
       setMode("practice");
       resetQuizState();
       activeQuizPathRef.current = quizPath;
@@ -193,15 +180,29 @@ export default function App() {
     ]);
   };
 
+  const restoreAnswerForIndex = (index) => {
+    const stored = answers.find((entry) => entry.questionIndex === index) ?? null;
+    setCurrentAnswer(stored);
+    setShowExplanation(Boolean(stored));
+  };
+
   const handleNext = () => {
     if (questionIndex + 1 >= questions.length) {
       navigate(resultsPathForRoute(route));
       return;
     }
 
-    setQuestionIndex((current) => current + 1);
-    setCurrentAnswer(null);
-    setShowExplanation(false);
+    const nextIndex = questionIndex + 1;
+    setQuestionIndex(nextIndex);
+    restoreAnswerForIndex(nextIndex);
+  };
+
+  const handlePrevious = () => {
+    if (questionIndex <= 0) return;
+
+    const prevIndex = questionIndex - 1;
+    setQuestionIndex(prevIndex);
+    restoreAnswerForIndex(prevIndex);
   };
 
   const handleRetry = () => {
@@ -357,10 +358,7 @@ export default function App() {
   } else if (route.name === "stats") {
     screen = <StatsScreen onBack={() => navigate(ROUTES.home)} />;
   } else if (isQuizStartRoute(route) && !questions[questionIndex]) {
-    const loadingMessage =
-      planLoading && planLoadingLabel
-        ? getPracticeLoadingMessage(planLoadingLabel, PRACTICE_QUESTIONS[planLoadingLabel]?.length)
-        : null;
+    const isPracticeLoading = planLoading && planLoadingLabel;
 
     screen = (
       <div
@@ -376,12 +374,10 @@ export default function App() {
       >
         <div style={{ maxWidth: 420, textAlign: "center" }}>
           <div style={{ fontSize: 18, fontWeight: 600, color: "var(--color-text)", marginBottom: 8 }}>
-            {planLoading && planLoadingLabel
-              ? `Preparing ${planLoadingLabel}...`
-              : "Loading quiz..."}
+            {isPracticeLoading ? `Preparing ${planLoadingLabel}...` : "Loading quiz..."}
           </div>
-          {loadingMessage && (
-            <div style={{ fontSize: 14, lineHeight: 1.6 }}>{loadingMessage}</div>
+          {isPracticeLoading && (
+            <div style={{ fontSize: 14, lineHeight: 1.6 }}>{getPracticeLoadingMessage()}</div>
           )}
         </div>
       </div>
@@ -397,20 +393,10 @@ export default function App() {
         currentAnswer={currentAnswer}
         showExplanation={showExplanation}
         score={score}
-        planNotice={
-          showPlanRationale && mode === "practice" && selectedPracticeLabel
-            ? buildPracticePlanNotice({
-                usedFallback: planUsedFallback,
-                rationale: planRationale,
-                label: selectedPracticeLabel,
-                errorMessage: planFallbackReason,
-              })
-            : null
-        }
-        onDismissPlanNotice={() => setShowPlanRationale(false)}
         onBack={() => navigate(ROUTES.home)}
         onSubmitAnswer={handleSubmitAnswer}
         onNext={handleNext}
+        onPrevious={handlePrevious}
         tutorUses={tutorUses}
         onConsumeTutorUse={handleConsumeTutorUse}
       />

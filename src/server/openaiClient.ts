@@ -5,12 +5,24 @@ type ChatMessage = {
 
 type ChatCompletionOptions = {
   temperature?: number;
+  timeoutMs?: number;
+  jsonObject?: boolean;
   jsonSchema?: {
     name: string;
     schema: Record<string, unknown>;
     strict?: boolean;
   };
 };
+
+function parseCompletionEnvelope(rawText: string) {
+  try {
+    return JSON.parse(rawText) as {
+      choices?: Array<{ message?: { content?: string } }>;
+    };
+  } catch {
+    throw new Error(`OpenAI API returned invalid JSON (${rawText.length} bytes)`);
+  }
+}
 
 export async function chatCompletion(
   messages: ChatMessage[],
@@ -30,7 +42,9 @@ export async function chatCompletion(
     messages,
   };
 
-  if (options.jsonSchema) {
+  if (options.jsonObject) {
+    body.response_format = { type: "json_object" };
+  } else if (options.jsonSchema) {
     body.response_format = {
       type: "json_schema",
       json_schema: {
@@ -41,23 +55,37 @@ export async function chatCompletion(
     };
   }
 
-  const response = await fetch(`${baseUrl}/chat/completions`, {
-    method: "POST",
-    headers: {
-      Authorization: `Bearer ${apiKey}`,
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify(body),
-  });
+  const timeoutMs = options.timeoutMs ?? 45_000;
+  const controller = new AbortController();
+  const timeoutId = setTimeout(() => controller.abort(), timeoutMs);
+
+  let response: Response;
+  try {
+    response = await fetch(`${baseUrl}/chat/completions`, {
+      method: "POST",
+      headers: {
+        Authorization: `Bearer ${apiKey}`,
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(body),
+      signal: controller.signal,
+    });
+  } catch (error) {
+    if (error instanceof Error && error.name === "AbortError") {
+      throw new Error(`OpenAI API timed out after ${timeoutMs}ms`);
+    }
+    throw error;
+  } finally {
+    clearTimeout(timeoutId);
+  }
 
   if (!response.ok) {
     const errorBody = await response.text();
     throw new Error(`OpenAI API error (${response.status}): ${errorBody}`);
   }
 
-  const data = (await response.json()) as {
-    choices?: Array<{ message?: { content?: string } }>;
-  };
+  const rawText = await response.text();
+  const data = parseCompletionEnvelope(rawText);
 
   const content = data.choices?.[0]?.message?.content;
   if (!content) throw new Error("OpenAI returned empty content");

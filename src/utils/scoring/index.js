@@ -279,19 +279,21 @@ function evaluateJournalEntry(question, response = {}) {
   const expected = answerLines.map((line) => canonicalizeJournalLine(line, aliasMap));
   const actual = (response.lines ?? []).map((line) => canonicalizeJournalLine(line, aliasMap));
 
-  const expectedAccounts = expected.map((line) => line.account);
-  const actualAccounts = actual.map((line) => line.account);
-
-  const matchedAccountCount = actualAccounts.filter((account) => expectedAccounts.includes(account)).length;
-  const accountScore =
-    expected.length === 0 ? 0 : clamp(matchedAccountCount / expected.length, 0, 1);
-
+  const usedActualIndices = new Set();
+  let accountMatches = 0;
   let sideMatches = 0;
   let amountMatches = 0;
 
   expected.forEach((expectedLine) => {
-    const matchingActual = actual.find((actualLine) => actualLine.account === expectedLine.account);
-    if (!matchingActual) return;
+    const matchingIndex = actual.findIndex(
+      (actualLine, index) =>
+        !usedActualIndices.has(index) && actualLine.account === expectedLine.account
+    );
+    if (matchingIndex === -1) return;
+
+    usedActualIndices.add(matchingIndex);
+    const matchingActual = actual[matchingIndex];
+    accountMatches += 1;
     if (matchingActual.side === expectedLine.side) sideMatches += 1;
     if (
       matchingActual.side === expectedLine.side &&
@@ -302,6 +304,8 @@ function evaluateJournalEntry(question, response = {}) {
       amountMatches += 1;
     }
   });
+
+  const accountScore = expected.length === 0 ? 0 : accountMatches / expected.length;
 
   const sideScore = expected.length === 0 ? 0 : sideMatches / expected.length;
   const amountScore = expected.length === 0 ? 0 : amountMatches / expected.length;
@@ -406,6 +410,87 @@ export function evaluateQuestion(question, response) {
     default:
       throw new Error(`Unsupported question type: ${question.type}`);
   }
+}
+
+export function formatJournalAnswerKeyLine(line) {
+  if (line.side === "debit") {
+    return { account: line.account, debit: String(line.amount), credit: "" };
+  }
+
+  return { account: line.account, debit: "", credit: String(line.amount) };
+}
+
+export function getJournalEntryAnswerKey(question) {
+  return (question.answer?.lines ?? []).map(formatJournalAnswerKeyLine);
+}
+
+/**
+ * Per-row field feedback for journal entry UI after submit.
+ * Status: "correct" | "wrong" | "neutral"
+ */
+export function getJournalEntryRowFeedback(question, responseLines = []) {
+  const answerLines = question.answer?.lines ?? [];
+  const rules = question.answer?.rules ?? {};
+  const aliasMap = buildJournalAliasMap(rules);
+  const expected = answerLines.map((line) => canonicalizeJournalLine(line, aliasMap));
+  const usedExpectedIndices = new Set();
+
+  return responseLines.map((rawLine) => {
+    const canonical = canonicalizeJournalLine(rawLine, aliasMap);
+    const hasDebit = rawLine.debit != null && rawLine.debit !== "";
+    const hasCredit = rawLine.credit != null && rawLine.credit !== "";
+
+    const matchIndex = expected.findIndex(
+      (expectedLine, index) =>
+        !usedExpectedIndices.has(index) && expectedLine.account === canonical.account
+    );
+
+    if (matchIndex === -1) {
+      return {
+        account: "wrong",
+        debit: hasDebit ? "wrong" : "neutral",
+        credit: hasCredit ? "wrong" : "neutral",
+      };
+    }
+
+    usedExpectedIndices.add(matchIndex);
+    const expectedLine = expected[matchIndex];
+
+    let debit = "neutral";
+    let credit = "neutral";
+
+    if (expectedLine.side === "debit") {
+      if (
+        canonical.side === "debit" &&
+        canonical.amount !== null &&
+        compareNumber(canonical.amount, expectedLine.amount, 0.01)
+      ) {
+        debit = "correct";
+        credit = hasCredit ? "wrong" : "neutral";
+      } else if (canonical.side === "debit" || hasDebit) {
+        debit = "wrong";
+        credit = hasCredit ? "wrong" : "neutral";
+      } else {
+        debit = "wrong";
+        credit = hasCredit ? "wrong" : "neutral";
+      }
+    } else if (
+      canonical.side === "credit" &&
+      canonical.amount !== null &&
+      compareNumber(canonical.amount, expectedLine.amount, 0.01)
+    ) {
+      credit = "correct";
+      debit = hasDebit ? "wrong" : "neutral";
+    } else if (canonical.side === "credit" || hasCredit) {
+      credit = "wrong";
+      debit = hasDebit ? "wrong" : "neutral";
+    } else {
+      credit = "wrong";
+      debit = hasDebit ? "wrong" : "neutral";
+    }
+
+    return { account: "correct", debit, credit };
+  });
 }
 
 export function createAnswerRecord(question, response) {

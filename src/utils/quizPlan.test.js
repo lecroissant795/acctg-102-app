@@ -139,10 +139,10 @@ describe("fallbackPracticeQuiz", () => {
 });
 
 describe("practice helpers", () => {
-  test("builds a practice loading message with question count", () => {
-    const message = getPracticeLoadingMessage("Journal Entries", 27);
-    expect(message).toContain("27 questions");
-    expect(message).toContain("30–60 seconds");
+  test("builds a short practice loading message", () => {
+    expect(getPracticeLoadingMessage()).toBe(
+      "This usually takes 10–20 seconds — please keep this tab open."
+    );
   });
 
   test("builds warning notice when AI fallback is used", () => {

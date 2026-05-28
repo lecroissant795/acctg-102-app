@@ -1,5 +1,12 @@
 import { describe, expect, test } from "bun:test";
-import { validatePracticeQuiz, type PracticeQuizRequest } from "./practiceQuizGenerator.ts";
+import {
+  isRetriablePracticeAiError,
+  prioritizePracticeSeeds,
+  selectAiPracticeSeeds,
+  shouldUsePracticeFallback,
+  validatePracticeQuiz,
+  type PracticeQuizRequest,
+} from "./practiceQuizGenerator.ts";
 
 const journalSeed = {
   sourceId: "seed-1",
@@ -20,6 +27,51 @@ const journalSeed = {
     explanation: "Debit receivable for the full amount and split revenue and GST payable.",
   },
 };
+
+describe("selectAiPracticeSeeds", () => {
+  test("limits AI generation to the weakest seeds", () => {
+    const seeds = Array.from({ length: 12 }, (_, index) => ({
+      sourceId: `seed-${index}`,
+      topic: "Ch 2",
+      attempts: index,
+      incorrect: 12 - index,
+      question: journalSeed.question,
+    }));
+
+    const { aiSeeds, remainderSeeds } = selectAiPracticeSeeds(seeds);
+
+    expect(aiSeeds).toHaveLength(6);
+    expect(remainderSeeds).toHaveLength(6);
+    expect(aiSeeds[0]?.sourceId).toBe("seed-0");
+    expect(aiSeeds.at(-1)?.sourceId).toBe("seed-5");
+    expect(remainderSeeds[0]?.sourceId).toBe("seed-6");
+  });
+
+  test("prioritizes higher incorrect counts first", () => {
+    const seeds = [
+      { ...journalSeed, sourceId: "low", incorrect: 0, attempts: 1 },
+      { ...journalSeed, sourceId: "high", incorrect: 5, attempts: 2 },
+    ];
+
+    expect(prioritizePracticeSeeds(seeds).map((seed) => seed.sourceId)).toEqual([
+      "high",
+      "low",
+    ]);
+  });
+});
+
+describe("practice AI error handling", () => {
+  test("treats malformed API JSON as retriable", () => {
+    expect(isRetriablePracticeAiError("Failed to parse JSON")).toBe(true);
+    expect(isRetriablePracticeAiError("OpenAI API returned invalid JSON (1200 bytes)")).toBe(true);
+  });
+
+  test("falls back when practice AI output cannot be parsed", () => {
+    expect(shouldUsePracticeFallback("Failed to parse JSON")).toBe(true);
+    expect(shouldUsePracticeFallback("Invalid practice quiz from LLM: missing sourceId")).toBe(true);
+    expect(shouldUsePracticeFallback("Something else")).toBe(false);
+  });
+});
 
 describe("validatePracticeQuiz", () => {
   const request: PracticeQuizRequest = {

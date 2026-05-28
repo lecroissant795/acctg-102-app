@@ -93,7 +93,8 @@ ${buildHintPrompt(question)}`;
 
 Explain the accounting concept behind this question.
 - Use the provided official explanation as ground truth when available.
-- If the student was wrong, clarify their mistake and why the correct approach works.
+- If the student was wrong, compare their submitted answer to the correct approach line by line.
+- Name what is incorrect in their answer, then explain the correct reasoning.
 - Teach the concept so they can apply it to similar questions.`;
     case "ask":
       return `${base}
@@ -109,6 +110,7 @@ Answer the student's follow-up question in the context of the current quiz quest
 function buildUserPrompt(request: TutorRequest): string {
   const questionForPrompt =
     request.intent === "hint" ? stripAnswers(request.question) : request.question;
+  const isWhyWrong = request.userMessage?.toLowerCase().includes("wrong") ?? false;
 
   const payload = {
     intent: request.intent,
@@ -116,9 +118,41 @@ function buildUserPrompt(request: TutorRequest): string {
     currentAnswer: request.currentAnswer ?? null,
     userMessage: request.userMessage ?? null,
     priorMessages: request.messages ?? [],
+    ...(isWhyWrong ? { task: "Explain why the submitted answer is wrong and how to fix it." } : {}),
   };
 
   return JSON.stringify(payload, null, 2);
+}
+
+export function isRetriableTutorAiError(message: string): boolean {
+  return (
+    message.includes("Failed to parse JSON") ||
+    message.includes("invalid JSON") ||
+    message.includes("OpenAI returned empty content") ||
+    message.includes("bad_response_body") ||
+    message.includes("timed out")
+  );
+}
+
+export function shouldUseTutorFallback(message: string): boolean {
+  return message.includes("OPENAI_API_KEY") || message.includes("OpenAI API") || isRetriableTutorAiError(message);
+}
+
+async function callTutorModel(request: TutorRequest): Promise<string> {
+  const history = (request.messages ?? []).flatMap((entry) => [
+    { role: entry.role, content: entry.content } as const,
+  ]);
+
+  const content = await chatCompletion(
+    [
+      { role: "system", content: buildSystemPrompt(request.intent, request.question) },
+      ...history,
+      { role: "user", content: buildUserPrompt(request) },
+    ],
+    { temperature: request.intent === "hint" ? 0.3 : 0.4, timeoutMs: 60_000 }
+  );
+
+  return content.trim();
 }
 
 export async function createTutorResponse(request: TutorRequest): Promise<TutorResponse> {
@@ -130,20 +164,20 @@ export async function createTutorResponse(request: TutorRequest): Promise<TutorR
     throw new Error("userMessage is required for ask intent");
   }
 
-  const history = (request.messages ?? []).flatMap((entry) => [
-    { role: entry.role, content: entry.content } as const,
-  ]);
+  let lastError: Error | null = null;
 
-  const content = await chatCompletion(
-    [
-      { role: "system", content: buildSystemPrompt(request.intent, request.question) },
-      ...history,
-      { role: "user", content: buildUserPrompt(request) },
-    ],
-    { temperature: request.intent === "hint" ? 0.3 : 0.4 }
-  );
+  for (let attempt = 0; attempt < 2; attempt++) {
+    try {
+      return { message: await callTutorModel(request) };
+    } catch (error) {
+      lastError = error instanceof Error ? error : new Error(String(error));
+      if (!isRetriableTutorAiError(lastError.message)) {
+        throw lastError;
+      }
+    }
+  }
 
-  return { message: content.trim() };
+  throw lastError ?? new Error("Failed to generate tutor response");
 }
 
 export function buildFallbackTutorResponse(request: TutorRequest): TutorResponse {
@@ -169,6 +203,18 @@ export function buildFallbackTutorResponse(request: TutorRequest): TutorResponse
   }
 
   if (request.intent === "explain") {
+    const feedback = String(
+      (request.currentAnswer as { evaluation?: { feedback?: string } } | null)?.evaluation?.feedback ?? ""
+    );
+    const isWhyWrong = request.userMessage?.toLowerCase().includes("wrong") ?? false;
+
+    if (isWhyWrong) {
+      const parts = [feedback, explanation].filter(Boolean);
+      if (parts.length > 0) {
+        return { message: parts.join("\n\n") };
+      }
+    }
+
     return {
       message:
         explanation ||

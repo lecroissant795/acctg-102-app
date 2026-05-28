@@ -4,9 +4,15 @@ import { createQuizPlan, type QuizPlanRequest } from "./src/server/quizPlanner.t
 import {
   buildFallbackPracticeQuiz,
   createPracticeQuiz,
+  shouldUsePracticeFallback,
   type PracticeQuizRequest,
 } from "./src/server/practiceQuizGenerator.ts";
-import { buildFallbackTutorResponse, createTutorResponse, type TutorRequest } from "./src/server/quizTutor.ts";
+import {
+  buildFallbackTutorResponse,
+  createTutorResponse,
+  shouldUseTutorFallback,
+  type TutorRequest,
+} from "./src/server/quizTutor.ts";
 
 const server = Bun.serve({
   routes: {
@@ -44,7 +50,7 @@ const server = Bun.serve({
           return Response.json(quiz);
         } catch (error) {
           const message = error instanceof Error ? error.message : "Failed to create practice quiz";
-          if (message.includes("OPENAI_API_KEY")) {
+          if (shouldUsePracticeFallback(message)) {
             return Response.json(buildFallbackPracticeQuiz(body));
           }
           return Response.json({ error: message }, { status: 400 });
@@ -60,7 +66,7 @@ const server = Bun.serve({
           return Response.json(response);
         } catch (error) {
           const message = error instanceof Error ? error.message : "Failed to create tutor response";
-          if (message.includes("OPENAI_API_KEY")) {
+          if (shouldUseTutorFallback(message)) {
             return Response.json(buildFallbackTutorResponse(body));
           }
           return Response.json({ error: message }, { status: 400 });

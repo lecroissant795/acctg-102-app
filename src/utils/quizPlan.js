@@ -146,11 +146,11 @@ export async function fetchPracticeQuiz(payload) {
   return response.json();
 }
 
-export function getPracticeLoadingMessage(label, seedCount) {
-  const count = seedCount ?? PRACTICE_QUESTIONS[label]?.length ?? 0;
-  const questionLabel = count === 1 ? "question" : "questions";
+export const PRACTICE_LOADING_MESSAGE =
+  "This usually takes 10–20 seconds — please keep this tab open.";
 
-  return `Generating fresh ${label.toLowerCase()} with AI (${count} ${questionLabel}). This usually takes 30–60 seconds — please keep this tab open.`;
+export function getPracticeLoadingMessage() {
+  return PRACTICE_LOADING_MESSAGE;
 }
 
 export function buildPracticePlanNotice({ usedFallback, rationale, label, errorMessage }) {

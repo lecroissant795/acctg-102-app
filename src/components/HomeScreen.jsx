@@ -29,9 +29,18 @@ function Callout({ icon, title, description, children, variant = "default" }) {
       <div style={{ display: "flex", alignItems: "flex-start", gap: 12, marginBottom: children ? 14 : 0 }}>
         {icon && <span style={{ fontSize: 20, lineHeight: 1.3 }}>{icon}</span>}
         <div>
-          <div style={{ fontSize: 14, fontWeight: 600, color: theme.colors.text }}>{title}</div>
+          {title && (
+            <div style={{ fontSize: 14, fontWeight: 600, color: theme.colors.text }}>{title}</div>
+          )}
           {description && (
-            <div style={{ fontSize: 13, color: theme.colors.textSecondary, marginTop: 2, lineHeight: 1.5 }}>
+            <div
+              style={{
+                fontSize: 13,
+                color: theme.colors.textSecondary,
+                marginTop: title ? 2 : 0,
+                lineHeight: 1.5,
+              }}
+            >
               {description}
             </div>
           )}
@@ -245,10 +254,7 @@ export function HomeScreen({
         <Callout
           icon="⏳"
           title={`Preparing ${planLoadingLabel}...`}
-          description={getPracticeLoadingMessage(
-            planLoadingLabel,
-            questions[planLoadingLabel]?.length
-          )}
+          description={getPracticeLoadingMessage()}
           variant="blue"
         />
       )}

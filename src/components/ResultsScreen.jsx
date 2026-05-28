@@ -1,5 +1,5 @@
 import { Page } from "./Page.jsx";
-import { AiTutorPanel } from "./AiTutorPanel.jsx";
+import { AiTutorModal } from "./AiTutorModal.jsx";
 import { theme, sectionLabelStyle } from "../styles/theme.js";
 
 function getGrade(scorePercent) {
@@ -100,7 +100,7 @@ function IncorrectReview({ answers, questions, tutorUses, onConsumeTutorUse }) {
             <p style={{ margin: "6px 0 0", color: theme.colors.textSecondary, fontSize: 12 }}>
               {question.explanation}
             </p>
-            <AiTutorPanel
+            <AiTutorModal
               question={question}
               currentAnswer={entry}
               compact

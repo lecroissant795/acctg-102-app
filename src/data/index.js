@@ -49,32 +49,11 @@ export const PRACTICE_GROUPS = [
     textColor: "#9065b0",
   },
   {
-    type: QUESTION_TYPES.SELECT_MULTIPLE,
-    label: "Select Multiple",
-    accent: "rgba(15, 123, 108, 0.08)",
-    border: "rgba(15, 123, 108, 0.2)",
-    textColor: "#0f7b6c",
-  },
-  {
     type: QUESTION_TYPES.NUMERIC_INPUT,
     label: "Numeric Input",
     accent: "rgba(35, 131, 226, 0.08)",
     border: "rgba(35, 131, 226, 0.2)",
     textColor: "#2383e2",
-  },
-  {
-    type: QUESTION_TYPES.MATCHING,
-    label: "Matching",
-    accent: "rgba(217, 115, 13, 0.08)",
-    border: "rgba(217, 115, 13, 0.2)",
-    textColor: "#d9730d",
-  },
-  {
-    type: QUESTION_TYPES.ORDERING,
-    label: "Ordering",
-    accent: "rgba(212, 76, 71, 0.08)",
-    border: "rgba(212, 76, 71, 0.2)",
-    textColor: "#d44c47",
   },
   {
     type: QUESTION_TYPES.JOURNAL_ENTRY,
@@ -136,3 +115,28 @@ export function getQuestionById(id) {
   }
   return null;
 }
+
+function collectJournalAccountSuggestions() {
+  const accounts = new Set();
+
+  for (const questions of Object.values(QUESTION_BANK)) {
+    for (const question of questions) {
+      if (question.type !== QUESTION_TYPES.JOURNAL_ENTRY) continue;
+
+      for (const line of question.answer?.lines ?? []) {
+        if (line.account) accounts.add(line.account);
+      }
+
+      const aliases = question.answer?.rules?.acceptedAccountAliases ?? {};
+      for (const [canonical, aliasList] of Object.entries(aliases)) {
+        accounts.add(canonical);
+        for (const alias of aliasList) accounts.add(alias);
+      }
+    }
+  }
+
+  return [...accounts].sort((a, b) => a.localeCompare(b));
+}
+
+/** Account name suggestions for journal entry practice (from all journal questions in the app). */
+export const JOURNAL_ACCOUNT_SUGGESTIONS = collectJournalAccountSuggestions();

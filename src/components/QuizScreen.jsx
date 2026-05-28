@@ -4,7 +4,14 @@ import { ProgressBar } from "./ProgressBar.jsx";
 import { QUESTION_TYPES } from "../data/schema/questionTypes.js";
 import { theme, backButtonStyle, cardStyle, inputStyle } from "../styles/theme.js";
 import { getDisplayOptionIndex } from "../utils/shuffle.js";
-import { AiTutorPanel } from "./AiTutorPanel.jsx";
+import { JOURNAL_ACCOUNT_SUGGESTIONS } from "../data/index.js";
+import {
+  getJournalEntryAnswerKey,
+  getJournalEntryRowFeedback,
+} from "../utils/scoring/index.js";
+
+const JOURNAL_ACCOUNT_LIST_ID = "journal-account-suggestions";
+import { AiTutorModal } from "./AiTutorModal.jsx";
 
 function getStoredResponse(currentAnswer) {
   if (!currentAnswer) return null;
@@ -123,7 +130,7 @@ function cardStyles() {
   return { ...cardStyle, marginBottom: 16 };
 }
 
-function ActionButton({ children, disabled = false, onClick, variant = "primary" }) {
+function ActionButton({ children, disabled = false, onClick, variant = "primary", style = {} }) {
   return (
     <button
       type="button"
@@ -141,10 +148,26 @@ function ActionButton({ children, disabled = false, onClick, variant = "primary"
         cursor: disabled ? "not-allowed" : "pointer",
         opacity: disabled ? 0.5 : 1,
         transition: "opacity 0.15s",
+        ...style,
       }}
     >
       {children}
     </button>
+  );
+}
+
+function QuestionNavigation({ questionIndex, isLastQuestion, onPrevious, onNext }) {
+  return (
+    <div className="quiz-question-nav" style={{ display: "flex", gap: 12, marginTop: 16 }}>
+      {questionIndex > 0 && (
+        <ActionButton variant="secondary" onClick={onPrevious} style={{ flex: 1 }}>
+          ← Previous Question
+        </ActionButton>
+      )}
+      <ActionButton onClick={onNext} style={{ flex: 1 }}>
+        {isLastQuestion ? "See Results" : "Next Question →"}
+      </ActionButton>
+    </div>
   );
 }
 
@@ -301,9 +324,129 @@ function normalizeJournalLine(line) {
   };
 }
 
+function journalFieldStyle(status) {
+  if (status === "correct") {
+    return {
+      ...inputStyle,
+      background: theme.colors.successBg,
+      border: `1px solid ${theme.colors.successBorder}`,
+      color: theme.colors.success,
+      fontWeight: 600,
+    };
+  }
+
+  if (status === "wrong") {
+    return {
+      ...inputStyle,
+      background: theme.colors.errorBg,
+      border: `2px solid ${theme.colors.errorBorder}`,
+      color: theme.colors.error,
+      fontWeight: 600,
+    };
+  }
+
+  return inputStyle;
+}
+
+function JournalEntryGrid({
+  lines,
+  fieldFeedback,
+  readOnly = false,
+  onUpdateLine,
+  showAccountSuggestions = false,
+}) {
+  return (
+    <>
+      {showAccountSuggestions && (
+        <datalist id={JOURNAL_ACCOUNT_LIST_ID}>
+          {JOURNAL_ACCOUNT_SUGGESTIONS.map((account) => (
+            <option key={account} value={account} />
+          ))}
+        </datalist>
+      )}
+      <div
+        className="journal-entry-header"
+        style={{
+          display: "grid",
+          gridTemplateColumns: "minmax(0, 2fr) minmax(96px, 1fr) minmax(96px, 1fr)",
+          gap: 10,
+          marginBottom: 10,
+          fontSize: 11,
+          color: theme.colors.textSecondary,
+          textTransform: "uppercase",
+          letterSpacing: 1,
+        }}
+      >
+        <span>Account</span>
+        <span>Debit</span>
+        <span>Credit</span>
+      </div>
+      <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
+        {lines.map((line, index) => {
+          const feedback = fieldFeedback?.[index];
+          const accountStyle = readOnly
+            ? journalFieldStyle("correct")
+            : journalFieldStyle(feedback?.account ?? "neutral");
+          const debitStyle = readOnly
+            ? journalFieldStyle(line.debit ? "correct" : "neutral")
+            : journalFieldStyle(feedback?.debit ?? "neutral");
+          const creditStyle = readOnly
+            ? journalFieldStyle(line.credit ? "correct" : "neutral")
+            : journalFieldStyle(feedback?.credit ?? "neutral");
+
+          return (
+            <div
+              key={index}
+              className="journal-entry-row"
+              style={{
+                display: "grid",
+                gridTemplateColumns: "minmax(0, 2fr) minmax(96px, 1fr) minmax(96px, 1fr)",
+                gap: 10,
+              }}
+            >
+              <input
+                type="text"
+                value={line.account}
+                list={showAccountSuggestions ? JOURNAL_ACCOUNT_LIST_ID : undefined}
+                readOnly={readOnly || !onUpdateLine}
+                onChange={(event) => onUpdateLine?.(index, "account", event.target.value)}
+                placeholder="Account"
+                aria-label={`Line ${index + 1} account`}
+                autoComplete="off"
+                style={accountStyle}
+              />
+              <input
+                type="number"
+                inputMode="decimal"
+                value={line.debit}
+                readOnly={readOnly || !onUpdateLine}
+                onChange={(event) => onUpdateLine?.(index, "debit", event.target.value)}
+                placeholder="Debit"
+                aria-label={`Line ${index + 1} debit`}
+                style={debitStyle}
+              />
+              <input
+                type="number"
+                inputMode="decimal"
+                value={line.credit}
+                readOnly={readOnly || !onUpdateLine}
+                onChange={(event) => onUpdateLine?.(index, "credit", event.target.value)}
+                placeholder="Credit"
+                aria-label={`Line ${index + 1} credit`}
+                style={creditStyle}
+              />
+            </div>
+          );
+        })}
+      </div>
+    </>
+  );
+}
+
 function JournalEntryQuestion({ question, currentAnswer, onSubmitAnswer }) {
   const expectedLength = Math.max(question.answer?.lines?.length ?? 2, 2);
   const [lines, setLines] = useState([]);
+  const [showCorrectAnswers, setShowCorrectAnswers] = useState(false);
   const isAnswered = Boolean(currentAnswer);
 
   useEffect(() => {
@@ -316,11 +459,16 @@ function JournalEntryQuestion({ question, currentAnswer, onSubmitAnswer }) {
           credit: "",
         }));
     setLines(initialLines);
+    setShowCorrectAnswers(false);
   }, [currentAnswer, expectedLength, question.id]);
 
   const totalDebits = lines.reduce((sum, line) => sum + Number(line.debit || 0), 0);
   const totalCredits = lines.reduce((sum, line) => sum + Number(line.credit || 0), 0);
   const canSubmit = lines.some((line) => line.account.trim() || line.debit || line.credit);
+  const submittedLines = getStoredResponse(currentAnswer)?.lines ?? [];
+  const rowFeedback = isAnswered ? getJournalEntryRowFeedback(question, submittedLines) : null;
+  const answerKey = getJournalEntryAnswerKey(question);
+  const isBalanced = currentAnswer?.evaluation?.breakdown?.balanced ?? true;
 
   const updateLine = (index, field, value) => {
     if (isAnswered) return;
@@ -340,68 +488,41 @@ function JournalEntryQuestion({ question, currentAnswer, onSubmitAnswer }) {
 
   return (
     <>
+      {isAnswered && (
+        <AnswerResultBanner correct={currentAnswer.evaluation?.correct} />
+      )}
       <div style={cardStyles()}>
+        {!isAnswered && (
+          <div style={{ fontSize: 12, color: theme.colors.textSecondary, marginBottom: 10 }}>
+            Type in Account to see suggestions ({JOURNAL_ACCOUNT_SUGGESTIONS.length} accounts).
+          </div>
+        )}
+        {isAnswered && (
+          <div style={{ fontSize: 12, color: theme.colors.textSecondary, marginBottom: 10 }}>
+            Green = correct field · Red = incorrect field
+            {!isBalanced && (
+              <span style={{ color: theme.colors.error, marginLeft: 8 }}>
+                Entry is not balanced.
+              </span>
+            )}
+          </div>
+        )}
+        <JournalEntryGrid
+          lines={lines}
+          fieldFeedback={rowFeedback}
+          onUpdateLine={isAnswered ? undefined : updateLine}
+          showAccountSuggestions={!isAnswered}
+        />
         <div
-          className="journal-entry-header"
+          className="journal-entry-totals"
           style={{
-            display: "grid",
-            gridTemplateColumns: "minmax(0, 2fr) minmax(96px, 1fr) minmax(96px, 1fr)",
-            gap: 10,
-            marginBottom: 10,
-            fontSize: 11,
+            display: "flex",
+            justifyContent: "space-between",
             color: theme.colors.textSecondary,
-            textTransform: "uppercase",
-            letterSpacing: 1,
+            fontSize: 12,
+            marginTop: 12,
           }}
         >
-          <span>Account</span>
-          <span>Debit</span>
-          <span>Credit</span>
-        </div>
-        <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
-          {lines.map((line, index) => (
-            <div
-              key={index}
-              className="journal-entry-row"
-              style={{
-                display: "grid",
-                gridTemplateColumns: "minmax(0, 2fr) minmax(96px, 1fr) minmax(96px, 1fr)",
-                gap: 10,
-              }}
-            >
-              <input
-                type="text"
-                value={line.account}
-                disabled={isAnswered}
-                onChange={(event) => updateLine(index, "account", event.target.value)}
-                placeholder="Account"
-                aria-label={`Line ${index + 1} account`}
-                style={inputStyle}
-              />
-              <input
-                type="number"
-                inputMode="decimal"
-                value={line.debit}
-                disabled={isAnswered}
-                onChange={(event) => updateLine(index, "debit", event.target.value)}
-                placeholder="Debit"
-                aria-label={`Line ${index + 1} debit`}
-                style={inputStyle}
-              />
-              <input
-                type="number"
-                inputMode="decimal"
-                value={line.credit}
-                disabled={isAnswered}
-                onChange={(event) => updateLine(index, "credit", event.target.value)}
-                placeholder="Credit"
-                aria-label={`Line ${index + 1} credit`}
-                style={inputStyle}
-              />
-            </div>
-          ))}
-        </div>
-        <div className="journal-entry-totals" style={{ display: "flex", justifyContent: "space-between", color: theme.colors.textSecondary, fontSize: 12, marginTop: 12 }}>
           <span>Total debits: {totalDebits.toFixed(2)}</span>
           <span>Total credits: {totalCredits.toFixed(2)}</span>
         </div>
@@ -423,6 +544,38 @@ function JournalEntryQuestion({ question, currentAnswer, onSubmitAnswer }) {
         >
           Check Entry
         </ActionButton>
+      )}
+      {isAnswered && (
+        <div style={{ display: "flex", flexDirection: "column", gap: 12, marginTop: 4 }}>
+          <ActionButton
+            variant="secondary"
+            onClick={() => setShowCorrectAnswers((current) => !current)}
+          >
+            {showCorrectAnswers ? "Hide correct answers" : "Show correct answers"}
+          </ActionButton>
+          {showCorrectAnswers && (
+            <div
+              style={{
+                ...cardStyles(),
+                marginBottom: 0,
+                background: theme.colors.successBg,
+                border: `1px solid ${theme.colors.successBorder}`,
+              }}
+            >
+              <div
+                style={{
+                  fontSize: 12,
+                  fontWeight: 600,
+                  color: theme.colors.success,
+                  marginBottom: 10,
+                }}
+              >
+                Correct entry
+              </div>
+              <JournalEntryGrid lines={answerKey} readOnly />
+            </div>
+          )}
+        </div>
       )}
     </>
   );
@@ -800,11 +953,10 @@ export function QuizScreen({
   currentAnswer,
   showExplanation,
   score,
-  planNotice,
-  onDismissPlanNotice,
   onBack,
   onSubmitAnswer,
   onNext,
+  onPrevious,
   tutorUses,
   onConsumeTutorUse,
 }) {
@@ -852,49 +1004,6 @@ export function QuizScreen({
         </div>
 
         <ProgressBar current={questionIndex + 1} total={questions.length} />
-
-        {planNotice && questionIndex === 0 && (
-          <div
-            style={{
-              marginTop: 16,
-              marginBottom: 4,
-              padding: "12px 14px",
-              background:
-                planNotice.variant === "warning"
-                  ? theme.colors.calloutOrange
-                  : theme.colors.calloutBlue,
-              border: `1px solid ${theme.colors.border}`,
-              borderRadius: theme.radius.lg,
-              fontSize: 14,
-              lineHeight: 1.5,
-              color: theme.colors.text,
-              display: "flex",
-              gap: 10,
-              alignItems: "flex-start",
-            }}
-          >
-            <div style={{ flex: 1 }}>
-              <div style={{ fontWeight: 600, marginBottom: 4 }}>{planNotice.title}</div>
-              <div>{planNotice.message}</div>
-            </div>
-            <button
-              type="button"
-              onClick={onDismissPlanNotice}
-              style={{
-                background: "none",
-                border: "none",
-                color: theme.colors.textSecondary,
-                cursor: "pointer",
-                fontSize: 18,
-                lineHeight: 1,
-                padding: 0,
-              }}
-              aria-label="Dismiss quiz notice"
-            >
-              ×
-            </button>
-          </div>
-        )}
 
         <div
           className="quiz-meta-row"
@@ -974,15 +1083,18 @@ export function QuizScreen({
                 {currentQuestion.sampleAnswer ?? currentQuestion.answer?.sampleAnswer}
               </div>
             </div>
-            <AiTutorPanel
+            <QuestionNavigation
+              questionIndex={questionIndex}
+              isLastQuestion={isLastQuestion}
+              onPrevious={onPrevious}
+              onNext={onNext}
+            />
+            <AiTutorModal
               question={currentQuestion}
               currentAnswer={null}
               tutorUses={tutorUses}
               onConsumeTutorUse={onConsumeTutorUse}
             />
-            <ActionButton onClick={onNext}>
-              {isLastQuestion ? "See Results" : "Next Question →"}
-            </ActionButton>
           </div>
         ) : (
           <>
@@ -992,26 +1104,25 @@ export function QuizScreen({
               onSubmitAnswer={onSubmitAnswer}
             />
 
-            <AiTutorPanel
+            <QuestionNavigation
+              questionIndex={questionIndex}
+              isLastQuestion={isLastQuestion}
+              onPrevious={onPrevious}
+              onNext={onNext}
+            />
+
+            <AiTutorModal
               question={currentQuestion}
               currentAnswer={currentAnswer}
               tutorUses={tutorUses}
               onConsumeTutorUse={onConsumeTutorUse}
             />
 
-            {showExplanation && (
+            {showExplanation && currentAnswer && (
               <ExplanationBlock
                 text={currentQuestion.explanation}
                 feedback={currentAnswer?.evaluation?.feedback}
               />
-            )}
-
-            {currentAnswer && (
-              <div style={{ marginTop: 16 }}>
-                <ActionButton onClick={onNext}>
-                  {isLastQuestion ? "See Results" : "Next Question →"}
-                </ActionButton>
-              </div>
             )}
           </>
         )}

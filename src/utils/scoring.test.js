@@ -1,6 +1,11 @@
 import { test, expect } from "bun:test";
 import { QUESTION_TYPES } from "../data/schema/questionTypes.js";
-import { createAnswerRecord, evaluateQuestion } from "./scoring/index.js";
+import {
+  createAnswerRecord,
+  evaluateQuestion,
+  getJournalEntryAnswerKey,
+  getJournalEntryRowFeedback,
+} from "./scoring/index.js";
 
 test("scores select_multiple with partial credit and penalties", () => {
   const question = {
@@ -35,6 +40,64 @@ test("scores numeric_input with tolerance", () => {
   const result = evaluateQuestion(question, { value: "230.005" });
   expect(result.correct).toBe(true);
   expect(result.scoreAwarded).toBe(1);
+});
+
+test("scores journal entries when the same account appears on both sides", () => {
+  const question = {
+    id: "je-dup",
+    type: QUESTION_TYPES.JOURNAL_ENTRY,
+    points: 4,
+    answer: {
+      lines: [
+        { account: "Accounts Receivable", side: "debit", amount: 540 },
+        { account: "Allowance for Doubtful Debts", side: "credit", amount: 540 },
+        { account: "Cash", side: "debit", amount: 540 },
+        { account: "Accounts Receivable", side: "credit", amount: 540 },
+      ],
+      rules: { requireBalancedEntry: true },
+    },
+  };
+
+  const result = evaluateQuestion(question, {
+    lines: [
+      { account: "Accounts Receivable", debit: 540 },
+      { account: "Allowance for Doubtful Debts", credit: 540 },
+      { account: "Cash", debit: 540 },
+      { account: "Accounts Receivable", credit: 540 },
+    ],
+  });
+
+  expect(result.correct).toBe(true);
+  expect(result.scoreAwarded).toBe(4);
+});
+
+test("getJournalEntryRowFeedback marks wrong account and amount fields", () => {
+  const question = {
+    id: "je-ui",
+    type: QUESTION_TYPES.JOURNAL_ENTRY,
+    points: 2,
+    answer: {
+      lines: [
+        { account: "Cash", side: "debit", amount: 15000 },
+        { account: "Share Capital", side: "credit", amount: 15000 },
+      ],
+      rules: { requireBalancedEntry: true },
+    },
+  };
+
+  const feedback = getJournalEntryRowFeedback(question, [
+    { account: "Cash", debit: 15000, credit: null },
+    { account: "Revenue", debit: null, credit: 15000 },
+  ]);
+
+  expect(feedback[0].account).toBe("correct");
+  expect(feedback[0].debit).toBe("correct");
+  expect(feedback[1].account).toBe("wrong");
+  expect(feedback[1].credit).toBe("wrong");
+  expect(getJournalEntryAnswerKey(question)).toEqual([
+    { account: "Cash", debit: "15000", credit: "" },
+    { account: "Share Capital", debit: "", credit: "15000" },
+  ]);
 });
 
 test("scores journal entries with aliases and balancing", () => {

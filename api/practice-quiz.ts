@@ -1,6 +1,7 @@
 import {
   createPracticeQuiz,
   buildFallbackPracticeQuiz,
+  shouldUsePracticeFallback,
   type PracticeQuizRequest,
 } from "../src/server/practiceQuizGenerator.ts";
 
@@ -12,7 +13,7 @@ export default async function handler(req: any, res: any) {
     res.json(quiz);
   } catch (error) {
     const message = error instanceof Error ? error.message : "Failed to create practice quiz";
-    if (message.includes("OPENAI_API_KEY")) {
+    if (shouldUsePracticeFallback(message)) {
       return res.json(buildFallbackPracticeQuiz(body));
     }
     res.status(400).json({ error: message });
