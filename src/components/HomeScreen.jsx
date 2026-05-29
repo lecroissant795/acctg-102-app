@@ -1,4 +1,5 @@
 import { MINI_QUIZ_SIZES, TOPIC_COLORS } from "../constants/topicColors.js";
+import { NAV_CLICK_SOUND_PROPS } from "../constants/clickSound.js";
 import { theme, pageTitleStyle, sectionLabelStyle } from "../styles/theme.js";
 import { AppNavMenu } from "./AppNavMenu.jsx";
 import { getPracticeLoadingMessage } from "../utils/quizPlan.js";
@@ -57,6 +58,7 @@ function DatabaseRow({ label, badge, accent, onClick, disabled }) {
       type="button"
       onClick={onClick}
       disabled={disabled}
+      {...NAV_CLICK_SOUND_PROPS}
       style={{
         display: "flex",
         alignItems: "center",
@@ -306,6 +308,7 @@ export function HomeScreen({
               type="button"
               onClick={() => onStartMini(size)}
               disabled={planLoading}
+              {...NAV_CLICK_SOUND_PROPS}
               style={{
                 flex: 1,
                 padding: "8px 12px",
@@ -336,6 +339,7 @@ export function HomeScreen({
         type="button"
         onClick={onStartAll}
         disabled={planLoading}
+        {...NAV_CLICK_SOUND_PROPS}
         style={{
           width: "100%",
           padding: "10px 16px",
@@ -360,6 +364,7 @@ export function HomeScreen({
           <button
             type="button"
             onClick={onOpenStats}
+            {...NAV_CLICK_SOUND_PROPS}
             style={{
               display: "flex",
               alignItems: "center",

@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useAuth } from "../contexts/AuthContext.jsx";
 import { Page } from "./Page.jsx";
+import { NAV_CLICK_SOUND_PROPS } from "../constants/clickSound.js";
 import { theme, inputStyle, backButtonStyle, pageTitleStyle } from "../styles/theme.js";
 
 export function AuthScreen({ onBack, onAuthenticated }) {
@@ -42,7 +43,7 @@ export function AuthScreen({ onBack, onAuthenticated }) {
   return (
     <Page padding="48px 24px 80px" centered>
       <div style={{ marginBottom: 24 }}>
-        <button type="button" onClick={onBack} style={backButtonStyle}>
+        <button type="button" onClick={onBack} style={backButtonStyle} {...NAV_CLICK_SOUND_PROPS}>
           ← Back
         </button>
       </div>

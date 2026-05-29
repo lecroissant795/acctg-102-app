@@ -10,6 +10,7 @@ import { useAuth } from "./contexts/AuthContext.jsx";
 import { NavigationProvider } from "./contexts/NavigationContext.jsx";
 import { useStats } from "./contexts/StatsContext.jsx";
 import { useAppRouter } from "./hooks/useAppRouter.js";
+import { useMobileClickSound } from "./hooks/useMobileClickSound.js";
 import {
   PRACTICE_QUESTIONS,
   QUESTIONS,
@@ -42,6 +43,8 @@ import {
 } from "./routes.js";
 
 export default function App() {
+  useMobileClickSound();
+
   const { user, loading: authLoading, signOut } = useAuth();
   const { summary: statsSummary, saveSession } = useStats();
   const { route, navigate } = useAppRouter();

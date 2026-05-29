@@ -1,4 +1,5 @@
 import { createContext, useCallback, useContext, useEffect, useState } from "react";
+import { NAV_CLICK_SOUND_PROPS } from "../constants/clickSound.js";
 import { AppFooter } from "./AppFooter.jsx";
 import { theme } from "../styles/theme.js";
 
@@ -246,6 +247,7 @@ export function SidebarItem({
       type="button"
       onClick={onClick}
       disabled={disabled}
+      {...NAV_CLICK_SOUND_PROPS}
       style={{
         display: "flex",
         alignItems: "center",

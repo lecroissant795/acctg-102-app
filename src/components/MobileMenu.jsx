@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { NAV_CLICK_SOUND_PROPS } from "../constants/clickSound.js";
 import { useNavigation } from "../contexts/NavigationContext.jsx";
 import { AppNavMenu } from "./AppNavMenu.jsx";
 import { SidebarDivider } from "./AppShell.jsx";
@@ -62,7 +63,7 @@ export function MobileMenu() {
             aria-label="Navigation menu"
           >
             <div className="mobile-menu-drawer__header">
-              <button type="button" className="mobile-menu-home" onClick={goHome}>
+              <button type="button" className="mobile-menu-home" onClick={goHome} {...NAV_CLICK_SOUND_PROPS}>
                 <span aria-hidden="true">📒</span>
                 <span>
                   <span className="mobile-menu-home__title">ACCTG 102</span>

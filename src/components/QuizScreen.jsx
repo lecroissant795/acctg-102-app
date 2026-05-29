@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { Page } from "./Page.jsx";
 import { ProgressBar } from "./ProgressBar.jsx";
 import { QUESTION_TYPES } from "../data/schema/questionTypes.js";
+import { NAV_CLICK_SOUND_PROPS } from "../constants/clickSound.js";
 import { theme, backButtonStyle, cardStyle, inputStyle } from "../styles/theme.js";
 import { getDisplayOptionIndex } from "../utils/shuffle.js";
 import { JOURNAL_ACCOUNT_SUGGESTIONS } from "../data/index.js";
@@ -170,7 +171,7 @@ function cardStyles() {
   return { ...cardStyle, marginBottom: 16 };
 }
 
-function ActionButton({ children, disabled = false, onClick, variant = "primary", style = {} }) {
+function ActionButton({ children, disabled = false, onClick, variant = "primary", style = {}, ...rest }) {
   return (
     <button
       type="button"
@@ -190,6 +191,7 @@ function ActionButton({ children, disabled = false, onClick, variant = "primary"
         transition: "opacity 0.15s",
         ...style,
       }}
+      {...rest}
     >
       {children}
     </button>
@@ -200,11 +202,11 @@ function QuestionNavigation({ questionIndex, isLastQuestion, onPrevious, onNext 
   return (
     <div className="quiz-question-nav" style={{ display: "flex", gap: 12, marginTop: 16 }}>
       {questionIndex > 0 && (
-        <ActionButton variant="secondary" onClick={onPrevious} style={{ flex: 1 }}>
+        <ActionButton variant="secondary" onClick={onPrevious} style={{ flex: 1 }} {...NAV_CLICK_SOUND_PROPS}>
           ← Previous Question
         </ActionButton>
       )}
-      <ActionButton onClick={onNext} style={{ flex: 1 }}>
+      <ActionButton onClick={onNext} style={{ flex: 1 }} {...NAV_CLICK_SOUND_PROPS}>
         {isLastQuestion ? "See Results" : "Next Question →"}
       </ActionButton>
     </div>
@@ -1112,7 +1114,7 @@ export function QuizScreen({
             marginBottom: 16,
           }}
         >
-          <button type="button" onClick={onBack} style={backButtonStyle}>
+          <button type="button" onClick={onBack} style={backButtonStyle} {...NAV_CLICK_SOUND_PROPS}>
             ← Back
           </button>
           <div className="quiz-header-actions" style={{ display: "flex", alignItems: "center", gap: 10 }}>

@@ -1,5 +1,6 @@
 import { Page } from "./Page.jsx";
 import { AiTutorModal } from "./AiTutorModal.jsx";
+import { NAV_CLICK_SOUND_PROPS } from "../constants/clickSound.js";
 import { theme, sectionLabelStyle } from "../styles/theme.js";
 
 function getGrade(scorePercent) {
@@ -269,6 +270,7 @@ export function ResultsScreen({
           <button
             type="button"
             onClick={onRetry}
+            {...NAV_CLICK_SOUND_PROPS}
             style={{
               flex: 1,
               minWidth: 120,
@@ -287,6 +289,7 @@ export function ResultsScreen({
           <button
             type="button"
             onClick={onHome}
+            {...NAV_CLICK_SOUND_PROPS}
             style={{
               flex: 1,
               minWidth: 120,

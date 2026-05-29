@@ -1,5 +1,6 @@
 import { useEffect, useId, useRef } from "react";
 import { CHAPTER_QUIZ_ALL, CHAPTER_QUIZ_SIZES, isChapterQuizAll } from "../constants/chapterQuiz.js";
+import { NAV_CLICK_SOUND_PROPS } from "../constants/clickSound.js";
 import { theme } from "../styles/theme.js";
 
 const FOCUSABLE =
@@ -148,6 +149,7 @@ export function ChapterQuizSetupModal({
             type="button"
             className="quiz-setup-modal__button quiz-setup-modal__button--primary"
             onClick={onStart}
+            {...NAV_CLICK_SOUND_PROPS}
           >
             Start Quiz
           </button>

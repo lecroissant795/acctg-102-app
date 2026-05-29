@@ -12,6 +12,7 @@ import {
   SidebarSection,
 } from "./AppShell.jsx";
 import { theme, backButtonStyle, pageTitleStyle, sectionLabelStyle } from "../styles/theme.js";
+import { NAV_CLICK_SOUND_PROPS } from "../constants/clickSound.js";
 
 function formatScore(value) {
   const n = Number(value ?? 0);
@@ -150,7 +151,7 @@ function StatsSidebar({ summary, onBack }) {
   return (
     <>
       <div style={{ padding: "12px 14px 8px" }}>
-        <button type="button" onClick={onBack} style={{ ...backButtonStyle, marginBottom: 8 }}>
+        <button type="button" onClick={onBack} style={{ ...backButtonStyle, marginBottom: 8 }} {...NAV_CLICK_SOUND_PROPS}>
           ← Back
         </button>
         <div
@@ -205,7 +206,7 @@ export function StatsScreen({ onBack }) {
     <AppShell sidebar={sidebar}>
       <header className="screen-header" style={{ marginBottom: 32, display: "flex", justifyContent: "space-between", alignItems: "flex-start", gap: 16 }}>
         <div>
-          <button type="button" onClick={onBack} className="mobile-only" style={{ ...backButtonStyle, marginBottom: 12 }}>
+          <button type="button" onClick={onBack} className="mobile-only" style={{ ...backButtonStyle, marginBottom: 12 }} {...NAV_CLICK_SOUND_PROPS}>
             ← Back
           </button>
           <h1 className="page-title" style={pageTitleStyle}>Quiz Stats</h1>
