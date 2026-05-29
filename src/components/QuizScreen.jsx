@@ -324,9 +324,27 @@ function SelectMultipleQuestion({ question, currentAnswer, onSubmitAnswer }) {
   );
 }
 
-function NumericInputQuestion({ currentAnswer, onSubmitAnswer }) {
+function formatExpectedNumericAnswer(question) {
+  const expected = question.answer?.value;
+  const tolerance = question.answer?.tolerance ?? 0;
+  if (expected == null) return null;
+
+  const formatted =
+    typeof expected === "number" ? expected.toLocaleString(undefined, { maximumFractionDigits: 4 }) : String(expected);
+
+  if (tolerance > 0) {
+    return `${formatted} (±${tolerance})`;
+  }
+
+  return formatted;
+}
+
+function NumericInputQuestion({ question, currentAnswer, onSubmitAnswer }) {
   const [value, setValue] = useState("");
   const isAnswered = Boolean(currentAnswer);
+  const isCorrect = currentAnswer?.evaluation?.correct;
+  const expectedAnswer = formatExpectedNumericAnswer(question);
+  const fieldStatus = !isAnswered ? null : isCorrect ? "correct" : "wrong";
 
   useEffect(() => {
     const responseValue = getStoredResponse(currentAnswer)?.value;
@@ -335,6 +353,7 @@ function NumericInputQuestion({ currentAnswer, onSubmitAnswer }) {
 
   return (
     <>
+      {isAnswered && <AnswerResultBanner correct={isCorrect} />}
       <div style={cardStyles()}>
         <label style={{ display: "block", color: theme.colors.textSecondary, fontSize: 12, marginBottom: 8 }}>
           Enter your answer
@@ -344,8 +363,21 @@ function NumericInputQuestion({ currentAnswer, onSubmitAnswer }) {
           value={value}
           disabled={isAnswered}
           onChange={(event) => setValue(event.target.value)}
-          style={inputStyle}
+          style={journalFieldStyle(fieldStatus)}
+          aria-invalid={fieldStatus === "wrong" ? true : undefined}
         />
+        {isAnswered && !isCorrect && expectedAnswer && (
+          <div
+            style={{
+              marginTop: 10,
+              fontSize: 13,
+              color: theme.colors.success,
+              fontWeight: 600,
+            }}
+          >
+            Correct answer: {expectedAnswer}
+          </div>
+        )}
       </div>
       {!isAnswered && (
         <ActionButton disabled={String(value).trim() === ""} onClick={() => onSubmitAnswer({ value })}>
@@ -787,6 +819,11 @@ function CaseSetQuestion({ question, currentAnswer, onSubmitAnswer }) {
   const [subresponses, setSubresponses] = useState({});
   const isAnswered = Boolean(currentAnswer);
   const subquestions = question.subquestions ?? [];
+  const subresultsById = isAnswered
+    ? Object.fromEntries(
+        (currentAnswer.evaluation?.breakdown?.subresults ?? []).map((entry) => [entry.id, entry.result])
+      )
+    : {};
 
   useEffect(() => {
     setSubresponses(getStoredResponse(currentAnswer)?.subresponses ?? {});
@@ -831,6 +868,7 @@ function CaseSetQuestion({ question, currentAnswer, onSubmitAnswer }) {
             <CaseSetSubquestion
               subquestion={subquestion}
               response={subresponses[subquestion.id]}
+              subresult={subresultsById[subquestion.id]}
               disabled={isAnswered}
               onChange={(nextResponse) => updateSubresponse(subquestion.id, nextResponse)}
             />
@@ -848,7 +886,7 @@ function CaseSetQuestion({ question, currentAnswer, onSubmitAnswer }) {
   );
 }
 
-function CaseSetSubquestion({ subquestion, response, disabled, onChange }) {
+function CaseSetSubquestion({ subquestion, response, subresult = null, disabled, onChange }) {
   switch (subquestion.type) {
     case QUESTION_TYPES.MCQ:
       return (
@@ -892,23 +930,37 @@ function CaseSetSubquestion({ subquestion, response, disabled, onChange }) {
           })}
         </div>
       );
-    case QUESTION_TYPES.NUMERIC_INPUT:
+    case QUESTION_TYPES.NUMERIC_INPUT: {
+      const isAnswered = Boolean(subresult);
+      const isCorrect = subresult?.correct;
+      const fieldStatus = !isAnswered ? null : isCorrect ? "correct" : "wrong";
+      const expectedAnswer = formatExpectedNumericAnswer(subquestion);
+
       return (
-        <input
-          type="text"
-          value={response?.value ?? ""}
-          disabled={disabled}
-          onChange={(event) => onChange({ value: event.target.value })}
-          style={{
-            width: "100%",
-            padding: "12px 14px",
-            borderRadius: theme.radius.lg,
-            border: `1px solid ${theme.colors.borderStrong}`,
-            background: theme.colors.bg,
-            color: theme.colors.text,
-          }}
-        />
+        <>
+          <input
+            type="text"
+            value={response?.value ?? ""}
+            disabled={disabled}
+            onChange={(event) => onChange({ value: event.target.value })}
+            style={journalFieldStyle(fieldStatus)}
+            aria-invalid={fieldStatus === "wrong" ? true : undefined}
+          />
+          {isAnswered && !isCorrect && expectedAnswer && (
+            <div
+              style={{
+                marginTop: 8,
+                fontSize: 13,
+                color: theme.colors.success,
+                fontWeight: 600,
+              }}
+            >
+              Correct answer: {expectedAnswer}
+            </div>
+          )}
+        </>
       );
+    }
     default:
       return <div style={{ color: theme.colors.textSecondary, fontSize: 13 }}>This case-set part type is not editable yet.</div>;
   }
@@ -943,6 +995,7 @@ function QuestionInteraction({ question, currentAnswer, onSubmitAnswer }) {
     case QUESTION_TYPES.NUMERIC_INPUT:
       return (
         <NumericInputQuestion
+          question={question}
           currentAnswer={currentAnswer}
           onSubmitAnswer={onSubmitAnswer}
         />
@@ -993,6 +1046,7 @@ export function QuizScreen({
   currentAnswer,
   showExplanation,
   score,
+  quizSizeNotice = null,
   onBack,
   onSubmitAnswer,
   onNext,
@@ -1083,6 +1137,24 @@ export function QuizScreen({
         </div>
 
         <ProgressBar current={questionIndex + 1} total={questions.length} />
+
+        {quizSizeNotice && (
+          <div
+            role="status"
+            style={{
+              marginTop: 12,
+              padding: "10px 12px",
+              borderRadius: theme.radius.md,
+              background: "rgba(217, 115, 13, 0.1)",
+              border: "1px solid rgba(217, 115, 13, 0.25)",
+              color: theme.colors.text,
+              fontSize: 13,
+              lineHeight: 1.5,
+            }}
+          >
+            {quizSizeNotice}
+          </div>
+        )}
 
         <div
           className="quiz-meta-row"

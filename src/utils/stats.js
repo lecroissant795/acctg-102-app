@@ -5,22 +5,23 @@ let persistHandler = null;
 
 export function normalizeStore(data) {
   if (!data || typeof data !== "object") {
-    return { sessions: [], questions: {} };
+    return { sessions: [], questions: {}, chapters: {} };
   }
 
   return {
     sessions: Array.isArray(data.sessions) ? data.sessions : [],
     questions: data.questions && typeof data.questions === "object" ? data.questions : {},
+    chapters: data.chapters && typeof data.chapters === "object" ? data.chapters : {},
   };
 }
 
 function readLocalStore() {
   try {
     const raw = localStorage.getItem(STORAGE_KEY);
-    if (!raw) return { sessions: [], questions: {} };
+    if (!raw) return { sessions: [], questions: {}, chapters: {} };
     return normalizeStore(JSON.parse(raw));
   } catch {
-    return { sessions: [], questions: {} };
+    return { sessions: [], questions: {}, chapters: {} };
   }
 }
 
@@ -59,8 +60,22 @@ async function persistStore(store) {
   writeLocalStore(memoryStore);
 }
 
-export function getQuestionId(topic, questionText) {
+export function getQuestionId(topic, questionText, explicitId = null) {
+  if (explicitId) return explicitId;
   return `${topic}::${questionText}`;
+}
+
+export function resolveQuestionId(question) {
+  if (!question) return null;
+  return getQuestionId(
+    question.topic,
+    question.q ?? question.prompt ?? "",
+    question.id ?? null
+  );
+}
+
+function computeAccuracy(correct, attempts) {
+  return attempts > 0 ? Math.round((correct / attempts) * 100) : 0;
 }
 
 function formatScore(value) {
@@ -164,10 +179,11 @@ function buildAnswerRecord(question, answer) {
   const correct = answer.evaluation?.correct ?? answer.correct ?? false;
 
   return {
-    questionId: answer.questionId ?? getQuestionId(question.topic, question.q ?? question.prompt),
+    questionId: answer.questionId ?? resolveQuestionId(question),
     questionType: answer.questionType ?? question.type,
     topic: question.topic,
     question: question.q ?? question.prompt,
+    tags: Array.isArray(question.tags) ? question.tags : [],
     response: answer.response ?? null,
     responseSummary: answer.evaluation?.responseSummary ?? answer.responseSummary ?? null,
     responseText: description.responseText,
@@ -183,9 +199,11 @@ function updateQuestionStats(store, answer) {
   const existing = store.questions[answer.questionId] ?? {
     topic: answer.topic,
     question: answer.question,
+    tags: answer.tags ?? [],
     attempts: 0,
     correct: 0,
     incorrect: 0,
+    accuracy: 0,
     scoreAwarded: 0,
     maxScoreAwarded: 0,
     lastAttemptAt: null,
@@ -196,8 +214,13 @@ function updateQuestionStats(store, answer) {
   existing.attempts += 1;
   if (answer.correct) existing.correct += 1;
   else existing.incorrect += 1;
+  existing.accuracy = computeAccuracy(existing.correct, existing.attempts);
   existing.scoreAwarded += answer.scoreAwarded ?? 0;
   existing.maxScoreAwarded += answer.maxScore ?? 0;
+
+  if (answer.tags?.length) {
+    existing.tags = answer.tags;
+  }
 
   existing.lastAttemptAt = new Date().toISOString();
   if (!answer.correct) {
@@ -206,6 +229,86 @@ function updateQuestionStats(store, answer) {
   }
 
   store.questions[answer.questionId] = existing;
+}
+
+function buildQuestionSummary(questionId, entry) {
+  return {
+    questionId,
+    topic: entry.topic,
+    question: entry.question,
+    tags: entry.tags ?? [],
+    attempts: entry.attempts,
+    correct: entry.correct,
+    incorrect: entry.incorrect,
+    accuracy: entry.accuracy ?? computeAccuracy(entry.correct, entry.attempts),
+    lastAttemptAt: entry.lastAttemptAt,
+  };
+}
+
+function rankTopicQuestions(store, topic) {
+  return Object.entries(store.questions)
+    .filter(([, entry]) => entry.topic === topic && entry.attempts > 0)
+    .map(([questionId, entry]) => buildQuestionSummary(questionId, entry));
+}
+
+function buildChapterRankings(store, topic) {
+  const entries = rankTopicQuestions(store, topic);
+
+  const strongest = [...entries]
+    .filter((entry) => entry.attempts >= 2)
+    .sort((a, b) => b.accuracy - a.accuracy || b.correct - a.correct)
+    .slice(0, 5);
+
+  const weakest = [...entries]
+    .filter((entry) => entry.incorrect > 0)
+    .sort((a, b) => a.accuracy - b.accuracy || b.incorrect - a.incorrect)
+    .slice(0, 5);
+
+  return { strongest, weakest };
+}
+
+function updateChapterStats(store, session) {
+  if (!session.topic) return;
+
+  const chapter =
+    store.chapters[session.topic] ?? {
+      totalQuizzes: 0,
+      averageScore: 0,
+      questionsAnswered: 0,
+      strongestQuestions: [],
+      weakestQuestions: [],
+      lastQuizAt: null,
+      scorePercentTotal: 0,
+    };
+
+  chapter.totalQuizzes += 1;
+  chapter.questionsAnswered += session.totalQuestions ?? 0;
+  chapter.scorePercentTotal = (chapter.scorePercentTotal ?? chapter.averageScore * (chapter.totalQuizzes - 1)) + (session.scorePercent ?? 0);
+  chapter.averageScore = Math.round(chapter.scorePercentTotal / chapter.totalQuizzes);
+  chapter.lastQuizAt = session.completedAt;
+
+  const rankings = buildChapterRankings(store, session.topic);
+  chapter.strongestQuestions = rankings.strongest;
+  chapter.weakestQuestions = rankings.weakest;
+
+  store.chapters[session.topic] = chapter;
+}
+
+function recomputeChaptersFromSessions(sessions, questions) {
+  const store = { questions, chapters: {} };
+  const chronological = [...sessions].reverse();
+
+  for (const session of chronological) {
+    updateChapterStats(store, session);
+  }
+
+  for (const topic of Object.keys(store.chapters)) {
+    const rankings = buildChapterRankings({ questions }, topic);
+    store.chapters[topic].strongestQuestions = rankings.strongest;
+    store.chapters[topic].weakestQuestions = rankings.weakest;
+  }
+
+  return store.chapters;
 }
 
 function recomputeQuestionsFromSessions(sessions) {
@@ -232,9 +335,12 @@ export function mergeStores(local, remote) {
     (a, b) => new Date(b.completedAt) - new Date(a.completedAt)
   );
 
+  const questions = recomputeQuestionsFromSessions(sessions);
+
   return {
     sessions,
-    questions: recomputeQuestionsFromSessions(sessions),
+    questions,
+    chapters: recomputeChaptersFromSessions(sessions, questions),
   };
 }
 
@@ -286,6 +392,7 @@ export async function saveQuizSession({
 
   store.sessions.unshift(session);
   for (const answer of answerRecords) updateQuestionStats(store, answer);
+  updateChapterStats(store, session);
   await persistStore(store);
 
   return session;
@@ -296,7 +403,88 @@ export function loadQuizStats() {
 }
 
 export async function clearQuizStats() {
-  await persistStore({ sessions: [], questions: {} });
+  await persistStore({ sessions: [], questions: {}, chapters: {} });
+}
+
+export function getChapterPerformance(topic, store = getStore()) {
+  const chapter = store.chapters[topic];
+  if (!chapter) {
+    return {
+      topic,
+      totalQuizzes: 0,
+      averageScore: 0,
+      questionsAnswered: 0,
+      strongestQuestions: [],
+      weakestQuestions: [],
+      lastQuizAt: null,
+    };
+  }
+
+  return {
+    topic,
+    totalQuizzes: chapter.totalQuizzes,
+    averageScore: chapter.averageScore,
+    questionsAnswered: chapter.questionsAnswered,
+    strongestQuestions: chapter.strongestQuestions ?? [],
+    weakestQuestions: chapter.weakestQuestions ?? [],
+    lastQuizAt: chapter.lastQuizAt ?? null,
+  };
+}
+
+function summarizeMissedConcepts(entries) {
+  const tagCounts = new Map();
+
+  for (const entry of entries) {
+    for (const tag of entry.tags ?? []) {
+      tagCounts.set(tag, (tagCounts.get(tag) ?? 0) + entry.incorrect);
+    }
+  }
+
+  return [...tagCounts.entries()]
+    .sort((a, b) => b[1] - a[1])
+    .slice(0, 5)
+    .map(([tag, missCount]) => ({
+      tag,
+      label: tag.replaceAll("_", " "),
+      missCount,
+    }));
+}
+
+export function getTutorPerformanceContext(question, store = getStore()) {
+  const questionId = resolveQuestionId(question);
+  const questionStats = questionId ? store.questions[questionId] : null;
+  const topic = question?.topic ?? null;
+  const chapterPerformance = topic ? getChapterPerformance(topic, store) : null;
+
+  const frequentlyMissed = topic
+    ? rankTopicQuestions(store, topic)
+        .filter((entry) => entry.incorrect >= 2)
+        .sort((a, b) => b.incorrect - a.incorrect || a.accuracy - b.accuracy)
+        .slice(0, 5)
+    : [];
+
+  const recommendedRevisionAreas = summarizeMissedConcepts(
+    topic ? rankTopicQuestions(store, topic).filter((entry) => entry.incorrect > 0) : []
+  );
+
+  return {
+    question: questionStats
+      ? {
+          questionId,
+          attempts: questionStats.attempts,
+          correct: questionStats.correct,
+          incorrect: questionStats.incorrect,
+          accuracy: questionStats.accuracy ?? computeAccuracy(questionStats.correct, questionStats.attempts),
+          lastAttemptAt: questionStats.lastAttemptAt,
+          lastWrongAt: questionStats.lastWrongAt,
+        }
+      : null,
+    chapter: chapterPerformance,
+    strongestTopics: chapterPerformance?.strongestQuestions?.slice(0, 3) ?? [],
+    weakestTopics: chapterPerformance?.weakestQuestions?.slice(0, 3) ?? [],
+    frequentlyMissedConcepts: frequentlyMissed,
+    recommendedRevisionAreas,
+  };
 }
 
 export function getStatsSummary(store = getStore()) {
@@ -323,6 +511,7 @@ export function getStatsSummary(store = getStore()) {
     totalIncorrect,
     accuracy,
     weakQuestions,
+    chapters: store.chapters,
     sessions: store.sessions,
   };
 }

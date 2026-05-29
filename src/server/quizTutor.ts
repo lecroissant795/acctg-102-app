@@ -13,6 +13,7 @@ export type TutorRequest = {
   currentAnswer?: Record<string, unknown> | null;
   userMessage?: string;
   messages?: TutorMessage[];
+  performanceContext?: Record<string, unknown> | null;
 };
 
 export type TutorResponse = {
@@ -78,16 +79,78 @@ function buildHintPrompt(question?: Record<string, unknown>): string {
   return baseRules;
 }
 
-function buildSystemPrompt(intent: TutorIntent, question?: Record<string, unknown>): string {
+function buildPerformanceGuidance(context?: Record<string, unknown> | null): string {
+  if (!context || typeof context !== "object") return "";
+
+  const chapter = context.chapter as Record<string, unknown> | undefined;
+  const question = context.question as Record<string, unknown> | undefined;
+  const revisionAreas = Array.isArray(context.recommendedRevisionAreas)
+    ? context.recommendedRevisionAreas
+    : [];
+  const weakest = Array.isArray(context.weakestTopics) ? context.weakestTopics : [];
+
+  const lines: string[] = [];
+
+  if (chapter && typeof chapter.averageScore === "number" && (chapter.totalQuizzes as number) > 0) {
+    lines.push(
+      `Chapter performance: ${chapter.averageScore}% average across ${chapter.totalQuizzes} quiz${(chapter.totalQuizzes as number) === 1 ? "" : "zes"}.`
+    );
+  }
+
+  if (question && (question.attempts as number) > 0) {
+    lines.push(
+      `This question: ${question.accuracy}% accuracy over ${question.attempts} attempt${(question.attempts as number) === 1 ? "" : "s"}.`
+    );
+  }
+
+  if (weakest.length > 0) {
+    const labels = weakest
+      .slice(0, 3)
+      .map((entry) => {
+        const item = entry as Record<string, unknown>;
+        const text = String(item.question ?? "Unknown question");
+        return `"${text.slice(0, 60)}${text.length > 60 ? "..." : ""}" (${item.accuracy ?? "?"}%)`;
+      })
+      .join("; ");
+    lines.push(`Weakest areas in this chapter: ${labels}.`);
+  }
+
+  if (revisionAreas.length > 0) {
+    const tags = revisionAreas
+      .slice(0, 3)
+      .map((entry) => {
+        const item = entry as Record<string, unknown>;
+        return String(item.label ?? item.tag ?? "concept");
+      })
+      .join(", ");
+    lines.push(`Recommend revisiting: ${tags}.`);
+  }
+
+  if (lines.length === 0) return "";
+
+  return `
+
+Use this student performance context to personalize your response:
+${lines.map((line) => `- ${line}`).join("\n")}
+- Emphasize weak areas with extra clarity and targeted practice suggestions.
+- Reference chapter performance when explaining why a concept matters.`;
+}
+
+function buildSystemPrompt(
+  intent: TutorIntent,
+  question?: Record<string, unknown>,
+  performanceContext?: Record<string, unknown> | null
+): string {
   const base =
     "You are a friendly ACCTG 102 accounting tutor. Use clear, exam-focused language. Keep responses concise (2-4 short paragraphs max unless the student asks for more).";
+  const performanceGuidance = buildPerformanceGuidance(performanceContext);
 
   switch (intent) {
     case "hint":
       return `${base}
 
 Give a helpful hint for the current question.
-${buildHintPrompt(question)}`;
+${buildHintPrompt(question)}${performanceGuidance}`;
     case "explain":
       return `${base}
 
@@ -95,13 +158,13 @@ Explain the accounting concept behind this question.
 - Use the provided official explanation as ground truth when available.
 - If the student was wrong, compare their submitted answer to the correct approach line by line.
 - Name what is incorrect in their answer, then explain the correct reasoning.
-- Teach the concept so they can apply it to similar questions.`;
+- Teach the concept so they can apply it to similar questions.${performanceGuidance}`;
     case "ask":
       return `${base}
 
 Answer the student's follow-up question in the context of the current quiz question.
 - Stay focused on accounting concepts relevant to ACCTG 102.
-- If they ask for the direct answer before attempting the question, give guidance instead of the final answer.`;
+- If they ask for the direct answer before attempting the question, give guidance instead of the final answer.${performanceGuidance}`;
     default:
       return base;
   }
@@ -118,6 +181,7 @@ function buildUserPrompt(request: TutorRequest): string {
     currentAnswer: request.currentAnswer ?? null,
     userMessage: request.userMessage ?? null,
     priorMessages: request.messages ?? [],
+    performanceContext: request.performanceContext ?? null,
     ...(isWhyWrong ? { task: "Explain why the submitted answer is wrong and how to fix it." } : {}),
   };
 
@@ -145,7 +209,7 @@ async function callTutorModel(request: TutorRequest): Promise<string> {
 
   const content = await chatCompletion(
     [
-      { role: "system", content: buildSystemPrompt(request.intent, request.question) },
+      { role: "system", content: buildSystemPrompt(request.intent, request.question, request.performanceContext) },
       ...history,
       { role: "user", content: buildUserPrompt(request) },
     ],

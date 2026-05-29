@@ -1,6 +1,7 @@
+import { isChapterQuizAll, resolveChapterQuizSize } from "../constants/chapterQuiz.js";
 import { PRACTICE_GROUPS, PRACTICE_QUESTIONS, QUESTIONS, topics } from "../data/index.js";
 import { normalizeQuestion } from "../data/schema/questionTypes.js";
-import { getQuestionId, getStatsSummary, loadQuizStats } from "./stats.js";
+import { getQuestionId, getStatsSummary, loadQuizStats, resolveQuestionId } from "./stats.js";
 import { shuffleArray, shuffleQuestionOptions } from "./shuffle.js";
 
 function getAllQuestionsWithTopics() {
@@ -26,7 +27,7 @@ function mapQuestionsToPool(questions) {
   const store = loadQuizStats();
 
   return questions.map((question) => {
-    const id = getQuestionId(question.topic, getQuestionText(question));
+    const id = resolveQuestionId(question);
     const stats = store.questions[id] ?? defaultStats();
 
     return {
@@ -69,16 +70,49 @@ function buildPayload(mode, pool, { topic, practiceLabel, size } = {}) {
   };
 }
 
+function dedupeQuestions(questions) {
+  const seen = new Set();
+  return questions.filter((question) => {
+    const key = question.id ?? `${question.topic}::${getQuestionText(question)}`;
+    if (seen.has(key)) return false;
+    seen.add(key);
+    return true;
+  });
+}
+
+export function resolveChapterQuizQuestions(topic, requestedSize) {
+  const bank = QUESTIONS[topic] ?? [];
+  const unique = dedupeQuestions(bank.map((question) => ({ ...question, topic })));
+  const availableCount = unique.length;
+  const actualSize = resolveChapterQuizSize(requestedSize, availableCount);
+  const shuffled = shuffleArray(unique);
+  const selected = shuffled.slice(0, actualSize);
+
+  return {
+    questions: selected.map((question) => shuffleQuestionOptions(question)),
+    requestedSize,
+    actualSize,
+    availableCount,
+    notice:
+      !isChapterQuizAll(requestedSize) && availableCount > 0 && actualSize < requestedSize
+        ? `This chapter only has ${availableCount} question${availableCount === 1 ? "" : "s"} available. Showing all ${actualSize}.`
+        : null,
+  };
+}
+
 export function buildMcqQuizQuestions(mode, topic, size) {
   let questions;
   if (mode === "topic") {
+    if (size) {
+      return resolveChapterQuizQuestions(topic, size).questions;
+    }
     questions = QUESTIONS[topic].map((question) => ({ ...question, topic }));
   } else {
     questions = getAllQuestionsWithTopics();
   }
 
-  const shuffled = shuffleArray(questions);
-  const selected = mode === "mini" ? shuffled.slice(0, size) : shuffled;
+  const shuffled = shuffleArray(dedupeQuestions(questions));
+  const selected = mode === "mini" || (mode === "topic" && size) ? shuffled.slice(0, size) : shuffled;
 
   return selected.map((question) => shuffleQuestionOptions(question));
 }

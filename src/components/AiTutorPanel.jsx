@@ -1,6 +1,7 @@
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { QUESTION_TYPES } from "../data/schema/questionTypes.js";
 import { theme } from "../styles/theme.js";
+import { getTutorPerformanceContext } from "../utils/stats.js";
 import { canUseTutor, formatTutorUsesRemaining } from "../utils/tutorLimit.js";
 import {
   buildAskPayload,
@@ -89,6 +90,10 @@ export function AiTutorPanel({
   const showWhyWrong = wasWrong && !isWritten;
   const hasUsesRemaining = tutorUses ? canUseTutor(tutorUses) : true;
   const isDisabled = loading || !hasUsesRemaining;
+  const performanceContext = useMemo(
+    () => getTutorPerformanceContext(question),
+    [question.id, question.q, question.prompt, question.topic]
+  );
 
   useEffect(() => {
     setMessages([]);
@@ -137,17 +142,18 @@ export function AiTutorPanel({
     }
   };
 
-  const handleHint = () => runTutorRequest(buildHintPayload(question), buildFallbackHint);
+  const handleHint = () => runTutorRequest(buildHintPayload(question, performanceContext), buildFallbackHint);
 
   const handleExplain = () =>
-    runTutorRequest(buildExplainPayload(question, currentAnswer), buildFallbackExplain);
+    runTutorRequest(buildExplainPayload(question, currentAnswer, null, performanceContext), buildFallbackExplain);
 
   const handleWhyWrong = () =>
     runTutorRequest(
       buildExplainPayload(
         question,
         currentAnswer,
-        "Explain why my answer was wrong and how to think about this correctly."
+        "Explain why my answer was wrong and how to think about this correctly.",
+        performanceContext
       ),
       buildFallbackExplain
     );
@@ -170,7 +176,8 @@ export function AiTutorPanel({
           question,
           currentAnswer,
           trimmed,
-          nextMessages.slice(0, -1).map(({ role, content }) => ({ role, content }))
+          nextMessages.slice(0, -1).map(({ role, content }) => ({ role, content })),
+          performanceContext
         ),
         buildFallbackAsk
       );

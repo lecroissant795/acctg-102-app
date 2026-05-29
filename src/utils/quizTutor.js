@@ -98,30 +98,33 @@ export function formatCorrectAnswer(question) {
   }
 }
 
-export function buildHintPayload(question) {
+export function buildHintPayload(question, performanceContext = null) {
   return {
     intent: "hint",
     question,
+    performanceContext,
     messages: [],
   };
 }
 
-export function buildExplainPayload(question, currentAnswer, userMessage = null) {
+export function buildExplainPayload(question, currentAnswer, userMessage = null, performanceContext = null) {
   return {
     intent: "explain",
     question,
     currentAnswer,
     userMessage,
+    performanceContext,
     messages: [],
   };
 }
 
-export function buildAskPayload(question, currentAnswer, userMessage, messages = []) {
+export function buildAskPayload(question, currentAnswer, userMessage, messages = [], performanceContext = null) {
   return {
     intent: "ask",
     question,
     currentAnswer,
     userMessage,
+    performanceContext,
     messages,
   };
 }

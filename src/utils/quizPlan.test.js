@@ -1,4 +1,5 @@
 import { describe, expect, test } from "bun:test";
+import { QUESTIONS } from "../data/index.js";
 import {
   applyQuizPlan,
   applyPracticeQuiz,
@@ -8,6 +9,7 @@ import {
   fallbackPracticeQuiz,
   fallbackQuizPlan,
   getPracticeLoadingMessage,
+  resolveChapterQuizQuestions,
   resolvePracticeQuiz,
   resolveQuizPlan,
 } from "./quizPlan.js";
@@ -69,6 +71,25 @@ describe("buildMcqQuizQuestions", () => {
   test("limits mini quizzes to requested size", () => {
     const result = buildMcqQuizQuestions("mini", null, 5);
     expect(result).toHaveLength(5);
+  });
+
+  test("limits chapter quizzes to requested size without duplicates", () => {
+    const topic = "Ch 2: The Recording Process";
+    const result = resolveChapterQuizQuestions(topic, 5);
+
+    expect(result.actualSize).toBe(5);
+    expect(result.questions).toHaveLength(5);
+    expect(new Set(result.questions.map((question) => question.id)).size).toBe(5);
+  });
+
+  test("includes all chapter questions when all is selected", () => {
+    const topic = "Ch 2: The Recording Process";
+    const available = QUESTIONS[topic].length;
+    const result = resolveChapterQuizQuestions(topic, "all");
+
+    expect(result.actualSize).toBe(available);
+    expect(result.questions).toHaveLength(available);
+    expect(result.notice).toBeNull();
   });
 });
 

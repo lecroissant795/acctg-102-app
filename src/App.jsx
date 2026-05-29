@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { AuthScreen } from "./components/AuthScreen.jsx";
+import { ChapterQuizSetupModal } from "./components/ChapterQuizSetupModal.jsx";
 import { HomeScreen } from "./components/HomeScreen.jsx";
 import { MobileMenu } from "./components/MobileMenu.jsx";
 import { QuizScreen } from "./components/QuizScreen.jsx";
@@ -17,10 +18,12 @@ import {
   totalPracticeQuestionCount,
   totalQuestionCount,
 } from "./data/index.js";
+import { DEFAULT_CHAPTER_QUIZ_SIZE } from "./constants/chapterQuiz.js";
 import {
   buildMcqQuizQuestions,
   buildPracticeQuestionPool,
   getPracticeLoadingMessage,
+  resolveChapterQuizQuestions,
   resolvePracticeQuiz,
 } from "./utils/quizPlan.js";
 import { getOriginalOptionIndex } from "./utils/shuffle.js";
@@ -52,6 +55,9 @@ export default function App() {
   const [answers, setAnswers] = useState([]);
   const [mode, setMode] = useState("all");
   const [miniSize, setMiniSize] = useState(10);
+  const [chapterQuizSize, setChapterQuizSize] = useState(DEFAULT_CHAPTER_QUIZ_SIZE);
+  const [pendingChapterSetup, setPendingChapterSetup] = useState(null);
+  const [quizSizeNotice, setQuizSizeNotice] = useState(null);
   const [quizStartedAt, setQuizStartedAt] = useState(null);
   const [planLoading, setPlanLoading] = useState(false);
   const [planLoadingLabel, setPlanLoadingLabel] = useState(null);
@@ -76,6 +82,25 @@ export default function App() {
     setQuestions([]);
     setSelectedTopicIndex(null);
     setSelectedPracticeLabel(null);
+    setQuizSizeNotice(null);
+  };
+
+  const openChapterSetup = (topicIndex) => {
+    setPendingChapterSetup({ topicIndex });
+  };
+
+  const closeChapterSetup = () => {
+    setPendingChapterSetup(null);
+    if (route.name === "quiz-chapter") {
+      navigate(ROUTES.home, { replace: true });
+    }
+  };
+
+  const confirmChapterQuiz = () => {
+    if (!pendingChapterSetup) return;
+    const { topicIndex } = pendingChapterSetup;
+    setPendingChapterSetup(null);
+    startChapterQuiz(topicIndex, chapterQuizSize);
   };
 
   const handleConsumeTutorUse = () => {
@@ -104,12 +129,20 @@ export default function App() {
     navigate(quizPath, { replace: true });
   };
 
-  const startChapterQuiz = (topicIndex) =>
-    startMcqQuiz({
-      nextMode: "topic",
-      topicIndex,
-      quizPath: chapterPath(topics[topicIndex]),
-    });
+  const startChapterQuiz = (topicIndex, size = chapterQuizSize) => {
+    const topic = topics[topicIndex];
+    const { questions: nextQuestions, notice } = resolveChapterQuizQuestions(topic, size);
+
+    setSelectedTopicIndex(topicIndex);
+    setSelectedPracticeLabel(null);
+    setQuestions(nextQuestions);
+    setMode("topic");
+    setChapterQuizSize(size);
+    setQuizSizeNotice(notice);
+    resetQuizState();
+    activeQuizPathRef.current = chapterPath(topic);
+    navigate(chapterPath(topic), { replace: true });
+  };
 
   const startPracticeGroup = async (label) => {
     setPlanLoadingLabel(label);
@@ -207,7 +240,7 @@ export default function App() {
 
   const handleRetry = () => {
     if (mode === "mini") startMiniQuiz(miniSize);
-    else if (mode === "topic" && selectedTopicIndex !== null) startChapterQuiz(selectedTopicIndex);
+    else if (mode === "topic" && selectedTopicIndex !== null) startChapterQuiz(selectedTopicIndex, chapterQuizSize);
     else if (mode === "practice" && selectedPracticeLabel) startPracticeGroup(selectedPracticeLabel);
     else startFullExam();
   };
@@ -232,8 +265,10 @@ export default function App() {
 
     if (route.name === "quiz-mini") startMiniQuiz(route.size);
     else if (route.name === "quiz-exam") startFullExam();
-    else if (route.name === "quiz-chapter") startChapterQuiz(route.topicIndex);
-    else if (route.name === "quiz-practice") startPracticeGroup(route.label);
+    else if (route.name === "quiz-chapter") {
+      if (activeQuizPathRef.current === window.location.pathname && questions.length > 0) return;
+      setPendingChapterSetup({ topicIndex: route.topicIndex });
+    } else if (route.name === "quiz-practice") startPracticeGroup(route.label);
   }, [route, authLoading, planLoading, questions.length, navigate]);
 
   useEffect(() => {
@@ -256,7 +291,7 @@ export default function App() {
           ? "Full Exam"
           : mode === "practice"
             ? selectedPracticeLabel
-            : topics[selectedTopicIndex];
+            : `Chapter Quiz (${questions.length} Qs) · ${topics[selectedTopicIndex]}`;
     const maxScore = questions.reduce(
       (sum, question) => sum + (typeof question.points === "number" ? question.points : question.type === "written" ? 0 : 1),
       0
@@ -317,7 +352,7 @@ export default function App() {
     onSignOut: () => signOut(),
     onStartMini: (size) => navigate(ROUTES.quizMini(size)),
     onStartAll: () => navigate(ROUTES.quizExam),
-    onStartChapter: (topicIndex) => navigate(chapterPath(topics[topicIndex])),
+    onStartChapter: openChapterSetup,
     onStartPracticeGroup: (label) => navigate(practicePath(label)),
     onOpenStats: () => navigate(ROUTES.stats),
     onHome: () => navigate(ROUTES.home),
@@ -350,7 +385,7 @@ export default function App() {
         onSignOut={() => signOut()}
         onStartMini={(size) => navigate(ROUTES.quizMini(size))}
         onStartAll={() => navigate(ROUTES.quizExam)}
-        onStartChapter={(topicIndex) => navigate(chapterPath(topics[topicIndex]))}
+        onStartChapter={openChapterSetup}
         onStartPracticeGroup={(label) => navigate(practicePath(label))}
         onOpenStats={() => navigate(ROUTES.stats)}
       />
@@ -393,6 +428,7 @@ export default function App() {
         currentAnswer={currentAnswer}
         showExplanation={showExplanation}
         score={score}
+        quizSizeNotice={quizSizeNotice}
         onBack={() => navigate(ROUTES.home)}
         onSubmitAnswer={handleSubmitAnswer}
         onNext={handleNext}
@@ -422,10 +458,23 @@ export default function App() {
     );
   }
 
+  const chapterSetupModal =
+    pendingChapterSetup != null ? (
+      <ChapterQuizSetupModal
+        topic={topics[pendingChapterSetup.topicIndex]}
+        availableCount={QUESTIONS[topics[pendingChapterSetup.topicIndex]]?.length ?? 0}
+        selectedSize={chapterQuizSize}
+        onSelectSize={setChapterQuizSize}
+        onStart={confirmChapterQuiz}
+        onCancel={closeChapterSetup}
+      />
+    ) : null;
+
   return (
     <NavigationProvider value={navigation}>
       <MobileMenu />
       {screen}
+      {chapterSetupModal}
     </NavigationProvider>
   );
 }

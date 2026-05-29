@@ -18,10 +18,10 @@ const StatsContext = createContext(null);
 function readLocalStoreForMerge() {
   try {
     const raw = localStorage.getItem("acctg102-quiz-stats");
-    if (!raw) return { sessions: [], questions: {} };
+    if (!raw) return { sessions: [], questions: {}, chapters: {} };
     return normalizeStore(JSON.parse(raw));
   } catch {
-    return { sessions: [], questions: {} };
+    return { sessions: [], questions: {}, chapters: {} };
   }
 }
 
