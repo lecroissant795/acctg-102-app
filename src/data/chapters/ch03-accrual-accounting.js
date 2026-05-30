@@ -3,14 +3,94 @@ import { ankiMcqs } from "./ch03-anki-mcqs.js";
 export const title = "Ch 3: Accrual Accounting Concepts";
 
 const coreMcqs = [
-  { q: "Under accrual accounting, revenue is recognised when:", options: ["Cash is received", "A contract is signed", "The performance obligation is satisfied (goods/services delivered)", "An invoice is sent to the customer"], answer: 2, explanation: "Under accrual accounting, revenue is recognised when the performance obligation is satisfied, regardless of when cash is received." },
-  { q: "An adjusting entry for accrued expenses involves:", options: ["A debit to an asset and a credit to revenue", "A debit to an expense and a credit to a liability", "A debit to a liability and a credit to cash", "A debit to revenue and a credit to an expense"], answer: 1, explanation: "Accrued expenses are expenses incurred but not yet paid, requiring a debit to the expense and credit to the liability (e.g., wages payable)." },
-  { q: "Prepaid expenses are classified as:", options: ["Liabilities", "Equity", "Assets", "Expenses"], answer: 2, explanation: "Prepaid expenses are assets because they represent future economic benefits (services/goods not yet consumed)." },
-  { q: "Unearned revenue is:", options: ["Revenue earned but not yet received in cash", "A liability representing cash received before services are delivered", "An asset from future sales", "An expense that has been prepaid"], answer: 1, explanation: "Unearned revenue is a liability because the business has received cash but has not yet delivered the goods or services." },
-  { q: "Which principle requires that expenses be matched with the revenues they help generate?", options: ["Revenue recognition principle", "Expense recognition (matching) principle", "Full disclosure principle", "Historical cost principle"], answer: 1, explanation: "The expense recognition (matching) principle states expenses should be recognised in the same period as the revenues they help to generate." },
-  { q: "Depreciation is an example of which type of adjusting entry?", options: ["Accrued revenue", "Accrued expense", "Prepaid expense (deferred expense)", "Unearned revenue"], answer: 2, explanation: "Depreciation allocates the cost of a prepaid (deferred) asset over its useful life, similar to how prepaid insurance is expensed over time." },
-  { q: "An adjusted trial balance is prepared:", options: ["Before any adjusting entries", "After adjusting entries but before financial statements", "After financial statements are prepared", "Only at the end of the financial year"], answer: 1, explanation: "The adjusted trial balance is prepared after all adjusting entries have been recorded and posted, and before financial statements are prepared." },
-  { q: "If a company fails to record accrued revenue at year-end:", options: ["Assets and revenues will both be overstated", "Assets and revenues will both be understated", "Liabilities will be overstated", "Expenses will be overstated"], answer: 1, explanation: "Failing to record accrued revenue understates both the asset (accounts receivable) and revenue for the period." },
+  {
+    q: "Meridian Ltd delivered goods to a client on 25 June on credit. Under accrual accounting, when should revenue be recognised if control passes on delivery?",
+    options: [
+      "In June, when the performance obligation was satisfied on delivery",
+      "In July, when cash is expected to be collected from the client",
+      "In June, when the sales invoice is emailed to the client",
+      "At year-end only, through a lump-sum adjusting entry",
+    ],
+    answer: 0,
+    explanation: "Under accrual accounting, revenue is recognised when the performance obligation is satisfied (goods delivered/services performed), regardless of when cash is received.",
+  },
+  {
+    q: "At 30 June, wages of $1,800 have been incurred but not yet paid. Which adjusting entry is required?",
+    options: [
+      "Debit Wages Payable; Credit Wages Expense",
+      "Debit Wages Expense; Credit Wages Payable",
+      "Debit Cash; Credit Wages Expense",
+      "Debit Wages Expense; Credit Prepaid Wages",
+    ],
+    answer: 1,
+    explanation: "Accrued expenses are recognised with a debit to the expense and a credit to the liability (e.g., wages payable).",
+  },
+  {
+    q: "On 1 March, a company pays $3,600 for a 12-month insurance policy. At 30 June, what classification best describes the unused portion still on the books?",
+    options: [
+      "Insurance expense for the full payment made in March",
+      "Unearned revenue because cash was paid in advance",
+      "Prepaid insurance, a current asset representing future coverage",
+      "Accrued insurance payable owed to the insurer",
+    ],
+    answer: 2,
+    explanation: "Prepaid expenses are assets because they represent future economic benefits (services/goods not yet consumed).",
+  },
+  {
+    q: "A publisher receives $4,800 on 1 January for a 12-month magazine subscription. No issues have been delivered by 31 January. How should the receipt be recorded initially?",
+    options: [
+      "Subscription revenue of $4,800 in January",
+      "Unearned revenue (liability) until issues are delivered",
+      "Accounts receivable until the subscriber reads the magazine",
+      "Prepaid subscription expense for future printing costs",
+    ],
+    answer: 1,
+    explanation: "Unearned revenue is a liability because the business has received cash but has not yet delivered the goods or services.",
+  },
+  {
+    q: "A retailer pays sales commissions in the month after the related sales occur. Which principle requires the commission expense to be reported in the month of sale?",
+    options: [
+      "Revenue recognition principle applied to cash receipts",
+      "Expense recognition (matching) principle",
+      "Historical cost principle for all operating payments",
+      "Full disclosure principle for related-party transactions",
+    ],
+    answer: 1,
+    explanation: "The expense recognition (matching) principle states expenses should be recognised in the same period as the revenues they help to generate.",
+  },
+  {
+    q: "Equipment costing $18,000 with accumulated depreciation of $6,750 has been used for another month. Which type of adjusting entry is required?",
+    options: [
+      "Accrued revenue for services performed on credit",
+      "Accrued expense for wages not yet paid",
+      "Deferral of prepaid expense as coverage expires",
+      "Allocation of asset cost to depreciation expense",
+    ],
+    answer: 3,
+    explanation: "Depreciation allocates the cost of a long-term asset to expense over its useful life, similar to expensing prepaid insurance over time.",
+  },
+  {
+    q: "Adjusting entries for accrued wages and expired prepaid rent have been posted. What is the next major step before drafting the income statement?",
+    options: [
+      "Prepare the post-closing trial balance for the period",
+      "Prepare the adjusted trial balance from updated ledger balances",
+      "Close all revenue accounts directly to retained earnings",
+      "Journalise only the cash transactions that occurred during the period",
+    ],
+    answer: 1,
+    explanation: "The adjusted trial balance is prepared after all adjusting entries have been recorded and posted, and before financial statements are prepared.",
+  },
+  {
+    q: "At year-end, $950 of services had been performed on credit but were never recorded. If no adjustment is made, which outcome is most likely?",
+    options: [
+      "Assets and revenues are both overstated; profit is overstated",
+      "Assets and revenues are both understated; profit is understated",
+      "Liabilities are overstated while revenue remains unchanged",
+      "Expenses are overstated and profit is understated",
+    ],
+    answer: 1,
+    explanation: "Failing to record accrued revenue understates both the asset (accounts receivable) and revenue for the period, which typically understates profit.",
+  },
 ];
 
 const practiceQuestions = [

@@ -4,119 +4,119 @@
 export const ankiMcqs = [
   {
     "id": "ch03-anki-01",
-    "q": "What is the main focus of Chapter 3?",
+    "q": "A retailer pays rent on 1 January for the full year but only occupies the premises from February. Under accrual accounting, what issue does Chapter 3 primarily address?",
     "options": [
-      "Timing: recognising revenues and expenses in the correct accounting period, regardless of when cash is received or paid.",
-      "When cash is received or paid",
-      "When a contract is signed",
-      "At the end of the financial year only"
+      "Recording only transactions that change the cash balance during the period",
+      "Valuing all assets at current market prices at each month-end reporting date",
+      "Eliminating the need to prepare any trial balance before issuing statements",
+      "Matching economic activity to the correct reporting period, not merely to cash flows."
     ],
-    "answer": 0,
-    "explanation": "Timing: recognising revenues and expenses in the correct accounting period, regardless of when cash is received or paid.",
+    "answer": 3,
+    "explanation": "Matching economic activity to the correct reporting period, not merely to cash flows.",
     "tags": [
       "adjusting_entries"
     ]
   },
   {
     "id": "ch03-anki-02",
-    "q": "What is the accrual basis of accounting?",
+    "q": "Which statement best distinguishes accrual accounting from cash accounting?",
     "options": [
-      "A method where revenue is recognised when earned and expenses are recognised when incurred.",
-      "When cash is received",
-      "When cash is paid",
-      "When a contract is approved"
+      "Revenue and expenses are recognised when earned or incurred, even if cash has not yet moved.",
+      "Revenue and expenses are recognised only when cash is received or paid",
+      "Revenue is recognised at contract signing and expenses when invoices arrive",
+      "Only large entities must accrue; small entities always use cash accounting"
     ],
     "answer": 0,
-    "explanation": "A method where revenue is recognised when earned and expenses are recognised when incurred.",
+    "explanation": "Revenue and expenses are recognised when earned or incurred, even if cash has not yet moved.",
     "tags": [
       "adjusting_entries"
     ]
   },
   {
     "id": "ch03-anki-03",
-    "q": "What is the cash basis of accounting?",
+    "q": "A sole trader records a $900 electricity bill only after paying it in cash, ignoring usage in the prior month. Which basis is being applied?",
     "options": [
-      "A method where revenue is recognised when cash is received and expenses are recognised when cash is paid.",
-      "When cash is received",
-      "When cash is paid",
-      "When a contract is approved"
+      "Accrual basis accounting",
+      "Tax basis accounting with AASB adjustments",
+      "Fair value basis accounting",
+      "Cash basis accounting."
     ],
-    "answer": 0,
-    "explanation": "A method where revenue is recognised when cash is received and expenses are recognised when cash is paid.",
+    "answer": 3,
+    "explanation": "Cash basis accounting.",
     "tags": [
       "adjusting_entries"
     ]
   },
   {
     "id": "ch03-anki-04",
-    "q": "Under accrual accounting, when is revenue recognised?",
+    "q": "On 28 June, Apex Ltd delivers goods to a customer on credit. Payment is expected in August. When should revenue be recognised under accrual accounting?",
     "options": [
-      "When goods or services are provided, not necessarily when cash is received.",
-      "When cash is received",
-      "When cash is paid",
-      "When a contract is approved"
+      "In June, when control of the goods passes to the customer.",
+      "In August, when cash is collected from the customer",
+      "In July, when the invoice is mailed to the customer",
+      "Evenly over June, July, and August as cash is expected"
     ],
     "answer": 0,
-    "explanation": "When goods or services are provided, not necessarily when cash is received.",
+    "explanation": "In June, when control of the goods passes to the customer.",
     "tags": [
       "adjusting_entries"
     ]
   },
   {
     "id": "ch03-anki-05",
-    "q": "Under cash basis accounting, when is revenue recognised?",
+    "q": "Using the same Apex Ltd delivery in June with cash received in August, when is revenue recognised under cash basis accounting?",
     "options": [
-      "When cash is received.",
-      "When goods or services are provided",
-      "When the performance obligation is satisfied",
-      "When an invoice is issued"
+      "In August, when cash is received from the customer.",
+      "In June, when the goods are delivered to the customer",
+      "In June, when the sales invoice is prepared",
+      "In the year-end adjustment process only"
     ],
     "answer": 0,
-    "explanation": "When cash is received.",
+    "explanation": "In August, when cash is received from the customer.",
     "tags": [
       "adjusting_entries"
     ]
   },
   {
     "id": "ch03-anki-06",
-    "q": "Under accrual accounting, when are expenses recognised?",
+    "q": "Staff use office supplies throughout June, but payment to the supplier occurs in July. Under accrual accounting, when is the expense recognised?",
     "options": [
-      "When assets are consumed or liabilities are incurred.",
-      "When cash is paid",
-      "When an invoice is received",
-      "At the end of the financial year only"
+      "In June, when the supplies are consumed in operations.",
+      "In July, when cash is paid to the supplier",
+      "When the purchase order is approved by management",
+      "Only if the amount exceeds the company's capitalization threshold"
     ],
     "answer": 0,
-    "explanation": "When assets are consumed or liabilities are incurred.",
+    "explanation": "In June, when the supplies are consumed in operations.",
     "tags": [
       "adjusting_entries"
     ]
   },
   {
     "id": "ch03-anki-07",
-    "q": "Under cash basis accounting, when are expenses recognised?",
+    "q": "For the same supplies example with payment in July, when is the expense recognised under cash basis accounting?",
     "options": [
-      "When cash is paid.",
-      "When assets are consumed or liabilities are incurred",
-      "When goods are delivered",
-      "When revenue is earned"
+      "In July, when cash is paid to the supplier.",
+      "In June, when the supplies are consumed in operations",
+      "In June, when the supplier delivers the goods",
+      "When the bank statement is reconciled at month-end"
     ],
     "answer": 0,
-    "explanation": "When cash is paid.",
+    "explanation": "In July, when cash is paid to the supplier.",
     "tags": [
       "adjusting_entries"
     ]
   },
   {
     "id": "ch03-anki-08",
-    "q": "Which basis of accounting is required by AASB/IFRS?",
+    "q": "A listed company prepares general purpose financial statements under AASB/IFRS. Which measurement approach to revenue and expenses is required?",
     "options": [
+      "Cash basis accounting for all operating items",
       "Accrual basis accounting.",
-      "Cash basis accounting",
-      "Tax basis accounting",
-      "Modified cash basis accounting"
+      "Modified cash basis with quarterly accruals only",
+      "Tax basis accounting as lodged with the ATO"
     ],
-    "answer": 0,
+    "answer": 1,
     "explanation": "Accrual basis accounting.",
     "tags": [
       "adjusting_entries"
@@ -124,192 +124,252 @@ export const ankiMcqs = [
   },
   {
     "id": "ch03-anki-09",
-    "q": "Why is accrual accounting preferred over cash accounting?",
+    "q": "An analyst compares two firms with identical cash receipts but different credit sales. Why is accrual information usually more useful than cash records alone?",
     "options": [
-      "It gives a more accurate picture of financial performance and position by matching economic activity to the correct period.",
-      "It is simpler and requires fewer adjusting entries",
-      "It only records transactions when cash changes hands",
-      "It eliminates the need for a trial balance"
+      "It is always easier to prepare because no adjusting entries are needed",
+      "It reports only liquid assets, improving short-term decision making",
+      "It links performance and position to the period in which goods and services are provided.",
+      "It removes the need to prepare a statement of financial position"
     ],
-    "answer": 0,
-    "explanation": "It gives a more accurate picture of financial performance and position by matching economic activity to the correct period.",
+    "answer": 2,
+    "explanation": "It links performance and position to the period in which goods and services are provided.",
     "tags": [
       "adjusting_entries"
     ]
   },
   {
     "id": "ch03-anki-10",
-    "q": "A law firm completes $5,000 of work in June but receives cash in July. When is revenue recognised under accrual accounting?",
+    "q": "A law firm completes $5,000 of billable work in June but receives cash in July. Under accrual accounting, in which period should the revenue be reported?",
     "options": [
-      "June, because the service was performed in June.",
-      "July, because cash was received in July",
-      "August, when the invoice is paid",
-      "Split equally between June and July"
+      "June, because the performance obligation was satisfied in that period.",
+      "July, because that is when cash was received from the client",
+      "August, when the client pays the posted invoice in full",
+      "Half in June and half in July to match cash collection"
     ],
     "answer": 0,
-    "explanation": "June, because the service was performed in June.",
+    "explanation": "June, because the performance obligation was satisfied in that period.",
     "tags": [
       "adjusting_entries"
     ]
   },
   {
     "id": "ch03-anki-11",
-    "q": "A law firm completes $5,000 of work in June but receives cash in July. When is revenue recognised under cash accounting?",
+    "q": "For the same law firm example, under cash basis accounting, in which period should the revenue be reported?",
     "options": [
-      "July, because cash was received in July.",
-      "June, because the service was performed in June",
-      "When the contract was signed",
-      "At year-end only"
+      "June, because the legal services were performed then",
+      "June, because the engagement letter was signed then",
+      "July, because revenue is recognised when cash is received.",
+      "At year-end through an adjusting entry only"
     ],
-    "answer": 0,
-    "explanation": "July, because cash was received in July.",
+    "answer": 2,
+    "explanation": "July, because revenue is recognised when cash is received.",
     "tags": [
       "adjusting_entries"
     ]
   },
   {
     "id": "ch03-anki-12",
-    "q": "What is the period assumption?",
+    "q": "Management wants monthly performance reports even though the business expects to operate for many years. Which assumption makes this reporting approach possible?",
     "options": [
-      "The assumption that a business's economic life can be divided into artificial time periods such as months, quarters, or years.",
-      "The assumption that a business will operate indefinitely",
-      "The assumption that only cash transactions are recorded",
-      "The assumption that the business is separate from its owners"
+      "The going concern assumption alone, without dividing the entity's life",
+      "The monetary unit assumption applied to cash flows only",
+      "The economic entity assumption that separates owner and business cash",
+      "The time period (periodicity) assumption."
     ],
-    "answer": 0,
-    "explanation": "The assumption that a business's economic life can be divided into artificial time periods such as months, quarters, or years.",
+    "answer": 3,
+    "explanation": "The time period (periodicity) assumption.",
     "tags": [
       "adjusting_entries"
     ]
   },
   {
     "id": "ch03-anki-13",
-    "q": "Why does the period assumption matter?",
+    "q": "Because financial statements are prepared for artificial time periods, what practical problem must accountants solve each period?",
     "options": [
-      "It creates the need to decide which period revenues and expenses belong to.",
-      "It eliminates the need for adjusting entries",
-      "It requires all transactions to use cash basis",
-      "It means financial statements are prepared only once"
+      "Determining which revenues and expenses belong in the current period rather than another.",
+      "Converting all transactions to cash basis amounts before reporting results",
+      "Removing all liability balances from the statement of financial position each period",
+      "Reporting only permanent accounts on the statement of profit or loss"
     ],
     "answer": 0,
-    "explanation": "It creates the need to decide which period revenues and expenses belong to.",
+    "explanation": "Determining which revenues and expenses belong in the current period rather than another.",
     "tags": [
       "adjusting_entries"
     ]
   },
   {
     "id": "ch03-anki-14",
-    "q": "According to the Conceptual Framework, income should be recognised when what happens?",
+    "q": "Under the Conceptual Framework, income is recognised when which condition is met?",
     "options": [
-      "When changes in assets or liabilities can be recognised and faithfully represented.",
-      "When cash is received from customers",
-      "When management approves the transaction",
-      "When the ATO receives the tax return"
+      "Cash has been received from the customer or another debtor in full",
+      "Changes in assets or liabilities from the transaction can be measured reliably and represented faithfully.",
+      "Management has approved the transaction in a signed internal memo",
+      "The entity has lodged its income tax return for the reporting period"
     ],
-    "answer": 0,
-    "explanation": "When changes in assets or liabilities can be recognised and faithfully represented.",
+    "answer": 1,
+    "explanation": "Changes in assets or liabilities from the transaction can be measured reliably and represented faithfully.",
     "tags": [
       "adjusting_entries"
     ]
   },
   {
     "id": "ch03-anki-15",
-    "q": "Generally, when is revenue recognised?",
+    "q": "Bright Apps sells a one-year software licence on 1 April. Support and updates are delivered continuously. When is revenue generally recognised?",
     "options": [
-      "When a service is performed or when goods are delivered.",
-      "When cash is received",
-      "When cash is paid",
-      "When a contract is approved"
+      "Over time as the software service is provided to the customer.",
+      "Entirely on 1 April because cash was received upfront",
+      "Only when the customer renews the licence next year",
+      "When the contract is signed, regardless of service delivery"
     ],
     "answer": 0,
-    "explanation": "When a service is performed or when goods are delivered.",
+    "explanation": "Over time as the software service is provided to the customer.",
     "tags": [
       "adjusting_entries"
     ]
   },
   {
     "id": "ch03-anki-16",
-    "q": "What is the matching of costs and income?",
+    "q": "A retailer pays commission to sales staff based on goods sold in October, but pays the commission in November. Which principle requires the commission expense to appear in October?",
     "options": [
-      "Recognising related revenues and expenses in the same accounting period.",
-      "Recording all cash receipts as revenue",
-      "Matching assets to liabilities on the balance sheet",
-      "Recording expenses only when cash is paid"
+      "The matching principle (expense recognition).",
+      "The revenue recognition principle applied to cash receipts",
+      "The full disclosure principle for related-party payments",
+      "The historical cost principle for all operating payments"
     ],
     "answer": 0,
-    "explanation": "Recognising related revenues and expenses in the same accounting period.",
+    "explanation": "The matching principle (expense recognition).",
     "tags": [
       "adjusting_entries"
     ]
   },
   {
     "id": "ch03-anki-17",
-    "q": "What accounting standard deals with revenue from contracts with customers?",
+    "q": "A manufacturer enters a long-term contract to deliver customised equipment with installation. Which standard governs revenue from this customer contract?",
     "options": [
-      "IFRS 15 / AASB 15.",
-      "IFRS 16 / AASB 16",
-      "IFRS 9 / AASB 9",
-      "IAS 2 / AASB 102"
+      "AASB 16 / IFRS 16 Leases for all contract revenue",
+      "AASB 15 / IFRS 15 Revenue from Contracts with Customers.",
+      "AASB 9 / IFRS 9 Financial Instruments for product sales",
+      "AASB 102 / IAS 2 Inventories for manufactured goods only"
     ],
-    "answer": 0,
-    "explanation": "IFRS 15 / AASB 15.",
+    "answer": 1,
+    "explanation": "AASB 15 / IFRS 15 Revenue from Contracts with Customers.",
     "tags": [
       "adjusting_entries"
     ]
   },
   {
     "id": "ch03-anki-18",
-    "q": "Under IFRS 15 / AASB 15, when is revenue recognised?",
+    "q": "Under AASB 15 / IFRS 15, at what point is revenue recognised for a distinct performance obligation?",
     "options": [
-      "When an entity satisfies a performance obligation in a contract.",
-      "When cash is received from the customer",
-      "When the contract is signed",
-      "When the invoice is mailed"
+      "When (or as) the entity satisfies that performance obligation.",
+      "When cash is received, even if delivery is incomplete",
+      "When the contract is signed by both parties",
+      "When the invoice is emailed to the customer"
     ],
     "answer": 0,
-    "explanation": "When an entity satisfies a performance obligation in a contract.",
+    "explanation": "When (or as) the entity satisfies that performance obligation.",
     "tags": [
       "adjusting_entries"
     ]
   },
   {
     "id": "ch03-anki-19",
-    "q": "What is a performance obligation?",
+    "q": "A contract promises to deliver goods, perform installation, and provide a two-year warranty service. What is each distinct promise called under IFRS 15?",
     "options": [
-      "A promise in a contract to transfer goods or services to a customer.",
-      "A penalty clause in a contract",
-      "An obligation to pay suppliers",
-      "A requirement to prepare financial statements"
+      "A contingent liability to be disclosed only",
+      "A trade payable arising from the contract",
+      "A deferred tax asset from future warranty costs",
+      "A performance obligation."
     ],
-    "answer": 0,
-    "explanation": "A promise in a contract to transfer goods or services to a customer.",
+    "answer": 3,
+    "explanation": "A performance obligation.",
     "tags": [
       "adjusting_entries"
     ]
   },
   {
     "id": "ch03-anki-20",
-    "q": "What are the five IFRS 15 conditions for a valid contract?",
+    "q": "Before applying the five-step revenue model, which set of conditions must a contract with a customer satisfy?",
     "options": [
-      "Contract approved; rights identified; payment terms identified; commercial substance; collection is probable.",
-      "Cash received; invoice sent; goods delivered; profit recorded; tax paid",
-      "Contract signed; deposit paid; delivery scheduled; warranty issued; refund policy stated",
-      "Revenue earned; expense matched; cash collected; audit completed; report filed"
+      "Cash received, invoice issued, goods shipped, profit recorded, and tax remitted",
+      "Approved parties, identified rights, payment terms, commercial substance, and probable collection.",
+      "Signed agreement, deposit paid, delivery date set, warranty issued, and refund policy stated",
+      "Revenue earned, expense matched, bank reconciled, audit completed, and report filed"
     ],
-    "answer": 0,
-    "explanation": "Contract approved; rights identified; payment terms identified; commercial substance; collection is probable.",
+    "answer": 1,
+    "explanation": "Approved parties, identified rights, payment terms, commercial substance, and probable collection.",
     "tags": [
       "adjusting_entries"
     ]
   },
   {
     "id": "ch03-anki-21",
-    "q": "What is step 1 of the IFRS 15 five-step model?",
+    "q": "A signed customer contract exists but performance obligations have not yet been analysed. Which IFRS 15 step should be performed next?",
+    "options": [
+      "Determine the transaction price for the entire deal",
+      "Allocate the transaction price to each obligation",
+      "Identify the performance obligations in the contract.",
+      "Recognise revenue when cash is collected from the customer"
+    ],
+    "answer": 2,
+    "explanation": "Identify the performance obligations in the contract.",
+    "tags": [
+      "adjusting_entries"
+    ]
+  },
+  {
+    "id": "ch03-anki-22",
+    "q": "Performance obligations are identified and the entity must decide the total amount it expects to receive. Which IFRS 15 step applies?",
+    "options": [
+      "Identify the contract with the customer again",
+      "Recognise revenue immediately for each obligation",
+      "Determine the transaction price.",
+      "Prepare closing entries for temporary accounts"
+    ],
+    "answer": 2,
+    "explanation": "Determine the transaction price.",
+    "tags": [
+      "adjusting_entries"
+    ]
+  },
+  {
+    "id": "ch03-anki-23",
+    "q": "The transaction price is $12,000 for goods ($8,000) and installation ($4,000). Which IFRS 15 step assigns amounts to each obligation?",
+    "options": [
+      "Identify the contract with the customer",
+      "Determine whether the contract has commercial substance",
+      "Allocate the transaction price to the performance obligations.",
+      "Close revenue accounts to retained earnings"
+    ],
+    "answer": 2,
+    "explanation": "Allocate the transaction price to the performance obligations.",
+    "tags": [
+      "adjusting_entries"
+    ]
+  },
+  {
+    "id": "ch03-anki-24",
+    "q": "After allocating the transaction price, goods are delivered but installation is unfinished at period-end. Which IFRS 15 step governs recognition now?",
+    "options": [
+      "Identify the payment terms in the contract only",
+      "Post adjusting entries before identifying obligations",
+      "Recognise revenue when, or as, each performance obligation is satisfied.",
+      "Defer all revenue until every obligation is fully complete"
+    ],
+    "answer": 2,
+    "explanation": "Recognise revenue when, or as, each performance obligation is satisfied.",
+    "tags": [
+      "adjusting_entries"
+    ]
+  },
+  {
+    "id": "ch03-anki-25",
+    "q": "At contract inception, no performance obligations have been identified yet. Which action belongs to step 1 of the IFRS 15 model?",
     "options": [
       "Identify the contract with the customer.",
-      "Identify the performance obligations in the contract",
-      "Determine the transaction price",
-      "Timing: recognising revenues and expenses in the correct accounting period, regardless of when cash is received or paid."
+      "Allocate the transaction price to each performance obligation",
+      "Recognise revenue when cash is received from the customer",
+      "Close expense accounts to income summary"
     ],
     "answer": 0,
     "explanation": "Identify the contract with the customer.",
@@ -318,316 +378,256 @@ export const ankiMcqs = [
     ]
   },
   {
-    "id": "ch03-anki-22",
-    "q": "What is step 2 of the IFRS 15 five-step model?",
-    "options": [
-      "Identify the performance obligations in the contract.",
-      "Identify the contract with the customer",
-      "Determine the transaction price",
-      "Timing: recognising revenues and expenses in the correct accounting period, regardless of when cash is received or paid."
-    ],
-    "answer": 0,
-    "explanation": "Identify the performance obligations in the contract.",
-    "tags": [
-      "adjusting_entries"
-    ]
-  },
-  {
-    "id": "ch03-anki-23",
-    "q": "What is step 3 of the IFRS 15 five-step model?",
-    "options": [
-      "Determine the transaction price.",
-      "Identify the contract with the customer",
-      "Identify the performance obligations in the contract",
-      "Timing: recognising revenues and expenses in the correct accounting period, regardless of when cash is received or paid."
-    ],
-    "answer": 0,
-    "explanation": "Determine the transaction price.",
-    "tags": [
-      "adjusting_entries"
-    ]
-  },
-  {
-    "id": "ch03-anki-24",
-    "q": "What is step 4 of the IFRS 15 five-step model?",
-    "options": [
-      "Allocate the transaction price to the performance obligations.",
-      "Identify the contract with the customer",
-      "Identify the performance obligations in the contract",
-      "Determine the transaction price"
-    ],
-    "answer": 0,
-    "explanation": "Allocate the transaction price to the performance obligations.",
-    "tags": [
-      "adjusting_entries"
-    ]
-  },
-  {
-    "id": "ch03-anki-25",
-    "q": "What is step 5 of the IFRS 15 five-step model?",
-    "options": [
-      "Recognise revenue when, or as, each performance obligation is satisfied.",
-      "Identify the contract with the customer",
-      "Identify the performance obligations in the contract",
-      "Determine the transaction price"
-    ],
-    "answer": 0,
-    "explanation": "Recognise revenue when, or as, each performance obligation is satisfied.",
-    "tags": [
-      "adjusting_entries"
-    ]
-  },
-  {
     "id": "ch03-anki-26",
-    "q": "What are expenses?",
+    "q": "Which description best fits expenses under the Conceptual Framework?",
     "options": [
-      "Decreases in assets or increases in liabilities that result in decreases in equity, excluding distributions to owners.",
-      "Increases in assets from ordinary business activities",
-      "Cash payments made during the period",
-      "Amounts owed to shareholders"
+      "Any cash payment made during the accounting period, regardless of benefit received",
+      "Increases in assets from ordinary operating activities that expand capacity",
+      "Amounts owed to shareholders for their invested capital and retained profits",
+      "Decreases in assets or increases in liabilities that reduce equity, other than distributions to owners."
     ],
-    "answer": 0,
-    "explanation": "Decreases in assets or increases in liabilities that result in decreases in equity, excluding distributions to owners.",
+    "answer": 3,
+    "explanation": "Decreases in assets or increases in liabilities that reduce equity, other than distributions to owners.",
     "tags": [
       "adjusting_entries"
     ]
   },
   {
     "id": "ch03-anki-27",
-    "q": "When should expenses be recognised under the Conceptual Framework?",
+    "q": "Under the Conceptual Framework, when should an expense be recognised if it cannot be linked directly to specific revenue?",
     "options": [
-      "When decreases in assets or increases in liabilities can be faithfully represented.",
-      "When cash is paid to suppliers",
-      "When revenue is collected",
-      "Only at year-end"
+      "In the period when the decrease in assets or increase in liabilities occurs.",
+      "Only when cash is paid to the supplier or other creditor",
+      "In the following period when related cash is collected from customers",
+      "Only if the amount exceeds a board-approved materiality limit for disclosure"
     ],
     "answer": 0,
-    "explanation": "When decreases in assets or increases in liabilities can be faithfully represented.",
+    "explanation": "In the period when the decrease in assets or increase in liabilities occurs.",
     "tags": [
       "adjusting_entries"
     ]
   },
   {
     "id": "ch03-anki-28",
-    "q": "What is the matching principle?",
+    "q": "A publisher earns subscription revenue in July but prints magazines in June. Which principle supports recording printing costs in June?",
     "options": [
-      "Expenses should be recognised in the same period as the related revenues they helped generate.",
-      "Expenses should be recognised when cash is paid",
-      "Expenses should always be recorded before revenue",
-      "Expenses should be deferred until cash is collected"
+      "Recognise expenses only when cash is paid, regardless of when revenue is earned",
+      "Always record expenses before revenue in every journal entry to avoid overstating profit",
+      "The matching principle: recognise related expenses in the same period as the revenue they help generate.",
+      "Defer all expenses until cash from customers is collected in a later period"
     ],
-    "answer": 0,
-    "explanation": "Expenses should be recognised in the same period as the related revenues they helped generate.",
+    "answer": 2,
+    "explanation": "The matching principle: recognise related expenses in the same period as the revenue they help generate.",
     "tags": [
       "adjusting_entries"
     ]
   },
   {
     "id": "ch03-anki-29",
-    "q": "If an expense has no direct link to revenue, when is it recognised?",
+    "q": "Office rent of $3,000 is incurred in September with payment due in October. No specific sales revenue is tied to the rent. When is the expense recognised?",
     "options": [
-      "In the period it is incurred.",
-      "When cash is paid",
-      "In the next accounting period",
-      "Only if it exceeds $1,000"
+      "In September, when the rent obligation is incurred.",
+      "In October, when cash is paid to the landlord",
+      "In the next financial year when the lease renews",
+      "Only after the amount is approved in the cash budget"
     ],
     "answer": 0,
-    "explanation": "In the period it is incurred.",
+    "explanation": "In September, when the rent obligation is incurred.",
     "tags": [
       "adjusting_entries"
     ]
   },
   {
     "id": "ch03-anki-30",
-    "q": "Why are adjusting entries needed?",
+    "q": "At 30 June, some revenues have been earned and some expenses incurred without yet being recorded. Why are adjusting entries required?",
     "options": [
-      "To ensure revenues and expenses are recorded in the correct accounting period before financial statements are prepared.",
-      "When cash is received or paid",
-      "When a contract is signed",
-      "At the end of the financial year only"
+      "To replace all original journal entries with cash-basis transactions only",
+      "To assign those revenues and expenses to the correct period before statements are prepared.",
+      "To convert accrual ledger balances to tax basis amounts automatically",
+      "To eliminate every statement of financial position account at period-end"
     ],
-    "answer": 0,
-    "explanation": "To ensure revenues and expenses are recorded in the correct accounting period before financial statements are prepared.",
+    "answer": 1,
+    "explanation": "To assign those revenues and expenses to the correct period before statements are prepared.",
     "tags": [
       "adjusting_entries"
     ]
   },
   {
     "id": "ch03-anki-31",
-    "q": "When are adjusting entries made?",
+    "q": "When in the accounting cycle are adjusting entries normally recorded?",
     "options": [
-      "At the end of the accounting period.",
-      "When cash is received",
-      "Before any transactions are recorded",
-      "After the post-closing trial balance"
+      "Immediately whenever cash is received or paid in the bank account",
+      "At the end of the accounting period, before financial statements are prepared.",
+      "After closing entries and preparation of the post-closing trial balance",
+      "Only when the ATO requests a tax reconciliation for the entity"
     ],
-    "answer": 0,
-    "explanation": "At the end of the accounting period.",
+    "answer": 1,
+    "explanation": "At the end of the accounting period, before financial statements are prepared.",
     "tags": [
       "adjusting_entries"
     ]
   },
   {
     "id": "ch03-anki-32",
-    "q": "Are adjusting entries made before or after financial statements?",
+    "q": "A trainee proposes recording adjusting entries after publishing the income statement. What is the correct sequencing?",
     "options": [
-      "Before financial statements are prepared.",
-      "After financial statements are prepared",
-      "At the same time as closing entries only",
-      "Only when cash transactions occur"
+      "Financial statements should be prepared first, then adjusted for errors",
+      "Adjusting entries must be recorded and posted before financial statements are prepared.",
+      "Adjusting entries are optional once the unadjusted trial balance balances",
+      "Closing entries must always precede any adjusting entries"
     ],
-    "answer": 0,
-    "explanation": "Before financial statements are prepared.",
+    "answer": 1,
+    "explanation": "Adjusting entries must be recorded and posted before financial statements are prepared.",
     "tags": [
       "adjusting_entries"
     ]
   },
   {
     "id": "ch03-anki-33",
-    "q": "Every adjusting entry affects what two types of accounts?",
+    "q": "Which statement about the account types affected by a typical adjusting entry is most accurate?",
     "options": [
-      "At least one income statement account and at least one balance sheet account.",
-      "Two cash accounts only",
-      "Two revenue accounts only",
-      "Two liability accounts only"
+      "Only cash and revenue accounts are ever affected together in one entry",
+      "Only two statement of financial position accounts are affected with no profit impact",
+      "At least one income statement account and at least one statement of financial position account are affected.",
+      "Only expense and dividend accounts are affected at period-end with no asset change"
     ],
-    "answer": 0,
-    "explanation": "At least one income statement account and at least one balance sheet account.",
+    "answer": 2,
+    "explanation": "At least one income statement account and at least one statement of financial position account are affected.",
     "tags": [
       "adjusting_entries"
     ]
   },
   {
     "id": "ch03-anki-34",
-    "q": "Do adjusting entries involve cash?",
+    "q": "At year-end, unpaid wages and expired prepaid insurance are adjusted. Which statement about cash in these entries is correct?",
     "options": [
-      "No, adjusting entries never involve cash.",
-      "Yes",
-      "No",
-      "Only for large companies"
+      "Every adjusting entry must include a debit or credit to Cash",
+      "Cash is credited whenever an expense adjustment is recorded",
+      "Adjusting entries do not involve the Cash account.",
+      "Cash is adjusted first before any accrual or deferral entry"
     ],
-    "answer": 0,
-    "explanation": "No, adjusting entries never involve cash.",
+    "answer": 2,
+    "explanation": "Adjusting entries do not involve the Cash account.",
     "tags": [
       "adjusting_entries"
     ]
   },
   {
     "id": "ch03-anki-35",
-    "q": "What are the two major categories of adjusting entries?",
+    "q": "Which pair correctly states the two broad categories of adjusting entries?",
     "options": [
-      "Prepayments and accruals.",
-      "Assets and liabilities",
-      "Revenues and expenses",
-      "Debits and credits"
+      "Prepayments (deferrals) and accruals.",
+      "Assets and liabilities only, with no income statement effect",
+      "Revenues and expenses only, with no balance sheet effect",
+      "Debits and credits recorded in the general journal only"
     ],
     "answer": 0,
-    "explanation": "Prepayments and accruals.",
+    "explanation": "Prepayments (deferrals) and accruals.",
     "tags": [
       "adjusting_entries"
     ]
   },
   {
     "id": "ch03-anki-36",
-    "q": "What are the two types of prepayment adjusting entries?",
+    "q": "Cash was paid before benefits were consumed, or cash was received before revenue was earned. Which subcategory of prepayments applies to revenue?",
     "options": [
-      "Prepaid expenses and revenue received in advance.",
-      "Prepaid expenses",
-      "Revenue received in advance",
-      "Accrued revenues"
+      "Accrued revenue from services already performed",
+      "Revenue received in advance (unearned revenue).",
+      "Accrued expense for wages not yet paid",
+      "Depreciation of a previously purchased non-current asset"
     ],
-    "answer": 0,
-    "explanation": "Prepaid expenses and revenue received in advance.",
+    "answer": 1,
+    "explanation": "Revenue received in advance (unearned revenue).",
     "tags": [
       "adjusting_entries"
     ]
   },
   {
     "id": "ch03-anki-37",
-    "q": "What are the two types of accrual adjusting entries?",
+    "q": "Services have been performed but not billed, and wages have been earned by staff but not paid. Which subcategory covers both situations?",
     "options": [
-      "Accrued revenues and accrued expenses.",
-      "Prepaid expenses",
-      "Revenue received in advance",
-      "Accrued revenues"
+      "Accruals (accrued revenues and accrued expenses).",
+      "Prepaid expenses and deferred revenue only",
+      "Cash receipts and cash payments awaiting posting",
+      "Closing entries for temporary accounts"
     ],
     "answer": 0,
-    "explanation": "Accrued revenues and accrued expenses.",
+    "explanation": "Accruals (accrued revenues and accrued expenses).",
     "tags": [
       "adjusting_entries"
     ]
   },
   {
     "id": "ch03-anki-38",
-    "q": "What is a prepaid expense?",
+    "q": "On 1 May, Nova Ltd pays $6,000 for six months' insurance coverage starting immediately. Before any adjustment, how should the payment be recorded?",
     "options": [
-      "Cash paid in advance and recorded as an asset until the benefit is used.",
-      "An expense incurred but not yet paid",
-      "Cash received before services are performed",
-      "Revenue earned but not yet received"
+      "As insurance expense in full on the payment date",
+      "As unearned revenue because cash left the business",
+      "As a prepaid expense (asset) because future economic benefits remain.",
+      "As a liability until the insurer delivers the policy document"
     ],
-    "answer": 0,
-    "explanation": "Cash paid in advance and recorded as an asset until the benefit is used.",
+    "answer": 2,
+    "explanation": "As a prepaid expense (asset) because future economic benefits remain.",
     "tags": [
       "adjusting_entries"
     ]
   },
   {
     "id": "ch03-anki-39",
-    "q": "What is revenue received in advance?",
+    "q": "A gym collects $1,200 on 1 January for a member's annual membership starting immediately. Before services are provided, the receipt should be recorded as:",
     "options": [
-      "Cash received before services are performed, recorded first as a liability.",
-      "Revenue earned but not yet received in cash",
-      "An expense paid in advance",
-      "Cash paid before goods are received"
+      "Membership revenue in full on the date the cash is received from the member",
+      "A liability (unearned revenue) because the performance obligation is unsatisfied.",
+      "A prepaid expense asset because the gym received cash before paying any costs",
+      "Accounts receivable because the member still owes future visits under the contract"
     ],
-    "answer": 0,
-    "explanation": "Cash received before services are performed, recorded first as a liability.",
+    "answer": 1,
+    "explanation": "A liability (unearned revenue) because the performance obligation is unsatisfied.",
     "tags": [
       "adjusting_entries"
     ]
   },
   {
     "id": "ch03-anki-40",
-    "q": "What is accrued revenue?",
+    "q": "At 30 June, consulting work worth $2,400 is complete but the client has not been invoiced. Which description fits this situation?",
     "options": [
-      "Revenue earned but not yet received or recorded.",
-      "Cash received before revenue is earned",
-      "An expense incurred but not paid",
-      "Cash paid before an expense is incurred"
+      "Unearned revenue because cash has not been collected",
+      "Prepaid expense because the client will pay later",
+      "Accrued revenue: earned but not yet recorded or received in cash.",
+      "Accrued expense because staff time created a payable"
     ],
-    "answer": 0,
-    "explanation": "Revenue earned but not yet received or recorded.",
+    "answer": 2,
+    "explanation": "Accrued revenue: earned but not yet recorded or received in cash.",
     "tags": [
       "adjusting_entries"
     ]
   },
   {
     "id": "ch03-anki-41",
-    "q": "What is an accrued expense?",
+    "q": "Employees earned $4,500 in wages during the last week of June, payable in July. Which description applies?",
     "options": [
-      "An expense incurred but not yet paid or recorded.",
-      "Cash paid before the expense is incurred",
-      "Revenue received before it is earned",
-      "Revenue earned but not yet received"
+      "Prepaid expense because cash will leave the bank later",
+      "Unearned revenue because employees provided future service",
+      "Accrued expense: incurred in June but not yet paid or recorded.",
+      "Accrued revenue because the business will receive cash later"
     ],
-    "answer": 0,
-    "explanation": "An expense incurred but not yet paid or recorded.",
+    "answer": 2,
+    "explanation": "Accrued expense: incurred in June but not yet paid or recorded.",
     "tags": [
       "adjusting_entries"
     ]
   },
   {
     "id": "ch03-anki-42",
-    "q": "What is the adjusting entry for a prepaid expense as it is used?",
+    "q": "Three months of a 12-month insurance policy have expired. Which adjusting entry correctly records the expired portion?",
     "options": [
-      "Debit Expense; Credit Asset.",
-      "Debit Depreciation Expense; Credit Accumulated Depreciation",
-      "Debit Liability; Credit Revenue",
-      "Timing: recognising revenues and expenses in the correct accounting period, regardless of when cash is received or paid."
+      "Debit Prepaid Insurance; Credit Cash",
+      "Debit Insurance Expense; Credit Prepaid Insurance.",
+      "Debit Cash; Credit Insurance Expense",
+      "Debit Insurance Expense; Credit Accounts Payable"
     ],
-    "answer": 0,
-    "explanation": "Debit Expense; Credit Asset.",
+    "answer": 1,
+    "explanation": "Debit Insurance Expense; Credit Prepaid Insurance.",
     "tags": [
       "adjusting_entries",
       "debit_credit"
@@ -635,14 +635,14 @@ export const ankiMcqs = [
   },
   {
     "id": "ch03-anki-43",
-    "q": "Supplies purchased were $2,500 and supplies remaining are $1,000. How much supplies expense is recognised?",
+    "q": "Supplies purchased during the period were $2,500 and supplies on hand at year-end are $1,000. What supplies expense should be recognised?",
     "options": [
+      "$1,000, equal to the remaining supplies on hand",
+      "$2,500, equal to the total purchases during the period",
       "$1,500.",
-      "$1,000",
-      "$2,500",
-      "$3,500"
+      "$3,500, combining purchases and the remaining balance"
     ],
-    "answer": 0,
+    "answer": 2,
     "explanation": "$1,500.",
     "tags": [
       "adjusting_entries"
@@ -650,14 +650,14 @@ export const ankiMcqs = [
   },
   {
     "id": "ch03-anki-44",
-    "q": "What is the adjusting entry for supplies used?",
+    "q": "Physical count shows $800 of unused supplies remain from opening inventory and purchases. Which entry records supplies used?",
     "options": [
+      "Debit Supplies; Credit Supplies Expense",
       "Debit Supplies Expense; Credit Supplies.",
-      "Debit Expense; Credit Asset",
-      "Debit Depreciation Expense; Credit Accumulated Depreciation",
-      "Debit Liability; Credit Revenue"
+      "Debit Cash; Credit Supplies Expense",
+      "Debit Supplies Expense; Credit Accounts Payable"
     ],
-    "answer": 0,
+    "answer": 1,
     "explanation": "Debit Supplies Expense; Credit Supplies.",
     "tags": [
       "adjusting_entries",
@@ -666,12 +666,12 @@ export const ankiMcqs = [
   },
   {
     "id": "ch03-anki-45",
-    "q": "Insurance paid for one year is $600. What is one month's insurance expense?",
+    "q": "Annual insurance of $600 was paid on 1 January. What is one month's insurance expense?",
     "options": [
       "$50.",
-      "$600",
-      "$100",
-      "$500"
+      "$600, because the full policy was prepaid",
+      "$100, assuming a ten-month policy year",
+      "$500, after deducting one month from the annual payment"
     ],
     "answer": 0,
     "explanation": "$50.",
@@ -681,14 +681,14 @@ export const ankiMcqs = [
   },
   {
     "id": "ch03-anki-46",
-    "q": "What is the adjusting entry for expired prepaid insurance?",
+    "q": "At 31 March, one quarter of a prepaid annual insurance policy has expired. Which entry is required?",
     "options": [
+      "Debit Prepaid Insurance; Credit Insurance Expense",
       "Debit Insurance Expense; Credit Prepaid Insurance.",
-      "Debit Expense; Credit Asset",
-      "Debit Depreciation Expense; Credit Accumulated Depreciation",
-      "Debit Liability; Credit Revenue"
+      "Debit Cash; Credit Prepaid Insurance",
+      "Debit Insurance Expense; Credit Accounts Payable"
     ],
-    "answer": 0,
+    "answer": 1,
     "explanation": "Debit Insurance Expense; Credit Prepaid Insurance.",
     "tags": [
       "adjusting_entries",
@@ -697,29 +697,29 @@ export const ankiMcqs = [
   },
   {
     "id": "ch03-anki-47",
-    "q": "What is depreciation?",
+    "q": "Equipment costing $24,000 is expected to benefit operations for eight years with no residual value. What is depreciation in accounting terms?",
     "options": [
-      "The allocation of the cost of a long-term asset to expense over its useful life.",
-      "The decrease in market value of an asset each year",
-      "Writing off an asset when it breaks down",
-      "The cash paid to purchase a long-term asset"
+      "The decline in the asset's fair market value each year",
+      "Systematic allocation of the asset's cost to expense over its useful life.",
+      "Writing off the asset immediately when repairs become frequent",
+      "The cash outflow recorded when the asset was originally purchased"
     ],
-    "answer": 0,
-    "explanation": "The allocation of the cost of a long-term asset to expense over its useful life.",
+    "answer": 1,
+    "explanation": "Systematic allocation of the asset's cost to expense over its useful life.",
     "tags": [
       "adjusting_entries"
     ]
   },
   {
     "id": "ch03-anki-48",
-    "q": "What is the adjusting entry for depreciation?",
+    "q": "Year-end depreciation on office equipment must be recorded. Which adjusting entry is correct?",
     "options": [
+      "Debit Accumulated Depreciation; Credit Depreciation Expense",
+      "Debit Equipment; Credit Depreciation Expense",
       "Debit Depreciation Expense; Credit Accumulated Depreciation.",
-      "Debit Expense; Credit Asset",
-      "Debit Liability; Credit Revenue",
-      "Timing: recognising revenues and expenses in the correct accounting period, regardless of when cash is received or paid."
+      "Debit Depreciation Expense; Credit Cash"
     ],
-    "answer": 0,
+    "answer": 2,
     "explanation": "Debit Depreciation Expense; Credit Accumulated Depreciation.",
     "tags": [
       "adjusting_entries",
@@ -728,30 +728,30 @@ export const ankiMcqs = [
   },
   {
     "id": "ch03-anki-49",
-    "q": "What type of account is Accumulated Depreciation?",
+    "q": "Accumulated Depreciation has a credit balance of $18,000. How is this account classified?",
     "options": [
-      "A contra asset account.",
-      "A liability account",
-      "An expense account",
-      "A revenue account"
+      "A liability for future replacement of the asset",
+      "An expense account closed to income summary",
+      "A contra asset account deducted from the related non-current asset.",
+      "A revenue account reducing total income for the period"
     ],
-    "answer": 0,
-    "explanation": "A contra asset account.",
+    "answer": 2,
+    "explanation": "A contra asset account deducted from the related non-current asset.",
     "tags": [
       "adjusting_entries"
     ]
   },
   {
     "id": "ch03-anki-50",
-    "q": "What does Accumulated Depreciation do on the Statement of Financial Position?",
+    "q": "On the statement of financial position, why is Accumulated Depreciation shown separately from the asset cost?",
     "options": [
-      "It reduces the carrying amount of the related asset.",
-      "It increases total assets",
-      "It is reported as a liability",
-      "It is added to share capital"
+      "It increases total assets each year by the depreciation expense amount recorded",
+      "It reduces the carrying amount of the related asset without altering the original cost recorded.",
+      "It is reported as a current liability until the underlying asset is sold or scrapped",
+      "It is added to share capital as a permanent equity adjustment each period"
     ],
-    "answer": 0,
-    "explanation": "It reduces the carrying amount of the related asset.",
+    "answer": 1,
+    "explanation": "It reduces the carrying amount of the related asset without altering the original cost recorded.",
     "tags": [
       "adjusting_entries",
       "balance_sheet"
@@ -761,12 +761,12 @@ export const ankiMcqs = [
     "id": "ch03-anki-51",
     "q": "Equipment cost is $5,000 and accumulated depreciation is $40. What is the carrying amount?",
     "options": [
+      "$5,040, adding depreciation to the original cost",
+      "$5,000, because cost never changes on the ledger",
       "$4,960.",
-      "$5,040",
-      "$5,000",
-      "$40"
+      "$40, equal to the accumulated depreciation balance only"
     ],
-    "answer": 0,
+    "answer": 2,
     "explanation": "$4,960.",
     "tags": [
       "adjusting_entries"
@@ -774,30 +774,30 @@ export const ankiMcqs = [
   },
   {
     "id": "ch03-anki-52",
-    "q": "What happens when revenue received in advance becomes earned?",
+    "q": "A customer paid in advance, and part of the obligation is now satisfied. What happens to the liability and revenue accounts?",
     "options": [
-      "The liability decreases and revenue increases.",
-      "The asset decreases and expense increases",
-      "Cash increases and revenue decreases",
-      "Equity decreases and liability increases"
+      "The asset decreases and an expense increases for the earned portion",
+      "Cash increases and revenue decreases when service is performed",
+      "The liability decreases and revenue increases for the earned portion.",
+      "Equity decreases while the unearned liability increases"
     ],
-    "answer": 0,
-    "explanation": "The liability decreases and revenue increases.",
+    "answer": 2,
+    "explanation": "The liability decreases and revenue increases for the earned portion.",
     "tags": [
       "adjusting_entries"
     ]
   },
   {
     "id": "ch03-anki-53",
-    "q": "What is the adjusting entry for revenue received in advance that has now been earned?",
+    "q": "Unearned Revenue of $3,000 includes $900 earned by month-end. Which adjusting entry is correct?",
     "options": [
-      "Debit Revenue Received in Advance; Credit Service Revenue.",
-      "Debit Expense; Credit Asset",
-      "Debit Depreciation Expense; Credit Accumulated Depreciation",
-      "Debit Liability; Credit Revenue"
+      "Debit Cash $900; Credit Service Revenue $900",
+      "Debit Service Revenue $900; Credit Unearned Revenue $900",
+      "Debit Accounts Receivable $900; Credit Unearned Revenue $900",
+      "Debit Unearned Revenue $900; Credit Service Revenue $900."
     ],
-    "answer": 0,
-    "explanation": "Debit Revenue Received in Advance; Credit Service Revenue.",
+    "answer": 3,
+    "explanation": "Debit Unearned Revenue $900; Credit Service Revenue $900.",
     "tags": [
       "adjusting_entries",
       "debit_credit"
@@ -805,15 +805,15 @@ export const ankiMcqs = [
   },
   {
     "id": "ch03-anki-54",
-    "q": "A business received $1,200 for services to be performed by December. If $400 was earned in October, what is the October adjusting entry?",
+    "q": "A business received $1,200 for services due by December. By October, $400 of the work is complete. What is the October adjusting entry?",
     "options": [
-      "Debit Revenue Received in Advance $400; Credit Service Revenue $400.",
+      "Debit Unearned Revenue $400; Credit Service Revenue $400.",
       "Debit Cash $400; Credit Service Revenue $400",
-      "Debit Service Revenue $400; Credit Revenue Received in Advance $400",
+      "Debit Service Revenue $400; Credit Unearned Revenue $400",
       "Debit Accounts Receivable $400; Credit Service Revenue $400"
     ],
     "answer": 0,
-    "explanation": "Debit Revenue Received in Advance $400; Credit Service Revenue $400.",
+    "explanation": "Debit Unearned Revenue $400; Credit Service Revenue $400.",
     "tags": [
       "adjusting_entries",
       "debit_credit"
@@ -821,15 +821,15 @@ export const ankiMcqs = [
   },
   {
     "id": "ch03-anki-55",
-    "q": "What is the adjusting entry for accrued revenue?",
+    "q": "Consulting revenue of $750 is earned on credit at period-end with no prior entry. Which adjustment is required?",
     "options": [
-      "Debit Accounts Receivable; Credit Revenue.",
-      "Debit Expense; Credit Asset",
-      "Debit Depreciation Expense; Credit Accumulated Depreciation",
-      "Debit Liability; Credit Revenue"
+      "Debit Accounts Receivable; Credit Service Revenue.",
+      "Debit Cash; Credit Service Revenue",
+      "Debit Service Revenue; Credit Accounts Receivable",
+      "Debit Unearned Revenue; Credit Service Revenue"
     ],
     "answer": 0,
-    "explanation": "Debit Accounts Receivable; Credit Revenue.",
+    "explanation": "Debit Accounts Receivable; Credit Service Revenue.",
     "tags": [
       "adjusting_entries",
       "debit_credit"
@@ -837,15 +837,15 @@ export const ankiMcqs = [
   },
   {
     "id": "ch03-anki-56",
-    "q": "Why is Accounts Receivable debited for accrued revenue?",
+    "q": "Why is Accounts Receivable debited in an accrued revenue adjustment?",
     "options": [
-      "Because the business has earned revenue and has a right to receive cash later.",
-      "Because cash was received in advance",
-      "Because an expense was incurred",
-      "Because the business owes a supplier"
+      "Cash was received from the customer before the related service was performed",
+      "An expense was incurred during the period and must be matched against revenue",
+      "The entity has a right to collect cash because revenue has already been earned.",
+      "The entity owes the customer a refund for services prepaid but not yet delivered"
     ],
-    "answer": 0,
-    "explanation": "Because the business has earned revenue and has a right to receive cash later.",
+    "answer": 2,
+    "explanation": "The entity has a right to collect cash because revenue has already been earned.",
     "tags": [
       "adjusting_entries",
       "receivables"
@@ -853,14 +853,14 @@ export const ankiMcqs = [
   },
   {
     "id": "ch03-anki-57",
-    "q": "Commission revenue of $200 has been earned but not received. What is the adjusting entry?",
+    "q": "Commission revenue of $200 is earned but not yet received at 30 June. Which entry should be recorded?",
     "options": [
-      "Debit Accounts Receivable $200; Credit Commission Revenue $200.",
       "Debit Cash $200; Credit Commission Revenue $200",
       "Debit Commission Revenue $200; Credit Accounts Receivable $200",
-      "Debit Commission Expense $200; Credit Accounts Payable $200"
+      "Debit Commission Expense $200; Credit Accounts Payable $200",
+      "Debit Accounts Receivable $200; Credit Commission Revenue $200."
     ],
-    "answer": 0,
+    "answer": 3,
     "explanation": "Debit Accounts Receivable $200; Credit Commission Revenue $200.",
     "tags": [
       "adjusting_entries",
@@ -869,15 +869,15 @@ export const ankiMcqs = [
   },
   {
     "id": "ch03-anki-58",
-    "q": "What is the adjusting entry for accrued expenses?",
+    "q": "Interest on a loan has accrued but not been paid at balance date. Which adjusting entry pattern applies?",
     "options": [
-      "Debit Expense; Credit Payable.",
-      "Debit Expense; Credit Asset",
-      "Debit Depreciation Expense; Credit Accumulated Depreciation",
-      "Debit Liability; Credit Revenue"
+      "Debit Interest Payable; Credit Cash",
+      "Debit Cash; Credit Interest Expense",
+      "Debit Interest Expense; Credit Interest Payable.",
+      "Debit Prepaid Interest; Credit Interest Expense"
     ],
-    "answer": 0,
-    "explanation": "Debit Expense; Credit Payable.",
+    "answer": 2,
+    "explanation": "Debit Interest Expense; Credit Interest Payable.",
     "tags": [
       "adjusting_entries",
       "debit_credit"
@@ -885,27 +885,27 @@ export const ankiMcqs = [
   },
   {
     "id": "ch03-anki-59",
-    "q": "Why is a payable credited for accrued expenses?",
+    "q": "Why is a payable credited when an accrued expense is adjusted?",
     "options": [
-      "Because the business has incurred an expense and now owes payment.",
-      "Because cash was paid in advance",
-      "Because revenue was earned",
-      "Because an asset was purchased for cash"
+      "Cash was paid in advance and must be deferred",
+      "Revenue was earned and collection is expected later",
+      "The business owes payment for an expense already incurred.",
+      "An asset was purchased and must be capitalised"
     ],
-    "answer": 0,
-    "explanation": "Because the business has incurred an expense and now owes payment.",
+    "answer": 2,
+    "explanation": "The business owes payment for an expense already incurred.",
     "tags": [
       "adjusting_entries"
     ]
   },
   {
     "id": "ch03-anki-60",
-    "q": "A $5,000 loan has 12% annual interest. What is one month's interest expense?",
+    "q": "A $5,000 loan bears 12% interest per annum. What is one month's accrued interest expense?",
     "options": [
       "$50.",
-      "$600",
-      "$500",
-      "$60"
+      "$600, equal to a full year's interest on the loan",
+      "$500, using a simple 10% monthly rate by mistake",
+      "$60, after adding a service fee to the monthly interest"
     ],
     "answer": 0,
     "explanation": "$50.",
@@ -915,14 +915,14 @@ export const ankiMcqs = [
   },
   {
     "id": "ch03-anki-61",
-    "q": "What is the adjusting entry for accrued interest?",
+    "q": "At 30 June, two months' interest on a note payable has not been paid. Which entry records the accrual?",
     "options": [
+      "Debit Interest Payable; Credit Interest Expense",
       "Debit Interest Expense; Credit Interest Payable.",
-      "Debit Expense; Credit Asset",
-      "Debit Depreciation Expense; Credit Accumulated Depreciation",
-      "Debit Liability; Credit Revenue"
+      "Debit Cash; Credit Interest Expense",
+      "Debit Interest Expense; Credit Notes Payable for the full loan"
     ],
-    "answer": 0,
+    "answer": 1,
     "explanation": "Debit Interest Expense; Credit Interest Payable.",
     "tags": [
       "adjusting_entries",
@@ -931,14 +931,14 @@ export const ankiMcqs = [
   },
   {
     "id": "ch03-anki-62",
-    "q": "Salaries outstanding are 3 days × $400 per day. How much salary expense is accrued?",
+    "q": "Salaries of $400 per day are unpaid for the last three days of the period. How much salary expense should be accrued?",
     "options": [
+      "$400, equal to one day's unpaid wages only",
       "$1,200.",
-      "$400",
-      "$800",
-      "$1,800"
+      "$800, assuming only two unpaid days in the period",
+      "$1,800, after adding a weekend not worked to the accrual"
     ],
-    "answer": 0,
+    "answer": 1,
     "explanation": "$1,200.",
     "tags": [
       "adjusting_entries"
@@ -946,14 +946,14 @@ export const ankiMcqs = [
   },
   {
     "id": "ch03-anki-63",
-    "q": "What is the adjusting entry for accrued salaries?",
+    "q": "Accrued salaries at period-end total $1,200. Which adjusting entry should be recorded?",
     "options": [
-      "Debit Salaries Expense; Credit Salaries Payable.",
-      "Debit Expense; Credit Asset",
-      "Debit Depreciation Expense; Credit Accumulated Depreciation",
-      "Debit Liability; Credit Revenue"
+      "Debit Salaries Payable; Credit Salaries Expense",
+      "Debit Cash; Credit Salaries Expense",
+      "Debit Salaries Expense; Credit Prepaid Salaries",
+      "Debit Salaries Expense; Credit Salaries Payable."
     ],
-    "answer": 0,
+    "answer": 3,
     "explanation": "Debit Salaries Expense; Credit Salaries Payable.",
     "tags": [
       "adjusting_entries",
@@ -962,15 +962,15 @@ export const ankiMcqs = [
   },
   {
     "id": "ch03-anki-64",
-    "q": "What is the debit/credit pattern for prepaid expenses?",
+    "q": "At year-end, $450 of prepaid rent has expired. Which debit/credit pattern applies?",
     "options": [
-      "Debit Expense; Credit Asset.",
-      "Debit Depreciation Expense; Credit Accumulated Depreciation",
-      "Debit Liability; Credit Revenue",
-      "Timing: recognising revenues and expenses in the correct accounting period, regardless of when cash is received or paid."
+      "Debit Prepaid Rent; Credit Rent Expense",
+      "Debit Rent Expense; Credit Cash",
+      "Debit Rent Expense; Credit Prepaid Rent.",
+      "Debit Accounts Payable; Credit Rent Expense"
     ],
-    "answer": 0,
-    "explanation": "Debit Expense; Credit Asset.",
+    "answer": 2,
+    "explanation": "Debit Rent Expense; Credit Prepaid Rent.",
     "tags": [
       "adjusting_entries",
       "debit_credit"
@@ -978,14 +978,14 @@ export const ankiMcqs = [
   },
   {
     "id": "ch03-anki-65",
-    "q": "What is the debit/credit pattern for depreciation?",
+    "q": "Equipment with a $10,000 cost is depreciated $1,250 for the year. Which debit/credit pattern applies?",
     "options": [
+      "Debit Accumulated Depreciation; Credit Depreciation Expense",
       "Debit Depreciation Expense; Credit Accumulated Depreciation.",
-      "Debit Expense; Credit Asset",
-      "Debit Liability; Credit Revenue",
-      "Timing: recognising revenues and expenses in the correct accounting period, regardless of when cash is received or paid."
+      "Debit Equipment; Credit Accumulated Depreciation",
+      "Debit Depreciation Expense; Credit Equipment"
     ],
-    "answer": 0,
+    "answer": 1,
     "explanation": "Debit Depreciation Expense; Credit Accumulated Depreciation.",
     "tags": [
       "adjusting_entries",
@@ -994,15 +994,15 @@ export const ankiMcqs = [
   },
   {
     "id": "ch03-anki-66",
-    "q": "What is the debit/credit pattern for revenue received in advance?",
+    "q": "A magazine publisher delivers issues for which customers paid in advance. Which debit/credit pattern applies?",
     "options": [
-      "Debit Liability; Credit Revenue.",
-      "Debit Expense; Credit Asset",
-      "Debit Depreciation Expense; Credit Accumulated Depreciation",
-      "Timing: recognising revenues and expenses in the correct accounting period, regardless of when cash is received or paid."
+      "Debit Service Revenue; Credit Unearned Revenue",
+      "Debit Cash; Credit Service Revenue",
+      "Debit Unearned Revenue; Credit Service Revenue.",
+      "Debit Accounts Receivable; Credit Unearned Revenue"
     ],
-    "answer": 0,
-    "explanation": "Debit Liability; Credit Revenue.",
+    "answer": 2,
+    "explanation": "Debit Unearned Revenue; Credit Service Revenue.",
     "tags": [
       "adjusting_entries",
       "debit_credit"
@@ -1010,15 +1010,15 @@ export const ankiMcqs = [
   },
   {
     "id": "ch03-anki-67",
-    "q": "What is the debit/credit pattern for accrued revenue?",
+    "q": "Legal services of $3,200 were performed on credit but not yet billed. Which debit/credit pattern applies?",
     "options": [
-      "Debit Asset/Receivable; Credit Revenue.",
-      "Debit Expense; Credit Asset",
-      "Debit Depreciation Expense; Credit Accumulated Depreciation",
-      "Debit Liability; Credit Revenue"
+      "Debit Accounts Receivable; Credit Service Revenue.",
+      "Debit Cash; Credit Service Revenue",
+      "Debit Service Revenue; Credit Accounts Receivable",
+      "Debit Unearned Revenue; Credit Service Revenue"
     ],
     "answer": 0,
-    "explanation": "Debit Asset/Receivable; Credit Revenue.",
+    "explanation": "Debit Accounts Receivable; Credit Service Revenue.",
     "tags": [
       "adjusting_entries",
       "debit_credit"
@@ -1026,15 +1026,15 @@ export const ankiMcqs = [
   },
   {
     "id": "ch03-anki-68",
-    "q": "What is the debit/credit pattern for accrued expenses?",
+    "q": "Utilities of $680 were consumed in June with payment due in July. Which debit/credit pattern applies?",
     "options": [
-      "Debit Expense; Credit Liability/Payable.",
-      "Debit Expense; Credit Asset",
-      "Debit Depreciation Expense; Credit Accumulated Depreciation",
-      "Debit Liability; Credit Revenue"
+      "Debit Utilities Payable; Credit Cash",
+      "Debit Prepaid Utilities; Credit Utilities Expense",
+      "Debit Cash; Credit Utilities Expense",
+      "Debit Utilities Expense; Credit Utilities Payable."
     ],
-    "answer": 0,
-    "explanation": "Debit Expense; Credit Liability/Payable.",
+    "answer": 3,
+    "explanation": "Debit Utilities Expense; Credit Utilities Payable.",
     "tags": [
       "adjusting_entries",
       "debit_credit"
@@ -1042,44 +1042,44 @@ export const ankiMcqs = [
   },
   {
     "id": "ch03-anki-69",
-    "q": "Which adjusting entry type starts with cash already paid?",
+    "q": "Cash was paid on 1 February for advertising to run from March to May. At 31 March, which adjustment category applies?",
     "options": [
-      "Prepaid expenses.",
-      "Revenue received in advance",
-      "Accrued revenues",
-      "Timing: recognising revenues and expenses in the correct accounting period, regardless of when cash is received or paid."
+      "Accrued revenue because the ad will attract future sales",
+      "Prepaid expense adjustment for the portion consumed.",
+      "Accrued expense because cash was already paid",
+      "Unearned revenue because the agency owes future service"
     ],
-    "answer": 0,
-    "explanation": "Prepaid expenses.",
+    "answer": 1,
+    "explanation": "Prepaid expense adjustment for the portion consumed.",
     "tags": [
       "adjusting_entries"
     ]
   },
   {
     "id": "ch03-anki-70",
-    "q": "Which adjusting entry type starts with cash already received?",
+    "q": "A tenant pays three months' rent in advance on 1 June for occupancy from June to August. At 30 June, which adjustment category applies?",
     "options": [
-      "Revenue received in advance.",
-      "Prepaid expenses",
-      "Accrued revenues",
-      "Timing: recognising revenues and expenses in the correct accounting period, regardless of when cash is received or paid."
+      "Accrued revenue because the landlord collected cash before fully earning it",
+      "Revenue received in advance (unearned revenue) for the unused portion.",
+      "Prepaid expense because the landlord received cash before incurring any costs",
+      "Accrued expense because two months of future occupancy remain at month-end"
     ],
-    "answer": 0,
-    "explanation": "Revenue received in advance.",
+    "answer": 1,
+    "explanation": "Revenue received in advance (unearned revenue) for the unused portion.",
     "tags": [
       "adjusting_entries"
     ]
   },
   {
     "id": "ch03-anki-71",
-    "q": "Which adjusting entry type involves revenue earned but cash not yet received?",
+    "q": "Advertising services were provided on credit in May; cash is expected in June. Which adjustment category applies at 31 May?",
     "options": [
-      "Accrued revenue.",
-      "Prepaid expenses",
       "Revenue received in advance",
-      "Accrued revenues"
+      "Prepaid expense for future advertising",
+      "Accrued expense for media purchases not yet billed",
+      "Accrued revenue."
     ],
-    "answer": 0,
+    "answer": 3,
     "explanation": "Accrued revenue.",
     "tags": [
       "adjusting_entries"
@@ -1087,14 +1087,14 @@ export const ankiMcqs = [
   },
   {
     "id": "ch03-anki-72",
-    "q": "Which adjusting entry type involves expense incurred but cash not yet paid?",
+    "q": "Employee wages for the final two days of the month will be paid next week. Which adjustment category applies?",
     "options": [
-      "Accrued expense.",
-      "Prepaid expenses",
-      "Revenue received in advance",
-      "Accrued revenues"
+      "Prepaid expense because payroll cash will leave later",
+      "Accrued revenue because staff provided future service",
+      "Unearned revenue because wages are unpaid at period-end",
+      "Accrued expense."
     ],
-    "answer": 0,
+    "answer": 3,
     "explanation": "Accrued expense.",
     "tags": [
       "adjusting_entries"
@@ -1102,60 +1102,60 @@ export const ankiMcqs = [
   },
   {
     "id": "ch03-anki-73",
-    "q": "What is an adjusted trial balance?",
+    "q": "After all adjusting entries are posted, what is an adjusted trial balance?",
     "options": [
-      "A trial balance prepared after all adjusting entries have been journalised and posted.",
-      "A trial balance prepared before any adjusting entries",
-      "A list of only permanent accounts",
-      "A financial statement showing profit or loss"
+      "The trial balance prepared before any adjusting entries are made",
+      "A formal income statement replacing ledger account detail",
+      "A list of account balances proving debits equal credits after adjustments.",
+      "A schedule containing only permanent asset and liability accounts"
     ],
-    "answer": 0,
-    "explanation": "A trial balance prepared after all adjusting entries have been journalised and posted.",
+    "answer": 2,
+    "explanation": "A list of account balances proving debits equal credits after adjustments.",
     "tags": [
       "adjusting_entries"
     ]
   },
   {
     "id": "ch03-anki-74",
-    "q": "What is the purpose of the adjusted trial balance?",
+    "q": "Why do accountants prepare an adjusted trial balance before issuing statements?",
     "options": [
-      "To prove total debits equal total credits after adjustments and to provide the basis for financial statements.",
-      "To record closing entries",
-      "To replace the general ledger",
-      "To calculate tax payable only"
+      "To record closing entries for temporary accounts before adjustments are complete",
+      "To replace the general ledger entirely for the next accounting period",
+      "To calculate tax payable without using any revenue or expense account balances",
+      "To verify adjusted balances and provide the basis for financial statement preparation."
     ],
-    "answer": 0,
-    "explanation": "To prove total debits equal total credits after adjustments and to provide the basis for financial statements.",
+    "answer": 3,
+    "explanation": "To verify adjusted balances and provide the basis for financial statement preparation.",
     "tags": [
       "adjusting_entries"
     ]
   },
   {
     "id": "ch03-anki-75",
-    "q": "What are the steps to prepare an adjusted trial balance?",
+    "q": "Which sequence best describes preparing an adjusted trial balance?",
     "options": [
-      "Start with the unadjusted trial balance, add adjustments, calculate new balances, then use the balances for financial statements.",
-      "Close all revenue accounts first, then prepare the trial balance",
-      "Record cash transactions only, then total debits and credits",
-      "Prepare financial statements first, then adjust accounts"
+      "Close all revenue accounts first, then list only remaining asset account balances",
+      "Start with the unadjusted trial balance, enter adjustments, recalculate balances, then prepare statements.",
+      "Prepare financial statements first, then adjust ledger accounts to match those totals",
+      "Record only cash transactions for the period, then total debits and credits once"
     ],
-    "answer": 0,
-    "explanation": "Start with the unadjusted trial balance, add adjustments, calculate new balances, then use the balances for financial statements.",
+    "answer": 1,
+    "explanation": "Start with the unadjusted trial balance, enter adjustments, recalculate balances, then prepare statements.",
     "tags": [
       "adjusting_entries"
     ]
   },
   {
     "id": "ch03-anki-76",
-    "q": "Which statement uses revenue and expense accounts?",
+    "q": "Which financial statement reports the result of revenue and expense accounts for the period?",
     "options": [
-      "Statement of Profit or Loss.",
-      "Statement of Financial Position",
-      "Statement of Cash Flows",
-      "Timing: recognising revenues and expenses in the correct accounting period, regardless of when cash is received or paid."
+      "Statement of Financial Position at a point in time",
+      "Statement of Profit or Loss (income statement).",
+      "Statement of Cash Flows classified by operating, investing, and financing",
+      "Post-closing trial balance listing permanent accounts only"
     ],
-    "answer": 0,
-    "explanation": "Statement of Profit or Loss.",
+    "answer": 1,
+    "explanation": "Statement of Profit or Loss (income statement).",
     "tags": [
       "adjusting_entries",
       "income_statement"
@@ -1163,15 +1163,15 @@ export const ankiMcqs = [
   },
   {
     "id": "ch03-anki-77",
-    "q": "Which statement uses assets, liabilities, and equity accounts?",
+    "q": "Which financial statement presents assets, liabilities, and equity at a specific date?",
     "options": [
-      "Statement of Financial Position.",
-      "Statement of Profit or Loss",
-      "Statement of Cash Flows",
-      "Timing: recognising revenues and expenses in the correct accounting period, regardless of when cash is received or paid."
+      "Statement of Profit or Loss for the reporting period",
+      "Statement of Cash Flows reconciling cash movements",
+      "Adjusted trial balance before closing entries",
+      "Statement of Financial Position (balance sheet)."
     ],
-    "answer": 0,
-    "explanation": "Statement of Financial Position.",
+    "answer": 3,
+    "explanation": "Statement of Financial Position (balance sheet).",
     "tags": [
       "adjusting_entries",
       "balance_sheet"
@@ -1179,15 +1179,15 @@ export const ankiMcqs = [
   },
   {
     "id": "ch03-anki-78",
-    "q": "What does the Statement of Changes in Equity use?",
+    "q": "Profit for the year and dividends declared must flow into retained earnings. Which statement captures this movement?",
     "options": [
-      "Profit or loss plus dividends to update Retained Earnings.",
-      "Only cash receipts and payments",
-      "Only asset and liability balances",
-      "Revenue and expense accounts without dividends"
+      "Statement of Cash Flows operating section only",
+      "Statement of Changes in Equity.",
+      "Unadjusted trial balance before adjustments are posted",
+      "Post-closing trial balance of temporary accounts"
     ],
-    "answer": 0,
-    "explanation": "Profit or loss plus dividends to update Retained Earnings.",
+    "answer": 1,
+    "explanation": "Statement of Changes in Equity.",
     "tags": [
       "adjusting_entries",
       "equity"
@@ -1195,59 +1195,59 @@ export const ankiMcqs = [
   },
   {
     "id": "ch03-anki-79",
-    "q": "What are temporary accounts?",
+    "q": "Revenue, expense, dividend, and income summary accounts are reset each period. What are these called?",
     "options": [
-      "Accounts that are reset to zero each period, such as revenue, expenses, dividends, and income summary.",
-      "Accounts carried forward to future periods",
-      "Only asset and liability accounts",
-      "Accounts that never appear on financial statements"
+      "Permanent (real) accounts carried forward indefinitely",
+      "Contra asset accounts deducted from non-current assets",
+      "Memorandum accounts kept only on worksheets, not in the ledger",
+      "Temporary (nominal) accounts."
     ],
-    "answer": 0,
-    "explanation": "Accounts that are reset to zero each period, such as revenue, expenses, dividends, and income summary.",
+    "answer": 3,
+    "explanation": "Temporary (nominal) accounts.",
     "tags": [
       "adjusting_entries"
     ]
   },
   {
     "id": "ch03-anki-80",
-    "q": "What are permanent accounts?",
+    "q": "Asset, liability, and equity accounts remain open after closing. What are these called?",
     "options": [
-      "Accounts carried forward to future periods, such as assets, liabilities, and equity accounts.",
-      "Accounts reset to zero each period",
-      "Revenue and expense accounts only",
-      "Income Summary and Dividends only"
+      "Permanent (real) accounts.",
+      "Temporary accounts closed to retained earnings each period",
+      "Nominal accounts used only on the income statement",
+      "Contra revenue accounts reducing sales for the period"
     ],
     "answer": 0,
-    "explanation": "Accounts carried forward to future periods, such as assets, liabilities, and equity accounts.",
+    "explanation": "Permanent (real) accounts.",
     "tags": [
       "adjusting_entries"
     ]
   },
   {
     "id": "ch03-anki-81",
-    "q": "What is the purpose of closing entries?",
+    "q": "After the income statement is prepared, revenue and expense balances must be cleared. What is the purpose of closing entries?",
     "options": [
-      "To transfer temporary account balances to Retained Earnings and reset temporary accounts to zero.",
-      "To record adjusting entries at period-end",
-      "To prove debits equal credits",
-      "To record daily cash transactions"
+      "To transfer temporary account balances to retained earnings and reset them to zero.",
+      "To record adjusting entries for accruals and deferrals at period-end",
+      "To prove that total debits equal total credits on a worksheet",
+      "To record daily cash receipts and payments in the general journal"
     ],
     "answer": 0,
-    "explanation": "To transfer temporary account balances to Retained Earnings and reset temporary accounts to zero.",
+    "explanation": "To transfer temporary account balances to retained earnings and reset them to zero.",
     "tags": [
       "adjusting_entries"
     ]
   },
   {
     "id": "ch03-anki-82",
-    "q": "What account are revenues closed to first?",
+    "q": "When closing revenue accounts at year-end, which account receives the credit side of the closing entry first?",
     "options": [
+      "Retained Earnings, bypassing the income summary account",
+      "Cash, because revenue ultimately increases liquidity",
       "Income Summary.",
-      "Retained Earnings",
-      "Cash",
-      "Accounts Receivable"
+      "Accounts Receivable, matching credit sales still uncollected"
     ],
-    "answer": 0,
+    "answer": 2,
     "explanation": "Income Summary.",
     "tags": [
       "adjusting_entries"
@@ -1255,15 +1255,15 @@ export const ankiMcqs = [
   },
   {
     "id": "ch03-anki-83",
-    "q": "What is the entry to close revenue accounts?",
+    "q": "Service Revenue has a credit balance of $48,000 at year-end before closing. Which entry closes it?",
     "options": [
-      "Debit Revenue; Credit Income Summary.",
-      "Debit Income Summary; Credit Expenses",
-      "Debit Income Summary; Credit Retained Earnings",
-      "Timing: recognising revenues and expenses in the correct accounting period, regardless of when cash is received or paid."
+      "Debit Income Summary $48,000; Credit Service Revenue $48,000",
+      "Debit Service Revenue $48,000; Credit Retained Earnings $48,000",
+      "Debit Service Revenue $48,000; Credit Income Summary $48,000.",
+      "Debit Cash $48,000; Credit Service Revenue $48,000"
     ],
-    "answer": 0,
-    "explanation": "Debit Revenue; Credit Income Summary.",
+    "answer": 2,
+    "explanation": "Debit Service Revenue $48,000; Credit Income Summary $48,000.",
     "tags": [
       "adjusting_entries",
       "debit_credit"
@@ -1271,14 +1271,14 @@ export const ankiMcqs = [
   },
   {
     "id": "ch03-anki-84",
-    "q": "What account are expenses closed to first?",
+    "q": "When closing expense accounts, which account is debited in the first closing step for expenses?",
     "options": [
-      "Income Summary.",
-      "Retained Earnings",
-      "Cash",
-      "Accounts Payable"
+      "Retained Earnings, because expenses reduce equity directly",
+      "Cash, because most expenses reduce the bank balance",
+      "Accounts Payable, because expenses create liabilities",
+      "Income Summary."
     ],
-    "answer": 0,
+    "answer": 3,
     "explanation": "Income Summary.",
     "tags": [
       "adjusting_entries"
@@ -1286,15 +1286,15 @@ export const ankiMcqs = [
   },
   {
     "id": "ch03-anki-85",
-    "q": "What is the entry to close expense accounts?",
+    "q": "Total expenses of $31,500 must be closed at year-end. Which entry is correct?",
     "options": [
-      "Debit Income Summary; Credit Expenses.",
-      "Debit Revenue; Credit Income Summary",
-      "Debit Income Summary; Credit Retained Earnings",
-      "Timing: recognising revenues and expenses in the correct accounting period, regardless of when cash is received or paid."
+      "Debit each expense account; Credit Income Summary for the total",
+      "Debit Retained Earnings; Credit each expense account directly",
+      "Debit Income Summary $31,500; Credit each expense account $31,500 in total.",
+      "Debit Income Summary; Credit Cash for the total expenses paid"
     ],
-    "answer": 0,
-    "explanation": "Debit Income Summary; Credit Expenses.",
+    "answer": 2,
+    "explanation": "Debit Income Summary $31,500; Credit each expense account $31,500 in total.",
     "tags": [
       "adjusting_entries",
       "debit_credit"
@@ -1302,15 +1302,15 @@ export const ankiMcqs = [
   },
   {
     "id": "ch03-anki-86",
-    "q": "If there is profit, how is Income Summary closed?",
+    "q": "After revenues and expenses are closed, Income Summary has a credit balance of $7,200. How is it closed?",
     "options": [
-      "Debit Income Summary; Credit Retained Earnings.",
-      "Debit Revenue; Credit Income Summary",
-      "Debit Income Summary; Credit Expenses",
-      "Timing: recognising revenues and expenses in the correct accounting period, regardless of when cash is received or paid."
+      "Debit Income Summary $7,200; Credit Retained Earnings $7,200.",
+      "Debit Retained Earnings $7,200; Credit Income Summary $7,200",
+      "Debit Income Summary $7,200; Credit Cash $7,200",
+      "Debit Dividends $7,200; Credit Income Summary $7,200"
     ],
     "answer": 0,
-    "explanation": "Debit Income Summary; Credit Retained Earnings.",
+    "explanation": "Debit Income Summary $7,200; Credit Retained Earnings $7,200.",
     "tags": [
       "adjusting_entries",
       "debit_credit"
@@ -1318,14 +1318,14 @@ export const ankiMcqs = [
   },
   {
     "id": "ch03-anki-87",
-    "q": "How are dividends closed?",
+    "q": "Dividends of $2,000 were declared and paid during the year. Which closing entry applies to Dividends?",
     "options": [
+      "Debit Dividends; Credit Retained Earnings",
+      "Debit Income Summary; Credit Dividends",
       "Debit Retained Earnings; Credit Dividends.",
-      "Debit Revenue; Credit Income Summary",
-      "Debit Income Summary; Credit Expenses",
-      "Debit Income Summary; Credit Retained Earnings"
+      "Debit Dividends; Credit Cash only with no closing entry"
     ],
-    "answer": 0,
+    "answer": 2,
     "explanation": "Debit Retained Earnings; Credit Dividends.",
     "tags": [
       "adjusting_entries",
@@ -1334,30 +1334,30 @@ export const ankiMcqs = [
   },
   {
     "id": "ch03-anki-88",
-    "q": "After closing entries, which accounts have zero balances?",
+    "q": "Immediately after closing entries are posted, which accounts should have zero balances?",
     "options": [
-      "Revenue, expenses, dividends, and income summary.",
-      "Assets, liabilities, and equity",
-      "Cash and accounts payable only",
-      "All accounts including permanent accounts"
+      "All asset, liability, and equity accounts including cash",
+      "Only cash and accounts payable awaiting reconciliation",
+      "Revenue, expense, dividend, and income summary accounts.",
+      "Every account in the general ledger including retained earnings"
     ],
-    "answer": 0,
-    "explanation": "Revenue, expenses, dividends, and income summary.",
+    "answer": 2,
+    "explanation": "Revenue, expense, dividend, and income summary accounts.",
     "tags": [
       "adjusting_entries"
     ]
   },
   {
     "id": "ch03-anki-89",
-    "q": "Do asset, liability, and equity accounts get closed?",
+    "q": "Which statement about closing asset, liability, and equity accounts is correct?",
     "options": [
-      "No, they are permanent accounts and carry forward.",
-      "Yes",
-      "No",
-      "Only for large companies"
+      "They are permanent accounts and are not closed at period-end.",
+      "They are closed to income summary each period like revenues",
+      "They are closed to cash before the post-closing trial balance",
+      "They are closed to dividends before retained earnings is updated"
     ],
     "answer": 0,
-    "explanation": "No, they are permanent accounts and carry forward.",
+    "explanation": "They are permanent accounts and are not closed at period-end.",
     "tags": [
       "adjusting_entries"
     ]
@@ -1367,9 +1367,9 @@ export const ankiMcqs = [
     "q": "What is a post-closing trial balance?",
     "options": [
       "A trial balance prepared after closing entries are journalised and posted.",
-      "A trial balance prepared before adjusting entries",
-      "A trial balance of only revenue and expense accounts",
-      "The same as an unadjusted trial balance"
+      "The unadjusted trial balance taken before adjusting entries",
+      "A list of revenue and expense accounts after adjustments only",
+      "An optional worksheet column with no ledger posting requirement"
     ],
     "answer": 0,
     "explanation": "A trial balance prepared after closing entries are journalised and posted.",
@@ -1379,29 +1379,29 @@ export const ankiMcqs = [
   },
   {
     "id": "ch03-anki-91",
-    "q": "What accounts appear on a post-closing trial balance?",
+    "q": "Which accounts should appear on a post-closing trial balance?",
     "options": [
-      "Only permanent accounts: assets, liabilities, and equity.",
-      "Revenue, expenses, and dividends",
-      "All accounts including Income Summary",
-      "Only cash and receivables"
+      "Permanent accounts only: assets, liabilities, and equity.",
+      "Revenue, expense, and dividend accounts awaiting closing",
+      "All accounts including income summary with mixed balances",
+      "Only cash and receivable accounts used in daily operations"
     ],
     "answer": 0,
-    "explanation": "Only permanent accounts: assets, liabilities, and equity.",
+    "explanation": "Permanent accounts only: assets, liabilities, and equity.",
     "tags": [
       "adjusting_entries"
     ]
   },
   {
     "id": "ch03-anki-92",
-    "q": "What accounts should not appear on a post-closing trial balance?",
+    "q": "Which accounts should NOT appear with a balance on a post-closing trial balance?",
     "options": [
-      "Revenue, expenses, dividends, and income summary.",
-      "Assets, liabilities, and equity",
-      "Cash and accounts payable",
-      "Retained earnings and share capital"
+      "Cash, accounts receivable, and accounts payable",
+      "Retained earnings and share capital",
+      "Accumulated depreciation and equipment",
+      "Revenue, expenses, dividends, and income summary."
     ],
-    "answer": 0,
+    "answer": 3,
     "explanation": "Revenue, expenses, dividends, and income summary.",
     "tags": [
       "adjusting_entries"
@@ -1409,102 +1409,87 @@ export const ankiMcqs = [
   },
   {
     "id": "ch03-anki-93",
-    "q": "What is the purpose of the post-closing trial balance?",
+    "q": "Why is a post-closing trial balance prepared?",
     "options": [
-      "To prove equality of permanent account balances carried forward to the next period.",
-      "To calculate depreciation expense",
-      "To record adjusting entries",
-      "To prepare the income statement only"
+      "To calculate depreciation expense for the first month of the new period",
+      "To verify that permanent account balances balance before the next period begins.",
+      "To replace adjusting entries when material errors are discovered after closing",
+      "To prepare the income statement without using any ledger account balances"
     ],
-    "answer": 0,
-    "explanation": "To prove equality of permanent account balances carried forward to the next period.",
+    "answer": 1,
+    "explanation": "To verify that permanent account balances balance before the next period begins.",
     "tags": [
       "adjusting_entries"
     ]
   },
   {
     "id": "ch03-anki-94",
-    "q": "What is the accounting cycle?",
+    "q": "Which description best defines the accounting cycle?",
     "options": [
-      "The repeated sequence of accounting steps followed each accounting period.",
-      "The process of auditing financial statements",
-      "The tax calculation process for a business",
-      "The procedure for issuing shares"
+      "The external audit procedures performed on annual financial reports after issue",
+      "The ATO process for lodging business activity statements and paying GST",
+      "The board procedure for issuing new shares and updating the share register",
+      "The recurring process of recording, adjusting, reporting, and closing each accounting period."
     ],
-    "answer": 0,
-    "explanation": "The repeated sequence of accounting steps followed each accounting period.",
+    "answer": 3,
+    "explanation": "The recurring process of recording, adjusting, reporting, and closing each accounting period.",
     "tags": [
       "adjusting_entries"
     ]
   },
   {
     "id": "ch03-anki-95",
-    "q": "What is step 1 of the accounting cycle?",
+    "q": "A bookkeeper has identified a business event and determined which accounts are affected. What is the next step in the accounting cycle?",
     "options": [
-      "Analyse transactions.",
-      "Journalise transactions in the general journal",
-      "Post to the general ledger",
-      "Timing: recognising revenues and expenses in the correct accounting period, regardless of when cash is received or paid."
+      "Prepare the post-closing trial balance immediately",
+      "Journalise the transaction in the general journal.",
+      "Close revenue accounts to retained earnings",
+      "Publish the statement of financial position to shareholders"
     ],
-    "answer": 0,
-    "explanation": "Analyse transactions.",
+    "answer": 1,
+    "explanation": "Journalise the transaction in the general journal.",
     "tags": [
       "adjusting_entries"
     ]
   },
   {
     "id": "ch03-anki-96",
-    "q": "What is step 2 of the accounting cycle?",
+    "q": "Transactions have been journalised for the day. What is the next step in the accounting cycle?",
     "options": [
-      "Journalise transactions in the general journal.",
-      "Analyse transactions",
-      "Post to the general ledger",
-      "Timing: recognising revenues and expenses in the correct accounting period, regardless of when cash is received or paid."
+      "Prepare closing entries for temporary accounts",
+      "Issue dividends from retained earnings",
+      "Post the entries to the general ledger.",
+      "Prepare the post-closing trial balance for the period"
     ],
-    "answer": 0,
-    "explanation": "Journalise transactions in the general journal.",
+    "answer": 2,
+    "explanation": "Post the entries to the general ledger.",
     "tags": [
       "adjusting_entries"
     ]
   },
   {
     "id": "ch03-anki-97",
-    "q": "What is step 3 of the accounting cycle?",
+    "q": "Ledger accounts are up to date for the period. Which step typically follows before adjustments?",
     "options": [
-      "Post to the general ledger.",
-      "Analyse transactions",
-      "Journalise transactions in the general journal",
-      "Timing: recognising revenues and expenses in the correct accounting period, regardless of when cash is received or paid."
+      "Journalise and post closing entries",
+      "Prepare the post-closing trial balance",
+      "Close all expense accounts to income summary",
+      "Prepare an unadjusted trial balance."
     ],
-    "answer": 0,
-    "explanation": "Post to the general ledger.",
-    "tags": [
-      "adjusting_entries"
-    ]
-  },
-  {
-    "id": "ch03-anki-98",
-    "q": "What is step 4 of the accounting cycle?",
-    "options": [
-      "Prepare an unadjusted trial balance.",
-      "Analyse transactions",
-      "Journalise transactions in the general journal",
-      "Post to the general ledger"
-    ],
-    "answer": 0,
+    "answer": 3,
     "explanation": "Prepare an unadjusted trial balance.",
     "tags": [
       "adjusting_entries"
     ]
   },
   {
-    "id": "ch03-anki-99",
-    "q": "What is step 5 of the accounting cycle?",
+    "id": "ch03-anki-98",
+    "q": "The unadjusted trial balance is prepared and accruals/deferrals are identified. What comes next?",
     "options": [
       "Prepare and journalise adjusting entries.",
-      "Analyse transactions",
-      "Journalise transactions in the general journal",
-      "Post to the general ledger"
+      "Prepare the post-closing trial balance immediately",
+      "Close revenue accounts before adjustments are recorded",
+      "Issue the statement of changes in equity without adjustments"
     ],
     "answer": 0,
     "explanation": "Prepare and journalise adjusting entries.",
@@ -1513,13 +1498,13 @@ export const ankiMcqs = [
     ]
   },
   {
-    "id": "ch03-anki-100",
-    "q": "What is step 6 of the accounting cycle?",
+    "id": "ch03-anki-99",
+    "q": "Adjusting entries have been journalised but not yet reflected in a trial listing. What is the next step?",
     "options": [
       "Post adjusting entries and prepare the adjusted trial balance.",
-      "Analyse transactions",
-      "Journalise transactions in the general journal",
-      "Post to the general ledger"
+      "Close all temporary accounts to retained earnings",
+      "Prepare the post-closing trial balance before statements",
+      "Journalise only cash transactions for the next period"
     ],
     "answer": 0,
     "explanation": "Post adjusting entries and prepare the adjusted trial balance.",
@@ -1528,180 +1513,195 @@ export const ankiMcqs = [
     ]
   },
   {
-    "id": "ch03-anki-101",
-    "q": "What is step 7 of the accounting cycle?",
+    "id": "ch03-anki-100",
+    "q": "An adjusted trial balance is complete and balances. What is the next major step in the cycle?",
     "options": [
-      "Prepare financial statements.",
-      "Analyse transactions",
-      "Journalise transactions in the general journal",
-      "Post to the general ledger"
+      "Prepare the post-closing trial balance before statements",
+      "Prepare the financial statements.",
+      "Journalise closing entries before any statements are drafted",
+      "Record the next period's transactions in the general journal"
     ],
-    "answer": 0,
-    "explanation": "Prepare financial statements.",
+    "answer": 1,
+    "explanation": "Prepare the financial statements.",
     "tags": [
       "adjusting_entries"
     ]
   },
   {
-    "id": "ch03-anki-102",
-    "q": "What is step 8 of the accounting cycle?",
+    "id": "ch03-anki-101",
+    "q": "Financial statements for the period have been prepared from adjusted balances. What typically follows?",
     "options": [
-      "Journalise and post closing entries.",
-      "Analyse transactions",
-      "Journalise transactions in the general journal",
-      "Post to the general ledger"
+      "Return to the unadjusted trial balance and restart the cycle",
+      "Prepare adjusting entries again before any closing occurs",
+      "Skip closing because permanent accounts already balance",
+      "Journalise and post closing entries."
     ],
-    "answer": 0,
+    "answer": 3,
     "explanation": "Journalise and post closing entries.",
     "tags": [
       "adjusting_entries"
     ]
   },
   {
-    "id": "ch03-anki-103",
-    "q": "What is step 9 of the accounting cycle?",
+    "id": "ch03-anki-102",
+    "q": "Closing entries have been posted successfully. What is the final step in the accounting cycle?",
     "options": [
-      "Prepare a post-closing trial balance.",
-      "Analyse transactions",
-      "Journalise transactions in the general journal",
-      "Post to the general ledger"
+      "Prepare an unadjusted trial balance for the same period",
+      "Journalise adjusting entries for the next period immediately",
+      "Prepare financial statements again before verifying permanent accounts",
+      "Prepare a post-closing trial balance."
     ],
-    "answer": 0,
+    "answer": 3,
     "explanation": "Prepare a post-closing trial balance.",
     "tags": [
       "adjusting_entries"
     ]
   },
   {
-    "id": "ch03-anki-104",
-    "q": "What is an accounting worksheet?",
+    "id": "ch03-anki-103",
+    "q": "Which step immediately precedes preparing the post-closing trial balance?",
     "options": [
-      "A spreadsheet used to organise data for adjustments and financial statement preparation.",
-      "A formal part of the accounting records required by AASB",
-      "A financial statement issued to shareholders",
-      "The general ledger itself"
+      "Prepare and post adjusting entries for the period",
+      "Journalise and post closing entries.",
+      "Prepare the unadjusted trial balance again",
+      "Analyse transactions and journalise daily events only"
     ],
-    "answer": 0,
-    "explanation": "A spreadsheet used to organise data for adjustments and financial statement preparation.",
+    "answer": 1,
+    "explanation": "Journalise and post closing entries.",
+    "tags": [
+      "adjusting_entries"
+    ]
+  },
+  {
+    "id": "ch03-anki-104",
+    "q": "An accountant uses a ten-column spreadsheet to extend adjusted balances into statement columns. What is this tool?",
+    "options": [
+      "The general ledger required by AASB for all entities",
+      "The published statement of profit or loss sent to shareholders",
+      "The bank reconciliation replacing ledger account balances",
+      "An accounting worksheet."
+    ],
+    "answer": 3,
+    "explanation": "An accounting worksheet.",
     "tags": [
       "adjusting_entries"
     ]
   },
   {
     "id": "ch03-anki-105",
-    "q": "Is a worksheet a formal part of the accounting records?",
+    "q": "Is an accounting worksheet part of the formal accounting records under AASB?",
     "options": [
-      "No, it is an optional working tool.",
-      "Yes",
-      "No",
-      "Only for large companies"
+      "Yes, it must be filed with the general ledger each period",
+      "Yes, it replaces the adjusted trial balance for small entities",
+      "Yes, auditors require it instead of source documents",
+      "No, it is an optional internal working document."
     ],
-    "answer": 0,
-    "explanation": "No, it is an optional working tool.",
+    "answer": 3,
+    "explanation": "No, it is an optional internal working document.",
     "tags": [
       "adjusting_entries"
     ]
   },
   {
     "id": "ch03-anki-106",
-    "q": "Why is a worksheet useful?",
+    "q": "Why might an accountant prepare a worksheet even though it is not mandatory?",
     "options": [
-      "It helps organise data, check for errors, and show the transition from unadjusted trial balance to financial statements.",
-      "It replaces the need for a general ledger",
-      "It is required for tax filing",
-      "It eliminates adjusting entries"
+      "It permanently replaces ledger postings for revenue accounts",
+      "It is required to lodge company tax returns with the ATO",
+      "It eliminates the need for adjusting and closing entries",
+      "It organises adjustments and helps trace balances into financial statements."
     ],
-    "answer": 0,
-    "explanation": "It helps organise data, check for errors, and show the transition from unadjusted trial balance to financial statements.",
+    "answer": 3,
+    "explanation": "It organises adjustments and helps trace balances into financial statements.",
     "tags": [
       "adjusting_entries"
     ]
   },
   {
     "id": "ch03-anki-107",
-    "q": "What columns are commonly included in a worksheet?",
+    "q": "Which set of columns is commonly found on a ten-column worksheet?",
     "options": [
-      "Account titles, unadjusted trial balance, adjustments, adjusted trial balance, income statement, and statement of financial position.",
-      "Only cash receipts and cash payments",
-      "Only revenue and expense accounts",
-      "Share price, dividends, and market cap only"
+      "Cash receipts, cash payments, bank balance, and petty cash columns only",
+      "Share price, dividends, market capitalisation, and earnings per share only",
+      "Revenue and expense account columns without any statement of financial position section",
+      "Unadjusted trial balance, adjustments, adjusted trial balance, income statement, and statement of financial position."
     ],
-    "answer": 0,
-    "explanation": "Account titles, unadjusted trial balance, adjustments, adjusted trial balance, income statement, and statement of financial position.",
+    "answer": 3,
+    "explanation": "Unadjusted trial balance, adjustments, adjusted trial balance, income statement, and statement of financial position.",
     "tags": [
       "adjusting_entries"
     ]
   },
   {
     "id": "ch03-anki-108",
-    "q": "Why do adjusting entries improve the accuracy of financial statements?",
+    "q": "A company earned consulting fees on credit and used prepaid insurance during the year but recorded only cash transactions initially. Why do adjusting entries improve the statements?",
     "options": [
-      "They ensure all earned revenues and incurred expenses are included in the correct period.",
-      "When cash is received or paid",
-      "When a contract is signed",
-      "At the end of the financial year only"
+      "They convert all accounting to cash basis at year-end only",
+      "They remove every liability from the statement of financial position",
+      "They close permanent accounts before the adjusted trial balance",
+      "They include earned revenues and incurred expenses in the correct period."
     ],
-    "answer": 0,
-    "explanation": "They ensure all earned revenues and incurred expenses are included in the correct period.",
+    "answer": 3,
+    "explanation": "They include earned revenues and incurred expenses in the correct period.",
     "tags": [
       "adjusting_entries"
     ]
   },
   {
     "id": "ch03-anki-109",
-    "q": "Why is cash excluded from adjusting entries?",
+    "q": "Why is the Cash account normally excluded from adjusting entries?",
     "options": [
-      "Because adjusting entries correct timing differences after cash transactions have already occurred or before cash transactions occur.",
-      "Because cash is never used in accrual accounting",
-      "Because adjusting entries only affect equity",
-      "Because cash accounts are closed first"
+      "Cash is never used under accrual accounting in any transaction",
+      "Adjusting entries affect equity accounts only at period-end",
+      "Cash was already updated when the original cash transaction was recorded.",
+      "Cash accounts must be closed before accruals can be recorded"
     ],
-    "answer": 0,
-    "explanation": "Because adjusting entries correct timing differences after cash transactions have already occurred or before cash transactions occur.",
+    "answer": 2,
+    "explanation": "Cash was already updated when the original cash transaction was recorded.",
     "tags": [
       "adjusting_entries"
     ]
   },
   {
     "id": "ch03-anki-110",
-    "q": "If cash was paid before an expense was incurred, what adjusting category is used?",
+    "q": "Office rent for the next quarter was paid in cash on the first day of the current month. Which adjustment category will be needed later?",
     "options": [
-      "Prepaid expense.",
-      "Prepaid expenses",
-      "Revenue received in advance",
-      "Accrued revenues"
+      "Accrued revenue because rent benefits future periods",
+      "Prepaid expense (deferral).",
+      "Accrued expense because cash has already been paid",
+      "Unearned revenue because the landlord received cash early"
     ],
-    "answer": 0,
-    "explanation": "Prepaid expense.",
+    "answer": 1,
+    "explanation": "Prepaid expense (deferral).",
     "tags": [
       "adjusting_entries"
     ]
   },
   {
     "id": "ch03-anki-111",
-    "q": "If cash was received before revenue was earned, what adjusting category is used?",
+    "q": "A customer paid a deposit in cash for goods to be delivered next month. Which adjustment category applies before delivery?",
     "options": [
-      "Revenue received in advance.",
-      "Prepaid expenses",
-      "Accrued revenues",
-      "Timing: recognising revenues and expenses in the correct accounting period, regardless of when cash is received or paid."
+      "Accrued revenue because the seller will earn revenue later",
+      "Prepaid expense because the seller received cash",
+      "Accrued expense because delivery has not occurred",
+      "Revenue received in advance (unearned revenue)."
     ],
-    "answer": 0,
-    "explanation": "Revenue received in advance.",
+    "answer": 3,
+    "explanation": "Revenue received in advance (unearned revenue).",
     "tags": [
       "adjusting_entries"
     ]
   },
   {
     "id": "ch03-anki-112",
-    "q": "If revenue was earned before cash was received, what adjusting category is used?",
+    "q": "Services were performed on account in April, but billing and collection will occur in May. Which adjustment category applies at 30 April?",
     "options": [
-      "Accrued revenue.",
-      "Prepaid expenses",
       "Revenue received in advance",
-      "Accrued revenues"
+      "Prepaid expense for future services",
+      "Accrued expense for wages paid in May",
+      "Accrued revenue."
     ],
-    "answer": 0,
+    "answer": 3,
     "explanation": "Accrued revenue.",
     "tags": [
       "adjusting_entries"
@@ -1709,14 +1709,14 @@ export const ankiMcqs = [
   },
   {
     "id": "ch03-anki-113",
-    "q": "If an expense was incurred before cash was paid, what adjusting category is used?",
+    "q": "Electricity used in March will be billed and paid in April. Which adjustment category applies at 31 March?",
     "options": [
-      "Accrued expense.",
-      "Prepaid expenses",
-      "Revenue received in advance",
-      "Accrued revenues"
+      "Prepaid expense because payment occurs later",
+      "Unearned revenue because cash has not changed hands",
+      "Accrued revenue because the utility provided service",
+      "Accrued expense."
     ],
-    "answer": 0,
+    "answer": 3,
     "explanation": "Accrued expense.",
     "tags": [
       "adjusting_entries"
@@ -1724,45 +1724,45 @@ export const ankiMcqs = [
   },
   {
     "id": "ch03-anki-114",
-    "q": "What is the key difference between revenue received in advance and accrued revenue?",
+    "q": "Which statement best contrasts unearned revenue with accrued revenue?",
     "options": [
-      "Revenue received in advance involves cash received before earning revenue; accrued revenue involves revenue earned before receiving cash.",
-      "Both involve cash received after revenue is earned",
-      "Both are recorded as assets",
-      "There is no difference between them"
+      "Both arise only after cash has been collected in full from the customer",
+      "Unearned revenue arises when cash is received before earning; accrued revenue when earning occurs before cash is received.",
+      "Both are recorded initially as assets on the statement of financial position",
+      "There is no practical difference between the two categories in accrual accounting"
     ],
-    "answer": 0,
-    "explanation": "Revenue received in advance involves cash received before earning revenue; accrued revenue involves revenue earned before receiving cash.",
+    "answer": 1,
+    "explanation": "Unearned revenue arises when cash is received before earning; accrued revenue when earning occurs before cash is received.",
     "tags": [
       "adjusting_entries"
     ]
   },
   {
     "id": "ch03-anki-115",
-    "q": "What is the key difference between prepaid expenses and accrued expenses?",
+    "q": "Which statement best contrasts prepaid expenses with accrued expenses?",
     "options": [
-      "Prepaid expenses involve cash paid before expense recognition; accrued expenses involve expense recognition before cash payment.",
-      "Both involve cash paid after the expense is incurred",
-      "Both are liabilities",
-      "Prepaid expenses are always larger than accrued expenses"
+      "Both involve cash being paid after the expense has already been recognised",
+      "Both are reported as liabilities on the statement of financial position until paid",
+      "Prepaid expenses always exceed accrued expenses in amount at every balance date",
+      "Prepaid expenses begin with cash paid before recognition; accrued expenses begin with recognition before cash payment."
     ],
-    "answer": 0,
-    "explanation": "Prepaid expenses involve cash paid before expense recognition; accrued expenses involve expense recognition before cash payment.",
+    "answer": 3,
+    "explanation": "Prepaid expenses begin with cash paid before recognition; accrued expenses begin with recognition before cash payment.",
     "tags": [
       "adjusting_entries"
     ]
   },
   {
     "id": "ch03-anki-116",
-    "q": "What happens if accrued expenses are not adjusted?",
+    "q": "Year-end wages of $900 are earned but not recorded. If no adjustment is made, what is the most likely effect?",
     "options": [
-      "Expenses and liabilities will be understated, and profit may be overstated.",
-      "Assets and revenues will both be overstated",
-      "Liabilities will be overstated",
-      "Expenses will be overstated"
+      "Expenses and liabilities are overstated, so profit is understated",
+      "Expenses and liabilities are understated, so profit may be overstated.",
+      "Assets and revenue are understated with no effect on profit",
+      "Only the cash account is understated at balance date"
     ],
-    "answer": 0,
-    "explanation": "Expenses and liabilities will be understated, and profit may be overstated.",
+    "answer": 1,
+    "explanation": "Expenses and liabilities are understated, so profit may be overstated.",
     "tags": [
       "adjusting_entries",
       "error_correction"
@@ -1770,15 +1770,15 @@ export const ankiMcqs = [
   },
   {
     "id": "ch03-anki-117",
-    "q": "What happens if accrued revenues are not adjusted?",
+    "q": "Accrued consulting revenue of $1,100 is omitted at year-end. What is the most likely effect?",
     "options": [
-      "Revenues and assets will be understated, and profit may be understated.",
-      "Revenues and assets will both be overstated",
-      "Liabilities will be overstated",
-      "Expenses will be overstated"
+      "Revenue and assets are understated, so profit may be understated.",
+      "Revenue and assets are overstated, so profit is overstated",
+      "Liabilities are overstated while revenue remains unchanged",
+      "Expenses are overstated with no effect on assets"
     ],
     "answer": 0,
-    "explanation": "Revenues and assets will be understated, and profit may be understated.",
+    "explanation": "Revenue and assets are understated, so profit may be understated.",
     "tags": [
       "adjusting_entries",
       "error_correction"
@@ -1786,15 +1786,15 @@ export const ankiMcqs = [
   },
   {
     "id": "ch03-anki-118",
-    "q": "What happens if expired prepaid expenses are not adjusted?",
+    "q": "Expired prepaid insurance of $300 is not adjusted at year-end. What is the most likely effect?",
     "options": [
-      "Expenses will be understated, assets overstated, and profit overstated.",
-      "Revenue will be understated, liabilities overstated, and profit understated",
-      "Assets and liabilities will both be understated",
-      "Timing: recognising revenues and expenses in the correct accounting period, regardless of when cash is received or paid."
+      "Expenses are overstated, assets understated, and profit understated",
+      "Expenses are understated, assets overstated, and profit overstated.",
+      "Revenue is understated and liabilities overstated with no asset effect",
+      "Only cash is overstated while profit remains unchanged"
     ],
-    "answer": 0,
-    "explanation": "Expenses will be understated, assets overstated, and profit overstated.",
+    "answer": 1,
+    "explanation": "Expenses are understated, assets overstated, and profit overstated.",
     "tags": [
       "adjusting_entries",
       "error_correction"
@@ -1802,15 +1802,15 @@ export const ankiMcqs = [
   },
   {
     "id": "ch03-anki-119",
-    "q": "What happens if earned unearned revenue is not adjusted?",
+    "q": "Services worth $500 were earned from an unearned revenue balance but not adjusted. What is the most likely effect?",
     "options": [
-      "Revenue will be understated, liabilities overstated, and profit understated.",
-      "Revenue will be overstated and liabilities understated",
-      "Assets and revenue will both be overstated",
-      "Only cash will be affected"
+      "Revenue is understated, the liability is overstated, and profit is understated.",
+      "Revenue is overstated for the period and the liability is understated",
+      "Assets and revenue are both overstated with no effect on the liability balance",
+      "Only the cash account balance is affected at period-end with no profit impact"
     ],
     "answer": 0,
-    "explanation": "Revenue will be understated, liabilities overstated, and profit understated.",
+    "explanation": "Revenue is understated, the liability is overstated, and profit is understated.",
     "tags": [
       "adjusting_entries",
       "error_correction"
@@ -1818,15 +1818,15 @@ export const ankiMcqs = [
   },
   {
     "id": "ch03-anki-120",
-    "q": "What is the big picture sequence of Chapter 3?",
+    "q": "Which sequence correctly summarises the end-of-period process taught in Chapter 3?",
     "options": [
-      "Record transactions → adjust accounts → prepare adjusted trial balance → prepare financial statements → close temporary accounts → prepare post-closing trial balance.",
-      "Close accounts → record transactions → prepare financial statements",
-      "Prepare financial statements → record transactions → adjust accounts",
-      "Record cash only → prepare tax return → close accounts"
+      "Close temporary accounts, record transactions, prepare statements, then post adjusting entries",
+      "Prepare statements first, record transactions later, and adjust accounts only if errors appear",
+      "Record cash transactions only, lodge tax returns, then close permanent asset accounts",
+      "Record transactions, adjust accounts, prepare adjusted trial balance, prepare statements, close temporary accounts, prepare post-closing trial balance."
     ],
-    "answer": 0,
-    "explanation": "Record transactions → adjust accounts → prepare adjusted trial balance → prepare financial statements → close temporary accounts → prepare post-closing trial balance.",
+    "answer": 3,
+    "explanation": "Record transactions, adjust accounts, prepare adjusted trial balance, prepare statements, close temporary accounts, prepare post-closing trial balance.",
     "tags": [
       "adjusting_entries"
     ]
