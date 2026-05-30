@@ -358,7 +358,7 @@ export function HomeScreen({
         Start Full Exam — {totalQuestionCount} questions
       </button>
 
-      {statsSummary.totalQuizzes > 0 && (
+      {user && statsSummary.totalQuizzes > 0 && (
         <div style={{ marginBottom: 40 }}>
           <div style={sectionLabelStyle}>Your progress</div>
           <button
@@ -389,6 +389,33 @@ export function HomeScreen({
             <span style={{ color: theme.colors.textTertiary, fontSize: 18 }}>→</span>
           </button>
         </div>
+      )}
+
+      {!user && (
+        <Callout
+          icon="📊"
+          title="Track your progress"
+          description="Create an account or sign in to save quiz history and view performance stats."
+          variant="blue"
+        >
+          <button
+            type="button"
+            onClick={onOpenStats}
+            {...NAV_CLICK_SOUND_PROPS}
+            style={{
+              padding: "8px 12px",
+              background: theme.colors.bg,
+              border: `1px solid ${theme.colors.borderStrong}`,
+              borderRadius: theme.radius.md,
+              color: theme.colors.text,
+              fontSize: 13,
+              fontWeight: 500,
+              cursor: "pointer",
+            }}
+          >
+            Sign in to save stats
+          </button>
+        </Callout>
       )}
 
       <div style={{ marginBottom: 8 }}>

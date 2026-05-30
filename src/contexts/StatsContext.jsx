@@ -44,7 +44,8 @@ export function StatsProvider({ children }) {
 
       try {
         if (!user) {
-          resetStatsStore();
+          initStatsStore({ sessions: [], questions: {}, chapters: {} });
+          setStatsPersist(null);
           refresh();
           return;
         }
@@ -89,6 +90,7 @@ export function StatsProvider({ children }) {
       isCloudSynced: Boolean(user),
       refresh,
       async saveSession(payload) {
+        if (!user) return null;
         const session = await saveQuizSession(payload);
         refresh();
         return session;

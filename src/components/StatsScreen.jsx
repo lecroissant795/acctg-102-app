@@ -182,7 +182,7 @@ function StatsSidebar({ summary, onBack }) {
 
 export function StatsScreen({ onBack }) {
   const { user } = useAuth();
-  const { summary, loading, syncError, isCloudSynced, clearStats } = useStats();
+  const { summary, loading, syncError, clearStats } = useStats();
 
   const handleClear = async () => {
     if (!window.confirm("Clear all saved quiz stats? This cannot be undone.")) return;
@@ -211,9 +211,7 @@ export function StatsScreen({ onBack }) {
           </button>
           <h1 className="page-title" style={pageTitleStyle}>Quiz Stats</h1>
           <p className="page-subtitle" style={{ color: theme.colors.textSecondary, marginTop: 8, fontSize: 14, lineHeight: 1.5 }}>
-            {isCloudSynced
-              ? `Synced to your account (${user?.email}).`
-              : "Saved locally in your browser. Sign in to sync across devices."}
+            Synced to your account ({user?.email}).
           </p>
           {syncError && (
             <p style={{ color: theme.colors.error, marginTop: 8, fontSize: 13 }}>

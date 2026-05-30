@@ -1,10 +1,11 @@
 import { useState } from "react";
 import { useAuth } from "../contexts/AuthContext.jsx";
+import { ROUTES } from "../routes.js";
 import { Page } from "./Page.jsx";
 import { NAV_CLICK_SOUND_PROPS } from "../constants/clickSound.js";
 import { theme, inputStyle, backButtonStyle, pageTitleStyle } from "../styles/theme.js";
 
-export function AuthScreen({ onBack, onAuthenticated }) {
+export function AuthScreen({ onBack, onAuthenticated, returnTo = ROUTES.home }) {
   const { signIn, signUp, available, error: authError } = useAuth();
   const [mode, setMode] = useState("signin");
   const [email, setEmail] = useState("");
@@ -53,7 +54,9 @@ export function AuthScreen({ onBack, onAuthenticated }) {
           {mode === "signin" ? "Sign In" : "Create Account"}
         </h1>
         <p style={{ color: theme.colors.textSecondary, marginTop: 8, fontSize: 14, lineHeight: 1.5 }}>
-          Save your quiz history and progress across devices.
+          {returnTo === ROUTES.stats
+            ? "Sign in or create an account to view and save your quiz stats."
+            : "Save your quiz history and progress across devices."}
         </p>
         {!available && authError && (
           <p style={{ color: theme.colors.error, marginTop: 8, fontSize: 13 }}>

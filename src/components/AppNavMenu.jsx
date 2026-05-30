@@ -75,14 +75,14 @@ export function AppNavMenu({
           ))}
         </SidebarSection>
 
-        {statsSummary.totalQuizzes > 0 && (
+        {user && (
           <>
             <SidebarDivider />
             <SidebarSection>
               <SidebarItem
                 icon="📊"
                 label="Quiz Stats"
-                badge={`${statsSummary.accuracy}%`}
+                badge={statsSummary.totalQuizzes > 0 ? `${statsSummary.accuracy}%` : null}
                 onClick={wrap(onOpenStats)}
               />
             </SidebarSection>

@@ -46,7 +46,7 @@ export function resetStatsStore() {
 }
 
 export function setStatsPersist(handler) {
-  persistHandler = handler;
+  persistHandler = handler ?? null;
 }
 
 async function persistStore(store) {

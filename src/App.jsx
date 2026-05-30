@@ -66,6 +66,7 @@ export default function App() {
   const [planLoadingLabel, setPlanLoadingLabel] = useState(null);
   const [planError, setPlanError] = useState(null);
   const [tutorUses, setTutorUses] = useState(() => createTutorUseState());
+  const [authReturnTo, setAuthReturnTo] = useState(ROUTES.home);
   const savedSessionRef = useRef(false);
   const activeQuizPathRef = useRef(null);
 
@@ -285,7 +286,15 @@ export default function App() {
   }, [route.name, questions.length]);
 
   useEffect(() => {
-    if (!isResultsRoute(route) || savedSessionRef.current || questions.length === 0) return;
+    if (authLoading) return;
+    if (route.name === "stats" && !user) {
+      setAuthReturnTo(ROUTES.stats);
+      navigate(ROUTES.auth, { replace: true });
+    }
+  }, [route.name, user, authLoading, navigate]);
+
+  useEffect(() => {
+    if (!isResultsRoute(route) || savedSessionRef.current || questions.length === 0 || !user) return;
 
     const modeLabel =
       mode === "mini"
@@ -324,7 +333,26 @@ export default function App() {
     score,
     quizStartedAt,
     saveSession,
+    user,
   ]);
+
+  const openAuth = (returnTo = ROUTES.home) => {
+    setAuthReturnTo(returnTo);
+    navigate(ROUTES.auth);
+  };
+
+  const openStats = () => {
+    if (!user) {
+      openAuth(ROUTES.stats);
+      return;
+    }
+    navigate(ROUTES.stats);
+  };
+
+  const handleAuthenticated = () => {
+    navigate(authReturnTo);
+    setAuthReturnTo(ROUTES.home);
+  };
 
   if (authLoading) {
     return (
@@ -351,13 +379,13 @@ export default function App() {
     statsSummary,
     planLoading,
     user,
-    onSignIn: () => navigate(ROUTES.auth),
+    onSignIn: () => openAuth(),
     onSignOut: () => signOut(),
     onStartMini: (size) => navigate(ROUTES.quizMini(size)),
     onStartAll: () => navigate(ROUTES.quizExam),
     onStartChapter: openChapterSetup,
     onStartPracticeGroup: (label) => navigate(practicePath(label)),
-    onOpenStats: () => navigate(ROUTES.stats),
+    onOpenStats: openStats,
     onHome: () => navigate(ROUTES.home),
   };
 
@@ -367,7 +395,8 @@ export default function App() {
     screen = (
       <AuthScreen
         onBack={() => navigate(ROUTES.home)}
-        onAuthenticated={() => navigate(ROUTES.home)}
+        onAuthenticated={handleAuthenticated}
+        returnTo={authReturnTo}
       />
     );
   } else if (route.name === "home") {
@@ -384,13 +413,13 @@ export default function App() {
         planError={planError}
         onDismissPlanError={() => setPlanError(null)}
         user={user}
-        onSignIn={() => navigate(ROUTES.auth)}
+        onSignIn={() => openAuth()}
         onSignOut={() => signOut()}
         onStartMini={(size) => navigate(ROUTES.quizMini(size))}
         onStartAll={() => navigate(ROUTES.quizExam)}
         onStartChapter={openChapterSetup}
         onStartPracticeGroup={(label) => navigate(practicePath(label))}
-        onOpenStats={() => navigate(ROUTES.stats)}
+        onOpenStats={openStats}
       />
     );
   } else if (route.name === "stats") {
