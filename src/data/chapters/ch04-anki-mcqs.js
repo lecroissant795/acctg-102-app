@@ -991,21 +991,6 @@ export const ankiMcqs = [
     ]
   },
   {
-    "id": "ch04-anki-65",
-    "q": "What is a sales discount?",
-    "options": [
-      "A discount given to customers for prompt payment.",
-      "Settlement discount",
-      "Trade discount",
-      "Sales discount"
-    ],
-    "answer": 0,
-    "explanation": "The concept being tested (inventory sales): a discount given to customers for prompt payment. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
-    "tags": [
-      "inventory_sales"
-    ]
-  },
-  {
     "id": "ch04-anki-66",
     "q": "How do sales discounts affect revenue?",
     "options": [
