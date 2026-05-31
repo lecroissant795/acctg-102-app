@@ -153,21 +153,6 @@ export const ankiMcqs = [
     ]
   },
   {
-    "id": "ch03-anki-11",
-    "q": "For the same law firm example, under cash basis accounting, in which period should the revenue be reported?",
-    "options": [
-      "June, because the legal services were performed then",
-      "June, because the engagement letter was signed then",
-      "July, because revenue is recognised when cash is received.",
-      "At year-end through an adjusting entry only"
-    ],
-    "answer": 2,
-    "explanation": "Timing is the key idea (adjusting entries): july, because revenue is recognised when cash is received. Under cash basis, recognition follows cash receipts and payments. Accrual would recognise the same event when the underlying activity occurs, even if cash moves later.",
-    "tags": [
-      "adjusting_entries"
-    ]
-  },
-  {
     "id": "ch03-anki-12",
     "q": "Management wants monthly performance reports even though the business expects to operate for many years. Which assumption makes this reporting approach possible?",
     "options": [
