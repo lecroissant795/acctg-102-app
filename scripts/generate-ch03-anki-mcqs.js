@@ -3,6 +3,8 @@
  * Run: bun scripts/generate-ch03-anki-mcqs.js
  */
 
+import { buildTeachingExplanation } from "../src/utils/teachingExplanation.js";
+
 const DISTRACTOR_POOLS = {
   accrual_timing: [
     "When cash is received or paid",
@@ -307,7 +309,7 @@ function toMcq(card, answerPosition) {
     q: card.q,
     options,
     answer: answerPosition,
-    explanation: card.a,
+    explanation: buildTeachingExplanation({ q: card.q, a: card.a, tags: card.tags }),
     tags: card.tags ?? ["adjusting_entries"],
   };
 }

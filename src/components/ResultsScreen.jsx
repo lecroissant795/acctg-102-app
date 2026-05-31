@@ -2,6 +2,7 @@ import { Page } from "./Page.jsx";
 import { AiTutorModal } from "./AiTutorModal.jsx";
 import { NAV_CLICK_SOUND_PROPS } from "../constants/clickSound.js";
 import { theme, sectionLabelStyle } from "../styles/theme.js";
+import { getDisplayExplanation } from "../utils/teachingExplanation.js";
 
 function getGrade(scorePercent) {
   if (scorePercent >= 85) return { label: "A+", emoji: "🏆" };
@@ -99,7 +100,7 @@ function IncorrectReview({ answers, questions, tutorUses, onConsumeTutorUse }) {
               </p>
             )}
             <p style={{ margin: "6px 0 0", color: theme.colors.textSecondary, fontSize: 12 }}>
-              {question.explanation}
+              {getDisplayExplanation(question)}
             </p>
             <AiTutorModal
               question={question}

@@ -12,7 +12,7 @@ export const ankiMcqs = [
       "Matching economic activity to the correct reporting period, not merely to cash flows."
     ],
     "answer": 3,
-    "explanation": "Matching economic activity to the correct reporting period, not merely to cash flows.",
+    "explanation": "The concept being tested (adjusting entries): matching economic activity to the correct reporting period, not merely to cash flows. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "adjusting_entries"
     ]
@@ -27,7 +27,7 @@ export const ankiMcqs = [
       "Only large entities must accrue; small entities always use cash accounting"
     ],
     "answer": 0,
-    "explanation": "Revenue and expenses are recognised when earned or incurred, even if cash has not yet moved.",
+    "explanation": "Apply the relevant accounting rule (adjusting entries): revenue and expenses are recognised when earned or incurred, even if cash has not yet moved. Accrual accounting recognises revenue and expenses when they are earned or incurred; cash accounting waits for cash movement. Distractors often describe the other basis or the wrong period.",
     "tags": [
       "adjusting_entries"
     ]
@@ -42,7 +42,7 @@ export const ankiMcqs = [
       "Cash basis accounting."
     ],
     "answer": 3,
-    "explanation": "Cash basis accounting.",
+    "explanation": "The calculation rests on (adjusting entries): cash basis accounting. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "adjusting_entries"
     ]
@@ -57,7 +57,7 @@ export const ankiMcqs = [
       "Evenly over June, July, and August as cash is expected"
     ],
     "answer": 0,
-    "explanation": "In June, when control of the goods passes to the customer.",
+    "explanation": "Timing is the key idea (adjusting entries): in June, when control of the goods passes to the customer. Work through which accounts change and whether they have normal debit or credit balances. Distractors often swap sides, use the wrong account class, or omit part of the entry.",
     "tags": [
       "adjusting_entries"
     ]
@@ -72,7 +72,7 @@ export const ankiMcqs = [
       "In the year-end adjustment process only"
     ],
     "answer": 0,
-    "explanation": "In August, when cash is received from the customer.",
+    "explanation": "Timing is the key idea (adjusting entries): in August, when cash is received from the customer. Under cash basis, recognition follows cash receipts and payments. Accrual would recognise the same event when the underlying activity occurs, even if cash moves later.",
     "tags": [
       "adjusting_entries"
     ]
@@ -87,7 +87,7 @@ export const ankiMcqs = [
       "Only if the amount exceeds the company's capitalization threshold"
     ],
     "answer": 0,
-    "explanation": "In June, when the supplies are consumed in operations.",
+    "explanation": "Timing is the key idea (adjusting entries): in June, when the supplies are consumed in operations. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "adjusting_entries"
     ]
@@ -102,7 +102,7 @@ export const ankiMcqs = [
       "When the bank statement is reconciled at month-end"
     ],
     "answer": 0,
-    "explanation": "In July, when cash is paid to the supplier.",
+    "explanation": "Timing is the key idea (adjusting entries): in July, when cash is paid to the supplier. Under cash basis, recognition follows cash receipts and payments. Accrual would recognise the same event when the underlying activity occurs, even if cash moves later.",
     "tags": [
       "adjusting_entries"
     ]
@@ -117,7 +117,7 @@ export const ankiMcqs = [
       "Tax basis accounting as lodged with the ATO"
     ],
     "answer": 1,
-    "explanation": "Accrual basis accounting.",
+    "explanation": "The concept being tested (adjusting entries): accrual basis accounting. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "adjusting_entries"
     ]
@@ -132,7 +132,7 @@ export const ankiMcqs = [
       "It removes the need to prepare a statement of financial position"
     ],
     "answer": 2,
-    "explanation": "It links performance and position to the period in which goods and services are provided.",
+    "explanation": "The reasoning to apply (adjusting entries): it links performance and position to the period in which goods and services are provided. Accrual accounting recognises revenue and expenses when they are earned or incurred; cash accounting waits for cash movement. Distractors often describe the other basis or the wrong period.",
     "tags": [
       "adjusting_entries"
     ]
@@ -147,7 +147,7 @@ export const ankiMcqs = [
       "Half in June and half in July to match cash collection"
     ],
     "answer": 0,
-    "explanation": "June, because the performance obligation was satisfied in that period.",
+    "explanation": "Timing is the key idea (adjusting entries): june, because the performance obligation was satisfied in that period. Accrual accounting recognises revenue and expenses when they are earned or incurred; cash accounting waits for cash movement. Distractors often describe the other basis or the wrong period.",
     "tags": [
       "adjusting_entries"
     ]
@@ -162,7 +162,7 @@ export const ankiMcqs = [
       "At year-end through an adjusting entry only"
     ],
     "answer": 2,
-    "explanation": "July, because revenue is recognised when cash is received.",
+    "explanation": "Timing is the key idea (adjusting entries): july, because revenue is recognised when cash is received. Under cash basis, recognition follows cash receipts and payments. Accrual would recognise the same event when the underlying activity occurs, even if cash moves later.",
     "tags": [
       "adjusting_entries"
     ]
@@ -177,7 +177,7 @@ export const ankiMcqs = [
       "The time period (periodicity) assumption."
     ],
     "answer": 3,
-    "explanation": "The time period (periodicity) assumption.",
+    "explanation": "The concept being tested (adjusting entries): the time period (periodicity) assumption. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "adjusting_entries"
     ]
@@ -192,7 +192,7 @@ export const ankiMcqs = [
       "Reporting only permanent accounts on the statement of profit or loss"
     ],
     "answer": 0,
-    "explanation": "Determining which revenues and expenses belong in the current period rather than another.",
+    "explanation": "The concept being tested (adjusting entries): determining which revenues and expenses belong in the current period rather than another. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "adjusting_entries"
     ]
@@ -207,7 +207,7 @@ export const ankiMcqs = [
       "The entity has lodged its income tax return for the reporting period"
     ],
     "answer": 1,
-    "explanation": "Changes in assets or liabilities from the transaction can be measured reliably and represented faithfully.",
+    "explanation": "Timing is the key idea (adjusting entries): changes in assets or liabilities from the transaction can be measured reliably and represented faithfully. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "adjusting_entries"
     ]
@@ -222,7 +222,7 @@ export const ankiMcqs = [
       "When the contract is signed, regardless of service delivery"
     ],
     "answer": 0,
-    "explanation": "Over time as the software service is provided to the customer.",
+    "explanation": "Timing is the key idea (adjusting entries): over time as the software service is provided to the customer. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "adjusting_entries"
     ]
@@ -237,7 +237,7 @@ export const ankiMcqs = [
       "The historical cost principle for all operating payments"
     ],
     "answer": 0,
-    "explanation": "The matching principle (expense recognition).",
+    "explanation": "The concept being tested (adjusting entries): the matching principle (expense recognition). The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "adjusting_entries"
     ]
@@ -252,7 +252,7 @@ export const ankiMcqs = [
       "AASB 102 / IAS 2 Inventories for manufactured goods only"
     ],
     "answer": 1,
-    "explanation": "AASB 15 / IFRS 15 Revenue from Contracts with Customers.",
+    "explanation": "The concept being tested (adjusting entries): aASB 15 / IFRS 15 Revenue from Contracts with Customers. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "adjusting_entries"
     ]
@@ -267,7 +267,7 @@ export const ankiMcqs = [
       "When the invoice is emailed to the customer"
     ],
     "answer": 0,
-    "explanation": "When (or as) the entity satisfies that performance obligation.",
+    "explanation": "The concept being tested (adjusting entries): when (or as) the entity satisfies that performance obligation. IFRS 15 focuses on distinct performance obligations and recognising revenue as each is satisfied — not simply when cash is received or an invoice is issued.",
     "tags": [
       "adjusting_entries"
     ]
@@ -282,7 +282,7 @@ export const ankiMcqs = [
       "A performance obligation."
     ],
     "answer": 3,
-    "explanation": "A performance obligation.",
+    "explanation": "The concept being tested (adjusting entries): a performance obligation. IFRS 15 focuses on distinct performance obligations and recognising revenue as each is satisfied — not simply when cash is received or an invoice is issued.",
     "tags": [
       "adjusting_entries"
     ]
@@ -297,7 +297,7 @@ export const ankiMcqs = [
       "Revenue earned, expense matched, bank reconciled, audit completed, and report filed"
     ],
     "answer": 1,
-    "explanation": "Approved parties, identified rights, payment terms, commercial substance, and probable collection.",
+    "explanation": "The concept being tested (adjusting entries): approved parties, identified rights, payment terms, commercial substance, and probable collection. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "adjusting_entries"
     ]
@@ -312,7 +312,7 @@ export const ankiMcqs = [
       "Recognise revenue when cash is collected from the customer"
     ],
     "answer": 2,
-    "explanation": "Identify the performance obligations in the contract.",
+    "explanation": "The concept being tested (adjusting entries): identify the performance obligations in the contract. IFRS 15 focuses on distinct performance obligations and recognising revenue as each is satisfied — not simply when cash is received or an invoice is issued.",
     "tags": [
       "adjusting_entries"
     ]
@@ -327,7 +327,7 @@ export const ankiMcqs = [
       "Prepare closing entries for temporary accounts"
     ],
     "answer": 2,
-    "explanation": "Determine the transaction price.",
+    "explanation": "The concept being tested (adjusting entries): determine the transaction price. IFRS 15 focuses on distinct performance obligations and recognising revenue as each is satisfied — not simply when cash is received or an invoice is issued.",
     "tags": [
       "adjusting_entries"
     ]
@@ -342,7 +342,7 @@ export const ankiMcqs = [
       "Close revenue accounts to retained earnings"
     ],
     "answer": 2,
-    "explanation": "Allocate the transaction price to the performance obligations.",
+    "explanation": "The calculation rests on (adjusting entries): allocate the transaction price to the performance obligations. IFRS 15 focuses on distinct performance obligations and recognising revenue as each is satisfied — not simply when cash is received or an invoice is issued.",
     "tags": [
       "adjusting_entries"
     ]
@@ -357,7 +357,7 @@ export const ankiMcqs = [
       "Defer all revenue until every obligation is fully complete"
     ],
     "answer": 2,
-    "explanation": "Recognise revenue when, or as, each performance obligation is satisfied.",
+    "explanation": "The concept being tested (adjusting entries): recognise revenue when, or as, each performance obligation is satisfied. IFRS 15 focuses on distinct performance obligations and recognising revenue as each is satisfied — not simply when cash is received or an invoice is issued.",
     "tags": [
       "adjusting_entries"
     ]
@@ -372,7 +372,7 @@ export const ankiMcqs = [
       "Close expense accounts to income summary"
     ],
     "answer": 0,
-    "explanation": "Identify the contract with the customer.",
+    "explanation": "The concept being tested (adjusting entries): identify the contract with the customer. IFRS 15 focuses on distinct performance obligations and recognising revenue as each is satisfied — not simply when cash is received or an invoice is issued.",
     "tags": [
       "adjusting_entries"
     ]
@@ -387,7 +387,7 @@ export const ankiMcqs = [
       "Decreases in assets or increases in liabilities that reduce equity, other than distributions to owners."
     ],
     "answer": 3,
-    "explanation": "Decreases in assets or increases in liabilities that reduce equity, other than distributions to owners.",
+    "explanation": "The concept being tested (adjusting entries): decreases in assets or increases in liabilities that reduce equity, other than distributions to owners. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "adjusting_entries"
     ]
@@ -402,7 +402,7 @@ export const ankiMcqs = [
       "Only if the amount exceeds a board-approved materiality limit for disclosure"
     ],
     "answer": 0,
-    "explanation": "In the period when the decrease in assets or increase in liabilities occurs.",
+    "explanation": "Timing is the key idea (adjusting entries): in the period when the decrease in assets or increase in liabilities occurs. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "adjusting_entries"
     ]
@@ -417,7 +417,7 @@ export const ankiMcqs = [
       "Defer all expenses until cash from customers is collected in a later period"
     ],
     "answer": 2,
-    "explanation": "The matching principle: recognise related expenses in the same period as the revenue they help generate.",
+    "explanation": "The concept being tested (adjusting entries): the matching principle: recognise related expenses in the same period as the revenue they help generate. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "adjusting_entries"
     ]
@@ -432,7 +432,7 @@ export const ankiMcqs = [
       "Only after the amount is approved in the cash budget"
     ],
     "answer": 0,
-    "explanation": "In September, when the rent obligation is incurred.",
+    "explanation": "Timing is the key idea (adjusting entries): in September, when the rent obligation is incurred. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "adjusting_entries"
     ]
@@ -447,7 +447,7 @@ export const ankiMcqs = [
       "To eliminate every statement of financial position account at period-end"
     ],
     "answer": 1,
-    "explanation": "To assign those revenues and expenses to the correct period before statements are prepared.",
+    "explanation": "The reasoning to apply (adjusting entries): to assign those revenues and expenses to the correct period before statements are prepared. Adjusting entries align revenues and expenses with the reporting period before statements are issued. Wrong options usually skip the adjustment, use the wrong account type, or apply the entry in the wrong period.",
     "tags": [
       "adjusting_entries"
     ]
@@ -462,7 +462,7 @@ export const ankiMcqs = [
       "Only when the ATO requests a tax reconciliation for the entity"
     ],
     "answer": 1,
-    "explanation": "At the end of the accounting period, before financial statements are prepared.",
+    "explanation": "Timing is the key idea (adjusting entries): at the end of the accounting period, before financial statements are prepared. Adjusting entries align revenues and expenses with the reporting period before statements are issued. Wrong options usually skip the adjustment, use the wrong account type, or apply the entry in the wrong period.",
     "tags": [
       "adjusting_entries"
     ]
@@ -477,7 +477,7 @@ export const ankiMcqs = [
       "Closing entries must always precede any adjusting entries"
     ],
     "answer": 1,
-    "explanation": "Adjusting entries must be recorded and posted before financial statements are prepared.",
+    "explanation": "The concept being tested (adjusting entries): adjusting entries must be recorded and posted before financial statements are prepared. Adjusting entries align revenues and expenses with the reporting period before statements are issued. Wrong options usually skip the adjustment, use the wrong account type, or apply the entry in the wrong period.",
     "tags": [
       "adjusting_entries"
     ]
@@ -492,7 +492,7 @@ export const ankiMcqs = [
       "Only expense and dividend accounts are affected at period-end with no asset change"
     ],
     "answer": 2,
-    "explanation": "At least one income statement account and at least one statement of financial position account are affected.",
+    "explanation": "Apply the relevant accounting rule (adjusting entries): at least one income statement account and at least one statement of financial position account are affected. Adjusting entries align revenues and expenses with the reporting period before statements are issued. Wrong options usually skip the adjustment, use the wrong account type, or apply the entry in the wrong period.",
     "tags": [
       "adjusting_entries"
     ]
@@ -507,7 +507,7 @@ export const ankiMcqs = [
       "Cash is adjusted first before any accrual or deferral entry"
     ],
     "answer": 2,
-    "explanation": "Adjusting entries do not involve the Cash account.",
+    "explanation": "Apply the relevant accounting rule (adjusting entries): adjusting entries do not involve the Cash account. Adjusting entries align revenues and expenses with the reporting period before statements are issued. Wrong options usually skip the adjustment, use the wrong account type, or apply the entry in the wrong period.",
     "tags": [
       "adjusting_entries"
     ]
@@ -522,7 +522,7 @@ export const ankiMcqs = [
       "Debits and credits recorded in the general journal only"
     ],
     "answer": 0,
-    "explanation": "Prepayments (deferrals) and accruals.",
+    "explanation": "The concept being tested (adjusting entries): prepayments (deferrals) and accruals. Adjusting entries align revenues and expenses with the reporting period before statements are issued. Wrong options usually skip the adjustment, use the wrong account type, or apply the entry in the wrong period.",
     "tags": [
       "adjusting_entries"
     ]
@@ -537,7 +537,7 @@ export const ankiMcqs = [
       "Depreciation of a previously purchased non-current asset"
     ],
     "answer": 1,
-    "explanation": "Revenue received in advance (unearned revenue).",
+    "explanation": "The concept being tested (adjusting entries): revenue received in advance (unearned revenue). The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "adjusting_entries"
     ]
@@ -552,7 +552,7 @@ export const ankiMcqs = [
       "Closing entries for temporary accounts"
     ],
     "answer": 0,
-    "explanation": "Accruals (accrued revenues and accrued expenses).",
+    "explanation": "The concept being tested (adjusting entries): accruals (accrued revenues and accrued expenses). The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "adjusting_entries"
     ]
@@ -567,7 +567,7 @@ export const ankiMcqs = [
       "As a liability until the insurer delivers the policy document"
     ],
     "answer": 2,
-    "explanation": "As a prepaid expense (asset) because future economic benefits remain.",
+    "explanation": "The calculation rests on (adjusting entries): as a prepaid expense (asset) because future economic benefits remain. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "adjusting_entries"
     ]
@@ -582,7 +582,7 @@ export const ankiMcqs = [
       "Accounts receivable because the member still owes future visits under the contract"
     ],
     "answer": 1,
-    "explanation": "A liability (unearned revenue) because the performance obligation is unsatisfied.",
+    "explanation": "The calculation rests on (adjusting entries): a liability (unearned revenue) because the performance obligation is unsatisfied. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "adjusting_entries"
     ]
@@ -597,7 +597,7 @@ export const ankiMcqs = [
       "Accrued expense because staff time created a payable"
     ],
     "answer": 2,
-    "explanation": "Accrued revenue: earned but not yet recorded or received in cash.",
+    "explanation": "The calculation rests on (adjusting entries): accrued revenue: earned but not yet recorded or received in cash. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "adjusting_entries"
     ]
@@ -612,7 +612,7 @@ export const ankiMcqs = [
       "Accrued revenue because the business will receive cash later"
     ],
     "answer": 2,
-    "explanation": "Accrued expense: incurred in June but not yet paid or recorded.",
+    "explanation": "The calculation rests on (adjusting entries): accrued expense: incurred in June but not yet paid or recorded. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "adjusting_entries"
     ]
@@ -627,7 +627,7 @@ export const ankiMcqs = [
       "Debit Insurance Expense; Credit Accounts Payable"
     ],
     "answer": 1,
-    "explanation": "Debit Insurance Expense; Credit Prepaid Insurance.",
+    "explanation": "The concept being tested (adjusting entries, debit credit): debit Insurance Expense; Credit Prepaid Insurance. Adjusting entries align revenues and expenses with the reporting period before statements are issued. Wrong options usually skip the adjustment, use the wrong account type, or apply the entry in the wrong period.",
     "tags": [
       "adjusting_entries",
       "debit_credit"
@@ -643,7 +643,7 @@ export const ankiMcqs = [
       "$3,500, combining purchases and the remaining balance"
     ],
     "answer": 2,
-    "explanation": "$1,500.",
+    "explanation": "The calculation rests on (adjusting entries): $1,500. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "adjusting_entries"
     ]
@@ -658,7 +658,7 @@ export const ankiMcqs = [
       "Debit Supplies Expense; Credit Accounts Payable"
     ],
     "answer": 1,
-    "explanation": "Debit Supplies Expense; Credit Supplies.",
+    "explanation": "The calculation rests on (adjusting entries, debit credit): debit Supplies Expense; Credit Supplies. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "adjusting_entries",
       "debit_credit"
@@ -674,7 +674,7 @@ export const ankiMcqs = [
       "$500, after deducting one month from the annual payment"
     ],
     "answer": 0,
-    "explanation": "$50.",
+    "explanation": "The calculation rests on (adjusting entries): $50. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "adjusting_entries"
     ]
@@ -689,7 +689,7 @@ export const ankiMcqs = [
       "Debit Insurance Expense; Credit Accounts Payable"
     ],
     "answer": 1,
-    "explanation": "Debit Insurance Expense; Credit Prepaid Insurance.",
+    "explanation": "The concept being tested (adjusting entries, debit credit): debit Insurance Expense; Credit Prepaid Insurance. Adjusting entries align revenues and expenses with the reporting period before statements are issued. Wrong options usually skip the adjustment, use the wrong account type, or apply the entry in the wrong period.",
     "tags": [
       "adjusting_entries",
       "debit_credit"
@@ -705,7 +705,7 @@ export const ankiMcqs = [
       "The cash outflow recorded when the asset was originally purchased"
     ],
     "answer": 1,
-    "explanation": "Systematic allocation of the asset's cost to expense over its useful life.",
+    "explanation": "The calculation rests on (adjusting entries): systematic allocation of the asset's cost to expense over its useful life. Depreciation and amortisation allocate cost over useful life. Wrong options may expense the full cost immediately, use the wrong base amount, or post to the wrong accounts.",
     "tags": [
       "adjusting_entries"
     ]
@@ -720,7 +720,7 @@ export const ankiMcqs = [
       "Debit Depreciation Expense; Credit Cash"
     ],
     "answer": 2,
-    "explanation": "Debit Depreciation Expense; Credit Accumulated Depreciation.",
+    "explanation": "The concept being tested (adjusting entries, debit credit): debit Depreciation Expense; Credit Accumulated Depreciation. Adjusting entries align revenues and expenses with the reporting period before statements are issued. Wrong options usually skip the adjustment, use the wrong account type, or apply the entry in the wrong period.",
     "tags": [
       "adjusting_entries",
       "debit_credit"
@@ -736,7 +736,7 @@ export const ankiMcqs = [
       "A revenue account reducing total income for the period"
     ],
     "answer": 2,
-    "explanation": "A contra asset account deducted from the related non-current asset.",
+    "explanation": "The calculation rests on (adjusting entries): a contra asset account deducted from the related non-current asset. Work through which accounts change and whether they have normal debit or credit balances. Distractors often swap sides, use the wrong account class, or omit part of the entry.",
     "tags": [
       "adjusting_entries"
     ]
@@ -751,7 +751,7 @@ export const ankiMcqs = [
       "It is added to share capital as a permanent equity adjustment each period"
     ],
     "answer": 1,
-    "explanation": "It reduces the carrying amount of the related asset without altering the original cost recorded.",
+    "explanation": "The reasoning to apply (adjusting entries, balance sheet): it reduces the carrying amount of the related asset without altering the original cost recorded. Depreciation and amortisation allocate cost over useful life. Wrong options may expense the full cost immediately, use the wrong base amount, or post to the wrong accounts.",
     "tags": [
       "adjusting_entries",
       "balance_sheet"
@@ -767,7 +767,7 @@ export const ankiMcqs = [
       "$40, equal to the accumulated depreciation balance only"
     ],
     "answer": 2,
-    "explanation": "$4,960.",
+    "explanation": "The calculation rests on (adjusting entries): $4,960. Depreciation and amortisation allocate cost over useful life. Wrong options may expense the full cost immediately, use the wrong base amount, or post to the wrong accounts.",
     "tags": [
       "adjusting_entries"
     ]
@@ -782,7 +782,7 @@ export const ankiMcqs = [
       "Equity decreases while the unearned liability increases"
     ],
     "answer": 2,
-    "explanation": "The liability decreases and revenue increases for the earned portion.",
+    "explanation": "The concept being tested (adjusting entries): the liability decreases and revenue increases for the earned portion. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "adjusting_entries"
     ]
@@ -797,7 +797,7 @@ export const ankiMcqs = [
       "Debit Unearned Revenue $900; Credit Service Revenue $900."
     ],
     "answer": 3,
-    "explanation": "Debit Unearned Revenue $900; Credit Service Revenue $900.",
+    "explanation": "The calculation rests on (adjusting entries, debit credit): debit Unearned Revenue $900; Credit Service Revenue $900. Adjusting entries align revenues and expenses with the reporting period before statements are issued. Wrong options usually skip the adjustment, use the wrong account type, or apply the entry in the wrong period.",
     "tags": [
       "adjusting_entries",
       "debit_credit"
@@ -813,7 +813,7 @@ export const ankiMcqs = [
       "Debit Accounts Receivable $400; Credit Service Revenue $400"
     ],
     "answer": 0,
-    "explanation": "Debit Unearned Revenue $400; Credit Service Revenue $400.",
+    "explanation": "The calculation rests on (adjusting entries, debit credit): debit Unearned Revenue $400; Credit Service Revenue $400. Adjusting entries align revenues and expenses with the reporting period before statements are issued. Wrong options usually skip the adjustment, use the wrong account type, or apply the entry in the wrong period.",
     "tags": [
       "adjusting_entries",
       "debit_credit"
@@ -829,7 +829,7 @@ export const ankiMcqs = [
       "Debit Unearned Revenue; Credit Service Revenue"
     ],
     "answer": 0,
-    "explanation": "Debit Accounts Receivable; Credit Service Revenue.",
+    "explanation": "The calculation rests on (adjusting entries, debit credit): debit Accounts Receivable; Credit Service Revenue. Work through which accounts change and whether they have normal debit or credit balances. Distractors often swap sides, use the wrong account class, or omit part of the entry.",
     "tags": [
       "adjusting_entries",
       "debit_credit"
@@ -845,7 +845,7 @@ export const ankiMcqs = [
       "The entity owes the customer a refund for services prepaid but not yet delivered"
     ],
     "answer": 2,
-    "explanation": "The entity has a right to collect cash because revenue has already been earned.",
+    "explanation": "The reasoning to apply (adjusting entries, receivables): the entity has a right to collect cash because revenue has already been earned. Adjusting entries align revenues and expenses with the reporting period before statements are issued. Wrong options usually skip the adjustment, use the wrong account type, or apply the entry in the wrong period.",
     "tags": [
       "adjusting_entries",
       "receivables"
@@ -861,7 +861,7 @@ export const ankiMcqs = [
       "Debit Accounts Receivable $200; Credit Commission Revenue $200."
     ],
     "answer": 3,
-    "explanation": "Debit Accounts Receivable $200; Credit Commission Revenue $200.",
+    "explanation": "The calculation rests on (adjusting entries, debit credit): debit Accounts Receivable $200; Credit Commission Revenue $200. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "adjusting_entries",
       "debit_credit"
@@ -877,7 +877,7 @@ export const ankiMcqs = [
       "Debit Prepaid Interest; Credit Interest Expense"
     ],
     "answer": 2,
-    "explanation": "Debit Interest Expense; Credit Interest Payable.",
+    "explanation": "The concept being tested (adjusting entries, debit credit): debit Interest Expense; Credit Interest Payable. Adjusting entries align revenues and expenses with the reporting period before statements are issued. Wrong options usually skip the adjustment, use the wrong account type, or apply the entry in the wrong period.",
     "tags": [
       "adjusting_entries",
       "debit_credit"
@@ -893,7 +893,7 @@ export const ankiMcqs = [
       "An asset was purchased and must be capitalised"
     ],
     "answer": 2,
-    "explanation": "The business owes payment for an expense already incurred.",
+    "explanation": "Timing is the key idea (adjusting entries): the business owes payment for an expense already incurred. Adjusting entries align revenues and expenses with the reporting period before statements are issued. Wrong options usually skip the adjustment, use the wrong account type, or apply the entry in the wrong period.",
     "tags": [
       "adjusting_entries"
     ]
@@ -908,7 +908,7 @@ export const ankiMcqs = [
       "$60, after adding a service fee to the monthly interest"
     ],
     "answer": 0,
-    "explanation": "$50.",
+    "explanation": "The calculation rests on (adjusting entries): $50. Adjusting entries align revenues and expenses with the reporting period before statements are issued. Wrong options usually skip the adjustment, use the wrong account type, or apply the entry in the wrong period.",
     "tags": [
       "adjusting_entries"
     ]
@@ -923,7 +923,7 @@ export const ankiMcqs = [
       "Debit Interest Expense; Credit Notes Payable for the full loan"
     ],
     "answer": 1,
-    "explanation": "Debit Interest Expense; Credit Interest Payable.",
+    "explanation": "The concept being tested (adjusting entries, debit credit): debit Interest Expense; Credit Interest Payable. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "adjusting_entries",
       "debit_credit"
@@ -939,7 +939,7 @@ export const ankiMcqs = [
       "$1,800, after adding a weekend not worked to the accrual"
     ],
     "answer": 1,
-    "explanation": "$1,200.",
+    "explanation": "The calculation rests on (adjusting entries): $1,200. Adjusting entries align revenues and expenses with the reporting period before statements are issued. Wrong options usually skip the adjustment, use the wrong account type, or apply the entry in the wrong period.",
     "tags": [
       "adjusting_entries"
     ]
@@ -954,7 +954,7 @@ export const ankiMcqs = [
       "Debit Salaries Expense; Credit Salaries Payable."
     ],
     "answer": 3,
-    "explanation": "Debit Salaries Expense; Credit Salaries Payable.",
+    "explanation": "The calculation rests on (adjusting entries, debit credit): debit Salaries Expense; Credit Salaries Payable. Adjusting entries align revenues and expenses with the reporting period before statements are issued. Wrong options usually skip the adjustment, use the wrong account type, or apply the entry in the wrong period.",
     "tags": [
       "adjusting_entries",
       "debit_credit"
@@ -970,7 +970,7 @@ export const ankiMcqs = [
       "Debit Accounts Payable; Credit Rent Expense"
     ],
     "answer": 2,
-    "explanation": "Debit Rent Expense; Credit Prepaid Rent.",
+    "explanation": "The calculation rests on (adjusting entries, debit credit): debit Rent Expense; Credit Prepaid Rent. Adjusting entries align revenues and expenses with the reporting period before statements are issued. Wrong options usually skip the adjustment, use the wrong account type, or apply the entry in the wrong period.",
     "tags": [
       "adjusting_entries",
       "debit_credit"
@@ -986,7 +986,7 @@ export const ankiMcqs = [
       "Debit Depreciation Expense; Credit Equipment"
     ],
     "answer": 1,
-    "explanation": "Debit Depreciation Expense; Credit Accumulated Depreciation.",
+    "explanation": "The calculation rests on (adjusting entries, debit credit): debit Depreciation Expense; Credit Accumulated Depreciation. Work through which accounts change and whether they have normal debit or credit balances. Distractors often swap sides, use the wrong account class, or omit part of the entry.",
     "tags": [
       "adjusting_entries",
       "debit_credit"
@@ -1002,7 +1002,7 @@ export const ankiMcqs = [
       "Debit Accounts Receivable; Credit Unearned Revenue"
     ],
     "answer": 2,
-    "explanation": "Debit Unearned Revenue; Credit Service Revenue.",
+    "explanation": "Account analysis (adjusting entries, debit credit): debit Unearned Revenue; Credit Service Revenue. Work through which accounts change and whether they have normal debit or credit balances. Distractors often swap sides, use the wrong account class, or omit part of the entry.",
     "tags": [
       "adjusting_entries",
       "debit_credit"
@@ -1018,7 +1018,7 @@ export const ankiMcqs = [
       "Debit Unearned Revenue; Credit Service Revenue"
     ],
     "answer": 0,
-    "explanation": "Debit Accounts Receivable; Credit Service Revenue.",
+    "explanation": "The calculation rests on (adjusting entries, debit credit): debit Accounts Receivable; Credit Service Revenue. Work through which accounts change and whether they have normal debit or credit balances. Distractors often swap sides, use the wrong account class, or omit part of the entry.",
     "tags": [
       "adjusting_entries",
       "debit_credit"
@@ -1034,7 +1034,7 @@ export const ankiMcqs = [
       "Debit Utilities Expense; Credit Utilities Payable."
     ],
     "answer": 3,
-    "explanation": "Debit Utilities Expense; Credit Utilities Payable.",
+    "explanation": "The calculation rests on (adjusting entries, debit credit): debit Utilities Expense; Credit Utilities Payable. Work through which accounts change and whether they have normal debit or credit balances. Distractors often swap sides, use the wrong account class, or omit part of the entry.",
     "tags": [
       "adjusting_entries",
       "debit_credit"
@@ -1050,7 +1050,7 @@ export const ankiMcqs = [
       "Unearned revenue because the agency owes future service"
     ],
     "answer": 1,
-    "explanation": "Prepaid expense adjustment for the portion consumed.",
+    "explanation": "The concept being tested (adjusting entries): prepaid expense adjustment for the portion consumed. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "adjusting_entries"
     ]
@@ -1065,7 +1065,7 @@ export const ankiMcqs = [
       "Accrued expense because two months of future occupancy remain at month-end"
     ],
     "answer": 1,
-    "explanation": "Revenue received in advance (unearned revenue) for the unused portion.",
+    "explanation": "The concept being tested (adjusting entries): revenue received in advance (unearned revenue) for the unused portion. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "adjusting_entries"
     ]
@@ -1080,7 +1080,7 @@ export const ankiMcqs = [
       "Accrued revenue."
     ],
     "answer": 3,
-    "explanation": "Accrued revenue.",
+    "explanation": "Account analysis (adjusting entries): accrued revenue. Work through which accounts change and whether they have normal debit or credit balances. Distractors often swap sides, use the wrong account class, or omit part of the entry.",
     "tags": [
       "adjusting_entries"
     ]
@@ -1095,7 +1095,7 @@ export const ankiMcqs = [
       "Accrued expense."
     ],
     "answer": 3,
-    "explanation": "Accrued expense.",
+    "explanation": "The concept being tested (adjusting entries): accrued expense. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "adjusting_entries"
     ]
@@ -1110,7 +1110,7 @@ export const ankiMcqs = [
       "A schedule containing only permanent asset and liability accounts"
     ],
     "answer": 2,
-    "explanation": "A list of account balances proving debits equal credits after adjustments.",
+    "explanation": "The concept being tested (adjusting entries): a list of account balances proving debits equal credits after adjustments. Adjusting entries align revenues and expenses with the reporting period before statements are issued. Wrong options usually skip the adjustment, use the wrong account type, or apply the entry in the wrong period.",
     "tags": [
       "adjusting_entries"
     ]
@@ -1125,7 +1125,7 @@ export const ankiMcqs = [
       "To verify adjusted balances and provide the basis for financial statement preparation."
     ],
     "answer": 3,
-    "explanation": "To verify adjusted balances and provide the basis for financial statement preparation.",
+    "explanation": "The reasoning to apply (adjusting entries): to verify adjusted balances and provide the basis for financial statement preparation. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "adjusting_entries"
     ]
@@ -1140,7 +1140,7 @@ export const ankiMcqs = [
       "Record only cash transactions for the period, then total debits and credits once"
     ],
     "answer": 1,
-    "explanation": "Start with the unadjusted trial balance, enter adjustments, recalculate balances, then prepare statements.",
+    "explanation": "Apply the relevant accounting rule (adjusting entries): start with the unadjusted trial balance, enter adjustments, recalculate balances, then prepare statements. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "adjusting_entries"
     ]
@@ -1155,7 +1155,7 @@ export const ankiMcqs = [
       "Post-closing trial balance listing permanent accounts only"
     ],
     "answer": 1,
-    "explanation": "Statement of Profit or Loss (income statement).",
+    "explanation": "The concept being tested (adjusting entries, income statement): statement of Profit or Loss (income statement). The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "adjusting_entries",
       "income_statement"
@@ -1171,7 +1171,7 @@ export const ankiMcqs = [
       "Statement of Financial Position (balance sheet)."
     ],
     "answer": 3,
-    "explanation": "Statement of Financial Position (balance sheet).",
+    "explanation": "The concept being tested (adjusting entries, balance sheet): statement of Financial Position (balance sheet). The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "adjusting_entries",
       "balance_sheet"
@@ -1187,7 +1187,7 @@ export const ankiMcqs = [
       "Post-closing trial balance of temporary accounts"
     ],
     "answer": 1,
-    "explanation": "Statement of Changes in Equity.",
+    "explanation": "Apply the relevant accounting rule (adjusting entries, equity): statement of Changes in Equity. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "adjusting_entries",
       "equity"
@@ -1203,7 +1203,7 @@ export const ankiMcqs = [
       "Temporary (nominal) accounts."
     ],
     "answer": 3,
-    "explanation": "Temporary (nominal) accounts.",
+    "explanation": "The concept being tested (adjusting entries): temporary (nominal) accounts. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "adjusting_entries"
     ]
@@ -1218,7 +1218,7 @@ export const ankiMcqs = [
       "Contra revenue accounts reducing sales for the period"
     ],
     "answer": 0,
-    "explanation": "Permanent (real) accounts.",
+    "explanation": "The concept being tested (adjusting entries): permanent (real) accounts. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "adjusting_entries"
     ]
@@ -1233,7 +1233,7 @@ export const ankiMcqs = [
       "To record daily cash receipts and payments in the general journal"
     ],
     "answer": 0,
-    "explanation": "To transfer temporary account balances to retained earnings and reset them to zero.",
+    "explanation": "The concept being tested (adjusting entries): to transfer temporary account balances to retained earnings and reset them to zero. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "adjusting_entries"
     ]
@@ -1248,7 +1248,7 @@ export const ankiMcqs = [
       "Accounts Receivable, matching credit sales still uncollected"
     ],
     "answer": 2,
-    "explanation": "Income Summary.",
+    "explanation": "Timing is the key idea (adjusting entries): income Summary. Work through which accounts change and whether they have normal debit or credit balances. Distractors often swap sides, use the wrong account class, or omit part of the entry.",
     "tags": [
       "adjusting_entries"
     ]
@@ -1263,7 +1263,7 @@ export const ankiMcqs = [
       "Debit Cash $48,000; Credit Service Revenue $48,000"
     ],
     "answer": 2,
-    "explanation": "Debit Service Revenue $48,000; Credit Income Summary $48,000.",
+    "explanation": "The calculation rests on (adjusting entries, debit credit): debit Service Revenue $48,000; Credit Income Summary $48,000. Work through which accounts change and whether they have normal debit or credit balances. Distractors often swap sides, use the wrong account class, or omit part of the entry.",
     "tags": [
       "adjusting_entries",
       "debit_credit"
@@ -1279,7 +1279,7 @@ export const ankiMcqs = [
       "Income Summary."
     ],
     "answer": 3,
-    "explanation": "Income Summary.",
+    "explanation": "Timing is the key idea (adjusting entries): income Summary. Work through which accounts change and whether they have normal debit or credit balances. Distractors often swap sides, use the wrong account class, or omit part of the entry.",
     "tags": [
       "adjusting_entries"
     ]
@@ -1294,7 +1294,7 @@ export const ankiMcqs = [
       "Debit Income Summary; Credit Cash for the total expenses paid"
     ],
     "answer": 2,
-    "explanation": "Debit Income Summary $31,500; Credit each expense account $31,500 in total.",
+    "explanation": "The calculation rests on (adjusting entries, debit credit): debit Income Summary $31,500; Credit each expense account $31,500 in total. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "adjusting_entries",
       "debit_credit"
@@ -1310,7 +1310,7 @@ export const ankiMcqs = [
       "Debit Dividends $7,200; Credit Income Summary $7,200"
     ],
     "answer": 0,
-    "explanation": "Debit Income Summary $7,200; Credit Retained Earnings $7,200.",
+    "explanation": "The calculation rests on (adjusting entries, debit credit): debit Income Summary $7,200; Credit Retained Earnings $7,200. Work through which accounts change and whether they have normal debit or credit balances. Distractors often swap sides, use the wrong account class, or omit part of the entry.",
     "tags": [
       "adjusting_entries",
       "debit_credit"
@@ -1326,7 +1326,7 @@ export const ankiMcqs = [
       "Debit Dividends; Credit Cash only with no closing entry"
     ],
     "answer": 2,
-    "explanation": "Debit Retained Earnings; Credit Dividends.",
+    "explanation": "The calculation rests on (adjusting entries, debit credit): debit Retained Earnings; Credit Dividends. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "adjusting_entries",
       "debit_credit"
@@ -1342,7 +1342,7 @@ export const ankiMcqs = [
       "Every account in the general ledger including retained earnings"
     ],
     "answer": 2,
-    "explanation": "Revenue, expense, dividend, and income summary accounts.",
+    "explanation": "The concept being tested (adjusting entries): revenue, expense, dividend, and income summary accounts. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "adjusting_entries"
     ]
@@ -1357,7 +1357,7 @@ export const ankiMcqs = [
       "They are closed to dividends before retained earnings is updated"
     ],
     "answer": 0,
-    "explanation": "They are permanent accounts and are not closed at period-end.",
+    "explanation": "Apply the relevant accounting rule (adjusting entries): they are permanent accounts and are not closed at period-end. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "adjusting_entries"
     ]
@@ -1372,7 +1372,7 @@ export const ankiMcqs = [
       "An optional worksheet column with no ledger posting requirement"
     ],
     "answer": 0,
-    "explanation": "A trial balance prepared after closing entries are journalised and posted.",
+    "explanation": "The concept being tested (adjusting entries): a trial balance prepared after closing entries are journalised and posted. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "adjusting_entries"
     ]
@@ -1387,7 +1387,7 @@ export const ankiMcqs = [
       "Only cash and receivable accounts used in daily operations"
     ],
     "answer": 0,
-    "explanation": "Permanent accounts only: assets, liabilities, and equity.",
+    "explanation": "The concept being tested (adjusting entries): permanent accounts only: assets, liabilities, and equity. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "adjusting_entries"
     ]
@@ -1402,7 +1402,7 @@ export const ankiMcqs = [
       "Revenue, expenses, dividends, and income summary."
     ],
     "answer": 3,
-    "explanation": "Revenue, expenses, dividends, and income summary.",
+    "explanation": "The concept being tested (adjusting entries): revenue, expenses, dividends, and income summary. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "adjusting_entries"
     ]
@@ -1417,7 +1417,7 @@ export const ankiMcqs = [
       "To prepare the income statement without using any ledger account balances"
     ],
     "answer": 1,
-    "explanation": "To verify that permanent account balances balance before the next period begins.",
+    "explanation": "The reasoning to apply (adjusting entries): to verify that permanent account balances balance before the next period begins. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "adjusting_entries"
     ]
@@ -1432,7 +1432,7 @@ export const ankiMcqs = [
       "The recurring process of recording, adjusting, reporting, and closing each accounting period."
     ],
     "answer": 3,
-    "explanation": "The recurring process of recording, adjusting, reporting, and closing each accounting period.",
+    "explanation": "The concept being tested (adjusting entries): the recurring process of recording, adjusting, reporting, and closing each accounting period. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "adjusting_entries"
     ]
@@ -1447,7 +1447,7 @@ export const ankiMcqs = [
       "Publish the statement of financial position to shareholders"
     ],
     "answer": 1,
-    "explanation": "Journalise the transaction in the general journal.",
+    "explanation": "The concept being tested (adjusting entries): journalise the transaction in the general journal. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "adjusting_entries"
     ]
@@ -1462,7 +1462,7 @@ export const ankiMcqs = [
       "Prepare the post-closing trial balance for the period"
     ],
     "answer": 2,
-    "explanation": "Post the entries to the general ledger.",
+    "explanation": "Account analysis (adjusting entries): post the entries to the general ledger. Work through which accounts change and whether they have normal debit or credit balances. Distractors often swap sides, use the wrong account class, or omit part of the entry.",
     "tags": [
       "adjusting_entries"
     ]
@@ -1477,7 +1477,7 @@ export const ankiMcqs = [
       "Prepare an unadjusted trial balance."
     ],
     "answer": 3,
-    "explanation": "Prepare an unadjusted trial balance.",
+    "explanation": "The concept being tested (adjusting entries): prepare an unadjusted trial balance. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "adjusting_entries"
     ]
@@ -1492,7 +1492,7 @@ export const ankiMcqs = [
       "Issue the statement of changes in equity without adjustments"
     ],
     "answer": 0,
-    "explanation": "Prepare and journalise adjusting entries.",
+    "explanation": "The concept being tested (adjusting entries): prepare and journalise adjusting entries. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "adjusting_entries"
     ]
@@ -1507,7 +1507,7 @@ export const ankiMcqs = [
       "Journalise only cash transactions for the next period"
     ],
     "answer": 0,
-    "explanation": "Post adjusting entries and prepare the adjusted trial balance.",
+    "explanation": "Account analysis (adjusting entries): post adjusting entries and prepare the adjusted trial balance. Adjusting entries align revenues and expenses with the reporting period before statements are issued. Wrong options usually skip the adjustment, use the wrong account type, or apply the entry in the wrong period.",
     "tags": [
       "adjusting_entries"
     ]
@@ -1522,7 +1522,7 @@ export const ankiMcqs = [
       "Record the next period's transactions in the general journal"
     ],
     "answer": 1,
-    "explanation": "Prepare the financial statements.",
+    "explanation": "The concept being tested (adjusting entries): prepare the financial statements. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "adjusting_entries"
     ]
@@ -1537,7 +1537,7 @@ export const ankiMcqs = [
       "Journalise and post closing entries."
     ],
     "answer": 3,
-    "explanation": "Journalise and post closing entries.",
+    "explanation": "The concept being tested (adjusting entries): journalise and post closing entries. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "adjusting_entries"
     ]
@@ -1552,7 +1552,7 @@ export const ankiMcqs = [
       "Prepare a post-closing trial balance."
     ],
     "answer": 3,
-    "explanation": "Prepare a post-closing trial balance.",
+    "explanation": "The concept being tested (adjusting entries): prepare a post-closing trial balance. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "adjusting_entries"
     ]
@@ -1567,7 +1567,7 @@ export const ankiMcqs = [
       "Analyse transactions and journalise daily events only"
     ],
     "answer": 1,
-    "explanation": "Journalise and post closing entries.",
+    "explanation": "The concept being tested (adjusting entries): journalise and post closing entries. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "adjusting_entries"
     ]
@@ -1582,7 +1582,7 @@ export const ankiMcqs = [
       "An accounting worksheet."
     ],
     "answer": 3,
-    "explanation": "An accounting worksheet.",
+    "explanation": "The concept being tested (adjusting entries): an accounting worksheet. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "adjusting_entries"
     ]
@@ -1597,7 +1597,7 @@ export const ankiMcqs = [
       "No, it is an optional internal working document."
     ],
     "answer": 3,
-    "explanation": "No, it is an optional internal working document.",
+    "explanation": "The concept being tested (adjusting entries): no, it is an optional internal working document. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "adjusting_entries"
     ]
@@ -1612,7 +1612,7 @@ export const ankiMcqs = [
       "It organises adjustments and helps trace balances into financial statements."
     ],
     "answer": 3,
-    "explanation": "It organises adjustments and helps trace balances into financial statements.",
+    "explanation": "The reasoning to apply (adjusting entries): it organises adjustments and helps trace balances into financial statements. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "adjusting_entries"
     ]
@@ -1627,7 +1627,7 @@ export const ankiMcqs = [
       "Unadjusted trial balance, adjustments, adjusted trial balance, income statement, and statement of financial position."
     ],
     "answer": 3,
-    "explanation": "Unadjusted trial balance, adjustments, adjusted trial balance, income statement, and statement of financial position.",
+    "explanation": "The concept being tested (adjusting entries): unadjusted trial balance, adjustments, adjusted trial balance, income statement, and statement of financial position. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "adjusting_entries"
     ]
@@ -1642,7 +1642,7 @@ export const ankiMcqs = [
       "They include earned revenues and incurred expenses in the correct period."
     ],
     "answer": 3,
-    "explanation": "They include earned revenues and incurred expenses in the correct period.",
+    "explanation": "The reasoning to apply (adjusting entries): they include earned revenues and incurred expenses in the correct period. Adjusting entries align revenues and expenses with the reporting period before statements are issued. Wrong options usually skip the adjustment, use the wrong account type, or apply the entry in the wrong period.",
     "tags": [
       "adjusting_entries"
     ]
@@ -1657,7 +1657,7 @@ export const ankiMcqs = [
       "Cash accounts must be closed before accruals can be recorded"
     ],
     "answer": 2,
-    "explanation": "Cash was already updated when the original cash transaction was recorded.",
+    "explanation": "The reasoning to apply (adjusting entries): cash was already updated when the original cash transaction was recorded. Adjusting entries align revenues and expenses with the reporting period before statements are issued. Wrong options usually skip the adjustment, use the wrong account type, or apply the entry in the wrong period.",
     "tags": [
       "adjusting_entries"
     ]
@@ -1672,7 +1672,7 @@ export const ankiMcqs = [
       "Unearned revenue because the landlord received cash early"
     ],
     "answer": 1,
-    "explanation": "Prepaid expense (deferral).",
+    "explanation": "The concept being tested (adjusting entries): prepaid expense (deferral). The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "adjusting_entries"
     ]
@@ -1687,7 +1687,7 @@ export const ankiMcqs = [
       "Revenue received in advance (unearned revenue)."
     ],
     "answer": 3,
-    "explanation": "Revenue received in advance (unearned revenue).",
+    "explanation": "The concept being tested (adjusting entries): revenue received in advance (unearned revenue). The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "adjusting_entries"
     ]
@@ -1702,7 +1702,7 @@ export const ankiMcqs = [
       "Accrued revenue."
     ],
     "answer": 3,
-    "explanation": "Accrued revenue.",
+    "explanation": "The concept being tested (adjusting entries): accrued revenue. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "adjusting_entries"
     ]
@@ -1717,7 +1717,7 @@ export const ankiMcqs = [
       "Accrued expense."
     ],
     "answer": 3,
-    "explanation": "Accrued expense.",
+    "explanation": "The concept being tested (adjusting entries): accrued expense. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "adjusting_entries"
     ]
@@ -1732,7 +1732,7 @@ export const ankiMcqs = [
       "There is no practical difference between the two categories in accrual accounting"
     ],
     "answer": 1,
-    "explanation": "Unearned revenue arises when cash is received before earning; accrued revenue when earning occurs before cash is received.",
+    "explanation": "Apply the relevant accounting rule (adjusting entries): unearned revenue arises when cash is received before earning; accrued revenue when earning occurs before cash is received. Adjusting entries align revenues and expenses with the reporting period before statements are issued. Wrong options usually skip the adjustment, use the wrong account type, or apply the entry in the wrong period.",
     "tags": [
       "adjusting_entries"
     ]
@@ -1747,7 +1747,7 @@ export const ankiMcqs = [
       "Prepaid expenses begin with cash paid before recognition; accrued expenses begin with recognition before cash payment."
     ],
     "answer": 3,
-    "explanation": "Prepaid expenses begin with cash paid before recognition; accrued expenses begin with recognition before cash payment.",
+    "explanation": "Apply the relevant accounting rule (adjusting entries): prepaid expenses begin with cash paid before recognition; accrued expenses begin with recognition before cash payment. Adjusting entries align revenues and expenses with the reporting period before statements are issued. Wrong options usually skip the adjustment, use the wrong account type, or apply the entry in the wrong period.",
     "tags": [
       "adjusting_entries"
     ]
@@ -1762,7 +1762,7 @@ export const ankiMcqs = [
       "Only the cash account is understated at balance date"
     ],
     "answer": 1,
-    "explanation": "Expenses and liabilities are understated, so profit may be overstated.",
+    "explanation": "The calculation rests on (adjusting entries, error correction): expenses and liabilities are understated, so profit may be overstated. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "adjusting_entries",
       "error_correction"
@@ -1778,7 +1778,7 @@ export const ankiMcqs = [
       "Expenses are overstated with no effect on assets"
     ],
     "answer": 0,
-    "explanation": "Revenue and assets are understated, so profit may be understated.",
+    "explanation": "The calculation rests on (adjusting entries, error correction): revenue and assets are understated, so profit may be understated. Adjusting entries align revenues and expenses with the reporting period before statements are issued. Wrong options usually skip the adjustment, use the wrong account type, or apply the entry in the wrong period.",
     "tags": [
       "adjusting_entries",
       "error_correction"
@@ -1794,7 +1794,7 @@ export const ankiMcqs = [
       "Only cash is overstated while profit remains unchanged"
     ],
     "answer": 1,
-    "explanation": "Expenses are understated, assets overstated, and profit overstated.",
+    "explanation": "The calculation rests on (adjusting entries, error correction): expenses are understated, assets overstated, and profit overstated. Adjusting entries align revenues and expenses with the reporting period before statements are issued. Wrong options usually skip the adjustment, use the wrong account type, or apply the entry in the wrong period.",
     "tags": [
       "adjusting_entries",
       "error_correction"
@@ -1810,7 +1810,7 @@ export const ankiMcqs = [
       "Only the cash account balance is affected at period-end with no profit impact"
     ],
     "answer": 0,
-    "explanation": "Revenue is understated, the liability is overstated, and profit is understated.",
+    "explanation": "The calculation rests on (adjusting entries, error correction): revenue is understated, the liability is overstated, and profit is understated. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "adjusting_entries",
       "error_correction"
@@ -1826,7 +1826,7 @@ export const ankiMcqs = [
       "Record transactions, adjust accounts, prepare adjusted trial balance, prepare statements, close temporary accounts, prepare post-closing trial balance."
     ],
     "answer": 3,
-    "explanation": "Record transactions, adjust accounts, prepare adjusted trial balance, prepare statements, close temporary accounts, prepare post-closing trial balance.",
+    "explanation": "The concept being tested (adjusting entries): record transactions, adjust accounts, prepare adjusted trial balance, prepare statements, close temporary accounts, prepare post-closing trial balance. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "adjusting_entries"
     ]

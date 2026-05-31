@@ -3,6 +3,8 @@
  * Run: bun scripts/generate-ch07-anki-mcqs.js
  */
 
+import { buildTeachingExplanation } from "../src/utils/teachingExplanation.js";
+
 const DISTRACTOR_POOLS = {
   cash_categories: [
     "Cash on hand",
@@ -282,7 +284,7 @@ function toMcq(card) {
     q: card.q,
     options,
     answer: 0,
-    explanation: card.a,
+    explanation: buildTeachingExplanation({ q: card.q, a: card.a, tags: card.tags }),
     tags: card.tags ?? ["receivables"],
   };
 }

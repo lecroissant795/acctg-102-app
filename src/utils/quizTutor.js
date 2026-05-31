@@ -1,3 +1,6 @@
+import { buildTeachingExplanation, getDisplayExplanation } from "./teachingExplanation.js";
+import { buildTeachingHint } from "./teachingHint.js";
+
 export async function fetchTutorResponse(payload) {
   const response = await fetch("/api/quiz-tutor", {
     method: "POST",
@@ -131,31 +134,23 @@ export function buildAskPayload(question, currentAnswer, userMessage, messages =
 
 export function buildFallbackHint(payload) {
   const question = getPayloadQuestion(payload);
-  const topic = question.topic ?? "this topic";
-  const tags = Array.isArray(question.tags) ? question.tags.join(", ") : "";
-
-  if (question.type === "journal_entry") {
-    return {
-      message: tags
-        ? `Review the ${tags.replaceAll("_", " ")} concept for ${topic}. What type of transaction is described, and which part of the accounting equation does it affect?`
-        : `Identify the transaction type, then decide which elements of the accounting equation increase or decrease — without naming specific accounts yet.`,
-    };
-  }
-
-  return {
-    message: tags
-      ? `Review the ${tags.replaceAll("_", " ")} rules for ${topic}. What is the question really asking you to apply?`
-      : `Re-read the question and identify which accounting rule from ${topic} applies before choosing an answer.`,
-  };
+  return { message: buildTeachingHint(question) };
 }
 
 export function buildFallbackExplain(payload) {
   const question = getPayloadQuestion(payload);
   const currentAnswer = getPayloadCurrentAnswer(payload);
   const feedback = currentAnswer?.evaluation?.feedback;
-  const explanation = question.explanation;
+  const explanation = getDisplayExplanation(question);
   const yourAnswer = formatStudentAnswer(question, currentAnswer);
   const correctAnswer = formatCorrectAnswer(question);
+  const teaching =
+    explanation ??
+    buildTeachingExplanation({
+      q: question.q ?? question.prompt ?? "",
+      a: correctAnswer ?? "",
+      tags: question.tags ?? [],
+    });
 
   if (isWhyWrongRequest(payload)) {
     const parts = [];
@@ -172,8 +167,8 @@ export function buildFallbackExplain(payload) {
       parts.push(`Correct approach: ${correctAnswer}`);
     }
 
-    if (explanation) {
-      parts.push(explanation);
+    if (teaching) {
+      parts.push(`Why this is right: ${teaching}`);
     }
 
     if (parts.length > 0) {
@@ -183,7 +178,7 @@ export function buildFallbackExplain(payload) {
 
   return {
     message:
-      explanation ??
+      teaching ||
       `Review the notes for ${question.topic ?? "this chapter"} and focus on the underlying accounting rule.`,
   };
 }

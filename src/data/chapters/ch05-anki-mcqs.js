@@ -12,7 +12,7 @@ export const ankiMcqs = [
       "Finished goods only, excluding raw materials"
     ],
     "answer": 0,
-    "explanation": "Inventory is goods held for sale in the ordinary course of business, or materials used to produce goods for sale.",
+    "explanation": "The concept being tested (inventory): inventory is goods held for sale in the ordinary course of business, or materials used to produce goods for sale. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "inventory"
     ]
@@ -27,7 +27,7 @@ export const ankiMcqs = [
       "Finished goods"
     ],
     "answer": 0,
-    "explanation": "Goods purchased for resale.",
+    "explanation": "The concept being tested (inventory): goods purchased for resale. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "inventory"
     ]
@@ -42,7 +42,7 @@ export const ankiMcqs = [
       "FIFO, LIFO, and average cost"
     ],
     "answer": 0,
-    "explanation": "Raw materials, work in process (WIP), and finished goods.",
+    "explanation": "The concept being tested (inventory): raw materials, work in process (WIP), and finished goods. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "inventory"
     ]
@@ -57,7 +57,7 @@ export const ankiMcqs = [
       "Finished goods"
     ],
     "answer": 0,
-    "explanation": "Materials purchased but not yet placed into production.",
+    "explanation": "The concept being tested (inventory): materials purchased but not yet placed into production. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "inventory"
     ]
@@ -72,7 +72,7 @@ export const ankiMcqs = [
       "Finished goods"
     ],
     "answer": 0,
-    "explanation": "Partly manufactured goods that have been started but are not yet completed.",
+    "explanation": "The concept being tested (inventory): partly manufactured goods that have been started but are not yet completed. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "inventory"
     ]
@@ -87,7 +87,7 @@ export const ankiMcqs = [
       "Finished goods"
     ],
     "answer": 0,
-    "explanation": "Completed manufactured items ready for sale.",
+    "explanation": "The concept being tested (inventory): completed manufactured items ready for sale. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "inventory"
     ]
@@ -102,7 +102,7 @@ export const ankiMcqs = [
       "A system updated only at year-end"
     ],
     "answer": 0,
-    "explanation": "Inventory and cost of sales are not updated continuously. Cost of sales is calculated at the end of the period using a physical inventory count.",
+    "explanation": "The concept being tested (inventory): inventory and cost of sales are not updated continuously. Cost of sales is calculated at the end of the period using a physical inventory count. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "inventory"
     ]
@@ -117,7 +117,7 @@ export const ankiMcqs = [
       "When purchase invoices are received"
     ],
     "answer": 0,
-    "explanation": "At the end of the accounting period, not at the time of each sale.",
+    "explanation": "Timing is the key idea (inventory): at the end of the accounting period, not at the time of each sale. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "inventory"
     ]
@@ -132,7 +132,7 @@ export const ankiMcqs = [
       "Freight-out"
     ],
     "answer": 0,
-    "explanation": "Purchases.",
+    "explanation": "Timing is the key idea (inventory purchases, debit credit): purchases. Work through which accounts change and whether they have normal debit or credit balances. Distractors often swap sides, use the wrong account class, or omit part of the entry.",
     "tags": [
       "inventory_purchases",
       "debit_credit"
@@ -148,7 +148,7 @@ export const ankiMcqs = [
       "Freight-in only"
     ],
     "answer": 0,
-    "explanation": "Inventory.",
+    "explanation": "Timing is the key idea (inventory purchases, debit credit): inventory. Work through which accounts change and whether they have normal debit or credit balances. Distractors often swap sides, use the wrong account class, or omit part of the entry.",
     "tags": [
       "inventory_purchases",
       "debit_credit"
@@ -164,7 +164,7 @@ export const ankiMcqs = [
       "Only under perpetual systems"
     ],
     "answer": 0,
-    "explanation": "No. Inventory is updated at the end of the period after a physical count.",
+    "explanation": "The concept being tested (inventory): no. Inventory is updated at the end of the period after a physical count. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "inventory"
     ]
@@ -179,7 +179,7 @@ export const ankiMcqs = [
       "Only under perpetual systems"
     ],
     "answer": 0,
-    "explanation": "No. Only the sales revenue entry is recorded at the time of sale.",
+    "explanation": "The concept being tested (inventory sales): no. Only the sales revenue entry is recorded at the time of sale. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "inventory_sales"
     ]
@@ -194,7 +194,7 @@ export const ankiMcqs = [
       "Businesses required to use perpetual systems by law"
     ],
     "answer": 0,
-    "explanation": "Smaller businesses or businesses with low-cost inventory where continuous tracking is less practical.",
+    "explanation": "The concept being tested (inventory): smaller businesses or businesses with low-cost inventory where continuous tracking is less practical. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "inventory"
     ]
@@ -206,10 +206,10 @@ export const ankiMcqs = [
       "Dr Purchases / Cr Accounts Payable.",
       "Dr Inventory / Cr Accounts Payable",
       "Dr Accounts Payable / Cr Purchase Returns & Allowances",
-      "Inventory is goods held for sale in the ordinary course of business, or materials used to produce goods for sale."
+      "Dr Accounts Payable / Cr Inventory"
     ],
     "answer": 0,
-    "explanation": "Dr Purchases / Cr Accounts Payable.",
+    "explanation": "Account analysis (inventory purchases, debit credit): dr Purchases / Cr Accounts Payable. Work through which accounts change and whether they have normal debit or credit balances. Distractors often swap sides, use the wrong account class, or omit part of the entry.",
     "tags": [
       "inventory_purchases",
       "debit_credit"
@@ -222,10 +222,10 @@ export const ankiMcqs = [
       "Dr Accounts Payable / Cr Purchase Returns & Allowances.",
       "Dr Purchases / Cr Accounts Payable",
       "Dr Inventory / Cr Accounts Payable",
-      "Inventory is goods held for sale in the ordinary course of business, or materials used to produce goods for sale."
+      "Dr Accounts Payable / Cr Inventory"
     ],
     "answer": 0,
-    "explanation": "Dr Accounts Payable / Cr Purchase Returns & Allowances.",
+    "explanation": "Account analysis (inventory purchases, debit credit): dr Accounts Payable / Cr Purchase Returns & Allowances. Work through which accounts change and whether they have normal debit or credit balances. Distractors often swap sides, use the wrong account class, or omit part of the entry.",
     "tags": [
       "inventory_purchases",
       "debit_credit"
@@ -241,7 +241,7 @@ export const ankiMcqs = [
       "Dr Accounts Payable / Cr Purchase Returns & Allowances"
     ],
     "answer": 0,
-    "explanation": "Dr Freight-in / Cr Cash.",
+    "explanation": "Account analysis (inventory purchases, debit credit): dr Freight-in / Cr Cash. Work through which accounts change and whether they have normal debit or credit balances. Distractors often swap sides, use the wrong account class, or omit part of the entry.",
     "tags": [
       "inventory_purchases",
       "debit_credit"
@@ -257,7 +257,7 @@ export const ankiMcqs = [
       "Dr Accounts Payable / Cr Purchase Returns & Allowances"
     ],
     "answer": 0,
-    "explanation": "Dr Accounts Payable / Cr Purchase Discounts and Cash.",
+    "explanation": "Account analysis (inventory purchases, debit credit): dr Accounts Payable / Cr Purchase Discounts and Cash. Work through which accounts change and whether they have normal debit or credit balances. Distractors often swap sides, use the wrong account class, or omit part of the entry.",
     "tags": [
       "inventory_purchases",
       "debit_credit"
@@ -273,7 +273,7 @@ export const ankiMcqs = [
       "Dr Accounts Payable / Cr Purchase Returns & Allowances"
     ],
     "answer": 0,
-    "explanation": "Dr Accounts Receivable / Cr Sales Revenue.",
+    "explanation": "Account analysis (inventory sales, debit credit): dr Accounts Receivable / Cr Sales Revenue. Work through which accounts change and whether they have normal debit or credit balances. Distractors often swap sides, use the wrong account class, or omit part of the entry.",
     "tags": [
       "inventory_sales",
       "debit_credit"
@@ -289,7 +289,7 @@ export const ankiMcqs = [
       "There is no GST entry"
     ],
     "answer": 0,
-    "explanation": "There is no Dr Cost of Sales / Cr Inventory entry at the time of sale.",
+    "explanation": "The concept being tested (inventory sales): there is no Dr Cost of Sales / Cr Inventory entry at the time of sale. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "inventory_sales"
     ]
@@ -304,7 +304,7 @@ export const ankiMcqs = [
       "Dr Accounts Payable / Cr Purchase Returns & Allowances"
     ],
     "answer": 0,
-    "explanation": "Dr Sales Returns & Allowances / Cr Accounts Receivable.",
+    "explanation": "Account analysis (inventory sales, debit credit): dr Sales Returns & Allowances / Cr Accounts Receivable. Work through which accounts change and whether they have normal debit or credit balances. Distractors often swap sides, use the wrong account class, or omit part of the entry.",
     "tags": [
       "inventory_sales",
       "debit_credit"
@@ -320,7 +320,7 @@ export const ankiMcqs = [
       "Only under perpetual systems"
     ],
     "answer": 0,
-    "explanation": "No. Inventory is only updated at the end of the period.",
+    "explanation": "The concept being tested (inventory sales): no. Inventory is only updated at the end of the period. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "inventory_sales"
     ]
@@ -335,7 +335,7 @@ export const ankiMcqs = [
       "Dr Accounts Payable / Cr Purchase Returns & Allowances"
     ],
     "answer": 0,
-    "explanation": "Dr Cash, Dr Sales Discounts / Cr Accounts Receivable.",
+    "explanation": "Timing is the key idea (inventory sales, debit credit): dr Cash, Dr Sales Discounts / Cr Accounts Receivable. Work through which accounts change and whether they have normal debit or credit balances. Distractors often swap sides, use the wrong account class, or omit part of the entry.",
     "tags": [
       "inventory_sales",
       "debit_credit"
@@ -348,10 +348,10 @@ export const ankiMcqs = [
       "Perpetual inventory system.",
       "Periodic inventory system",
       "A system updated only at year-end",
-      "Inventory is goods held for sale in the ordinary course of business, or materials used to produce goods for sale."
+      "A system that uses Purchases instead of Inventory"
     ],
     "answer": 0,
-    "explanation": "Perpetual inventory system.",
+    "explanation": "The concept being tested (inventory): perpetual inventory system. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "inventory"
     ]
@@ -363,10 +363,10 @@ export const ankiMcqs = [
       "Periodic inventory system.",
       "Perpetual inventory system",
       "A system updated only at year-end",
-      "Inventory is goods held for sale in the ordinary course of business, or materials used to produce goods for sale."
+      "A system that uses Purchases instead of Inventory"
     ],
     "answer": 0,
-    "explanation": "Periodic inventory system.",
+    "explanation": "The calculation rests on (inventory): periodic inventory system. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "inventory"
     ]
@@ -381,7 +381,7 @@ export const ankiMcqs = [
       "Dr Accounts Payable / Cr Purchase Returns & Allowances"
     ],
     "answer": 0,
-    "explanation": "Dr Inventory / Cr Cash.",
+    "explanation": "The concept being tested (inventory purchases, debit credit): dr Inventory / Cr Cash. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "inventory_purchases",
       "debit_credit"
@@ -397,7 +397,7 @@ export const ankiMcqs = [
       "Dr Accounts Payable / Cr Purchase Returns & Allowances"
     ],
     "answer": 0,
-    "explanation": "Dr Freight-in / Cr Cash.",
+    "explanation": "The concept being tested (inventory purchases, debit credit): dr Freight-in / Cr Cash. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "inventory_purchases",
       "debit_credit"
@@ -413,7 +413,7 @@ export const ankiMcqs = [
       "Dr Accounts Payable / Cr Purchase Returns & Allowances"
     ],
     "answer": 0,
-    "explanation": "Dr Accounts Payable / Cr Inventory.",
+    "explanation": "The concept being tested (inventory purchases, debit credit): dr Accounts Payable / Cr Inventory. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "inventory_purchases",
       "debit_credit"
@@ -426,10 +426,10 @@ export const ankiMcqs = [
       "Dr Accounts Payable / Cr Purchase Returns & Allowances.",
       "Dr Purchases / Cr Accounts Payable",
       "Dr Inventory / Cr Accounts Payable",
-      "Inventory is goods held for sale in the ordinary course of business, or materials used to produce goods for sale."
+      "Dr Accounts Payable / Cr Inventory"
     ],
     "answer": 0,
-    "explanation": "Dr Accounts Payable / Cr Purchase Returns & Allowances.",
+    "explanation": "The concept being tested (inventory purchases, debit credit): dr Accounts Payable / Cr Purchase Returns & Allowances. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "inventory_purchases",
       "debit_credit"
@@ -445,7 +445,7 @@ export const ankiMcqs = [
       "Dr Accounts Payable / Cr Purchase Returns & Allowances"
     ],
     "answer": 0,
-    "explanation": "Dr Cost of Sales / Cr Inventory.",
+    "explanation": "Timing is the key idea (inventory sales, debit credit): dr Cost of Sales / Cr Inventory. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "inventory_sales",
       "debit_credit"
@@ -461,7 +461,7 @@ export const ankiMcqs = [
       "Dr Inventory / Cr Cost of Sales"
     ],
     "answer": 0,
-    "explanation": "No cost entry is made at the time of sale.",
+    "explanation": "Timing is the key idea (inventory sales): no cost entry is made at the time of sale. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "inventory_sales"
     ]
@@ -476,7 +476,7 @@ export const ankiMcqs = [
       "Beginning Inventory + Net Purchases"
     ],
     "answer": 0,
-    "explanation": "Net Purchases = Purchases + Freight-in − Purchase Returns & Allowances − Purchase Discounts.",
+    "explanation": "The concept being tested (inventory purchases): net Purchases = Purchases + Freight-in − Purchase Returns & Allowances − Purchase Discounts. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "inventory_purchases"
     ]
@@ -488,10 +488,10 @@ export const ankiMcqs = [
       "Beginning Inventory + Net Purchases.",
       "Beginning Inventory + Net Purchases − Ending Inventory",
       "Purchases + Freight-in − Purchase Returns & Allowances − Purchase Discounts",
-      "Inventory is goods held for sale in the ordinary course of business, or materials used to produce goods for sale."
+      "Cost of Goods Available for Sale ÷ Total Units Available for Sale"
     ],
     "answer": 0,
-    "explanation": "Beginning Inventory + Net Purchases.",
+    "explanation": "The concept being tested (inventory): beginning Inventory + Net Purchases. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "inventory"
     ]
@@ -503,10 +503,10 @@ export const ankiMcqs = [
       "Beginning Inventory + Net Purchases − Ending Inventory.",
       "Purchases + Freight-in − Purchase Returns & Allowances − Purchase Discounts",
       "Beginning Inventory + Net Purchases",
-      "Inventory is goods held for sale in the ordinary course of business, or materials used to produce goods for sale."
+      "Cost of Goods Available for Sale ÷ Total Units Available for Sale"
     ],
     "answer": 0,
-    "explanation": "Beginning Inventory + Net Purchases − Ending Inventory.",
+    "explanation": "The concept being tested (inventory): beginning Inventory + Net Purchases − Ending Inventory. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "inventory"
     ]
@@ -521,7 +521,7 @@ export const ankiMcqs = [
       "The purchases account balance"
     ],
     "answer": 0,
-    "explanation": "A physical inventory count at the end of the period.",
+    "explanation": "The concept being tested (inventory): a physical inventory count at the end of the period. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "inventory"
     ]
@@ -536,7 +536,7 @@ export const ankiMcqs = [
       "$40,000"
     ],
     "answer": 0,
-    "explanation": "$34,000. Calculation: $8,000 + $32,000 − $6,000 = $34,000.",
+    "explanation": "The calculation rests on (inventory): $34,000. Calculation: $8,000 + $32,000 − $6,000 = $34,000. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "inventory"
     ]
@@ -551,7 +551,7 @@ export const ankiMcqs = [
       "Forward On Balance"
     ],
     "answer": 0,
-    "explanation": "Free On Board.",
+    "explanation": "The concept being tested (inventory purchases): free On Board. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "inventory_purchases"
     ]
@@ -566,7 +566,7 @@ export const ankiMcqs = [
       "When the invoice is issued"
     ],
     "answer": 0,
-    "explanation": "When goods leave the seller's premises.",
+    "explanation": "Timing is the key idea (inventory purchases): when goods leave the seller's premises. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "inventory_purchases"
     ]
@@ -581,7 +581,7 @@ export const ankiMcqs = [
       "The carrier during transit"
     ],
     "answer": 0,
-    "explanation": "The buyer.",
+    "explanation": "The concept being tested (inventory purchases): the buyer. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "inventory_purchases"
     ]
@@ -596,7 +596,7 @@ export const ankiMcqs = [
       "When the purchase order is signed"
     ],
     "answer": 0,
-    "explanation": "When goods arrive at the buyer's premises.",
+    "explanation": "Timing is the key idea (inventory purchases): when goods arrive at the buyer's premises. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "inventory_purchases"
     ]
@@ -611,7 +611,7 @@ export const ankiMcqs = [
       "The carrier during transit"
     ],
     "answer": 0,
-    "explanation": "The seller.",
+    "explanation": "The concept being tested (inventory purchases): the seller. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "inventory_purchases"
     ]
@@ -626,7 +626,7 @@ export const ankiMcqs = [
       "Only under perpetual systems"
     ],
     "answer": 0,
-    "explanation": "Yes, because ownership has passed to the buyer once goods are shipped.",
+    "explanation": "The concept being tested (inventory purchases, balance sheet): yes, because ownership has passed to the buyer once goods are shipped. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "inventory_purchases",
       "balance_sheet"
@@ -642,7 +642,7 @@ export const ankiMcqs = [
       "Only under perpetual systems"
     ],
     "answer": 0,
-    "explanation": "No, because ownership does not pass until delivery.",
+    "explanation": "The concept being tested (inventory purchases, balance sheet): no, because ownership does not pass until delivery. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "inventory_purchases",
       "balance_sheet"
@@ -658,7 +658,7 @@ export const ankiMcqs = [
       "Because operating expenses are included in cost of sales"
     ],
     "answer": 0,
-    "explanation": "Because cost of sales must be calculated using beginning inventory, net purchases, and ending inventory.",
+    "explanation": "The reasoning to apply (inventory, income statement): because cost of sales must be calculated using beginning inventory, net purchases, and ending inventory. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "inventory",
       "income_statement"
@@ -674,7 +674,7 @@ export const ankiMcqs = [
       "Beginning Inventory + Net Purchases"
     ],
     "answer": 0,
-    "explanation": "Sales Revenue − Sales Returns & Allowances − Sales Discounts.",
+    "explanation": "The concept being tested (inventory sales, income statement): sales Revenue − Sales Returns & Allowances − Sales Discounts. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "inventory_sales",
       "income_statement"
@@ -690,7 +690,7 @@ export const ankiMcqs = [
       "Beginning Inventory + Net Purchases"
     ],
     "answer": 0,
-    "explanation": "Net Sales Revenue − Cost of Sales.",
+    "explanation": "The concept being tested (inventory sales, income statement): net Sales Revenue − Cost of Sales. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "inventory_sales",
       "income_statement"
@@ -706,7 +706,7 @@ export const ankiMcqs = [
       "Gross Profit − Cost of Sales"
     ],
     "answer": 0,
-    "explanation": "Gross Profit + Other Revenue − Operating Expenses.",
+    "explanation": "The concept being tested (income statement): gross Profit + Other Revenue − Operating Expenses. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "income_statement"
     ]
@@ -721,7 +721,7 @@ export const ankiMcqs = [
       "Because all inventory must use the same purchase price"
     ],
     "answer": 0,
-    "explanation": "Because identical inventory items may be purchased at different costs, so a method is needed to assign costs to cost of sales and ending inventory.",
+    "explanation": "The reasoning to apply (inventory): because identical inventory items may be purchased at different costs, so a method is needed to assign costs to cost of sales and ending inventory. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "inventory"
     ]
@@ -736,7 +736,7 @@ export const ankiMcqs = [
       "Weighted Average Cost"
     ],
     "answer": 0,
-    "explanation": "Specific Identification, FIFO, LIFO, and Average Cost.",
+    "explanation": "The concept being tested (inventory): specific Identification, FIFO, LIFO, and Average Cost. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "inventory"
     ]
@@ -751,7 +751,7 @@ export const ankiMcqs = [
       "Weighted Average Cost"
     ],
     "answer": 0,
-    "explanation": "A method that tracks the actual cost of each specific item sold.",
+    "explanation": "The concept being tested (inventory): a method that tracks the actual cost of each specific item sold. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "inventory"
     ]
@@ -766,7 +766,7 @@ export const ankiMcqs = [
       "Service businesses with no inventory"
     ],
     "answer": 0,
-    "explanation": "Businesses selling high-value, individually identifiable goods, such as cars, jewellery, or antiques.",
+    "explanation": "The concept being tested (inventory): businesses selling high-value, individually identifiable goods, such as cars, jewellery, or antiques. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "inventory"
     ]
@@ -781,7 +781,7 @@ export const ankiMcqs = [
       "Final Inventory, Final Output"
     ],
     "answer": 0,
-    "explanation": "First-In, First-Out.",
+    "explanation": "The concept being tested (inventory): first-In, First-Out. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "inventory"
     ]
@@ -796,7 +796,7 @@ export const ankiMcqs = [
       "Each specific item's cost is tracked"
     ],
     "answer": 0,
-    "explanation": "The first goods purchased are the first goods sold.",
+    "explanation": "The concept being tested (inventory): the first goods purchased are the first goods sold. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "inventory"
     ]
@@ -811,7 +811,7 @@ export const ankiMcqs = [
       "The highest-cost items only"
     ],
     "answer": 0,
-    "explanation": "The most recent costs.",
+    "explanation": "The concept being tested (inventory, balance sheet): the most recent costs. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "inventory",
       "balance_sheet"
@@ -827,7 +827,7 @@ export const ankiMcqs = [
       "Latest Invoice, First Order"
     ],
     "answer": 0,
-    "explanation": "Last-In, First-Out.",
+    "explanation": "The concept being tested (inventory): last-In, First-Out. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "inventory"
     ]
@@ -842,7 +842,7 @@ export const ankiMcqs = [
       "All units use the same average cost"
     ],
     "answer": 0,
-    "explanation": "The last goods purchased are the first goods sold.",
+    "explanation": "The concept being tested (inventory): the last goods purchased are the first goods sold. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "inventory"
     ]
@@ -857,7 +857,7 @@ export const ankiMcqs = [
       "Replacement cost at balance date"
     ],
     "answer": 0,
-    "explanation": "The oldest costs.",
+    "explanation": "The concept being tested (inventory, balance sheet): the oldest costs. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "inventory",
       "balance_sheet"
@@ -873,7 +873,7 @@ export const ankiMcqs = [
       "Only under perpetual systems"
     ],
     "answer": 0,
-    "explanation": "No. LIFO is not permitted under AASB 102 / IAS 2.",
+    "explanation": "The concept being tested (inventory): no. LIFO is not permitted under AASB 102 / IAS 2. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "inventory"
     ]
@@ -888,7 +888,7 @@ export const ankiMcqs = [
       "Weighted Average Cost"
     ],
     "answer": 0,
-    "explanation": "A method where a weighted average unit cost is applied to units sold and units in ending inventory.",
+    "explanation": "The concept being tested (inventory): a method where a weighted average unit cost is applied to units sold and units in ending inventory. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "inventory"
     ]
@@ -903,7 +903,7 @@ export const ankiMcqs = [
       "Beginning Inventory + Net Purchases"
     ],
     "answer": 0,
-    "explanation": "Cost of Goods Available for Sale ÷ Total Units Available for Sale.",
+    "explanation": "The concept being tested (inventory): cost of Goods Available for Sale ÷ Total Units Available for Sale. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "inventory"
     ]
@@ -918,7 +918,7 @@ export const ankiMcqs = [
       "Weighted Average Cost"
     ],
     "answer": 0,
-    "explanation": "FIFO.",
+    "explanation": "The concept being tested (inventory, income statement): fIFO. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "inventory",
       "income_statement"
@@ -934,7 +934,7 @@ export const ankiMcqs = [
       "Weighted Average Cost"
     ],
     "answer": 0,
-    "explanation": "FIFO.",
+    "explanation": "The concept being tested (inventory, income statement): fIFO. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "inventory",
       "income_statement"
@@ -950,7 +950,7 @@ export const ankiMcqs = [
       "Specific identification always gives the lowest ending inventory"
     ],
     "answer": 0,
-    "explanation": "FIFO, because ending inventory is valued using recent higher costs.",
+    "explanation": "The concept being tested (inventory, balance sheet): fIFO, because ending inventory is valued using recent higher costs. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "inventory",
       "balance_sheet"
@@ -966,7 +966,7 @@ export const ankiMcqs = [
       "Weighted Average Cost"
     ],
     "answer": 0,
-    "explanation": "LIFO.",
+    "explanation": "The concept being tested (inventory, income statement): lIFO. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "inventory",
       "income_statement"
@@ -982,7 +982,7 @@ export const ankiMcqs = [
       "Weighted Average Cost"
     ],
     "answer": 0,
-    "explanation": "LIFO.",
+    "explanation": "The concept being tested (inventory, income statement): lIFO. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "inventory",
       "income_statement"
@@ -998,7 +998,7 @@ export const ankiMcqs = [
       "Because LIFO increases gross profit"
     ],
     "answer": 0,
-    "explanation": "Because higher cost of sales reduces profit, which reduces taxable income.",
+    "explanation": "The reasoning to apply (inventory, income statement): because higher cost of sales reduces profit, which reduces taxable income. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "inventory",
       "income_statement"
@@ -1014,7 +1014,7 @@ export const ankiMcqs = [
       "Because FIFO always produces the lowest ending inventory"
     ],
     "answer": 0,
-    "explanation": "Because FIFO leaves the newest purchase costs in ending inventory.",
+    "explanation": "The reasoning to apply (inventory, balance sheet): because FIFO leaves the newest purchase costs in ending inventory. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "inventory",
       "balance_sheet"
@@ -1030,7 +1030,7 @@ export const ankiMcqs = [
       "Always the lowest ending inventory"
     ],
     "answer": 0,
-    "explanation": "A middle result for cost of sales, gross profit, tax, and ending inventory.",
+    "explanation": "The concept being tested (inventory): a middle result for cost of sales, gross profit, tax, and ending inventory. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "inventory"
     ]
@@ -1045,7 +1045,7 @@ export const ankiMcqs = [
       "Historical cost principle"
     ],
     "answer": 0,
-    "explanation": "The consistency principle.",
+    "explanation": "The concept being tested (inventory): the consistency principle. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "inventory"
     ]
@@ -1060,7 +1060,7 @@ export const ankiMcqs = [
       "Switch back after one period"
     ],
     "answer": 0,
-    "explanation": "Disclose the change and its effect on profit in the notes.",
+    "explanation": "The concept being tested (inventory): disclose the change and its effect on profit in the notes. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "inventory"
     ]
@@ -1075,7 +1075,7 @@ export const ankiMcqs = [
       "Lower of Cash and Net Realisable Value"
     ],
     "answer": 0,
-    "explanation": "Lower of Cost and Net Realisable Value.",
+    "explanation": "The concept being tested (inventory, balance sheet): lower of Cost and Net Realisable Value. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "inventory",
       "balance_sheet"
@@ -1091,7 +1091,7 @@ export const ankiMcqs = [
       "Beginning Inventory + Net Purchases"
     ],
     "answer": 0,
-    "explanation": "Estimated selling price less costs to complete and sell.",
+    "explanation": "The concept being tested (inventory, balance sheet): estimated selling price less costs to complete and sell. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "inventory",
       "balance_sheet"
@@ -1107,7 +1107,7 @@ export const ankiMcqs = [
       "Beginning Inventory + Net Purchases"
     ],
     "answer": 0,
-    "explanation": "NRV = Estimated Selling Price − Costs to Complete and Sell.",
+    "explanation": "The concept being tested (inventory, balance sheet): nRV = Estimated Selling Price − Costs to Complete and Sell. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "inventory",
       "balance_sheet"
@@ -1123,7 +1123,7 @@ export const ankiMcqs = [
       "At every balance date regardless of NRV"
     ],
     "answer": 0,
-    "explanation": "When NRV is lower than cost.",
+    "explanation": "Timing is the key idea (inventory, balance sheet): when NRV is lower than cost. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "inventory",
       "balance_sheet"
@@ -1139,7 +1139,7 @@ export const ankiMcqs = [
       "The higher of cost and NRV"
     ],
     "answer": 0,
-    "explanation": "Cost.",
+    "explanation": "The concept being tested (inventory, balance sheet): cost. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "inventory",
       "balance_sheet"
@@ -1155,7 +1155,7 @@ export const ankiMcqs = [
       "Average cost"
     ],
     "answer": 0,
-    "explanation": "NRV.",
+    "explanation": "The concept being tested (inventory, balance sheet): nRV. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "inventory",
       "balance_sheet"
@@ -1171,7 +1171,7 @@ export const ankiMcqs = [
       "Historical cost principle"
     ],
     "answer": 0,
-    "explanation": "Conservatism / prudence — assets should not be overstated.",
+    "explanation": "The concept being tested (inventory, balance sheet): conservatism / prudence — assets should not be overstated. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "inventory",
       "balance_sheet"
@@ -1187,7 +1187,7 @@ export const ankiMcqs = [
       "Dr Accounts Payable / Cr Purchase Returns & Allowances"
     ],
     "answer": 0,
-    "explanation": "Dr Loss on Write-Down of Inventory / Cr Inventory.",
+    "explanation": "Account analysis (inventory, debit credit): dr Loss on Write-Down of Inventory / Cr Inventory. Work through which accounts change and whether they have normal debit or credit balances. Distractors often swap sides, use the wrong account class, or omit part of the entry.",
     "tags": [
       "inventory",
       "debit_credit"
@@ -1203,7 +1203,7 @@ export const ankiMcqs = [
       "The cost of holding inventory in a warehouse"
     ],
     "answer": 0,
-    "explanation": "How many times inventory is sold and replaced during a period.",
+    "explanation": "The concept being tested (inventory, financial statements): how many times inventory is sold and replaced during a period. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "inventory",
       "financial_statements"
@@ -1219,7 +1219,7 @@ export const ankiMcqs = [
       "Beginning Inventory + Net Purchases"
     ],
     "answer": 0,
-    "explanation": "Cost of Sales ÷ Average Inventory.",
+    "explanation": "The concept being tested (inventory, financial statements): cost of Sales ÷ Average Inventory. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "inventory",
       "financial_statements"
@@ -1235,7 +1235,7 @@ export const ankiMcqs = [
       "Beginning Inventory + Net Purchases"
     ],
     "answer": 0,
-    "explanation": "(Beginning Inventory + Ending Inventory) ÷ 2.",
+    "explanation": "The concept being tested (inventory, financial statements): (Beginning Inventory + Ending Inventory) ÷ 2. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "inventory",
       "financial_statements"
@@ -1251,7 +1251,7 @@ export const ankiMcqs = [
       "Rising purchase costs"
     ],
     "answer": 0,
-    "explanation": "Inventory is selling quickly, with lower risk of obsolescence.",
+    "explanation": "The concept being tested (inventory, financial statements): inventory is selling quickly, with lower risk of obsolescence. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "inventory",
       "financial_statements"
@@ -1267,7 +1267,7 @@ export const ankiMcqs = [
       "Efficient stock management"
     ],
     "answer": 0,
-    "explanation": "Slow-moving inventory, higher holding costs, or possible obsolescence.",
+    "explanation": "The concept being tested (inventory, financial statements): slow-moving inventory, higher holding costs, or possible obsolescence. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "inventory",
       "financial_statements"
@@ -1283,7 +1283,7 @@ export const ankiMcqs = [
       "Beginning Inventory + Net Purchases"
     ],
     "answer": 0,
-    "explanation": "365 ÷ Inventory Turnover.",
+    "explanation": "The concept being tested (inventory, financial statements): 365 ÷ Inventory Turnover. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "inventory",
       "financial_statements"
@@ -1299,7 +1299,7 @@ export const ankiMcqs = [
       "Lower gross profit"
     ],
     "answer": 0,
-    "explanation": "Inventory is sold more quickly.",
+    "explanation": "The concept being tested (inventory, financial statements): inventory is sold more quickly. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "inventory",
       "financial_statements"
@@ -1315,7 +1315,7 @@ export const ankiMcqs = [
       "Only for FIFO and not for average cost"
     ],
     "answer": 0,
-    "explanation": "At the time of each sale, because the inventory ledger is updated continuously.",
+    "explanation": "Timing is the key idea (inventory): at the time of each sale, because the inventory ledger is updated continuously. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "inventory"
     ]
@@ -1330,7 +1330,7 @@ export const ankiMcqs = [
       "Only under perpetual systems"
     ],
     "answer": 0,
-    "explanation": "Yes. FIFO produces the same ending inventory and cost of sales under both systems.",
+    "explanation": "The concept being tested (inventory): yes. FIFO produces the same ending inventory and cost of sales under both systems. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "inventory"
     ]
@@ -1345,7 +1345,7 @@ export const ankiMcqs = [
       "Only under perpetual systems"
     ],
     "answer": 0,
-    "explanation": "Yes, because perpetual LIFO uses the most recent costs available at the time of each sale.",
+    "explanation": "The concept being tested (inventory): yes, because perpetual LIFO uses the most recent costs available at the time of each sale. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "inventory"
     ]
@@ -1360,7 +1360,7 @@ export const ankiMcqs = [
       "Periodic average cost"
     ],
     "answer": 0,
-    "explanation": "Moving average cost.",
+    "explanation": "The concept being tested (inventory): moving average cost. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "inventory"
     ]
@@ -1375,7 +1375,7 @@ export const ankiMcqs = [
       "Only when NRV falls below cost"
     ],
     "answer": 0,
-    "explanation": "After each purchase.",
+    "explanation": "Timing is the key idea (inventory): after each purchase. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "inventory"
     ]
@@ -1390,7 +1390,7 @@ export const ankiMcqs = [
       "Only under perpetual systems"
     ],
     "answer": 0,
-    "explanation": "Yes, because periodic average is calculated at period end, while moving average is recalculated after each purchase.",
+    "explanation": "The concept being tested (inventory): yes, because periodic average is calculated at period end, while moving average is recalculated after each purchase. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "inventory"
     ]
@@ -1405,7 +1405,7 @@ export const ankiMcqs = [
       "Because only the income statement is affected"
     ],
     "answer": 0,
-    "explanation": "Because ending inventory in one period becomes beginning inventory in the next period.",
+    "explanation": "The reasoning to apply (inventory, error correction): because ending inventory in one period becomes beginning inventory in the next period. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "inventory",
       "error_correction"
@@ -1418,10 +1418,10 @@ export const ankiMcqs = [
       "Cost of sales is understated.",
       "Cost of sales is overstated",
       "Profit is overstated",
-      "Inventory is goods held for sale in the ordinary course of business, or materials used to produce goods for sale."
+      "Profit is understated"
     ],
     "answer": 0,
-    "explanation": "Cost of sales is understated.",
+    "explanation": "Statement impact (inventory, error correction): cost of sales is understated. Trace each misstatement through the accounting equation and into profit or loss and the statement of financial position. Other options often flip the direction of the error or affect only one statement.",
     "tags": [
       "inventory",
       "error_correction"
@@ -1434,10 +1434,10 @@ export const ankiMcqs = [
       "Profit is overstated.",
       "Cost of sales is understated",
       "Cost of sales is overstated",
-      "Inventory is goods held for sale in the ordinary course of business, or materials used to produce goods for sale."
+      "Profit is understated"
     ],
     "answer": 0,
-    "explanation": "Profit is overstated.",
+    "explanation": "Statement impact (inventory, error correction): profit is overstated. Trace each misstatement through the accounting equation and into profit or loss and the statement of financial position. Other options often flip the direction of the error or affect only one statement.",
     "tags": [
       "inventory",
       "error_correction"
@@ -1453,7 +1453,7 @@ export const ankiMcqs = [
       "Cost of sales is understated in the next period"
     ],
     "answer": 0,
-    "explanation": "Profit is understated because beginning inventory is overstated.",
+    "explanation": "Statement impact (inventory, error correction): profit is understated because beginning inventory is overstated. Trace each misstatement through the accounting equation and into profit or loss and the statement of financial position. Other options often flip the direction of the error or affect only one statement.",
     "tags": [
       "inventory",
       "error_correction"
@@ -1466,10 +1466,10 @@ export const ankiMcqs = [
       "Cost of sales is overstated.",
       "Cost of sales is understated",
       "Profit is overstated",
-      "Inventory is goods held for sale in the ordinary course of business, or materials used to produce goods for sale."
+      "Profit is understated"
     ],
     "answer": 0,
-    "explanation": "Cost of sales is overstated.",
+    "explanation": "Statement impact (inventory, error correction): cost of sales is overstated. Trace each misstatement through the accounting equation and into profit or loss and the statement of financial position. Other options often flip the direction of the error or affect only one statement.",
     "tags": [
       "inventory",
       "error_correction"
@@ -1485,7 +1485,7 @@ export const ankiMcqs = [
       "Profit is overstated"
     ],
     "answer": 0,
-    "explanation": "Profit is understated.",
+    "explanation": "Statement impact (inventory, error correction): profit is understated. Trace each misstatement through the accounting equation and into profit or loss and the statement of financial position. Other options often flip the direction of the error or affect only one statement.",
     "tags": [
       "inventory",
       "error_correction"
@@ -1501,7 +1501,7 @@ export const ankiMcqs = [
       "Assets and equity are overstated"
     ],
     "answer": 0,
-    "explanation": "Profit is overstated because beginning inventory is understated.",
+    "explanation": "Statement impact (inventory, error correction): profit is overstated because beginning inventory is understated. Trace each misstatement through the accounting equation and into profit or loss and the statement of financial position. Other options often flip the direction of the error or affect only one statement.",
     "tags": [
       "inventory",
       "error_correction"
@@ -1517,7 +1517,7 @@ export const ankiMcqs = [
       "Only under perpetual systems"
     ],
     "answer": 0,
-    "explanation": "Yes, over two accounting periods.",
+    "explanation": "The concept being tested (inventory, error correction): yes, over two accounting periods. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "inventory",
       "error_correction"
@@ -1533,7 +1533,7 @@ export const ankiMcqs = [
       "Profit is overstated"
     ],
     "answer": 0,
-    "explanation": "Assets and equity are overstated.",
+    "explanation": "Statement impact (inventory, error correction, balance sheet): assets and equity are overstated. Trace each misstatement through the accounting equation and into profit or loss and the statement of financial position. Other options often flip the direction of the error or affect only one statement.",
     "tags": [
       "inventory",
       "error_correction",
@@ -1550,7 +1550,7 @@ export const ankiMcqs = [
       "Profit is overstated"
     ],
     "answer": 0,
-    "explanation": "Assets and equity are understated.",
+    "explanation": "Statement impact (inventory, error correction, balance sheet): assets and equity are understated. Trace each misstatement through the accounting equation and into profit or loss and the statement of financial position. Other options often flip the direction of the error or affect only one statement.",
     "tags": [
       "inventory",
       "error_correction",
@@ -1567,7 +1567,7 @@ export const ankiMcqs = [
       "Only service businesses need closing entries"
     ],
     "answer": 0,
-    "explanation": "They use additional temporary accounts such as Sales Returns, Sales Discounts, Cost of Sales, Purchases, Purchase Returns, Purchase Discounts, and Freight-in.",
+    "explanation": "The reasoning to apply (inventory): they use additional temporary accounts such as Sales Returns, Sales Discounts, Cost of Sales, Purchases, Purchase Returns, Purchase Discounts, and Freight-in. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "inventory"
     ]
@@ -1582,7 +1582,7 @@ export const ankiMcqs = [
       "Inventory and Accounts Payable"
     ],
     "answer": 0,
-    "explanation": "Sales Revenue, Sales Returns & Allowances, Sales Discounts, Cost of Sales, and operating expenses.",
+    "explanation": "The concept being tested (inventory): sales Revenue, Sales Returns & Allowances, Sales Discounts, Cost of Sales, and operating expenses. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "inventory"
     ]
@@ -1597,7 +1597,7 @@ export const ankiMcqs = [
       "GST Collected and GST Paid"
     ],
     "answer": 0,
-    "explanation": "Purchases, Freight-in, Purchase Returns & Allowances, and Purchase Discounts.",
+    "explanation": "The concept being tested (inventory): purchases, Freight-in, Purchase Returns & Allowances, and Purchase Discounts. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "inventory"
     ]
@@ -1612,7 +1612,7 @@ export const ankiMcqs = [
       "Dr Cost of Sales / Cr Inventory"
     ],
     "answer": 0,
-    "explanation": "Dr Ending Inventory / Cr Income Summary.",
+    "explanation": "The concept being tested (inventory, debit credit): dr Ending Inventory / Cr Income Summary. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "inventory",
       "debit_credit"
@@ -1628,7 +1628,7 @@ export const ankiMcqs = [
       "Dr Cost of Sales / Cr Beginning Inventory"
     ],
     "answer": 0,
-    "explanation": "Dr Income Summary / Cr Beginning Inventory.",
+    "explanation": "The concept being tested (inventory, debit credit): dr Income Summary / Cr Beginning Inventory. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "inventory",
       "debit_credit"
@@ -1644,7 +1644,7 @@ export const ankiMcqs = [
       "Accounts Payable is closed to Purchases"
     ],
     "answer": 0,
-    "explanation": "Dividends are closed to Retained Earnings.",
+    "explanation": "The concept being tested (inventory, equity): dividends are closed to Retained Earnings. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "inventory",
       "equity"
@@ -1660,7 +1660,7 @@ export const ankiMcqs = [
       "Including FOB Destination goods in buyer's inventory"
     ],
     "answer": 0,
-    "explanation": "Recording cost of sales at the time of sale. Under periodic inventory, no cost of sales entry is made until period end.",
+    "explanation": "Account analysis (inventory, error correction): recording cost of sales at the time of sale. Under periodic inventory, no cost of sales entry is made until period end. Work through which accounts change and whether they have normal debit or credit balances. Distractors often swap sides, use the wrong account class, or omit part of the entry.",
     "tags": [
       "inventory",
       "error_correction"
@@ -1676,7 +1676,7 @@ export const ankiMcqs = [
       "Freight-out is added to inventory cost"
     ],
     "answer": 0,
-    "explanation": "Under periodic inventory freight-in is debited to Freight-in, but under perpetual inventory it is debited to Inventory.",
+    "explanation": "The concept being tested (inventory purchases, error correction): under periodic inventory freight-in is debited to Freight-in, but under perpetual inventory it is debited to Inventory. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "inventory_purchases",
       "error_correction"
@@ -1692,7 +1692,7 @@ export const ankiMcqs = [
       "Assuming ownership always transfers at payment"
     ],
     "answer": 0,
-    "explanation": "Including goods in the wrong business's inventory at balance date. FOB Shipping Point belongs to the buyer; FOB Destination belongs to the seller until delivery.",
+    "explanation": "The concept being tested (inventory purchases, error correction): including goods in the wrong business's inventory at balance date. FOB Shipping Point belongs to the buyer; FOB Destination belongs to the seller until delivery. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "inventory_purchases",
       "error_correction"
@@ -1708,7 +1708,7 @@ export const ankiMcqs = [
       "Ignoring NRV when it is lower than cost"
     ],
     "answer": 0,
-    "explanation": "Writing inventory up when NRV is above cost. Inventory is not written up; it stays at cost.",
+    "explanation": "The concept being tested (inventory, error correction): writing inventory up when NRV is above cost. Inventory is not written up; it stays at cost. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "inventory",
       "error_correction"
@@ -1724,7 +1724,7 @@ export const ankiMcqs = [
       "Thinking overstated inventory always increases next period profit"
     ],
     "answer": 0,
-    "explanation": "Forgetting that ending inventory errors reverse in the next period because ending inventory becomes beginning inventory.",
+    "explanation": "The concept being tested (inventory, error correction): forgetting that ending inventory errors reverse in the next period because ending inventory becomes beginning inventory. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "inventory",
       "error_correction"
@@ -1740,7 +1740,7 @@ export const ankiMcqs = [
       "Believing LIFO is the default method in Australia"
     ],
     "answer": 0,
-    "explanation": "Treating LIFO as allowed. LIFO may be shown for comparison, but it is not permitted under AASB 102 / IAS 2.",
+    "explanation": "The concept being tested (inventory, error correction): treating LIFO as allowed. LIFO may be shown for comparison, but it is not permitted under AASB 102 / IAS 2. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "inventory",
       "error_correction"
@@ -1753,10 +1753,10 @@ export const ankiMcqs = [
       "Dr Purchases / Cr Accounts Payable.",
       "Dr Inventory / Cr Accounts Payable",
       "Dr Accounts Payable / Cr Purchase Returns & Allowances",
-      "Inventory is goods held for sale in the ordinary course of business, or materials used to produce goods for sale."
+      "Dr Accounts Payable / Cr Inventory"
     ],
     "answer": 0,
-    "explanation": "Dr Purchases / Cr Accounts Payable.",
+    "explanation": "Account analysis (inventory purchases, debit credit): dr Purchases / Cr Accounts Payable. Work through which accounts change and whether they have normal debit or credit balances. Distractors often swap sides, use the wrong account class, or omit part of the entry.",
     "tags": [
       "inventory_purchases",
       "debit_credit"
@@ -1769,10 +1769,10 @@ export const ankiMcqs = [
       "Dr Inventory / Cr Accounts Payable.",
       "Dr Purchases / Cr Accounts Payable",
       "Dr Accounts Payable / Cr Purchase Returns & Allowances",
-      "Inventory is goods held for sale in the ordinary course of business, or materials used to produce goods for sale."
+      "Dr Accounts Payable / Cr Inventory"
     ],
     "answer": 0,
-    "explanation": "Dr Inventory / Cr Accounts Payable.",
+    "explanation": "Account analysis (inventory purchases, debit credit): dr Inventory / Cr Accounts Payable. Work through which accounts change and whether they have normal debit or credit balances. Distractors often swap sides, use the wrong account class, or omit part of the entry.",
     "tags": [
       "inventory_purchases",
       "debit_credit"
@@ -1788,7 +1788,7 @@ export const ankiMcqs = [
       "Dr Accounts Payable / Cr Purchase Returns & Allowances"
     ],
     "answer": 0,
-    "explanation": "Dr Freight-in / Cr Cash.",
+    "explanation": "Account analysis (inventory purchases, debit credit): dr Freight-in / Cr Cash. Work through which accounts change and whether they have normal debit or credit balances. Distractors often swap sides, use the wrong account class, or omit part of the entry.",
     "tags": [
       "inventory_purchases",
       "debit_credit"
@@ -1804,7 +1804,7 @@ export const ankiMcqs = [
       "Dr Accounts Payable / Cr Purchase Returns & Allowances"
     ],
     "answer": 0,
-    "explanation": "Dr Inventory / Cr Cash.",
+    "explanation": "Account analysis (inventory purchases, debit credit): dr Inventory / Cr Cash. Work through which accounts change and whether they have normal debit or credit balances. Distractors often swap sides, use the wrong account class, or omit part of the entry.",
     "tags": [
       "inventory_purchases",
       "debit_credit"
@@ -1817,10 +1817,10 @@ export const ankiMcqs = [
       "Dr Accounts Payable / Cr Purchase Returns & Allowances.",
       "Dr Purchases / Cr Accounts Payable",
       "Dr Inventory / Cr Accounts Payable",
-      "Inventory is goods held for sale in the ordinary course of business, or materials used to produce goods for sale."
+      "Dr Accounts Payable / Cr Inventory"
     ],
     "answer": 0,
-    "explanation": "Dr Accounts Payable / Cr Purchase Returns & Allowances.",
+    "explanation": "Account analysis (inventory purchases, debit credit): dr Accounts Payable / Cr Purchase Returns & Allowances. Work through which accounts change and whether they have normal debit or credit balances. Distractors often swap sides, use the wrong account class, or omit part of the entry.",
     "tags": [
       "inventory_purchases",
       "debit_credit"
@@ -1836,7 +1836,7 @@ export const ankiMcqs = [
       "Dr Accounts Payable / Cr Purchase Returns & Allowances"
     ],
     "answer": 0,
-    "explanation": "Dr Accounts Payable / Cr Inventory.",
+    "explanation": "Account analysis (inventory purchases, debit credit): dr Accounts Payable / Cr Inventory. Work through which accounts change and whether they have normal debit or credit balances. Distractors often swap sides, use the wrong account class, or omit part of the entry.",
     "tags": [
       "inventory_purchases",
       "debit_credit"
@@ -1852,7 +1852,7 @@ export const ankiMcqs = [
       "Dr Sales Revenue / Cr Accounts Receivable"
     ],
     "answer": 0,
-    "explanation": "Dr Accounts Receivable / Cr Sales Revenue. No cost of sales entry at sale date.",
+    "explanation": "Account analysis (inventory sales, debit credit): dr Accounts Receivable / Cr Sales Revenue. No cost of sales entry at sale date. Work through which accounts change and whether they have normal debit or credit balances. Distractors often swap sides, use the wrong account class, or omit part of the entry.",
     "tags": [
       "inventory_sales",
       "debit_credit"
@@ -1868,7 +1868,7 @@ export const ankiMcqs = [
       "Dr Inventory / Cr Sales Revenue"
     ],
     "answer": 0,
-    "explanation": "Dr Accounts Receivable / Cr Sales Revenue; Dr Cost of Sales / Cr Inventory.",
+    "explanation": "Account analysis (inventory sales, debit credit): dr Accounts Receivable / Cr Sales Revenue; Dr Cost of Sales / Cr Inventory. Work through which accounts change and whether they have normal debit or credit balances. Distractors often swap sides, use the wrong account class, or omit part of the entry.",
     "tags": [
       "inventory_sales",
       "debit_credit"
@@ -1884,7 +1884,7 @@ export const ankiMcqs = [
       "Dr Accounts Payable / Cr Purchase Returns & Allowances"
     ],
     "answer": 0,
-    "explanation": "Dr Loss on Write-Down of Inventory / Cr Inventory.",
+    "explanation": "Account analysis (inventory, debit credit): dr Loss on Write-Down of Inventory / Cr Inventory. Work through which accounts change and whether they have normal debit or credit balances. Distractors often swap sides, use the wrong account class, or omit part of the entry.",
     "tags": [
       "inventory",
       "debit_credit"
@@ -1900,7 +1900,7 @@ export const ankiMcqs = [
       "Dr Accounts Payable / Cr Purchase Returns & Allowances"
     ],
     "answer": 0,
-    "explanation": "Dr Cash; Dr Sales Discounts; Cr Accounts Receivable.",
+    "explanation": "Account analysis (inventory sales, debit credit): dr Cash; Dr Sales Discounts; Cr Accounts Receivable. Work through which accounts change and whether they have normal debit or credit balances. Distractors often swap sides, use the wrong account class, or omit part of the entry.",
     "tags": [
       "inventory_sales",
       "debit_credit"
@@ -1913,10 +1913,10 @@ export const ankiMcqs = [
       "Purchases + Freight-in − Purchase Returns & Allowances − Purchase Discounts.",
       "Beginning Inventory + Net Purchases − Ending Inventory",
       "Beginning Inventory + Net Purchases",
-      "Inventory is goods held for sale in the ordinary course of business, or materials used to produce goods for sale."
+      "Cost of Goods Available for Sale ÷ Total Units Available for Sale"
     ],
     "answer": 0,
-    "explanation": "Purchases + Freight-in − Purchase Returns & Allowances − Purchase Discounts.",
+    "explanation": "The concept being tested (inventory purchases): purchases + Freight-in − Purchase Returns & Allowances − Purchase Discounts. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "inventory_purchases"
     ]
@@ -1928,10 +1928,10 @@ export const ankiMcqs = [
       "Beginning Inventory + Net Purchases.",
       "Beginning Inventory + Net Purchases − Ending Inventory",
       "Purchases + Freight-in − Purchase Returns & Allowances − Purchase Discounts",
-      "Inventory is goods held for sale in the ordinary course of business, or materials used to produce goods for sale."
+      "Cost of Goods Available for Sale ÷ Total Units Available for Sale"
     ],
     "answer": 0,
-    "explanation": "Beginning Inventory + Net Purchases.",
+    "explanation": "The concept being tested (inventory): beginning Inventory + Net Purchases. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "inventory"
     ]
@@ -1943,10 +1943,10 @@ export const ankiMcqs = [
       "Beginning Inventory + Net Purchases − Ending Inventory.",
       "Purchases + Freight-in − Purchase Returns & Allowances − Purchase Discounts",
       "Beginning Inventory + Net Purchases",
-      "Inventory is goods held for sale in the ordinary course of business, or materials used to produce goods for sale."
+      "Cost of Goods Available for Sale ÷ Total Units Available for Sale"
     ],
     "answer": 0,
-    "explanation": "Beginning Inventory + Net Purchases − Ending Inventory.",
+    "explanation": "The concept being tested (inventory): beginning Inventory + Net Purchases − Ending Inventory. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "inventory"
     ]
@@ -1961,7 +1961,7 @@ export const ankiMcqs = [
       "Beginning Inventory + Net Purchases"
     ],
     "answer": 0,
-    "explanation": "Cost of Goods Available for Sale ÷ Total Units Available for Sale.",
+    "explanation": "The concept being tested (inventory): cost of Goods Available for Sale ÷ Total Units Available for Sale. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "inventory"
     ]
@@ -1976,7 +1976,7 @@ export const ankiMcqs = [
       "Beginning Inventory + Net Purchases"
     ],
     "answer": 0,
-    "explanation": "Estimated Selling Price − Costs to Complete and Sell.",
+    "explanation": "The concept being tested (inventory, balance sheet): estimated Selling Price − Costs to Complete and Sell. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "inventory",
       "balance_sheet"
@@ -1992,7 +1992,7 @@ export const ankiMcqs = [
       "Beginning Inventory + Net Purchases"
     ],
     "answer": 0,
-    "explanation": "Cost of Sales ÷ Average Inventory.",
+    "explanation": "The concept being tested (inventory, financial statements): cost of Sales ÷ Average Inventory. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "inventory",
       "financial_statements"
@@ -2008,7 +2008,7 @@ export const ankiMcqs = [
       "Beginning Inventory + Net Purchases"
     ],
     "answer": 0,
-    "explanation": "(Beginning Inventory + Ending Inventory) ÷ 2.",
+    "explanation": "The concept being tested (inventory, financial statements): (Beginning Inventory + Ending Inventory) ÷ 2. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "inventory",
       "financial_statements"
@@ -2024,7 +2024,7 @@ export const ankiMcqs = [
       "Beginning Inventory + Net Purchases"
     ],
     "answer": 0,
-    "explanation": "365 ÷ Inventory Turnover.",
+    "explanation": "The concept being tested (inventory, financial statements): 365 ÷ Inventory Turnover. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "inventory",
       "financial_statements"

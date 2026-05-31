@@ -12,7 +12,7 @@ export const ankiMcqs = [
       "Because it is the only current asset"
     ],
     "answer": 0,
-    "explanation": "Because it is readily convertible into any other asset and can be used immediately to settle obligations.",
+    "explanation": "The reasoning to apply (financial statements): because it is readily convertible into any other asset and can be used immediately to settle obligations. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "financial_statements"
     ]
@@ -27,7 +27,7 @@ export const ankiMcqs = [
       "Cash equivalents"
     ],
     "answer": 0,
-    "explanation": "Cash on hand, cash at bank, and cash equivalents.",
+    "explanation": "The concept being tested (financial statements): cash on hand, cash at bank, and cash equivalents. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "financial_statements"
     ]
@@ -42,7 +42,7 @@ export const ankiMcqs = [
       "Cash equivalents"
     ],
     "answer": 0,
-    "explanation": "Notes and coins physically held by the business.",
+    "explanation": "The concept being tested (financial statements): notes and coins physically held by the business. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "financial_statements"
     ]
@@ -57,7 +57,7 @@ export const ankiMcqs = [
       "Cash equivalents"
     ],
     "answer": 0,
-    "explanation": "Funds held in savings accounts and everyday transaction accounts.",
+    "explanation": "The concept being tested (financial statements): funds held in savings accounts and everyday transaction accounts. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "financial_statements"
     ]
@@ -72,7 +72,7 @@ export const ankiMcqs = [
       "Cash equivalents"
     ],
     "answer": 0,
-    "explanation": "Short-term highly liquid investments readily convertible to cash, such as money market deposits and 90-day bank bills.",
+    "explanation": "The concept being tested (financial statements, cash flow): short-term highly liquid investments readily convertible to cash, such as money market deposits and 90-day bank bills. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "financial_statements",
       "cash_flow"
@@ -88,7 +88,7 @@ export const ankiMcqs = [
       "Financing activities"
     ],
     "answer": 0,
-    "explanation": "Operating, investing, and financing activities.",
+    "explanation": "The concept being tested (cash flow): operating, investing, and financing activities. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "cash_flow"
     ]
@@ -103,7 +103,7 @@ export const ankiMcqs = [
       "Financing activities"
     ],
     "answer": 0,
-    "explanation": "Cash flows relating to day-to-day business operations such as receipts from customers and payments to suppliers.",
+    "explanation": "The concept being tested (cash flow): cash flows relating to day-to-day business operations such as receipts from customers and payments to suppliers. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "cash_flow"
     ]
@@ -118,7 +118,7 @@ export const ankiMcqs = [
       "Repaying borrowings and paying dividends"
     ],
     "answer": 0,
-    "explanation": "Receipts from customers, interest received, and dividends received.",
+    "explanation": "The concept being tested (cash flow): receipts from customers, interest received, and dividends received. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "cash_flow"
     ]
@@ -133,7 +133,7 @@ export const ankiMcqs = [
       "Collection of loans made to others"
     ],
     "answer": 0,
-    "explanation": "Payments to suppliers, wages, interest, and taxes.",
+    "explanation": "The concept being tested (cash flow): payments to suppliers, wages, interest, and taxes. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "cash_flow"
     ]
@@ -148,7 +148,7 @@ export const ankiMcqs = [
       "Financing activities"
     ],
     "answer": 0,
-    "explanation": "Cash flows relating to borrowing, repaying debt, issuing shares, and paying dividends.",
+    "explanation": "The concept being tested (cash flow): cash flows relating to borrowing, repaying debt, issuing shares, and paying dividends. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "cash_flow"
     ]
@@ -163,7 +163,7 @@ export const ankiMcqs = [
       "Payments to suppliers"
     ],
     "answer": 0,
-    "explanation": "Borrowing cash and issuing shares.",
+    "explanation": "The concept being tested (cash flow): borrowing cash and issuing shares. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "cash_flow"
     ]
@@ -178,7 +178,7 @@ export const ankiMcqs = [
       "Interest received from investments"
     ],
     "answer": 0,
-    "explanation": "Repaying borrowings and paying dividends.",
+    "explanation": "The concept being tested (cash flow): repaying borrowings and paying dividends. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "cash_flow"
     ]
@@ -193,7 +193,7 @@ export const ankiMcqs = [
       "Financing activities"
     ],
     "answer": 0,
-    "explanation": "Cash flows relating to the purchase and sale of long-term assets and investments.",
+    "explanation": "The concept being tested (cash flow): cash flows relating to the purchase and sale of long-term assets and investments. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "cash_flow"
     ]
@@ -208,7 +208,7 @@ export const ankiMcqs = [
       "Receipts from customers"
     ],
     "answer": 0,
-    "explanation": "Purchase of property, plant & equipment and purchase of investments.",
+    "explanation": "The concept being tested (cash flow): purchase of property, plant & equipment and purchase of investments. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "cash_flow"
     ]
@@ -223,7 +223,7 @@ export const ankiMcqs = [
       "Payment of dividends"
     ],
     "answer": 0,
-    "explanation": "Sale of property, plant & equipment and collection of loans made to others.",
+    "explanation": "The concept being tested (cash flow): sale of property, plant & equipment and collection of loans made to others. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "cash_flow"
     ]
@@ -238,7 +238,7 @@ export const ankiMcqs = [
       "External Funds Transfer"
     ],
     "answer": 0,
-    "explanation": "Electronic Funds Transfer.",
+    "explanation": "The concept being tested (financial statements): electronic Funds Transfer. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "financial_statements"
     ]
@@ -253,7 +253,7 @@ export const ankiMcqs = [
       "It replaces the need for internal controls"
     ],
     "answer": 0,
-    "explanation": "It provides fast payment processing and reduces transaction costs.",
+    "explanation": "The concept being tested (financial statements): it provides fast payment processing and reduces transaction costs. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "financial_statements"
     ]
@@ -268,7 +268,7 @@ export const ankiMcqs = [
       "They guarantee all customers will pay"
     ],
     "answer": 0,
-    "explanation": "They reduce staff costs and lower the risk associated with handling physical cash.",
+    "explanation": "Account analysis (financial statements): they reduce staff costs and lower the risk associated with handling physical cash. Work through which accounts change and whether they have normal debit or credit balances. Distractors often swap sides, use the wrong account class, or omit part of the entry.",
     "tags": [
       "financial_statements"
     ]
@@ -283,7 +283,7 @@ export const ankiMcqs = [
       "They replace the statement of cash flows"
     ],
     "answer": 0,
-    "explanation": "They improve efficiency, security, and speed of transactions.",
+    "explanation": "The reasoning to apply (financial statements): they improve efficiency, security, and speed of transactions. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "financial_statements"
     ]
@@ -298,7 +298,7 @@ export const ankiMcqs = [
       "A ratio measuring receivables collection"
     ],
     "answer": 0,
-    "explanation": "Methods and procedures designed to safeguard assets and ensure accurate accounting records.",
+    "explanation": "The concept being tested (financial statements): methods and procedures designed to safeguard assets and ensure accurate accounting records. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "financial_statements"
     ]
@@ -313,7 +313,7 @@ export const ankiMcqs = [
       "Because cash cannot be used to settle obligations"
     ],
     "answer": 0,
-    "explanation": "Because cash is easily transferable and difficult to trace once stolen.",
+    "explanation": "The reasoning to apply (financial statements): because cash is easily transferable and difficult to trace once stolen. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "financial_statements"
     ]
@@ -328,7 +328,7 @@ export const ankiMcqs = [
       "Documentation procedures"
     ],
     "answer": 0,
-    "explanation": "Establishment of responsibility, segregation of duties, documentation procedures, physical/electronic controls, and independent verification.",
+    "explanation": "The concept being tested (financial statements): establishment of responsibility, segregation of duties, documentation procedures, physical/electronic controls, and independent verification. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "financial_statements"
     ]
@@ -343,7 +343,7 @@ export const ankiMcqs = [
       "Documentation procedures"
     ],
     "answer": 0,
-    "explanation": "Assigning responsibility for cash handling to specific authorised personnel only.",
+    "explanation": "The concept being tested (financial statements): assigning responsibility for cash handling to specific authorised personnel only. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "financial_statements"
     ]
@@ -358,7 +358,7 @@ export const ankiMcqs = [
       "Documentation procedures"
     ],
     "answer": 0,
-    "explanation": "Separating responsibilities so different individuals receive cash, record transactions, and hold assets.",
+    "explanation": "The concept being tested (financial statements): separating responsibilities so different individuals receive cash, record transactions, and hold assets. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "financial_statements"
     ]
@@ -373,7 +373,7 @@ export const ankiMcqs = [
       "It allows one person to handle all cash functions"
     ],
     "answer": 0,
-    "explanation": "It reduces opportunities for fraud and errors.",
+    "explanation": "The reasoning to apply (financial statements): it reduces opportunities for fraud and errors. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "financial_statements"
     ]
@@ -388,7 +388,7 @@ export const ankiMcqs = [
       "Ageing schedules for receivables"
     ],
     "answer": 0,
-    "explanation": "Remittance advices, cash register tapes, deposit slips, and electronic receipt numbers.",
+    "explanation": "The concept being tested (financial statements): remittance advices, cash register tapes, deposit slips, and electronic receipt numbers. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "financial_statements"
     ]
@@ -403,7 +403,7 @@ export const ankiMcqs = [
       "Factoring receivables"
     ],
     "answer": 0,
-    "explanation": "Safes, bank vaults, passwords, PINs, and frequent banking.",
+    "explanation": "The concept being tested (financial statements): safes, bank vaults, passwords, PINs, and frequent banking. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "financial_statements"
     ]
@@ -418,7 +418,7 @@ export const ankiMcqs = [
       "Documentation procedures"
     ],
     "answer": 0,
-    "explanation": "Checking records by someone independent of the person performing the transaction.",
+    "explanation": "The concept being tested (financial statements): checking records by someone independent of the person performing the transaction. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "financial_statements"
     ]
@@ -433,7 +433,7 @@ export const ankiMcqs = [
       "Preparing a cash budget only"
     ],
     "answer": 0,
-    "explanation": "Daily cash counts and comparison of receipts to bank deposits.",
+    "explanation": "The concept being tested (financial statements): daily cash counts and comparison of receipts to bank deposits. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "financial_statements"
     ]
@@ -448,7 +448,7 @@ export const ankiMcqs = [
       "Elimination of all petty cash funds"
     ],
     "answer": 0,
-    "explanation": "Passwords, PIN protection, and approval by authorised personnel.",
+    "explanation": "The concept being tested (financial statements): passwords, PIN protection, and approval by authorised personnel. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "financial_statements"
     ]
@@ -463,7 +463,7 @@ export const ankiMcqs = [
       "To remove the need for internal controls"
     ],
     "answer": 0,
-    "explanation": "To safeguard cash, minimise cash on hand, and provide a double record of transactions.",
+    "explanation": "The reasoning to apply (bank reconciliation): to safeguard cash, minimise cash on hand, and provide a double record of transactions. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "bank_reconciliation"
     ]
@@ -478,7 +478,7 @@ export const ankiMcqs = [
       "A ratio measuring liquidity"
     ],
     "answer": 0,
-    "explanation": "A process used to explain differences between the bank statement balance and the Cash at Bank account balance.",
+    "explanation": "The concept being tested (bank reconciliation): a process used to explain differences between the bank statement balance and the Cash at Bank account balance. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "bank_reconciliation"
     ]
@@ -493,7 +493,7 @@ export const ankiMcqs = [
       "Share issues and dividends only"
     ],
     "answer": 0,
-    "explanation": "Timing differences and errors.",
+    "explanation": "The reasoning to apply (bank reconciliation): timing differences and errors. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "bank_reconciliation"
     ]
@@ -508,7 +508,7 @@ export const ankiMcqs = [
       "Adjustments for doubtful debts"
     ],
     "answer": 0,
-    "explanation": "Transactions recorded in different accounting periods by the business and the bank.",
+    "explanation": "The concept being tested (bank reconciliation): transactions recorded in different accounting periods by the business and the bank. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "bank_reconciliation"
     ]
@@ -523,7 +523,7 @@ export const ankiMcqs = [
       "Dishonoured cheques"
     ],
     "answer": 0,
-    "explanation": "Deposits recorded by the business but not yet recorded by the bank.",
+    "explanation": "The concept being tested (bank reconciliation): deposits recorded by the business but not yet recorded by the bank. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "bank_reconciliation"
     ]
@@ -538,7 +538,7 @@ export const ankiMcqs = [
       "Bank service charges"
     ],
     "answer": 0,
-    "explanation": "Payments recorded by the business but not yet processed by the bank.",
+    "explanation": "The concept being tested (bank reconciliation): payments recorded by the business but not yet processed by the bank. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "bank_reconciliation"
     ]
@@ -550,10 +550,10 @@ export const ankiMcqs = [
       "Added to the bank statement balance.",
       "Subtracted from the bank statement balance",
       "Added to the cash book balance",
-      "Because it is readily convertible into any other asset and can be used immediately to settle obligations."
+      "Subtracted from the cash book balance"
     ],
     "answer": 0,
-    "explanation": "Added to the bank statement balance.",
+    "explanation": "The concept being tested (bank reconciliation): added to the bank statement balance. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "bank_reconciliation"
     ]
@@ -565,10 +565,10 @@ export const ankiMcqs = [
       "Subtracted from the bank statement balance.",
       "Added to the bank statement balance",
       "Added to the cash book balance",
-      "Because it is readily convertible into any other asset and can be used immediately to settle obligations."
+      "Subtracted from the cash book balance"
     ],
     "answer": 0,
-    "explanation": "Subtracted from the bank statement balance.",
+    "explanation": "The concept being tested (bank reconciliation): subtracted from the bank statement balance. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "bank_reconciliation"
     ]
@@ -583,7 +583,7 @@ export const ankiMcqs = [
       "Deposits in transit require no adjustment"
     ],
     "answer": 0,
-    "explanation": "Adjusted bank balance must equal the adjusted Cash at Bank balance.",
+    "explanation": "The concept being tested (bank reconciliation): adjusted bank balance must equal the adjusted Cash at Bank balance. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "bank_reconciliation"
     ]
@@ -598,7 +598,7 @@ export const ankiMcqs = [
       "Prepare the cash budget"
     ],
     "answer": 0,
-    "explanation": "Compare the bank statement with the previous reconciliation and current cash journals.",
+    "explanation": "Timing is the key idea (bank reconciliation): compare the bank statement with the previous reconciliation and current cash journals. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "bank_reconciliation"
     ]
@@ -613,7 +613,7 @@ export const ankiMcqs = [
       "That the bank made an error"
     ],
     "answer": 0,
-    "explanation": "That the transaction appears in both the bank records and the business records.",
+    "explanation": "The concept being tested (bank reconciliation): that the transaction appears in both the bank records and the business records. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "bank_reconciliation"
     ]
@@ -628,7 +628,7 @@ export const ankiMcqs = [
       "Depreciation and prepaid expenses"
     ],
     "answer": 0,
-    "explanation": "Direct deposits, dishonoured cheques, bank charges, and bank errors.",
+    "explanation": "Account analysis (bank reconciliation): direct deposits, dishonoured cheques, bank charges, and bank errors. Work through which accounts change and whether they have normal debit or credit balances. Distractors often swap sides, use the wrong account class, or omit part of the entry.",
     "tags": [
       "bank_reconciliation"
     ]
@@ -640,10 +640,10 @@ export const ankiMcqs = [
       "Dr Bank Charges Expense / Cr Cash at Bank.",
       "Dr Accounts Receivable / Cr Cash at Bank",
       "Dr Bad Debts Expense / Cr Accounts Receivable",
-      "Because it is readily convertible into any other asset and can be used immediately to settle obligations."
+      "Dr Bad Debts Expense / Cr Allowance for Doubtful Debts"
     ],
     "answer": 0,
-    "explanation": "Dr Bank Charges Expense / Cr Cash at Bank.",
+    "explanation": "Account analysis (bank reconciliation, debit credit): dr Bank Charges Expense / Cr Cash at Bank. Work through which accounts change and whether they have normal debit or credit balances. Distractors often swap sides, use the wrong account class, or omit part of the entry.",
     "tags": [
       "bank_reconciliation",
       "debit_credit"
@@ -656,10 +656,10 @@ export const ankiMcqs = [
       "Dr Accounts Receivable / Cr Cash at Bank.",
       "Dr Bank Charges Expense / Cr Cash at Bank",
       "Dr Bad Debts Expense / Cr Accounts Receivable",
-      "Because it is readily convertible into any other asset and can be used immediately to settle obligations."
+      "Dr Bad Debts Expense / Cr Allowance for Doubtful Debts"
     ],
     "answer": 0,
-    "explanation": "Dr Accounts Receivable / Cr Cash at Bank.",
+    "explanation": "Account analysis (bank reconciliation, debit credit): dr Accounts Receivable / Cr Cash at Bank. Work through which accounts change and whether they have normal debit or credit balances. Distractors often swap sides, use the wrong account class, or omit part of the entry.",
     "tags": [
       "bank_reconciliation",
       "debit_credit"
@@ -675,7 +675,7 @@ export const ankiMcqs = [
       "To avoid all borrowing"
     ],
     "answer": 0,
-    "explanation": "To ensure the business has enough cash to meet obligations while maximising returns on idle cash.",
+    "explanation": "The concept being tested (financial statements): to ensure the business has enough cash to meet obligations while maximising returns on idle cash. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "financial_statements"
     ]
@@ -690,7 +690,7 @@ export const ankiMcqs = [
       "Avoid all credit sales"
     ],
     "answer": 0,
-    "explanation": "Increase the speed of collection of receivables.",
+    "explanation": "The concept being tested (receivables): increase the speed of collection of receivables. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "receivables"
     ]
@@ -705,7 +705,7 @@ export const ankiMcqs = [
       "Inventory is not a current asset"
     ],
     "answer": 0,
-    "explanation": "Excess inventory ties up cash unnecessarily.",
+    "explanation": "The reasoning to apply (financial statements): excess inventory ties up cash unnecessarily. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "financial_statements"
     ]
@@ -720,7 +720,7 @@ export const ankiMcqs = [
       "To eliminate GST liability"
     ],
     "answer": 0,
-    "explanation": "To retain cash longer for operational use or investment.",
+    "explanation": "The reasoning to apply (financial statements): to retain cash longer for operational use or investment. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "financial_statements"
     ]
@@ -735,7 +735,7 @@ export const ankiMcqs = [
       "To avoid bank reconciliations"
     ],
     "answer": 0,
-    "explanation": "To avoid unexpected cash shortages.",
+    "explanation": "The reasoning to apply (financial statements): to avoid unexpected cash shortages. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "financial_statements"
     ]
@@ -750,7 +750,7 @@ export const ankiMcqs = [
       "Transfer it to accounts receivable"
     ],
     "answer": 0,
-    "explanation": "Invest it to earn returns.",
+    "explanation": "The concept being tested (financial statements): invest it to earn returns. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "financial_statements"
     ]
@@ -765,7 +765,7 @@ export const ankiMcqs = [
       "A method for valuing receivables"
     ],
     "answer": 0,
-    "explanation": "A forecast of expected cash receipts and cash payments.",
+    "explanation": "The concept being tested (financial statements): a forecast of expected cash receipts and cash payments. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "financial_statements"
     ]
@@ -780,7 +780,7 @@ export const ankiMcqs = [
       "It records bad debts automatically"
     ],
     "answer": 0,
-    "explanation": "It helps businesses plan for cash surpluses or shortages.",
+    "explanation": "The reasoning to apply (financial statements): it helps businesses plan for cash surpluses or shortages. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "financial_statements"
     ]
@@ -795,7 +795,7 @@ export const ankiMcqs = [
       "Ending cash balance"
     ],
     "answer": 0,
-    "explanation": "Beginning cash balance.",
+    "explanation": "The concept being tested (financial statements): beginning cash balance. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "financial_statements"
     ]
@@ -810,7 +810,7 @@ export const ankiMcqs = [
       "Beginning cash balance minus cash payments"
     ],
     "answer": 0,
-    "explanation": "Beginning cash balance plus cash receipts.",
+    "explanation": "The concept being tested (financial statements): beginning cash balance plus cash receipts. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "financial_statements"
     ]
@@ -825,7 +825,7 @@ export const ankiMcqs = [
       "Receivables turnover increases"
     ],
     "answer": 0,
-    "explanation": "A cash deficiency occurs.",
+    "explanation": "The concept being tested (financial statements): a cash deficiency occurs. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "financial_statements"
     ]
@@ -840,7 +840,7 @@ export const ankiMcqs = [
       "Stopping all credit sales permanently"
     ],
     "answer": 0,
-    "explanation": "Financing, such as borrowing.",
+    "explanation": "The concept being tested (financial statements): financing, such as borrowing. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "financial_statements"
     ]
@@ -855,7 +855,7 @@ export const ankiMcqs = [
       "Net Credit Sales ÷ Average Net Receivables"
     ],
     "answer": 0,
-    "explanation": "The number of days current cash can cover average daily cash expenses.",
+    "explanation": "The concept being tested (financial statements): the number of days current cash can cover average daily cash expenses. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "financial_statements"
     ]
@@ -867,10 +867,10 @@ export const ankiMcqs = [
       "Cash ÷ Average Daily Cash Expenses.",
       "Allowance for Doubtful Debts ÷ Accounts Receivable",
       "Net Credit Sales ÷ Average Net Receivables",
-      "Because it is readily convertible into any other asset and can be used immediately to settle obligations."
+      "365 ÷ Receivables Turnover"
     ],
     "answer": 0,
-    "explanation": "Cash ÷ Average Daily Cash Expenses.",
+    "explanation": "The concept being tested (financial statements): cash ÷ Average Daily Cash Expenses. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "financial_statements"
     ]
@@ -885,7 +885,7 @@ export const ankiMcqs = [
       "Lower cash balances"
     ],
     "answer": 0,
-    "explanation": "Greater liquidity and ability to cover expenses.",
+    "explanation": "The concept being tested (financial statements): greater liquidity and ability to cover expenses. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "financial_statements"
     ]
@@ -900,7 +900,7 @@ export const ankiMcqs = [
       "Other receivables"
     ],
     "answer": 0,
-    "explanation": "Amounts owed to a business by customers or others.",
+    "explanation": "The concept being tested (receivables): amounts owed to a business by customers or others. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "receivables"
     ]
@@ -915,7 +915,7 @@ export const ankiMcqs = [
       "Other receivables"
     ],
     "answer": 0,
-    "explanation": "Amounts owed by customers from credit sales.",
+    "explanation": "The concept being tested (receivables): amounts owed by customers from credit sales. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "receivables"
     ]
@@ -930,7 +930,7 @@ export const ankiMcqs = [
       "Other receivables"
     ],
     "answer": 0,
-    "explanation": "Formal written promises to pay money in the future.",
+    "explanation": "The concept being tested (receivables): formal written promises to pay money in the future. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "receivables"
     ]
@@ -945,7 +945,7 @@ export const ankiMcqs = [
       "Other receivables"
     ],
     "answer": 0,
-    "explanation": "Non-trade receivables such as interest receivable, GST receivable, and employee loans.",
+    "explanation": "The concept being tested (receivables): non-trade receivables such as interest receivable, GST receivable, and employee loans. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "receivables"
     ]
@@ -960,7 +960,7 @@ export const ankiMcqs = [
       "GST receivable from the ATO"
     ],
     "answer": 0,
-    "explanation": "Accounts receivable that are unlikely to be collected.",
+    "explanation": "The concept being tested (receivables, allowance method): accounts receivable that are unlikely to be collected. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "receivables",
       "allowance_method"
@@ -976,7 +976,7 @@ export const ankiMcqs = [
       "Percentage of net sales method"
     ],
     "answer": 0,
-    "explanation": "A method where bad debts expense is recognised only when a specific account is identified as uncollectable.",
+    "explanation": "The concept being tested (receivables, allowance method): a method where bad debts expense is recognised only when a specific account is identified as uncollectable. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "receivables",
       "allowance_method"
@@ -989,10 +989,10 @@ export const ankiMcqs = [
       "Dr Bad Debts Expense / Cr Accounts Receivable.",
       "Dr Bank Charges Expense / Cr Cash at Bank",
       "Dr Accounts Receivable / Cr Cash at Bank",
-      "Because it is readily convertible into any other asset and can be used immediately to settle obligations."
+      "Dr Bad Debts Expense / Cr Allowance for Doubtful Debts"
     ],
     "answer": 0,
-    "explanation": "Dr Bad Debts Expense / Cr Accounts Receivable.",
+    "explanation": "Account analysis (receivables, allowance method, debit credit): dr Bad Debts Expense / Cr Accounts Receivable. Work through which accounts change and whether they have normal debit or credit balances. Distractors often swap sides, use the wrong account class, or omit part of the entry.",
     "tags": [
       "receivables",
       "allowance_method",
@@ -1009,7 +1009,7 @@ export const ankiMcqs = [
       "Because it cannot be used for any bad debts"
     ],
     "answer": 0,
-    "explanation": "Because it may violate the matching principle and overstate receivables.",
+    "explanation": "The reasoning to apply (receivables, allowance method): because it may violate the matching principle and overstate receivables. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "receivables",
       "allowance_method"
@@ -1025,7 +1025,7 @@ export const ankiMcqs = [
       "Percentage of net sales method"
     ],
     "answer": 0,
-    "explanation": "A method where estimated bad debts are recognised before specific accounts become uncollectable.",
+    "explanation": "The concept being tested (receivables, allowance method): a method where estimated bad debts are recognised before specific accounts become uncollectable. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "receivables",
       "allowance_method"
@@ -1041,7 +1041,7 @@ export const ankiMcqs = [
       "Net Credit Sales ÷ Average Net Receivables"
     ],
     "answer": 0,
-    "explanation": "Net Realisable Value (NRV).",
+    "explanation": "The concept being tested (receivables, allowance method, balance sheet): net Realisable Value (NRV). The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "receivables",
       "allowance_method",
@@ -1058,7 +1058,7 @@ export const ankiMcqs = [
       "Net Credit Sales ÷ Average Net Receivables"
     ],
     "answer": 0,
-    "explanation": "Accounts Receivable minus Allowance for Doubtful Debts.",
+    "explanation": "The concept being tested (receivables, allowance method, balance sheet): accounts Receivable minus Allowance for Doubtful Debts. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "receivables",
       "allowance_method",
@@ -1075,7 +1075,7 @@ export const ankiMcqs = [
       "Dr Bad Debts Expense / Cr Accounts Receivable"
     ],
     "answer": 0,
-    "explanation": "Dr Bad Debts Expense / Cr Allowance for Doubtful Debts.",
+    "explanation": "Account analysis (receivables, allowance method, debit credit): dr Bad Debts Expense / Cr Allowance for Doubtful Debts. Work through which accounts change and whether they have normal debit or credit balances. Distractors often swap sides, use the wrong account class, or omit part of the entry.",
     "tags": [
       "receivables",
       "allowance_method",
@@ -1092,7 +1092,7 @@ export const ankiMcqs = [
       "Dr Bad Debts Expense / Cr Accounts Receivable"
     ],
     "answer": 0,
-    "explanation": "Dr Allowance for Doubtful Debts / Cr Accounts Receivable.",
+    "explanation": "Account analysis (receivables, allowance method, debit credit): dr Allowance for Doubtful Debts / Cr Accounts Receivable. Work through which accounts change and whether they have normal debit or credit balances. Distractors often swap sides, use the wrong account class, or omit part of the entry.",
     "tags": [
       "receivables",
       "allowance_method",
@@ -1109,7 +1109,7 @@ export const ankiMcqs = [
       "Only under the direct write-off method"
     ],
     "answer": 0,
-    "explanation": "No, because both Accounts Receivable and the Allowance account decrease.",
+    "explanation": "The concept being tested (receivables, allowance method): no, because both Accounts Receivable and the Allowance account decrease. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "receivables",
       "allowance_method"
@@ -1125,7 +1125,7 @@ export const ankiMcqs = [
       "Dr Bad Debts Expense / Cr Accounts Receivable"
     ],
     "answer": 0,
-    "explanation": "Dr Accounts Receivable / Cr Allowance for Doubtful Debts.",
+    "explanation": "Timing is the key idea (receivables, allowance method, debit credit): dr Accounts Receivable / Cr Allowance for Doubtful Debts. Work through which accounts change and whether they have normal debit or credit balances. Distractors often swap sides, use the wrong account class, or omit part of the entry.",
     "tags": [
       "receivables",
       "allowance_method",
@@ -1142,7 +1142,7 @@ export const ankiMcqs = [
       "Dr Bad Debts Expense / Cr Accounts Receivable"
     ],
     "answer": 0,
-    "explanation": "Dr Cash / Cr Accounts Receivable.",
+    "explanation": "Timing is the key idea (receivables, allowance method, debit credit): dr Cash / Cr Accounts Receivable. Work through which accounts change and whether they have normal debit or credit balances. Distractors often swap sides, use the wrong account class, or omit part of the entry.",
     "tags": [
       "receivables",
       "allowance_method",
@@ -1159,7 +1159,7 @@ export const ankiMcqs = [
       "Because GST is never recorded on credit sales"
     ],
     "answer": 0,
-    "explanation": "Because GST previously recognised on the sale must be reversed if the customer never pays.",
+    "explanation": "The reasoning to apply (receivables, gst): because GST previously recognised on the sale must be reversed if the customer never pays. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "receivables",
       "gst"
@@ -1175,7 +1175,7 @@ export const ankiMcqs = [
       "Percentage of net sales method"
     ],
     "answer": 0,
-    "explanation": "Percentage of net sales and ageing of accounts receivable.",
+    "explanation": "The concept being tested (receivables, allowance method): percentage of net sales and ageing of accounts receivable. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "receivables",
       "allowance_method"
@@ -1191,7 +1191,7 @@ export const ankiMcqs = [
       "Measuring receivables turnover"
     ],
     "answer": 0,
-    "explanation": "Matching bad debts expense to sales revenue for the period.",
+    "explanation": "The concept being tested (receivables, allowance method): matching bad debts expense to sales revenue for the period. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "receivables",
       "allowance_method"
@@ -1207,7 +1207,7 @@ export const ankiMcqs = [
       "Recording write-offs when cash is collected"
     ],
     "answer": 0,
-    "explanation": "Estimating the required ending balance in Allowance for Doubtful Debts.",
+    "explanation": "The concept being tested (receivables, allowance method): estimating the required ending balance in Allowance for Doubtful Debts. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "receivables",
       "allowance_method"
@@ -1223,7 +1223,7 @@ export const ankiMcqs = [
       "Because current receivables are always written off"
     ],
     "answer": 0,
-    "explanation": "Because older accounts are less likely to be collected.",
+    "explanation": "The reasoning to apply (receivables, allowance method): because older accounts are less likely to be collected. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "receivables",
       "allowance_method"
@@ -1239,7 +1239,7 @@ export const ankiMcqs = [
       "The percentage is always zero for current accounts"
     ],
     "answer": 0,
-    "explanation": "The percentage increases.",
+    "explanation": "The concept being tested (receivables, allowance method): the percentage increases. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "receivables",
       "allowance_method"
@@ -1255,7 +1255,7 @@ export const ankiMcqs = [
       "As contra equity accounts"
     ],
     "answer": 0,
-    "explanation": "As current or non-current assets depending on collection timing.",
+    "explanation": "The concept being tested (receivables, balance sheet): as current or non-current assets depending on collection timing. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "receivables",
       "balance_sheet"
@@ -1271,7 +1271,7 @@ export const ankiMcqs = [
       "Only amounts covered by the allowance"
     ],
     "answer": 0,
-    "explanation": "Receivables expected to be collected within 12 months or the operating cycle.",
+    "explanation": "The concept being tested (receivables, balance sheet): receivables expected to be collected within 12 months or the operating cycle. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "receivables",
       "balance_sheet"
@@ -1287,7 +1287,7 @@ export const ankiMcqs = [
       "Bank reconciliation schedules"
     ],
     "answer": 0,
-    "explanation": "Accounting policy and breakdown of receivables and allowance balances.",
+    "explanation": "The concept being tested (receivables, balance sheet): accounting policy and breakdown of receivables and allowance balances. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "receivables",
       "balance_sheet"
@@ -1303,7 +1303,7 @@ export const ankiMcqs = [
       "Credit sales do not create accounts receivable"
     ],
     "answer": 0,
-    "explanation": "Risky customers may fail to pay.",
+    "explanation": "Timing is the key idea (receivables): risky customers may fail to pay. Work through which accounts change and whether they have normal debit or credit balances. Distractors often swap sides, use the wrong account class, or omit part of the entry.",
     "tags": [
       "receivables"
     ]
@@ -1318,7 +1318,7 @@ export const ankiMcqs = [
       "Inventory cost flow assumptions"
     ],
     "answer": 0,
-    "explanation": "Industry and competitor practices.",
+    "explanation": "Timing is the key idea (receivables): industry and competitor practices. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "receivables"
     ]
@@ -1333,7 +1333,7 @@ export const ankiMcqs = [
       "Net Credit Sales ÷ Average Net Receivables"
     ],
     "answer": 0,
-    "explanation": "The proportion of receivables expected to become uncollectable.",
+    "explanation": "Account analysis (receivables, allowance method): the proportion of receivables expected to become uncollectable. Work through which accounts change and whether they have normal debit or credit balances. Distractors often swap sides, use the wrong account class, or omit part of the entry.",
     "tags": [
       "receivables",
       "allowance_method"
@@ -1346,10 +1346,10 @@ export const ankiMcqs = [
       "Allowance for Doubtful Debts ÷ Accounts Receivable.",
       "Cash ÷ Average Daily Cash Expenses",
       "Net Credit Sales ÷ Average Net Receivables",
-      "Because it is readily convertible into any other asset and can be used immediately to settle obligations."
+      "365 ÷ Receivables Turnover"
     ],
     "answer": 0,
-    "explanation": "Allowance for Doubtful Debts ÷ Accounts Receivable.",
+    "explanation": "Account analysis (receivables, allowance method): allowance for Doubtful Debts ÷ Accounts Receivable. Work through which accounts change and whether they have normal debit or credit balances. Distractors often swap sides, use the wrong account class, or omit part of the entry.",
     "tags": [
       "receivables",
       "allowance_method"
@@ -1365,7 +1365,7 @@ export const ankiMcqs = [
       "Net Credit Sales ÷ Average Net Receivables"
     ],
     "answer": 0,
-    "explanation": "How many times receivables are collected during the year.",
+    "explanation": "The concept being tested (receivables): how many times receivables are collected during the year. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "receivables"
     ]
@@ -1377,10 +1377,10 @@ export const ankiMcqs = [
       "Net Credit Sales ÷ Average Net Receivables.",
       "Cash ÷ Average Daily Cash Expenses",
       "Allowance for Doubtful Debts ÷ Accounts Receivable",
-      "Because it is readily convertible into any other asset and can be used immediately to settle obligations."
+      "365 ÷ Receivables Turnover"
     ],
     "answer": 0,
-    "explanation": "Net Credit Sales ÷ Average Net Receivables.",
+    "explanation": "The concept being tested (receivables): net Credit Sales ÷ Average Net Receivables. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "receivables"
     ]
@@ -1395,7 +1395,7 @@ export const ankiMcqs = [
       "Net Credit Sales ÷ Average Net Receivables"
     ],
     "answer": 0,
-    "explanation": "(Beginning Net Receivables + Ending Net Receivables) ÷ 2.",
+    "explanation": "The concept being tested (receivables): (Beginning Net Receivables + Ending Net Receivables) ÷ 2. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "receivables"
     ]
@@ -1410,7 +1410,7 @@ export const ankiMcqs = [
       "Low net credit sales"
     ],
     "answer": 0,
-    "explanation": "Efficient collection of receivables.",
+    "explanation": "The concept being tested (receivables): efficient collection of receivables. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "receivables"
     ]
@@ -1425,7 +1425,7 @@ export const ankiMcqs = [
       "Low allowance for doubtful debts"
     ],
     "answer": 0,
-    "explanation": "Slow collection and possible credit problems.",
+    "explanation": "The concept being tested (receivables): slow collection and possible credit problems. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "receivables"
     ]
@@ -1440,7 +1440,7 @@ export const ankiMcqs = [
       "Net Credit Sales ÷ Average Net Receivables"
     ],
     "answer": 0,
-    "explanation": "365 ÷ Receivables Turnover.",
+    "explanation": "The concept being tested (receivables): 365 ÷ Receivables Turnover. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "receivables"
     ]
@@ -1455,7 +1455,7 @@ export const ankiMcqs = [
       "Days between purchase and payment to suppliers"
     ],
     "answer": 0,
-    "explanation": "The average number of days taken to collect receivables.",
+    "explanation": "The concept being tested (receivables): the average number of days taken to collect receivables. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "receivables"
     ]
@@ -1470,7 +1470,7 @@ export const ankiMcqs = [
       "Establishing a petty cash fund"
     ],
     "answer": 0,
-    "explanation": "Selling receivables to a third party called a factor.",
+    "explanation": "The concept being tested (receivables): selling receivables to a third party called a factor. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "receivables"
     ]
@@ -1485,7 +1485,7 @@ export const ankiMcqs = [
       "To avoid recording credit sales"
     ],
     "answer": 0,
-    "explanation": "To obtain cash quickly and reduce collection costs.",
+    "explanation": "The reasoning to apply (receivables): to obtain cash quickly and reduce collection costs. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "receivables"
     ]
@@ -1500,7 +1500,7 @@ export const ankiMcqs = [
       "It requires the direct write-off method"
     ],
     "answer": 0,
-    "explanation": "Service charges reduce the cash received.",
+    "explanation": "The concept being tested (receivables): service charges reduce the cash received. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "receivables"
     ]
@@ -1515,7 +1515,7 @@ export const ankiMcqs = [
       "They guarantee no bank reconciliations"
     ],
     "answer": 0,
-    "explanation": "They increase sales and reduce bad debt risk.",
+    "explanation": "The reasoning to apply (receivables): they increase sales and reduce bad debt risk. Work through which accounts change and whether they have normal debit or credit balances. Distractors often swap sides, use the wrong account class, or omit part of the entry.",
     "tags": [
       "receivables"
     ]
@@ -1530,7 +1530,7 @@ export const ankiMcqs = [
       "Freight-out Expense"
     ],
     "answer": 0,
-    "explanation": "Service Charge Expense.",
+    "explanation": "Account analysis (receivables): service Charge Expense. Work through which accounts change and whether they have normal debit or credit balances. Distractors often swap sides, use the wrong account class, or omit part of the entry.",
     "tags": [
       "receivables"
     ]
@@ -1545,7 +1545,7 @@ export const ankiMcqs = [
       "A method for estimating doubtful debts"
     ],
     "answer": 0,
-    "explanation": "A small amount of cash used for minor expenditures.",
+    "explanation": "The concept being tested (financial statements): a small amount of cash used for minor expenditures. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "financial_statements"
     ]
@@ -1560,7 +1560,7 @@ export const ankiMcqs = [
       "Dr Bad Debts Expense / Cr Accounts Receivable"
     ],
     "answer": 0,
-    "explanation": "Dr Petty Cash / Cr Cash at Bank.",
+    "explanation": "Account analysis (debit credit): dr Petty Cash / Cr Cash at Bank. Work through which accounts change and whether they have normal debit or credit balances. Distractors often swap sides, use the wrong account class, or omit part of the entry.",
     "tags": [
       "debit_credit"
     ]
@@ -1575,7 +1575,7 @@ export const ankiMcqs = [
       "Only under the direct write-off method"
     ],
     "answer": 0,
-    "explanation": "No. Entries are made when the fund is replenished.",
+    "explanation": "Account analysis (debit credit): no. Entries are made when the fund is replenished. Work through which accounts change and whether they have normal debit or credit balances. Distractors often swap sides, use the wrong account class, or omit part of the entry.",
     "tags": [
       "debit_credit"
     ]
@@ -1590,7 +1590,7 @@ export const ankiMcqs = [
       "Remittance advices only"
     ],
     "answer": 0,
-    "explanation": "Petty cash vouchers and receipts.",
+    "explanation": "The concept being tested (financial statements): petty cash vouchers and receipts. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "financial_statements"
     ]
@@ -1605,7 +1605,7 @@ export const ankiMcqs = [
       "Net realisable value of receivables"
     ],
     "answer": 0,
-    "explanation": "The original petty cash fund balance.",
+    "explanation": "The concept being tested (financial statements): the original petty cash fund balance. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "financial_statements"
     ]
@@ -1620,7 +1620,7 @@ export const ankiMcqs = [
       "Dr Bad Debts Expense / Cr Accounts Receivable"
     ],
     "answer": 0,
-    "explanation": "Dr individual expense accounts / Cr Cash at Bank.",
+    "explanation": "Account analysis (debit credit): dr individual expense accounts / Cr Cash at Bank. Work through which accounts change and whether they have normal debit or credit balances. Distractors often swap sides, use the wrong account class, or omit part of the entry.",
     "tags": [
       "debit_credit"
     ]
@@ -1635,7 +1635,7 @@ export const ankiMcqs = [
       "A revenue account for factoring"
     ],
     "answer": 0,
-    "explanation": "An account used to record petty cash shortages or surpluses.",
+    "explanation": "The concept being tested (debit credit): an account used to record petty cash shortages or surpluses. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "debit_credit"
     ]
@@ -1650,7 +1650,7 @@ export const ankiMcqs = [
       "Credit Petty Cash only"
     ],
     "answer": 0,
-    "explanation": "Debit Over and Short.",
+    "explanation": "The concept being tested (debit credit): debit Over and Short. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "debit_credit"
     ]
@@ -1665,7 +1665,7 @@ export const ankiMcqs = [
       "Credit Accounts Receivable"
     ],
     "answer": 0,
-    "explanation": "Credit Over and Short.",
+    "explanation": "The concept being tested (debit credit): credit Over and Short. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "debit_credit"
     ]
@@ -1677,10 +1677,10 @@ export const ankiMcqs = [
       "Cash ÷ Average Daily Cash Expenses.",
       "Allowance for Doubtful Debts ÷ Accounts Receivable",
       "Net Credit Sales ÷ Average Net Receivables",
-      "Because it is readily convertible into any other asset and can be used immediately to settle obligations."
+      "365 ÷ Receivables Turnover"
     ],
     "answer": 0,
-    "explanation": "Cash ÷ Average Daily Cash Expenses.",
+    "explanation": "The concept being tested (financial statements): cash ÷ Average Daily Cash Expenses. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "financial_statements"
     ]
@@ -1692,10 +1692,10 @@ export const ankiMcqs = [
       "Allowance for Doubtful Debts ÷ Accounts Receivable.",
       "Cash ÷ Average Daily Cash Expenses",
       "Net Credit Sales ÷ Average Net Receivables",
-      "Because it is readily convertible into any other asset and can be used immediately to settle obligations."
+      "365 ÷ Receivables Turnover"
     ],
     "answer": 0,
-    "explanation": "Allowance for Doubtful Debts ÷ Accounts Receivable.",
+    "explanation": "Account analysis (receivables, allowance method): allowance for Doubtful Debts ÷ Accounts Receivable. Work through which accounts change and whether they have normal debit or credit balances. Distractors often swap sides, use the wrong account class, or omit part of the entry.",
     "tags": [
       "receivables",
       "allowance_method"
@@ -1708,10 +1708,10 @@ export const ankiMcqs = [
       "Net Credit Sales ÷ Average Net Receivables.",
       "Cash ÷ Average Daily Cash Expenses",
       "Allowance for Doubtful Debts ÷ Accounts Receivable",
-      "Because it is readily convertible into any other asset and can be used immediately to settle obligations."
+      "365 ÷ Receivables Turnover"
     ],
     "answer": 0,
-    "explanation": "Net Credit Sales ÷ Average Net Receivables.",
+    "explanation": "The concept being tested (receivables): net Credit Sales ÷ Average Net Receivables. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "receivables"
     ]
@@ -1726,7 +1726,7 @@ export const ankiMcqs = [
       "Net Credit Sales ÷ Average Net Receivables"
     ],
     "answer": 0,
-    "explanation": "365 ÷ Receivables Turnover.",
+    "explanation": "The concept being tested (receivables): 365 ÷ Receivables Turnover. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "receivables"
     ]
@@ -1741,7 +1741,7 @@ export const ankiMcqs = [
       "Replenishing petty cash too frequently"
     ],
     "answer": 0,
-    "explanation": "Adding and subtracting outstanding items incorrectly.",
+    "explanation": "The concept being tested (bank reconciliation, error correction): adding and subtracting outstanding items incorrectly. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "bank_reconciliation",
       "error_correction"
@@ -1757,7 +1757,7 @@ export const ankiMcqs = [
       "Added to the cash book balance"
     ],
     "answer": 0,
-    "explanation": "They are added to the bank balance.",
+    "explanation": "The concept being tested (bank reconciliation, error correction): they are added to the bank balance. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "bank_reconciliation",
       "error_correction"
@@ -1773,7 +1773,7 @@ export const ankiMcqs = [
       "Added to the cash book balance"
     ],
     "answer": 0,
-    "explanation": "They are subtracted from the bank balance.",
+    "explanation": "The concept being tested (bank reconciliation, error correction): they are subtracted from the bank balance. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "bank_reconciliation",
       "error_correction"
@@ -1789,7 +1789,7 @@ export const ankiMcqs = [
       "Recording recovery before reversing the write-off"
     ],
     "answer": 0,
-    "explanation": "Forgetting that the ageing method calculates the required ending allowance balance.",
+    "explanation": "The concept being tested (allowance method, error correction): forgetting that the ageing method calculates the required ending allowance balance. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "allowance_method",
       "error_correction"
@@ -1805,7 +1805,7 @@ export const ankiMcqs = [
       "Adding outstanding deposits to the cash book"
     ],
     "answer": 0,
-    "explanation": "Debiting Bad Debts Expense instead of Allowance for Doubtful Debts under the allowance method.",
+    "explanation": "The concept being tested (allowance method, error correction): debiting Bad Debts Expense instead of Allowance for Doubtful Debts under the allowance method. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "allowance_method",
       "error_correction"
@@ -1821,7 +1821,7 @@ export const ankiMcqs = [
       "Recording recovery as revenue"
     ],
     "answer": 0,
-    "explanation": "Forgetting to reverse the write-off before recording cash collection.",
+    "explanation": "The concept being tested (allowance method, error correction): forgetting to reverse the write-off before recording cash collection. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "allowance_method",
       "error_correction"
@@ -1837,7 +1837,7 @@ export const ankiMcqs = [
       "Replenishing petty cash before any receipts are obtained"
     ],
     "answer": 0,
-    "explanation": "Recording expenses when cash is spent instead of when the fund is replenished.",
+    "explanation": "The concept being tested (error correction, debit credit): recording expenses when cash is spent instead of when the fund is replenished. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "error_correction",
       "debit_credit"

@@ -5,6 +5,7 @@ import { QUESTION_TYPES } from "../data/schema/questionTypes.js";
 import { NAV_CLICK_SOUND_PROPS } from "../constants/clickSound.js";
 import { theme, backButtonStyle, cardStyle, inputStyle } from "../styles/theme.js";
 import { getDisplayOptionIndex } from "../utils/shuffle.js";
+import { getDisplayExplanation } from "../utils/teachingExplanation.js";
 import { JOURNAL_ACCOUNT_SUGGESTIONS } from "../data/index.js";
 import {
   getJournalEntryAnswerKey,
@@ -1273,7 +1274,7 @@ export function QuizScreen({
 
             {showExplanation && currentAnswer && (
               <ExplanationBlock
-                text={currentQuestion.explanation}
+                text={getDisplayExplanation(currentQuestion)}
                 feedback={currentAnswer?.evaluation?.feedback}
               />
             )}

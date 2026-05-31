@@ -1,4 +1,6 @@
 import { chatCompletion } from "./openaiClient.ts";
+import { getDisplayExplanation } from "../utils/teachingExplanation.js";
+import { buildTeachingHint } from "../utils/teachingHint.js";
 
 export type TutorIntent = "hint" | "explain" | "ask";
 
@@ -59,16 +61,15 @@ function stripAnswers(value: unknown): unknown {
   return output;
 }
 
-function getPromptText(question: Record<string, unknown>) {
-  return String(question.prompt ?? question.q ?? "");
-}
-
 function buildHintPrompt(question?: Record<string, unknown>): string {
-  const baseRules = `- Do NOT reveal the correct answer, option letter, numeric result, or journal entry solution.
+  const baseRules = `- Give ONE concrete, question-specific hint in 2-3 sentences.
+- Base the hint on facts in the question stem (dates, parties, transaction type, amounts described).
+- Include an analytical step the student can take next (compare event date vs cash date, identify which element changes, apply the relevant formula).
+- Do NOT tell the student to review notes, Notion, textbooks, chapter readings, or any external materials.
+- Do NOT reveal the correct answer, option letter, numeric result, or journal entry solution.
 - Do NOT name specific account titles (for example: Cash, Accounts Receivable, GST Payable, Share Capital).
 - Do NOT state debit/credit sides, dollar amounts, or how many journal lines are required.
 - Do NOT write journal lines or say "debit X / credit Y".
-- ONLY nudge toward the underlying rule, formula, or concept in general terms.
 - If they already received hints, go slightly deeper without giving away the answer.`;
 
   if (question?.type === "journal_entry") {
@@ -149,16 +150,21 @@ function buildSystemPrompt(
     case "hint":
       return `${base}
 
-Give a helpful hint for the current question.
+Give a helpful hint for the current question. The hint must stand alone—students should know what to think about next without leaving the quiz.
 ${buildHintPrompt(question)}${performanceGuidance}`;
     case "explain":
       return `${base}
 
-Explain the accounting concept behind this question.
-- Use the provided official explanation as ground truth when available.
-- If the student was wrong, compare their submitted answer to the correct approach line by line.
-- Name what is incorrect in their answer, then explain the correct reasoning.
-- Teach the concept so they can apply it to similar questions.${performanceGuidance}`;
+Teach the accounting concept behind this question. Do NOT merely repeat the correct option or official explanation verbatim.
+
+Structure your response:
+1. Concept tested — name the rule, standard, or definition (one sentence).
+2. Why this answer fits — reason from the facts in the question stem; rephrase in your own words.
+3. Why tempting distractors fail — briefly address the most likely wrong option(s).
+4. Exam tip — one short step or memory hook for similar questions.
+
+If the student was wrong, first name the specific mistake in their submitted answer, then follow the structure above.
+Use the official explanation only as ground truth for facts — always teach the underlying reasoning.${performanceGuidance}`;
     case "ask":
       return `${base}
 
@@ -245,25 +251,11 @@ export async function createTutorResponse(request: TutorRequest): Promise<TutorR
 }
 
 export function buildFallbackTutorResponse(request: TutorRequest): TutorResponse {
-  const prompt = getPromptText(request.question);
   const topic = String(request.question.topic ?? "this topic");
-  const tags = Array.isArray(request.question.tags) ? request.question.tags.join(", ") : "";
-  const explanation = String(request.question.explanation ?? "");
+  const explanation = String(getDisplayExplanation(request.question) ?? request.question.explanation ?? "");
 
   if (request.intent === "hint") {
-    if (request.question.type === "journal_entry") {
-      return {
-        message: tags
-          ? `Review the ${tags.replaceAll("_", " ")} concept for ${topic}. What type of transaction is described, and which part of the accounting equation does it affect?`
-          : `Identify the transaction type in this question, then decide which elements of the accounting equation increase or decrease — without writing specific account names yet.`,
-      };
-    }
-
-    return {
-      message: tags
-        ? `Review the ${tags.replaceAll("_", " ")} rules for ${topic}. What is the question really asking you to apply?`
-        : `Focus on the core concept in "${prompt.slice(0, 80)}${prompt.length > 80 ? "..." : ""}" and recall the related chapter notes for ${topic}.`,
-    };
+    return { message: buildTeachingHint(request.question) };
   }
 
   if (request.intent === "explain") {
@@ -271,18 +263,19 @@ export function buildFallbackTutorResponse(request: TutorRequest): TutorResponse
       (request.currentAnswer as { evaluation?: { feedback?: string } } | null)?.evaluation?.feedback ?? ""
     );
     const isWhyWrong = request.userMessage?.toLowerCase().includes("wrong") ?? false;
+    const teachingExplanation =
+      explanation ||
+      `Review the core concept for ${topic}. Identify the accounts affected, whether they increase or decrease, and how this appears on the financial statements.`;
 
     if (isWhyWrong) {
-      const parts = [feedback, explanation].filter(Boolean);
+      const parts = [feedback, teachingExplanation ? `Why this is right: ${teachingExplanation}` : ""].filter(Boolean);
       if (parts.length > 0) {
         return { message: parts.join("\n\n") };
       }
     }
 
     return {
-      message:
-        explanation ||
-        `Review the core concept for ${topic}. Identify the accounts affected, whether they increase or decrease, and how this appears on the financial statements.`,
+      message: teachingExplanation,
     };
   }
 

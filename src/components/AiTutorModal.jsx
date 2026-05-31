@@ -42,7 +42,7 @@ export function AiTutorModal({
         aria-haspopup="dialog"
       >
         <span className="ai-tutor-trigger__label">
-          {compact ? "Ask AI Tutor" : "Open AI Tutor"}
+          {compact ? "Ask Tutor" : "Open Tutor"}
         </span>
         {tutorUses && (
           <span
@@ -59,7 +59,7 @@ export function AiTutorModal({
           <button
             type="button"
             className="ai-tutor-modal-backdrop"
-            aria-label="Close AI Tutor"
+            aria-label="Close Tutor"
             onClick={closeModal}
           />
           <div
@@ -70,7 +70,7 @@ export function AiTutorModal({
           >
             <div className="ai-tutor-modal__header">
               <div id={titleId}>
-                <div style={{ fontSize: 16, fontWeight: 600, color: theme.colors.text }}>AI Tutor</div>
+                <div style={{ fontSize: 16, fontWeight: 600, color: theme.colors.text }}>Tutor</div>
                 <div style={{ fontSize: 12, color: theme.colors.textSecondary, marginTop: 2 }}>
                   Get hints, explanations, and follow-up help for this question.
                 </div>
@@ -78,7 +78,7 @@ export function AiTutorModal({
               <button
                 type="button"
                 className="ai-tutor-modal__close"
-                aria-label="Close AI Tutor"
+                aria-label="Close Tutor"
                 onClick={closeModal}
               >
                 ×

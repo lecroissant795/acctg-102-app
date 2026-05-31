@@ -40,7 +40,7 @@ function TutorMessage({ role, content }) {
             letterSpacing: 0.5,
           }}
         >
-          AI Tutor
+          Tutor
         </div>
       )}
       {content}
@@ -211,7 +211,7 @@ export function AiTutorPanel({
         }}
       >
         <div>
-          <div style={{ fontSize: 13, fontWeight: 600, color: theme.colors.text }}>AI Tutor</div>
+          <div style={{ fontSize: 13, fontWeight: 600, color: theme.colors.text }}>Tutor</div>
           <div style={{ fontSize: 12, color: theme.colors.textSecondary, marginTop: 2 }}>
             {hasUsesRemaining
               ? showHint

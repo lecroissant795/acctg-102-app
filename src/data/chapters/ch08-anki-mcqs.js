@@ -12,7 +12,7 @@ export const ankiMcqs = [
       "Liabilities due after one year"
     ],
     "answer": 0,
-    "explanation": "Long-term assets used in business operations that provide future economic benefits over more than one accounting period.",
+    "explanation": "The concept being tested (balance sheet): long-term assets used in business operations that provide future economic benefits over more than one accounting period. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "balance_sheet"
     ]
@@ -27,7 +27,7 @@ export const ankiMcqs = [
       "Property, Payroll and Expenses"
     ],
     "answer": 0,
-    "explanation": "Property, Plant and Equipment.",
+    "explanation": "The concept being tested (balance sheet): property, Plant and Equipment. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "balance_sheet"
     ]
@@ -42,7 +42,7 @@ export const ankiMcqs = [
       "Inventory and accounts receivable"
     ],
     "answer": 0,
-    "explanation": "Land and buildings.",
+    "explanation": "The concept being tested (balance sheet): land and buildings. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "balance_sheet"
     ]
@@ -57,7 +57,7 @@ export const ankiMcqs = [
       "Cash and receivables"
     ],
     "answer": 0,
-    "explanation": "Machinery, motor vehicles, office furniture, computers, and cash registers.",
+    "explanation": "The concept being tested (balance sheet): machinery, motor vehicles, office furniture, computers, and cash registers. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "balance_sheet"
     ]
@@ -72,7 +72,7 @@ export const ankiMcqs = [
       "Because they must be written off immediately"
     ],
     "answer": 0,
-    "explanation": "Because their economic benefits are consumed over time.",
+    "explanation": "The reasoning to apply (balance sheet): because their economic benefits are consumed over time. Depreciation and amortisation allocate cost over useful life. Wrong options may expense the full cost immediately, use the wrong base amount, or post to the wrong accounts.",
     "tags": [
       "balance_sheet"
     ]
@@ -84,10 +84,10 @@ export const ankiMcqs = [
       "AASB 116 / IAS 16.",
       "AASB 136 / IAS 36",
       "AASB 138",
-      "Long-term assets used in business operations that provide future economic benefits over more than one accounting period."
+      "AASB 141 / IAS 41"
     ],
     "answer": 0,
-    "explanation": "AASB 116 / IAS 16.",
+    "explanation": "The concept being tested (balance sheet): aASB 116 / IAS 16. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "balance_sheet"
     ]
@@ -102,7 +102,7 @@ export const ankiMcqs = [
       "At replacement cost"
     ],
     "answer": 0,
-    "explanation": "At cost.",
+    "explanation": "The concept being tested (balance sheet): at cost. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "balance_sheet"
     ]
@@ -117,7 +117,7 @@ export const ankiMcqs = [
       "Carrying amount minus accumulated depreciation"
     ],
     "answer": 0,
-    "explanation": "The cash or cash equivalents paid, or fair value of consideration given to acquire the asset.",
+    "explanation": "The concept being tested (balance sheet): the cash or cash equivalents paid, or fair value of consideration given to acquire the asset. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "balance_sheet"
     ]
@@ -132,7 +132,7 @@ export const ankiMcqs = [
       "Book value after depreciation"
     ],
     "answer": 0,
-    "explanation": "The amount for which an asset could be exchanged between knowledgeable, willing parties in an arm's-length transaction.",
+    "explanation": "The concept being tested (balance sheet): the amount for which an asset could be exchanged between knowledgeable, willing parties in an arm's-length transaction. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "balance_sheet"
     ]
@@ -147,7 +147,7 @@ export const ankiMcqs = [
       "Routine maintenance and repairs"
     ],
     "answer": 0,
-    "explanation": "Purchase price, legal fees, stamp duty, demolition/removal costs, and assumed property taxes.",
+    "explanation": "The concept being tested (balance sheet): purchase price, legal fees, stamp duty, demolition/removal costs, and assumed property taxes. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "balance_sheet"
     ]
@@ -162,7 +162,7 @@ export const ankiMcqs = [
       "Depreciation expense for prior years"
     ],
     "answer": 0,
-    "explanation": "Purchase price, freight, insurance during transit, and installation costs.",
+    "explanation": "The concept being tested (balance sheet): purchase price, freight, insurance during transit, and installation costs. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "balance_sheet"
     ]
@@ -177,7 +177,7 @@ export const ankiMcqs = [
       "Only under revaluation basis"
     ],
     "answer": 0,
-    "explanation": "No. Ordinary repairs are expensed immediately.",
+    "explanation": "The concept being tested (balance sheet): no. Ordinary repairs are expensed immediately. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "balance_sheet"
     ]
@@ -192,7 +192,7 @@ export const ankiMcqs = [
       "Costs are capitalised only when cash is paid"
     ],
     "answer": 0,
-    "explanation": "Costs must be necessary to acquire the asset and prepare it for intended use.",
+    "explanation": "The concept being tested (balance sheet): costs must be necessary to acquire the asset and prepare it for intended use. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "balance_sheet"
     ]
@@ -207,7 +207,7 @@ export const ankiMcqs = [
       "Units-of-production depreciation"
     ],
     "answer": 0,
-    "explanation": "The systematic allocation of the cost of a PPE asset over its useful life.",
+    "explanation": "The concept being tested (balance sheet): the systematic allocation of the cost of a PPE asset over its useful life. Depreciation and amortisation allocate cost over useful life. Wrong options may expense the full cost immediately, use the wrong base amount, or post to the wrong accounts.",
     "tags": [
       "balance_sheet"
     ]
@@ -219,10 +219,10 @@ export const ankiMcqs = [
       "Cost minus accumulated depreciation.",
       "(Cost − Residual Value) ÷ Useful Life",
       "(Cost − Residual Value) ÷ Total Estimated Units",
-      "Long-term assets used in business operations that provide future economic benefits over more than one accounting period."
+      "Carrying Amount − Recoverable Amount"
     ],
     "answer": 0,
-    "explanation": "Cost minus accumulated depreciation.",
+    "explanation": "The concept being tested (balance sheet): cost minus accumulated depreciation. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "balance_sheet"
     ]
@@ -237,7 +237,7 @@ export const ankiMcqs = [
       "Revaluation, impairment, and disposal only"
     ],
     "answer": 0,
-    "explanation": "Usage, wear and tear, obsolescence, and legal life.",
+    "explanation": "The concept being tested (balance sheet): usage, wear and tear, obsolescence, and legal life. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "balance_sheet"
     ]
@@ -252,7 +252,7 @@ export const ankiMcqs = [
       "Net sales, average assets, and turnover"
     ],
     "answer": 0,
-    "explanation": "Cost, useful life, and residual value.",
+    "explanation": "The calculation rests on (balance sheet): cost, useful life, and residual value. Depreciation and amortisation allocate cost over useful life. Wrong options may expense the full cost immediately, use the wrong base amount, or post to the wrong accounts.",
     "tags": [
       "balance_sheet"
     ]
@@ -267,7 +267,7 @@ export const ankiMcqs = [
       "Fair value less costs to sell"
     ],
     "answer": 0,
-    "explanation": "The estimated value of an asset at the end of its useful life.",
+    "explanation": "The concept being tested (balance sheet): the estimated value of an asset at the end of its useful life. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "balance_sheet"
     ]
@@ -282,7 +282,7 @@ export const ankiMcqs = [
       "Cost minus accumulated depreciation"
     ],
     "answer": 0,
-    "explanation": "Cost minus residual value.",
+    "explanation": "The concept being tested (balance sheet): cost minus residual value. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "balance_sheet"
     ]
@@ -294,10 +294,10 @@ export const ankiMcqs = [
       "Dr Depreciation Expense / Cr Accumulated Depreciation.",
       "Dr Amortisation Expense / Cr Accumulated Amortisation",
       "Dr Impairment Loss / Cr Accumulated Impairment Loss",
-      "Long-term assets used in business operations that provide future economic benefits over more than one accounting period."
+      "Dr Asset / Cr Revaluation Surplus"
     ],
     "answer": 0,
-    "explanation": "Dr Depreciation Expense / Cr Accumulated Depreciation.",
+    "explanation": "Account analysis (balance sheet, debit credit): dr Depreciation Expense / Cr Accumulated Depreciation. Work through which accounts change and whether they have normal debit or credit balances. Distractors often swap sides, use the wrong account class, or omit part of the entry.",
     "tags": [
       "balance_sheet",
       "debit_credit"
@@ -310,10 +310,10 @@ export const ankiMcqs = [
       "(Cost − Residual Value) ÷ Useful Life.",
       "(Cost − Residual Value) ÷ Total Estimated Units",
       "Cost minus accumulated depreciation",
-      "Long-term assets used in business operations that provide future economic benefits over more than one accounting period."
+      "Carrying Amount − Recoverable Amount"
     ],
     "answer": 0,
-    "explanation": "(Cost − Residual Value) ÷ Useful Life.",
+    "explanation": "The concept being tested (balance sheet): (Cost − Residual Value) ÷ Useful Life. Depreciation and amortisation allocate cost over useful life. Wrong options may expense the full cost immediately, use the wrong base amount, or post to the wrong accounts.",
     "tags": [
       "balance_sheet"
     ]
@@ -328,7 +328,7 @@ export const ankiMcqs = [
       "Benefits never decline"
     ],
     "answer": 0,
-    "explanation": "Asset benefits are consumed evenly over time.",
+    "explanation": "The concept being tested (balance sheet): asset benefits are consumed evenly over time. Depreciation and amortisation allocate cost over useful life. Wrong options may expense the full cost immediately, use the wrong base amount, or post to the wrong accounts.",
     "tags": [
       "balance_sheet"
     ]
@@ -340,10 +340,10 @@ export const ankiMcqs = [
       "Yes.",
       "No",
       "Only under revaluation basis",
-      "Long-term assets used in business operations that provide future economic benefits over more than one accounting period."
+      "Only for intangible assets"
     ],
     "answer": 0,
-    "explanation": "Yes.",
+    "explanation": "The concept being tested (balance sheet): yes. Depreciation and amortisation allocate cost over useful life. Wrong options may expense the full cost immediately, use the wrong base amount, or post to the wrong accounts.",
     "tags": [
       "balance_sheet"
     ]
@@ -358,7 +358,7 @@ export const ankiMcqs = [
       "$18,000"
     ],
     "answer": 0,
-    "explanation": "$3,000. Calculation: ($20,000 − $2,000) ÷ 6.",
+    "explanation": "The calculation rests on (balance sheet): $3,000. Calculation: ($20,000 − $2,000) ÷ 6. Depreciation and amortisation allocate cost over useful life. Wrong options may expense the full cost immediately, use the wrong base amount, or post to the wrong accounts.",
     "tags": [
       "balance_sheet"
     ]
@@ -373,7 +373,7 @@ export const ankiMcqs = [
       "No depreciation in the first year"
     ],
     "answer": 0,
-    "explanation": "Higher depreciation expense in early years and lower expense later.",
+    "explanation": "The concept being tested (balance sheet): higher depreciation expense in early years and lower expense later. Depreciation and amortisation allocate cost over useful life. Wrong options may expense the full cost immediately, use the wrong base amount, or post to the wrong accounts.",
     "tags": [
       "balance_sheet"
     ]
@@ -388,7 +388,7 @@ export const ankiMcqs = [
       "Proceeds on disposal"
     ],
     "answer": 0,
-    "explanation": "Carrying amount at the beginning of the year.",
+    "explanation": "The concept being tested (balance sheet): carrying amount at the beginning of the year. Depreciation and amortisation allocate cost over useful life. Wrong options may expense the full cost immediately, use the wrong base amount, or post to the wrong accounts.",
     "tags": [
       "balance_sheet"
     ]
@@ -403,7 +403,7 @@ export const ankiMcqs = [
       "It produces equal expense each year"
     ],
     "answer": 0,
-    "explanation": "Some assets generate greater benefits in early years.",
+    "explanation": "The reasoning to apply (balance sheet): some assets generate greater benefits in early years. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "balance_sheet"
     ]
@@ -418,7 +418,7 @@ export const ankiMcqs = [
       "It stays constant until disposal"
     ],
     "answer": 0,
-    "explanation": "It decreases more rapidly in early years.",
+    "explanation": "The concept being tested (balance sheet): it decreases more rapidly in early years. Depreciation and amortisation allocate cost over useful life. Wrong options may expense the full cost immediately, use the wrong base amount, or post to the wrong accounts.",
     "tags": [
       "balance_sheet"
     ]
@@ -430,10 +430,10 @@ export const ankiMcqs = [
       "(Cost − Residual Value) ÷ Total Estimated Units.",
       "(Cost − Residual Value) ÷ Useful Life",
       "Cost minus accumulated depreciation",
-      "Long-term assets used in business operations that provide future economic benefits over more than one accounting period."
+      "Carrying Amount − Recoverable Amount"
     ],
     "answer": 0,
-    "explanation": "(Cost − Residual Value) ÷ Total Estimated Units.",
+    "explanation": "The concept being tested (balance sheet): (Cost − Residual Value) ÷ Total Estimated Units. Depreciation and amortisation allocate cost over useful life. Wrong options may expense the full cost immediately, use the wrong base amount, or post to the wrong accounts.",
     "tags": [
       "balance_sheet"
     ]
@@ -448,7 +448,7 @@ export const ankiMcqs = [
       "Market value at balance date"
     ],
     "answer": 0,
-    "explanation": "Actual usage of the asset.",
+    "explanation": "The concept being tested (balance sheet): actual usage of the asset. Depreciation and amortisation allocate cost over useful life. Wrong options may expense the full cost immediately, use the wrong base amount, or post to the wrong accounts.",
     "tags": [
       "balance_sheet"
     ]
@@ -463,7 +463,7 @@ export const ankiMcqs = [
       "Because it is required for all PPE"
     ],
     "answer": 0,
-    "explanation": "Because depreciation depends on actual activity or output.",
+    "explanation": "The reasoning to apply (balance sheet): because depreciation depends on actual activity or output. Depreciation and amortisation allocate cost over useful life. Wrong options may expense the full cost immediately, use the wrong base amount, or post to the wrong accounts.",
     "tags": [
       "balance_sheet"
     ]
@@ -478,7 +478,7 @@ export const ankiMcqs = [
       "Cash and receivables"
     ],
     "answer": 0,
-    "explanation": "Vehicles and machinery where usage can be measured.",
+    "explanation": "The concept being tested (balance sheet): vehicles and machinery where usage can be measured. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "balance_sheet"
     ]
@@ -493,7 +493,7 @@ export const ankiMcqs = [
       "Only under revaluation basis"
     ],
     "answer": 0,
-    "explanation": "Yes. They differ only in timing of expense recognition.",
+    "explanation": "The concept being tested (balance sheet): yes. They differ only in timing of expense recognition. Depreciation and amortisation allocate cost over useful life. Wrong options may expense the full cost immediately, use the wrong base amount, or post to the wrong accounts.",
     "tags": [
       "balance_sheet"
     ]
@@ -508,7 +508,7 @@ export const ankiMcqs = [
       "Units-of-production depreciation"
     ],
     "answer": 0,
-    "explanation": "Diminishing-balance.",
+    "explanation": "The concept being tested (balance sheet): diminishing-balance. Depreciation and amortisation allocate cost over useful life. Wrong options may expense the full cost immediately, use the wrong base amount, or post to the wrong accounts.",
     "tags": [
       "balance_sheet"
     ]
@@ -523,7 +523,7 @@ export const ankiMcqs = [
       "Units-of-production depreciation"
     ],
     "answer": 0,
-    "explanation": "Straight-line.",
+    "explanation": "The concept being tested (balance sheet): straight-line. Depreciation and amortisation allocate cost over useful life. Wrong options may expense the full cost immediately, use the wrong base amount, or post to the wrong accounts.",
     "tags": [
       "balance_sheet"
     ]
@@ -538,7 +538,7 @@ export const ankiMcqs = [
       "Units-of-production depreciation"
     ],
     "answer": 0,
-    "explanation": "Units-of-production.",
+    "explanation": "The concept being tested (balance sheet): units-of-production. Depreciation and amortisation allocate cost over useful life. Wrong options may expense the full cost immediately, use the wrong base amount, or post to the wrong accounts.",
     "tags": [
       "balance_sheet"
     ]
@@ -553,7 +553,7 @@ export const ankiMcqs = [
       "Purchase price only"
     ],
     "answer": 0,
-    "explanation": "Expenditures that maintain normal operating efficiency.",
+    "explanation": "The concept being tested (balance sheet): expenditures that maintain normal operating efficiency. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "balance_sheet"
     ]
@@ -568,7 +568,7 @@ export const ankiMcqs = [
       "Purchase price only"
     ],
     "answer": 0,
-    "explanation": "Expensed immediately.",
+    "explanation": "The concept being tested (balance sheet): expensed immediately. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "balance_sheet"
     ]
@@ -583,7 +583,7 @@ export const ankiMcqs = [
       "Purchase price only"
     ],
     "answer": 0,
-    "explanation": "Expenditures that increase operating efficiency or useful life.",
+    "explanation": "The concept being tested (balance sheet): expenditures that increase operating efficiency or useful life. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "balance_sheet"
     ]
@@ -598,7 +598,7 @@ export const ankiMcqs = [
       "Purchase price only"
     ],
     "answer": 0,
-    "explanation": "Capitalised and depreciated over remaining useful life.",
+    "explanation": "The concept being tested (balance sheet): capitalised and depreciated over remaining useful life. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "balance_sheet"
     ]
@@ -610,10 +610,10 @@ export const ankiMcqs = [
       "AASB 136 / IAS 36.",
       "AASB 116 / IAS 16",
       "AASB 138",
-      "Long-term assets used in business operations that provide future economic benefits over more than one accounting period."
+      "AASB 141 / IAS 41"
     ],
     "answer": 0,
-    "explanation": "AASB 136 / IAS 36.",
+    "explanation": "The concept being tested (balance sheet): aASB 136 / IAS 36. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "balance_sheet"
     ]
@@ -628,7 +628,7 @@ export const ankiMcqs = [
       "Cost minus accumulated depreciation"
     ],
     "answer": 0,
-    "explanation": "The amount by which carrying amount exceeds recoverable amount.",
+    "explanation": "The concept being tested (balance sheet): the amount by which carrying amount exceeds recoverable amount. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "balance_sheet"
     ]
@@ -643,7 +643,7 @@ export const ankiMcqs = [
       "Cost minus accumulated depreciation"
     ],
     "answer": 0,
-    "explanation": "The higher of fair value less costs to sell and value in use.",
+    "explanation": "The concept being tested (balance sheet): the higher of fair value less costs to sell and value in use. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "balance_sheet"
     ]
@@ -658,7 +658,7 @@ export const ankiMcqs = [
       "Net realisable value of inventory"
     ],
     "answer": 0,
-    "explanation": "Present value of future cash flows expected from using the asset.",
+    "explanation": "The concept being tested (balance sheet): present value of future cash flows expected from using the asset. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "balance_sheet"
     ]
@@ -673,7 +673,7 @@ export const ankiMcqs = [
       "A division that only holds inventory"
     ],
     "answer": 0,
-    "explanation": "The smallest identifiable group of assets generating cash inflows.",
+    "explanation": "The concept being tested (balance sheet): the smallest identifiable group of assets generating cash inflows. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "balance_sheet"
     ]
@@ -688,7 +688,7 @@ export const ankiMcqs = [
       "Only when an asset is disposed"
     ],
     "answer": 0,
-    "explanation": "When recoverable amount is less than carrying amount.",
+    "explanation": "Timing is the key idea (balance sheet): when recoverable amount is less than carrying amount. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "balance_sheet"
     ]
@@ -700,10 +700,10 @@ export const ankiMcqs = [
       "Dr Impairment Loss / Cr Accumulated Impairment Loss.",
       "Dr Depreciation Expense / Cr Accumulated Depreciation",
       "Dr Amortisation Expense / Cr Accumulated Amortisation",
-      "Long-term assets used in business operations that provide future economic benefits over more than one accounting period."
+      "Dr Asset / Cr Revaluation Surplus"
     ],
     "answer": 0,
-    "explanation": "Dr Impairment Loss / Cr Accumulated Impairment Loss.",
+    "explanation": "Account analysis (balance sheet, debit credit): dr Impairment Loss / Cr Accumulated Impairment Loss. Work through which accounts change and whether they have normal debit or credit balances. Distractors often swap sides, use the wrong account class, or omit part of the entry.",
     "tags": [
       "balance_sheet",
       "debit_credit"
@@ -719,7 +719,7 @@ export const ankiMcqs = [
       "Only under revaluation basis"
     ],
     "answer": 0,
-    "explanation": "Yes, but carrying amount cannot exceed what it would have been without impairment.",
+    "explanation": "The concept being tested (balance sheet): yes, but carrying amount cannot exceed what it would have been without impairment. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "balance_sheet"
     ]
@@ -734,7 +734,7 @@ export const ankiMcqs = [
       "Recording ordinary repairs as capital expenditure"
     ],
     "answer": 0,
-    "explanation": "Reassessment of an asset to fair value.",
+    "explanation": "The concept being tested (balance sheet): reassessment of an asset to fair value. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "balance_sheet"
     ]
@@ -749,7 +749,7 @@ export const ankiMcqs = [
       "At replacement cost each period"
     ],
     "answer": 0,
-    "explanation": "Either on a cost basis or revaluation basis.",
+    "explanation": "The concept being tested (balance sheet): either on a cost basis or revaluation basis. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "balance_sheet"
     ]
@@ -764,7 +764,7 @@ export const ankiMcqs = [
       "Reverse all prior impairment losses automatically"
     ],
     "answer": 0,
-    "explanation": "Record depreciation up to the revaluation date.",
+    "explanation": "The concept being tested (balance sheet): record depreciation up to the revaluation date. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "balance_sheet"
     ]
@@ -779,7 +779,7 @@ export const ankiMcqs = [
       "Dr Impairment Loss / Cr Accumulated Impairment Loss"
     ],
     "answer": 0,
-    "explanation": "Dr Asset / Cr Revaluation Surplus.",
+    "explanation": "The concept being tested (balance sheet, debit credit, equity): dr Asset / Cr Revaluation Surplus. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "balance_sheet",
       "debit_credit",
@@ -796,7 +796,7 @@ export const ankiMcqs = [
       "Accumulated depreciation"
     ],
     "answer": 0,
-    "explanation": "Equity.",
+    "explanation": "The concept being tested (balance sheet, equity): equity. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "balance_sheet",
       "equity"
@@ -812,7 +812,7 @@ export const ankiMcqs = [
       "Dr Impairment Loss / Cr Accumulated Impairment Loss"
     ],
     "answer": 0,
-    "explanation": "Dr Revaluation Expense / Cr Asset.",
+    "explanation": "The concept being tested (balance sheet, debit credit): dr Revaluation Expense / Cr Asset. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "balance_sheet",
       "debit_credit"
@@ -828,7 +828,7 @@ export const ankiMcqs = [
       "Asset is written off completely"
     ],
     "answer": 0,
-    "explanation": "Decrease first reduces Revaluation Surplus before recognising expense.",
+    "explanation": "The concept being tested (balance sheet, equity): decrease first reduces Revaluation Surplus before recognising expense. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "balance_sheet",
       "equity"
@@ -844,7 +844,7 @@ export const ankiMcqs = [
       "Cost minus accumulated depreciation"
     ],
     "answer": 0,
-    "explanation": "Proceeds minus carrying amount.",
+    "explanation": "The concept being tested (balance sheet, income statement): proceeds minus carrying amount. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "balance_sheet",
       "income_statement"
@@ -860,7 +860,7 @@ export const ankiMcqs = [
       "Record impairment loss only"
     ],
     "answer": 0,
-    "explanation": "Record depreciation up to disposal date.",
+    "explanation": "The concept being tested (balance sheet): record depreciation up to disposal date. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "balance_sheet"
     ]
@@ -875,7 +875,7 @@ export const ankiMcqs = [
       "Revaluation surplus"
     ],
     "answer": 0,
-    "explanation": "Gain on disposal.",
+    "explanation": "The concept being tested (balance sheet, income statement): gain on disposal. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "balance_sheet",
       "income_statement"
@@ -891,7 +891,7 @@ export const ankiMcqs = [
       "Amortisation expense"
     ],
     "answer": 0,
-    "explanation": "Loss on disposal.",
+    "explanation": "The concept being tested (balance sheet, income statement): loss on disposal. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "balance_sheet",
       "income_statement"
@@ -907,7 +907,7 @@ export const ankiMcqs = [
       "Dr Impairment Loss / Cr Accumulated Impairment Loss"
     ],
     "answer": 0,
-    "explanation": "Dr Cash; Dr Accumulated Depreciation; Cr Asset; Cr Gain on Disposal.",
+    "explanation": "Account analysis (balance sheet, debit credit): dr Cash; Dr Accumulated Depreciation; Cr Asset; Cr Gain on Disposal. Work through which accounts change and whether they have normal debit or credit balances. Distractors often swap sides, use the wrong account class, or omit part of the entry.",
     "tags": [
       "balance_sheet",
       "debit_credit"
@@ -923,7 +923,7 @@ export const ankiMcqs = [
       "Dr Impairment Loss / Cr Accumulated Impairment Loss"
     ],
     "answer": 0,
-    "explanation": "Dr Cash; Dr Accumulated Depreciation; Dr Loss on Disposal; Cr Asset.",
+    "explanation": "Account analysis (balance sheet, debit credit): dr Cash; Dr Accumulated Depreciation; Dr Loss on Disposal; Cr Asset. Work through which accounts change and whether they have normal debit or credit balances. Distractors often swap sides, use the wrong account class, or omit part of the entry.",
     "tags": [
       "balance_sheet",
       "debit_credit"
@@ -939,7 +939,7 @@ export const ankiMcqs = [
       "The statement of cash flows"
     ],
     "answer": 0,
-    "explanation": "A detailed record of all non-current assets owned by the business.",
+    "explanation": "The concept being tested (balance sheet): a detailed record of all non-current assets owned by the business. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "balance_sheet"
     ]
@@ -954,7 +954,7 @@ export const ankiMcqs = [
       "GST collected and paid"
     ],
     "answer": 0,
-    "explanation": "Cost, depreciation, carrying amount, location, condition, and disposal details.",
+    "explanation": "The concept being tested (balance sheet): cost, depreciation, carrying amount, location, condition, and disposal details. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "balance_sheet"
     ]
@@ -969,7 +969,7 @@ export const ankiMcqs = [
       "It is required only for intangible assets"
     ],
     "answer": 0,
-    "explanation": "It supports internal control and asset tracking.",
+    "explanation": "The reasoning to apply (balance sheet): it supports internal control and asset tracking. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "balance_sheet"
     ]
@@ -984,7 +984,7 @@ export const ankiMcqs = [
       "Inventory held for resale"
     ],
     "answer": 0,
-    "explanation": "Identifiable non-monetary assets without physical substance.",
+    "explanation": "The concept being tested (balance sheet): identifiable non-monetary assets without physical substance. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "balance_sheet"
     ]
@@ -996,10 +996,10 @@ export const ankiMcqs = [
       "AASB 138.",
       "AASB 116 / IAS 16",
       "AASB 136 / IAS 36",
-      "Long-term assets used in business operations that provide future economic benefits over more than one accounting period."
+      "AASB 141 / IAS 41"
     ],
     "answer": 0,
-    "explanation": "AASB 138.",
+    "explanation": "The concept being tested (balance sheet): aASB 138. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "balance_sheet"
     ]
@@ -1014,7 +1014,7 @@ export const ankiMcqs = [
       "Depletion of natural resources only"
     ],
     "answer": 0,
-    "explanation": "Allocation of the cost of an intangible asset over its useful life.",
+    "explanation": "The concept being tested (balance sheet): allocation of the cost of an intangible asset over its useful life. Depreciation and amortisation allocate cost over useful life. Wrong options may expense the full cost immediately, use the wrong base amount, or post to the wrong accounts.",
     "tags": [
       "balance_sheet"
     ]
@@ -1026,10 +1026,10 @@ export const ankiMcqs = [
       "Dr Amortisation Expense / Cr Accumulated Amortisation.",
       "Dr Depreciation Expense / Cr Accumulated Depreciation",
       "Dr Impairment Loss / Cr Accumulated Impairment Loss",
-      "Long-term assets used in business operations that provide future economic benefits over more than one accounting period."
+      "Dr Asset / Cr Revaluation Surplus"
     ],
     "answer": 0,
-    "explanation": "Dr Amortisation Expense / Cr Accumulated Amortisation.",
+    "explanation": "Account analysis (balance sheet, debit credit): dr Amortisation Expense / Cr Accumulated Amortisation. Work through which accounts change and whether they have normal debit or credit balances. Distractors often swap sides, use the wrong account class, or omit part of the entry.",
     "tags": [
       "balance_sheet",
       "debit_credit"
@@ -1045,7 +1045,7 @@ export const ankiMcqs = [
       "There is no difference under AASB 138"
     ],
     "answer": 0,
-    "explanation": "Identifiable intangibles can be separated or sold; unidentifiable intangibles cannot.",
+    "explanation": "The concept being tested (balance sheet): identifiable intangibles can be separated or sold; unidentifiable intangibles cannot. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "balance_sheet"
     ]
@@ -1060,7 +1060,7 @@ export const ankiMcqs = [
       "Trademarks and brand names"
     ],
     "answer": 0,
-    "explanation": "Future benefits from unidentifiable assets acquired in a business acquisition.",
+    "explanation": "The concept being tested (balance sheet): future benefits from unidentifiable assets acquired in a business acquisition. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "balance_sheet"
     ]
@@ -1072,10 +1072,10 @@ export const ankiMcqs = [
       "No.",
       "Yes",
       "Only under revaluation basis",
-      "Long-term assets used in business operations that provide future economic benefits over more than one accounting period."
+      "Only for intangible assets"
     ],
     "answer": 0,
-    "explanation": "No.",
+    "explanation": "The concept being tested (balance sheet): no. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "balance_sheet"
     ]
@@ -1090,7 +1090,7 @@ export const ankiMcqs = [
       "Trademarks and brand names"
     ],
     "answer": 0,
-    "explanation": "Exclusive right to manufacture or sell an invention.",
+    "explanation": "The concept being tested (balance sheet): exclusive right to manufacture or sell an invention. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "balance_sheet"
     ]
@@ -1105,7 +1105,7 @@ export const ankiMcqs = [
       "Never amortised under any circumstances"
     ],
     "answer": 0,
-    "explanation": "Shorter of legal life or useful life.",
+    "explanation": "The concept being tested (balance sheet): shorter of legal life or useful life. Depreciation and amortisation allocate cost over useful life. Wrong options may expense the full cost immediately, use the wrong base amount, or post to the wrong accounts.",
     "tags": [
       "balance_sheet"
     ]
@@ -1120,7 +1120,7 @@ export const ankiMcqs = [
       "Trademarks and brand names"
     ],
     "answer": 0,
-    "explanation": "Exclusive rights to reproduce and sell artistic or published works.",
+    "explanation": "The concept being tested (balance sheet): exclusive rights to reproduce and sell artistic or published works. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "balance_sheet"
     ]
@@ -1135,7 +1135,7 @@ export const ankiMcqs = [
       "Trademarks and brand names"
     ],
     "answer": 0,
-    "explanation": "Words, phrases, or symbols identifying products or businesses.",
+    "explanation": "The concept being tested (balance sheet): words, phrases, or symbols identifying products or businesses. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "balance_sheet"
     ]
@@ -1150,7 +1150,7 @@ export const ankiMcqs = [
       "Trademarks and brand names"
     ],
     "answer": 0,
-    "explanation": "Contractual rights granted to another party.",
+    "explanation": "The concept being tested (balance sheet): contractual rights granted to another party. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "balance_sheet"
     ]
@@ -1165,7 +1165,7 @@ export const ankiMcqs = [
       "Freight-in on inventory"
     ],
     "answer": 0,
-    "explanation": "Expenditures related to developing new products or processes.",
+    "explanation": "The concept being tested (balance sheet): expenditures related to developing new products or processes. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "balance_sheet"
     ]
@@ -1180,7 +1180,7 @@ export const ankiMcqs = [
       "AASB 138"
     ],
     "answer": 0,
-    "explanation": "AASB 141 / IAS 41.",
+    "explanation": "The concept being tested (balance sheet): aASB 141 / IAS 41. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "balance_sheet"
     ]
@@ -1195,7 +1195,7 @@ export const ankiMcqs = [
       "Patents and copyrights"
     ],
     "answer": 0,
-    "explanation": "A living animal or plant.",
+    "explanation": "The concept being tested (balance sheet): a living animal or plant. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "balance_sheet"
     ]
@@ -1210,7 +1210,7 @@ export const ankiMcqs = [
       "Recording cash receipts from customers"
     ],
     "answer": 0,
-    "explanation": "Management of biological transformation for sale or production.",
+    "explanation": "The concept being tested (balance sheet): management of biological transformation for sale or production. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "balance_sheet"
     ]
@@ -1225,7 +1225,7 @@ export const ankiMcqs = [
       "They are reclassified as PPE"
     ],
     "answer": 0,
-    "explanation": "They become agricultural produce and are treated as inventory.",
+    "explanation": "The concept being tested (balance sheet, inventory): they become agricultural produce and are treated as inventory. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "balance_sheet",
       "inventory"
@@ -1241,7 +1241,7 @@ export const ankiMcqs = [
       "Must be measured only at historical cost"
     ],
     "answer": 0,
-    "explanation": "Future economic benefits probable and fair value/cost measurable reliably.",
+    "explanation": "The concept being tested (balance sheet): future economic benefits probable and fair value/cost measurable reliably. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "balance_sheet"
     ]
@@ -1256,7 +1256,7 @@ export const ankiMcqs = [
       "Accounts receivable and cash"
     ],
     "answer": 0,
-    "explanation": "Assets such as minerals, oil, gas, and timber extracted from the earth.",
+    "explanation": "The concept being tested (balance sheet): assets such as minerals, oil, gas, and timber extracted from the earth. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "balance_sheet"
     ]
@@ -1271,7 +1271,7 @@ export const ankiMcqs = [
       "Writing down inventory to NRV"
     ],
     "answer": 0,
-    "explanation": "Allocation of natural resource cost over extraction.",
+    "explanation": "The concept being tested (balance sheet): allocation of natural resource cost over extraction. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "balance_sheet"
     ]
@@ -1286,7 +1286,7 @@ export const ankiMcqs = [
       "Cost minus accumulated depreciation"
     ],
     "answer": 0,
-    "explanation": "Cost minus residual value.",
+    "explanation": "The concept being tested (balance sheet): cost minus residual value. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "balance_sheet"
     ]
@@ -1301,7 +1301,7 @@ export const ankiMcqs = [
       "Cost minus accumulated depreciation"
     ],
     "answer": 0,
-    "explanation": "Depletable Cost ÷ Total Estimated Production.",
+    "explanation": "The concept being tested (balance sheet): depletable Cost ÷ Total Estimated Production. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "balance_sheet"
     ]
@@ -1316,7 +1316,7 @@ export const ankiMcqs = [
       "Net sales ÷ average total assets"
     ],
     "answer": 0,
-    "explanation": "Depletion rate × units extracted.",
+    "explanation": "The calculation rests on (balance sheet): depletion rate × units extracted. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "balance_sheet"
     ]
@@ -1331,7 +1331,7 @@ export const ankiMcqs = [
       "Dr Impairment Loss / Cr Accumulated Impairment Loss"
     ],
     "answer": 0,
-    "explanation": "Dr Inventory / Cr Accumulated Depletion.",
+    "explanation": "Account analysis (balance sheet, debit credit): dr Inventory / Cr Accumulated Depletion. Work through which accounts change and whether they have normal debit or credit balances. Distractors often swap sides, use the wrong account class, or omit part of the entry.",
     "tags": [
       "balance_sheet",
       "debit_credit"
@@ -1347,7 +1347,7 @@ export const ankiMcqs = [
       "Only as a single line with no breakdown"
     ],
     "answer": 0,
-    "explanation": "As separate categories such as PPE and Intangibles.",
+    "explanation": "The concept being tested (balance sheet, financial statements): as separate categories such as PPE and Intangibles. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "balance_sheet",
       "financial_statements"
@@ -1363,7 +1363,7 @@ export const ankiMcqs = [
       "Customer names for all receivables"
     ],
     "answer": 0,
-    "explanation": "Accounting policies and category breakdowns.",
+    "explanation": "The concept being tested (balance sheet, financial statements): accounting policies and category breakdowns. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "balance_sheet",
       "financial_statements"
@@ -1379,7 +1379,7 @@ export const ankiMcqs = [
       "Cost minus accumulated depreciation"
     ],
     "answer": 0,
-    "explanation": "How efficiently assets generate revenue.",
+    "explanation": "The concept being tested (financial statements): how efficiently assets generate revenue. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "financial_statements"
     ]
@@ -1394,7 +1394,7 @@ export const ankiMcqs = [
       "Cost minus accumulated depreciation"
     ],
     "answer": 0,
-    "explanation": "Net Sales ÷ Average Total Assets.",
+    "explanation": "The concept being tested (financial statements): net Sales ÷ Average Total Assets. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "financial_statements"
     ]
@@ -1409,7 +1409,7 @@ export const ankiMcqs = [
       "Impairment loss amount"
     ],
     "answer": 0,
-    "explanation": "Expected lifespan of the asset base.",
+    "explanation": "The concept being tested (financial statements): expected lifespan of the asset base. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "financial_statements"
     ]
@@ -1424,7 +1424,7 @@ export const ankiMcqs = [
       "Cost minus accumulated depreciation"
     ],
     "answer": 0,
-    "explanation": "Average Cost of PPE ÷ Depreciation Expense.",
+    "explanation": "The concept being tested (financial statements): average Cost of PPE ÷ Depreciation Expense. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "financial_statements"
     ]
@@ -1439,7 +1439,7 @@ export const ankiMcqs = [
       "Proceeds from disposal"
     ],
     "answer": 0,
-    "explanation": "How old the asset base is.",
+    "explanation": "The concept being tested (financial statements): how old the asset base is. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "financial_statements"
     ]
@@ -1454,7 +1454,7 @@ export const ankiMcqs = [
       "Cost minus accumulated depreciation"
     ],
     "answer": 0,
-    "explanation": "Accumulated Depreciation ÷ Depreciation Expense.",
+    "explanation": "The concept being tested (financial statements): accumulated Depreciation ÷ Depreciation Expense. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "financial_statements"
     ]
@@ -1469,7 +1469,7 @@ export const ankiMcqs = [
       "Treating depletion as time-based"
     ],
     "answer": 0,
-    "explanation": "Forgetting to subtract residual value before calculating depreciation.",
+    "explanation": "The concept being tested (error correction): forgetting to subtract residual value before calculating depreciation. Depreciation and amortisation allocate cost over useful life. Wrong options may expense the full cost immediately, use the wrong base amount, or post to the wrong accounts.",
     "tags": [
       "error_correction"
     ]
@@ -1484,7 +1484,7 @@ export const ankiMcqs = [
       "Recording disposal before updating depreciation"
     ],
     "answer": 0,
-    "explanation": "Using market value instead of cost minus accumulated depreciation.",
+    "explanation": "The concept being tested (error correction): using market value instead of cost minus accumulated depreciation. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "error_correction"
     ]
@@ -1499,7 +1499,7 @@ export const ankiMcqs = [
       "Recording impairment as revaluation surplus"
     ],
     "answer": 0,
-    "explanation": "Using the lower instead of higher amount when calculating recoverable amount.",
+    "explanation": "The concept being tested (error correction): using the lower instead of higher amount when calculating recoverable amount. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "error_correction"
     ]
@@ -1514,7 +1514,7 @@ export const ankiMcqs = [
       "Using proceeds minus original cost only"
     ],
     "answer": 0,
-    "explanation": "Forgetting to update depreciation before calculating gain/loss.",
+    "explanation": "The concept being tested (error correction): forgetting to update depreciation before calculating gain/loss. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "error_correction"
     ]
@@ -1529,7 +1529,7 @@ export const ankiMcqs = [
       "Writing off biological assets on harvest"
     ],
     "answer": 0,
-    "explanation": "Recording revaluation increments in profit instead of equity.",
+    "explanation": "The concept being tested (error correction): recording revaluation increments in profit instead of equity. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "error_correction"
     ]
@@ -1544,7 +1544,7 @@ export const ankiMcqs = [
       "Recording amortisation as a liability"
     ],
     "answer": 0,
-    "explanation": "Treating amortisation differently from depreciation conceptually.",
+    "explanation": "The concept being tested (error correction): treating amortisation differently from depreciation conceptually. Depreciation and amortisation allocate cost over useful life. Wrong options may expense the full cost immediately, use the wrong base amount, or post to the wrong accounts.",
     "tags": [
       "error_correction"
     ]
@@ -1559,7 +1559,7 @@ export const ankiMcqs = [
       "Expensing all R&D immediately"
     ],
     "answer": 0,
-    "explanation": "Forgetting depletion is based on extraction, not time.",
+    "explanation": "The concept being tested (error correction): forgetting depletion is based on extraction, not time. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "error_correction"
     ]
@@ -1571,10 +1571,10 @@ export const ankiMcqs = [
       "(Cost − Residual Value) ÷ Useful Life.",
       "(Cost − Residual Value) ÷ Total Estimated Units",
       "Cost minus accumulated depreciation",
-      "Long-term assets used in business operations that provide future economic benefits over more than one accounting period."
+      "Carrying Amount − Recoverable Amount"
     ],
     "answer": 0,
-    "explanation": "(Cost − Residual Value) ÷ Useful Life.",
+    "explanation": "The concept being tested (balance sheet): (Cost − Residual Value) ÷ Useful Life. Depreciation and amortisation allocate cost over useful life. Wrong options may expense the full cost immediately, use the wrong base amount, or post to the wrong accounts.",
     "tags": [
       "balance_sheet"
     ]
@@ -1589,7 +1589,7 @@ export const ankiMcqs = [
       "Proceeds ÷ Carrying Amount"
     ],
     "answer": 0,
-    "explanation": "1 − (Residual Value ÷ Cost)^(1/n).",
+    "explanation": "The concept being tested (balance sheet): 1 − (Residual Value ÷ Cost)^(1/n). Depreciation and amortisation allocate cost over useful life. Wrong options may expense the full cost immediately, use the wrong base amount, or post to the wrong accounts.",
     "tags": [
       "balance_sheet"
     ]
@@ -1601,10 +1601,10 @@ export const ankiMcqs = [
       "(Cost − Residual Value) ÷ Total Estimated Units.",
       "(Cost − Residual Value) ÷ Useful Life",
       "Cost minus accumulated depreciation",
-      "Long-term assets used in business operations that provide future economic benefits over more than one accounting period."
+      "Carrying Amount − Recoverable Amount"
     ],
     "answer": 0,
-    "explanation": "(Cost − Residual Value) ÷ Total Estimated Units.",
+    "explanation": "The concept being tested (balance sheet): (Cost − Residual Value) ÷ Total Estimated Units. Depreciation and amortisation allocate cost over useful life. Wrong options may expense the full cost immediately, use the wrong base amount, or post to the wrong accounts.",
     "tags": [
       "balance_sheet"
     ]
@@ -1619,7 +1619,7 @@ export const ankiMcqs = [
       "Cost minus accumulated depreciation"
     ],
     "answer": 0,
-    "explanation": "Carrying Amount − Recoverable Amount.",
+    "explanation": "The concept being tested (balance sheet): carrying Amount − Recoverable Amount. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "balance_sheet"
     ]
@@ -1634,7 +1634,7 @@ export const ankiMcqs = [
       "Cost minus accumulated depreciation"
     ],
     "answer": 0,
-    "explanation": "Higher of fair value less costs to sell or value in use.",
+    "explanation": "The concept being tested (balance sheet): higher of fair value less costs to sell or value in use. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "balance_sheet"
     ]
@@ -1649,7 +1649,7 @@ export const ankiMcqs = [
       "Cost minus accumulated depreciation"
     ],
     "answer": 0,
-    "explanation": "Proceeds − Carrying Amount.",
+    "explanation": "The concept being tested (balance sheet, income statement): proceeds − Carrying Amount. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "balance_sheet",
       "income_statement"
@@ -1665,7 +1665,7 @@ export const ankiMcqs = [
       "Cost minus accumulated depreciation"
     ],
     "answer": 0,
-    "explanation": "Depletable Cost ÷ Total Estimated Production.",
+    "explanation": "The concept being tested (balance sheet): depletable Cost ÷ Total Estimated Production. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "balance_sheet"
     ]
@@ -1680,7 +1680,7 @@ export const ankiMcqs = [
       "Cost minus accumulated depreciation"
     ],
     "answer": 0,
-    "explanation": "Net Sales ÷ Average Total Assets.",
+    "explanation": "The concept being tested (financial statements): net Sales ÷ Average Total Assets. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "financial_statements"
     ]
@@ -1695,7 +1695,7 @@ export const ankiMcqs = [
       "Cost minus accumulated depreciation"
     ],
     "answer": 0,
-    "explanation": "Average Cost of PPE ÷ Depreciation Expense.",
+    "explanation": "The concept being tested (financial statements): average Cost of PPE ÷ Depreciation Expense. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "financial_statements"
     ]
@@ -1710,7 +1710,7 @@ export const ankiMcqs = [
       "Cost minus accumulated depreciation"
     ],
     "answer": 0,
-    "explanation": "Accumulated Depreciation ÷ Depreciation Expense.",
+    "explanation": "The concept being tested (financial statements): accumulated Depreciation ÷ Depreciation Expense. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "financial_statements"
     ]

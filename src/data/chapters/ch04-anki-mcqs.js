@@ -12,7 +12,7 @@ export const ankiMcqs = [
       "A merchandising business has no cost of sales"
     ],
     "answer": 0,
-    "explanation": "A service business provides services, while a merchandising business buys and resells goods.",
+    "explanation": "The concept being tested (inventory): a service business provides services, while a merchandising business buys and resells goods. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "inventory"
     ]
@@ -27,7 +27,7 @@ export const ankiMcqs = [
       "Lending money and earning interest"
     ],
     "answer": 0,
-    "explanation": "Purchasing inventory and reselling it to customers.",
+    "explanation": "The concept being tested (inventory): purchasing inventory and reselling it to customers. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "inventory"
     ]
@@ -42,7 +42,7 @@ export const ankiMcqs = [
       "Commission revenue"
     ],
     "answer": 0,
-    "explanation": "Sales revenue.",
+    "explanation": "The concept being tested (inventory sales): sales revenue. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "inventory_sales"
     ]
@@ -57,7 +57,7 @@ export const ankiMcqs = [
       "Administration expenses"
     ],
     "answer": 0,
-    "explanation": "Cost of sales (cost of goods sold).",
+    "explanation": "The concept being tested (inventory, income statement): cost of sales (cost of goods sold). The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "inventory",
       "income_statement"
@@ -70,10 +70,10 @@ export const ankiMcqs = [
       "Yes.",
       "No",
       "Only for periodic systems",
-      "A service business provides services, while a merchandising business buys and resells goods."
+      "Only for service businesses"
     ],
     "answer": 0,
-    "explanation": "Yes.",
+    "explanation": "The concept being tested (inventory): yes. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "inventory"
     ]
@@ -88,7 +88,7 @@ export const ankiMcqs = [
       "Construction contractors and engineering consultancies"
     ],
     "answer": 0,
-    "explanation": "Supermarkets, clothing stores, furniture stores, and department stores.",
+    "explanation": "The concept being tested (inventory): supermarkets, clothing stores, furniture stores, and department stores. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "inventory"
     ]
@@ -103,7 +103,7 @@ export const ankiMcqs = [
       "Cash received minus cash paid"
     ],
     "answer": 0,
-    "explanation": "Sales revenue minus cost of sales.",
+    "explanation": "The concept being tested (inventory sales, income statement): sales revenue minus cost of sales. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "inventory_sales",
       "income_statement"
@@ -119,7 +119,7 @@ export const ankiMcqs = [
       "Gross Profit = Cash Received − Cost of Sales"
     ],
     "answer": 0,
-    "explanation": "Gross Profit = Sales Revenue − Cost of Sales.",
+    "explanation": "The concept being tested (inventory sales, income statement): gross Profit = Sales Revenue − Cost of Sales. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "inventory_sales",
       "income_statement"
@@ -135,7 +135,7 @@ export const ankiMcqs = [
       "Profit = Gross Profit − Cost of Sales"
     ],
     "answer": 0,
-    "explanation": "Profit = Gross Profit + Other Revenue − Operating Expenses.",
+    "explanation": "The concept being tested (income statement): profit = Gross Profit + Other Revenue − Operating Expenses. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "income_statement"
     ]
@@ -150,7 +150,7 @@ export const ankiMcqs = [
       "Administration expenses"
     ],
     "answer": 0,
-    "explanation": "Cost of sales and operating expenses.",
+    "explanation": "The concept being tested (income statement): cost of sales and operating expenses. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "income_statement"
     ]
@@ -165,7 +165,7 @@ export const ankiMcqs = [
       "Advertising and marketing costs"
     ],
     "answer": 0,
-    "explanation": "The direct cost of inventory sold to customers.",
+    "explanation": "The concept being tested (inventory sales, income statement): the direct cost of inventory sold to customers. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "inventory_sales",
       "income_statement"
@@ -181,7 +181,7 @@ export const ankiMcqs = [
       "Purchase discounts received"
     ],
     "answer": 0,
-    "explanation": "All other expenses incurred in running the business.",
+    "explanation": "The concept being tested (income statement): all other expenses incurred in running the business. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "income_statement"
     ]
@@ -196,7 +196,7 @@ export const ankiMcqs = [
       "Purchase → Manufacture → Distribute → Advertise"
     ],
     "answer": 0,
-    "explanation": "Cash → Purchase Inventory → Sell Inventory → Collect Cash → Repeat.",
+    "explanation": "The concept being tested (inventory): cash → Purchase Inventory → Sell Inventory → Collect Cash → Repeat. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "inventory"
     ]
@@ -208,10 +208,10 @@ export const ankiMcqs = [
       "A system where inventory records are updated continuously with every purchase and sale.",
       "A system where inventory records are not continuously updated",
       "A system that records inventory only at year-end",
-      "A service business provides services, while a merchandising business buys and resells goods."
+      "A system that uses cost of sales calculated after a physical stocktake"
     ],
     "answer": 0,
-    "explanation": "A system where inventory records are updated continuously with every purchase and sale.",
+    "explanation": "The concept being tested (inventory): a system where inventory records are updated continuously with every purchase and sale. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "inventory"
     ]
@@ -226,7 +226,7 @@ export const ankiMcqs = [
       "At year-end only"
     ],
     "answer": 0,
-    "explanation": "At the time of each sale.",
+    "explanation": "Timing is the key idea (inventory, inventory sales): at the time of each sale. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "inventory",
       "inventory_sales"
@@ -242,7 +242,7 @@ export const ankiMcqs = [
       "Businesses using periodic systems exclusively"
     ],
     "answer": 0,
-    "explanation": "Businesses with high-value or scannable goods.",
+    "explanation": "The concept being tested (inventory): businesses with high-value or scannable goods. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "inventory"
     ]
@@ -254,10 +254,10 @@ export const ankiMcqs = [
       "A system where inventory records are not continuously updated.",
       "A system where inventory records are updated continuously with every purchase and sale",
       "A system that records inventory only at year-end",
-      "A service business provides services, while a merchandising business buys and resells goods."
+      "A system that uses cost of sales calculated after a physical stocktake"
     ],
     "answer": 0,
-    "explanation": "A system where inventory records are not continuously updated.",
+    "explanation": "The concept being tested (inventory): a system where inventory records are not continuously updated. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "inventory"
     ]
@@ -272,7 +272,7 @@ export const ankiMcqs = [
       "When purchase invoices are received"
     ],
     "answer": 0,
-    "explanation": "At the end of the accounting period after a physical stocktake.",
+    "explanation": "Timing is the key idea (inventory): at the end of the accounting period after a physical stocktake. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "inventory"
     ]
@@ -287,7 +287,7 @@ export const ankiMcqs = [
       "A system that records inventory only at year-end"
     ],
     "answer": 0,
-    "explanation": "Periodic inventory system.",
+    "explanation": "The concept being tested (inventory): periodic inventory system. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "inventory"
     ]
@@ -302,7 +302,7 @@ export const ankiMcqs = [
       "A system that records inventory only at year-end"
     ],
     "answer": 0,
-    "explanation": "Perpetual inventory system.",
+    "explanation": "The concept being tested (inventory): perpetual inventory system. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "inventory"
     ]
@@ -317,7 +317,7 @@ export const ankiMcqs = [
       "A system that records inventory only at year-end"
     ],
     "answer": 0,
-    "explanation": "Periodic inventory system.",
+    "explanation": "The concept being tested (inventory): periodic inventory system. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "inventory"
     ]
@@ -332,7 +332,7 @@ export const ankiMcqs = [
       "A system that records inventory only at year-end"
     ],
     "answer": 0,
-    "explanation": "Perpetual inventory system.",
+    "explanation": "The concept being tested (inventory): perpetual inventory system. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "inventory"
     ]
@@ -347,7 +347,7 @@ export const ankiMcqs = [
       "In Accounts Payable only"
     ],
     "answer": 0,
-    "explanation": "Directly in the Inventory account.",
+    "explanation": "The concept being tested (inventory purchases, debit credit): directly in the Inventory account. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "inventory_purchases",
       "debit_credit"
@@ -360,10 +360,10 @@ export const ankiMcqs = [
       "Debit Inventory; Credit Accounts Payable.",
       "Debit Accounts Payable; Credit Inventory",
       "Debit Cash; Credit Sales Revenue",
-      "A service business provides services, while a merchandising business buys and resells goods."
+      "Debit Cost of Sales; Credit Inventory"
     ],
     "answer": 0,
-    "explanation": "Debit Inventory; Credit Accounts Payable.",
+    "explanation": "Account analysis (inventory purchases, debit credit): debit Inventory; Credit Accounts Payable. Work through which accounts change and whether they have normal debit or credit balances. Distractors often swap sides, use the wrong account class, or omit part of the entry.",
     "tags": [
       "inventory_purchases",
       "debit_credit"
@@ -379,7 +379,7 @@ export const ankiMcqs = [
       "Debit Cost of Sales $3,800; Credit Accounts Payable $3,800"
     ],
     "answer": 0,
-    "explanation": "Debit Inventory $3,800; Credit Accounts Payable $3,800.",
+    "explanation": "The calculation rests on (inventory purchases, debit credit): debit Inventory $3,800; Credit Accounts Payable $3,800. Work through which accounts change and whether they have normal debit or credit balances. Distractors often swap sides, use the wrong account class, or omit part of the entry.",
     "tags": [
       "inventory_purchases",
       "debit_credit"
@@ -395,7 +395,7 @@ export const ankiMcqs = [
       "Writing off faulty inventory"
     ],
     "answer": 0,
-    "explanation": "Returning purchased goods to the supplier.",
+    "explanation": "The concept being tested (inventory purchases): returning purchased goods to the supplier. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "inventory_purchases"
     ]
@@ -410,7 +410,7 @@ export const ankiMcqs = [
       "A reduction in list price before invoicing"
     ],
     "answer": 0,
-    "explanation": "Keeping goods but receiving a reduction in price from the supplier.",
+    "explanation": "The concept being tested (inventory purchases): keeping goods but receiving a reduction in price from the supplier. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "inventory_purchases"
     ]
@@ -425,7 +425,7 @@ export const ankiMcqs = [
       "Cost of sales increases"
     ],
     "answer": 0,
-    "explanation": "Inventory decreases.",
+    "explanation": "Timing is the key idea (inventory purchases): inventory decreases. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "inventory_purchases"
     ]
@@ -437,10 +437,10 @@ export const ankiMcqs = [
       "Debit Accounts Payable; Credit Inventory.",
       "Debit Inventory; Credit Accounts Payable",
       "Debit Cash; Credit Sales Revenue",
-      "A service business provides services, while a merchandising business buys and resells goods."
+      "Debit Cost of Sales; Credit Inventory"
     ],
     "answer": 0,
-    "explanation": "Debit Accounts Payable; Credit Inventory.",
+    "explanation": "Account analysis (inventory purchases, debit credit): debit Accounts Payable; Credit Inventory. Work through which accounts change and whether they have normal debit or credit balances. Distractors often swap sides, use the wrong account class, or omit part of the entry.",
     "tags": [
       "inventory_purchases",
       "debit_credit"
@@ -456,7 +456,7 @@ export const ankiMcqs = [
       "Debit Cost of Sales $300; Credit Inventory $300"
     ],
     "answer": 0,
-    "explanation": "Debit Accounts Payable $300; Credit Inventory $300.",
+    "explanation": "The calculation rests on (inventory purchases, debit credit): debit Accounts Payable $300; Credit Inventory $300. Work through which accounts change and whether they have normal debit or credit balances. Distractors often swap sides, use the wrong account class, or omit part of the entry.",
     "tags": [
       "inventory_purchases",
       "debit_credit"
@@ -472,7 +472,7 @@ export const ankiMcqs = [
       "Packaging costs charged to customers"
     ],
     "answer": 0,
-    "explanation": "Freight costs paid by the buyer to transport inventory.",
+    "explanation": "The concept being tested (inventory purchases): freight costs paid by the buyer to transport inventory. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "inventory_purchases"
     ]
@@ -484,10 +484,10 @@ export const ankiMcqs = [
       "Added to the cost of inventory.",
       "Recorded as an operating expense",
       "Deducted from sales revenue",
-      "A service business provides services, while a merchandising business buys and resells goods."
+      "Recorded as a liability"
     ],
     "answer": 0,
-    "explanation": "Added to the cost of inventory.",
+    "explanation": "The concept being tested (inventory purchases): added to the cost of inventory. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "inventory_purchases"
     ]
@@ -502,7 +502,7 @@ export const ankiMcqs = [
       "Debit Cash; Credit Sales Revenue"
     ],
     "answer": 0,
-    "explanation": "Debit Inventory (or Freight-in); Credit Cash.",
+    "explanation": "Account analysis (inventory purchases, debit credit): debit Inventory (or Freight-in); Credit Cash. Work through which accounts change and whether they have normal debit or credit balances. Distractors often swap sides, use the wrong account class, or omit part of the entry.",
     "tags": [
       "inventory_purchases",
       "debit_credit"
@@ -518,7 +518,7 @@ export const ankiMcqs = [
       "Import duties on purchased goods"
     ],
     "answer": 0,
-    "explanation": "Delivery costs paid by the seller.",
+    "explanation": "The concept being tested (inventory sales): delivery costs paid by the seller. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "inventory_sales"
     ]
@@ -530,10 +530,10 @@ export const ankiMcqs = [
       "No.",
       "Yes",
       "Only for periodic systems",
-      "A service business provides services, while a merchandising business buys and resells goods."
+      "Only for service businesses"
     ],
     "answer": 0,
-    "explanation": "No.",
+    "explanation": "The concept being tested (inventory sales): no. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "inventory_sales"
     ]
@@ -548,7 +548,7 @@ export const ankiMcqs = [
       "Administration expenses"
     ],
     "answer": 0,
-    "explanation": "Operating expense.",
+    "explanation": "The concept being tested (inventory sales, income statement): operating expense. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "inventory_sales",
       "income_statement"
@@ -564,7 +564,7 @@ export const ankiMcqs = [
       "Debit Cash; Credit Sales Revenue"
     ],
     "answer": 0,
-    "explanation": "Debit Delivery Expense (Freight-out); Credit Cash.",
+    "explanation": "Account analysis (inventory sales, debit credit): debit Delivery Expense (Freight-out); Credit Cash. Work through which accounts change and whether they have normal debit or credit balances. Distractors often swap sides, use the wrong account class, or omit part of the entry.",
     "tags": [
       "inventory_sales",
       "debit_credit"
@@ -580,7 +580,7 @@ export const ankiMcqs = [
       "Deducted from sales revenue"
     ],
     "answer": 0,
-    "explanation": "Inventory / Cost of Sales.",
+    "explanation": "The concept being tested (inventory purchases): inventory / Cost of Sales. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "inventory_purchases"
     ]
@@ -595,7 +595,7 @@ export const ankiMcqs = [
       "Administration expenses"
     ],
     "answer": 0,
-    "explanation": "Operating expenses.",
+    "explanation": "The concept being tested (inventory sales): operating expenses. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "inventory_sales"
     ]
@@ -610,7 +610,7 @@ export const ankiMcqs = [
       "Sales discount"
     ],
     "answer": 0,
-    "explanation": "A discount offered for prompt payment of an account.",
+    "explanation": "The concept being tested (inventory purchases): a discount offered for prompt payment of an account. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "inventory_purchases"
     ]
@@ -625,7 +625,7 @@ export const ankiMcqs = [
       "Payment of 2/10 of the invoice within 30 days"
     ],
     "answer": 0,
-    "explanation": "A 2% discount is available if payment is made within 10 days; otherwise full payment is due in 30 days.",
+    "explanation": "The concept being tested (inventory purchases): a 2% discount is available if payment is made within 10 days; otherwise full payment is due in 30 days. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "inventory_purchases"
     ]
@@ -640,7 +640,7 @@ export const ankiMcqs = [
       "They have no effect on inventory cost"
     ],
     "answer": 0,
-    "explanation": "They reduce the cost of inventory.",
+    "explanation": "The concept being tested (inventory purchases): they reduce the cost of inventory. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "inventory_purchases"
     ]
@@ -655,7 +655,7 @@ export const ankiMcqs = [
       "Debit Inventory; Credit Accounts Payable"
     ],
     "answer": 0,
-    "explanation": "Debit Accounts Payable; Credit Inventory; Credit Cash.",
+    "explanation": "Timing is the key idea (inventory purchases, debit credit): debit Accounts Payable; Credit Inventory; Credit Cash. Work through which accounts change and whether they have normal debit or credit balances. Distractors often swap sides, use the wrong account class, or omit part of the entry.",
     "tags": [
       "inventory_purchases",
       "debit_credit"
@@ -671,7 +671,7 @@ export const ankiMcqs = [
       "$70"
     ],
     "answer": 0,
-    "explanation": "$3,430.",
+    "explanation": "The calculation rests on (inventory purchases): $3,430. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "inventory_purchases"
     ]
@@ -686,7 +686,7 @@ export const ankiMcqs = [
       "Sales discount"
     ],
     "answer": 0,
-    "explanation": "A reduction in list price before the invoice is issued.",
+    "explanation": "The concept being tested (inventory purchases): a reduction in list price before the invoice is issued. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "inventory_purchases"
     ]
@@ -698,10 +698,10 @@ export const ankiMcqs = [
       "No.",
       "Yes",
       "Only for periodic systems",
-      "A service business provides services, while a merchandising business buys and resells goods."
+      "Only for service businesses"
     ],
     "answer": 0,
-    "explanation": "No.",
+    "explanation": "The concept being tested (inventory purchases): no. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "inventory_purchases"
     ]
@@ -716,7 +716,7 @@ export const ankiMcqs = [
       "$500"
     ],
     "answer": 0,
-    "explanation": "$4,500.",
+    "explanation": "The calculation rests on (inventory purchases): $4,500. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "inventory_purchases"
     ]
@@ -731,7 +731,7 @@ export const ankiMcqs = [
       "Four"
     ],
     "answer": 0,
-    "explanation": "Two.",
+    "explanation": "Account analysis (inventory sales, debit credit): two. Work through which accounts change and whether they have normal debit or credit balances. Distractors often swap sides, use the wrong account class, or omit part of the entry.",
     "tags": [
       "inventory_sales",
       "debit_credit"
@@ -747,7 +747,7 @@ export const ankiMcqs = [
       "Record GST paid to suppliers"
     ],
     "answer": 0,
-    "explanation": "Record the sale at selling price.",
+    "explanation": "Timing is the key idea (inventory sales, debit credit): record the sale at selling price. Work through which accounts change and whether they have normal debit or credit balances. Distractors often swap sides, use the wrong account class, or omit part of the entry.",
     "tags": [
       "inventory_sales",
       "debit_credit"
@@ -763,7 +763,7 @@ export const ankiMcqs = [
       "Record settlement discounts on purchases"
     ],
     "answer": 0,
-    "explanation": "Record cost of sales and reduce inventory.",
+    "explanation": "Timing is the key idea (inventory sales, debit credit): record cost of sales and reduce inventory. Work through which accounts change and whether they have normal debit or credit balances. Distractors often swap sides, use the wrong account class, or omit part of the entry.",
     "tags": [
       "inventory_sales",
       "debit_credit"
@@ -776,10 +776,10 @@ export const ankiMcqs = [
       "Debit Cash; Credit Sales Revenue.",
       "Debit Inventory; Credit Accounts Payable",
       "Debit Accounts Payable; Credit Inventory",
-      "A service business provides services, while a merchandising business buys and resells goods."
+      "Debit Cost of Sales; Credit Inventory"
     ],
     "answer": 0,
-    "explanation": "Debit Cash; Credit Sales Revenue.",
+    "explanation": "Account analysis (inventory sales, debit credit): debit Cash; Credit Sales Revenue. Work through which accounts change and whether they have normal debit or credit balances. Distractors often swap sides, use the wrong account class, or omit part of the entry.",
     "tags": [
       "inventory_sales",
       "debit_credit"
@@ -795,7 +795,7 @@ export const ankiMcqs = [
       "Debit Cash; Credit Sales Revenue"
     ],
     "answer": 0,
-    "explanation": "Debit Cost of Sales; Credit Inventory.",
+    "explanation": "Account analysis (inventory sales, debit credit): debit Cost of Sales; Credit Inventory. Work through which accounts change and whether they have normal debit or credit balances. Distractors often swap sides, use the wrong account class, or omit part of the entry.",
     "tags": [
       "inventory_sales",
       "debit_credit"
@@ -811,7 +811,7 @@ export const ankiMcqs = [
       "Dr Cash $800 Cr Sales Revenue $800"
     ],
     "answer": 0,
-    "explanation": "Dr Cash $2,200 Cr Sales Revenue $2,200; Dr Cost of Sales $1,400 Cr Inventory $1,400.",
+    "explanation": "The calculation rests on (inventory sales, debit credit): dr Cash $2,200 Cr Sales Revenue $2,200; Dr Cost of Sales $1,400 Cr Inventory $1,400. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "inventory_sales",
       "debit_credit"
@@ -827,7 +827,7 @@ export const ankiMcqs = [
       "Debit Cash; Credit Sales Revenue"
     ],
     "answer": 0,
-    "explanation": "Debit Accounts Receivable; Credit Sales Revenue.",
+    "explanation": "Account analysis (inventory sales, debit credit): debit Accounts Receivable; Credit Sales Revenue. Work through which accounts change and whether they have normal debit or credit balances. Distractors often swap sides, use the wrong account class, or omit part of the entry.",
     "tags": [
       "inventory_sales",
       "debit_credit"
@@ -843,7 +843,7 @@ export const ankiMcqs = [
       "Debit Cash; Credit Sales Revenue"
     ],
     "answer": 0,
-    "explanation": "Debit Cost of Sales; Credit Inventory.",
+    "explanation": "Account analysis (inventory sales, debit credit): debit Cost of Sales; Credit Inventory. Work through which accounts change and whether they have normal debit or credit balances. Distractors often swap sides, use the wrong account class, or omit part of the entry.",
     "tags": [
       "inventory_sales",
       "debit_credit"
@@ -859,7 +859,7 @@ export const ankiMcqs = [
       "Dr Sales Revenue $3,800 Cr Accounts Receivable $3,800"
     ],
     "answer": 0,
-    "explanation": "Dr Accounts Receivable $3,800 Cr Sales Revenue $3,800; Dr Cost of Sales $2,400 Cr Inventory $2,400.",
+    "explanation": "The calculation rests on (inventory sales, debit credit): dr Accounts Receivable $3,800 Cr Sales Revenue $3,800; Dr Cost of Sales $2,400 Cr Inventory $2,400. Work through which accounts change and whether they have normal debit or credit balances. Distractors often swap sides, use the wrong account class, or omit part of the entry.",
     "tags": [
       "inventory_sales",
       "debit_credit"
@@ -875,7 +875,7 @@ export const ankiMcqs = [
       "Record freight-in and purchase returns"
     ],
     "answer": 0,
-    "explanation": "Reverse the sale and restore/reduce inventory.",
+    "explanation": "The concept being tested (inventory sales): reverse the sale and restore/reduce inventory. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "inventory_sales"
     ]
@@ -890,7 +890,7 @@ export const ankiMcqs = [
       "Cost of Sales"
     ],
     "answer": 0,
-    "explanation": "Sales Returns & Allowances.",
+    "explanation": "Timing is the key idea (inventory sales, debit credit): sales Returns & Allowances. Work through which accounts change and whether they have normal debit or credit balances. Distractors often swap sides, use the wrong account class, or omit part of the entry.",
     "tags": [
       "inventory_sales",
       "debit_credit"
@@ -906,7 +906,7 @@ export const ankiMcqs = [
       "Sales revenue is increased"
     ],
     "answer": 0,
-    "explanation": "Inventory is restored.",
+    "explanation": "Timing is the key idea (inventory sales): inventory is restored. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "inventory_sales"
     ]
@@ -921,7 +921,7 @@ export const ankiMcqs = [
       "Debit Cash; Credit Sales Revenue"
     ],
     "answer": 0,
-    "explanation": "Debit Inventory; Credit Cost of Sales.",
+    "explanation": "Account analysis (inventory sales, debit credit): debit Inventory; Credit Cost of Sales. Work through which accounts change and whether they have normal debit or credit balances. Distractors often swap sides, use the wrong account class, or omit part of the entry.",
     "tags": [
       "inventory_sales",
       "debit_credit"
@@ -937,7 +937,7 @@ export const ankiMcqs = [
       "Dr Loss on Faulty Inventory $140 Cr Inventory $140 only"
     ],
     "answer": 0,
-    "explanation": "Dr Sales Returns & Allowances $300 Cr Accounts Receivable $300; Dr Inventory $140 Cr Cost of Sales $140.",
+    "explanation": "The calculation rests on (inventory sales, debit credit): dr Sales Returns & Allowances $300 Cr Accounts Receivable $300; Dr Inventory $140 Cr Cost of Sales $140. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "inventory_sales",
       "debit_credit"
@@ -953,7 +953,7 @@ export const ankiMcqs = [
       "It is recorded as unearned revenue"
     ],
     "answer": 0,
-    "explanation": "It is written off as an expense.",
+    "explanation": "Timing is the key idea (inventory sales): it is written off as an expense. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "inventory_sales"
     ]
@@ -968,7 +968,7 @@ export const ankiMcqs = [
       "Inventory"
     ],
     "answer": 0,
-    "explanation": "Loss on Faulty Inventory.",
+    "explanation": "Timing is the key idea (inventory sales, debit credit): loss on Faulty Inventory. Work through which accounts change and whether they have normal debit or credit balances. Distractors often swap sides, use the wrong account class, or omit part of the entry.",
     "tags": [
       "inventory_sales",
       "debit_credit"
@@ -984,7 +984,7 @@ export const ankiMcqs = [
       "Debit Cost of Sales $140; Credit Accounts Payable $140"
     ],
     "answer": 0,
-    "explanation": "Debit Loss on Faulty Inventory $140; Credit Inventory $140.",
+    "explanation": "The calculation rests on (inventory sales, debit credit): debit Loss on Faulty Inventory $140; Credit Inventory $140. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "inventory_sales",
       "debit_credit"
@@ -1000,7 +1000,7 @@ export const ankiMcqs = [
       "Sales discount"
     ],
     "answer": 0,
-    "explanation": "A discount given to customers for prompt payment.",
+    "explanation": "The concept being tested (inventory sales): a discount given to customers for prompt payment. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "inventory_sales"
     ]
@@ -1015,7 +1015,7 @@ export const ankiMcqs = [
       "They have no effect on net sales"
     ],
     "answer": 0,
-    "explanation": "They reduce net sales revenue.",
+    "explanation": "The concept being tested (inventory sales, income statement): they reduce net sales revenue. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "inventory_sales",
       "income_statement"
@@ -1031,7 +1031,7 @@ export const ankiMcqs = [
       "Debit Cash; Credit Sales Revenue"
     ],
     "answer": 0,
-    "explanation": "Debit Cash; Debit Sales Discounts; Credit Accounts Receivable.",
+    "explanation": "Account analysis (inventory sales, debit credit): debit Cash; Debit Sales Discounts; Credit Accounts Receivable. Work through which accounts change and whether they have normal debit or credit balances. Distractors often swap sides, use the wrong account class, or omit part of the entry.",
     "tags": [
       "inventory_sales",
       "debit_credit"
@@ -1047,7 +1047,7 @@ export const ankiMcqs = [
       "$24"
     ],
     "answer": 0,
-    "explanation": "$76.",
+    "explanation": "The calculation rests on (inventory sales): $76. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "inventory_sales"
     ]
@@ -1062,7 +1062,7 @@ export const ankiMcqs = [
       "Total cash collected from customers"
     ],
     "answer": 0,
-    "explanation": "Gross sales revenue minus sales returns & allowances and sales discounts.",
+    "explanation": "The concept being tested (inventory sales, income statement): gross sales revenue minus sales returns & allowances and sales discounts. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "inventory_sales",
       "income_statement"
@@ -1078,7 +1078,7 @@ export const ankiMcqs = [
       "Net Sales − Operating Expenses"
     ],
     "answer": 0,
-    "explanation": "Sales Revenue − Sales Returns & Allowances − Sales Discounts.",
+    "explanation": "The concept being tested (inventory sales, income statement): sales Revenue − Sales Returns & Allowances − Sales Discounts. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "inventory_sales",
       "income_statement"
@@ -1094,7 +1094,7 @@ export const ankiMcqs = [
       "Cash received minus inventory purchases"
     ],
     "answer": 0,
-    "explanation": "Net sales revenue minus cost of sales.",
+    "explanation": "The concept being tested (inventory sales, income statement): net sales revenue minus cost of sales. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "inventory_sales",
       "income_statement"
@@ -1110,7 +1110,7 @@ export const ankiMcqs = [
       "Income tax expense"
     ],
     "answer": 0,
-    "explanation": "Other revenue.",
+    "explanation": "The concept being tested (income statement): other revenue. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "income_statement"
     ]
@@ -1125,7 +1125,7 @@ export const ankiMcqs = [
       "Administration expenses"
     ],
     "answer": 0,
-    "explanation": "Selling expenses, administration expenses, and financial expenses.",
+    "explanation": "The concept being tested (income statement): selling expenses, administration expenses, and financial expenses. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "income_statement"
     ]
@@ -1140,7 +1140,7 @@ export const ankiMcqs = [
       "Cost of sales and purchase discounts"
     ],
     "answer": 0,
-    "explanation": "Advertising, freight-out, sales salaries.",
+    "explanation": "The concept being tested (income statement): advertising, freight-out, sales salaries. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "income_statement"
     ]
@@ -1155,7 +1155,7 @@ export const ankiMcqs = [
       "Cost of sales and freight-in"
     ],
     "answer": 0,
-    "explanation": "Office salaries, rent, insurance, depreciation.",
+    "explanation": "The concept being tested (income statement): office salaries, rent, insurance, depreciation. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "income_statement"
     ]
@@ -1170,7 +1170,7 @@ export const ankiMcqs = [
       "Cost of sales and inventory write-downs"
     ],
     "answer": 0,
-    "explanation": "Interest expense and discounts allowed.",
+    "explanation": "The concept being tested (income statement): interest expense and discounts allowed. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "income_statement"
     ]
@@ -1185,7 +1185,7 @@ export const ankiMcqs = [
       "Cost of sales as a percentage of gross sales"
     ],
     "answer": 0,
-    "explanation": "Gross profit as a percentage of net sales.",
+    "explanation": "The concept being tested (inventory sales, income statement): gross profit as a percentage of net sales. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "inventory_sales",
       "income_statement"
@@ -1198,10 +1198,10 @@ export const ankiMcqs = [
       "Gross Profit ÷ Net Sales × 100.",
       "Operating Expenses ÷ Net Sales × 100",
       "Net Sales ÷ Cost of Sales × 100",
-      "A service business provides services, while a merchandising business buys and resells goods."
+      "Profit ÷ Total Assets × 100"
     ],
     "answer": 0,
-    "explanation": "Gross Profit ÷ Net Sales × 100.",
+    "explanation": "The concept being tested (inventory sales, income statement): gross Profit ÷ Net Sales × 100. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "inventory_sales",
       "income_statement"
@@ -1217,7 +1217,7 @@ export const ankiMcqs = [
       "More efficient administration"
     ],
     "answer": 0,
-    "explanation": "Better profit margin on sales.",
+    "explanation": "The concept being tested (inventory sales, income statement): better profit margin on sales. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "inventory_sales",
       "income_statement"
@@ -1233,7 +1233,7 @@ export const ankiMcqs = [
       "Net GST payable to the ATO"
     ],
     "answer": 0,
-    "explanation": "The percentage of sales consumed by operating expenses.",
+    "explanation": "The concept being tested (income statement): the percentage of sales consumed by operating expenses. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "income_statement"
     ]
@@ -1245,10 +1245,10 @@ export const ankiMcqs = [
       "Operating Expenses ÷ Net Sales × 100.",
       "Gross Profit ÷ Net Sales × 100",
       "Net Sales ÷ Cost of Sales × 100",
-      "A service business provides services, while a merchandising business buys and resells goods."
+      "Profit ÷ Total Assets × 100"
     ],
     "answer": 0,
-    "explanation": "Operating Expenses ÷ Net Sales × 100.",
+    "explanation": "The concept being tested (income statement): operating Expenses ÷ Net Sales × 100. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "income_statement"
     ]
@@ -1263,7 +1263,7 @@ export const ankiMcqs = [
       "Increased competition"
     ],
     "answer": 0,
-    "explanation": "More efficient operations.",
+    "explanation": "The concept being tested (income statement): more efficient operations. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "income_statement"
     ]
@@ -1278,7 +1278,7 @@ export const ankiMcqs = [
       "A payroll tax on employee wages"
     ],
     "answer": 0,
-    "explanation": "A value-added tax levied on goods and services.",
+    "explanation": "The concept being tested (gst): a value-added tax levied on goods and services. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "gst"
     ]
@@ -1290,10 +1290,10 @@ export const ankiMcqs = [
       "10%.",
       "5%",
       "12%",
-      "A service business provides services, while a merchandising business buys and resells goods."
+      "15%"
     ],
     "answer": 0,
-    "explanation": "10%.",
+    "explanation": "The concept being tested (gst): 10%. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "gst"
     ]
@@ -1308,7 +1308,7 @@ export const ankiMcqs = [
       "12%"
     ],
     "answer": 0,
-    "explanation": "15%.",
+    "explanation": "The concept being tested (gst): 15%. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "gst"
     ]
@@ -1323,7 +1323,7 @@ export const ankiMcqs = [
       "Financial services only"
     ],
     "answer": 0,
-    "explanation": "Goods or services subject to GST.",
+    "explanation": "The concept being tested (gst): goods or services subject to GST. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "gst"
     ]
@@ -1338,7 +1338,7 @@ export const ankiMcqs = [
       "It records GST as equity"
     ],
     "answer": 0,
-    "explanation": "It collects GST on behalf of the government.",
+    "explanation": "The concept being tested (gst): it collects GST on behalf of the government. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "gst"
     ]
@@ -1350,10 +1350,10 @@ export const ankiMcqs = [
       "A liability.",
       "An asset",
       "Revenue",
-      "A service business provides services, while a merchandising business buys and resells goods."
+      "An expense"
     ],
     "answer": 0,
-    "explanation": "A liability.",
+    "explanation": "The concept being tested (gst): a liability. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "gst"
     ]
@@ -1365,10 +1365,10 @@ export const ankiMcqs = [
       "An asset.",
       "A liability",
       "Revenue",
-      "A service business provides services, while a merchandising business buys and resells goods."
+      "An expense"
     ],
     "answer": 0,
-    "explanation": "An asset.",
+    "explanation": "The concept being tested (gst): an asset. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "gst"
     ]
@@ -1383,7 +1383,7 @@ export const ankiMcqs = [
       "GST on exports only"
     ],
     "answer": 0,
-    "explanation": "Net GST (GST Collected − GST Paid).",
+    "explanation": "The concept being tested (gst): net GST (GST Collected − GST Paid). The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "gst"
     ]
@@ -1398,7 +1398,7 @@ export const ankiMcqs = [
       "Financial services and residential rents"
     ],
     "answer": 0,
-    "explanation": "Supplies with no GST charged, but input tax credits can still be claimed.",
+    "explanation": "The concept being tested (gst): supplies with no GST charged, but input tax credits can still be claimed. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "gst"
     ]
@@ -1413,7 +1413,7 @@ export const ankiMcqs = [
       "All imported goods"
     ],
     "answer": 0,
-    "explanation": "Basic food, education, health services, exports.",
+    "explanation": "The concept being tested (gst): basic food, education, health services, exports. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "gst"
     ]
@@ -1428,7 +1428,7 @@ export const ankiMcqs = [
       "Exports with full GST refund"
     ],
     "answer": 0,
-    "explanation": "Supplies with no GST charged and no input tax credits claimable.",
+    "explanation": "The concept being tested (gst): supplies with no GST charged and no input tax credits claimable. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "gst"
     ]
@@ -1443,7 +1443,7 @@ export const ankiMcqs = [
       "All business-to-business sales"
     ],
     "answer": 0,
-    "explanation": "Financial services and residential rents.",
+    "explanation": "The concept being tested (gst): financial services and residential rents. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "gst"
     ]
@@ -1458,7 +1458,7 @@ export const ankiMcqs = [
       "$4"
     ],
     "answer": 0,
-    "explanation": "$40.",
+    "explanation": "The calculation rests on (gst, inventory purchases): $40. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "gst",
       "inventory_purchases"
@@ -1474,7 +1474,7 @@ export const ankiMcqs = [
       "$36"
     ],
     "answer": 0,
-    "explanation": "$400.",
+    "explanation": "The calculation rests on (gst, inventory purchases): $400. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "gst",
       "inventory_purchases"
@@ -1490,7 +1490,7 @@ export const ankiMcqs = [
       "Debit Cash; Credit Sales Revenue"
     ],
     "answer": 0,
-    "explanation": "Debit Inventory; Debit GST Paid; Credit Accounts Payable.",
+    "explanation": "Account analysis (gst, inventory purchases, debit credit): debit Inventory; Debit GST Paid; Credit Accounts Payable. Work through which accounts change and whether they have normal debit or credit balances. Distractors often swap sides, use the wrong account class, or omit part of the entry.",
     "tags": [
       "gst",
       "inventory_purchases",
@@ -1507,7 +1507,7 @@ export const ankiMcqs = [
       "Debit Accounts Payable; Credit Cost of Sales"
     ],
     "answer": 0,
-    "explanation": "Debit Accounts Payable; Credit Inventory; Credit GST Paid.",
+    "explanation": "Account analysis (gst, inventory purchases, debit credit): debit Accounts Payable; Credit Inventory; Credit GST Paid. Work through which accounts change and whether they have normal debit or credit balances. Distractors often swap sides, use the wrong account class, or omit part of the entry.",
     "tags": [
       "gst",
       "inventory_purchases",
@@ -1524,7 +1524,7 @@ export const ankiMcqs = [
       "$25"
     ],
     "answer": 0,
-    "explanation": "$250.",
+    "explanation": "The calculation rests on (gst, inventory sales): $250. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "gst",
       "inventory_sales"
@@ -1540,7 +1540,7 @@ export const ankiMcqs = [
       "$275"
     ],
     "answer": 0,
-    "explanation": "$2,500.",
+    "explanation": "The calculation rests on (gst, inventory sales): $2,500. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "gst",
       "inventory_sales"
@@ -1556,7 +1556,7 @@ export const ankiMcqs = [
       "Debit Cash; Credit Sales Revenue"
     ],
     "answer": 0,
-    "explanation": "Debit Accounts Receivable; Credit Sales Revenue; Credit GST Collected.",
+    "explanation": "Account analysis (gst, inventory sales, debit credit): debit Accounts Receivable; Credit Sales Revenue; Credit GST Collected. Work through which accounts change and whether they have normal debit or credit balances. Distractors often swap sides, use the wrong account class, or omit part of the entry.",
     "tags": [
       "gst",
       "inventory_sales",
@@ -1573,7 +1573,7 @@ export const ankiMcqs = [
       "GST is recorded as revenue"
     ],
     "answer": 0,
-    "explanation": "GST is recoverable and not part of inventory cost.",
+    "explanation": "The reasoning to apply (gst, inventory sales): gST is recoverable and not part of inventory cost. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "gst",
       "inventory_sales"
@@ -1589,7 +1589,7 @@ export const ankiMcqs = [
       "$5"
     ],
     "answer": 0,
-    "explanation": "$50.",
+    "explanation": "The calculation rests on (gst, inventory sales): $50. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "gst",
       "inventory_sales"
@@ -1605,7 +1605,7 @@ export const ankiMcqs = [
       "Debit GST Paid; Credit Cash"
     ],
     "answer": 0,
-    "explanation": "Debit Sales Returns & Allowances; Debit GST Collected; Credit Accounts Receivable.",
+    "explanation": "Account analysis (gst, inventory sales, debit credit): debit Sales Returns & Allowances; Debit GST Collected; Credit Accounts Receivable. Work through which accounts change and whether they have normal debit or credit balances. Distractors often swap sides, use the wrong account class, or omit part of the entry.",
     "tags": [
       "gst",
       "inventory_sales",
@@ -1622,7 +1622,7 @@ export const ankiMcqs = [
       "Because sales discounts reduce GST Paid"
     ],
     "answer": 0,
-    "explanation": "Because the business no longer owes GST on the returned sale.",
+    "explanation": "The reasoning to apply (gst, inventory sales): because the business no longer owes GST on the returned sale. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "gst",
       "inventory_sales"
@@ -1638,7 +1638,7 @@ export const ankiMcqs = [
       "GST Collected is always unchanged"
     ],
     "answer": 0,
-    "explanation": "GST is adjusted because the discount applies to the ex-GST amount.",
+    "explanation": "The concept being tested (gst): gST is adjusted because the discount applies to the ex-GST amount. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "gst"
     ]
@@ -1653,7 +1653,7 @@ export const ankiMcqs = [
       "GST Paid is written off as an expense"
     ],
     "answer": 0,
-    "explanation": "The business pays the net GST to the ATO.",
+    "explanation": "The concept being tested (gst): the business pays the net GST to the ATO. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "gst"
     ]
@@ -1668,7 +1668,7 @@ export const ankiMcqs = [
       "No action is required"
     ],
     "answer": 0,
-    "explanation": "The business receives a refund from the ATO.",
+    "explanation": "The concept being tested (gst): the business receives a refund from the ATO. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "gst"
     ]
@@ -1683,7 +1683,7 @@ export const ankiMcqs = [
       "It removes the need for GST accounting"
     ],
     "answer": 0,
-    "explanation": "Inventory balances are continuously updated, allowing businesses to monitor stock levels in real time.",
+    "explanation": "The reasoning to apply (inventory): inventory balances are continuously updated, allowing businesses to monitor stock levels in real time. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "inventory"
     ]
@@ -1698,7 +1698,7 @@ export const ankiMcqs = [
       "One entry records freight-in and one records freight-out"
     ],
     "answer": 0,
-    "explanation": "One records revenue and the other records the reduction in inventory and recognition of cost of sales.",
+    "explanation": "The reasoning to apply (inventory sales, debit credit): one records revenue and the other records the reduction in inventory and recognition of cost of sales. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "inventory_sales",
       "debit_credit"
@@ -1714,7 +1714,7 @@ export const ankiMcqs = [
       "Because it is recorded as a liability"
     ],
     "answer": 0,
-    "explanation": "Because it is part of the cost of getting inventory ready for sale.",
+    "explanation": "The reasoning to apply (inventory purchases): because it is part of the cost of getting inventory ready for sale. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "inventory_purchases"
     ]
@@ -1729,7 +1729,7 @@ export const ankiMcqs = [
       "Because it reduces cost of sales"
     ],
     "answer": 0,
-    "explanation": "Because it is a selling expense incurred after the sale.",
+    "explanation": "The reasoning to apply (inventory sales): because it is a selling expense incurred after the sale. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "inventory_sales"
     ]
@@ -1744,7 +1744,7 @@ export const ankiMcqs = [
       "Because they affect GST Collected"
     ],
     "answer": 0,
-    "explanation": "Because the invoice is issued at the discounted amount only.",
+    "explanation": "The reasoning to apply (inventory purchases): because the invoice is issued at the discounted amount only. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "inventory_purchases"
     ]
@@ -1759,7 +1759,7 @@ export const ankiMcqs = [
       "Settlement discounts are never recorded in accounts"
     ],
     "answer": 0,
-    "explanation": "Settlement discounts reward prompt payment; trade discounts reduce list price before invoicing.",
+    "explanation": "The concept being tested (inventory purchases, inventory sales): settlement discounts reward prompt payment; trade discounts reduce list price before invoicing. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "inventory_purchases",
       "inventory_sales"
@@ -1775,7 +1775,7 @@ export const ankiMcqs = [
       "Operating expenses will be understated"
     ],
     "answer": 0,
-    "explanation": "Revenue and accounts receivable will be overstated.",
+    "explanation": "The concept being tested (inventory sales, error correction): revenue and accounts receivable will be overstated. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "inventory_sales",
       "error_correction"
@@ -1791,7 +1791,7 @@ export const ankiMcqs = [
       "It replaces the need for an income statement"
     ],
     "answer": 0,
-    "explanation": "It measures how much profit remains after covering inventory costs.",
+    "explanation": "The reasoning to apply (inventory sales, income statement): it measures how much profit remains after covering inventory costs. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "inventory_sales",
       "income_statement"
@@ -1807,7 +1807,7 @@ export const ankiMcqs = [
       "Improved inventory control under perpetual systems"
     ],
     "answer": 0,
-    "explanation": "Rising inventory costs, falling selling prices, or increased competition.",
+    "explanation": "The concept being tested (inventory sales, income statement): rising inventory costs, falling selling prices, or increased competition. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "inventory_sales",
       "income_statement"
@@ -1823,7 +1823,7 @@ export const ankiMcqs = [
       "Because it reduces inventory cost"
     ],
     "answer": 0,
-    "explanation": "Because the business owes that amount to the government.",
+    "explanation": "The reasoning to apply (gst): because the business owes that amount to the government. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "gst"
     ]
@@ -1838,7 +1838,7 @@ export const ankiMcqs = [
       "Because it is part of cost of sales"
     ],
     "answer": 0,
-    "explanation": "Because it can be claimed back from the tax authority.",
+    "explanation": "The reasoning to apply (gst): because it can be claimed back from the tax authority. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "gst"
     ]
@@ -1853,7 +1853,7 @@ export const ankiMcqs = [
       "Reporting non-current assets and depreciation methods"
     ],
     "answer": 0,
-    "explanation": "Recording inventory transactions, understanding merchandising operations, preparing merchandising financial statements, and accounting for GST.",
+    "explanation": "The concept being tested (inventory): recording inventory transactions, understanding merchandising operations, preparing merchandising financial statements, and accounting for GST. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "inventory"
     ]

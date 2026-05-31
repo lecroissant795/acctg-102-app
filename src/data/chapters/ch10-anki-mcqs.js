@@ -12,7 +12,7 @@ export const ankiMcqs = [
       "Revenue earned during the period"
     ],
     "answer": 0,
-    "explanation": "The residual interest in the assets of an entity after deducting liabilities.",
+    "explanation": "The concept being tested (equity, balance sheet): the residual interest in the assets of an entity after deducting liabilities. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "equity",
       "balance_sheet"
@@ -28,7 +28,7 @@ export const ankiMcqs = [
       "Profit available to ordinary shareholders ÷ Weighted average ordinary shares outstanding"
     ],
     "answer": 0,
-    "explanation": "Assets = Liabilities + Equity.",
+    "explanation": "The concept being tested (equity, balance sheet): assets = Liabilities + Equity. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "equity",
       "balance_sheet"
@@ -44,7 +44,7 @@ export const ankiMcqs = [
       "Cash held in bank accounts"
     ],
     "answer": 0,
-    "explanation": "The owners' claim on company assets after all liabilities are paid.",
+    "explanation": "The concept being tested (equity, balance sheet): the owners' claim on company assets after all liabilities are paid. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "equity",
       "balance_sheet"
@@ -60,7 +60,7 @@ export const ankiMcqs = [
       "Reserves"
     ],
     "answer": 0,
-    "explanation": "Share capital, retained earnings, reserves, and sometimes treasury shares or other equity components.",
+    "explanation": "The concept being tested (equity, balance sheet): share capital, retained earnings, reserves, and sometimes treasury shares or other equity components. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "equity",
       "balance_sheet"
@@ -76,7 +76,7 @@ export const ankiMcqs = [
       "Reserves"
     ],
     "answer": 0,
-    "explanation": "Amounts contributed by shareholders in exchange for shares.",
+    "explanation": "The concept being tested (equity): amounts contributed by shareholders in exchange for shares. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "equity"
     ]
@@ -91,7 +91,7 @@ export const ankiMcqs = [
       "Reserves"
     ],
     "answer": 0,
-    "explanation": "Accumulated profits kept in the company rather than distributed as dividends.",
+    "explanation": "The concept being tested (equity): accumulated profits kept in the company rather than distributed as dividends. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "equity"
     ]
@@ -106,7 +106,7 @@ export const ankiMcqs = [
       "Reserves"
     ],
     "answer": 0,
-    "explanation": "Separate equity accounts used for specific purposes, such as revaluation surplus or general reserves.",
+    "explanation": "The concept being tested (equity): separate equity accounts used for specific purposes, such as revaluation surplus or general reserves. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "equity"
     ]
@@ -121,7 +121,7 @@ export const ankiMcqs = [
       "An expense of issuing debt"
     ],
     "answer": 0,
-    "explanation": "A unit of ownership in a company.",
+    "explanation": "The concept being tested (equity): a unit of ownership in a company. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "equity"
     ]
@@ -136,7 +136,7 @@ export const ankiMcqs = [
       "An employee receiving wages only"
     ],
     "answer": 0,
-    "explanation": "A person or entity that owns shares in a company.",
+    "explanation": "The concept being tested (equity): a person or entity that owns shares in a company. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "equity"
     ]
@@ -151,7 +151,7 @@ export const ankiMcqs = [
       "Creditors have no claim on company assets"
     ],
     "answer": 0,
-    "explanation": "Shareholders are generally liable only up to the amount unpaid on their shares.",
+    "explanation": "The concept being tested (equity): shareholders are generally liable only up to the amount unpaid on their shares. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "equity"
     ]
@@ -166,7 +166,7 @@ export const ankiMcqs = [
       "It allows companies to avoid all liabilities"
     ],
     "answer": 0,
-    "explanation": "It protects shareholders' personal assets from company debts.",
+    "explanation": "The reasoning to apply (equity): it protects shareholders' personal assets from company debts. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "equity"
     ]
@@ -181,7 +181,7 @@ export const ankiMcqs = [
       "A partnership with unlimited liability"
     ],
     "answer": 0,
-    "explanation": "A company that may offer shares to the public and is usually subject to greater regulation.",
+    "explanation": "The concept being tested (equity): a company that may offer shares to the public and is usually subject to greater regulation. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "equity"
     ]
@@ -196,7 +196,7 @@ export const ankiMcqs = [
       "A cooperative with mandatory 5 members"
     ],
     "answer": 0,
-    "explanation": "A privately held company with restrictions on public fundraising and usually fewer reporting requirements.",
+    "explanation": "The concept being tested (equity): a privately held company with restrictions on public fundraising and usually fewer reporting requirements. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "equity"
     ]
@@ -211,7 +211,7 @@ export const ankiMcqs = [
       "Shareholders manage daily operations"
     ],
     "answer": 0,
-    "explanation": "Shareholders own the company, while directors and managers run it.",
+    "explanation": "The concept being tested (equity): shareholders own the company, while directors and managers run it. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "equity"
     ]
@@ -226,7 +226,7 @@ export const ankiMcqs = [
       "Cumulative preference shares"
     ],
     "answer": 0,
-    "explanation": "Basic ownership shares that carry voting rights and residual claims on profits and assets.",
+    "explanation": "The concept being tested (equity): basic ownership shares that carry voting rights and residual claims on profits and assets. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "equity"
     ]
@@ -241,7 +241,7 @@ export const ankiMcqs = [
       "No claim on remaining assets"
     ],
     "answer": 0,
-    "explanation": "Voting rights, dividends if declared, and residual claim on assets after liabilities and preference shareholders.",
+    "explanation": "The concept being tested (equity): voting rights, dividends if declared, and residual claim on assets after liabilities and preference shareholders. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "equity"
     ]
@@ -256,7 +256,7 @@ export const ankiMcqs = [
       "Only on payment date"
     ],
     "answer": 0,
-    "explanation": "No. Dividends are paid only if declared by directors.",
+    "explanation": "The concept being tested (equity): no. Dividends are paid only if declared by directors. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "equity"
     ]
@@ -271,7 +271,7 @@ export const ankiMcqs = [
       "Ordinary shares have fixed returns"
     ],
     "answer": 0,
-    "explanation": "Ordinary shareholders receive what remains after all debts and prior claims are paid.",
+    "explanation": "The concept being tested (equity): ordinary shareholders receive what remains after all debts and prior claims are paid. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "equity"
     ]
@@ -283,10 +283,10 @@ export const ankiMcqs = [
       "Dr Cash / Cr Share Capital.",
       "Dr Retained Earnings / Cr Dividends Payable",
       "Dr Dividends Payable / Cr Cash",
-      "The residual interest in the assets of an entity after deducting liabilities."
+      "Dr Retained Earnings / Cr General Reserve"
     ],
     "answer": 0,
-    "explanation": "Dr Cash / Cr Share Capital.",
+    "explanation": "Account analysis (equity, debit credit): dr Cash / Cr Share Capital. Work through which accounts change and whether they have normal debit or credit balances. Distractors often swap sides, use the wrong account class, or omit part of the entry.",
     "tags": [
       "equity",
       "debit_credit"
@@ -302,7 +302,7 @@ export const ankiMcqs = [
       "Only revenue increases"
     ],
     "answer": 0,
-    "explanation": "Assets increase and equity increases.",
+    "explanation": "Statement impact (equity, balance sheet): assets increase and equity increases. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "equity",
       "balance_sheet"
@@ -318,7 +318,7 @@ export const ankiMcqs = [
       "Cumulative preference shares"
     ],
     "answer": 0,
-    "explanation": "Shares that have preferential rights over ordinary shares, usually for dividends or asset distribution.",
+    "explanation": "The concept being tested (equity): shares that have preferential rights over ordinary shares, usually for dividends or asset distribution. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "equity"
     ]
@@ -333,7 +333,7 @@ export const ankiMcqs = [
       "A mandatory expense in the income statement"
     ],
     "answer": 0,
-    "explanation": "A dividend paid to preference shareholders before ordinary shareholders receive dividends.",
+    "explanation": "The concept being tested (equity): a dividend paid to preference shareholders before ordinary shareholders receive dividends. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "equity"
     ]
@@ -348,7 +348,7 @@ export const ankiMcqs = [
       "Only on payment date"
     ],
     "answer": 0,
-    "explanation": "Often no, or voting rights are limited.",
+    "explanation": "The concept being tested (equity): often no, or voting rights are limited. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "equity"
     ]
@@ -363,7 +363,7 @@ export const ankiMcqs = [
       "Cumulative shares have no dividend rights"
     ],
     "answer": 0,
-    "explanation": "Unpaid preference dividends accumulate and must be paid before ordinary dividends.",
+    "explanation": "The concept being tested (equity): unpaid preference dividends accumulate and must be paid before ordinary dividends. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "equity"
     ]
@@ -378,7 +378,7 @@ export const ankiMcqs = [
       "Declared but unpaid ordinary dividends only"
     ],
     "answer": 0,
-    "explanation": "Unpaid cumulative preference dividends from prior periods.",
+    "explanation": "The concept being tested (equity): unpaid cumulative preference dividends from prior periods. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "equity"
     ]
@@ -393,7 +393,7 @@ export const ankiMcqs = [
       "Only on payment date"
     ],
     "answer": 0,
-    "explanation": "No. They are usually disclosed but not recorded as a liability until declared.",
+    "explanation": "The concept being tested (equity): no. They are usually disclosed but not recorded as a liability until declared. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "equity"
     ]
@@ -408,7 +408,7 @@ export const ankiMcqs = [
       "Cash received from issuing shares"
     ],
     "answer": 0,
-    "explanation": "A distribution of company profits to shareholders.",
+    "explanation": "The concept being tested (equity): a distribution of company profits to shareholders. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "equity"
     ]
@@ -423,7 +423,7 @@ export const ankiMcqs = [
       "External auditors only"
     ],
     "answer": 0,
-    "explanation": "The board of directors.",
+    "explanation": "The concept being tested (equity): the board of directors. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "equity"
     ]
@@ -438,7 +438,7 @@ export const ankiMcqs = [
       "Only on payment date"
     ],
     "answer": 0,
-    "explanation": "No. Dividends are distributions of profit and reduce equity.",
+    "explanation": "The concept being tested (equity, income statement): no. Dividends are distributions of profit and reduce equity. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "equity",
       "income_statement"
@@ -451,10 +451,10 @@ export const ankiMcqs = [
       "Retained earnings.",
       "Share capital",
       "Reserves",
-      "The residual interest in the assets of an entity after deducting liabilities."
+      "Treasury shares"
     ],
     "answer": 0,
-    "explanation": "Retained earnings.",
+    "explanation": "The concept being tested (equity): retained earnings. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "equity"
     ]
@@ -469,7 +469,7 @@ export const ankiMcqs = [
       "Payment date"
     ],
     "answer": 0,
-    "explanation": "The date directors formally approve a dividend.",
+    "explanation": "The concept being tested (equity): the date directors formally approve a dividend. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "equity"
     ]
@@ -484,7 +484,7 @@ export const ankiMcqs = [
       "Payment date"
     ],
     "answer": 0,
-    "explanation": "The date used to determine which shareholders are entitled to the dividend.",
+    "explanation": "The concept being tested (equity): the date used to determine which shareholders are entitled to the dividend. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "equity"
     ]
@@ -499,7 +499,7 @@ export const ankiMcqs = [
       "Payment date"
     ],
     "answer": 0,
-    "explanation": "The date the dividend is paid to shareholders.",
+    "explanation": "The concept being tested (equity): the date the dividend is paid to shareholders. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "equity"
     ]
@@ -511,10 +511,10 @@ export const ankiMcqs = [
       "Dr Retained Earnings / Cr Dividends Payable.",
       "Dr Cash / Cr Share Capital",
       "Dr Dividends Payable / Cr Cash",
-      "The residual interest in the assets of an entity after deducting liabilities."
+      "Dr Retained Earnings / Cr General Reserve"
     ],
     "answer": 0,
-    "explanation": "Dr Retained Earnings / Cr Dividends Payable.",
+    "explanation": "Account analysis (equity, debit credit): dr Retained Earnings / Cr Dividends Payable. Work through which accounts change and whether they have normal debit or credit balances. Distractors often swap sides, use the wrong account class, or omit part of the entry.",
     "tags": [
       "equity",
       "debit_credit"
@@ -530,7 +530,7 @@ export const ankiMcqs = [
       "Only on payment date"
     ],
     "answer": 0,
-    "explanation": "Usually no journal entry.",
+    "explanation": "Account analysis (equity, debit credit): usually no journal entry. Work through which accounts change and whether they have normal debit or credit balances. Distractors often swap sides, use the wrong account class, or omit part of the entry.",
     "tags": [
       "equity",
       "debit_credit"
@@ -543,10 +543,10 @@ export const ankiMcqs = [
       "Dr Dividends Payable / Cr Cash.",
       "Dr Cash / Cr Share Capital",
       "Dr Retained Earnings / Cr Dividends Payable",
-      "The residual interest in the assets of an entity after deducting liabilities."
+      "Dr Retained Earnings / Cr General Reserve"
     ],
     "answer": 0,
-    "explanation": "Dr Dividends Payable / Cr Cash.",
+    "explanation": "Account analysis (equity, debit credit): dr Dividends Payable / Cr Cash. Work through which accounts change and whether they have normal debit or credit balances. Distractors often swap sides, use the wrong account class, or omit part of the entry.",
     "tags": [
       "equity",
       "debit_credit"
@@ -562,7 +562,7 @@ export const ankiMcqs = [
       "Share capital issued for cash"
     ],
     "answer": 0,
-    "explanation": "A dividend paid in cash.",
+    "explanation": "The concept being tested (equity): a dividend paid in cash. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "equity"
     ]
@@ -577,7 +577,7 @@ export const ankiMcqs = [
       "A transfer to general reserve"
     ],
     "answer": 0,
-    "explanation": "A dividend paid in additional shares instead of cash.",
+    "explanation": "The concept being tested (equity): a dividend paid in additional shares instead of cash. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "equity"
     ]
@@ -592,7 +592,7 @@ export const ankiMcqs = [
       "Share buy-backs only"
     ],
     "answer": 0,
-    "explanation": "Profit.",
+    "explanation": "The concept being tested (equity): profit. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "equity"
     ]
@@ -607,7 +607,7 @@ export const ankiMcqs = [
       "Issuing ordinary shares for cash"
     ],
     "answer": 0,
-    "explanation": "Losses and dividends.",
+    "explanation": "The concept being tested (equity): losses and dividends. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "equity"
     ]
@@ -619,10 +619,10 @@ export const ankiMcqs = [
       "Opening Retained Earnings + Profit − Dividends = Closing Retained Earnings.",
       "Profit available to ordinary shareholders ÷ Average ordinary shareholders' equity",
       "Profit available to ordinary shareholders ÷ Weighted average ordinary shares outstanding",
-      "The residual interest in the assets of an entity after deducting liabilities."
+      "Market Price per Share ÷ Earnings per Share"
     ],
     "answer": 0,
-    "explanation": "Opening Retained Earnings + Profit − Dividends = Closing Retained Earnings.",
+    "explanation": "The concept being tested (equity): opening Retained Earnings + Profit − Dividends = Closing Retained Earnings. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "equity"
     ]
@@ -637,7 +637,7 @@ export const ankiMcqs = [
       "A revaluation surplus"
     ],
     "answer": 0,
-    "explanation": "Accumulated losses, also called a deficit.",
+    "explanation": "Account analysis (equity): accumulated losses, also called a deficit. Work through which accounts change and whether they have normal debit or credit balances. Distractors often swap sides, use the wrong account class, or omit part of the entry.",
     "tags": [
       "equity"
     ]
@@ -652,7 +652,7 @@ export const ankiMcqs = [
       "Only preference shareholders can receive dividends"
     ],
     "answer": 0,
-    "explanation": "It may be restricted legally or financially, depending on solvency and company law requirements.",
+    "explanation": "The concept being tested (equity): it may be restricted legally or financially, depending on solvency and company law requirements. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "equity"
     ]
@@ -667,7 +667,7 @@ export const ankiMcqs = [
       "To avoid issuing financial statements"
     ],
     "answer": 0,
-    "explanation": "To raise capital without creating debt obligations.",
+    "explanation": "The reasoning to apply (equity): to raise capital without creating debt obligations. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "equity"
     ]
@@ -679,10 +679,10 @@ export const ankiMcqs = [
       "Dr Cash / Cr Share Capital.",
       "Dr Retained Earnings / Cr Dividends Payable",
       "Dr Dividends Payable / Cr Cash",
-      "The residual interest in the assets of an entity after deducting liabilities."
+      "Dr Retained Earnings / Cr General Reserve"
     ],
     "answer": 0,
-    "explanation": "Dr Cash / Cr Share Capital.",
+    "explanation": "Account analysis (equity, debit credit): dr Cash / Cr Share Capital. Work through which accounts change and whether they have normal debit or credit balances. Distractors often swap sides, use the wrong account class, or omit part of the entry.",
     "tags": [
       "equity",
       "debit_credit"
@@ -698,7 +698,7 @@ export const ankiMcqs = [
       "Dr Dividends Payable / Cr Cash"
     ],
     "answer": 0,
-    "explanation": "Dr Asset / Cr Share Capital, measured at fair value.",
+    "explanation": "Account analysis (equity, debit credit): dr Asset / Cr Share Capital, measured at fair value. Work through which accounts change and whether they have normal debit or credit balances. Distractors often swap sides, use the wrong account class, or omit part of the entry.",
     "tags": [
       "equity",
       "debit_credit"
@@ -714,7 +714,7 @@ export const ankiMcqs = [
       "Interest on debentures"
     ],
     "answer": 0,
-    "explanation": "Costs incurred to issue shares, such as legal, underwriting, or registration fees.",
+    "explanation": "The concept being tested (equity): costs incurred to issue shares, such as legal, underwriting, or registration fees. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "equity"
     ]
@@ -729,7 +729,7 @@ export const ankiMcqs = [
       "Capitalised as an intangible asset"
     ],
     "answer": 0,
-    "explanation": "Deducted from equity rather than expensed.",
+    "explanation": "The concept being tested (equity): deducted from equity rather than expensed. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "equity"
     ]
@@ -744,7 +744,7 @@ export const ankiMcqs = [
       "Cumulative preference shares"
     ],
     "answer": 0,
-    "explanation": "A company's own shares that have been bought back from shareholders.",
+    "explanation": "The concept being tested (equity): a company's own shares that have been bought back from shareholders. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "equity"
     ]
@@ -759,7 +759,7 @@ export const ankiMcqs = [
       "To record a gain in profit or loss"
     ],
     "answer": 0,
-    "explanation": "To return cash to shareholders, improve ratios, or signal undervaluation.",
+    "explanation": "The reasoning to apply (equity): to return cash to shareholders, improve ratios, or signal undervaluation. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "equity"
     ]
@@ -774,7 +774,7 @@ export const ankiMcqs = [
       "Liabilities decrease only"
     ],
     "answer": 0,
-    "explanation": "Equity decreases.",
+    "explanation": "Statement impact (equity): equity decreases. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "equity"
     ]
@@ -789,7 +789,7 @@ export const ankiMcqs = [
       "Dr Dividends Payable / Cr Cash"
     ],
     "answer": 0,
-    "explanation": "Dr Treasury Shares / Cr Cash, or reduce Share Capital depending on course treatment.",
+    "explanation": "Account analysis (equity, debit credit): dr Treasury Shares / Cr Cash, or reduce Share Capital depending on course treatment. Work through which accounts change and whether they have normal debit or credit balances. Distractors often swap sides, use the wrong account class, or omit part of the entry.",
     "tags": [
       "equity",
       "debit_credit"
@@ -805,7 +805,7 @@ export const ankiMcqs = [
       "Only on payment date"
     ],
     "answer": 0,
-    "explanation": "No. Own-share transactions are equity transactions, not profit or loss transactions.",
+    "explanation": "The concept being tested (equity, income statement): no. Own-share transactions are equity transactions, not profit or loss transactions. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "equity",
       "income_statement"
@@ -821,7 +821,7 @@ export const ankiMcqs = [
       "Reserves"
     ],
     "answer": 0,
-    "explanation": "An amount set aside within equity for a particular purpose.",
+    "explanation": "The concept being tested (equity): an amount set aside within equity for a particular purpose. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "equity"
     ]
@@ -836,7 +836,7 @@ export const ankiMcqs = [
       "Dividends payable to shareholders"
     ],
     "answer": 0,
-    "explanation": "An equity reserve arising when non-current assets are revalued upward.",
+    "explanation": "The concept being tested (equity, balance sheet): an equity reserve arising when non-current assets are revalued upward. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "equity",
       "balance_sheet"
@@ -852,7 +852,7 @@ export const ankiMcqs = [
       "Share capital issued at par"
     ],
     "answer": 0,
-    "explanation": "An appropriation of retained earnings for internal purposes.",
+    "explanation": "The concept being tested (equity): an appropriation of retained earnings for internal purposes. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "equity"
     ]
@@ -867,7 +867,7 @@ export const ankiMcqs = [
       "Only on payment date"
     ],
     "answer": 0,
-    "explanation": "No. It only reallocates amounts within equity.",
+    "explanation": "The concept being tested (equity): no. It only reallocates amounts within equity. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "equity"
     ]
@@ -882,7 +882,7 @@ export const ankiMcqs = [
       "Dr Dividends Payable / Cr Cash"
     ],
     "answer": 0,
-    "explanation": "Dr Retained Earnings / Cr General Reserve.",
+    "explanation": "Account analysis (equity, debit credit): dr Retained Earnings / Cr General Reserve. Work through which accounts change and whether they have normal debit or credit balances. Distractors often swap sides, use the wrong account class, or omit part of the entry.",
     "tags": [
       "equity",
       "debit_credit"
@@ -898,7 +898,7 @@ export const ankiMcqs = [
       "Assets and liabilities at one date"
     ],
     "answer": 0,
-    "explanation": "Movements in each equity account during the period.",
+    "explanation": "The concept being tested (equity, financial statements): movements in each equity account during the period. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "equity",
       "financial_statements"
@@ -914,7 +914,7 @@ export const ankiMcqs = [
       "Bank reconciliation adjustments"
     ],
     "answer": 0,
-    "explanation": "Opening balances, profit, dividends, share issues, transfers to reserves, revaluations, and closing balances.",
+    "explanation": "The concept being tested (equity, financial statements): opening balances, profit, dividends, share issues, transfers to reserves, revaluations, and closing balances. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "equity",
       "financial_statements"
@@ -930,7 +930,7 @@ export const ankiMcqs = [
       "It has no effect on equity"
     ],
     "answer": 0,
-    "explanation": "It increases retained earnings and total equity.",
+    "explanation": "The concept being tested (equity, financial statements): it increases retained earnings and total equity. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "equity",
       "financial_statements"
@@ -946,7 +946,7 @@ export const ankiMcqs = [
       "They increase share capital"
     ],
     "answer": 0,
-    "explanation": "They decrease retained earnings and total equity.",
+    "explanation": "The concept being tested (equity, financial statements): they decrease retained earnings and total equity. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "equity",
       "financial_statements"
@@ -962,7 +962,7 @@ export const ankiMcqs = [
       "It reduces retained earnings automatically"
     ],
     "answer": 0,
-    "explanation": "It increases share capital and total equity.",
+    "explanation": "The concept being tested (equity, financial statements): it increases share capital and total equity. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "equity",
       "financial_statements"
@@ -978,7 +978,7 @@ export const ankiMcqs = [
       "It increases liabilities"
     ],
     "answer": 0,
-    "explanation": "It has no effect on total equity.",
+    "explanation": "The concept being tested (equity, financial statements): it has no effect on total equity. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "equity",
       "financial_statements"
@@ -994,7 +994,7 @@ export const ankiMcqs = [
       "Profit available to ordinary shareholders ÷ Weighted average ordinary shares outstanding"
     ],
     "answer": 0,
-    "explanation": "Profitability from the ordinary shareholders' perspective.",
+    "explanation": "The concept being tested (equity, financial statements): profitability from the ordinary shareholders' perspective. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "equity",
       "financial_statements"
@@ -1007,10 +1007,10 @@ export const ankiMcqs = [
       "Profit available to ordinary shareholders ÷ Average ordinary shareholders' equity.",
       "Opening Retained Earnings + Profit − Dividends = Closing Retained Earnings",
       "Profit available to ordinary shareholders ÷ Weighted average ordinary shares outstanding",
-      "The residual interest in the assets of an entity after deducting liabilities."
+      "Market Price per Share ÷ Earnings per Share"
     ],
     "answer": 0,
-    "explanation": "Profit available to ordinary shareholders ÷ Average ordinary shareholders' equity.",
+    "explanation": "The concept being tested (equity, financial statements): profit available to ordinary shareholders ÷ Average ordinary shareholders' equity. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "equity",
       "financial_statements"
@@ -1026,7 +1026,7 @@ export const ankiMcqs = [
       "Profit available to ordinary shareholders ÷ Weighted average ordinary shares outstanding"
     ],
     "answer": 0,
-    "explanation": "Profit available to ordinary shareholders per ordinary share.",
+    "explanation": "The concept being tested (equity, income statement): profit available to ordinary shareholders per ordinary share. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "equity",
       "income_statement"
@@ -1039,10 +1039,10 @@ export const ankiMcqs = [
       "Profit available to ordinary shareholders ÷ Weighted average ordinary shares outstanding.",
       "Opening Retained Earnings + Profit − Dividends = Closing Retained Earnings",
       "Profit available to ordinary shareholders ÷ Average ordinary shareholders' equity",
-      "The residual interest in the assets of an entity after deducting liabilities."
+      "Market Price per Share ÷ Earnings per Share"
     ],
     "answer": 0,
-    "explanation": "Profit available to ordinary shareholders ÷ Weighted average ordinary shares outstanding.",
+    "explanation": "The concept being tested (equity, income statement): profit available to ordinary shareholders ÷ Weighted average ordinary shares outstanding. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "equity",
       "income_statement"
@@ -1058,7 +1058,7 @@ export const ankiMcqs = [
       "It calculates interest coverage only"
     ],
     "answer": 0,
-    "explanation": "It helps investors assess profit earned per share.",
+    "explanation": "The reasoning to apply (equity, income statement): it helps investors assess profit earned per share. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "equity",
       "income_statement"
@@ -1074,7 +1074,7 @@ export const ankiMcqs = [
       "Profit available to ordinary shareholders ÷ Weighted average ordinary shares outstanding"
     ],
     "answer": 0,
-    "explanation": "A market ratio comparing share price to earnings per share.",
+    "explanation": "The concept being tested (equity, financial statements): a market ratio comparing share price to earnings per share. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "equity",
       "financial_statements"
@@ -1090,7 +1090,7 @@ export const ankiMcqs = [
       "Profit available to ordinary shareholders ÷ Weighted average ordinary shares outstanding"
     ],
     "answer": 0,
-    "explanation": "Market Price per Share ÷ Earnings per Share.",
+    "explanation": "The concept being tested (equity, financial statements): market Price per Share ÷ Earnings per Share. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "equity",
       "financial_statements"
@@ -1106,7 +1106,7 @@ export const ankiMcqs = [
       "The share is definitely undervalued"
     ],
     "answer": 0,
-    "explanation": "Investors expect higher future growth, or the share may be overvalued.",
+    "explanation": "The concept being tested (equity, financial statements): investors expect higher future growth, or the share may be overvalued. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "equity",
       "financial_statements"
@@ -1122,7 +1122,7 @@ export const ankiMcqs = [
       "Profit available to ordinary shareholders ÷ Weighted average ordinary shares outstanding"
     ],
     "answer": 0,
-    "explanation": "Dividend per share as a percentage of market price per share.",
+    "explanation": "The concept being tested (equity, financial statements): dividend per share as a percentage of market price per share. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "equity",
       "financial_statements"
@@ -1138,7 +1138,7 @@ export const ankiMcqs = [
       "Profit available to ordinary shareholders ÷ Weighted average ordinary shares outstanding"
     ],
     "answer": 0,
-    "explanation": "Dividend per Share ÷ Market Price per Share.",
+    "explanation": "The concept being tested (equity, financial statements): dividend per Share ÷ Market Price per Share. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "equity",
       "financial_statements"
@@ -1154,7 +1154,7 @@ export const ankiMcqs = [
       "Profit available to ordinary shareholders ÷ Weighted average ordinary shares outstanding"
     ],
     "answer": 0,
-    "explanation": "The proportion of earnings distributed as dividends.",
+    "explanation": "The concept being tested (equity, financial statements): the proportion of earnings distributed as dividends. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "equity",
       "financial_statements"
@@ -1170,7 +1170,7 @@ export const ankiMcqs = [
       "Profit available to ordinary shareholders ÷ Weighted average ordinary shares outstanding"
     ],
     "answer": 0,
-    "explanation": "Dividends ÷ Profit.",
+    "explanation": "The concept being tested (equity, financial statements): dividends ÷ Profit. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "equity",
       "financial_statements"
@@ -1186,7 +1186,7 @@ export const ankiMcqs = [
       "Equity always dilutes control with no benefit"
     ],
     "answer": 0,
-    "explanation": "Equity financing raises capital from owners and does not require repayment, while debt financing creates repayment and interest obligations.",
+    "explanation": "The concept being tested (equity): equity financing raises capital from owners and does not require repayment, while debt financing creates repayment and interest obligations. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "equity"
     ]
@@ -1201,7 +1201,7 @@ export const ankiMcqs = [
       "Fixed repayments improve liquidity"
     ],
     "answer": 0,
-    "explanation": "No mandatory interest or principal repayments.",
+    "explanation": "The concept being tested (equity): no mandatory interest or principal repayments. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "equity"
     ]
@@ -1216,7 +1216,7 @@ export const ankiMcqs = [
       "Equity must always be repaid at maturity"
     ],
     "answer": 0,
-    "explanation": "Existing ownership and control may be diluted.",
+    "explanation": "The concept being tested (equity): existing ownership and control may be diluted. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "equity"
     ]
@@ -1231,7 +1231,7 @@ export const ankiMcqs = [
       "Shareholders lose no control because debt is equity"
     ],
     "answer": 0,
-    "explanation": "Interest is usually tax deductible and ownership is not diluted.",
+    "explanation": "The concept being tested (equity): interest is usually tax deductible and ownership is not diluted. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "equity"
     ]
@@ -1246,7 +1246,7 @@ export const ankiMcqs = [
       "Debt cannot be issued at a discount"
     ],
     "answer": 0,
-    "explanation": "Fixed repayments increase financial risk.",
+    "explanation": "The concept being tested (equity): fixed repayments increase financial risk. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "equity"
     ]
@@ -1261,7 +1261,7 @@ export const ankiMcqs = [
       "Disclosing dividends in notes only"
     ],
     "answer": 0,
-    "explanation": "Treating dividends as an expense instead of an equity distribution.",
+    "explanation": "The concept being tested (error correction, equity): treating dividends as an expense instead of an equity distribution. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "error_correction",
       "equity"
@@ -1277,7 +1277,7 @@ export const ankiMcqs = [
       "Crediting share capital for dividends"
     ],
     "answer": 0,
-    "explanation": "Recording a journal entry on the record date when usually none is required.",
+    "explanation": "The concept being tested (error correction, equity): recording a journal entry on the record date when usually none is required. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "error_correction",
       "equity"
@@ -1293,7 +1293,7 @@ export const ankiMcqs = [
       "Recording share issues as Dr Share Capital / Cr Cash"
     ],
     "answer": 0,
-    "explanation": "Forgetting dividends reduce retained earnings.",
+    "explanation": "The concept being tested (error correction, equity): forgetting dividends reduce retained earnings. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "error_correction",
       "equity"
@@ -1309,7 +1309,7 @@ export const ankiMcqs = [
       "Issuing shares at fair value"
     ],
     "answer": 0,
-    "explanation": "Thinking transfers between retained earnings and reserves change total equity.",
+    "explanation": "The concept being tested (error correction, equity): thinking transfers between retained earnings and reserves change total equity. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "error_correction",
       "equity"
@@ -1325,7 +1325,7 @@ export const ankiMcqs = [
       "Deducting issue costs from equity"
     ],
     "answer": 0,
-    "explanation": "Crediting revenue instead of share capital.",
+    "explanation": "The concept being tested (error correction, equity): crediting revenue instead of share capital. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "error_correction",
       "equity"
@@ -1341,7 +1341,7 @@ export const ankiMcqs = [
       "Paying cash to shareholders via buy-back"
     ],
     "answer": 0,
-    "explanation": "Recognising gains or losses on transactions involving the company's own shares.",
+    "explanation": "The concept being tested (error correction, equity): recognising gains or losses on transactions involving the company's own shares. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "error_correction",
       "equity"
@@ -1357,7 +1357,7 @@ export const ankiMcqs = [
       "Calculating EPS from total revenue"
     ],
     "answer": 0,
-    "explanation": "Using ending shares instead of weighted average shares outstanding.",
+    "explanation": "The concept being tested (error correction, equity, income statement): using ending shares instead of weighted average shares outstanding. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "error_correction",
       "equity",
@@ -1374,7 +1374,7 @@ export const ankiMcqs = [
       "Confusing PE with payout ratio"
     ],
     "answer": 0,
-    "explanation": "Confusing EPS with dividends per share.",
+    "explanation": "The concept being tested (error correction, equity, financial statements): confusing EPS with dividends per share. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "error_correction",
       "equity",
@@ -1388,10 +1388,10 @@ export const ankiMcqs = [
       "Opening Retained Earnings + Profit − Dividends = Closing Retained Earnings.",
       "Profit available to ordinary shareholders ÷ Average ordinary shareholders' equity",
       "Profit available to ordinary shareholders ÷ Weighted average ordinary shares outstanding",
-      "The residual interest in the assets of an entity after deducting liabilities."
+      "Market Price per Share ÷ Earnings per Share"
     ],
     "answer": 0,
-    "explanation": "Opening Retained Earnings + Profit − Dividends = Closing Retained Earnings.",
+    "explanation": "The concept being tested (equity): opening Retained Earnings + Profit − Dividends = Closing Retained Earnings. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "equity"
     ]
@@ -1403,10 +1403,10 @@ export const ankiMcqs = [
       "Profit available to ordinary shareholders ÷ Average ordinary shareholders' equity.",
       "Opening Retained Earnings + Profit − Dividends = Closing Retained Earnings",
       "Profit available to ordinary shareholders ÷ Weighted average ordinary shares outstanding",
-      "The residual interest in the assets of an entity after deducting liabilities."
+      "Market Price per Share ÷ Earnings per Share"
     ],
     "answer": 0,
-    "explanation": "Profit available to ordinary shareholders ÷ Average ordinary shareholders' equity.",
+    "explanation": "The concept being tested (equity, financial statements): profit available to ordinary shareholders ÷ Average ordinary shareholders' equity. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "equity",
       "financial_statements"
@@ -1419,10 +1419,10 @@ export const ankiMcqs = [
       "Profit available to ordinary shareholders ÷ Weighted average ordinary shares outstanding.",
       "Opening Retained Earnings + Profit − Dividends = Closing Retained Earnings",
       "Profit available to ordinary shareholders ÷ Average ordinary shareholders' equity",
-      "The residual interest in the assets of an entity after deducting liabilities."
+      "Market Price per Share ÷ Earnings per Share"
     ],
     "answer": 0,
-    "explanation": "Profit available to ordinary shareholders ÷ Weighted average ordinary shares outstanding.",
+    "explanation": "The concept being tested (equity, income statement): profit available to ordinary shareholders ÷ Weighted average ordinary shares outstanding. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "equity",
       "income_statement"
@@ -1438,7 +1438,7 @@ export const ankiMcqs = [
       "Profit available to ordinary shareholders ÷ Weighted average ordinary shares outstanding"
     ],
     "answer": 0,
-    "explanation": "Market Price per Share ÷ Earnings per Share.",
+    "explanation": "The concept being tested (equity, financial statements): market Price per Share ÷ Earnings per Share. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "equity",
       "financial_statements"
@@ -1454,7 +1454,7 @@ export const ankiMcqs = [
       "Profit available to ordinary shareholders ÷ Weighted average ordinary shares outstanding"
     ],
     "answer": 0,
-    "explanation": "Dividend per Share ÷ Market Price per Share.",
+    "explanation": "The concept being tested (equity, financial statements): dividend per Share ÷ Market Price per Share. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "equity",
       "financial_statements"
@@ -1470,7 +1470,7 @@ export const ankiMcqs = [
       "Profit available to ordinary shareholders ÷ Weighted average ordinary shares outstanding"
     ],
     "answer": 0,
-    "explanation": "Dividends ÷ Profit.",
+    "explanation": "The concept being tested (equity, financial statements): dividends ÷ Profit. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "equity",
       "financial_statements"
@@ -1483,10 +1483,10 @@ export const ankiMcqs = [
       "Dr Cash / Cr Share Capital.",
       "Dr Retained Earnings / Cr Dividends Payable",
       "Dr Dividends Payable / Cr Cash",
-      "The residual interest in the assets of an entity after deducting liabilities."
+      "Dr Retained Earnings / Cr General Reserve"
     ],
     "answer": 0,
-    "explanation": "Dr Cash / Cr Share Capital.",
+    "explanation": "Account analysis (equity, debit credit): dr Cash / Cr Share Capital. Work through which accounts change and whether they have normal debit or credit balances. Distractors often swap sides, use the wrong account class, or omit part of the entry.",
     "tags": [
       "equity",
       "debit_credit"
@@ -1499,10 +1499,10 @@ export const ankiMcqs = [
       "Dr Retained Earnings / Cr Dividends Payable.",
       "Dr Cash / Cr Share Capital",
       "Dr Dividends Payable / Cr Cash",
-      "The residual interest in the assets of an entity after deducting liabilities."
+      "Dr Retained Earnings / Cr General Reserve"
     ],
     "answer": 0,
-    "explanation": "Dr Retained Earnings / Cr Dividends Payable.",
+    "explanation": "Account analysis (equity, debit credit): dr Retained Earnings / Cr Dividends Payable. Work through which accounts change and whether they have normal debit or credit balances. Distractors often swap sides, use the wrong account class, or omit part of the entry.",
     "tags": [
       "equity",
       "debit_credit"
@@ -1515,10 +1515,10 @@ export const ankiMcqs = [
       "Dr Dividends Payable / Cr Cash.",
       "Dr Cash / Cr Share Capital",
       "Dr Retained Earnings / Cr Dividends Payable",
-      "The residual interest in the assets of an entity after deducting liabilities."
+      "Dr Retained Earnings / Cr General Reserve"
     ],
     "answer": 0,
-    "explanation": "Dr Dividends Payable / Cr Cash.",
+    "explanation": "Account analysis (equity, debit credit): dr Dividends Payable / Cr Cash. Work through which accounts change and whether they have normal debit or credit balances. Distractors often swap sides, use the wrong account class, or omit part of the entry.",
     "tags": [
       "equity",
       "debit_credit"
@@ -1534,7 +1534,7 @@ export const ankiMcqs = [
       "Dr Dividends Payable / Cr Cash"
     ],
     "answer": 0,
-    "explanation": "Dr Retained Earnings / Cr General Reserve.",
+    "explanation": "Account analysis (equity, debit credit): dr Retained Earnings / Cr General Reserve. Work through which accounts change and whether they have normal debit or credit balances. Distractors often swap sides, use the wrong account class, or omit part of the entry.",
     "tags": [
       "equity",
       "debit_credit"
@@ -1550,7 +1550,7 @@ export const ankiMcqs = [
       "Dr Dividends Payable / Cr Cash"
     ],
     "answer": 0,
-    "explanation": "Dr Asset / Cr Share Capital.",
+    "explanation": "Account analysis (equity, debit credit): dr Asset / Cr Share Capital. Work through which accounts change and whether they have normal debit or credit balances. Distractors often swap sides, use the wrong account class, or omit part of the entry.",
     "tags": [
       "equity",
       "debit_credit"
@@ -1566,7 +1566,7 @@ export const ankiMcqs = [
       "Dr Dividends Payable / Cr Cash"
     ],
     "answer": 0,
-    "explanation": "Dr Treasury Shares or Share Capital / Cr Cash, depending on course treatment.",
+    "explanation": "Account analysis (equity, debit credit): dr Treasury Shares or Share Capital / Cr Cash, depending on course treatment. Work through which accounts change and whether they have normal debit or credit balances. Distractors often swap sides, use the wrong account class, or omit part of the entry.",
     "tags": [
       "equity",
       "debit_credit"
@@ -1582,7 +1582,7 @@ export const ankiMcqs = [
       "Dr Dividends Payable / Cr Cash"
     ],
     "answer": 0,
-    "explanation": "Dr Asset / Cr Revaluation Surplus.",
+    "explanation": "Account analysis (equity, debit credit, balance sheet): dr Asset / Cr Revaluation Surplus. Work through which accounts change and whether they have normal debit or credit balances. Distractors often swap sides, use the wrong account class, or omit part of the entry.",
     "tags": [
       "equity",
       "debit_credit",

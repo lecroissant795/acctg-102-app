@@ -12,7 +12,7 @@ export const ankiMcqs = [
       "Revenue earned but not yet received"
     ],
     "answer": 0,
-    "explanation": "A present obligation arising from past events that is expected to result in an outflow of economic benefits.",
+    "explanation": "The concept being tested (balance sheet, financial statements): a present obligation arising from past events that is expected to result in an outflow of economic benefits. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "balance_sheet",
       "financial_statements"
@@ -28,7 +28,7 @@ export const ankiMcqs = [
       "Mixed with equity accounts"
     ],
     "answer": 0,
-    "explanation": "In order of liquidity, based on how soon they are expected to be settled.",
+    "explanation": "The concept being tested (balance sheet, financial statements): in order of liquidity, based on how soon they are expected to be settled. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "balance_sheet",
       "financial_statements"
@@ -44,7 +44,7 @@ export const ankiMcqs = [
       "Contingent liability"
     ],
     "answer": 0,
-    "explanation": "A liability expected to be settled within 12 months or the operating cycle.",
+    "explanation": "The concept being tested (balance sheet, financial statements): a liability expected to be settled within 12 months or the operating cycle. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "balance_sheet",
       "financial_statements"
@@ -60,7 +60,7 @@ export const ankiMcqs = [
       "Contingent liability"
     ],
     "answer": 0,
-    "explanation": "A liability expected to be settled after 12 months or outside the operating cycle.",
+    "explanation": "The concept being tested (balance sheet, financial statements): a liability expected to be settled after 12 months or outside the operating cycle. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "balance_sheet",
       "financial_statements"
@@ -76,7 +76,7 @@ export const ankiMcqs = [
       "It replaces the cash flow statement"
     ],
     "answer": 0,
-    "explanation": "It helps users assess liquidity and ability to meet obligations.",
+    "explanation": "The reasoning to apply (balance sheet, financial statements): it helps users assess liquidity and ability to meet obligations. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "balance_sheet",
       "financial_statements"
@@ -92,7 +92,7 @@ export const ankiMcqs = [
       "A possible obligation not yet probable"
     ],
     "answer": 0,
-    "explanation": "A written promise to pay a specified amount in the future.",
+    "explanation": "The concept being tested (balance sheet): a written promise to pay a specified amount in the future. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "balance_sheet"
     ]
@@ -104,10 +104,10 @@ export const ankiMcqs = [
       "Yes.",
       "No",
       "Only if probable and estimable",
-      "A present obligation arising from past events that is expected to result in an outflow of economic benefits."
+      "Only for current liabilities"
     ],
     "answer": 0,
-    "explanation": "Yes.",
+    "explanation": "The concept being tested (balance sheet): yes. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "balance_sheet"
     ]
@@ -119,10 +119,10 @@ export const ankiMcqs = [
       "Dr Cash / Cr Notes Payable.",
       "Dr Interest Expense / Cr Interest Payable",
       "Dr Cash / Cr Revenue Received in Advance",
-      "A present obligation arising from past events that is expected to result in an outflow of economic benefits."
+      "Dr Revenue Received in Advance / Cr Revenue"
     ],
     "answer": 0,
-    "explanation": "Dr Cash / Cr Notes Payable.",
+    "explanation": "Timing is the key idea (debit credit): dr Cash / Cr Notes Payable. Work through which accounts change and whether they have normal debit or credit balances. Distractors often swap sides, use the wrong account class, or omit part of the entry.",
     "tags": [
       "debit_credit"
     ]
@@ -134,10 +134,10 @@ export const ankiMcqs = [
       "Principal × Interest Rate × Time.",
       "Current Assets − Current Liabilities",
       "Current Assets ÷ Current Liabilities",
-      "A present obligation arising from past events that is expected to result in an outflow of economic benefits."
+      "(Cash + Marketable Securities + Net Receivables) ÷ Current Liabilities"
     ],
     "answer": 0,
-    "explanation": "Principal × Interest Rate × Time.",
+    "explanation": "The concept being tested (balance sheet, income statement): principal × Interest Rate × Time. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "balance_sheet",
       "income_statement"
@@ -150,10 +150,10 @@ export const ankiMcqs = [
       "Dr Interest Expense / Cr Interest Payable.",
       "Dr Cash / Cr Notes Payable",
       "Dr Cash / Cr Revenue Received in Advance",
-      "A present obligation arising from past events that is expected to result in an outflow of economic benefits."
+      "Dr Revenue Received in Advance / Cr Revenue"
     ],
     "answer": 0,
-    "explanation": "Dr Interest Expense / Cr Interest Payable.",
+    "explanation": "The concept being tested (adjusting entries, debit credit): dr Interest Expense / Cr Interest Payable. Adjusting entries align revenues and expenses with the reporting period before statements are issued. Wrong options usually skip the adjustment, use the wrong account type, or apply the entry in the wrong period.",
     "tags": [
       "adjusting_entries",
       "debit_credit"
@@ -169,7 +169,7 @@ export const ankiMcqs = [
       "Dr Notes Payable / Cr Interest Payable"
     ],
     "answer": 0,
-    "explanation": "Dr Notes Payable; Dr Interest Payable; Dr Interest Expense; Cr Cash.",
+    "explanation": "Timing is the key idea (debit credit): dr Notes Payable; Dr Interest Payable; Dr Interest Expense; Cr Cash. Work through which accounts change and whether they have normal debit or credit balances. Distractors often swap sides, use the wrong account class, or omit part of the entry.",
     "tags": [
       "debit_credit"
     ]
@@ -184,7 +184,7 @@ export const ankiMcqs = [
       "Accrued interest on notes payable"
     ],
     "answer": 0,
-    "explanation": "Amounts withheld from employee wages and owed to governments or third parties.",
+    "explanation": "The concept being tested (balance sheet): amounts withheld from employee wages and owed to governments or third parties. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "balance_sheet"
     ]
@@ -199,7 +199,7 @@ export const ankiMcqs = [
       "GST collected and GST paid"
     ],
     "answer": 0,
-    "explanation": "PAYG withholding tax, superannuation, union fees, and health insurance.",
+    "explanation": "The concept being tested (balance sheet): pAYG withholding tax, superannuation, union fees, and health insurance. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "balance_sheet"
     ]
@@ -214,7 +214,7 @@ export const ankiMcqs = [
       "Net cash paid to suppliers"
     ],
     "answer": 0,
-    "explanation": "Total wages earned before deductions.",
+    "explanation": "The concept being tested (balance sheet, income statement): total wages earned before deductions. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "balance_sheet",
       "income_statement"
@@ -230,7 +230,7 @@ export const ankiMcqs = [
       "Cash received from customers"
     ],
     "answer": 0,
-    "explanation": "Amount employees receive after deductions.",
+    "explanation": "The concept being tested (balance sheet, income statement): amount employees receive after deductions. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "balance_sheet",
       "income_statement"
@@ -246,7 +246,7 @@ export const ankiMcqs = [
       "Dr Cash / Cr Revenue Received in Advance"
     ],
     "answer": 0,
-    "explanation": "Dr Salaries & Wages Expense / Cr Salaries & Wages Payable / Cr PAYG Withholding Payable.",
+    "explanation": "Account analysis (debit credit): dr Salaries & Wages Expense / Cr Salaries & Wages Payable / Cr PAYG Withholding Payable. Work through which accounts change and whether they have normal debit or credit balances. Distractors often swap sides, use the wrong account class, or omit part of the entry.",
     "tags": [
       "debit_credit"
     ]
@@ -261,7 +261,7 @@ export const ankiMcqs = [
       "Dr Cash / Cr Revenue Received in Advance"
     ],
     "answer": 0,
-    "explanation": "Dr Salaries & Wages Payable / Cr Cash.",
+    "explanation": "Timing is the key idea (debit credit): dr Salaries & Wages Payable / Cr Cash. Work through which accounts change and whether they have normal debit or credit balances. Distractors often swap sides, use the wrong account class, or omit part of the entry.",
     "tags": [
       "debit_credit"
     ]
@@ -276,7 +276,7 @@ export const ankiMcqs = [
       "Dr Cash / Cr Revenue Received in Advance"
     ],
     "answer": 0,
-    "explanation": "Dr PAYG Withholding Tax Payable / Cr Cash.",
+    "explanation": "Timing is the key idea (debit credit): dr PAYG Withholding Tax Payable / Cr Cash. Work through which accounts change and whether they have normal debit or credit balances. Distractors often swap sides, use the wrong account class, or omit part of the entry.",
     "tags": [
       "debit_credit"
     ]
@@ -291,7 +291,7 @@ export const ankiMcqs = [
       "Interest payable on a note"
     ],
     "answer": 0,
-    "explanation": "Cash received before goods or services are delivered.",
+    "explanation": "The concept being tested (adjusting entries, balance sheet): cash received before goods or services are delivered. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "adjusting_entries",
       "balance_sheet"
@@ -307,7 +307,7 @@ export const ankiMcqs = [
       "Commission revenue"
     ],
     "answer": 0,
-    "explanation": "Unearned revenue.",
+    "explanation": "The concept being tested (adjusting entries, balance sheet): unearned revenue. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "adjusting_entries",
       "balance_sheet"
@@ -323,7 +323,7 @@ export const ankiMcqs = [
       "Because GST must be paid first"
     ],
     "answer": 0,
-    "explanation": "Because the business still owes goods or services.",
+    "explanation": "The reasoning to apply (adjusting entries, balance sheet): because the business still owes goods or services. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "adjusting_entries",
       "balance_sheet"
@@ -336,10 +336,10 @@ export const ankiMcqs = [
       "Dr Cash / Cr Revenue Received in Advance.",
       "Dr Cash / Cr Notes Payable",
       "Dr Interest Expense / Cr Interest Payable",
-      "A present obligation arising from past events that is expected to result in an outflow of economic benefits."
+      "Dr Revenue Received in Advance / Cr Revenue"
     ],
     "answer": 0,
-    "explanation": "Dr Cash / Cr Revenue Received in Advance.",
+    "explanation": "Timing is the key idea (adjusting entries, debit credit): dr Cash / Cr Revenue Received in Advance. Work through which accounts change and whether they have normal debit or credit balances. Distractors often swap sides, use the wrong account class, or omit part of the entry.",
     "tags": [
       "adjusting_entries",
       "debit_credit"
@@ -355,7 +355,7 @@ export const ankiMcqs = [
       "Dr Cash / Cr Revenue Received in Advance"
     ],
     "answer": 0,
-    "explanation": "Dr Revenue Received in Advance / Cr Revenue.",
+    "explanation": "Timing is the key idea (adjusting entries, debit credit): dr Revenue Received in Advance / Cr Revenue. Work through which accounts change and whether they have normal debit or credit balances. Distractors often swap sides, use the wrong account class, or omit part of the entry.",
     "tags": [
       "adjusting_entries",
       "debit_credit"
@@ -371,7 +371,7 @@ export const ankiMcqs = [
       "Contingent liability"
     ],
     "answer": 0,
-    "explanation": "Obligations expected to be settled after more than one year.",
+    "explanation": "The concept being tested (balance sheet): obligations expected to be settled after more than one year. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "balance_sheet"
     ]
@@ -386,7 +386,7 @@ export const ankiMcqs = [
       "Accounts receivable and inventory"
     ],
     "answer": 0,
-    "explanation": "Bank loans, mortgages, debentures, and long-term notes.",
+    "explanation": "The concept being tested (balance sheet): bank loans, mortgages, debentures, and long-term notes. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "balance_sheet"
     ]
@@ -401,7 +401,7 @@ export const ankiMcqs = [
       "A warranty provision"
     ],
     "answer": 0,
-    "explanation": "A note secured by a charge over the issuer's assets.",
+    "explanation": "The concept being tested (balance sheet): a note secured by a charge over the issuer's assets. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "balance_sheet"
     ]
@@ -416,7 +416,7 @@ export const ankiMcqs = [
       "PAYG withholding payable"
     ],
     "answer": 0,
-    "explanation": "A note not backed by specific assets.",
+    "explanation": "The concept being tested (balance sheet): a note not backed by specific assets. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "balance_sheet"
     ]
@@ -431,7 +431,7 @@ export const ankiMcqs = [
       "Interest is never tax deductible"
     ],
     "answer": 0,
-    "explanation": "Shareholder control is unaffected.",
+    "explanation": "The concept being tested (balance sheet, equity): shareholder control is unaffected. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "balance_sheet",
       "equity"
@@ -447,7 +447,7 @@ export const ankiMcqs = [
       "It is recorded as equity"
     ],
     "answer": 0,
-    "explanation": "It is generally tax deductible.",
+    "explanation": "The reasoning to apply (balance sheet, income statement): it is generally tax deductible. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "balance_sheet",
       "income_statement"
@@ -463,7 +463,7 @@ export const ankiMcqs = [
       "Interest is never recorded as expense"
     ],
     "answer": 0,
-    "explanation": "Interest and principal repayments are mandatory.",
+    "explanation": "The concept being tested (balance sheet): interest and principal repayments are mandatory. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "balance_sheet"
     ]
@@ -478,7 +478,7 @@ export const ankiMcqs = [
       "Debt financing removes interest expense"
     ],
     "answer": 0,
-    "explanation": "Businesses may struggle to meet fixed payments during poor cash flow periods.",
+    "explanation": "The reasoning to apply (balance sheet, financial statements): businesses may struggle to meet fixed payments during poor cash flow periods. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "balance_sheet",
       "financial_statements"
@@ -494,7 +494,7 @@ export const ankiMcqs = [
       "Premium"
     ],
     "answer": 0,
-    "explanation": "The amount due at maturity.",
+    "explanation": "The concept being tested (balance sheet): the amount due at maturity. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "balance_sheet"
     ]
@@ -509,7 +509,7 @@ export const ankiMcqs = [
       "Premium"
     ],
     "answer": 0,
-    "explanation": "The amount of cash received when debt is issued.",
+    "explanation": "The concept being tested (balance sheet): the amount of cash received when debt is issued. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "balance_sheet"
     ]
@@ -524,7 +524,7 @@ export const ankiMcqs = [
       "Premium"
     ],
     "answer": 0,
-    "explanation": "Contract (coupon) interest rate.",
+    "explanation": "The concept being tested (balance sheet): contract (coupon) interest rate. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "balance_sheet"
     ]
@@ -539,7 +539,7 @@ export const ankiMcqs = [
       "Coupon rate is irrelevant to pricing"
     ],
     "answer": 0,
-    "explanation": "Debt is priced based on the present value of future cash flows.",
+    "explanation": "The reasoning to apply (balance sheet): debt is priced based on the present value of future cash flows. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "balance_sheet"
     ]
@@ -554,7 +554,7 @@ export const ankiMcqs = [
       "When no interest is payable"
     ],
     "answer": 0,
-    "explanation": "When market interest rates are lower than contract rates.",
+    "explanation": "Timing is the key idea (balance sheet): when market interest rates are lower than contract rates. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "balance_sheet"
     ]
@@ -569,7 +569,7 @@ export const ankiMcqs = [
       "When debt is always redeemed early"
     ],
     "answer": 0,
-    "explanation": "When market interest rates are higher than contract rates.",
+    "explanation": "Timing is the key idea (balance sheet): when market interest rates are higher than contract rates. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "balance_sheet"
     ]
@@ -581,10 +581,10 @@ export const ankiMcqs = [
       "Dr Cash / Cr Notes Payable.",
       "Dr Interest Expense / Cr Interest Payable",
       "Dr Cash / Cr Revenue Received in Advance",
-      "A present obligation arising from past events that is expected to result in an outflow of economic benefits."
+      "Dr Revenue Received in Advance / Cr Revenue"
     ],
     "answer": 0,
-    "explanation": "Dr Cash / Cr Notes Payable.",
+    "explanation": "Timing is the key idea (debit credit): dr Cash / Cr Notes Payable. Work through which accounts change and whether they have normal debit or credit balances. Distractors often swap sides, use the wrong account class, or omit part of the entry.",
     "tags": [
       "debit_credit"
     ]
@@ -599,7 +599,7 @@ export const ankiMcqs = [
       "Dr Notes Payable / Cr Cash only"
     ],
     "answer": 0,
-    "explanation": "Dr Interest Expense / Cr Cash.",
+    "explanation": "Account analysis (debit credit): dr Interest Expense / Cr Cash. Work through which accounts change and whether they have normal debit or credit balances. Distractors often swap sides, use the wrong account class, or omit part of the entry.",
     "tags": [
       "debit_credit"
     ]
@@ -614,7 +614,7 @@ export const ankiMcqs = [
       "Dr Cash / Cr Revenue Received in Advance"
     ],
     "answer": 0,
-    "explanation": "Dr Notes Payable / Cr Cash.",
+    "explanation": "Timing is the key idea (debit credit): dr Notes Payable / Cr Cash. Work through which accounts change and whether they have normal debit or credit balances. Distractors often swap sides, use the wrong account class, or omit part of the entry.",
     "tags": [
       "debit_credit"
     ]
@@ -629,7 +629,7 @@ export const ankiMcqs = [
       "Interest expense is reversed completely"
     ],
     "answer": 0,
-    "explanation": "A loss on redemption is recognised.",
+    "explanation": "The concept being tested (balance sheet, income statement): a loss on redemption is recognised. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "balance_sheet",
       "income_statement"
@@ -645,7 +645,7 @@ export const ankiMcqs = [
       "Revenue is credited instead"
     ],
     "answer": 0,
-    "explanation": "A gain on redemption is recognised.",
+    "explanation": "The concept being tested (balance sheet, income statement): a gain on redemption is recognised. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "balance_sheet",
       "income_statement"
@@ -661,7 +661,7 @@ export const ankiMcqs = [
       "GST collected and GST paid"
     ],
     "answer": 0,
-    "explanation": "Interest expense and principal reduction.",
+    "explanation": "The concept being tested (balance sheet): interest expense and principal reduction. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "balance_sheet"
     ]
@@ -676,7 +676,7 @@ export const ankiMcqs = [
       "Current Assets ÷ Current Liabilities"
     ],
     "answer": 0,
-    "explanation": "Beginning loan balance × periodic interest rate.",
+    "explanation": "The calculation rests on (balance sheet): beginning loan balance × periodic interest rate. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "balance_sheet"
     ]
@@ -691,7 +691,7 @@ export const ankiMcqs = [
       "Current Assets ÷ Current Liabilities"
     ],
     "answer": 0,
-    "explanation": "Payment − Interest.",
+    "explanation": "The calculation rests on (balance sheet): payment − Interest. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "balance_sheet"
     ]
@@ -706,7 +706,7 @@ export const ankiMcqs = [
       "Dr Cash / Cr Revenue Received in Advance"
     ],
     "answer": 0,
-    "explanation": "Dr Interest Expense; Dr Loan Payable; Cr Cash.",
+    "explanation": "Account analysis (debit credit): dr Interest Expense; Dr Loan Payable; Cr Cash. Work through which accounts change and whether they have normal debit or credit balances. Distractors often swap sides, use the wrong account class, or omit part of the entry.",
     "tags": [
       "debit_credit"
     ]
@@ -721,7 +721,7 @@ export const ankiMcqs = [
       "Contingent liability"
     ],
     "answer": 0,
-    "explanation": "As a current liability.",
+    "explanation": "The concept being tested (balance sheet, financial statements): as a current liability. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "balance_sheet",
       "financial_statements"
@@ -737,7 +737,7 @@ export const ankiMcqs = [
       "Contingent liability"
     ],
     "answer": 0,
-    "explanation": "As a non-current liability.",
+    "explanation": "The concept being tested (balance sheet, financial statements): as a non-current liability. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "balance_sheet",
       "financial_statements"
@@ -753,7 +753,7 @@ export const ankiMcqs = [
       "Cash received before services are delivered"
     ],
     "answer": 0,
-    "explanation": "An agreement where a lessor grants a lessee the right to use an asset.",
+    "explanation": "The concept being tested (balance sheet): an agreement where a lessor grants a lessee the right to use an asset. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "balance_sheet"
     ]
@@ -768,7 +768,7 @@ export const ankiMcqs = [
       "The employee receiving net pay"
     ],
     "answer": 0,
-    "explanation": "The owner of the asset.",
+    "explanation": "The concept being tested (balance sheet): the owner of the asset. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "balance_sheet"
     ]
@@ -783,7 +783,7 @@ export const ankiMcqs = [
       "The ATO receiving GST"
     ],
     "answer": 0,
-    "explanation": "The party using the asset.",
+    "explanation": "The concept being tested (balance sheet): the party using the asset. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "balance_sheet"
     ]
@@ -798,7 +798,7 @@ export const ankiMcqs = [
       "Sale and leaseback only"
     ],
     "answer": 0,
-    "explanation": "As rental expense.",
+    "explanation": "The concept being tested (balance sheet, income statement): as rental expense. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "balance_sheet",
       "income_statement"
@@ -814,7 +814,7 @@ export const ankiMcqs = [
       "Dr Cash / Cr Revenue Received in Advance"
     ],
     "answer": 0,
-    "explanation": "Dr Lease/Rent Expense / Cr Cash.",
+    "explanation": "Account analysis (debit credit): dr Lease/Rent Expense / Cr Cash. Work through which accounts change and whether they have normal debit or credit balances. Distractors often swap sides, use the wrong account class, or omit part of the entry.",
     "tags": [
       "debit_credit"
     ]
@@ -829,7 +829,7 @@ export const ankiMcqs = [
       "Neither party"
     ],
     "answer": 0,
-    "explanation": "The lessor's.",
+    "explanation": "The concept being tested (balance sheet): the lessor's. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "balance_sheet"
     ]
@@ -844,7 +844,7 @@ export const ankiMcqs = [
       "Dr Cash / Cr Notes Payable"
     ],
     "answer": 0,
-    "explanation": "Dr Cash / Cr Lease Revenue.",
+    "explanation": "The concept being tested (debit credit): dr Cash / Cr Lease Revenue. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "debit_credit"
     ]
@@ -859,7 +859,7 @@ export const ankiMcqs = [
       "Sale and leaseback only"
     ],
     "answer": 0,
-    "explanation": "A right-of-use asset and a lease liability.",
+    "explanation": "The concept being tested (balance sheet): a right-of-use asset and a lease liability. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "balance_sheet"
     ]
@@ -874,7 +874,7 @@ export const ankiMcqs = [
       "Dr Cash / Cr Revenue Received in Advance"
     ],
     "answer": 0,
-    "explanation": "Dr Right-of-use Asset / Cr Lease Liability.",
+    "explanation": "The concept being tested (debit credit): dr Right-of-use Asset / Cr Lease Liability. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "debit_credit"
     ]
@@ -889,7 +889,7 @@ export const ankiMcqs = [
       "It is transferred to equity"
     ],
     "answer": 0,
-    "explanation": "It decreases as principal is repaid.",
+    "explanation": "The concept being tested (balance sheet): it decreases as principal is repaid. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "balance_sheet"
     ]
@@ -904,7 +904,7 @@ export const ankiMcqs = [
       "No expense until lease ends"
     ],
     "answer": 0,
-    "explanation": "Interest expense and depreciation/amortisation.",
+    "explanation": "The concept being tested (balance sheet, income statement): interest expense and depreciation/amortisation. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "balance_sheet",
       "income_statement"
@@ -920,7 +920,7 @@ export const ankiMcqs = [
       "Contingent liability"
     ],
     "answer": 0,
-    "explanation": "Liabilities for goods/services received but not yet invoiced.",
+    "explanation": "The concept being tested (adjusting entries, balance sheet): liabilities for goods/services received but not yet invoiced. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "adjusting_entries",
       "balance_sheet"
@@ -936,7 +936,7 @@ export const ankiMcqs = [
       "Warranty claims already paid in cash"
     ],
     "answer": 0,
-    "explanation": "Utilities expense owing at period end.",
+    "explanation": "The concept being tested (adjusting entries, balance sheet): utilities expense owing at period end. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "adjusting_entries",
       "balance_sheet"
@@ -952,7 +952,7 @@ export const ankiMcqs = [
       "Contingent liability"
     ],
     "answer": 0,
-    "explanation": "Liabilities with uncertain timing or amount but probable outflows.",
+    "explanation": "The concept being tested (balance sheet): liabilities with uncertain timing or amount but probable outflows. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "balance_sheet"
     ]
@@ -967,7 +967,7 @@ export const ankiMcqs = [
       "Accounts receivable and inventory"
     ],
     "answer": 0,
-    "explanation": "Warranties and long service leave.",
+    "explanation": "The concept being tested (balance sheet): warranties and long service leave. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "balance_sheet"
     ]
@@ -982,7 +982,7 @@ export const ankiMcqs = [
       "Contingent liability"
     ],
     "answer": 0,
-    "explanation": "Possible obligations dependent on uncertain future events.",
+    "explanation": "The concept being tested (balance sheet, financial statements): possible obligations dependent on uncertain future events. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "balance_sheet",
       "financial_statements"
@@ -998,7 +998,7 @@ export const ankiMcqs = [
       "Only if probable and estimable"
     ],
     "answer": 0,
-    "explanation": "They are not recognised if outflow is not probable or cannot be measured reliably.",
+    "explanation": "Timing is the key idea (balance sheet, financial statements): they are not recognised if outflow is not probable or cannot be measured reliably. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "balance_sheet",
       "financial_statements"
@@ -1014,7 +1014,7 @@ export const ankiMcqs = [
       "Included in share capital"
     ],
     "answer": 0,
-    "explanation": "Disclosed in notes to the financial statements.",
+    "explanation": "The concept being tested (balance sheet, financial statements): disclosed in notes to the financial statements. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "balance_sheet",
       "financial_statements"
@@ -1030,7 +1030,7 @@ export const ankiMcqs = [
       "Because warranty expense is never recorded until payment"
     ],
     "answer": 0,
-    "explanation": "Because future warranty claims are probable and estimable.",
+    "explanation": "The reasoning to apply (balance sheet): because future warranty claims are probable and estimable. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "balance_sheet"
     ]
@@ -1045,7 +1045,7 @@ export const ankiMcqs = [
       "Dr Cash / Cr Revenue Received in Advance"
     ],
     "answer": 0,
-    "explanation": "Dr Warranty Expense / Cr Warranty Provision.",
+    "explanation": "Account analysis (debit credit): dr Warranty Expense / Cr Warranty Provision. Work through which accounts change and whether they have normal debit or credit balances. Distractors often swap sides, use the wrong account class, or omit part of the entry.",
     "tags": [
       "debit_credit"
     ]
@@ -1060,7 +1060,7 @@ export const ankiMcqs = [
       "Dr Cash / Cr Revenue Received in Advance"
     ],
     "answer": 0,
-    "explanation": "Dr Warranty Provision / Cr Cash or Inventory.",
+    "explanation": "Timing is the key idea (debit credit): dr Warranty Provision / Cr Cash or Inventory. Work through which accounts change and whether they have normal debit or credit balances. Distractors often swap sides, use the wrong account class, or omit part of the entry.",
     "tags": [
       "debit_credit"
     ]
@@ -1075,7 +1075,7 @@ export const ankiMcqs = [
       "The provision is reversed to equity"
     ],
     "answer": 0,
-    "explanation": "Additional warranty expense and provision are recognised.",
+    "explanation": "The concept being tested (balance sheet, income statement): additional warranty expense and provision are recognised. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "balance_sheet",
       "income_statement"
@@ -1091,7 +1091,7 @@ export const ankiMcqs = [
       "Efficiency of asset use"
     ],
     "answer": 0,
-    "explanation": "Ability to meet short-term obligations.",
+    "explanation": "The concept being tested (financial statements): ability to meet short-term obligations. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "financial_statements"
     ]
@@ -1103,10 +1103,10 @@ export const ankiMcqs = [
       "Current Assets − Current Liabilities.",
       "Principal × Interest Rate × Time",
       "Current Assets ÷ Current Liabilities",
-      "A present obligation arising from past events that is expected to result in an outflow of economic benefits."
+      "(Cash + Marketable Securities + Net Receivables) ÷ Current Liabilities"
     ],
     "answer": 0,
-    "explanation": "Current Assets − Current Liabilities.",
+    "explanation": "The concept being tested (financial statements): current Assets − Current Liabilities. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "financial_statements"
     ]
@@ -1121,7 +1121,7 @@ export const ankiMcqs = [
       "Inventory turnover is high"
     ],
     "answer": 0,
-    "explanation": "Current assets exceed current liabilities.",
+    "explanation": "The concept being tested (financial statements): current assets exceed current liabilities. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "financial_statements"
     ]
@@ -1133,10 +1133,10 @@ export const ankiMcqs = [
       "Current Assets ÷ Current Liabilities.",
       "Principal × Interest Rate × Time",
       "Current Assets − Current Liabilities",
-      "A present obligation arising from past events that is expected to result in an outflow of economic benefits."
+      "(Cash + Marketable Securities + Net Receivables) ÷ Current Liabilities"
     ],
     "answer": 0,
-    "explanation": "Current Assets ÷ Current Liabilities.",
+    "explanation": "The concept being tested (financial statements): current Assets ÷ Current Liabilities. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "financial_statements"
     ]
@@ -1151,7 +1151,7 @@ export const ankiMcqs = [
       "Inventory efficiency only"
     ],
     "answer": 0,
-    "explanation": "Ability to pay short-term debts.",
+    "explanation": "The concept being tested (financial statements): ability to pay short-term debts. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "financial_statements"
     ]
@@ -1166,7 +1166,7 @@ export const ankiMcqs = [
       "Current Assets ÷ Current Liabilities"
     ],
     "answer": 0,
-    "explanation": "(Cash + Marketable Securities + Net Receivables) ÷ Current Liabilities.",
+    "explanation": "The concept being tested (financial statements): (Cash + Marketable Securities + Net Receivables) ÷ Current Liabilities. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "financial_statements"
     ]
@@ -1181,7 +1181,7 @@ export const ankiMcqs = [
       "It excludes cash and receivables"
     ],
     "answer": 0,
-    "explanation": "It excludes inventory and prepayments.",
+    "explanation": "The reasoning to apply (financial statements): it excludes inventory and prepayments. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "financial_statements"
     ]
@@ -1196,7 +1196,7 @@ export const ankiMcqs = [
       "Gross profit margin"
     ],
     "answer": 0,
-    "explanation": "Long-term financial stability.",
+    "explanation": "The concept being tested (financial statements): long-term financial stability. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "financial_statements"
     ]
@@ -1211,7 +1211,7 @@ export const ankiMcqs = [
       "Current Assets ÷ Current Liabilities"
     ],
     "answer": 0,
-    "explanation": "Total Liabilities ÷ Total Assets.",
+    "explanation": "The concept being tested (financial statements): total Liabilities ÷ Total Assets. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "financial_statements"
     ]
@@ -1226,7 +1226,7 @@ export const ankiMcqs = [
       "Stronger interest coverage always"
     ],
     "answer": 0,
-    "explanation": "Greater financial risk and leverage.",
+    "explanation": "The concept being tested (financial statements): greater financial risk and leverage. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "financial_statements"
     ]
@@ -1241,7 +1241,7 @@ export const ankiMcqs = [
       "Current Assets ÷ Current Liabilities"
     ],
     "answer": 0,
-    "explanation": "(Profit Before Income Tax + Interest Expense) ÷ Interest Expense.",
+    "explanation": "The concept being tested (financial statements): (Profit Before Income Tax + Interest Expense) ÷ Interest Expense. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "financial_statements"
     ]
@@ -1256,7 +1256,7 @@ export const ankiMcqs = [
       "Proportion of receivables uncollectable"
     ],
     "answer": 0,
-    "explanation": "Ability to meet interest obligations.",
+    "explanation": "The concept being tested (financial statements): ability to meet interest obligations. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "financial_statements"
     ]
@@ -1271,7 +1271,7 @@ export const ankiMcqs = [
       "Low debt levels"
     ],
     "answer": 0,
-    "explanation": "Difficulty paying interest.",
+    "explanation": "The concept being tested (financial statements): difficulty paying interest. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "financial_statements"
     ]
@@ -1286,7 +1286,7 @@ export const ankiMcqs = [
       "Including inventory in quick ratio"
     ],
     "answer": 0,
-    "explanation": "Forgetting the current portion of long-term debt.",
+    "explanation": "The concept being tested (error correction): forgetting the current portion of long-term debt. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "error_correction"
     ]
@@ -1301,7 +1301,7 @@ export const ankiMcqs = [
       "Recognising revenue before earned"
     ],
     "answer": 0,
-    "explanation": "Forgetting to accrue interest at period end.",
+    "explanation": "The concept being tested (error correction): forgetting to accrue interest at period end. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "error_correction"
     ]
@@ -1316,7 +1316,7 @@ export const ankiMcqs = [
       "Treating superannuation as revenue"
     ],
     "answer": 0,
-    "explanation": "Confusing gross pay with net pay.",
+    "explanation": "The concept being tested (error correction): confusing gross pay with net pay. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "error_correction"
     ]
@@ -1331,7 +1331,7 @@ export const ankiMcqs = [
       "Failing to record GST on advance receipts only"
     ],
     "answer": 0,
-    "explanation": "Recognising revenue before it is earned.",
+    "explanation": "The concept being tested (error correction, adjusting entries): recognising revenue before it is earned. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "error_correction",
       "adjusting_entries"
@@ -1347,7 +1347,7 @@ export const ankiMcqs = [
       "Recording Dr Cash / Cr Loan Payable for each payment"
     ],
     "answer": 0,
-    "explanation": "Treating the entire payment as interest expense.",
+    "explanation": "The concept being tested (error correction): treating the entire payment as interest expense. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "error_correction"
     ]
@@ -1362,7 +1362,7 @@ export const ankiMcqs = [
       "Showing the asset on the lessor's books as lessee"
     ],
     "answer": 0,
-    "explanation": "Forgetting both an asset and liability are recognised.",
+    "explanation": "The concept being tested (error correction): forgetting both an asset and liability are recognised. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "error_correction"
     ]
@@ -1377,7 +1377,7 @@ export const ankiMcqs = [
       "Accruing utilities expense at period end"
     ],
     "answer": 0,
-    "explanation": "Recognising contingent liabilities instead of only disclosing them.",
+    "explanation": "The concept being tested (error correction): recognising contingent liabilities instead of only disclosing them. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "error_correction"
     ]
@@ -1392,7 +1392,7 @@ export const ankiMcqs = [
       "Increasing provision when estimates rise"
     ],
     "answer": 0,
-    "explanation": "Recording warranty expense only when claims occur instead of estimating upfront.",
+    "explanation": "The concept being tested (error correction): recording warranty expense only when claims occur instead of estimating upfront. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "error_correction"
     ]
@@ -1407,7 +1407,7 @@ export const ankiMcqs = [
       "Using net sales in working capital"
     ],
     "answer": 0,
-    "explanation": "Including inventory in the quick ratio.",
+    "explanation": "The concept being tested (error correction, financial statements): including inventory in the quick ratio. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "error_correction",
       "financial_statements"
@@ -1420,10 +1420,10 @@ export const ankiMcqs = [
       "Principal × Interest Rate × Time.",
       "Current Assets − Current Liabilities",
       "Current Assets ÷ Current Liabilities",
-      "A present obligation arising from past events that is expected to result in an outflow of economic benefits."
+      "(Cash + Marketable Securities + Net Receivables) ÷ Current Liabilities"
     ],
     "answer": 0,
-    "explanation": "Principal × Interest Rate × Time.",
+    "explanation": "The concept being tested (financial statements): principal × Interest Rate × Time. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "financial_statements"
     ]
@@ -1435,10 +1435,10 @@ export const ankiMcqs = [
       "Current Assets − Current Liabilities.",
       "Principal × Interest Rate × Time",
       "Current Assets ÷ Current Liabilities",
-      "A present obligation arising from past events that is expected to result in an outflow of economic benefits."
+      "(Cash + Marketable Securities + Net Receivables) ÷ Current Liabilities"
     ],
     "answer": 0,
-    "explanation": "Current Assets − Current Liabilities.",
+    "explanation": "The concept being tested (financial statements): current Assets − Current Liabilities. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "financial_statements"
     ]
@@ -1450,10 +1450,10 @@ export const ankiMcqs = [
       "Current Assets ÷ Current Liabilities.",
       "Principal × Interest Rate × Time",
       "Current Assets − Current Liabilities",
-      "A present obligation arising from past events that is expected to result in an outflow of economic benefits."
+      "(Cash + Marketable Securities + Net Receivables) ÷ Current Liabilities"
     ],
     "answer": 0,
-    "explanation": "Current Assets ÷ Current Liabilities.",
+    "explanation": "The concept being tested (financial statements): current Assets ÷ Current Liabilities. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "financial_statements"
     ]
@@ -1468,7 +1468,7 @@ export const ankiMcqs = [
       "Current Assets ÷ Current Liabilities"
     ],
     "answer": 0,
-    "explanation": "(Cash + Marketable Securities + Net Receivables) ÷ Current Liabilities.",
+    "explanation": "The concept being tested (financial statements): (Cash + Marketable Securities + Net Receivables) ÷ Current Liabilities. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "financial_statements"
     ]
@@ -1483,7 +1483,7 @@ export const ankiMcqs = [
       "Current Assets ÷ Current Liabilities"
     ],
     "answer": 0,
-    "explanation": "Total Liabilities ÷ Total Assets.",
+    "explanation": "The concept being tested (financial statements): total Liabilities ÷ Total Assets. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "financial_statements"
     ]
@@ -1498,7 +1498,7 @@ export const ankiMcqs = [
       "Current Assets ÷ Current Liabilities"
     ],
     "answer": 0,
-    "explanation": "(Profit Before Income Tax + Interest Expense) ÷ Interest Expense.",
+    "explanation": "The concept being tested (financial statements): (Profit Before Income Tax + Interest Expense) ÷ Interest Expense. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
     "tags": [
       "financial_statements"
     ]
@@ -1510,10 +1510,10 @@ export const ankiMcqs = [
       "Dr Cash / Cr Notes Payable.",
       "Dr Interest Expense / Cr Interest Payable",
       "Dr Cash / Cr Revenue Received in Advance",
-      "A present obligation arising from past events that is expected to result in an outflow of economic benefits."
+      "Dr Revenue Received in Advance / Cr Revenue"
     ],
     "answer": 0,
-    "explanation": "Dr Cash / Cr Notes Payable.",
+    "explanation": "Account analysis (debit credit): dr Cash / Cr Notes Payable. Work through which accounts change and whether they have normal debit or credit balances. Distractors often swap sides, use the wrong account class, or omit part of the entry.",
     "tags": [
       "debit_credit"
     ]
@@ -1525,10 +1525,10 @@ export const ankiMcqs = [
       "Dr Interest Expense / Cr Interest Payable.",
       "Dr Cash / Cr Notes Payable",
       "Dr Cash / Cr Revenue Received in Advance",
-      "A present obligation arising from past events that is expected to result in an outflow of economic benefits."
+      "Dr Revenue Received in Advance / Cr Revenue"
     ],
     "answer": 0,
-    "explanation": "Dr Interest Expense / Cr Interest Payable.",
+    "explanation": "Account analysis (adjusting entries, debit credit): dr Interest Expense / Cr Interest Payable. Adjusting entries align revenues and expenses with the reporting period before statements are issued. Wrong options usually skip the adjustment, use the wrong account type, or apply the entry in the wrong period.",
     "tags": [
       "adjusting_entries",
       "debit_credit"
@@ -1541,10 +1541,10 @@ export const ankiMcqs = [
       "Dr Cash / Cr Revenue Received in Advance.",
       "Dr Cash / Cr Notes Payable",
       "Dr Interest Expense / Cr Interest Payable",
-      "A present obligation arising from past events that is expected to result in an outflow of economic benefits."
+      "Dr Revenue Received in Advance / Cr Revenue"
     ],
     "answer": 0,
-    "explanation": "Dr Cash / Cr Revenue Received in Advance.",
+    "explanation": "Account analysis (adjusting entries, debit credit): dr Cash / Cr Revenue Received in Advance. Work through which accounts change and whether they have normal debit or credit balances. Distractors often swap sides, use the wrong account class, or omit part of the entry.",
     "tags": [
       "adjusting_entries",
       "debit_credit"
@@ -1560,7 +1560,7 @@ export const ankiMcqs = [
       "Dr Cash / Cr Revenue Received in Advance"
     ],
     "answer": 0,
-    "explanation": "Dr Revenue Received in Advance / Cr Revenue.",
+    "explanation": "Account analysis (adjusting entries, debit credit): dr Revenue Received in Advance / Cr Revenue. Work through which accounts change and whether they have normal debit or credit balances. Distractors often swap sides, use the wrong account class, or omit part of the entry.",
     "tags": [
       "adjusting_entries",
       "debit_credit"
@@ -1576,7 +1576,7 @@ export const ankiMcqs = [
       "Dr Cash / Cr Revenue Received in Advance"
     ],
     "answer": 0,
-    "explanation": "Dr Salaries & Wages Expense / Cr Salaries & Wages Payable / Cr PAYG Withholding Payable.",
+    "explanation": "Account analysis (debit credit): dr Salaries & Wages Expense / Cr Salaries & Wages Payable / Cr PAYG Withholding Payable. Work through which accounts change and whether they have normal debit or credit balances. Distractors often swap sides, use the wrong account class, or omit part of the entry.",
     "tags": [
       "debit_credit"
     ]
@@ -1591,7 +1591,7 @@ export const ankiMcqs = [
       "Dr Cash / Cr Revenue Received in Advance"
     ],
     "answer": 0,
-    "explanation": "Dr PAYG Withholding Tax Payable / Cr Cash.",
+    "explanation": "Account analysis (debit credit): dr PAYG Withholding Tax Payable / Cr Cash. Work through which accounts change and whether they have normal debit or credit balances. Distractors often swap sides, use the wrong account class, or omit part of the entry.",
     "tags": [
       "debit_credit"
     ]
@@ -1606,7 +1606,7 @@ export const ankiMcqs = [
       "Dr Cash / Cr Revenue Received in Advance"
     ],
     "answer": 0,
-    "explanation": "Dr Lease Expense / Cr Cash.",
+    "explanation": "Account analysis (debit credit): dr Lease Expense / Cr Cash. Work through which accounts change and whether they have normal debit or credit balances. Distractors often swap sides, use the wrong account class, or omit part of the entry.",
     "tags": [
       "debit_credit"
     ]
@@ -1621,7 +1621,7 @@ export const ankiMcqs = [
       "Dr Cash / Cr Revenue Received in Advance"
     ],
     "answer": 0,
-    "explanation": "Dr Warranty Expense / Cr Warranty Provision.",
+    "explanation": "Account analysis (debit credit): dr Warranty Expense / Cr Warranty Provision. Work through which accounts change and whether they have normal debit or credit balances. Distractors often swap sides, use the wrong account class, or omit part of the entry.",
     "tags": [
       "debit_credit"
     ]
@@ -1636,7 +1636,7 @@ export const ankiMcqs = [
       "Dr Cash / Cr Revenue Received in Advance"
     ],
     "answer": 0,
-    "explanation": "Dr Warranty Provision / Cr Cash or Inventory.",
+    "explanation": "Account analysis (debit credit): dr Warranty Provision / Cr Cash or Inventory. Work through which accounts change and whether they have normal debit or credit balances. Distractors often swap sides, use the wrong account class, or omit part of the entry.",
     "tags": [
       "debit_credit"
     ]

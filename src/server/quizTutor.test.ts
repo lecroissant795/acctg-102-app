@@ -16,8 +16,9 @@ describe("quizTutor", () => {
       },
     });
 
-    expect(response.message.toLowerCase()).toContain("debit");
+    expect(response.message.toLowerCase()).toMatch(/normal balance|account type|category/);
     expect(response.message.toLowerCase()).not.toContain("correct answer");
+    expect(response.message.toLowerCase()).not.toContain("review the");
   });
 
   test("buildFallbackTutorResponse avoids naming accounts for journal entries", () => {
