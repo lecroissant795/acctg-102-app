@@ -1,5 +1,6 @@
 import { buildTeachingExplanation, getDisplayExplanation } from "./teachingExplanation.js";
 import { buildTeachingHint } from "./teachingHint.js";
+import { QUESTION_TYPES } from "../data/schema/questionTypes.js";
 
 export async function fetchTutorResponse(payload) {
   const response = await fetch("/api/quiz-tutor", {
@@ -144,13 +145,16 @@ export function buildFallbackExplain(payload) {
   const explanation = getDisplayExplanation(question);
   const yourAnswer = formatStudentAnswer(question, currentAnswer);
   const correctAnswer = formatCorrectAnswer(question);
+  const isJournalEntry = question?.type === QUESTION_TYPES.JOURNAL_ENTRY;
   const teaching =
     explanation ??
-    buildTeachingExplanation({
-      q: question.q ?? question.prompt ?? "",
-      a: correctAnswer ?? "",
-      tags: question.tags ?? [],
-    });
+    (isJournalEntry
+      ? null
+      : buildTeachingExplanation({
+          q: question.q ?? question.prompt ?? "",
+          a: correctAnswer ?? "",
+          tags: question.tags ?? [],
+        }));
 
   if (isWhyWrongRequest(payload)) {
     const parts = [];
@@ -163,12 +167,13 @@ export function buildFallbackExplain(payload) {
       parts.push(feedback);
     }
 
-    if (correctAnswer) {
-      parts.push(`Correct approach: ${correctAnswer}`);
-    }
-
     if (teaching) {
       parts.push(`Why this is right: ${teaching}`);
+    } else if (correctAnswer && !isJournalEntry) {
+      parts.push(`Correct approach: ${correctAnswer}`);
+      if (explanation) {
+        parts.push(`Why this is right: ${explanation}`);
+      }
     }
 
     if (parts.length > 0) {

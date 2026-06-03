@@ -5,7 +5,8 @@ import { QUESTION_TYPES } from "../data/schema/questionTypes.js";
 import { NAV_CLICK_SOUND_PROPS } from "../constants/clickSound.js";
 import { theme, backButtonStyle, cardStyle, inputStyle } from "../styles/theme.js";
 import { getDisplayOptionIndex } from "../utils/shuffle.js";
-import { getDisplayExplanation } from "../utils/teachingExplanation.js";
+import { getDisplayExplanationBullets } from "../utils/teachingExplanation.js";
+import { ExplanationList } from "./ExplanationList.jsx";
 import { JOURNAL_ACCOUNT_SUGGESTIONS } from "../data/index.js";
 import {
   getJournalEntryAnswerKey,
@@ -214,37 +215,9 @@ function QuestionNavigation({ questionIndex, isLastQuestion, onPrevious, onNext 
   );
 }
 
-function ExplanationBlock({ text, feedback }) {
-  if (!text && !feedback) return null;
-
-  return (
-    <div
-      style={{
-        marginTop: 16,
-        padding: "14px 16px",
-        background: theme.colors.calloutBlue,
-        border: `1px solid ${theme.colors.border}`,
-        borderRadius: theme.radius.lg,
-        color: theme.colors.text,
-        fontSize: 14,
-        lineHeight: 1.6,
-      }}
-    >
-      <span
-        style={{
-          display: "block",
-          marginBottom: 6,
-          color: theme.colors.textSecondary,
-          fontWeight: 500,
-          fontSize: 12,
-        }}
-      >
-        Explanation
-      </span>
-      {feedback && <p style={{ margin: 0, color: theme.colors.warning }}>{feedback}</p>}
-      {text && <p style={{ margin: feedback ? "8px 0 0" : 0 }}>{text}</p>}
-    </div>
-  );
+function ExplanationBlock({ question, feedback }) {
+  const bullets = getDisplayExplanationBullets(question);
+  return <ExplanationList items={bullets} feedback={feedback} />;
 }
 
 function McqQuestion({ question, currentAnswer, onSubmitAnswer }) {
@@ -1274,7 +1247,7 @@ export function QuizScreen({
 
             {showExplanation && currentAnswer && (
               <ExplanationBlock
-                text={getDisplayExplanation(currentQuestion)}
+                question={currentQuestion}
                 feedback={currentAnswer?.evaluation?.feedback}
               />
             )}

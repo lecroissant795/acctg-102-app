@@ -1,6 +1,10 @@
 import { isChapterQuizAll, resolveChapterQuizSize } from "../constants/chapterQuiz.js";
 import { PRACTICE_GROUPS, PRACTICE_QUESTIONS, QUESTIONS, topics } from "../data/index.js";
 import { normalizeQuestion } from "../data/schema/questionTypes.js";
+import {
+  filterJournalEntryQuestions,
+  JOURNAL_ENTRIES_LABEL,
+} from "./journalEntryChapters.js";
 import { getQuestionId, getStatsSummary, loadQuizStats, resolveQuestionId } from "./stats.js";
 import { shuffleArray, shuffleQuestionOptions } from "./shuffle.js";
 
@@ -134,11 +138,14 @@ export function buildQuestionPool(mode, topic, size) {
   };
 }
 
-export function buildPracticeQuestionPool(label) {
+export function buildPracticeQuestionPool(label, { chapter } = {}) {
   const group = PRACTICE_GROUPS.find((entry) => entry.label === label);
   if (!group) throw new Error(`Unknown practice group: ${label}`);
 
-  const questions = PRACTICE_QUESTIONS[label].map((question) => ({ ...question }));
+  let questions = PRACTICE_QUESTIONS[label].map((question) => ({ ...question }));
+  if (label === JOURNAL_ENTRIES_LABEL && chapter) {
+    questions = filterJournalEntryQuestions(questions, chapter);
+  }
   const pool = mapQuestionsToPool(questions);
   const summary = getStatsSummary(loadQuizStats());
   const recentModes = summary.sessions.slice(0, 3).map((session) => session.modeLabel);
@@ -149,6 +156,7 @@ export function buildPracticeQuestionPool(label) {
     payload: {
       practiceLabel: label,
       questionType: group.type,
+      ...(label === JOURNAL_ENTRIES_LABEL && chapter ? { chapter } : {}),
       seeds: pool.map(({ id, topic: entryTopic, attempts, incorrect, question }) => ({
         sourceId: id,
         topic: entryTopic,

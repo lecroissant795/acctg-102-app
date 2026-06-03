@@ -44,6 +44,7 @@ describe("quizTutor client", () => {
         ],
       },
       explanation: "Cash increases and equity increases through share capital.",
+      tags: ["equity"],
     };
     const currentAnswer = createAnswerRecord(question, {
       lines: [
@@ -60,7 +61,7 @@ describe("quizTutor client", () => {
 
     expect(result.message).toContain("Your answer:");
     expect(result.message).toContain("Revenue");
-    expect(result.message).toContain("Share Capital");
-    expect(result.message).toContain("Cash increases");
+    expect(result.message).not.toMatch(/Correct approach: Cash Dr/);
+    expect(result.message.toLowerCase()).toMatch(/why this is right|equity|share capital/);
   });
 });

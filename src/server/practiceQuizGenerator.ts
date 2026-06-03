@@ -97,7 +97,8 @@ Every generated question MUST:
 - stay within the same skill category as its seed question
 - change the scenario, wording, names, and numbers so it is not a copy
 - include a correct "answer" object matching the seed question's answer shape
-- include a clear "explanation"
+- include a clear "explanation" that teaches WHY the answer is correct (2-3 sentences minimum)
+- explanations must not merely restate the answer, list journal lines without reasoning, or use vague phrases like "record the entry" or "debits equal credits"
 - use "q" or "prompt" for the question stem
 - preserve required fields for the type (options, leftItems/rightItems, items, rows/columns, subquestions, sampleAnswer, etc.)
 
@@ -107,7 +108,7 @@ Rules by type:
 - numeric_input: provide answer.value and answer.tolerance
 - matching: provide leftItems, rightItems, answer.pairs
 - ordering: provide items and answer.correctOrder
-- journal_entry: provide balanced answer.lines with account, side, amount
+- journal_entry: provide balanced answer.lines with account, side, amount; explanation must describe the economic event, GST split if applicable, and why each account changes—not just repeat the journal lines
 - table_classification: provide rows, columns, answer.mapping
 - case_set: provide scenario and subquestions array with valid nested questions
 

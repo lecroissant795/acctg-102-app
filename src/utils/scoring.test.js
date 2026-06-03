@@ -71,6 +71,32 @@ test("scores journal entries when the same account appears on both sides", () =>
   expect(result.scoreAwarded).toBe(4);
 });
 
+test("journal entry feedback names wrong accounts", () => {
+  const question = {
+    id: "je-feedback",
+    type: QUESTION_TYPES.JOURNAL_ENTRY,
+    points: 2,
+    answer: {
+      lines: [
+        { account: "Cash", side: "debit", amount: 15000 },
+        { account: "Share Capital", side: "credit", amount: 15000 },
+      ],
+      rules: { requireBalancedEntry: true },
+    },
+  };
+
+  const result = evaluateQuestion(question, {
+    lines: [
+      { account: "Cash", debit: 15000 },
+      { account: "Revenue", credit: 15000 },
+    ],
+  });
+
+  expect(result.correct).toBe(false);
+  expect(result.feedback).toContain("Share Capital");
+  expect(result.feedback).toContain("Revenue");
+});
+
 test("getJournalEntryRowFeedback marks wrong account and amount fields", () => {
   const question = {
     id: "je-ui",

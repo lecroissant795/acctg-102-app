@@ -270,6 +270,67 @@ function isBalancedJournal(lines) {
   return compareNumber(debits, credits, 0.01);
 }
 
+function buildJournalEntryFeedback(
+  question,
+  { expected, actual, balanced, accountScore, sideScore, amountScore, rawLines = [] }
+) {
+  const rules = question.answer?.rules ?? {};
+  const answerLines = question.answer?.lines ?? [];
+  const aliasMap = buildJournalAliasMap(rules);
+  const issues = [];
+
+  if (rules.requireBalancedEntry && !balanced) {
+    let debitTotal = 0;
+    let creditTotal = 0;
+    actual.forEach((line) => {
+      if (line.side === "debit") debitTotal += line.amount ?? 0;
+      if (line.side === "credit") creditTotal += line.amount ?? 0;
+    });
+    issues.push(
+      `Debits ($${debitTotal.toLocaleString()}) do not equal credits ($${creditTotal.toLocaleString()}).`
+    );
+  }
+
+  const missingAccounts = answerLines
+    .filter((answerLine) => {
+      const canonical = canonicalizeJournalLine(answerLine, aliasMap);
+      return !actual.some((actualLine) => actualLine.account === canonical.account);
+    })
+    .map((line) => line.account);
+
+  if (missingAccounts.length > 0) {
+    issues.push(`Missing or incorrect account${missingAccounts.length > 1 ? "s" : ""}: ${missingAccounts.join(", ")}.`);
+  }
+
+  const unexpectedAccounts = rawLines
+    .filter((line) => line.account?.trim())
+    .filter((line) => {
+      const canonical = canonicalizeJournalLine(line, aliasMap);
+      return !expected.some((expectedLine) => expectedLine.account === canonical.account);
+    })
+    .map((line) => line.account.trim());
+
+  if (unexpectedAccounts.length > 0) {
+    issues.push(
+      `Unexpected account${unexpectedAccounts.length > 1 ? "s" : ""}: ${unexpectedAccounts.join(", ")}.`
+    );
+  }
+
+  if (accountScore === 1 && sideScore < 1) {
+    issues.push("At least one correct account has the debit/credit side reversed.");
+  }
+
+  if (accountScore === 1 && sideScore === 1 && amountScore < 1) {
+    issues.push("At least one amount is incorrect—check GST splits and the figures in the question.");
+  }
+
+  if (issues.length === 0) {
+    return "Journal entry is partially correct.";
+  }
+
+  return issues.join(" ");
+}
+
 function evaluateJournalEntry(question, response = {}) {
   const maxScore = getMaxScore(question);
   const answerLines = question.answer?.lines ?? [];
@@ -318,15 +379,23 @@ function evaluateJournalEntry(question, response = {}) {
   const fullyCorrect =
     accountScore === 1 && sideScore === 1 && amountScore === 1 && (!rules.requireBalancedEntry || balanced);
 
+  const feedback = fullyCorrect
+    ? "Correct journal entry."
+    : buildJournalEntryFeedback(question, {
+        expected,
+        actual,
+        balanced,
+        accountScore,
+        sideScore,
+        amountScore,
+        rawLines: response.lines ?? [],
+      });
+
   return buildResult({
     correct: fullyCorrect,
     scoreAwarded: maxScore * weightedRatio,
     maxScore,
-    feedback: fullyCorrect
-      ? "Correct journal entry."
-      : rules.requireBalancedEntry && !balanced
-        ? "Entry is not balanced."
-        : "Journal entry is partially correct.",
+    feedback,
     breakdown: {
       expected,
       actual,

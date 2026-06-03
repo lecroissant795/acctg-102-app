@@ -1,6 +1,6 @@
 import { chatCompletion } from "./openaiClient.ts";
-import { getDisplayExplanation } from "../utils/teachingExplanation.js";
 import { buildTeachingHint } from "../utils/teachingHint.js";
+import { buildJournalEntryTeachingExplanation, getDisplayExplanation } from "../utils/teachingExplanation.js";
 
 export type TutorIntent = "hint" | "explain" | "ask";
 
@@ -80,6 +80,27 @@ function buildHintPrompt(question?: Record<string, unknown>): string {
   return baseRules;
 }
 
+function buildExplainPrompt(question?: Record<string, unknown>): string {
+  const base = `- Teach the accounting concept behind this question. Do NOT merely repeat the correct option or official explanation verbatim.
+- Structure your response:
+  1. Concept tested — name the rule or transaction type (one sentence).
+  2. Why this answer fits — reason from the facts in the question stem in your own words.
+  3. Common mistake — briefly address the most likely error.
+  4. Exam tip — one short step for similar questions.
+- If the student was wrong, name the specific mistake first, then follow the structure above.
+- Use the official explanation only as ground truth for facts — always teach the underlying reasoning.`;
+
+  if (question?.type === "journal_entry") {
+    return `${base}
+- For journal entries: explain the economic event and why each side of the accounting equation changes.
+- You MAY name the correct accounts and debit/credit sides when explaining after the student has submitted an answer.
+- Do NOT paste the full journal entry as a list without teaching why each line belongs.
+- Do NOT repeat the stored explanation word-for-word if it is generic (for example only saying "cash increases and equity increases").`;
+  }
+
+  return base;
+}
+
 function buildPerformanceGuidance(context?: Record<string, unknown> | null): string {
   if (!context || typeof context !== "object") return "";
 
@@ -155,16 +176,8 @@ ${buildHintPrompt(question)}${performanceGuidance}`;
     case "explain":
       return `${base}
 
-Teach the accounting concept behind this question. Do NOT merely repeat the correct option or official explanation verbatim.
-
-Structure your response:
-1. Concept tested — name the rule, standard, or definition (one sentence).
-2. Why this answer fits — reason from the facts in the question stem; rephrase in your own words.
-3. Why tempting distractors fail — briefly address the most likely wrong option(s).
-4. Exam tip — one short step or memory hook for similar questions.
-
-If the student was wrong, first name the specific mistake in their submitted answer, then follow the structure above.
-Use the official explanation only as ground truth for facts — always teach the underlying reasoning.${performanceGuidance}`;
+Give a helpful explanation for the current question.
+${buildExplainPrompt(question)}${performanceGuidance}`;
     case "ask":
       return `${base}
 
@@ -263,9 +276,12 @@ export function buildFallbackTutorResponse(request: TutorRequest): TutorResponse
       (request.currentAnswer as { evaluation?: { feedback?: string } } | null)?.evaluation?.feedback ?? ""
     );
     const isWhyWrong = request.userMessage?.toLowerCase().includes("wrong") ?? false;
+    const isJournalEntry = request.question.type === "journal_entry";
     const teachingExplanation =
-      explanation ||
-      `Review the core concept for ${topic}. Identify the accounts affected, whether they increase or decrease, and how this appears on the financial statements.`;
+      getDisplayExplanation(request.question) ||
+      (isJournalEntry
+        ? buildJournalEntryTeachingExplanation(request.question)
+        : `Review the core concept for ${topic}. Identify the accounts affected, whether they increase or decrease, and how this appears on the financial statements.`);
 
     if (isWhyWrong) {
       const parts = [feedback, teachingExplanation ? `Why this is right: ${teachingExplanation}` : ""].filter(Boolean);

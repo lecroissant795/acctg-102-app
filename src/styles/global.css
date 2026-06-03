@@ -883,6 +883,34 @@ select:focus {
   }
 }
 
+.quiz-setup-modal__sizes--stacked {
+  grid-template-columns: 1fr;
+  max-height: min(52vh, 360px);
+  overflow-y: auto;
+}
+
+.quiz-setup-modal__size--chapter {
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  min-height: auto;
+  padding: 12px 14px;
+  text-align: left;
+}
+
+.quiz-setup-modal__size--chapter .quiz-setup-modal__size-value {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.35;
+  flex: 1;
+  min-width: 0;
+}
+
+.quiz-setup-modal__size--chapter .quiz-setup-modal__size-label {
+  flex-shrink: 0;
+  margin-left: 12px;
+}
+
 .quiz-setup-modal__size {
   display: flex;
   flex-direction: column;

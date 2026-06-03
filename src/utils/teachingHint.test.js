@@ -22,8 +22,19 @@ describe("teachingHint", () => {
       tags: ["gst", "debit_credit"],
     });
 
-    expect(hint.toLowerCase()).toContain("equation");
+    expect(hint.toLowerCase()).toMatch(/tax|gst|revenue/);
     expect(hint.toLowerCase()).not.toContain("accounts receivable");
+  });
+
+  test("gives scenario-specific journal hints for adjusting entries", () => {
+    const hint = buildTeachingHint({
+      type: "journal_entry",
+      q: "A 12-month rent prepayment of $4,800 was made on 1 October. At 31 December, record the adjusting entry.",
+      tags: ["adjusting_entries"],
+    });
+
+    expect(hint.toLowerCase()).toMatch(/expired|period|months|benefit/);
+    expect(hint.toLowerCase()).not.toContain("review the");
   });
 
   test("does not tell the student to review external materials", () => {

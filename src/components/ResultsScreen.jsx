@@ -2,7 +2,8 @@ import { Page } from "./Page.jsx";
 import { AiTutorModal } from "./AiTutorModal.jsx";
 import { NAV_CLICK_SOUND_PROPS } from "../constants/clickSound.js";
 import { theme, sectionLabelStyle } from "../styles/theme.js";
-import { getDisplayExplanation } from "../utils/teachingExplanation.js";
+import { getDisplayExplanationBullets } from "../utils/teachingExplanation.js";
+import { ExplanationList } from "./ExplanationList.jsx";
 
 function getGrade(scorePercent) {
   if (scorePercent >= 85) return { label: "A+", emoji: "🏆" };
@@ -99,9 +100,10 @@ function IncorrectReview({ answers, questions, tutorUses, onConsumeTutorUse }) {
                 Score: {formatScore(entry.evaluation.scoreAwarded)}/{formatScore(entry.evaluation.maxScore)}
               </p>
             )}
-            <p style={{ margin: "6px 0 0", color: theme.colors.textSecondary, fontSize: 12 }}>
-              {getDisplayExplanation(question)}
-            </p>
+            <ExplanationList
+              items={getDisplayExplanationBullets(question)}
+              compact
+            />
             <AiTutorModal
               question={question}
               currentAnswer={entry}

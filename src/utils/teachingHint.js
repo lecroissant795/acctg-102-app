@@ -125,6 +125,120 @@ const TAG_HINT_BUILDERS = {
     "Start with what increased and what decreased economically, then map to account types—without writing full journal lines yet.",
 };
 
+function buildJournalEntryHint(question) {
+  const questionText = getQuestionText(question);
+  const lowerQ = questionText.toLowerCase();
+  const tags = question.tags ?? [];
+
+  if (lowerQ.includes("including gst") || lowerQ.includes("gst-inclusive") || tags.includes("gst")) {
+    return "The total collected or paid includes tax. Separate the business portion (sale or purchase) from the tax portion—revenue and inventory are usually recorded net of GST.";
+  }
+
+  if (
+    lowerQ.includes("adjusting entry") ||
+    lowerQ.includes("at period-end") ||
+    lowerQ.includes("at year-end") ||
+    lowerQ.includes("has expired") ||
+    lowerQ.includes("has been earned but not") ||
+    lowerQ.includes("incurred but not") ||
+    tags.includes("adjusting_entries")
+  ) {
+    if (lowerQ.includes("prepaid") || lowerQ.includes("paid in advance") || lowerQ.includes("insurance") || lowerQ.includes("rent prepayment")) {
+      return "Cash was paid earlier, but only part of the benefit belongs to this period. Work out the expired portion from the dates or months given before moving amounts from asset to expense.";
+    }
+    if (lowerQ.includes("accrued") || lowerQ.includes("incurred but not") || lowerQ.includes("consumed but not")) {
+      return "The cost or revenue belongs to this period even though cash has not moved yet. You need to recognise the expense or revenue now and the related payable or receivable.";
+    }
+    if (lowerQ.includes("unearned") || lowerQ.includes("received in advance") || lowerQ.includes("earned")) {
+      return "Cash may have arrived earlier, but revenue is only recognised as performance happens. Identify how much of the liability should be released this period.";
+    }
+    if (lowerQ.includes("depreciation") || lowerQ.includes("amortis")) {
+      return "Allocate a portion of the asset's cost to this period as an expense. The asset's accumulated cost should increase by the same amount on the contra side.";
+    }
+    if (lowerQ.includes("supplies") && lowerQ.includes("on hand")) {
+      return "Compare the supplies balance before adjustment to what is still on hand. The difference is the amount used this period.";
+    }
+    return "This is a period-end adjustment: something was recorded in the wrong period or not yet recorded. Decide what belongs in the current period versus what stays on the balance sheet.";
+  }
+
+  if (
+    lowerQ.includes("perpetual") ||
+    (lowerQ.includes("sold") && lowerQ.includes("cost")) ||
+    tags.includes("inventory_sales")
+  ) {
+    return "A perpetual inventory sale usually needs two economic effects: recognise the revenue side, then transfer the cost of goods sold out of inventory at the amount the goods cost the business.";
+  }
+
+  if (lowerQ.includes("purchase return") || lowerQ.includes("returned") || lowerQ.includes("sales return")) {
+    return "A return reverses part of an earlier purchase or sale. Think about which original asset, liability, revenue, or cost balances need to be reduced.";
+  }
+
+  if (lowerQ.includes("allowance") || lowerQ.includes("write off") || lowerQ.includes("write-off") || lowerQ.includes("bad debt")) {
+    return "Allowance-method entries adjust expected collectibility without necessarily recording new sales. Decide whether you are estimating uncollectible amounts or removing a specific receivable.";
+  }
+
+  if (lowerQ.includes("bank") && (lowerQ.includes("statement") || lowerQ.includes("reconcil") || lowerQ.includes("dishonour"))) {
+    return "The bank and the cash book disagree on timing or fees. Identify whether cash, a receivable, or an expense changed from the business's point of view.";
+  }
+
+  if (lowerQ.includes("dividend") || tags.includes("equity")) {
+    if (lowerQ.includes("declar")) {
+      return "Declaration creates an obligation to shareholders and reduces retained earnings—it does not pay cash yet.";
+    }
+    if (lowerQ.includes("pay") || lowerQ.includes("paying")) {
+      return "Payment settles an existing dividend liability and reduces cash.";
+    }
+    if (lowerQ.includes("share") && (lowerQ.includes("issu") || lowerQ.includes("invest"))) {
+      return "New cash from owners increases contributed equity, not revenue from customers.";
+    }
+    return "Equity transactions change ownership claims, not operating revenue or expense. Identify whether cash, retained earnings, or share capital is affected.";
+  }
+
+  if (lowerQ.includes("depreciation") || lowerQ.includes("disposal") || lowerQ.includes("sold for")) {
+    return "For disposals, compare carrying amount to proceeds to see whether a gain or loss arises. Remove the asset and its accumulated depreciation, then record cash and any difference.";
+  }
+
+  if (lowerQ.includes("note payable") || lowerQ.includes("bond") || lowerQ.includes("loan") || lowerQ.includes("borrow")) {
+    if (lowerQ.includes("interest")) {
+      return "Separate principal from interest: interest is an expense over time, while principal changes the liability balance when borrowed or repaid.";
+    }
+    return "Borrowing increases cash and a liability; repayment does the opposite. Principal repayment is not an expense unless interest is also involved.";
+  }
+
+  if (lowerQ.includes("credit sale") || lowerQ.includes("on account") || lowerQ.includes("on credit")) {
+    return "Goods or services were provided before cash was received. Revenue is earned now, and the customer owes the business until collection.";
+  }
+
+  if (lowerQ.includes("collect") || lowerQ.includes("receipt") || lowerQ.includes("paid in cash")) {
+    if (lowerQ.includes("customer") || lowerQ.includes("receivable")) {
+      return "Collection clears an existing receivable and increases cash—no new revenue is earned if the sale was already recorded.";
+    }
+    return "Cash changed hands: identify what was received or paid for and which asset, liability, expense, or revenue account moves.";
+  }
+
+  if (lowerQ.includes("invest") || lowerQ.includes("share capital") || lowerQ.includes("ordinary shares")) {
+    return "Owner contributions increase cash and equity together. This is not revenue—the cash came from shareholders, not customers.";
+  }
+
+  if (lowerQ.includes("freight-in") || lowerQ.includes("freight in")) {
+    return "Freight-in is part of getting inventory ready for sale, so it increases inventory cost rather than being expensed immediately.";
+  }
+
+  if (lowerQ.includes("write down") || lowerQ.includes("net realisable") || lowerQ.includes("nrv")) {
+    return "Inventory must not stay above its net realisable value. The write-down reduces inventory and recognises a loss for the difference.";
+  }
+
+  if (tags.includes("inventory_purchases") || (lowerQ.includes("purchase") && lowerQ.includes("inventory"))) {
+    return "Inventory coming into the business increases an asset. If purchased on credit, a payable also increases; if paid in cash, cash decreases instead.";
+  }
+
+  if (tags.includes("receivables")) {
+    return "Focus on whether this is recording a new sale, collecting cash, estimating uncollectible accounts, or correcting a receivable balance.";
+  }
+
+  return "List what the business received and what it gave up. For each effect, decide whether an asset, liability, equity, revenue, or expense changes—and in which direction—before choosing accounts.";
+}
+
 /**
  * Build a concrete, question-specific hint without revealing the answer.
  */
@@ -134,7 +248,7 @@ export function buildTeachingHint(question) {
   const tags = question.tags ?? [];
 
   if (question.type === QUESTION_TYPES.JOURNAL_ENTRY) {
-    return "List what was received and what was given up in the transaction. Decide which elements of the accounting equation increase or decrease (asset, liability, equity, revenue, expense) before choosing accounts.";
+    return buildJournalEntryHint(question);
   }
 
   const patternHint = hintFromQuestionPatterns(lowerQ, questionText);

@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { AuthScreen } from "./components/AuthScreen.jsx";
 import { ChapterQuizSetupModal } from "./components/ChapterQuizSetupModal.jsx";
+import { JournalEntrySetupModal } from "./components/JournalEntrySetupModal.jsx";
 import { HomeScreen } from "./components/HomeScreen.jsx";
 import { MobileMenu } from "./components/MobileMenu.jsx";
 import { QuizScreen } from "./components/QuizScreen.jsx";
@@ -27,6 +28,11 @@ import {
   resolveChapterQuizQuestions,
   resolvePracticeQuiz,
 } from "./utils/quizPlan.js";
+import {
+  getJournalEntryChapterOptions,
+  JOURNAL_ENTRIES_LABEL,
+  JOURNAL_ENTRY_ALL_CHAPTERS,
+} from "./utils/journalEntryChapters.js";
 import { getOriginalOptionIndex } from "./utils/shuffle.js";
 import { createAnswerRecord } from "./utils/scoring/index.js";
 import {
@@ -60,6 +66,8 @@ export default function App() {
   const [miniSize, setMiniSize] = useState(10);
   const [chapterQuizSize, setChapterQuizSize] = useState(DEFAULT_CHAPTER_QUIZ_SIZE);
   const [pendingChapterSetup, setPendingChapterSetup] = useState(null);
+  const [pendingJournalSetup, setPendingJournalSetup] = useState(false);
+  const [selectedJournalChapter, setSelectedJournalChapter] = useState(JOURNAL_ENTRY_ALL_CHAPTERS);
   const [quizSizeNotice, setQuizSizeNotice] = useState(null);
   const [quizStartedAt, setQuizStartedAt] = useState(null);
   const [planLoading, setPlanLoading] = useState(false);
@@ -98,6 +106,22 @@ export default function App() {
     if (route.name === "quiz-chapter") {
       navigate(ROUTES.home, { replace: true });
     }
+  };
+
+  const openJournalSetup = () => {
+    setPendingJournalSetup(true);
+  };
+
+  const closeJournalSetup = () => {
+    setPendingJournalSetup(false);
+    if (route.name === "quiz-practice" && route.label === JOURNAL_ENTRIES_LABEL) {
+      navigate(ROUTES.home, { replace: true });
+    }
+  };
+
+  const confirmJournalPractice = () => {
+    setPendingJournalSetup(false);
+    startPracticeGroup(JOURNAL_ENTRIES_LABEL, selectedJournalChapter);
   };
 
   const confirmChapterQuiz = () => {
@@ -148,13 +172,19 @@ export default function App() {
     navigate(chapterPath(topic), { replace: true });
   };
 
-  const startPracticeGroup = async (label) => {
+  const startPracticeGroup = async (label, chapter = null) => {
     setPlanLoadingLabel(label);
     setPlanLoading(true);
     setPlanError(null);
     try {
       const quizPath = practicePath(label);
-      const { pool, payload, questionType } = buildPracticeQuestionPool(label);
+      const chapterFilter =
+        label === JOURNAL_ENTRIES_LABEL && chapter && chapter !== JOURNAL_ENTRY_ALL_CHAPTERS
+          ? chapter
+          : null;
+      const { pool, payload, questionType } = buildPracticeQuestionPool(label, {
+        chapter: chapterFilter,
+      });
       const { questions: practiceQuestions } = await resolvePracticeQuiz(
         payload,
         pool,
@@ -163,6 +193,9 @@ export default function App() {
 
       setSelectedTopicIndex(null);
       setSelectedPracticeLabel(label);
+      if (label === JOURNAL_ENTRIES_LABEL) {
+        setSelectedJournalChapter(chapter ?? JOURNAL_ENTRY_ALL_CHAPTERS);
+      }
       setQuestions(practiceQuestions);
       setMode("practice");
       resetQuizState();
@@ -245,7 +278,11 @@ export default function App() {
   const handleRetry = () => {
     if (mode === "mini") startMiniQuiz(miniSize);
     else if (mode === "topic" && selectedTopicIndex !== null) startChapterQuiz(selectedTopicIndex, chapterQuizSize);
-    else if (mode === "practice" && selectedPracticeLabel) startPracticeGroup(selectedPracticeLabel);
+    else if (mode === "practice" && selectedPracticeLabel) {
+      const chapter =
+        selectedPracticeLabel === JOURNAL_ENTRIES_LABEL ? selectedJournalChapter : null;
+      startPracticeGroup(selectedPracticeLabel, chapter);
+    }
     else startFullExam();
   };
 
@@ -272,7 +309,14 @@ export default function App() {
     else if (route.name === "quiz-chapter") {
       if (activeQuizPathRef.current === window.location.pathname && questions.length > 0) return;
       setPendingChapterSetup({ topicIndex: route.topicIndex });
-    } else if (route.name === "quiz-practice") startPracticeGroup(route.label);
+    } else if (route.name === "quiz-practice") {
+      if (route.label === JOURNAL_ENTRIES_LABEL) {
+        if (activeQuizPathRef.current === window.location.pathname && questions.length > 0) return;
+        openJournalSetup();
+      } else {
+        startPracticeGroup(route.label);
+      }
+    }
   }, [route, authLoading, planLoading, questions.length, navigate]);
 
   useEffect(() => {
@@ -302,7 +346,10 @@ export default function App() {
         : mode === "all"
           ? "Full Exam"
           : mode === "practice"
-            ? selectedPracticeLabel
+            ? selectedPracticeLabel === JOURNAL_ENTRIES_LABEL &&
+              selectedJournalChapter !== JOURNAL_ENTRY_ALL_CHAPTERS
+              ? `${selectedPracticeLabel} · ${selectedJournalChapter}`
+              : selectedPracticeLabel
             : `Chapter Quiz (${questions.length} Qs) · ${topics[selectedTopicIndex]}`;
     const maxScore = questions.reduce(
       (sum, question) => sum + (typeof question.points === "number" ? question.points : question.type === "written" ? 0 : 1),
@@ -328,6 +375,7 @@ export default function App() {
     mode,
     selectedTopicIndex,
     selectedPracticeLabel,
+    selectedJournalChapter,
     questions,
     answers,
     score,
@@ -384,7 +432,13 @@ export default function App() {
     onStartMini: (size) => navigate(ROUTES.quizMini(size)),
     onStartAll: () => navigate(ROUTES.quizExam),
     onStartChapter: openChapterSetup,
-    onStartPracticeGroup: (label) => navigate(practicePath(label)),
+    onStartPracticeGroup: (label) => {
+      if (label === JOURNAL_ENTRIES_LABEL) {
+        openJournalSetup();
+        return;
+      }
+      navigate(practicePath(label));
+    },
     onOpenStats: openStats,
     onHome: () => navigate(ROUTES.home),
   };
@@ -418,7 +472,13 @@ export default function App() {
         onStartMini={(size) => navigate(ROUTES.quizMini(size))}
         onStartAll={() => navigate(ROUTES.quizExam)}
         onStartChapter={openChapterSetup}
-        onStartPracticeGroup={(label) => navigate(practicePath(label))}
+        onStartPracticeGroup={(label) => {
+          if (label === JOURNAL_ENTRIES_LABEL) {
+            openJournalSetup();
+            return;
+          }
+          navigate(practicePath(label));
+        }}
         onOpenStats={openStats}
       />
     );
@@ -490,6 +550,9 @@ export default function App() {
     );
   }
 
+  const journalChapterOptions = getJournalEntryChapterOptions();
+  const journalEntryTotalCount = PRACTICE_QUESTIONS[JOURNAL_ENTRIES_LABEL]?.length ?? 0;
+
   const chapterSetupModal =
     pendingChapterSetup != null ? (
       <ChapterQuizSetupModal
@@ -502,11 +565,23 @@ export default function App() {
       />
     ) : null;
 
+  const journalSetupModal = pendingJournalSetup ? (
+    <JournalEntrySetupModal
+      chapterOptions={journalChapterOptions}
+      totalCount={journalEntryTotalCount}
+      selectedChapter={selectedJournalChapter}
+      onSelectChapter={setSelectedJournalChapter}
+      onStart={confirmJournalPractice}
+      onCancel={closeJournalSetup}
+    />
+  ) : null;
+
   return (
     <NavigationProvider value={navigation}>
       <MobileMenu />
       {screen}
       {chapterSetupModal}
+      {journalSetupModal}
     </NavigationProvider>
   );
 }

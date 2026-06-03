@@ -34,7 +34,7 @@ describe("quizTutor", () => {
 
     expect(response.message.toLowerCase()).not.toContain("accounts receivable");
     expect(response.message.toLowerCase()).not.toContain("gst payable");
-    expect(response.message.toLowerCase()).toContain("accounting equation");
+    expect(response.message.toLowerCase()).toMatch(/tax|gst|revenue|received|given up/);
   });
 
   test("falls back when tutor AI response cannot be parsed", () => {
