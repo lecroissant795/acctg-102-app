@@ -114,12 +114,20 @@ export function AiTutorPanel({
 
   const reserveTutorUse = () => {
     if (!hasUsesRemaining) {
-      setError("You have used all 5 AI tutor requests for this quiz.");
+      setError(
+        tutorUses?.max
+          ? `You have used all ${tutorUses.max} tutor requests for this quiz.`
+          : "You have used all tutor requests for this quiz."
+      );
       return false;
     }
 
     if (onConsumeTutorUse && !onConsumeTutorUse()) {
-      setError("You have used all 5 AI tutor requests for this quiz.");
+      setError(
+        tutorUses?.max
+          ? `You have used all ${tutorUses.max} tutor requests for this quiz.`
+          : "You have used all tutor requests for this quiz."
+      );
       return false;
     }
 
@@ -217,7 +225,9 @@ export function AiTutorPanel({
               ? showHint
                 ? "Get hints before you answer."
                 : "Ask for explanations or follow-up questions."
-              : "You have used all 5 AI tutor requests for this quiz."}
+              : tutorUses?.max
+                ? `You have used all ${tutorUses.max} tutor requests for this quiz.`
+                : "You have used all tutor requests for this quiz."}
           </div>
           {tutorUses && (
             <div

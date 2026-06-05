@@ -82,10 +82,11 @@ function buildHintPrompt(question?: Record<string, unknown>): string {
 
 function buildExplainPrompt(question?: Record<string, unknown>): string {
   const base = `- Teach the accounting concept behind this question. Do NOT merely repeat the correct option or official explanation verbatim.
+- Do NOT use generic filler such as "the other options are related ideas" or "distractors often describe".
 - Structure your response:
   1. Concept tested — name the rule or transaction type (one sentence).
   2. Why this answer fits — reason from the facts in the question stem in your own words.
-  3. Common mistake — briefly address the most likely error.
+  3. Wrong options — quote or paraphrase specific distractors and explain what each gets wrong in this scenario.
   4. Exam tip — one short step for similar questions.
 - If the student was wrong, name the specific mistake first, then follow the structure above.
 - Use the official explanation only as ground truth for facts — always teach the underlying reasoning.`;

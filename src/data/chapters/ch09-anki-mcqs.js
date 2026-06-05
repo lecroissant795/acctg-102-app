@@ -12,7 +12,11 @@ export const ankiMcqs = [
       "Revenue earned but not yet received"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (balance sheet, financial statements): a present obligation arising from past events that is expected to result in an outflow of economic benefits. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "a liability? A present obligation arising from past events that is expected to result in an outflow of economic benefits.",
+      "\"A possible future obligation dependent on uncertain events\" does not answer the specific requirement in the question.",
+      "\"An asset expected to provide future economic benefits\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "balance_sheet",
       "financial_statements"
@@ -28,7 +32,11 @@ export const ankiMcqs = [
       "Mixed with equity accounts"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (balance sheet, financial statements): in order of liquidity, based on how soon they are expected to be settled. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "How are liabilities presented in the statement of financial position? In order of liquidity, based on how soon they are expected to be settled.",
+      "\"Alphabetically by account name\" does not answer the specific requirement in the question.",
+      "\"By original issue date only\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "balance_sheet",
       "financial_statements"
@@ -44,7 +52,11 @@ export const ankiMcqs = [
       "Contingent liability"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (balance sheet, financial statements): a liability expected to be settled within 12 months or the operating cycle. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "a current liability? A liability expected to be settled within 12 months or the operating cycle.",
+      "\"Current liability\" does not answer the specific requirement in the question.",
+      "\"Non-current liability\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "balance_sheet",
       "financial_statements"
@@ -60,7 +72,11 @@ export const ankiMcqs = [
       "Contingent liability"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (balance sheet, financial statements): a liability expected to be settled after 12 months or outside the operating cycle. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "a non-current liability? A liability expected to be settled after 12 months or outside the operating cycle.",
+      "\"Current liability\" does not answer the specific requirement in the question.",
+      "\"Non-current liability\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "balance_sheet",
       "financial_statements"
@@ -76,7 +92,11 @@ export const ankiMcqs = [
       "It replaces the cash flow statement"
     ],
     "answer": 0,
-    "explanation": "The reasoning to apply (balance sheet, financial statements): it helps users assess liquidity and ability to meet obligations. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "Why is classification between current and non-current liabilities important? It helps users assess liquidity and ability to meet obligations.",
+      "\"It determines depreciation method\" does not answer the specific requirement in the question.",
+      "\"It eliminates the need for provisions\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "balance_sheet",
       "financial_statements"
@@ -92,7 +112,11 @@ export const ankiMcqs = [
       "A possible obligation not yet probable"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (balance sheet): a written promise to pay a specified amount in the future. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "notes payable? A written promise to pay a specified amount in the future.",
+      "\"Cash received before revenue is earned\" does not answer the specific requirement in the question.",
+      "\"Amounts withheld from employee wages\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "balance_sheet"
     ]
@@ -107,7 +131,11 @@ export const ankiMcqs = [
       "Only for current liabilities"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (balance sheet): yes. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "Are notes payable commonly interest-bearing? Yes.",
+      "\"No\" does not answer the specific requirement in the question.",
+      "\"Only if probable and estimable\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "balance_sheet"
     ]
@@ -122,7 +150,11 @@ export const ankiMcqs = [
       "Dr Revenue Received in Advance / Cr Revenue"
     ],
     "answer": 0,
-    "explanation": "Timing is the key idea (debit credit): dr Cash / Cr Notes Payable. Work through which accounts change and whether they have normal debit or credit balances. Distractors often swap sides, use the wrong account class, or omit part of the entry.",
+    "explanation": [
+      "the journal entry when a note payable is issued? Dr Cash / Cr Notes Payable.",
+      "\"Dr Interest Expense / Cr Interest Payable\" does not answer the specific requirement in the question.",
+      "\"Dr Cash / Cr Revenue Received in Advance\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "debit_credit"
     ]
@@ -137,7 +169,11 @@ export const ankiMcqs = [
       "(Cash + Marketable Securities + Net Receivables) ÷ Current Liabilities"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (balance sheet, income statement): principal × Interest Rate × Time. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "the formula for interest expense? Principal × Interest Rate × Time.",
+      "\"Current Assets − Current Liabilities\" does not answer the specific requirement in the question.",
+      "\"Current Assets ÷ Current Liabilities\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "balance_sheet",
       "income_statement"
@@ -153,7 +189,11 @@ export const ankiMcqs = [
       "Dr Revenue Received in Advance / Cr Revenue"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (adjusting entries, debit credit): dr Interest Expense / Cr Interest Payable. Adjusting entries align revenues and expenses with the reporting period before statements are issued. Wrong options usually skip the adjustment, use the wrong account type, or apply the entry in the wrong period.",
+    "explanation": [
+      "the adjusting entry to accrue unpaid interest? Dr Interest Expense / Cr Interest Payable.",
+      "\"Dr Cash / Cr Notes Payable\" does not answer which adjusting entry is required.",
+      "\"Dr Cash / Cr Revenue Received in Advance\" does not answer which adjusting entry is required."
+    ],
     "tags": [
       "adjusting_entries",
       "debit_credit"
@@ -169,7 +209,11 @@ export const ankiMcqs = [
       "Dr Notes Payable / Cr Interest Payable"
     ],
     "answer": 0,
-    "explanation": "Timing is the key idea (debit credit): dr Notes Payable; Dr Interest Payable; Dr Interest Expense; Cr Cash. Work through which accounts change and whether they have normal debit or credit balances. Distractors often swap sides, use the wrong account class, or omit part of the entry.",
+    "explanation": [
+      "the journal entry when a note payable matures? Dr Notes Payable; Dr Interest Payable; Dr Interest Expense; Cr Cash.",
+      "\"Dr Cash / Cr Notes Payable only\" does not answer the specific requirement in the question.",
+      "\"Dr Interest Expense / Cr Cash only\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "debit_credit"
     ]
@@ -184,7 +228,11 @@ export const ankiMcqs = [
       "Accrued interest on notes payable"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (balance sheet): amounts withheld from employee wages and owed to governments or third parties. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "What are payroll deductions payable? Amounts withheld from employee wages and owed to governments or third parties.",
+      "\"Gross wages before any deductions\" does not answer the specific requirement in the question.",
+      "\"Employer contributions to share capital\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "balance_sheet"
     ]
@@ -199,7 +247,11 @@ export const ankiMcqs = [
       "GST collected and GST paid"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (balance sheet): pAYG withholding tax, superannuation, union fees, and health insurance. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "What are examples of payroll deductions? PAYG withholding tax, superannuation, union fees, and health insurance.",
+      "\"Depreciation, amortisation, and impairment\" does not answer the specific requirement in the question.",
+      "\"Freight-in and purchase discounts\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "balance_sheet"
     ]
@@ -214,7 +266,11 @@ export const ankiMcqs = [
       "Net cash paid to suppliers"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (balance sheet, income statement): total wages earned before deductions. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "gross pay? Total wages earned before deductions.",
+      "\"Amount employees receive after deductions\" does not answer the specific requirement in the question.",
+      "\"Employer superannuation contribution only\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "balance_sheet",
       "income_statement"
@@ -230,7 +286,11 @@ export const ankiMcqs = [
       "Cash received from customers"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (balance sheet, income statement): amount employees receive after deductions. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "net pay? Amount employees receive after deductions.",
+      "\"Total wages earned before deductions\" does not answer the specific requirement in the question.",
+      "\"Total payroll expense including employer costs only\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "balance_sheet",
       "income_statement"
@@ -246,7 +306,11 @@ export const ankiMcqs = [
       "Dr Cash / Cr Revenue Received in Advance"
     ],
     "answer": 0,
-    "explanation": "Account analysis (debit credit): dr Salaries & Wages Expense / Cr Salaries & Wages Payable / Cr PAYG Withholding Payable. Work through which accounts change and whether they have normal debit or credit balances. Distractors often swap sides, use the wrong account class, or omit part of the entry.",
+    "explanation": [
+      "the journal entry on payroll date? Dr Salaries & Wages Expense / Cr Salaries & Wages Payable / Cr PAYG Withholding Payable.",
+      "\"Dr Cash / Cr Notes Payable\" does not answer the specific requirement in the question.",
+      "\"Dr Interest Expense / Cr Interest Payable\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "debit_credit"
     ]
@@ -261,7 +325,11 @@ export const ankiMcqs = [
       "Dr Cash / Cr Revenue Received in Advance"
     ],
     "answer": 0,
-    "explanation": "Timing is the key idea (debit credit): dr Salaries & Wages Payable / Cr Cash. Work through which accounts change and whether they have normal debit or credit balances. Distractors often swap sides, use the wrong account class, or omit part of the entry.",
+    "explanation": [
+      "the journal entry when paying employees? Dr Salaries & Wages Payable / Cr Cash.",
+      "\"Dr Cash / Cr Notes Payable\" does not answer the specific requirement in the question.",
+      "\"Dr Interest Expense / Cr Interest Payable\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "debit_credit"
     ]
@@ -276,7 +344,11 @@ export const ankiMcqs = [
       "Dr Cash / Cr Revenue Received in Advance"
     ],
     "answer": 0,
-    "explanation": "Timing is the key idea (debit credit): dr PAYG Withholding Tax Payable / Cr Cash. Work through which accounts change and whether they have normal debit or credit balances. Distractors often swap sides, use the wrong account class, or omit part of the entry.",
+    "explanation": [
+      "the journal entry when remitting payroll deductions? Dr PAYG Withholding Tax Payable / Cr Cash.",
+      "\"Dr Cash / Cr Notes Payable\" does not answer the specific requirement in the question.",
+      "\"Dr Interest Expense / Cr Interest Payable\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "debit_credit"
     ]
@@ -291,7 +363,11 @@ export const ankiMcqs = [
       "Interest payable on a note"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (adjusting entries, balance sheet): cash received before goods or services are delivered. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "revenue received in advance? Cash received before goods or services are delivered.",
+      "\"Revenue earned but not yet received in cash\" does not answer the specific requirement in the question.",
+      "\"A provision for warranty claims\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "adjusting_entries",
       "balance_sheet"
@@ -307,7 +383,11 @@ export const ankiMcqs = [
       "Commission revenue"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (adjusting entries, balance sheet): unearned revenue. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "another name for revenue received in advance? Unearned revenue.",
+      "\"Accrued revenue\" does not answer the specific requirement in the question.",
+      "\"Sales returns and allowances\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "adjusting_entries",
       "balance_sheet"
@@ -323,7 +403,11 @@ export const ankiMcqs = [
       "Because GST must be paid first"
     ],
     "answer": 0,
-    "explanation": "The reasoning to apply (adjusting entries, balance sheet): because the business still owes goods or services. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "Why is unearned revenue initially recorded as a liability? Because the business still owes goods or services.",
+      "\"Because it is always a non-current liability\" does not answer the specific requirement in the question.",
+      "\"Because GST must be paid first\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "adjusting_entries",
       "balance_sheet"
@@ -339,7 +423,11 @@ export const ankiMcqs = [
       "Dr Revenue Received in Advance / Cr Revenue"
     ],
     "answer": 0,
-    "explanation": "Timing is the key idea (adjusting entries, debit credit): dr Cash / Cr Revenue Received in Advance. Work through which accounts change and whether they have normal debit or credit balances. Distractors often swap sides, use the wrong account class, or omit part of the entry.",
+    "explanation": [
+      "the journal entry when cash is received in advance? Dr Cash / Cr Revenue Received in Advance.",
+      "\"Dr Cash / Cr Notes Payable\" does not answer the specific requirement in the question.",
+      "\"Dr Interest Expense / Cr Interest Payable\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "adjusting_entries",
       "debit_credit"
@@ -355,7 +443,11 @@ export const ankiMcqs = [
       "Dr Cash / Cr Revenue Received in Advance"
     ],
     "answer": 0,
-    "explanation": "Timing is the key idea (adjusting entries, debit credit): dr Revenue Received in Advance / Cr Revenue. Work through which accounts change and whether they have normal debit or credit balances. Distractors often swap sides, use the wrong account class, or omit part of the entry.",
+    "explanation": [
+      "the journal entry when revenue is earned? Dr Revenue Received in Advance / Cr Revenue.",
+      "\"Dr Cash / Cr Notes Payable\" does not answer the specific requirement in the question.",
+      "\"Dr Interest Expense / Cr Interest Payable\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "adjusting_entries",
       "debit_credit"
@@ -371,7 +463,11 @@ export const ankiMcqs = [
       "Contingent liability"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (balance sheet): obligations expected to be settled after more than one year. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "What are non-current liabilities? Obligations expected to be settled after more than one year.",
+      "\"Current liability\" does not answer the specific requirement in the question.",
+      "\"Non-current liability\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "balance_sheet"
     ]
@@ -386,7 +482,11 @@ export const ankiMcqs = [
       "Accounts receivable and inventory"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (balance sheet): bank loans, mortgages, debentures, and long-term notes. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "What are common examples of long-term liabilities? Bank loans, mortgages, debentures, and long-term notes.",
+      "\"Accounts payable and unearned revenue only\" does not answer the specific requirement in the question.",
+      "\"Share capital and retained earnings\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "balance_sheet"
     ]
@@ -401,7 +501,11 @@ export const ankiMcqs = [
       "A warranty provision"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (balance sheet): a note secured by a charge over the issuer's assets. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "a debenture? A note secured by a charge over the issuer's assets.",
+      "\"An unsecured note not backed by specific assets\" does not answer the specific requirement in the question.",
+      "\"A dividend payable to shareholders\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "balance_sheet"
     ]
@@ -416,7 +520,11 @@ export const ankiMcqs = [
       "PAYG withholding payable"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (balance sheet): a note not backed by specific assets. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "an unsecured note? A note not backed by specific assets.",
+      "\"A note secured by a charge over assets\" does not answer the specific requirement in the question.",
+      "\"A lease liability under a finance lease\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "balance_sheet"
     ]
@@ -431,7 +539,11 @@ export const ankiMcqs = [
       "Interest is never tax deductible"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (balance sheet, equity): shareholder control is unaffected. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "an advantage of debt financing? Shareholder control is unaffected.",
+      "\"No interest payments are required\" does not answer the specific requirement in the question.",
+      "\"Debt never creates financial risk\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "balance_sheet",
       "equity"
@@ -447,7 +559,11 @@ export const ankiMcqs = [
       "It is recorded as equity"
     ],
     "answer": 0,
-    "explanation": "The reasoning to apply (balance sheet, income statement): it is generally tax deductible. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "Why is interest expense attractive for businesses? It is generally tax deductible.",
+      "\"It is recorded as equity\" does not answer the specific requirement in the question.",
+      "\"It increases share capital automatically\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "balance_sheet",
       "income_statement"
@@ -463,7 +579,11 @@ export const ankiMcqs = [
       "Interest is never recorded as expense"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (balance sheet): interest and principal repayments are mandatory. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "a disadvantage of debt financing? Interest and principal repayments are mandatory.",
+      "\"Debt cannot be issued at a discount\" does not answer the specific requirement in the question.",
+      "\"Shareholder control is always diluted\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "balance_sheet"
     ]
@@ -478,7 +598,11 @@ export const ankiMcqs = [
       "Debt financing removes interest expense"
     ],
     "answer": 0,
-    "explanation": "The reasoning to apply (balance sheet, financial statements): businesses may struggle to meet fixed payments during poor cash flow periods. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "Why can high debt create financial risk? Businesses may struggle to meet fixed payments during poor cash flow periods.",
+      "\"Debt always reduces total assets\" does not answer the specific requirement in the question.",
+      "\"High debt eliminates current liabilities\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "balance_sheet",
       "financial_statements"
@@ -494,7 +618,11 @@ export const ankiMcqs = [
       "Premium"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (balance sheet): the amount due at maturity. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "face value? The amount due at maturity.",
+      "\"Face value\" does not answer the specific requirement in the question.",
+      "\"Issue price\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "balance_sheet"
     ]
@@ -509,7 +637,11 @@ export const ankiMcqs = [
       "Premium"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (balance sheet): the amount of cash received when debt is issued. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "issue price? The amount of cash received when debt is issued.",
+      "\"Face value\" does not answer the specific requirement in the question.",
+      "\"Issue price\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "balance_sheet"
     ]
@@ -524,7 +656,11 @@ export const ankiMcqs = [
       "Premium"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (balance sheet): contract (coupon) interest rate. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "What determines periodic interest payments? Contract (coupon) interest rate.",
+      "\"Face value\" does not answer the specific requirement in the question.",
+      "\"Issue price\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "balance_sheet"
     ]
@@ -539,7 +675,11 @@ export const ankiMcqs = [
       "Coupon rate is irrelevant to pricing"
     ],
     "answer": 0,
-    "explanation": "The reasoning to apply (balance sheet): debt is priced based on the present value of future cash flows. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "Why does present value matter for debt pricing? Debt is priced based on the present value of future cash flows.",
+      "\"Debt is always issued at face value regardless of market rates\" does not answer the specific requirement in the question.",
+      "\"Present value applies only to equity\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "balance_sheet"
     ]
@@ -554,7 +694,11 @@ export const ankiMcqs = [
       "When no interest is payable"
     ],
     "answer": 0,
-    "explanation": "Timing is the key idea (balance sheet): when market interest rates are lower than contract rates. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "When are notes issued at a premium? When market interest rates are lower than contract rates.",
+      "\"When market rates are higher than contract rates\" does not answer the specific requirement in the question.",
+      "\"When no interest is payable\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "balance_sheet"
     ]
@@ -569,7 +713,11 @@ export const ankiMcqs = [
       "When debt is always redeemed early"
     ],
     "answer": 0,
-    "explanation": "Timing is the key idea (balance sheet): when market interest rates are higher than contract rates. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "When are notes issued at a discount? When market interest rates are higher than contract rates.",
+      "\"When market rates are lower than contract rates\" does not answer the specific requirement in the question.",
+      "\"When coupon rate equals market rate\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "balance_sheet"
     ]
@@ -584,7 +732,11 @@ export const ankiMcqs = [
       "Dr Revenue Received in Advance / Cr Revenue"
     ],
     "answer": 0,
-    "explanation": "Timing is the key idea (debit credit): dr Cash / Cr Notes Payable. Work through which accounts change and whether they have normal debit or credit balances. Distractors often swap sides, use the wrong account class, or omit part of the entry.",
+    "explanation": [
+      "the journal entry when notes are issued at face value? Dr Cash / Cr Notes Payable.",
+      "\"Dr Interest Expense / Cr Interest Payable\" does not answer the specific requirement in the question.",
+      "\"Dr Cash / Cr Revenue Received in Advance\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "debit_credit"
     ]
@@ -599,7 +751,11 @@ export const ankiMcqs = [
       "Dr Notes Payable / Cr Cash only"
     ],
     "answer": 0,
-    "explanation": "Account analysis (debit credit): dr Interest Expense / Cr Cash. Work through which accounts change and whether they have normal debit or credit balances. Distractors often swap sides, use the wrong account class, or omit part of the entry.",
+    "explanation": [
+      "the journal entry for interest payment? Dr Interest Expense / Cr Cash.",
+      "\"Dr Cash / Cr Interest Expense\" does not answer the specific requirement in the question.",
+      "\"Dr Interest Payable / Cr Notes Payable\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "debit_credit"
     ]
@@ -614,7 +770,11 @@ export const ankiMcqs = [
       "Dr Cash / Cr Revenue Received in Advance"
     ],
     "answer": 0,
-    "explanation": "Timing is the key idea (debit credit): dr Notes Payable / Cr Cash. Work through which accounts change and whether they have normal debit or credit balances. Distractors often swap sides, use the wrong account class, or omit part of the entry.",
+    "explanation": [
+      "the journal entry when debt is redeemed at maturity? Dr Notes Payable / Cr Cash.",
+      "\"Dr Cash / Cr Notes Payable\" does not answer the specific requirement in the question.",
+      "\"Dr Interest Expense / Cr Interest Payable\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "debit_credit"
     ]
@@ -629,7 +789,11 @@ export const ankiMcqs = [
       "Interest expense is reversed completely"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (balance sheet, income statement): a loss on redemption is recognised. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "What happens if cash paid on early redemption exceeds carrying amount? A loss on redemption is recognised.",
+      "\"A gain on redemption is recognised\" does not answer the specific requirement in the question.",
+      "\"No gain or loss is ever recorded\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "balance_sheet",
       "income_statement"
@@ -645,7 +809,11 @@ export const ankiMcqs = [
       "Revenue is credited instead"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (balance sheet, income statement): a gain on redemption is recognised. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "What happens if cash paid on early redemption is less than carrying amount? A gain on redemption is recognised.",
+      "\"A loss on redemption is recognised\" does not answer the specific requirement in the question.",
+      "\"The note remains on the balance sheet\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "balance_sheet",
       "income_statement"
@@ -661,7 +829,11 @@ export const ankiMcqs = [
       "GST collected and GST paid"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (balance sheet): interest expense and principal reduction. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "What two components make up instalment payments? Interest expense and principal reduction.",
+      "\"Principal and warranty provision\" does not answer the specific requirement in the question.",
+      "\"Depreciation and amortisation\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "balance_sheet"
     ]
@@ -676,7 +848,11 @@ export const ankiMcqs = [
       "Current Assets ÷ Current Liabilities"
     ],
     "answer": 0,
-    "explanation": "The calculation rests on (balance sheet): beginning loan balance × periodic interest rate. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "Using the figures in the question, beginning loan balance × periodic interest rate.",
+      "\"Principal × Interest Rate × Time\" does not answer the required calculation.",
+      "\"Current Assets − Current Liabilities\" does not answer the required calculation."
+    ],
     "tags": [
       "balance_sheet"
     ]
@@ -691,7 +867,11 @@ export const ankiMcqs = [
       "Current Assets ÷ Current Liabilities"
     ],
     "answer": 0,
-    "explanation": "The calculation rests on (balance sheet): payment − Interest. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "Using the figures in the question, payment − Interest.",
+      "\"Principal × Interest Rate × Time\" does not answer the required calculation.",
+      "\"Current Assets − Current Liabilities\" does not answer the required calculation."
+    ],
     "tags": [
       "balance_sheet"
     ]
@@ -706,7 +886,11 @@ export const ankiMcqs = [
       "Dr Cash / Cr Revenue Received in Advance"
     ],
     "answer": 0,
-    "explanation": "Account analysis (debit credit): dr Interest Expense; Dr Loan Payable; Cr Cash. Work through which accounts change and whether they have normal debit or credit balances. Distractors often swap sides, use the wrong account class, or omit part of the entry.",
+    "explanation": [
+      "the journal entry for an instalment payment? Dr Interest Expense; Dr Loan Payable; Cr Cash.",
+      "\"Dr Cash / Cr Notes Payable\" does not answer the specific requirement in the question.",
+      "\"Dr Interest Expense / Cr Interest Payable\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "debit_credit"
     ]
@@ -721,7 +905,11 @@ export const ankiMcqs = [
       "Contingent liability"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (balance sheet, financial statements): as a current liability. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "How is the current portion of long-term debt classified? As a current liability.",
+      "\"Current liability\" does not answer the specific requirement in the question.",
+      "\"Non-current liability\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "balance_sheet",
       "financial_statements"
@@ -737,7 +925,11 @@ export const ankiMcqs = [
       "Contingent liability"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (balance sheet, financial statements): as a non-current liability. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "How is the remaining portion classified? As a non-current liability.",
+      "\"Current liability\" does not answer the specific requirement in the question.",
+      "\"Non-current liability\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "balance_sheet",
       "financial_statements"
@@ -753,7 +945,11 @@ export const ankiMcqs = [
       "Cash received before services are delivered"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (balance sheet): an agreement where a lessor grants a lessee the right to use an asset. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "a lease? An agreement where a lessor grants a lessee the right to use an asset.",
+      "\"A written promise to pay a specified amount\" does not answer the specific requirement in the question.",
+      "\"A provision for uncertain obligations\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "balance_sheet"
     ]
@@ -768,7 +964,11 @@ export const ankiMcqs = [
       "The employee receiving net pay"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (balance sheet): the owner of the asset. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "Who is the lessor? The owner of the asset.",
+      "\"The party using the asset\" does not answer the specific requirement in the question.",
+      "\"The bank lending cash\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "balance_sheet"
     ]
@@ -783,7 +983,11 @@ export const ankiMcqs = [
       "The ATO receiving GST"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (balance sheet): the party using the asset. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "Who is the lessee? The party using the asset.",
+      "\"The owner of the asset\" does not answer the specific requirement in the question.",
+      "\"The factor buying receivables\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "balance_sheet"
     ]
@@ -798,7 +1002,11 @@ export const ankiMcqs = [
       "Sale and leaseback only"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (balance sheet, income statement): as rental expense. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "How are operating leases treated by the lessee? As rental expense.",
+      "\"Operating lease — rental expense\" does not answer the specific requirement in the question.",
+      "\"Finance lease — right-of-use asset and lease liability\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "balance_sheet",
       "income_statement"
@@ -814,7 +1022,11 @@ export const ankiMcqs = [
       "Dr Cash / Cr Revenue Received in Advance"
     ],
     "answer": 0,
-    "explanation": "Account analysis (debit credit): dr Lease/Rent Expense / Cr Cash. Work through which accounts change and whether they have normal debit or credit balances. Distractors often swap sides, use the wrong account class, or omit part of the entry.",
+    "explanation": [
+      "the journal entry for operating lease payments? Dr Lease/Rent Expense / Cr Cash.",
+      "\"Dr Cash / Cr Notes Payable\" does not answer the specific requirement in the question.",
+      "\"Dr Interest Expense / Cr Interest Payable\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "debit_credit"
     ]
@@ -829,7 +1041,11 @@ export const ankiMcqs = [
       "Neither party"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (balance sheet): the lessor's. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "whose balance sheet shows the asset? The lessor's.",
+      "\"The lessee's\" does not answer the specific requirement in the question.",
+      "\"Both parties equally\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "balance_sheet"
     ]
@@ -844,7 +1060,11 @@ export const ankiMcqs = [
       "Dr Cash / Cr Notes Payable"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (debit credit): dr Cash / Cr Lease Revenue. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "the lessor's entry for lease receipts? Dr Cash / Cr Lease Revenue.",
+      "\"Dr Lease Expense / Cr Cash\" does not answer the specific requirement in the question.",
+      "\"Dr Right-of-use Asset / Cr Lease Liability\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "debit_credit"
     ]
@@ -859,7 +1079,11 @@ export const ankiMcqs = [
       "Sale and leaseback only"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (balance sheet): a right-of-use asset and a lease liability. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "What does a lessee recognise at commencement of a finance lease? A right-of-use asset and a lease liability.",
+      "\"Finance lease — right-of-use asset and lease liability\" does not answer the specific requirement in the question.",
+      "\"Operating lease — rental expense\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "balance_sheet"
     ]
@@ -874,7 +1098,11 @@ export const ankiMcqs = [
       "Dr Cash / Cr Revenue Received in Advance"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (debit credit): dr Right-of-use Asset / Cr Lease Liability. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "the conceptual commencement entry for a finance lease? Dr Right-of-use Asset / Cr Lease Liability.",
+      "\"Dr Cash / Cr Notes Payable\" does not answer the specific requirement in the question.",
+      "\"Dr Interest Expense / Cr Interest Payable\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "debit_credit"
     ]
@@ -889,7 +1117,11 @@ export const ankiMcqs = [
       "It is transferred to equity"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (balance sheet): it decreases as principal is repaid. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "What happens to the lease liability over time? It decreases as principal is repaid.",
+      "\"It is never recognised under finance leases\" does not answer the specific requirement in the question.",
+      "\"It is transferred to equity\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "balance_sheet"
     ]
@@ -904,7 +1136,11 @@ export const ankiMcqs = [
       "No expense until lease ends"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (balance sheet, income statement): interest expense and depreciation/amortisation. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "What expense is recognised each period under a finance lease? Interest expense and depreciation/amortisation.",
+      "\"Only rental expense\" does not answer the specific requirement in the question.",
+      "\"Only warranty expense\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "balance_sheet",
       "income_statement"
@@ -920,7 +1156,11 @@ export const ankiMcqs = [
       "Contingent liability"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (adjusting entries, balance sheet): liabilities for goods/services received but not yet invoiced. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "What are accruals? Liabilities for goods/services received but not yet invoiced.",
+      "\"Current liability\" does not answer the specific requirement in the question.",
+      "\"Non-current liability\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "adjusting_entries",
       "balance_sheet"
@@ -936,7 +1176,11 @@ export const ankiMcqs = [
       "Warranty claims already paid in cash"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (adjusting entries, balance sheet): utilities expense owing at period end. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "Give an example of an accrual. Utilities expense owing at period end.",
+      "\"Cash received before services are performed\" uses cash-basis timing, but the question asks what happens under accrual accounting.",
+      "\"A possible lawsuit outcome\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "adjusting_entries",
       "balance_sheet"
@@ -952,7 +1196,11 @@ export const ankiMcqs = [
       "Contingent liability"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (balance sheet): liabilities with uncertain timing or amount but probable outflows. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "What are provisions? Liabilities with uncertain timing or amount but probable outflows.",
+      "\"Current liability\" does not answer the specific requirement in the question.",
+      "\"Non-current liability\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "balance_sheet"
     ]
@@ -967,7 +1215,11 @@ export const ankiMcqs = [
       "Accounts receivable and inventory"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (balance sheet): warranties and long service leave. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "Give examples of provisions. Warranties and long service leave.",
+      "\"Accounts payable and notes payable only\" does not answer the specific requirement in the question.",
+      "\"Share capital and dividends\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "balance_sheet"
     ]
@@ -982,7 +1234,11 @@ export const ankiMcqs = [
       "Contingent liability"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (balance sheet, financial statements): possible obligations dependent on uncertain future events. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "What are contingent liabilities? Possible obligations dependent on uncertain future events.",
+      "\"Current liability\" does not answer the specific requirement in the question.",
+      "\"Non-current liability\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "balance_sheet",
       "financial_statements"
@@ -998,7 +1254,11 @@ export const ankiMcqs = [
       "Only if probable and estimable"
     ],
     "answer": 0,
-    "explanation": "Timing is the key idea (balance sheet, financial statements): they are not recognised if outflow is not probable or cannot be measured reliably. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "Under the applicable recognition rule, they are not recognised if outflow is not probable or cannot be measured reliably. The dates in the scenario show why that period is the right recognition point.",
+      "\"Only if probable and estimable\" does not answer when recognition should occur under the named basis.",
+      "\"Yes\" does not answer when recognition should occur under the named basis."
+    ],
     "tags": [
       "balance_sheet",
       "financial_statements"
@@ -1014,7 +1274,11 @@ export const ankiMcqs = [
       "Included in share capital"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (balance sheet, financial statements): disclosed in notes to the financial statements. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "How are contingent liabilities reported? Disclosed in notes to the financial statements.",
+      "\"Recognised on the statement of financial position always\" does not answer the specific requirement in the question.",
+      "\"Recorded as revenue\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "balance_sheet",
       "financial_statements"
@@ -1030,7 +1294,11 @@ export const ankiMcqs = [
       "Because warranty expense is never recorded until payment"
     ],
     "answer": 0,
-    "explanation": "The reasoning to apply (balance sheet): because future warranty claims are probable and estimable. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "Why do businesses recognise warranty provisions? Because future warranty claims are probable and estimable.",
+      "\"Because all warranties are contingent liabilities only\" does not answer the specific requirement in the question.",
+      "\"Because claims are always paid in cash immediately\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "balance_sheet"
     ]
@@ -1045,7 +1313,11 @@ export const ankiMcqs = [
       "Dr Cash / Cr Revenue Received in Advance"
     ],
     "answer": 0,
-    "explanation": "Account analysis (debit credit): dr Warranty Expense / Cr Warranty Provision. Work through which accounts change and whether they have normal debit or credit balances. Distractors often swap sides, use the wrong account class, or omit part of the entry.",
+    "explanation": [
+      "the journal entry to recognise warranty expense? Dr Warranty Expense / Cr Warranty Provision.",
+      "\"Dr Cash / Cr Notes Payable\" does not answer the specific requirement in the question.",
+      "\"Dr Interest Expense / Cr Interest Payable\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "debit_credit"
     ]
@@ -1060,7 +1332,11 @@ export const ankiMcqs = [
       "Dr Cash / Cr Revenue Received in Advance"
     ],
     "answer": 0,
-    "explanation": "Timing is the key idea (debit credit): dr Warranty Provision / Cr Cash or Inventory. Work through which accounts change and whether they have normal debit or credit balances. Distractors often swap sides, use the wrong account class, or omit part of the entry.",
+    "explanation": [
+      "the journal entry when warranty claims are fulfilled? Dr Warranty Provision / Cr Cash or Inventory.",
+      "\"Dr Cash / Cr Notes Payable\" does not answer the specific requirement in the question.",
+      "\"Dr Interest Expense / Cr Interest Payable\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "debit_credit"
     ]
@@ -1075,7 +1351,11 @@ export const ankiMcqs = [
       "The provision is reversed to equity"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (balance sheet, income statement): additional warranty expense and provision are recognised. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "What happens if warranty estimates increase? Additional warranty expense and provision are recognised.",
+      "\"The provision is reversed to equity\" does not answer the specific requirement in the question.",
+      "\"No further entries are required\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "balance_sheet",
       "income_statement"
@@ -1091,7 +1371,11 @@ export const ankiMcqs = [
       "Efficiency of asset use"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (financial statements): ability to meet short-term obligations. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "What does liquidity measure? Ability to meet short-term obligations.",
+      "\"Long-term financial stability only\" does not answer the specific requirement in the question.",
+      "\"Profitability of sales\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "financial_statements"
     ]
@@ -1106,7 +1390,11 @@ export const ankiMcqs = [
       "(Cash + Marketable Securities + Net Receivables) ÷ Current Liabilities"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (financial statements): current Assets − Current Liabilities. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "working capital? Current Assets − Current Liabilities.",
+      "\"Current Assets ÷ Current Liabilities\" does not answer the specific requirement in the question.",
+      "\"(Cash + Marketable Securities + Net Receivables) ÷ Current Liabilities\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "financial_statements"
     ]
@@ -1121,7 +1409,11 @@ export const ankiMcqs = [
       "Inventory turnover is high"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (financial statements): current assets exceed current liabilities. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "What does positive working capital indicate? Current assets exceed current liabilities.",
+      "\"Current liabilities exceed current assets\" does not answer the specific requirement in the question.",
+      "\"The business has no debt\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "financial_statements"
     ]
@@ -1136,7 +1428,11 @@ export const ankiMcqs = [
       "(Cash + Marketable Securities + Net Receivables) ÷ Current Liabilities"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (financial statements): current Assets ÷ Current Liabilities. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "the current ratio formula? Current Assets ÷ Current Liabilities.",
+      "\"Current Assets − Current Liabilities\" does not answer the specific requirement in the question.",
+      "\"(Cash + Marketable Securities + Net Receivables) ÷ Current Liabilities\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "financial_statements"
     ]
@@ -1151,7 +1447,11 @@ export const ankiMcqs = [
       "Inventory efficiency only"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (financial statements): ability to pay short-term debts. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "What does the current ratio measure? Ability to pay short-term debts.",
+      "\"Long-term solvency only\" does not answer the specific requirement in the question.",
+      "\"Interest coverage ability\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "financial_statements"
     ]
@@ -1166,7 +1466,11 @@ export const ankiMcqs = [
       "Current Assets ÷ Current Liabilities"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (financial statements): (Cash + Marketable Securities + Net Receivables) ÷ Current Liabilities. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "the quick ratio formula? (Cash + Marketable Securities + Net Receivables) ÷ Current Liabilities.",
+      "\"Current Assets − Current Liabilities\" does not answer the specific requirement in the question.",
+      "\"Current Assets ÷ Current Liabilities\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "financial_statements"
     ]
@@ -1181,7 +1485,11 @@ export const ankiMcqs = [
       "It excludes cash and receivables"
     ],
     "answer": 0,
-    "explanation": "The reasoning to apply (financial statements): it excludes inventory and prepayments. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "Why is the quick ratio more conservative than the current ratio? It excludes inventory and prepayments.",
+      "\"It includes inventory and prepayments\" does not answer the specific requirement in the question.",
+      "\"It excludes cash and receivables\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "financial_statements"
     ]
@@ -1196,7 +1504,11 @@ export const ankiMcqs = [
       "Gross profit margin"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (financial statements): long-term financial stability. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "What does solvency measure? Long-term financial stability.",
+      "\"Ability to meet short-term obligations only\" does not answer the specific requirement in the question.",
+      "\"Speed of receivables collection\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "financial_statements"
     ]
@@ -1211,7 +1523,11 @@ export const ankiMcqs = [
       "Current Assets ÷ Current Liabilities"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (financial statements): total Liabilities ÷ Total Assets. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "the debt to total assets ratio formula? Total Liabilities ÷ Total Assets.",
+      "\"Current Assets − Current Liabilities\" does not answer the specific requirement in the question.",
+      "\"Current Assets ÷ Current Liabilities\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "financial_statements"
     ]
@@ -1226,7 +1542,11 @@ export const ankiMcqs = [
       "Stronger interest coverage always"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (financial statements): greater financial risk and leverage. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "What does a higher debt to total assets ratio indicate? Greater financial risk and leverage.",
+      "\"Lower financial risk\" does not answer the specific requirement in the question.",
+      "\"Higher liquidity\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "financial_statements"
     ]
@@ -1241,7 +1561,11 @@ export const ankiMcqs = [
       "Current Assets ÷ Current Liabilities"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (financial statements): (Profit Before Income Tax + Interest Expense) ÷ Interest Expense. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "the times interest earned formula? (Profit Before Income Tax + Interest Expense) ÷ Interest Expense.",
+      "\"Principal × Interest Rate × Time\" does not answer the specific requirement in the question.",
+      "\"Current Assets − Current Liabilities\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "financial_statements"
     ]
@@ -1256,7 +1580,11 @@ export const ankiMcqs = [
       "Proportion of receivables uncollectable"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (financial statements): ability to meet interest obligations. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "What does times interest earned measure? Ability to meet interest obligations.",
+      "\"Ability to pay short-term debts only\" does not answer the specific requirement in the question.",
+      "\"Speed of inventory turnover\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "financial_statements"
     ]
@@ -1271,7 +1599,11 @@ export const ankiMcqs = [
       "Low debt levels"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (financial statements): difficulty paying interest. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "What does a low times interest earned ratio suggest? Difficulty paying interest.",
+      "\"Strong ability to meet interest payments\" does not answer the specific requirement in the question.",
+      "\"Excess working capital\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "financial_statements"
     ]
@@ -1286,7 +1618,11 @@ export const ankiMcqs = [
       "Including inventory in quick ratio"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (error correction): forgetting the current portion of long-term debt. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "the biggest current vs non-current liability trap? Forgetting the current portion of long-term debt.",
+      "\"Recognising contingent liabilities on the balance sheet\" does not answer the specific requirement in the question.",
+      "\"Treating entire loan payment as interest\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "error_correction"
     ]
@@ -1301,7 +1637,11 @@ export const ankiMcqs = [
       "Recognising revenue before earned"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (error correction): forgetting to accrue interest at period end. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "the biggest notes payable trap? Forgetting to accrue interest at period end.",
+      "\"Recording note issue as Dr Notes Payable / Cr Cash\" does not answer the specific requirement in the question.",
+      "\"Confusing gross pay with net pay\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "error_correction"
     ]
@@ -1316,7 +1656,11 @@ export const ankiMcqs = [
       "Treating superannuation as revenue"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (error correction): confusing gross pay with net pay. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "the biggest payroll trap? Confusing gross pay with net pay.",
+      "\"Forgetting PAYG remittance entirely\" does not answer the specific requirement in the question.",
+      "\"Recording payroll as Dr Cash / Cr Expense\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "error_correction"
     ]
@@ -1331,7 +1675,11 @@ export const ankiMcqs = [
       "Failing to record GST on advance receipts only"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (error correction, adjusting entries): recognising revenue before it is earned. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "the biggest unearned revenue trap? Recognising revenue before it is earned.",
+      "\"Recording cash receipt as Dr Revenue / Cr Cash\" does not answer the specific requirement in the question.",
+      "\"Classifying unearned revenue as equity\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "error_correction",
       "adjusting_entries"
@@ -1347,7 +1695,11 @@ export const ankiMcqs = [
       "Recording Dr Cash / Cr Loan Payable for each payment"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (error correction): treating the entire payment as interest expense. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "the biggest instalment loan trap? Treating the entire payment as interest expense.",
+      "\"Splitting payment into interest and principal correctly\" does not answer the specific requirement in the question.",
+      "\"Classifying all debt as non-current\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "error_correction"
     ]
@@ -1362,7 +1714,11 @@ export const ankiMcqs = [
       "Showing the asset on the lessor's books as lessee"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (error correction): forgetting both an asset and liability are recognised. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "the biggest finance lease trap? Forgetting both an asset and liability are recognised.",
+      "\"Showing the asset on the lessor's books as lessee\" does not answer the specific requirement in the question.",
+      "\"Recording only rental expense like an operating lease\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "error_correction"
     ]
@@ -1377,7 +1733,11 @@ export const ankiMcqs = [
       "Accruing utilities expense at period end"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (error correction): recognising contingent liabilities instead of only disclosing them. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "the biggest contingency trap? Recognising contingent liabilities instead of only disclosing them.",
+      "\"Disclosing provisions in notes only\" does not answer the specific requirement in the question.",
+      "\"Estimating warranty provisions upfront\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "error_correction"
     ]
@@ -1392,7 +1752,11 @@ export const ankiMcqs = [
       "Increasing provision when estimates rise"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (error correction): recording warranty expense only when claims occur instead of estimating upfront. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "the biggest warranty trap? Recording warranty expense only when claims occur instead of estimating upfront.",
+      "\"Recognising Dr Warranty Expense / Cr Warranty Provision\" does not answer the specific requirement in the question.",
+      "\"Debiting Warranty Provision when claims are paid\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "error_correction"
     ]
@@ -1407,7 +1771,11 @@ export const ankiMcqs = [
       "Using net sales in working capital"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (error correction, financial statements): including inventory in the quick ratio. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "the biggest liquidity ratio trap? Including inventory in the quick ratio.",
+      "\"Excluding receivables from quick ratio\" does not answer the specific requirement in the question.",
+      "\"Using total liabilities in current ratio\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "error_correction",
       "financial_statements"
@@ -1423,7 +1791,11 @@ export const ankiMcqs = [
       "(Cash + Marketable Securities + Net Receivables) ÷ Current Liabilities"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (financial statements): principal × Interest Rate × Time. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "Formula: Interest expense. Principal × Interest Rate × Time.",
+      "\"Current Assets − Current Liabilities\" does not answer the specific requirement in the question.",
+      "\"Current Assets ÷ Current Liabilities\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "financial_statements"
     ]
@@ -1438,7 +1810,11 @@ export const ankiMcqs = [
       "(Cash + Marketable Securities + Net Receivables) ÷ Current Liabilities"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (financial statements): current Assets − Current Liabilities. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "Formula: Working capital. Current Assets − Current Liabilities.",
+      "\"Current Assets ÷ Current Liabilities\" does not answer the specific requirement in the question.",
+      "\"(Cash + Marketable Securities + Net Receivables) ÷ Current Liabilities\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "financial_statements"
     ]
@@ -1453,7 +1829,11 @@ export const ankiMcqs = [
       "(Cash + Marketable Securities + Net Receivables) ÷ Current Liabilities"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (financial statements): current Assets ÷ Current Liabilities. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "Formula: Current ratio. Current Assets ÷ Current Liabilities.",
+      "\"Current Assets − Current Liabilities\" does not answer the specific requirement in the question.",
+      "\"(Cash + Marketable Securities + Net Receivables) ÷ Current Liabilities\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "financial_statements"
     ]
@@ -1468,7 +1848,11 @@ export const ankiMcqs = [
       "Current Assets ÷ Current Liabilities"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (financial statements): (Cash + Marketable Securities + Net Receivables) ÷ Current Liabilities. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "Formula: Quick ratio. (Cash + Marketable Securities + Net Receivables) ÷ Current Liabilities.",
+      "\"Current Assets − Current Liabilities\" does not answer the specific requirement in the question.",
+      "\"Current Assets ÷ Current Liabilities\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "financial_statements"
     ]
@@ -1483,7 +1867,11 @@ export const ankiMcqs = [
       "Current Assets ÷ Current Liabilities"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (financial statements): total Liabilities ÷ Total Assets. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "Formula: Debt to total assets ratio. Total Liabilities ÷ Total Assets.",
+      "\"Current Assets − Current Liabilities\" does not answer the specific requirement in the question.",
+      "\"Current Assets ÷ Current Liabilities\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "financial_statements"
     ]
@@ -1498,7 +1886,11 @@ export const ankiMcqs = [
       "Current Assets ÷ Current Liabilities"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (financial statements): (Profit Before Income Tax + Interest Expense) ÷ Interest Expense. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "Formula: Times interest earned. (Profit Before Income Tax + Interest Expense) ÷ Interest Expense.",
+      "\"Principal × Interest Rate × Time\" does not answer the specific requirement in the question.",
+      "\"Current Assets − Current Liabilities\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "financial_statements"
     ]
@@ -1513,7 +1905,11 @@ export const ankiMcqs = [
       "Dr Revenue Received in Advance / Cr Revenue"
     ],
     "answer": 0,
-    "explanation": "Account analysis (debit credit): dr Cash / Cr Notes Payable. Work through which accounts change and whether they have normal debit or credit balances. Distractors often swap sides, use the wrong account class, or omit part of the entry.",
+    "explanation": [
+      "Journalise issuing a short-term note payable. Dr Cash / Cr Notes Payable.",
+      "\"Dr Interest Expense / Cr Interest Payable\" does not answer the specific requirement in the question.",
+      "\"Dr Cash / Cr Revenue Received in Advance\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "debit_credit"
     ]
@@ -1528,7 +1924,11 @@ export const ankiMcqs = [
       "Dr Revenue Received in Advance / Cr Revenue"
     ],
     "answer": 0,
-    "explanation": "Account analysis (adjusting entries, debit credit): dr Interest Expense / Cr Interest Payable. Adjusting entries align revenues and expenses with the reporting period before statements are issued. Wrong options usually skip the adjustment, use the wrong account type, or apply the entry in the wrong period.",
+    "explanation": [
+      "Journalise accrued interest. Dr Interest Expense / Cr Interest Payable.",
+      "\"Dr Cash / Cr Notes Payable\" does not answer the specific requirement in the question.",
+      "\"Dr Cash / Cr Revenue Received in Advance\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "adjusting_entries",
       "debit_credit"
@@ -1544,7 +1944,11 @@ export const ankiMcqs = [
       "Dr Revenue Received in Advance / Cr Revenue"
     ],
     "answer": 0,
-    "explanation": "Account analysis (adjusting entries, debit credit): dr Cash / Cr Revenue Received in Advance. Work through which accounts change and whether they have normal debit or credit balances. Distractors often swap sides, use the wrong account class, or omit part of the entry.",
+    "explanation": [
+      "Journalise receiving cash in advance. Dr Cash / Cr Revenue Received in Advance.",
+      "\"Dr Cash / Cr Notes Payable\" does not answer the specific requirement in the question.",
+      "\"Dr Interest Expense / Cr Interest Payable\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "adjusting_entries",
       "debit_credit"
@@ -1560,7 +1964,11 @@ export const ankiMcqs = [
       "Dr Cash / Cr Revenue Received in Advance"
     ],
     "answer": 0,
-    "explanation": "Account analysis (adjusting entries, debit credit): dr Revenue Received in Advance / Cr Revenue. Work through which accounts change and whether they have normal debit or credit balances. Distractors often swap sides, use the wrong account class, or omit part of the entry.",
+    "explanation": [
+      "Journalise earning previously unearned revenue. Dr Revenue Received in Advance / Cr Revenue.",
+      "\"Dr Cash / Cr Notes Payable\" does not answer the specific requirement in the question.",
+      "\"Dr Interest Expense / Cr Interest Payable\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "adjusting_entries",
       "debit_credit"
@@ -1576,7 +1984,11 @@ export const ankiMcqs = [
       "Dr Cash / Cr Revenue Received in Advance"
     ],
     "answer": 0,
-    "explanation": "Account analysis (debit credit): dr Salaries & Wages Expense / Cr Salaries & Wages Payable / Cr PAYG Withholding Payable. Work through which accounts change and whether they have normal debit or credit balances. Distractors often swap sides, use the wrong account class, or omit part of the entry.",
+    "explanation": [
+      "Journalise payroll expense. Dr Salaries & Wages Expense / Cr Salaries & Wages Payable / Cr PAYG Withholding Payable.",
+      "\"Dr Cash / Cr Notes Payable\" does not answer the specific requirement in the question.",
+      "\"Dr Interest Expense / Cr Interest Payable\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "debit_credit"
     ]
@@ -1591,7 +2003,11 @@ export const ankiMcqs = [
       "Dr Cash / Cr Revenue Received in Advance"
     ],
     "answer": 0,
-    "explanation": "Account analysis (debit credit): dr PAYG Withholding Tax Payable / Cr Cash. Work through which accounts change and whether they have normal debit or credit balances. Distractors often swap sides, use the wrong account class, or omit part of the entry.",
+    "explanation": [
+      "Journalise remittance of payroll deductions. Dr PAYG Withholding Tax Payable / Cr Cash.",
+      "\"Dr Cash / Cr Notes Payable\" does not answer the specific requirement in the question.",
+      "\"Dr Interest Expense / Cr Interest Payable\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "debit_credit"
     ]
@@ -1606,7 +2022,11 @@ export const ankiMcqs = [
       "Dr Cash / Cr Revenue Received in Advance"
     ],
     "answer": 0,
-    "explanation": "Account analysis (debit credit): dr Lease Expense / Cr Cash. Work through which accounts change and whether they have normal debit or credit balances. Distractors often swap sides, use the wrong account class, or omit part of the entry.",
+    "explanation": [
+      "Journalise an operating lease payment. Dr Lease Expense / Cr Cash.",
+      "\"Dr Cash / Cr Notes Payable\" does not answer the specific requirement in the question.",
+      "\"Dr Interest Expense / Cr Interest Payable\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "debit_credit"
     ]
@@ -1621,7 +2041,11 @@ export const ankiMcqs = [
       "Dr Cash / Cr Revenue Received in Advance"
     ],
     "answer": 0,
-    "explanation": "Account analysis (debit credit): dr Warranty Expense / Cr Warranty Provision. Work through which accounts change and whether they have normal debit or credit balances. Distractors often swap sides, use the wrong account class, or omit part of the entry.",
+    "explanation": [
+      "Journalise recognition of warranty expense. Dr Warranty Expense / Cr Warranty Provision.",
+      "\"Dr Cash / Cr Notes Payable\" does not answer the specific requirement in the question.",
+      "\"Dr Interest Expense / Cr Interest Payable\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "debit_credit"
     ]
@@ -1636,7 +2060,11 @@ export const ankiMcqs = [
       "Dr Cash / Cr Revenue Received in Advance"
     ],
     "answer": 0,
-    "explanation": "Account analysis (debit credit): dr Warranty Provision / Cr Cash or Inventory. Work through which accounts change and whether they have normal debit or credit balances. Distractors often swap sides, use the wrong account class, or omit part of the entry.",
+    "explanation": [
+      "Journalise payment of warranty claims. Dr Warranty Provision / Cr Cash or Inventory.",
+      "\"Dr Cash / Cr Notes Payable\" does not answer the specific requirement in the question.",
+      "\"Dr Interest Expense / Cr Interest Payable\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "debit_credit"
     ]

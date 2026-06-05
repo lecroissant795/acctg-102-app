@@ -38,6 +38,7 @@ import { createAnswerRecord } from "./utils/scoring/index.js";
 import {
   consumeTutorUse,
   createTutorUseState,
+  getTutorUseLimit,
 } from "./utils/tutorLimit.js";
 import {
   chapterPath,
@@ -78,14 +79,14 @@ export default function App() {
   const savedSessionRef = useRef(false);
   const activeQuizPathRef = useRef(null);
 
-  const resetQuizState = () => {
+  const resetQuizState = ({ questionCount = 0, isFullExam = false } = {}) => {
     setQuestionIndex(0);
     setCurrentAnswer(null);
     setShowExplanation(false);
     setScore(0);
     setAnswers([]);
     setQuizStartedAt(Date.now());
-    setTutorUses(createTutorUseState());
+    setTutorUses(createTutorUseState(getTutorUseLimit(questionCount, { isFullExam })));
     savedSessionRef.current = false;
   };
 
@@ -152,7 +153,10 @@ export default function App() {
     setQuestions(nextQuestions);
     setMode(nextMode);
     if (size !== null) setMiniSize(size);
-    resetQuizState();
+    resetQuizState({
+      questionCount: nextQuestions.length,
+      isFullExam: nextMode === "all",
+    });
     activeQuizPathRef.current = quizPath;
     navigate(quizPath, { replace: true });
   };
@@ -167,7 +171,7 @@ export default function App() {
     setMode("topic");
     setChapterQuizSize(size);
     setQuizSizeNotice(notice);
-    resetQuizState();
+    resetQuizState({ questionCount: nextQuestions.length });
     activeQuizPathRef.current = chapterPath(topic);
     navigate(chapterPath(topic), { replace: true });
   };
@@ -198,7 +202,7 @@ export default function App() {
       }
       setQuestions(practiceQuestions);
       setMode("practice");
-      resetQuizState();
+      resetQuizState({ questionCount: practiceQuestions.length });
       activeQuizPathRef.current = quizPath;
       navigate(quizPath, { replace: true });
     } catch (error) {

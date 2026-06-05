@@ -283,7 +283,13 @@ function toMcq(card) {
     q: card.q,
     options,
     answer: 0,
-    explanation: buildTeachingExplanation({ q: card.q, a: card.a, tags: card.tags }),
+    explanation: buildTeachingExplanation({
+      q: card.q,
+      a: options[0],
+      tags: card.tags,
+      options,
+      answer: 0,
+    }),
     tags: card.tags ?? ["inventory"],
   };
 }

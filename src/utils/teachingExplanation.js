@@ -144,73 +144,236 @@ export function isVagueExplanation(question, explanation) {
   return false;
 }
 
-function buildContrastClause(lowerQ) {
-  if (lowerQ.includes("accrual") && (lowerQ.includes("cash") || lowerQ.includes("basis"))) {
-    return "Accrual accounting recognises revenue and expenses when they are earned or incurred; cash accounting waits for cash movement. Distractors often describe the other basis or the wrong period.";
+const GENERIC_EXPLANATION_PATTERNS = [
+  /the other options are related ideas or common mistakes/i,
+  /distractors often describe/i,
+  /wrong options usually/i,
+  /do not meet the specific requirement in the question stem/i,
+  /^the concept being tested/i,
+  /^timing is the key idea/i,
+  /^apply the relevant accounting rule/i,
+  /^the calculation rests on/i,
+];
+
+export function isGenericExplanation(explanation) {
+  const text = String(explanation ?? "").trim();
+  if (!text) return false;
+  return GENERIC_EXPLANATION_PATTERNS.some((pattern) => pattern.test(text));
+}
+
+function shortOptionText(option, maxLength = 72) {
+  const text = stripTrailingPeriod(option);
+  if (text.length <= maxLength) return text;
+  return `${text.slice(0, maxLength - 3)}...`;
+}
+
+function extractScenarioClause(questionText) {
+  const trimmed = String(questionText ?? "").trim();
+  const withoutPrompt = trimmed.replace(/^(which of the following|what is|which statement|when should|under .+?,)\s+/i, "");
+  const firstSentence = withoutPrompt.split(/(?<=[.!?])\s+/)[0] ?? withoutPrompt;
+  if (firstSentence.length <= 140) return firstSentence;
+  return `${firstSentence.slice(0, 137)}...`;
+}
+
+function inferQuestionFocus(lowerQ) {
+  if (lowerQ.includes("which basis")) return "which accounting basis applies to the facts";
+  if (lowerQ.includes("when ") && (lowerQ.includes("recognised") || lowerQ.includes("recognized") || lowerQ.includes("reported"))) {
+    return "when recognition should occur under the named basis";
   }
-  if (lowerQ.includes("cash basis")) {
-    return "Under cash basis, recognition follows cash receipts and payments. Accrual would recognise the same event when the underlying activity occurs, even if cash moves later.";
+  if (lowerQ.includes("adjusting entr")) return "which adjusting entry is required";
+  if (lowerQ.includes("closing entr")) return "which closing entry is appropriate";
+  if (lowerQ.includes("ifrs 15") || lowerQ.includes("aasb 15") || lowerQ.includes("performance obligation")) {
+    return "how IFRS 15 applies to this contract";
   }
-  if (lowerQ.includes("adjusting") || lowerQ.includes("accrued") || lowerQ.includes("prepaid")) {
-    return "Adjusting entries align revenues and expenses with the reporting period before statements are issued. Wrong options usually skip the adjustment, use the wrong account type, or apply the entry in the wrong period.";
+  if (lowerQ.includes("depreciat") || lowerQ.includes("amortis")) return "how depreciation or amortisation applies";
+  if (lowerQ.includes("bank reconcil")) return "what belongs on a bank reconciliation";
+  if (lowerQ.includes("bad debt") || lowerQ.includes("allowance")) return "how uncollectible receivables are accounted for";
+  if (lowerQ.includes("overstate") || lowerQ.includes("understate") || lowerQ.includes("effect on")) {
+    return "the financial statement impact of the error";
   }
+  if (lowerQ.includes("calculate") || lowerQ.includes("how much") || /\$\d/.test(lowerQ)) return "the required calculation";
+  return "the specific requirement in the question";
+}
+
+function buildWhyCorrectSentence(questionText, correctText, lowerQ) {
+  const correct = stripTrailingPeriod(correctText);
+  const scenario = extractScenarioClause(questionText);
+
+  if (lowerQ.includes("what issue") || lowerQ.includes("primarily address")) {
+    return `${scenario} The issue is ${decapitalize(correct)}.`;
+  }
+
+  if (lowerQ.includes("which basis")) {
+    return `${scenario} That pattern matches ${decapitalize(correct)}.`;
+  }
+
   if (
-    lowerQ.includes("ifrs 15") ||
-    lowerQ.includes("aasb 15") ||
-    lowerQ.includes("performance obligation")
+    lowerQ.includes("when ") &&
+    (lowerQ.includes("recognised") || lowerQ.includes("recognized") || lowerQ.includes("reported"))
   ) {
-    return "IFRS 15 focuses on distinct performance obligations and recognising revenue as each is satisfied — not simply when cash is received or an invoice is issued.";
+    const basis = lowerQ.includes("cash basis")
+      ? "cash basis accounting"
+      : lowerQ.includes("accrual")
+        ? "accrual accounting"
+        : "the applicable recognition rule";
+    return `Under ${basis}, ${decapitalize(correct)}. The dates in the scenario show why that period is the right recognition point.`;
   }
-  if (lowerQ.includes("debit") || lowerQ.includes("credit") || lowerQ.includes("journal")) {
-    return "Work through which accounts change and whether they have normal debit or credit balances. Distractors often swap sides, use the wrong account class, or omit part of the entry.";
+
+  if (lowerQ.includes("which statement") || lowerQ.includes("best distinguishes") || lowerQ.includes("best describes")) {
+    return `${capitalize(decapitalize(correct))}. That is what the question is asking you to identify.`;
   }
-  if (
-    lowerQ.includes("overstate") ||
-    lowerQ.includes("understate") ||
-    lowerQ.includes("effect on")
-  ) {
-    return "Trace each misstatement through the accounting equation and into profit or loss and the statement of financial position. Other options often flip the direction of the error or affect only one statement.";
+
+  if (lowerQ.includes("calculate") || lowerQ.includes("how much") || /\$\d/.test(questionText)) {
+    return `Using the figures in the question, ${decapitalize(correct)}`;
   }
-  if (lowerQ.includes("depreciat") || lowerQ.includes("amortis")) {
-    return "Depreciation and amortisation allocate cost over useful life. Wrong options may expense the full cost immediately, use the wrong base amount, or post to the wrong accounts.";
+
+  if (lowerQ.includes("which of the following")) {
+    return `${scenario} ${capitalize(decapitalize(correct))}`;
   }
-  return "The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.";
+
+  return `${scenario} ${capitalize(decapitalize(correct))}`;
+}
+
+function scoreWrongOption(option, correctText, lowerQ) {
+  const lowerOption = option.toLowerCase();
+  const lowerCorrect = correctText.toLowerCase();
+  let score = 0;
+
+  if (lowerQ.includes("accrual") && /cash (is )?(received|collected|paid)/i.test(lowerOption)) score += 4;
+  if (lowerQ.includes("cash basis") && /(deliver|control|earned|incurred|june|supplies|consumed)/i.test(lowerOption)) score += 4;
+  if (lowerQ.includes("when ") && /(january|february|june|july|august|period)/i.test(lowerOption)) score += 3;
+  if (/cash basis/i.test(lowerOption) && lowerQ.includes("accrual")) score += 3;
+  if (/accrual/i.test(lowerOption) && lowerQ.includes("cash basis")) score += 3;
+  if (/invoice|contract signing|evenly/i.test(lowerOption)) score += 2;
+  if (lowerOption.split(" ").filter((word) => lowerCorrect.includes(word)).length >= 2) score += 1;
+
+  return score;
+}
+
+function explainWrongOption(option, context) {
+  const lowerOption = option.toLowerCase();
+  const { lowerQ, correctText } = context;
+
+  if (lowerQ.includes("accrual") && /cash (is )?(received|collected|paid)/i.test(lowerOption)) {
+    return `"${shortOptionText(option)}" uses cash-basis timing, but the question asks what happens under accrual accounting.`;
+  }
+
+  if (lowerQ.includes("cash basis") && /(deliver|control|passes|consumed|incurred|earned)/i.test(lowerOption)) {
+    return `"${shortOptionText(option)}" follows when the activity occurred, which is accrual thinking—not cash basis.`;
+  }
+
+  if (/cash basis/i.test(lowerOption) && (lowerQ.includes("accrual") || lowerQ.includes("earned") || lowerQ.includes("incurred"))) {
+    return `"${shortOptionText(option)}" describes cash-basis recognition, which conflicts with the accrual requirement in the stem.`;
+  }
+
+  if (/accrual basis/i.test(lowerOption) && lowerQ.includes("cash basis")) {
+    return `"${shortOptionText(option)}" is accrual recognition, but the facts show recognition only when cash moved.`;
+  }
+
+  if (/invoice/i.test(lowerOption) && (lowerQ.includes("deliver") || lowerQ.includes("control"))) {
+    return `"${shortOptionText(option)}" treats billing as the trigger, but revenue was already earned when control passed on delivery.`;
+  }
+
+  if (/contract signing|contract is signed/i.test(lowerOption)) {
+    return `"${shortOptionText(option)}" recognises too early—signing alone does not satisfy the performance obligation in this scenario.`;
+  }
+
+  if (/evenly over|spread over/i.test(lowerOption)) {
+    return `"${shortOptionText(option)}" spreads recognition across months without a matching basis; recognition follows a specific event or pattern, not expected cash timing alone.`;
+  }
+
+  if (/fair value|market price/i.test(lowerOption)) {
+    return `"${shortOptionText(option)}" raises a measurement issue, not the period-matching or recognition issue described in the question.`;
+  }
+
+  if (/trial balance/i.test(lowerOption)) {
+    return `"${shortOptionText(option)}" refers to a working schedule, not the underlying accounting concept the stem is testing.`;
+  }
+
+  if (/only.*cash balance|only when cash/i.test(lowerOption)) {
+    return `"${shortOptionText(option)}" limits reporting to cash movements, which does not address the accrual period-matching problem here.`;
+  }
+
+  if (/large entities|small entities/i.test(lowerOption)) {
+    return `"${shortOptionText(option)}" makes a blanket rule about entity size, but the stem turns on the transaction facts given.`;
+  }
+
+  if (/tax basis|ato/i.test(lowerOption)) {
+    return `"${shortOptionText(option)}" mixes in tax reporting rules rather than the financial reporting treatment asked for.`;
+  }
+
+  if (lowerQ.includes("adjusting") && /(cash receipt|cash payment)/i.test(lowerOption) && !/prepaid|unearned|accrued/i.test(lowerOption)) {
+    return `"${shortOptionText(option)}" records only the cash movement and skips the period-end adjustment needed here.`;
+  }
+
+  if (lowerQ.includes("depreciat") && /(full cost|immediately|purchase price only)/i.test(lowerOption)) {
+    return `"${shortOptionText(option)}" expenses the asset too quickly instead of allocating cost over useful life.`;
+  }
+
+  if (lowerQ.includes("overstate") || lowerQ.includes("understate")) {
+    return `"${shortOptionText(option)}" misstates the direction or location of the error relative to what the omitted or duplicated entry would cause.`;
+  }
+
+  if (normalizeText(option) === normalizeText(correctText)) {
+    return null;
+  }
+
+  const focus = inferQuestionFocus(lowerQ);
+  return `"${shortOptionText(option)}" does not answer ${focus}.`;
+}
+
+function buildWrongOptionExplanations(options, answerIndex, correctText, lowerQ, questionText) {
+  if (!Array.isArray(options) || options.length === 0 || answerIndex == null) return [];
+
+  const context = { lowerQ, correctText, questionText };
+  const wrongOptions = options
+    .map((option, index) => ({ option, index }))
+    .filter(({ index }) => index !== answerIndex)
+    .sort((left, right) => scoreWrongOption(right.option, correctText, lowerQ) - scoreWrongOption(left.option, correctText, lowerQ));
+
+  const explanations = [];
+  const seen = new Set();
+
+  for (const { option } of wrongOptions) {
+    const explanation = explainWrongOption(option, context);
+    if (!explanation || seen.has(explanation)) continue;
+    seen.add(explanation);
+    explanations.push(explanation);
+    if (explanations.length >= 2) break;
+  }
+
+  return explanations;
 }
 
 /**
- * Build a short teaching explanation from flashcard fields (not a verbatim answer repeat).
+ * Build question-specific teaching bullets from the stem, correct answer, and options.
  */
-export function buildTeachingExplanation({ q, a, tags = [] }) {
-  const question = String(q ?? "").trim();
-  const answer = stripTrailingPeriod(a);
-  const lowerQ = question.toLowerCase();
-  const topic = tags.map((tag) => tag.replaceAll("_", " ")).join(", ");
-  const tagClause = topic ? ` (${topic})` : "";
+export function buildTeachingExplanation({ q, a, tags = [], options = [], answer = null }) {
+  const questionText = String(q ?? "").trim();
+  const correctText = stripTrailingPeriod(a);
+  const lowerQ = questionText.toLowerCase();
+  const answerIndex =
+    typeof answer === "number"
+      ? answer
+      : Array.isArray(options) && options.length > 0
+        ? options.findIndex((option) => normalizeText(option) === normalizeText(correctText))
+        : -1;
 
-  let frame = "The concept being tested";
-  if (lowerQ.includes("when ") || lowerQ.includes("which period") || lowerQ.includes("in which period")) {
-    frame = "Timing is the key idea";
-  } else if (lowerQ.includes("why ") || lowerQ.includes("reason")) {
-    frame = "The reasoning to apply";
-  } else if (
-    lowerQ.includes("which of the following") ||
-    lowerQ.includes("which statement") ||
-    lowerQ.includes("best describes") ||
-    lowerQ.includes("best distinguishes")
-  ) {
-    frame = "Apply the relevant accounting rule";
-  } else if (lowerQ.includes("calculate") || lowerQ.includes("how much") || /\$\d/.test(question)) {
-    frame = "The calculation rests on";
-  } else if (lowerQ.includes("journal") || lowerQ.includes("debit") || lowerQ.includes("credit")) {
-    frame = "Account analysis";
-  } else if (lowerQ.includes("effect") || lowerQ.includes("overstate") || lowerQ.includes("understate")) {
-    frame = "Statement impact";
-  }
+  const bullets = [buildWhyCorrectSentence(questionText, correctText, lowerQ)];
+  bullets.push(
+    ...buildWrongOptionExplanations(
+      options,
+      answerIndex >= 0 ? answerIndex : null,
+      correctText,
+      lowerQ,
+      questionText
+    )
+  );
 
-  const core = capitalize(decapitalize(answer));
-  const contrast = buildContrastClause(lowerQ);
-
-  return [`${frame}${tagClause}: ${core}`, contrast];
+  return bullets.filter(Boolean).map((bullet) => {
+    const trimmed = String(bullet).trim();
+    return /[.!?]$/.test(trimmed) ? trimmed : `${trimmed}.`;
+  });
 }
 
 export function getCorrectAnswerText(question) {
@@ -262,6 +425,14 @@ export function isRedundantExplanation(question) {
   return false;
 }
 
+function storedExplanationNeedsEnrichment(question, stored) {
+  if (!stored) return true;
+  if (Array.isArray(stored)) {
+    return stored.length === 0 || stored.some((item) => isGenericExplanation(item));
+  }
+  return isRedundantExplanation(question) || isGenericExplanation(stored) || isVagueExplanation(question, stored);
+}
+
 function resolveExplanationBullets(question) {
   const stored = question?.explanation;
 
@@ -285,16 +456,33 @@ function resolveExplanationBullets(question) {
     return buildJournalEntryTeachingExplanation(question);
   }
 
-  if (!stored) return [];
+  if (Array.isArray(stored) && stored.length > 0 && !storedExplanationNeedsEnrichment(question, stored)) {
+    return stored.map((item) => String(item).trim()).filter(Boolean);
+  }
 
-  if (!isRedundantExplanation(question) && !isVagueExplanation(question, stored)) {
+  if (!stored) return buildMcqTeachingExplanation(question);
+
+  if (!storedExplanationNeedsEnrichment(question, stored)) {
     return splitProseToBullets(stored);
   }
 
+  return buildMcqTeachingExplanation(question);
+}
+
+function buildMcqTeachingExplanation(question) {
+  const answerIndex =
+    typeof question.answer === "number"
+      ? question.answer
+      : typeof question.answer?.correctIndex === "number"
+        ? question.answer.correctIndex
+        : null;
+
   return buildTeachingExplanation({
     q: question.q ?? question.prompt ?? "",
-    a: getCorrectAnswerText(question) ?? stored,
+    a: getCorrectAnswerText(question) ?? "",
     tags: question.tags ?? [],
+    options: question.options ?? [],
+    answer: answerIndex,
   });
 }
 

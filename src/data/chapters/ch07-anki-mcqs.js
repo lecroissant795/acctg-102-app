@@ -12,7 +12,11 @@ export const ankiMcqs = [
       "Because it is the only current asset"
     ],
     "answer": 0,
-    "explanation": "The reasoning to apply (financial statements): because it is readily convertible into any other asset and can be used immediately to settle obligations. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "Why is cash considered the most desirable asset? Because it is readily convertible into any other asset and can be used immediately to settle obligations.",
+      "\"Because it earns the highest return\" does not answer the specific requirement in the question.",
+      "\"Because it never loses value\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "financial_statements"
     ]
@@ -27,7 +31,11 @@ export const ankiMcqs = [
       "Cash equivalents"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (financial statements): cash on hand, cash at bank, and cash equivalents. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "What are the three main categories of cash? Cash on hand, cash at bank, and cash equivalents.",
+      "\"Cash on hand\" does not answer the specific requirement in the question.",
+      "\"Cash at bank\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "financial_statements"
     ]
@@ -42,7 +50,11 @@ export const ankiMcqs = [
       "Cash equivalents"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (financial statements): notes and coins physically held by the business. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "cash on hand? Notes and coins physically held by the business.",
+      "\"Cash on hand\" does not answer the specific requirement in the question.",
+      "\"Cash at bank\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "financial_statements"
     ]
@@ -57,7 +69,11 @@ export const ankiMcqs = [
       "Cash equivalents"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (financial statements): funds held in savings accounts and everyday transaction accounts. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "cash at bank? Funds held in savings accounts and everyday transaction accounts.",
+      "\"Cash on hand\" does not answer the specific requirement in the question.",
+      "\"Cash at bank\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "financial_statements"
     ]
@@ -72,7 +88,11 @@ export const ankiMcqs = [
       "Cash equivalents"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (financial statements, cash flow): short-term highly liquid investments readily convertible to cash, such as money market deposits and 90-day bank bills. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "What are cash equivalents? Short-term highly liquid investments readily convertible to cash, such as money market deposits and 90-day bank bills.",
+      "\"Cash on hand\" does not answer the specific requirement in the question.",
+      "\"Cash at bank\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "financial_statements",
       "cash_flow"
@@ -88,7 +108,11 @@ export const ankiMcqs = [
       "Financing activities"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (cash flow): operating, investing, and financing activities. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "What are the three categories of cash flows? Operating, investing, and financing activities.",
+      "\"Operating activities\" does not answer the specific requirement in the question.",
+      "\"Investing activities\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "cash_flow"
     ]
@@ -103,7 +127,11 @@ export const ankiMcqs = [
       "Financing activities"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (cash flow): cash flows relating to day-to-day business operations such as receipts from customers and payments to suppliers. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "What are operating cash flows? Cash flows relating to day-to-day business operations such as receipts from customers and payments to suppliers.",
+      "\"Operating activities\" does not answer the specific requirement in the question.",
+      "\"Investing activities\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "cash_flow"
     ]
@@ -118,7 +146,11 @@ export const ankiMcqs = [
       "Repaying borrowings and paying dividends"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (cash flow): receipts from customers, interest received, and dividends received. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "Give examples of operating cash inflows. Receipts from customers, interest received, and dividends received.",
+      "\"Repaying borrowings and paying dividends\" does not answer the specific requirement in the question.",
+      "\"Borrowing cash and issuing shares\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "cash_flow"
     ]
@@ -133,7 +165,11 @@ export const ankiMcqs = [
       "Collection of loans made to others"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (cash flow): payments to suppliers, wages, interest, and taxes. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "Give examples of operating cash outflows. Payments to suppliers, wages, interest, and taxes.",
+      "\"Sale of property, plant & equipment\" does not answer the specific requirement in the question.",
+      "\"Issuing shares for cash\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "cash_flow"
     ]
@@ -148,7 +184,11 @@ export const ankiMcqs = [
       "Financing activities"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (cash flow): cash flows relating to borrowing, repaying debt, issuing shares, and paying dividends. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "What are financing cash flows? Cash flows relating to borrowing, repaying debt, issuing shares, and paying dividends.",
+      "\"Operating activities\" does not answer the specific requirement in the question.",
+      "\"Investing activities\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "cash_flow"
     ]
@@ -163,7 +203,11 @@ export const ankiMcqs = [
       "Payments to suppliers"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (cash flow): borrowing cash and issuing shares. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "Give examples of financing cash inflows. Borrowing cash and issuing shares.",
+      "\"Receipts from customers\" does not answer the specific requirement in the question.",
+      "\"Sale of property, plant & equipment\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "cash_flow"
     ]
@@ -178,7 +222,11 @@ export const ankiMcqs = [
       "Interest received from investments"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (cash flow): repaying borrowings and paying dividends. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "Give examples of financing cash outflows. Repaying borrowings and paying dividends.",
+      "\"Purchase of investments\" does not answer the specific requirement in the question.",
+      "\"Payments to suppliers for inventory\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "cash_flow"
     ]
@@ -193,7 +241,11 @@ export const ankiMcqs = [
       "Financing activities"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (cash flow): cash flows relating to the purchase and sale of long-term assets and investments. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "What are investing cash flows? Cash flows relating to the purchase and sale of long-term assets and investments.",
+      "\"Operating activities\" does not answer the specific requirement in the question.",
+      "\"Investing activities\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "cash_flow"
     ]
@@ -208,7 +260,11 @@ export const ankiMcqs = [
       "Receipts from customers"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (cash flow): purchase of property, plant & equipment and purchase of investments. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "Give examples of investing cash outflows. Purchase of property, plant & equipment and purchase of investments.",
+      "\"Payments to suppliers and wages\" does not answer the specific requirement in the question.",
+      "\"Repaying borrowings\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "cash_flow"
     ]
@@ -223,7 +279,11 @@ export const ankiMcqs = [
       "Payment of dividends"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (cash flow): sale of property, plant & equipment and collection of loans made to others. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "Give examples of investing cash inflows. Sale of property, plant & equipment and collection of loans made to others.",
+      "\"Borrowing cash\" does not answer the specific requirement in the question.",
+      "\"Receipts from credit sales\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "cash_flow"
     ]
@@ -238,7 +298,11 @@ export const ankiMcqs = [
       "External Funds Transfer"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (financial statements): electronic Funds Transfer. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "What does EFT stand for? Electronic Funds Transfer.",
+      "\"External Funds Transfer\" does not answer the specific requirement in the question.",
+      "\"Electronic Financial Transaction\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "financial_statements"
     ]
@@ -253,7 +317,11 @@ export const ankiMcqs = [
       "It replaces the need for internal controls"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (financial statements): it provides fast payment processing and reduces transaction costs. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "the main advantage of EFT? It provides fast payment processing and reduces transaction costs.",
+      "\"It eliminates the need for bank reconciliations\" does not answer the specific requirement in the question.",
+      "\"It removes all fraud risk\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "financial_statements"
     ]
@@ -268,7 +336,11 @@ export const ankiMcqs = [
       "They guarantee all customers will pay"
     ],
     "answer": 0,
-    "explanation": "Account analysis (financial statements): they reduce staff costs and lower the risk associated with handling physical cash. Work through which accounts change and whether they have normal debit or credit balances. Distractors often swap sides, use the wrong account class, or omit part of the entry.",
+    "explanation": [
+      "How do EFTPOS and credit card systems benefit businesses? They reduce staff costs and lower the risk associated with handling physical cash.",
+      "\"They remove the need for accounts receivable\" does not answer the specific requirement in the question.",
+      "\"They eliminate service charge expenses\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "financial_statements"
     ]
@@ -283,7 +355,11 @@ export const ankiMcqs = [
       "They replace the statement of cash flows"
     ],
     "answer": 0,
-    "explanation": "The reasoning to apply (financial statements): they improve efficiency, security, and speed of transactions. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "Why are electronic banking systems important for modern businesses? They improve efficiency, security, and speed of transactions.",
+      "\"They remove the need for petty cash funds\" does not answer the specific requirement in the question.",
+      "\"They replace the statement of cash flows\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "financial_statements"
     ]
@@ -298,7 +374,11 @@ export const ankiMcqs = [
       "A ratio measuring receivables collection"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (financial statements): methods and procedures designed to safeguard assets and ensure accurate accounting records. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "internal control? Methods and procedures designed to safeguard assets and ensure accurate accounting records.",
+      "\"A method for estimating bad debts\" does not answer the specific requirement in the question.",
+      "\"The process of preparing a bank reconciliation\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "financial_statements"
     ]
@@ -313,7 +393,11 @@ export const ankiMcqs = [
       "Because cash cannot be used to settle obligations"
     ],
     "answer": 0,
-    "explanation": "The reasoning to apply (financial statements): because cash is easily transferable and difficult to trace once stolen. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "Why is cash particularly vulnerable to theft and fraud? Because cash is easily transferable and difficult to trace once stolen.",
+      "\"Because cash is always held at the bank\" does not answer the specific requirement in the question.",
+      "\"Because cash has no value until deposited\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "financial_statements"
     ]
@@ -328,7 +412,11 @@ export const ankiMcqs = [
       "Documentation procedures"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (financial statements): establishment of responsibility, segregation of duties, documentation procedures, physical/electronic controls, and independent verification. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "What are the five key internal control principles? Establishment of responsibility, segregation of duties, documentation procedures, physical/electronic controls, and independent verification.",
+      "\"Establishment of responsibility\" does not answer the specific requirement in the question.",
+      "\"Segregation of duties\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "financial_statements"
     ]
@@ -343,7 +431,11 @@ export const ankiMcqs = [
       "Documentation procedures"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (financial statements): assigning responsibility for cash handling to specific authorised personnel only. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "establishment of responsibility? Assigning responsibility for cash handling to specific authorised personnel only.",
+      "\"Establishment of responsibility\" does not answer the specific requirement in the question.",
+      "\"Segregation of duties\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "financial_statements"
     ]
@@ -358,7 +450,11 @@ export const ankiMcqs = [
       "Documentation procedures"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (financial statements): separating responsibilities so different individuals receive cash, record transactions, and hold assets. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "segregation of duties? Separating responsibilities so different individuals receive cash, record transactions, and hold assets.",
+      "\"Establishment of responsibility\" does not answer the specific requirement in the question.",
+      "\"Segregation of duties\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "financial_statements"
     ]
@@ -373,7 +469,11 @@ export const ankiMcqs = [
       "It allows one person to handle all cash functions"
     ],
     "answer": 0,
-    "explanation": "The reasoning to apply (financial statements): it reduces opportunities for fraud and errors. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "Why is segregation of duties important? It reduces opportunities for fraud and errors.",
+      "\"It eliminates the need for bank reconciliations\" does not answer the specific requirement in the question.",
+      "\"It increases the speed of cash collection\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "financial_statements"
     ]
@@ -388,7 +488,11 @@ export const ankiMcqs = [
       "Ageing schedules for receivables"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (financial statements): remittance advices, cash register tapes, deposit slips, and electronic receipt numbers. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "What are examples of documentation procedures for cash receipts? Remittance advices, cash register tapes, deposit slips, and electronic receipt numbers.",
+      "\"Bank statements and dishonoured cheques only\" does not answer the specific requirement in the question.",
+      "\"Petty cash vouchers only\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "financial_statements"
     ]
@@ -403,7 +507,11 @@ export const ankiMcqs = [
       "Factoring receivables"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (financial statements): safes, bank vaults, passwords, PINs, and frequent banking. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "What are examples of physical controls over cash? Safes, bank vaults, passwords, PINs, and frequent banking.",
+      "\"Allowance for doubtful debts\" does not answer the specific requirement in the question.",
+      "\"Credit risk ratios\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "financial_statements"
     ]
@@ -418,7 +526,11 @@ export const ankiMcqs = [
       "Documentation procedures"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (financial statements): checking records by someone independent of the person performing the transaction. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "independent internal verification? Checking records by someone independent of the person performing the transaction.",
+      "\"Establishment of responsibility\" does not answer the specific requirement in the question.",
+      "\"Segregation of duties\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "financial_statements"
     ]
@@ -433,7 +545,11 @@ export const ankiMcqs = [
       "Preparing a cash budget only"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (financial statements): daily cash counts and comparison of receipts to bank deposits. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "Give examples of independent internal verification for cash receipts. Daily cash counts and comparison of receipts to bank deposits.",
+      "\"Preparing a cash budget only\" does not answer the specific requirement in the question.",
+      "\"Estimating doubtful debts using the ageing method\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "financial_statements"
     ]
@@ -448,7 +564,11 @@ export const ankiMcqs = [
       "Elimination of all petty cash funds"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (financial statements): passwords, PIN protection, and approval by authorised personnel. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "What controls should exist over EFT payments? Passwords, PIN protection, and approval by authorised personnel.",
+      "\"No controls because EFT is fully automated\" does not answer the specific requirement in the question.",
+      "\"Only physical safes and vaults\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "financial_statements"
     ]
@@ -463,7 +583,11 @@ export const ankiMcqs = [
       "To remove the need for internal controls"
     ],
     "answer": 0,
-    "explanation": "The reasoning to apply (bank reconciliation): to safeguard cash, minimise cash on hand, and provide a double record of transactions. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "Why do businesses use banks? To safeguard cash, minimise cash on hand, and provide a double record of transactions.",
+      "\"To avoid preparing a statement of cash flows\" does not answer the specific requirement in the question.",
+      "\"To eliminate accounts receivable\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "bank_reconciliation"
     ]
@@ -478,7 +602,11 @@ export const ankiMcqs = [
       "A ratio measuring liquidity"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (bank reconciliation): a process used to explain differences between the bank statement balance and the Cash at Bank account balance. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "a bank reconciliation? A process used to explain differences between the bank statement balance and the Cash at Bank account balance.",
+      "\"A forecast of expected cash receipts and payments\" does not answer what belongs on a bank reconciliation.",
+      "\"A method for estimating bad debts\" does not answer what belongs on a bank reconciliation."
+    ],
     "tags": [
       "bank_reconciliation"
     ]
@@ -493,7 +621,11 @@ export const ankiMcqs = [
       "Share issues and dividends only"
     ],
     "answer": 0,
-    "explanation": "The reasoning to apply (bank reconciliation): timing differences and errors. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "What are the two major reasons for differences between bank records and business records? Timing differences and errors.",
+      "\"Depreciation and inventory errors\" does not answer the specific requirement in the question.",
+      "\"Bad debts and GST only\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "bank_reconciliation"
     ]
@@ -508,7 +640,11 @@ export const ankiMcqs = [
       "Adjustments for doubtful debts"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (bank reconciliation): transactions recorded in different accounting periods by the business and the bank. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "What are timing differences? Transactions recorded in different accounting periods by the business and the bank.",
+      "\"Permanent errors that never reverse\" does not answer the specific requirement in the question.",
+      "\"Differences caused only by fraud\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "bank_reconciliation"
     ]
@@ -523,7 +659,11 @@ export const ankiMcqs = [
       "Dishonoured cheques"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (bank reconciliation): deposits recorded by the business but not yet recorded by the bank. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "What are outstanding deposits? Deposits recorded by the business but not yet recorded by the bank.",
+      "\"Payments recorded by the bank but not the business\" does not answer the specific requirement in the question.",
+      "\"Bank charges not yet recorded\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "bank_reconciliation"
     ]
@@ -538,7 +678,11 @@ export const ankiMcqs = [
       "Bank service charges"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (bank reconciliation): payments recorded by the business but not yet processed by the bank. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "What are outstanding EFTs or unpresented cheques? Payments recorded by the business but not yet processed by the bank.",
+      "\"Deposits recorded by the business but not yet by the bank\" does not answer the specific requirement in the question.",
+      "\"Direct deposits from customers\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "bank_reconciliation"
     ]
@@ -553,7 +697,11 @@ export const ankiMcqs = [
       "Subtracted from the cash book balance"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (bank reconciliation): added to the bank statement balance. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "In a bank reconciliation, how are outstanding deposits treated? Added to the bank statement balance.",
+      "\"Subtracted from the bank statement balance\" does not answer what belongs on a bank reconciliation.",
+      "\"Added to the cash book balance\" does not answer what belongs on a bank reconciliation."
+    ],
     "tags": [
       "bank_reconciliation"
     ]
@@ -568,7 +716,11 @@ export const ankiMcqs = [
       "Subtracted from the cash book balance"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (bank reconciliation): subtracted from the bank statement balance. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "In a bank reconciliation, how are outstanding EFTs/unpresented cheques treated? Subtracted from the bank statement balance.",
+      "\"Added to the bank statement balance\" does not answer what belongs on a bank reconciliation.",
+      "\"Added to the cash book balance\" does not answer what belongs on a bank reconciliation."
+    ],
     "tags": [
       "bank_reconciliation"
     ]
@@ -583,7 +735,11 @@ export const ankiMcqs = [
       "Deposits in transit require no adjustment"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (bank reconciliation): adjusted bank balance must equal the adjusted Cash at Bank balance. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "the key rule in a bank reconciliation? Adjusted bank balance must equal the adjusted Cash at Bank balance.",
+      "\"Bank balance must always exceed the cash book balance\" does not answer what belongs on a bank reconciliation.",
+      "\"Outstanding cheques are added to the cash book\" does not answer what belongs on a bank reconciliation."
+    ],
     "tags": [
       "bank_reconciliation"
     ]
@@ -598,7 +754,11 @@ export const ankiMcqs = [
       "Prepare the cash budget"
     ],
     "answer": 0,
-    "explanation": "Timing is the key idea (bank reconciliation): compare the bank statement with the previous reconciliation and current cash journals. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "What should be done first when preparing a bank reconciliation? Compare the bank statement with the previous reconciliation and current cash journals.",
+      "\"Prepare the cash budget\" does not answer what belongs on a bank reconciliation.",
+      "\"Record all outstanding cheques as expenses\" does not answer what belongs on a bank reconciliation."
+    ],
     "tags": [
       "bank_reconciliation"
     ]
@@ -613,7 +773,11 @@ export const ankiMcqs = [
       "That the bank made an error"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (bank reconciliation): that the transaction appears in both the bank records and the business records. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "What does ticking items during reconciliation indicate? That the transaction appears in both the bank records and the business records.",
+      "\"That the item requires a journal entry\" does not answer the specific requirement in the question.",
+      "\"That the item is an outstanding deposit\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "bank_reconciliation"
     ]
@@ -628,7 +792,11 @@ export const ankiMcqs = [
       "Depreciation and prepaid expenses"
     ],
     "answer": 0,
-    "explanation": "Account analysis (bank reconciliation): direct deposits, dishonoured cheques, bank charges, and bank errors. Work through which accounts change and whether they have normal debit or credit balances. Distractors often swap sides, use the wrong account class, or omit part of the entry.",
+    "explanation": [
+      "What unticked items on the bank statement often require journal entries? Direct deposits, dishonoured cheques, bank charges, and bank errors.",
+      "\"Outstanding cheques and deposits in transit\" does not answer the specific requirement in the question.",
+      "\"Credit sales and purchase returns\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "bank_reconciliation"
     ]
@@ -643,7 +811,11 @@ export const ankiMcqs = [
       "Dr Bad Debts Expense / Cr Allowance for Doubtful Debts"
     ],
     "answer": 0,
-    "explanation": "Account analysis (bank reconciliation, debit credit): dr Bank Charges Expense / Cr Cash at Bank. Work through which accounts change and whether they have normal debit or credit balances. Distractors often swap sides, use the wrong account class, or omit part of the entry.",
+    "explanation": [
+      "What journal entry records bank charges? Dr Bank Charges Expense / Cr Cash at Bank.",
+      "\"Dr Accounts Receivable / Cr Cash at Bank\" does not answer the specific requirement in the question.",
+      "\"Dr Bad Debts Expense / Cr Accounts Receivable\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "bank_reconciliation",
       "debit_credit"
@@ -659,7 +831,11 @@ export const ankiMcqs = [
       "Dr Bad Debts Expense / Cr Allowance for Doubtful Debts"
     ],
     "answer": 0,
-    "explanation": "Account analysis (bank reconciliation, debit credit): dr Accounts Receivable / Cr Cash at Bank. Work through which accounts change and whether they have normal debit or credit balances. Distractors often swap sides, use the wrong account class, or omit part of the entry.",
+    "explanation": [
+      "What journal entry records a dishonoured cheque? Dr Accounts Receivable / Cr Cash at Bank.",
+      "\"Dr Bank Charges Expense / Cr Cash at Bank\" does not answer the specific requirement in the question.",
+      "\"Dr Bad Debts Expense / Cr Accounts Receivable\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "bank_reconciliation",
       "debit_credit"
@@ -675,7 +851,11 @@ export const ankiMcqs = [
       "To avoid all borrowing"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (financial statements): to ensure the business has enough cash to meet obligations while maximising returns on idle cash. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "the goal of cash management? To ensure the business has enough cash to meet obligations while maximising returns on idle cash.",
+      "\"To eliminate all accounts receivable\" does not answer the specific requirement in the question.",
+      "\"To maximise inventory levels\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "financial_statements"
     ]
@@ -690,7 +870,11 @@ export const ankiMcqs = [
       "Avoid all credit sales"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (receivables): increase the speed of collection of receivables. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "the first principle of cash management? Increase the speed of collection of receivables.",
+      "\"Pay all suppliers immediately\" does not answer the specific requirement in the question.",
+      "\"Hold maximum inventory at all times\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "receivables"
     ]
@@ -705,7 +889,11 @@ export const ankiMcqs = [
       "Inventory is not a current asset"
     ],
     "answer": 0,
-    "explanation": "The reasoning to apply (financial statements): excess inventory ties up cash unnecessarily. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "Why should inventory levels be kept low? Excess inventory ties up cash unnecessarily.",
+      "\"Inventory cannot be sold for cash\" does not answer the specific requirement in the question.",
+      "\"Inventory is not a current asset\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "financial_statements"
     ]
@@ -720,7 +908,11 @@ export const ankiMcqs = [
       "To eliminate GST liability"
     ],
     "answer": 0,
-    "explanation": "The reasoning to apply (financial statements): to retain cash longer for operational use or investment. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "Why should businesses avoid paying earlier than necessary? To retain cash longer for operational use or investment.",
+      "\"To increase accounts payable permanently\" does not answer the specific requirement in the question.",
+      "\"To avoid recording expenses\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "financial_statements"
     ]
@@ -735,7 +927,11 @@ export const ankiMcqs = [
       "To avoid bank reconciliations"
     ],
     "answer": 0,
-    "explanation": "The reasoning to apply (financial statements): to avoid unexpected cash shortages. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "Why should major expenditures be planned carefully? To avoid unexpected cash shortages.",
+      "\"To eliminate the need for a cash budget\" does not answer the specific requirement in the question.",
+      "\"To avoid bank reconciliations\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "financial_statements"
     ]
@@ -750,7 +946,11 @@ export const ankiMcqs = [
       "Transfer it to accounts receivable"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (financial statements): invest it to earn returns. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "What should businesses do with idle cash? Invest it to earn returns.",
+      "\"Use it to write off bad debts immediately\" does not answer the specific requirement in the question.",
+      "\"Transfer it to accounts receivable\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "financial_statements"
     ]
@@ -765,7 +965,11 @@ export const ankiMcqs = [
       "A method for valuing receivables"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (financial statements): a forecast of expected cash receipts and cash payments. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "a cash budget? A forecast of expected cash receipts and cash payments.",
+      "\"A list of all bank transactions for the year\" does not answer the specific requirement in the question.",
+      "\"The same as a bank reconciliation\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "financial_statements"
     ]
@@ -780,7 +984,11 @@ export const ankiMcqs = [
       "It records bad debts automatically"
     ],
     "answer": 0,
-    "explanation": "The reasoning to apply (financial statements): it helps businesses plan for cash surpluses or shortages. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "Why is a cash budget important? It helps businesses plan for cash surpluses or shortages.",
+      "\"It replaces the statement of cash flows\" does not answer the specific requirement in the question.",
+      "\"It eliminates the need for receivables management\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "financial_statements"
     ]
@@ -795,7 +1003,11 @@ export const ankiMcqs = [
       "Ending cash balance"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (financial statements): beginning cash balance. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "the first line in a cash budget? Beginning cash balance.",
+      "\"Ending cash balance\" does not answer the specific requirement in the question.",
+      "\"Total cash receipts\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "financial_statements"
     ]
@@ -810,7 +1022,11 @@ export const ankiMcqs = [
       "Beginning cash balance minus cash payments"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (financial statements): beginning cash balance plus cash receipts. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "total available cash? Beginning cash balance plus cash receipts.",
+      "\"Ending cash balance minus cash payments\" does not answer the specific requirement in the question.",
+      "\"Cash receipts minus cash payments only\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "financial_statements"
     ]
@@ -825,7 +1041,11 @@ export const ankiMcqs = [
       "Receivables turnover increases"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (financial statements): a cash deficiency occurs. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "What happens if cash payments exceed available cash? A cash deficiency occurs.",
+      "\"A cash surplus occurs\" does not answer the specific requirement in the question.",
+      "\"Bad debts expense increases\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "financial_statements"
     ]
@@ -840,7 +1060,11 @@ export const ankiMcqs = [
       "Stopping all credit sales permanently"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (financial statements): financing, such as borrowing. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "What may be needed if a cash deficiency occurs? Financing, such as borrowing.",
+      "\"Writing off all receivables\" does not answer the specific requirement in the question.",
+      "\"Eliminating petty cash\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "financial_statements"
     ]
@@ -855,7 +1079,11 @@ export const ankiMcqs = [
       "Net Credit Sales ÷ Average Net Receivables"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (financial statements): the number of days current cash can cover average daily cash expenses. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "What does the cash to daily cash expenses ratio measure? The number of days current cash can cover average daily cash expenses.",
+      "\"Cash ÷ Average Daily Cash Expenses\" does not answer the specific requirement in the question.",
+      "\"Allowance for Doubtful Debts ÷ Accounts Receivable\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "financial_statements"
     ]
@@ -870,7 +1098,11 @@ export const ankiMcqs = [
       "365 ÷ Receivables Turnover"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (financial statements): cash ÷ Average Daily Cash Expenses. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "the formula for cash to daily cash expenses ratio? Cash ÷ Average Daily Cash Expenses.",
+      "\"Net Credit Sales ÷ Average Net Receivables\" does not answer the specific requirement in the question.",
+      "\"Allowance for Doubtful Debts ÷ Accounts Receivable\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "financial_statements"
     ]
@@ -885,7 +1117,11 @@ export const ankiMcqs = [
       "Lower cash balances"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (financial statements): greater liquidity and ability to cover expenses. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "What does a higher cash to daily cash expenses ratio generally indicate? Greater liquidity and ability to cover expenses.",
+      "\"Slow collection of receivables\" does not answer the specific requirement in the question.",
+      "\"Higher bad debt risk\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "financial_statements"
     ]
@@ -900,7 +1136,11 @@ export const ankiMcqs = [
       "Other receivables"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (receivables): amounts owed to a business by customers or others. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "What are receivables? Amounts owed to a business by customers or others.",
+      "\"Accounts receivable\" does not answer the specific requirement in the question.",
+      "\"Notes receivable\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "receivables"
     ]
@@ -915,7 +1155,11 @@ export const ankiMcqs = [
       "Other receivables"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (receivables): amounts owed by customers from credit sales. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "What are accounts receivable? Amounts owed by customers from credit sales.",
+      "\"Accounts receivable\" does not answer the specific requirement in the question.",
+      "\"Notes receivable\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "receivables"
     ]
@@ -930,7 +1174,11 @@ export const ankiMcqs = [
       "Other receivables"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (receivables): formal written promises to pay money in the future. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "What are notes receivable? Formal written promises to pay money in the future.",
+      "\"Accounts receivable\" does not answer the specific requirement in the question.",
+      "\"Notes receivable\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "receivables"
     ]
@@ -945,7 +1193,11 @@ export const ankiMcqs = [
       "Other receivables"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (receivables): non-trade receivables such as interest receivable, GST receivable, and employee loans. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "What are other receivables? Non-trade receivables such as interest receivable, GST receivable, and employee loans.",
+      "\"Accounts receivable\" does not answer the specific requirement in the question.",
+      "\"Notes receivable\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "receivables"
     ]
@@ -960,7 +1212,11 @@ export const ankiMcqs = [
       "GST receivable from the ATO"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (receivables, allowance method): accounts receivable that are unlikely to be collected. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "What are bad debts? Accounts receivable that are unlikely to be collected.",
+      "\"Receivables expected to be collected within 12 months\" does not answer how uncollectible receivables are accounted for.",
+      "\"Formal written promises to pay\" does not answer how uncollectible receivables are accounted for."
+    ],
     "tags": [
       "receivables",
       "allowance_method"
@@ -976,7 +1232,11 @@ export const ankiMcqs = [
       "Percentage of net sales method"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (receivables, allowance method): a method where bad debts expense is recognised only when a specific account is identified as uncollectable. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "the direct write-off method? A method where bad debts expense is recognised only when a specific account is identified as uncollectable.",
+      "\"Direct write-off method\" does not answer the specific requirement in the question.",
+      "\"Allowance method\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "receivables",
       "allowance_method"
@@ -992,7 +1252,11 @@ export const ankiMcqs = [
       "Dr Bad Debts Expense / Cr Allowance for Doubtful Debts"
     ],
     "answer": 0,
-    "explanation": "Account analysis (receivables, allowance method, debit credit): dr Bad Debts Expense / Cr Accounts Receivable. Work through which accounts change and whether they have normal debit or credit balances. Distractors often swap sides, use the wrong account class, or omit part of the entry.",
+    "explanation": [
+      "the journal entry under the direct write-off method? Dr Bad Debts Expense / Cr Accounts Receivable.",
+      "\"Dr Bank Charges Expense / Cr Cash at Bank\" does not answer the specific requirement in the question.",
+      "\"Dr Accounts Receivable / Cr Cash at Bank\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "receivables",
       "allowance_method",
@@ -1009,7 +1273,11 @@ export const ankiMcqs = [
       "Because it cannot be used for any bad debts"
     ],
     "answer": 0,
-    "explanation": "The reasoning to apply (receivables, allowance method): because it may violate the matching principle and overstate receivables. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "Why is the direct write-off method generally not preferred under GAAP? Because it may violate the matching principle and overstate receivables.",
+      "\"Because it always overstates bad debts expense\" does not answer the specific requirement in the question.",
+      "\"Because it requires an allowance account\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "receivables",
       "allowance_method"
@@ -1025,7 +1293,11 @@ export const ankiMcqs = [
       "Percentage of net sales method"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (receivables, allowance method): a method where estimated bad debts are recognised before specific accounts become uncollectable. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "the allowance method? A method where estimated bad debts are recognised before specific accounts become uncollectable.",
+      "\"Direct write-off method\" does not answer how uncollectible receivables are accounted for.",
+      "\"Allowance method\" does not answer how uncollectible receivables are accounted for."
+    ],
     "tags": [
       "receivables",
       "allowance_method"
@@ -1041,7 +1313,11 @@ export const ankiMcqs = [
       "Net Credit Sales ÷ Average Net Receivables"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (receivables, allowance method, balance sheet): net Realisable Value (NRV). The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "receivables are reported at what amount? Net Realisable Value (NRV).",
+      "\"Net Credit Sales ÷ Average Net Receivables\" does not answer how uncollectible receivables are accounted for.",
+      "\"Cash ÷ Average Daily Cash Expenses\" does not answer how uncollectible receivables are accounted for."
+    ],
     "tags": [
       "receivables",
       "allowance_method",
@@ -1058,7 +1334,11 @@ export const ankiMcqs = [
       "Net Credit Sales ÷ Average Net Receivables"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (receivables, allowance method, balance sheet): accounts Receivable minus Allowance for Doubtful Debts. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "Net Realisable Value for receivables? Accounts Receivable minus Allowance for Doubtful Debts.",
+      "\"Allowance for Doubtful Debts ÷ Accounts Receivable\" does not answer the specific requirement in the question.",
+      "\"Cash ÷ Average Daily Cash Expenses\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "receivables",
       "allowance_method",
@@ -1075,7 +1355,11 @@ export const ankiMcqs = [
       "Dr Bad Debts Expense / Cr Accounts Receivable"
     ],
     "answer": 0,
-    "explanation": "Account analysis (receivables, allowance method, debit credit): dr Bad Debts Expense / Cr Allowance for Doubtful Debts. Work through which accounts change and whether they have normal debit or credit balances. Distractors often swap sides, use the wrong account class, or omit part of the entry.",
+    "explanation": [
+      "the journal entry to estimate doubtful debts? Dr Bad Debts Expense / Cr Allowance for Doubtful Debts.",
+      "\"Dr Bank Charges Expense / Cr Cash at Bank\" does not answer the specific requirement in the question.",
+      "\"Dr Accounts Receivable / Cr Cash at Bank\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "receivables",
       "allowance_method",
@@ -1092,7 +1376,11 @@ export const ankiMcqs = [
       "Dr Bad Debts Expense / Cr Accounts Receivable"
     ],
     "answer": 0,
-    "explanation": "Account analysis (receivables, allowance method, debit credit): dr Allowance for Doubtful Debts / Cr Accounts Receivable. Work through which accounts change and whether they have normal debit or credit balances. Distractors often swap sides, use the wrong account class, or omit part of the entry.",
+    "explanation": [
+      "the journal entry to write off an uncollectable account under the allowance method? Dr Allowance for Doubtful Debts / Cr Accounts Receivable.",
+      "\"Dr Bank Charges Expense / Cr Cash at Bank\" does not answer how uncollectible receivables are accounted for.",
+      "\"Dr Accounts Receivable / Cr Cash at Bank\" does not answer how uncollectible receivables are accounted for."
+    ],
     "tags": [
       "receivables",
       "allowance_method",
@@ -1109,7 +1397,11 @@ export const ankiMcqs = [
       "Only under the direct write-off method"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (receivables, allowance method): no, because both Accounts Receivable and the Allowance account decrease. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "Does writing off an account under the allowance method affect total receivables NRV? No, because both Accounts Receivable and the Allowance account decrease.",
+      "\"Yes\" does not answer how uncollectible receivables are accounted for.",
+      "\"No\" does not answer how uncollectible receivables are accounted for."
+    ],
     "tags": [
       "receivables",
       "allowance_method"
@@ -1125,7 +1417,11 @@ export const ankiMcqs = [
       "Dr Bad Debts Expense / Cr Accounts Receivable"
     ],
     "answer": 0,
-    "explanation": "Timing is the key idea (receivables, allowance method, debit credit): dr Accounts Receivable / Cr Allowance for Doubtful Debts. Work through which accounts change and whether they have normal debit or credit balances. Distractors often swap sides, use the wrong account class, or omit part of the entry.",
+    "explanation": [
+      "the first journal entry when recovering a previously written-off account? Dr Accounts Receivable / Cr Allowance for Doubtful Debts.",
+      "\"Dr Bank Charges Expense / Cr Cash at Bank\" does not answer the specific requirement in the question.",
+      "\"Dr Accounts Receivable / Cr Cash at Bank\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "receivables",
       "allowance_method",
@@ -1142,7 +1438,11 @@ export const ankiMcqs = [
       "Dr Bad Debts Expense / Cr Accounts Receivable"
     ],
     "answer": 0,
-    "explanation": "Timing is the key idea (receivables, allowance method, debit credit): dr Cash / Cr Accounts Receivable. Work through which accounts change and whether they have normal debit or credit balances. Distractors often swap sides, use the wrong account class, or omit part of the entry.",
+    "explanation": [
+      "the second journal entry when cash is collected from a recovered account? Dr Cash / Cr Accounts Receivable.",
+      "\"Dr Bank Charges Expense / Cr Cash at Bank\" does not answer the specific requirement in the question.",
+      "\"Dr Accounts Receivable / Cr Cash at Bank\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "receivables",
       "allowance_method",
@@ -1159,7 +1459,11 @@ export const ankiMcqs = [
       "Because GST is never recorded on credit sales"
     ],
     "answer": 0,
-    "explanation": "The reasoning to apply (receivables, gst): because GST previously recognised on the sale must be reversed if the customer never pays. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "Why does a bad debt write-off reduce GST liability? Because GST previously recognised on the sale must be reversed if the customer never pays.",
+      "\"Because GST Paid increases automatically\" does not answer how uncollectible receivables are accounted for.",
+      "\"Because GST is never recorded on credit sales\" does not answer how uncollectible receivables are accounted for."
+    ],
     "tags": [
       "receivables",
       "gst"
@@ -1175,7 +1479,11 @@ export const ankiMcqs = [
       "Percentage of net sales method"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (receivables, allowance method): percentage of net sales and ageing of accounts receivable. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "What are the two common methods of estimating doubtful debts? Percentage of net sales and ageing of accounts receivable.",
+      "\"Percentage of net sales method\" does not answer the specific requirement in the question.",
+      "\"Direct write-off method\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "receivables",
       "allowance_method"
@@ -1191,7 +1499,11 @@ export const ankiMcqs = [
       "Measuring receivables turnover"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (receivables, allowance method): matching bad debts expense to sales revenue for the period. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "What does the percentage of net sales method focus on? Matching bad debts expense to sales revenue for the period.",
+      "\"Calculating the required ending allowance balance\" does not answer the specific requirement in the question.",
+      "\"Classifying receivables as current or non-current\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "receivables",
       "allowance_method"
@@ -1207,7 +1519,11 @@ export const ankiMcqs = [
       "Recording write-offs when cash is collected"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (receivables, allowance method): estimating the required ending balance in Allowance for Doubtful Debts. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "What does the ageing of accounts receivable method focus on? Estimating the required ending balance in Allowance for Doubtful Debts.",
+      "\"Matching bad debts expense directly to sales revenue\" does not answer the specific requirement in the question.",
+      "\"Calculating receivables turnover only\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "receivables",
       "allowance_method"
@@ -1223,7 +1539,11 @@ export const ankiMcqs = [
       "Because current receivables are always written off"
     ],
     "answer": 0,
-    "explanation": "The reasoning to apply (receivables, allowance method): because older accounts are less likely to be collected. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "Why are older receivables assigned higher bad debt percentages? Because older accounts are less likely to be collected.",
+      "\"Because older accounts always have higher balances\" does not answer how uncollectible receivables are accounted for.",
+      "\"Because current receivables are always written off\" does not answer how uncollectible receivables are accounted for."
+    ],
     "tags": [
       "receivables",
       "allowance_method"
@@ -1239,7 +1559,11 @@ export const ankiMcqs = [
       "The percentage is always zero for current accounts"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (receivables, allowance method): the percentage increases. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "what usually happens to the allowance percentage as accounts become older? The percentage increases.",
+      "\"The percentage decreases\" does not answer how uncollectible receivables are accounted for.",
+      "\"The percentage stays the same for all ages\" does not answer how uncollectible receivables are accounted for."
+    ],
     "tags": [
       "receivables",
       "allowance_method"
@@ -1255,7 +1579,11 @@ export const ankiMcqs = [
       "As contra equity accounts"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (receivables, balance sheet): as current or non-current assets depending on collection timing. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "How are receivables classified in the statement of financial position? As current or non-current assets depending on collection timing.",
+      "\"Always as current liabilities\" does not answer the specific requirement in the question.",
+      "\"Always as non-current assets\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "receivables",
       "balance_sheet"
@@ -1271,7 +1599,11 @@ export const ankiMcqs = [
       "Only amounts covered by the allowance"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (receivables, balance sheet): receivables expected to be collected within 12 months or the operating cycle. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "Which receivables are classified as current assets? Receivables expected to be collected within 12 months or the operating cycle.",
+      "\"All receivables regardless of collection date\" does not answer the specific requirement in the question.",
+      "\"Only notes receivable\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "receivables",
       "balance_sheet"
@@ -1287,7 +1619,11 @@ export const ankiMcqs = [
       "Bank reconciliation schedules"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (receivables, balance sheet): accounting policy and breakdown of receivables and allowance balances. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "What disclosures about receivables are usually included in the notes? Accounting policy and breakdown of receivables and allowance balances.",
+      "\"Only the receivables turnover ratio\" does not answer the specific requirement in the question.",
+      "\"Detailed customer names and addresses\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "receivables",
       "balance_sheet"
@@ -1303,7 +1639,11 @@ export const ankiMcqs = [
       "Credit sales do not create accounts receivable"
     ],
     "answer": 0,
-    "explanation": "Timing is the key idea (receivables): risky customers may fail to pay. Work through which accounts change and whether they have normal debit or credit balances. Distractors often swap sides, use the wrong account class, or omit part of the entry.",
+    "explanation": [
+      "Why must businesses be careful when extending credit? Risky customers may fail to pay.",
+      "\"Credit sales never generate revenue\" does not answer the specific requirement in the question.",
+      "\"Extending credit eliminates GST\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "receivables"
     ]
@@ -1318,7 +1658,11 @@ export const ankiMcqs = [
       "Inventory cost flow assumptions"
     ],
     "answer": 0,
-    "explanation": "Timing is the key idea (receivables): industry and competitor practices. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "What should a business consider when establishing a payment period? Industry and competitor practices.",
+      "\"Only the cash budget beginning balance\" does not answer the specific requirement in the question.",
+      "\"Depreciation methods for non-current assets\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "receivables"
     ]
@@ -1333,7 +1677,11 @@ export const ankiMcqs = [
       "Net Credit Sales ÷ Average Net Receivables"
     ],
     "answer": 0,
-    "explanation": "Account analysis (receivables, allowance method): the proportion of receivables expected to become uncollectable. Work through which accounts change and whether they have normal debit or credit balances. Distractors often swap sides, use the wrong account class, or omit part of the entry.",
+    "explanation": [
+      "What does the credit risk ratio measure? The proportion of receivables expected to become uncollectable.",
+      "\"Cash ÷ Average Daily Cash Expenses\" does not answer the specific requirement in the question.",
+      "\"Allowance for Doubtful Debts ÷ Accounts Receivable\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "receivables",
       "allowance_method"
@@ -1349,7 +1697,11 @@ export const ankiMcqs = [
       "365 ÷ Receivables Turnover"
     ],
     "answer": 0,
-    "explanation": "Account analysis (receivables, allowance method): allowance for Doubtful Debts ÷ Accounts Receivable. Work through which accounts change and whether they have normal debit or credit balances. Distractors often swap sides, use the wrong account class, or omit part of the entry.",
+    "explanation": [
+      "the formula for the credit risk ratio? Allowance for Doubtful Debts ÷ Accounts Receivable.",
+      "\"Cash ÷ Average Daily Cash Expenses\" does not answer the specific requirement in the question.",
+      "\"Net Credit Sales ÷ Average Net Receivables\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "receivables",
       "allowance_method"
@@ -1365,7 +1717,11 @@ export const ankiMcqs = [
       "Net Credit Sales ÷ Average Net Receivables"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (receivables): how many times receivables are collected during the year. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "What does receivables turnover measure? How many times receivables are collected during the year.",
+      "\"Cash ÷ Average Daily Cash Expenses\" does not answer the specific requirement in the question.",
+      "\"Allowance for Doubtful Debts ÷ Accounts Receivable\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "receivables"
     ]
@@ -1380,7 +1736,11 @@ export const ankiMcqs = [
       "365 ÷ Receivables Turnover"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (receivables): net Credit Sales ÷ Average Net Receivables. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "the receivables turnover formula? Net Credit Sales ÷ Average Net Receivables.",
+      "\"Cash ÷ Average Daily Cash Expenses\" does not answer the specific requirement in the question.",
+      "\"Allowance for Doubtful Debts ÷ Accounts Receivable\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "receivables"
     ]
@@ -1395,7 +1755,11 @@ export const ankiMcqs = [
       "Net Credit Sales ÷ Average Net Receivables"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (receivables): (Beginning Net Receivables + Ending Net Receivables) ÷ 2. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "average net receivables? (Beginning Net Receivables + Ending Net Receivables) ÷ 2.",
+      "\"Allowance for Doubtful Debts ÷ Accounts Receivable\" does not answer the specific requirement in the question.",
+      "\"Net Credit Sales ÷ Average Net Receivables\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "receivables"
     ]
@@ -1410,7 +1774,11 @@ export const ankiMcqs = [
       "Low net credit sales"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (receivables): efficient collection of receivables. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "What does a high receivables turnover indicate? Efficient collection of receivables.",
+      "\"Slow collection and credit problems\" does not answer the specific requirement in the question.",
+      "\"High bad debt risk\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "receivables"
     ]
@@ -1425,7 +1793,11 @@ export const ankiMcqs = [
       "Low allowance for doubtful debts"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (receivables): slow collection and possible credit problems. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "What does a low receivables turnover indicate? Slow collection and possible credit problems.",
+      "\"Efficient collection of receivables\" does not answer the specific requirement in the question.",
+      "\"Strong liquidity\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "receivables"
     ]
@@ -1440,7 +1812,11 @@ export const ankiMcqs = [
       "Net Credit Sales ÷ Average Net Receivables"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (receivables): 365 ÷ Receivables Turnover. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "the average collection period formula? 365 ÷ Receivables Turnover.",
+      "\"Allowance for Doubtful Debts ÷ Accounts Receivable\" does not answer the specific requirement in the question.",
+      "\"Net Credit Sales ÷ Average Net Receivables\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "receivables"
     ]
@@ -1455,7 +1831,11 @@ export const ankiMcqs = [
       "Days between purchase and payment to suppliers"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (receivables): the average number of days taken to collect receivables. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "What does the average collection period measure? The average number of days taken to collect receivables.",
+      "\"Days between purchase and payment to suppliers\" does not answer the specific requirement in the question.",
+      "\"Days cash can cover daily expenses\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "receivables"
     ]
@@ -1470,7 +1850,11 @@ export const ankiMcqs = [
       "Establishing a petty cash fund"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (receivables): selling receivables to a third party called a factor. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "factoring? Selling receivables to a third party called a factor.",
+      "\"Estimating bad debts using the ageing method\" does not answer the specific requirement in the question.",
+      "\"Preparing a bank reconciliation\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "receivables"
     ]
@@ -1485,7 +1869,11 @@ export const ankiMcqs = [
       "To avoid recording credit sales"
     ],
     "answer": 0,
-    "explanation": "The reasoning to apply (receivables): to obtain cash quickly and reduce collection costs. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "Why do businesses factor receivables? To obtain cash quickly and reduce collection costs.",
+      "\"To increase accounts receivable balances\" does not answer the specific requirement in the question.",
+      "\"To eliminate service charge expenses\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "receivables"
     ]
@@ -1500,7 +1888,11 @@ export const ankiMcqs = [
       "It requires the direct write-off method"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (receivables): service charges reduce the cash received. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "a disadvantage of factoring? Service charges reduce the cash received.",
+      "\"It increases bad debt risk\" does not answer the specific requirement in the question.",
+      "\"It eliminates all receivables permanently\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "receivables"
     ]
@@ -1515,7 +1907,11 @@ export const ankiMcqs = [
       "They guarantee no bank reconciliations"
     ],
     "answer": 0,
-    "explanation": "The reasoning to apply (receivables): they increase sales and reduce bad debt risk. Work through which accounts change and whether they have normal debit or credit balances. Distractors often swap sides, use the wrong account class, or omit part of the entry.",
+    "explanation": [
+      "Why are credit card sales beneficial to retailers? They increase sales and reduce bad debt risk.",
+      "\"They remove the need for cash at bank\" does not answer the specific requirement in the question.",
+      "\"They eliminate service charge expenses\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "receivables"
     ]
@@ -1530,7 +1926,11 @@ export const ankiMcqs = [
       "Freight-out Expense"
     ],
     "answer": 0,
-    "explanation": "Account analysis (receivables): service Charge Expense. Work through which accounts change and whether they have normal debit or credit balances. Distractors often swap sides, use the wrong account class, or omit part of the entry.",
+    "explanation": [
+      "What expense is recognised in credit card sales processing? Service Charge Expense.",
+      "\"Bad Debts Expense\" does not answer the specific requirement in the question.",
+      "\"Bank Charges Expense\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "receivables"
     ]
@@ -1545,7 +1945,11 @@ export const ankiMcqs = [
       "A method for estimating doubtful debts"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (financial statements): a small amount of cash used for minor expenditures. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "a petty cash fund? A small amount of cash used for minor expenditures.",
+      "\"A large cash reserve for major purchases\" does not answer the specific requirement in the question.",
+      "\"The same as cash at bank\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "financial_statements"
     ]
@@ -1560,7 +1964,11 @@ export const ankiMcqs = [
       "Dr Bad Debts Expense / Cr Accounts Receivable"
     ],
     "answer": 0,
-    "explanation": "Account analysis (debit credit): dr Petty Cash / Cr Cash at Bank. Work through which accounts change and whether they have normal debit or credit balances. Distractors often swap sides, use the wrong account class, or omit part of the entry.",
+    "explanation": [
+      "the journal entry to establish a petty cash fund? Dr Petty Cash / Cr Cash at Bank.",
+      "\"Dr Bank Charges Expense / Cr Cash at Bank\" does not answer the specific requirement in the question.",
+      "\"Dr Accounts Receivable / Cr Cash at Bank\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "debit_credit"
     ]
@@ -1575,7 +1983,11 @@ export const ankiMcqs = [
       "Only under the direct write-off method"
     ],
     "answer": 0,
-    "explanation": "Account analysis (debit credit): no. Entries are made when the fund is replenished. Work through which accounts change and whether they have normal debit or credit balances. Distractors often swap sides, use the wrong account class, or omit part of the entry.",
+    "explanation": [
+      "Are journal entries made every time petty cash is spent? No. Entries are made when the fund is replenished.",
+      "\"Yes\" does not answer the specific requirement in the question.",
+      "\"No\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "debit_credit"
     ]
@@ -1590,7 +2002,11 @@ export const ankiMcqs = [
       "Remittance advices only"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (financial statements): petty cash vouchers and receipts. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "What documentation is required for petty cash payments? Petty cash vouchers and receipts.",
+      "\"Bank statements and deposit slips only\" does not answer the specific requirement in the question.",
+      "\"Ageing schedules only\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "financial_statements"
     ]
@@ -1605,7 +2021,11 @@ export const ankiMcqs = [
       "Net realisable value of receivables"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (financial statements): the original petty cash fund balance. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "What should the total of petty cash receipts plus cash remaining equal? The original petty cash fund balance.",
+      "\"Total cash receipts for the period\" does not answer the specific requirement in the question.",
+      "\"The bank statement balance\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "financial_statements"
     ]
@@ -1620,7 +2040,11 @@ export const ankiMcqs = [
       "Dr Bad Debts Expense / Cr Accounts Receivable"
     ],
     "answer": 0,
-    "explanation": "Account analysis (debit credit): dr individual expense accounts / Cr Cash at Bank. Work through which accounts change and whether they have normal debit or credit balances. Distractors often swap sides, use the wrong account class, or omit part of the entry.",
+    "explanation": [
+      "the journal entry to replenish petty cash? Dr individual expense accounts / Cr Cash at Bank.",
+      "\"Dr Bank Charges Expense / Cr Cash at Bank\" does not answer the specific requirement in the question.",
+      "\"Dr Accounts Receivable / Cr Cash at Bank\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "debit_credit"
     ]
@@ -1635,7 +2059,11 @@ export const ankiMcqs = [
       "A revenue account for factoring"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (debit credit): an account used to record petty cash shortages or surpluses. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "the Over and Short account? An account used to record petty cash shortages or surpluses.",
+      "\"An account for bank service charges\" does not answer the specific requirement in the question.",
+      "\"A revenue account for factoring\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "debit_credit"
     ]
@@ -1650,7 +2078,11 @@ export const ankiMcqs = [
       "Credit Petty Cash only"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (debit credit): debit Over and Short. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "How is a petty cash shortage recorded? Debit Over and Short.",
+      "\"Credit Over and Short\" does not answer the specific requirement in the question.",
+      "\"Debit Cash at Bank\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "debit_credit"
     ]
@@ -1665,7 +2097,11 @@ export const ankiMcqs = [
       "Credit Accounts Receivable"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (debit credit): credit Over and Short. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "How is a petty cash surplus recorded? Credit Over and Short.",
+      "\"Debit Over and Short\" does not answer the specific requirement in the question.",
+      "\"Debit Bad Debts Expense\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "debit_credit"
     ]
@@ -1680,7 +2116,11 @@ export const ankiMcqs = [
       "365 ÷ Receivables Turnover"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (financial statements): cash ÷ Average Daily Cash Expenses. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "Formula: Cash to daily cash expenses ratio. Cash ÷ Average Daily Cash Expenses.",
+      "\"Net Credit Sales ÷ Average Net Receivables\" does not answer the specific requirement in the question.",
+      "\"Allowance for Doubtful Debts ÷ Accounts Receivable\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "financial_statements"
     ]
@@ -1695,7 +2135,11 @@ export const ankiMcqs = [
       "365 ÷ Receivables Turnover"
     ],
     "answer": 0,
-    "explanation": "Account analysis (receivables, allowance method): allowance for Doubtful Debts ÷ Accounts Receivable. Work through which accounts change and whether they have normal debit or credit balances. Distractors often swap sides, use the wrong account class, or omit part of the entry.",
+    "explanation": [
+      "Formula: Credit risk ratio. Allowance for Doubtful Debts ÷ Accounts Receivable.",
+      "\"Cash ÷ Average Daily Cash Expenses\" does not answer the specific requirement in the question.",
+      "\"Net Credit Sales ÷ Average Net Receivables\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "receivables",
       "allowance_method"
@@ -1711,7 +2155,11 @@ export const ankiMcqs = [
       "365 ÷ Receivables Turnover"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (receivables): net Credit Sales ÷ Average Net Receivables. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "Formula: Receivables turnover. Net Credit Sales ÷ Average Net Receivables.",
+      "\"Cash ÷ Average Daily Cash Expenses\" does not answer the specific requirement in the question.",
+      "\"Allowance for Doubtful Debts ÷ Accounts Receivable\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "receivables"
     ]
@@ -1726,7 +2174,11 @@ export const ankiMcqs = [
       "Net Credit Sales ÷ Average Net Receivables"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (receivables): 365 ÷ Receivables Turnover. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "Formula: Average collection period. 365 ÷ Receivables Turnover.",
+      "\"Allowance for Doubtful Debts ÷ Accounts Receivable\" does not answer the specific requirement in the question.",
+      "\"Net Credit Sales ÷ Average Net Receivables\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "receivables"
     ]
@@ -1741,7 +2193,11 @@ export const ankiMcqs = [
       "Replenishing petty cash too frequently"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (bank reconciliation, error correction): adding and subtracting outstanding items incorrectly. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "the biggest bank reconciliation trap? Adding and subtracting outstanding items incorrectly.",
+      "\"Forgetting to estimate doubtful debts\" does not answer what belongs on a bank reconciliation.",
+      "\"Using the direct write-off method\" does not answer what belongs on a bank reconciliation."
+    ],
     "tags": [
       "bank_reconciliation",
       "error_correction"
@@ -1757,7 +2213,11 @@ export const ankiMcqs = [
       "Added to the cash book balance"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (bank reconciliation, error correction): they are added to the bank balance. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "In a bank reconciliation, what happens to outstanding deposits? They are added to the bank balance.",
+      "\"Added to the bank statement balance\" does not answer what belongs on a bank reconciliation.",
+      "\"Subtracted from the bank statement balance\" does not answer what belongs on a bank reconciliation."
+    ],
     "tags": [
       "bank_reconciliation",
       "error_correction"
@@ -1773,7 +2233,11 @@ export const ankiMcqs = [
       "Added to the cash book balance"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (bank reconciliation, error correction): they are subtracted from the bank balance. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "In a bank reconciliation, what happens to unpresented cheques/outstanding EFTs? They are subtracted from the bank balance.",
+      "\"Added to the bank statement balance\" does not answer what belongs on a bank reconciliation.",
+      "\"Subtracted from the bank statement balance\" does not answer what belongs on a bank reconciliation."
+    ],
     "tags": [
       "bank_reconciliation",
       "error_correction"
@@ -1789,7 +2253,11 @@ export const ankiMcqs = [
       "Recording recovery before reversing the write-off"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (allowance method, error correction): forgetting that the ageing method calculates the required ending allowance balance. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "the biggest allowance method trap? Forgetting that the ageing method calculates the required ending allowance balance.",
+      "\"Using the direct write-off method for all write-offs\" does not answer how uncollectible receivables are accounted for.",
+      "\"Debiting Allowance instead of Bad Debts Expense when estimating\" does not answer how uncollectible receivables are accounted for."
+    ],
     "tags": [
       "allowance_method",
       "error_correction"
@@ -1805,7 +2273,11 @@ export const ankiMcqs = [
       "Adding outstanding deposits to the cash book"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (allowance method, error correction): debiting Bad Debts Expense instead of Allowance for Doubtful Debts under the allowance method. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "the biggest write-off trap? Debiting Bad Debts Expense instead of Allowance for Doubtful Debts under the allowance method.",
+      "\"Crediting Accounts Receivable when estimating doubtful debts\" does not answer the specific requirement in the question.",
+      "\"Failing to record GST on credit sales\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "allowance_method",
       "error_correction"
@@ -1821,7 +2293,11 @@ export const ankiMcqs = [
       "Recording recovery as revenue"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (allowance method, error correction): forgetting to reverse the write-off before recording cash collection. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "the biggest recovery trap? Forgetting to reverse the write-off before recording cash collection.",
+      "\"Crediting Allowance when the account is first written off\" does not answer the specific requirement in the question.",
+      "\"Recording recovery as revenue\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "allowance_method",
       "error_correction"
@@ -1837,7 +2313,11 @@ export const ankiMcqs = [
       "Replenishing petty cash before any receipts are obtained"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (error correction, debit credit): recording expenses when cash is spent instead of when the fund is replenished. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "the biggest petty cash trap? Recording expenses when cash is spent instead of when the fund is replenished.",
+      "\"Establishing the fund with Dr Cash at Bank / Cr Petty Cash\" does not answer the specific requirement in the question.",
+      "\"Using the Over and Short account for bank charges\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "error_correction",
       "debit_credit"

@@ -12,7 +12,11 @@ export const ankiMcqs = [
       "A merchandising business has no cost of sales"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (inventory): a service business provides services, while a merchandising business buys and resells goods. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "the main difference between a service business and a merchandising business? A service business provides services, while a merchandising business buys and resells goods.",
+      "\"A service business sells inventory; a merchandising business provides...\" does not answer the specific requirement in the question.",
+      "\"Both business types earn revenue only from selling goods\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "inventory"
     ]
@@ -27,7 +31,11 @@ export const ankiMcqs = [
       "Lending money and earning interest"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (inventory): purchasing inventory and reselling it to customers. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "the primary activity of a merchandising business? Purchasing inventory and reselling it to customers.",
+      "\"Providing professional services to clients\" does not answer the specific requirement in the question.",
+      "\"Manufacturing goods from raw materials\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "inventory"
     ]
@@ -42,7 +50,11 @@ export const ankiMcqs = [
       "Commission revenue"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (inventory sales): sales revenue. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "the main revenue source for a merchandising business? Sales revenue.",
+      "\"Service revenue\" does not answer the specific requirement in the question.",
+      "\"Interest revenue\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "inventory_sales"
     ]
@@ -57,7 +69,11 @@ export const ankiMcqs = [
       "Administration expenses"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (inventory, income statement): cost of sales (cost of goods sold). The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "What additional major expense exists in merchandising businesses? Cost of sales (cost of goods sold).",
+      "\"Cost of sales\" does not answer the specific requirement in the question.",
+      "\"Selling expenses\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "inventory",
       "income_statement"
@@ -73,7 +89,11 @@ export const ankiMcqs = [
       "Only for service businesses"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (inventory): yes. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "Do merchandising businesses have inventory? Yes.",
+      "\"No\" does not answer the specific requirement in the question.",
+      "\"Only for periodic systems\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "inventory"
     ]
@@ -88,7 +108,11 @@ export const ankiMcqs = [
       "Construction contractors and engineering consultancies"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (inventory): supermarkets, clothing stores, furniture stores, and department stores. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "Give examples of merchandising businesses. Supermarkets, clothing stores, furniture stores, and department stores.",
+      "\"Law firms, accounting firms, and consulting agencies\" does not answer the specific requirement in the question.",
+      "\"Banks, insurance companies, and investment funds\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "inventory"
     ]
@@ -103,7 +127,11 @@ export const ankiMcqs = [
       "Cash received minus cash paid"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (inventory sales, income statement): sales revenue minus cost of sales. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "gross profit? Sales revenue minus cost of sales.",
+      "\"Net sales minus operating expenses\" does not answer the specific requirement in the question.",
+      "\"Total revenue minus total expenses\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "inventory_sales",
       "income_statement"
@@ -119,7 +147,11 @@ export const ankiMcqs = [
       "Gross Profit = Cash Received − Cost of Sales"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (inventory sales, income statement): gross Profit = Sales Revenue − Cost of Sales. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "State the gross profit formula. Gross Profit = Sales Revenue − Cost of Sales.",
+      "\"Gross Profit = Net Sales − Operating Expenses\" does not answer the specific requirement in the question.",
+      "\"Gross Profit = Revenue − Total Expenses\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "inventory_sales",
       "income_statement"
@@ -135,7 +167,11 @@ export const ankiMcqs = [
       "Profit = Gross Profit − Cost of Sales"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (income statement): profit = Gross Profit + Other Revenue − Operating Expenses. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "State the profit formula for merchandising businesses. Profit = Gross Profit + Other Revenue − Operating Expenses.",
+      "\"Profit = Sales Revenue − Cost of Sales\" does not answer the specific requirement in the question.",
+      "\"Profit = Net Sales − Cost of Sales − GST\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "income_statement"
     ]
@@ -150,7 +186,11 @@ export const ankiMcqs = [
       "Administration expenses"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (income statement): cost of sales and operating expenses. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "What are the two main categories of expenses in a merchandising business? Cost of sales and operating expenses.",
+      "\"Cost of sales\" does not answer the specific requirement in the question.",
+      "\"Selling expenses\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "income_statement"
     ]
@@ -165,7 +205,11 @@ export const ankiMcqs = [
       "Advertising and marketing costs"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (inventory sales, income statement): the direct cost of inventory sold to customers. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "What does cost of sales represent? The direct cost of inventory sold to customers.",
+      "\"All expenses incurred in running the business\" does not answer the specific requirement in the question.",
+      "\"Delivery costs paid by the seller\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "inventory_sales",
       "income_statement"
@@ -181,7 +225,11 @@ export const ankiMcqs = [
       "Purchase discounts received"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (income statement): all other expenses incurred in running the business. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "What are operating expenses? All other expenses incurred in running the business.",
+      "\"The direct cost of inventory sold\" does not answer the specific requirement in the question.",
+      "\"GST paid to suppliers\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "income_statement"
     ]
@@ -196,7 +244,11 @@ export const ankiMcqs = [
       "Purchase → Manufacture → Distribute → Advertise"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (inventory): cash → Purchase Inventory → Sell Inventory → Collect Cash → Repeat. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "the operating cycle of a merchandising business? Cash → Purchase Inventory → Sell Inventory → Collect Cash → Repeat.",
+      "\"Cash → Pay Expenses → Record Revenue → Close Accounts\" does not answer the specific requirement in the question.",
+      "\"Inventory → Revenue → Expense → Dividends\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "inventory"
     ]
@@ -211,7 +263,11 @@ export const ankiMcqs = [
       "A system that uses cost of sales calculated after a physical stocktake"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (inventory): a system where inventory records are updated continuously with every purchase and sale. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "a perpetual inventory system? A system where inventory records are updated continuously with every purchase and sale.",
+      "\"A system where inventory records are not continuously updated\" does not answer the specific requirement in the question.",
+      "\"A system that records inventory only at year-end\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "inventory"
     ]
@@ -226,7 +282,11 @@ export const ankiMcqs = [
       "At year-end only"
     ],
     "answer": 0,
-    "explanation": "Timing is the key idea (inventory, inventory sales): at the time of each sale. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "when is cost of sales recorded? At the time of each sale.",
+      "\"At the end of the accounting period after a stocktake\" does not answer the specific requirement in the question.",
+      "\"Only when cash is received\" limits reporting to cash movements, which does not address the accrual period-matching problem here."
+    ],
     "tags": [
       "inventory",
       "inventory_sales"
@@ -242,7 +302,11 @@ export const ankiMcqs = [
       "Businesses using periodic systems exclusively"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (inventory): businesses with high-value or scannable goods. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "What type of businesses commonly use perpetual inventory systems? Businesses with high-value or scannable goods.",
+      "\"Small businesses with low transaction volume only\" does not answer the specific requirement in the question.",
+      "\"Service businesses with no inventory\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "inventory"
     ]
@@ -257,7 +321,11 @@ export const ankiMcqs = [
       "A system that uses cost of sales calculated after a physical stocktake"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (inventory): a system where inventory records are not continuously updated. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "a periodic inventory system? A system where inventory records are not continuously updated.",
+      "\"A system where inventory records are updated continuously with every ...\" does not answer the specific requirement in the question.",
+      "\"A system that records inventory only at year-end\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "inventory"
     ]
@@ -272,7 +340,11 @@ export const ankiMcqs = [
       "When purchase invoices are received"
     ],
     "answer": 0,
-    "explanation": "Timing is the key idea (inventory): at the end of the accounting period after a physical stocktake. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "Using the figures in the question, at the end of the accounting period after a physical stocktake.",
+      "\"When purchase invoices are received\" does not answer the required calculation.",
+      "\"At the time of each sale\" does not answer the required calculation."
+    ],
     "tags": [
       "inventory"
     ]
@@ -287,7 +359,11 @@ export const ankiMcqs = [
       "A system that records inventory only at year-end"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (inventory): periodic inventory system. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "Which inventory system always requires a physical stocktake to determine cost of sales? Periodic inventory system.",
+      "\"A system where inventory records are updated continuously with every ...\" does not answer the specific requirement in the question.",
+      "\"A system where inventory records are not continuously updated\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "inventory"
     ]
@@ -302,7 +378,11 @@ export const ankiMcqs = [
       "A system that records inventory only at year-end"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (inventory): perpetual inventory system. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "Which inventory system continuously tracks inventory balances? Perpetual inventory system.",
+      "\"A system where inventory records are updated continuously with every ...\" does not answer the specific requirement in the question.",
+      "\"A system where inventory records are not continuously updated\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "inventory"
     ]
@@ -317,7 +397,11 @@ export const ankiMcqs = [
       "A system that records inventory only at year-end"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (inventory): periodic inventory system. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "Which inventory system is better suited for small businesses? Periodic inventory system.",
+      "\"A system where inventory records are updated continuously with every ...\" does not answer the specific requirement in the question.",
+      "\"A system where inventory records are not continuously updated\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "inventory"
     ]
@@ -332,7 +416,11 @@ export const ankiMcqs = [
       "A system that records inventory only at year-end"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (inventory): perpetual inventory system. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "Which inventory system provides a continuously updated inventory balance? Perpetual inventory system.",
+      "\"A system where inventory records are updated continuously with every ...\" does not answer the specific requirement in the question.",
+      "\"A system where inventory records are not continuously updated\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "inventory"
     ]
@@ -347,7 +435,11 @@ export const ankiMcqs = [
       "In Accounts Payable only"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (inventory purchases, debit credit): directly in the Inventory account. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "where are inventory purchases recorded? Directly in the Inventory account.",
+      "\"In a Purchases expense account\" does not answer the specific requirement in the question.",
+      "\"In Cost of Sales immediately\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "inventory_purchases",
       "debit_credit"
@@ -363,7 +455,11 @@ export const ankiMcqs = [
       "Debit Cost of Sales; Credit Inventory"
     ],
     "answer": 0,
-    "explanation": "Account analysis (inventory purchases, debit credit): debit Inventory; Credit Accounts Payable. Work through which accounts change and whether they have normal debit or credit balances. Distractors often swap sides, use the wrong account class, or omit part of the entry.",
+    "explanation": [
+      "the journal entry to purchase inventory on credit? Debit Inventory; Credit Accounts Payable.",
+      "\"Debit Accounts Payable; Credit Inventory\" does not answer the specific requirement in the question.",
+      "\"Debit Cash; Credit Sales Revenue\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "inventory_purchases",
       "debit_credit"
@@ -379,7 +475,11 @@ export const ankiMcqs = [
       "Debit Cost of Sales $3,800; Credit Accounts Payable $3,800"
     ],
     "answer": 0,
-    "explanation": "The calculation rests on (inventory purchases, debit credit): debit Inventory $3,800; Credit Accounts Payable $3,800. Work through which accounts change and whether they have normal debit or credit balances. Distractors often swap sides, use the wrong account class, or omit part of the entry.",
+    "explanation": [
+      "Using the figures in the question, debit Inventory $3,800; Credit Accounts Payable $3,800.",
+      "\"Debit Purchases $3,800; Credit Cash $3,800\" does not answer the required calculation.",
+      "\"Debit Accounts Payable $3,800; Credit Inventory $3,800\" does not answer the required calculation."
+    ],
     "tags": [
       "inventory_purchases",
       "debit_credit"
@@ -395,7 +495,11 @@ export const ankiMcqs = [
       "Writing off faulty inventory"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (inventory purchases): returning purchased goods to the supplier. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "a purchase return? Returning purchased goods to the supplier.",
+      "\"Keeping goods but receiving a price reduction\" does not answer the specific requirement in the question.",
+      "\"Returning sold goods from a customer\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "inventory_purchases"
     ]
@@ -410,7 +514,11 @@ export const ankiMcqs = [
       "A reduction in list price before invoicing"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (inventory purchases): keeping goods but receiving a reduction in price from the supplier. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "a purchase allowance? Keeping goods but receiving a reduction in price from the supplier.",
+      "\"Returning purchased goods to the supplier\" does not answer how uncollectible receivables are accounted for.",
+      "\"A reduction in list price before invoicing\" does not answer how uncollectible receivables are accounted for."
+    ],
     "tags": [
       "inventory_purchases"
     ]
@@ -425,7 +533,11 @@ export const ankiMcqs = [
       "Cost of sales increases"
     ],
     "answer": 0,
-    "explanation": "Timing is the key idea (inventory purchases): inventory decreases. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "What happens to inventory when purchase returns occur? Inventory decreases.",
+      "\"Inventory increases\" does not answer the specific requirement in the question.",
+      "\"Inventory is unchanged\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "inventory_purchases"
     ]
@@ -440,7 +552,11 @@ export const ankiMcqs = [
       "Debit Cost of Sales; Credit Inventory"
     ],
     "answer": 0,
-    "explanation": "Account analysis (inventory purchases, debit credit): debit Accounts Payable; Credit Inventory. Work through which accounts change and whether they have normal debit or credit balances. Distractors often swap sides, use the wrong account class, or omit part of the entry.",
+    "explanation": [
+      "the journal entry for purchase returns? Debit Accounts Payable; Credit Inventory.",
+      "\"Debit Inventory; Credit Accounts Payable\" does not answer the specific requirement in the question.",
+      "\"Debit Cash; Credit Sales Revenue\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "inventory_purchases",
       "debit_credit"
@@ -456,7 +572,11 @@ export const ankiMcqs = [
       "Debit Cost of Sales $300; Credit Inventory $300"
     ],
     "answer": 0,
-    "explanation": "The calculation rests on (inventory purchases, debit credit): debit Accounts Payable $300; Credit Inventory $300. Work through which accounts change and whether they have normal debit or credit balances. Distractors often swap sides, use the wrong account class, or omit part of the entry.",
+    "explanation": [
+      "Using the figures in the question, debit Accounts Payable $300; Credit Inventory $300.",
+      "\"Debit Inventory $300; Credit Accounts Payable $300\" does not answer the required calculation.",
+      "\"Debit Purchase Returns $300; Credit Cash $300\" does not answer the required calculation."
+    ],
     "tags": [
       "inventory_purchases",
       "debit_credit"
@@ -472,7 +592,11 @@ export const ankiMcqs = [
       "Packaging costs charged to customers"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (inventory purchases): freight costs paid by the buyer to transport inventory. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "freight-in? Freight costs paid by the buyer to transport inventory.",
+      "\"Delivery costs paid by the seller\" does not answer the specific requirement in the question.",
+      "\"Packaging costs charged to customers\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "inventory_purchases"
     ]
@@ -487,7 +611,11 @@ export const ankiMcqs = [
       "Recorded as a liability"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (inventory purchases): added to the cost of inventory. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "How is freight-in treated under the perpetual system? Added to the cost of inventory.",
+      "\"Recorded as an operating expense\" does not answer the specific requirement in the question.",
+      "\"Deducted from sales revenue\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "inventory_purchases"
     ]
@@ -502,7 +630,11 @@ export const ankiMcqs = [
       "Debit Cash; Credit Sales Revenue"
     ],
     "answer": 0,
-    "explanation": "Account analysis (inventory purchases, debit credit): debit Inventory (or Freight-in); Credit Cash. Work through which accounts change and whether they have normal debit or credit balances. Distractors often swap sides, use the wrong account class, or omit part of the entry.",
+    "explanation": [
+      "the journal entry for freight-in paid in cash? Debit Inventory (or Freight-in); Credit Cash.",
+      "\"Debit Inventory; Credit Accounts Payable\" does not answer the specific requirement in the question.",
+      "\"Debit Accounts Payable; Credit Inventory\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "inventory_purchases",
       "debit_credit"
@@ -518,7 +650,11 @@ export const ankiMcqs = [
       "Import duties on purchased goods"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (inventory sales): delivery costs paid by the seller. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "freight-out? Delivery costs paid by the seller.",
+      "\"Freight costs paid by the buyer\" does not answer the specific requirement in the question.",
+      "\"Insurance on inventory in transit to the buyer\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "inventory_sales"
     ]
@@ -533,7 +669,11 @@ export const ankiMcqs = [
       "Only for service businesses"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (inventory sales): no. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "Is freight-out part of inventory cost? No.",
+      "\"Yes\" does not answer the specific requirement in the question.",
+      "\"Only for periodic systems\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "inventory_sales"
     ]
@@ -548,7 +688,11 @@ export const ankiMcqs = [
       "Administration expenses"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (inventory sales, income statement): operating expense. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "How is freight-out classified? Operating expense.",
+      "\"Cost of sales\" does not answer the specific requirement in the question.",
+      "\"Selling expenses\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "inventory_sales",
       "income_statement"
@@ -564,7 +708,11 @@ export const ankiMcqs = [
       "Debit Cash; Credit Sales Revenue"
     ],
     "answer": 0,
-    "explanation": "Account analysis (inventory sales, debit credit): debit Delivery Expense (Freight-out); Credit Cash. Work through which accounts change and whether they have normal debit or credit balances. Distractors often swap sides, use the wrong account class, or omit part of the entry.",
+    "explanation": [
+      "the journal entry for freight-out? Debit Delivery Expense (Freight-out); Credit Cash.",
+      "\"Debit Inventory; Credit Accounts Payable\" does not answer the specific requirement in the question.",
+      "\"Debit Accounts Payable; Credit Inventory\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "inventory_sales",
       "debit_credit"
@@ -580,7 +728,11 @@ export const ankiMcqs = [
       "Deducted from sales revenue"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (inventory purchases): inventory / Cost of Sales. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "Buyer pays freight — where does it go? Inventory / Cost of Sales.",
+      "\"Added to the cost of inventory\" does not answer the specific requirement in the question.",
+      "\"Recorded as an operating expense\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "inventory_purchases"
     ]
@@ -595,7 +747,11 @@ export const ankiMcqs = [
       "Administration expenses"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (inventory sales): operating expenses. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "Seller pays freight — where does it go? Operating expenses.",
+      "\"Cost of sales\" does not answer the specific requirement in the question.",
+      "\"Selling expenses\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "inventory_sales"
     ]
@@ -610,7 +766,11 @@ export const ankiMcqs = [
       "Sales discount"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (inventory purchases): a discount offered for prompt payment of an account. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "a settlement discount? A discount offered for prompt payment of an account.",
+      "\"Settlement discount\" does not answer the specific requirement in the question.",
+      "\"Trade discount\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "inventory_purchases"
     ]
@@ -625,7 +785,11 @@ export const ankiMcqs = [
       "Payment of 2/10 of the invoice within 30 days"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (inventory purchases): a 2% discount is available if payment is made within 10 days; otherwise full payment is due in 30 days. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "What does 2/10, n/30 mean? A 2% discount is available if payment is made within 10 days; otherwise full payment is due in 30 days.",
+      "\"Payment of 2/10 of the invoice within 30 days\" does not answer the specific requirement in the question.",
+      "\"A 10% discount if paid within 2 days; full payment in 30 days\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "inventory_purchases"
     ]
@@ -640,7 +804,11 @@ export const ankiMcqs = [
       "They have no effect on inventory cost"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (inventory purchases): they reduce the cost of inventory. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "How do purchase discounts affect inventory? They reduce the cost of inventory.",
+      "\"They have no effect on inventory cost\" does not answer the specific requirement in the question.",
+      "\"They increase sales revenue\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "inventory_purchases"
     ]
@@ -655,7 +823,11 @@ export const ankiMcqs = [
       "Debit Inventory; Credit Accounts Payable"
     ],
     "answer": 0,
-    "explanation": "Timing is the key idea (inventory purchases, debit credit): debit Accounts Payable; Credit Inventory; Credit Cash. Work through which accounts change and whether they have normal debit or credit balances. Distractors often swap sides, use the wrong account class, or omit part of the entry.",
+    "explanation": [
+      "the journal entry when paying an account payable within the discount period? Debit Accounts Payable; Credit Inventory; Credit Cash.",
+      "\"Debit Cash; Credit Accounts Payable\" does not answer the specific requirement in the question.",
+      "\"Debit Purchase Discounts; Credit Accounts Payable\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "inventory_purchases",
       "debit_credit"
@@ -671,7 +843,11 @@ export const ankiMcqs = [
       "$70"
     ],
     "answer": 0,
-    "explanation": "The calculation rests on (inventory purchases): $3,430. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "Using the figures in the question, $3,430.",
+      "\"$3,500\" does not answer the required calculation.",
+      "\"$3,570\" does not answer the required calculation."
+    ],
     "tags": [
       "inventory_purchases"
     ]
@@ -686,7 +862,11 @@ export const ankiMcqs = [
       "Sales discount"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (inventory purchases): a reduction in list price before the invoice is issued. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "a trade discount? A reduction in list price before the invoice is issued.",
+      "\"Settlement discount\" does not answer the specific requirement in the question.",
+      "\"Trade discount\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "inventory_purchases"
     ]
@@ -701,7 +881,11 @@ export const ankiMcqs = [
       "Only for service businesses"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (inventory purchases): no. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "Are trade discounts recorded in accounting records? No.",
+      "\"Yes\" does not answer the specific requirement in the question.",
+      "\"Only for periodic systems\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "inventory_purchases"
     ]
@@ -716,7 +900,11 @@ export const ankiMcqs = [
       "$500"
     ],
     "answer": 0,
-    "explanation": "The calculation rests on (inventory purchases): $4,500. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "Using the figures in the question, $4,500.",
+      "\"$5,000\" does not answer the required calculation.",
+      "\"$5,500\" does not answer the required calculation."
+    ],
     "tags": [
       "inventory_purchases"
     ]
@@ -731,7 +919,11 @@ export const ankiMcqs = [
       "Four"
     ],
     "answer": 0,
-    "explanation": "Account analysis (inventory sales, debit credit): two. Work through which accounts change and whether they have normal debit or credit balances. Distractors often swap sides, use the wrong account class, or omit part of the entry.",
+    "explanation": [
+      "how many journal entries are required for each sale? Two.",
+      "\"One\" does not answer the specific requirement in the question.",
+      "\"Three\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "inventory_sales",
       "debit_credit"
@@ -747,7 +939,11 @@ export const ankiMcqs = [
       "Record GST paid to suppliers"
     ],
     "answer": 0,
-    "explanation": "Timing is the key idea (inventory sales, debit credit): record the sale at selling price. Work through which accounts change and whether they have normal debit or credit balances. Distractors often swap sides, use the wrong account class, or omit part of the entry.",
+    "explanation": [
+      "the first journal entry when recording a sale? Record the sale at selling price.",
+      "\"Record cost of sales and reduce inventory\" does not answer the specific requirement in the question.",
+      "\"Record freight-out expense\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "inventory_sales",
       "debit_credit"
@@ -763,7 +959,11 @@ export const ankiMcqs = [
       "Record settlement discounts on purchases"
     ],
     "answer": 0,
-    "explanation": "Timing is the key idea (inventory sales, debit credit): record cost of sales and reduce inventory. Work through which accounts change and whether they have normal debit or credit balances. Distractors often swap sides, use the wrong account class, or omit part of the entry.",
+    "explanation": [
+      "the second journal entry when recording a sale? Record cost of sales and reduce inventory.",
+      "\"Record the sale at selling price\" does not answer the specific requirement in the question.",
+      "\"Record purchase returns\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "inventory_sales",
       "debit_credit"
@@ -779,7 +979,11 @@ export const ankiMcqs = [
       "Debit Cost of Sales; Credit Inventory"
     ],
     "answer": 0,
-    "explanation": "Account analysis (inventory sales, debit credit): debit Cash; Credit Sales Revenue. Work through which accounts change and whether they have normal debit or credit balances. Distractors often swap sides, use the wrong account class, or omit part of the entry.",
+    "explanation": [
+      "the journal entry to record a cash sale? Debit Cash; Credit Sales Revenue.",
+      "\"Debit Inventory; Credit Accounts Payable\" does not answer the specific requirement in the question.",
+      "\"Debit Accounts Payable; Credit Inventory\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "inventory_sales",
       "debit_credit"
@@ -795,7 +999,11 @@ export const ankiMcqs = [
       "Debit Cash; Credit Sales Revenue"
     ],
     "answer": 0,
-    "explanation": "Account analysis (inventory sales, debit credit): debit Cost of Sales; Credit Inventory. Work through which accounts change and whether they have normal debit or credit balances. Distractors often swap sides, use the wrong account class, or omit part of the entry.",
+    "explanation": [
+      "the journal entry to record cost of inventory sold? Debit Cost of Sales; Credit Inventory.",
+      "\"Debit Inventory; Credit Accounts Payable\" does not answer the specific requirement in the question.",
+      "\"Debit Accounts Payable; Credit Inventory\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "inventory_sales",
       "debit_credit"
@@ -811,7 +1019,11 @@ export const ankiMcqs = [
       "Dr Cash $800 Cr Sales Revenue $800"
     ],
     "answer": 0,
-    "explanation": "The calculation rests on (inventory sales, debit credit): dr Cash $2,200 Cr Sales Revenue $2,200; Dr Cost of Sales $1,400 Cr Inventory $1,400. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "Using the figures in the question, dr Cash $2,200 Cr Sales Revenue $2,200; Dr Cost of Sales $1,400 Cr Inventory $1,400.",
+      "\"Dr Cash $2,200 Cr Sales Revenue $2,200 only\" does not answer the required calculation.",
+      "\"Dr Sales Revenue $2,200 Cr Cash $2,200; Dr Inventory $1,400 Cr Cost o...\" does not answer the required calculation."
+    ],
     "tags": [
       "inventory_sales",
       "debit_credit"
@@ -827,7 +1039,11 @@ export const ankiMcqs = [
       "Debit Cash; Credit Sales Revenue"
     ],
     "answer": 0,
-    "explanation": "Account analysis (inventory sales, debit credit): debit Accounts Receivable; Credit Sales Revenue. Work through which accounts change and whether they have normal debit or credit balances. Distractors often swap sides, use the wrong account class, or omit part of the entry.",
+    "explanation": [
+      "the journal entry for a credit sale? Debit Accounts Receivable; Credit Sales Revenue.",
+      "\"Debit Inventory; Credit Accounts Payable\" does not answer the specific requirement in the question.",
+      "\"Debit Accounts Payable; Credit Inventory\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "inventory_sales",
       "debit_credit"
@@ -843,7 +1059,11 @@ export const ankiMcqs = [
       "Debit Cash; Credit Sales Revenue"
     ],
     "answer": 0,
-    "explanation": "Account analysis (inventory sales, debit credit): debit Cost of Sales; Credit Inventory. Work through which accounts change and whether they have normal debit or credit balances. Distractors often swap sides, use the wrong account class, or omit part of the entry.",
+    "explanation": [
+      "the journal entry for the cost side of a credit sale? Debit Cost of Sales; Credit Inventory.",
+      "\"Debit Inventory; Credit Accounts Payable\" does not answer the specific requirement in the question.",
+      "\"Debit Accounts Payable; Credit Inventory\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "inventory_sales",
       "debit_credit"
@@ -859,7 +1079,11 @@ export const ankiMcqs = [
       "Dr Sales Revenue $3,800 Cr Accounts Receivable $3,800"
     ],
     "answer": 0,
-    "explanation": "The calculation rests on (inventory sales, debit credit): dr Accounts Receivable $3,800 Cr Sales Revenue $3,800; Dr Cost of Sales $2,400 Cr Inventory $2,400. Work through which accounts change and whether they have normal debit or credit balances. Distractors often swap sides, use the wrong account class, or omit part of the entry.",
+    "explanation": [
+      "Using the figures in the question, dr Accounts Receivable $3,800 Cr Sales Revenue $3,800; Dr Cost of Sales $2,400 Cr Inventory $2,400.",
+      "\"Dr Cash $3,800 Cr Sales Revenue $3,800 only\" does not answer the required calculation.",
+      "\"Dr Accounts Receivable $1,400 Cr Sales Revenue $1,400\" does not answer the required calculation."
+    ],
     "tags": [
       "inventory_sales",
       "debit_credit"
@@ -875,7 +1099,11 @@ export const ankiMcqs = [
       "Record freight-in and purchase returns"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (inventory sales): reverse the sale and restore/reduce inventory. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "What are the two entries required for sales returns under the perpetual system? Reverse the sale and restore/reduce inventory.",
+      "\"Record revenue and cost of sales only\" does not answer the specific requirement in the question.",
+      "\"Debit Cash and credit Sales Revenue\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "inventory_sales"
     ]
@@ -890,7 +1118,11 @@ export const ankiMcqs = [
       "Cost of Sales"
     ],
     "answer": 0,
-    "explanation": "Timing is the key idea (inventory sales, debit credit): sales Returns & Allowances. Work through which accounts change and whether they have normal debit or credit balances. Distractors often swap sides, use the wrong account class, or omit part of the entry.",
+    "explanation": [
+      "What account is debited when reversing a sales return? Sales Returns & Allowances.",
+      "\"Sales Revenue\" does not answer the specific requirement in the question.",
+      "\"Accounts Receivable\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "inventory_sales",
       "debit_credit"
@@ -906,7 +1138,11 @@ export const ankiMcqs = [
       "Sales revenue is increased"
     ],
     "answer": 0,
-    "explanation": "Timing is the key idea (inventory sales): inventory is restored. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "What happens when returned inventory is in good condition? Inventory is restored.",
+      "\"It is written off as an expense\" does not answer the specific requirement in the question.",
+      "\"It is recorded as freight-out\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "inventory_sales"
     ]
@@ -921,7 +1157,11 @@ export const ankiMcqs = [
       "Debit Cash; Credit Sales Revenue"
     ],
     "answer": 0,
-    "explanation": "Account analysis (inventory sales, debit credit): debit Inventory; Credit Cost of Sales. Work through which accounts change and whether they have normal debit or credit balances. Distractors often swap sides, use the wrong account class, or omit part of the entry.",
+    "explanation": [
+      "the journal entry for a return in good condition? Debit Inventory; Credit Cost of Sales.",
+      "\"Debit Inventory; Credit Accounts Payable\" does not answer the specific requirement in the question.",
+      "\"Debit Accounts Payable; Credit Inventory\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "inventory_sales",
       "debit_credit"
@@ -937,7 +1177,11 @@ export const ankiMcqs = [
       "Dr Loss on Faulty Inventory $140 Cr Inventory $140 only"
     ],
     "answer": 0,
-    "explanation": "The calculation rests on (inventory sales, debit credit): dr Sales Returns & Allowances $300 Cr Accounts Receivable $300; Dr Inventory $140 Cr Cost of Sales $140. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "Using the figures in the question, dr Sales Returns & Allowances $300 Cr Accounts Receivable $300; Dr Inventory $140 Cr Cost of Sales $140.",
+      "\"Dr Sales Revenue $300 Cr Cash $300 only\" does not answer the required calculation.",
+      "\"Dr Inventory $300 Cr Accounts Receivable $300\" does not answer the required calculation."
+    ],
     "tags": [
       "inventory_sales",
       "debit_credit"
@@ -953,7 +1197,11 @@ export const ankiMcqs = [
       "It is recorded as unearned revenue"
     ],
     "answer": 0,
-    "explanation": "Timing is the key idea (inventory sales): it is written off as an expense. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "What happens when returned inventory is faulty and cannot be resold? It is written off as an expense.",
+      "\"It is added back to cost of sales\" does not answer the specific requirement in the question.",
+      "\"It is recorded as unearned revenue\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "inventory_sales"
     ]
@@ -968,7 +1216,11 @@ export const ankiMcqs = [
       "Inventory"
     ],
     "answer": 0,
-    "explanation": "Timing is the key idea (inventory sales, debit credit): loss on Faulty Inventory. Work through which accounts change and whether they have normal debit or credit balances. Distractors often swap sides, use the wrong account class, or omit part of the entry.",
+    "explanation": [
+      "What account is debited when faulty inventory is written off? Loss on Faulty Inventory.",
+      "\"Cost of Sales\" does not answer the specific requirement in the question.",
+      "\"Sales Returns & Allowances\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "inventory_sales",
       "debit_credit"
@@ -984,7 +1236,11 @@ export const ankiMcqs = [
       "Debit Cost of Sales $140; Credit Accounts Payable $140"
     ],
     "answer": 0,
-    "explanation": "The calculation rests on (inventory sales, debit credit): debit Loss on Faulty Inventory $140; Credit Inventory $140. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "Using the figures in the question, debit Loss on Faulty Inventory $140; Credit Inventory $140.",
+      "\"Debit Inventory $140; Credit Cost of Sales $140\" does not answer the required calculation.",
+      "\"Debit Sales Returns $300; Credit Cash $300\" does not answer the required calculation."
+    ],
     "tags": [
       "inventory_sales",
       "debit_credit"
@@ -1000,7 +1256,11 @@ export const ankiMcqs = [
       "They have no effect on net sales"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (inventory sales, income statement): they reduce net sales revenue. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "How do sales discounts affect revenue? They reduce net sales revenue.",
+      "\"They increase gross sales\" does not answer the specific requirement in the question.",
+      "\"They have no effect on net sales\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "inventory_sales",
       "income_statement"
@@ -1016,7 +1276,11 @@ export const ankiMcqs = [
       "Debit Cash; Credit Sales Revenue"
     ],
     "answer": 0,
-    "explanation": "Account analysis (inventory sales, debit credit): debit Cash; Debit Sales Discounts; Credit Accounts Receivable. Work through which accounts change and whether they have normal debit or credit balances. Distractors often swap sides, use the wrong account class, or omit part of the entry.",
+    "explanation": [
+      "the journal entry for a customer paying within the discount period? Debit Cash; Debit Sales Discounts; Credit Accounts Receivable.",
+      "\"Debit Inventory; Credit Accounts Payable\" does not answer the specific requirement in the question.",
+      "\"Debit Accounts Payable; Credit Inventory\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "inventory_sales",
       "debit_credit"
@@ -1032,7 +1296,11 @@ export const ankiMcqs = [
       "$24"
     ],
     "answer": 0,
-    "explanation": "The calculation rests on (inventory sales): $76. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "Using the figures in the question, $76.",
+      "\"$3,724\" does not answer the required calculation.",
+      "\"$3,800\" does not answer the required calculation."
+    ],
     "tags": [
       "inventory_sales"
     ]
@@ -1047,7 +1315,11 @@ export const ankiMcqs = [
       "Total cash collected from customers"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (inventory sales, income statement): gross sales revenue minus sales returns & allowances and sales discounts. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "net sales revenue? Gross sales revenue minus sales returns & allowances and sales discounts.",
+      "\"Sales revenue minus cost of sales only\" does not answer the specific requirement in the question.",
+      "\"Gross sales plus sales discounts\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "inventory_sales",
       "income_statement"
@@ -1063,7 +1335,11 @@ export const ankiMcqs = [
       "Net Sales − Operating Expenses"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (inventory sales, income statement): sales Revenue − Sales Returns & Allowances − Sales Discounts. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "State the formula for net sales revenue. Sales Revenue − Sales Returns & Allowances − Sales Discounts.",
+      "\"Sales Revenue − Cost of Sales\" does not answer the specific requirement in the question.",
+      "\"Gross Sales + Sales Discounts\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "inventory_sales",
       "income_statement"
@@ -1079,7 +1355,11 @@ export const ankiMcqs = [
       "Cash received minus inventory purchases"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (inventory sales, income statement): net sales revenue minus cost of sales. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "gross profit (in the statement of profit or loss context)? Net sales revenue minus cost of sales.",
+      "\"Sales revenue minus operating expenses\" does not answer the specific requirement in the question.",
+      "\"Net sales minus sales discounts only\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "inventory_sales",
       "income_statement"
@@ -1095,7 +1375,11 @@ export const ankiMcqs = [
       "Income tax expense"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (income statement): other revenue. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "What comes after gross profit in the statement of profit or loss? Other revenue.",
+      "\"Cost of sales\" does not answer the specific requirement in the question.",
+      "\"Operating expenses\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "income_statement"
     ]
@@ -1110,7 +1394,11 @@ export const ankiMcqs = [
       "Administration expenses"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (income statement): selling expenses, administration expenses, and financial expenses. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "What are the three categories of operating expenses? Selling expenses, administration expenses, and financial expenses.",
+      "\"Selling expenses\" does not answer the specific requirement in the question.",
+      "\"Administration expenses\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "income_statement"
     ]
@@ -1125,7 +1413,11 @@ export const ankiMcqs = [
       "Cost of sales and purchase discounts"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (income statement): advertising, freight-out, sales salaries. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "Give examples of selling expenses. Advertising, freight-out, sales salaries.",
+      "\"Office salaries, rent, insurance\" does not answer the specific requirement in the question.",
+      "\"Interest expense and bank fees\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "income_statement"
     ]
@@ -1140,7 +1432,11 @@ export const ankiMcqs = [
       "Cost of sales and freight-in"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (income statement): office salaries, rent, insurance, depreciation. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "Give examples of administration expenses. Office salaries, rent, insurance, depreciation.",
+      "\"Advertising, freight-out, sales salaries\" does not answer the specific requirement in the question.",
+      "\"Interest expense and discounts allowed\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "income_statement"
     ]
@@ -1155,7 +1451,11 @@ export const ankiMcqs = [
       "Cost of sales and inventory write-downs"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (income statement): interest expense and discounts allowed. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "Give examples of financial expenses. Interest expense and discounts allowed.",
+      "\"Advertising and freight-out\" does not answer the specific requirement in the question.",
+      "\"Office rent and insurance\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "income_statement"
     ]
@@ -1170,7 +1470,11 @@ export const ankiMcqs = [
       "Cost of sales as a percentage of gross sales"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (inventory sales, income statement): gross profit as a percentage of net sales. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "What does the gross profit rate measure? Gross profit as a percentage of net sales.",
+      "\"Operating expenses as a percentage of net sales\" does not answer the specific requirement in the question.",
+      "\"Net profit as a percentage of total assets\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "inventory_sales",
       "income_statement"
@@ -1186,7 +1490,11 @@ export const ankiMcqs = [
       "Profit ÷ Total Assets × 100"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (inventory sales, income statement): gross Profit ÷ Net Sales × 100. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "State the formula for gross profit rate. Gross Profit ÷ Net Sales × 100.",
+      "\"Operating Expenses ÷ Net Sales × 100\" does not answer the specific requirement in the question.",
+      "\"Net Sales ÷ Cost of Sales × 100\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "inventory_sales",
       "income_statement"
@@ -1202,7 +1510,11 @@ export const ankiMcqs = [
       "More efficient administration"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (inventory sales, income statement): better profit margin on sales. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "What does a higher gross profit rate indicate? Better profit margin on sales.",
+      "\"Higher operating expenses\" does not answer the specific requirement in the question.",
+      "\"Lower net sales\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "inventory_sales",
       "income_statement"
@@ -1218,7 +1530,11 @@ export const ankiMcqs = [
       "Net GST payable to the ATO"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (income statement): the percentage of sales consumed by operating expenses. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "What does the operating expenses to sales ratio measure? The percentage of sales consumed by operating expenses.",
+      "\"Gross profit as a percentage of net sales\" does not answer the specific requirement in the question.",
+      "\"Cost of sales as a percentage of inventory\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "income_statement"
     ]
@@ -1233,7 +1549,11 @@ export const ankiMcqs = [
       "Profit ÷ Total Assets × 100"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (income statement): operating Expenses ÷ Net Sales × 100. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "State the formula for operating expenses to sales ratio. Operating Expenses ÷ Net Sales × 100.",
+      "\"Gross Profit ÷ Net Sales × 100\" does not answer the specific requirement in the question.",
+      "\"Net Sales ÷ Cost of Sales × 100\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "income_statement"
     ]
@@ -1248,7 +1568,11 @@ export const ankiMcqs = [
       "Increased competition"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (income statement): more efficient operations. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "What does a lower operating expenses ratio indicate? More efficient operations.",
+      "\"Higher gross profit margins only\" does not answer the specific requirement in the question.",
+      "\"Rising inventory costs\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "income_statement"
     ]
@@ -1263,7 +1587,11 @@ export const ankiMcqs = [
       "A payroll tax on employee wages"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (gst): a value-added tax levied on goods and services. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "GST? A value-added tax levied on goods and services.",
+      "\"A tax on business profits only\" does not answer the specific requirement in the question.",
+      "\"An import duty on all goods\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "gst"
     ]
@@ -1278,7 +1606,11 @@ export const ankiMcqs = [
       "15%"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (gst): 10%. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "the GST rate in Australia? 10%.",
+      "\"5%\" does not answer the specific requirement in the question.",
+      "\"12%\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "gst"
     ]
@@ -1293,7 +1625,11 @@ export const ankiMcqs = [
       "12%"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (gst): 15%. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "the GST rate in New Zealand? 15%.",
+      "\"5%\" does not answer the specific requirement in the question.",
+      "\"10%\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "gst"
     ]
@@ -1308,7 +1644,11 @@ export const ankiMcqs = [
       "Financial services only"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (gst): goods or services subject to GST. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "a taxable supply? Goods or services subject to GST.",
+      "\"Supplies exempt from all tax\" does not answer the specific requirement in the question.",
+      "\"Only imported goods\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "gst"
     ]
@@ -1323,7 +1663,11 @@ export const ankiMcqs = [
       "It records GST as equity"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (gst): it collects GST on behalf of the government. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "What role does a business play in the GST system? It collects GST on behalf of the government.",
+      "\"It keeps all GST collected as revenue\" does not answer the specific requirement in the question.",
+      "\"It pays GST only on exports\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "gst"
     ]
@@ -1338,7 +1682,11 @@ export const ankiMcqs = [
       "An expense"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (gst): a liability. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "GST collected from customers is recorded as what? A liability.",
+      "\"An asset\" does not answer the specific requirement in the question.",
+      "\"Revenue\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "gst"
     ]
@@ -1353,7 +1701,11 @@ export const ankiMcqs = [
       "An expense"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (gst): an asset. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "GST paid to suppliers is recorded as what? An asset.",
+      "\"A liability\" does not answer the specific requirement in the question.",
+      "\"Revenue\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "gst"
     ]
@@ -1368,7 +1720,11 @@ export const ankiMcqs = [
       "GST on exports only"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (gst): net GST (GST Collected − GST Paid). The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "What does the ATO receive from businesses? Net GST (GST Collected − GST Paid).",
+      "\"All GST collected with no offset\" does not answer the specific requirement in the question.",
+      "\"Only GST paid on purchases\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "gst"
     ]
@@ -1383,7 +1739,11 @@ export const ankiMcqs = [
       "Financial services and residential rents"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (gst): supplies with no GST charged, but input tax credits can still be claimed. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "What are GST-free supplies? Supplies with no GST charged, but input tax credits can still be claimed.",
+      "\"Supplies with no GST and no input tax credits\" does not answer the specific requirement in the question.",
+      "\"All exported goods only\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "gst"
     ]
@@ -1398,7 +1758,11 @@ export const ankiMcqs = [
       "All imported goods"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (gst): basic food, education, health services, exports. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "Give examples of GST-free supplies. Basic food, education, health services, exports.",
+      "\"Financial services and residential rents\" does not answer the specific requirement in the question.",
+      "\"Luxury cars and alcohol only\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "gst"
     ]
@@ -1413,7 +1777,11 @@ export const ankiMcqs = [
       "Exports with full GST refund"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (gst): supplies with no GST charged and no input tax credits claimable. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "What are input taxed supplies? Supplies with no GST charged and no input tax credits claimable.",
+      "\"Supplies with GST charged at 10%\" does not answer the specific requirement in the question.",
+      "\"GST-free supplies with credits claimable\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "gst"
     ]
@@ -1428,7 +1796,11 @@ export const ankiMcqs = [
       "All business-to-business sales"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (gst): financial services and residential rents. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "Give examples of input taxed supplies. Financial services and residential rents.",
+      "\"Basic food, education, and health services\" does not answer the specific requirement in the question.",
+      "\"Supermarket groceries and clothing\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "gst"
     ]
@@ -1443,7 +1815,11 @@ export const ankiMcqs = [
       "$4"
     ],
     "answer": 0,
-    "explanation": "The calculation rests on (gst, inventory purchases): $40. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "Using the figures in the question, $40.",
+      "\"$44\" does not answer the required calculation.",
+      "\"$400\" does not answer the required calculation."
+    ],
     "tags": [
       "gst",
       "inventory_purchases"
@@ -1459,7 +1835,11 @@ export const ankiMcqs = [
       "$36"
     ],
     "answer": 0,
-    "explanation": "The calculation rests on (gst, inventory purchases): $400. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "Using the figures in the question, $400.",
+      "\"$440\" does not answer the required calculation.",
+      "\"$484\" does not answer the required calculation."
+    ],
     "tags": [
       "gst",
       "inventory_purchases"
@@ -1475,7 +1855,11 @@ export const ankiMcqs = [
       "Debit Cash; Credit Sales Revenue"
     ],
     "answer": 0,
-    "explanation": "Account analysis (gst, inventory purchases, debit credit): debit Inventory; Debit GST Paid; Credit Accounts Payable. Work through which accounts change and whether they have normal debit or credit balances. Distractors often swap sides, use the wrong account class, or omit part of the entry.",
+    "explanation": [
+      "the GST-inclusive purchase journal entry? Debit Inventory; Debit GST Paid; Credit Accounts Payable.",
+      "\"Debit Inventory; Credit Accounts Payable\" does not answer the specific requirement in the question.",
+      "\"Debit Accounts Payable; Credit Inventory\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "gst",
       "inventory_purchases",
@@ -1492,7 +1876,11 @@ export const ankiMcqs = [
       "Debit Accounts Payable; Credit Cost of Sales"
     ],
     "answer": 0,
-    "explanation": "Account analysis (gst, inventory purchases, debit credit): debit Accounts Payable; Credit Inventory; Credit GST Paid. Work through which accounts change and whether they have normal debit or credit balances. Distractors often swap sides, use the wrong account class, or omit part of the entry.",
+    "explanation": [
+      "the journal entry for purchase returns with GST? Debit Accounts Payable; Credit Inventory; Credit GST Paid.",
+      "\"Debit Inventory; Credit Accounts Payable\" does not answer the specific requirement in the question.",
+      "\"Debit GST Collected; Credit Cash\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "gst",
       "inventory_purchases",
@@ -1509,7 +1897,11 @@ export const ankiMcqs = [
       "$25"
     ],
     "answer": 0,
-    "explanation": "The calculation rests on (gst, inventory sales): $250. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "Using the figures in the question, $250.",
+      "\"$275\" does not answer the required calculation.",
+      "\"$2,500\" does not answer the required calculation."
+    ],
     "tags": [
       "gst",
       "inventory_sales"
@@ -1525,7 +1917,11 @@ export const ankiMcqs = [
       "$275"
     ],
     "answer": 0,
-    "explanation": "The calculation rests on (gst, inventory sales): $2,500. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "Using the figures in the question, $2,500.",
+      "\"$2,750\" does not answer the required calculation.",
+      "\"$3,025\" does not answer the required calculation."
+    ],
     "tags": [
       "gst",
       "inventory_sales"
@@ -1541,7 +1937,11 @@ export const ankiMcqs = [
       "Debit Cash; Credit Sales Revenue"
     ],
     "answer": 0,
-    "explanation": "Account analysis (gst, inventory sales, debit credit): debit Accounts Receivable; Credit Sales Revenue; Credit GST Collected. Work through which accounts change and whether they have normal debit or credit balances. Distractors often swap sides, use the wrong account class, or omit part of the entry.",
+    "explanation": [
+      "the GST-inclusive sales journal entry? Debit Accounts Receivable; Credit Sales Revenue; Credit GST Collected.",
+      "\"Debit Inventory; Credit Accounts Payable\" does not answer the specific requirement in the question.",
+      "\"Debit Accounts Payable; Credit Inventory\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "gst",
       "inventory_sales",
@@ -1558,7 +1958,11 @@ export const ankiMcqs = [
       "GST is recorded as revenue"
     ],
     "answer": 0,
-    "explanation": "The reasoning to apply (gst, inventory sales): gST is recoverable and not part of inventory cost. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "Why is cost of sales recorded excluding GST? GST is recoverable and not part of inventory cost.",
+      "\"GST is always an expense\" does not answer the specific requirement in the question.",
+      "\"GST is recorded as revenue\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "gst",
       "inventory_sales"
@@ -1574,7 +1978,11 @@ export const ankiMcqs = [
       "$5"
     ],
     "answer": 0,
-    "explanation": "The calculation rests on (gst, inventory sales): $50. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "Using the figures in the question, $50.",
+      "\"$55\" does not answer the required calculation.",
+      "\"$500\" does not answer the required calculation."
+    ],
     "tags": [
       "gst",
       "inventory_sales"
@@ -1590,7 +1998,11 @@ export const ankiMcqs = [
       "Debit GST Paid; Credit Cash"
     ],
     "answer": 0,
-    "explanation": "Account analysis (gst, inventory sales, debit credit): debit Sales Returns & Allowances; Debit GST Collected; Credit Accounts Receivable. Work through which accounts change and whether they have normal debit or credit balances. Distractors often swap sides, use the wrong account class, or omit part of the entry.",
+    "explanation": [
+      "the journal entry for GST-inclusive sales returns? Debit Sales Returns & Allowances; Debit GST Collected; Credit Accounts Receivable.",
+      "\"Debit Accounts Receivable; Credit Sales Revenue\" does not answer the specific requirement in the question.",
+      "\"Debit Inventory; Credit Cost of Sales\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "gst",
       "inventory_sales",
@@ -1607,7 +2019,11 @@ export const ankiMcqs = [
       "Because sales discounts reduce GST Paid"
     ],
     "answer": 0,
-    "explanation": "The reasoning to apply (gst, inventory sales): because the business no longer owes GST on the returned sale. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "Why does GST Collected decrease during sales returns? Because the business no longer owes GST on the returned sale.",
+      "\"Because GST Paid increases automatically\" does not answer the specific requirement in the question.",
+      "\"Because inventory cost includes GST\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "gst",
       "inventory_sales"
@@ -1623,7 +2039,11 @@ export const ankiMcqs = [
       "GST Collected is always unchanged"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (gst): gST is adjusted because the discount applies to the ex-GST amount. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "How are settlement discounts treated for GST purposes? GST is adjusted because the discount applies to the ex-GST amount.",
+      "\"GST is never adjusted for discounts\" does not answer the specific requirement in the question.",
+      "\"GST is recorded as an expense\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "gst"
     ]
@@ -1638,7 +2058,11 @@ export const ankiMcqs = [
       "GST Paid is written off as an expense"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (gst): the business pays the net GST to the ATO. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "If GST Collected exceeds GST Paid, what happens? The business pays the net GST to the ATO.",
+      "\"The business receives a refund from the ATO\" mixes in tax reporting rules rather than the financial reporting treatment asked for.",
+      "\"No GST is payable or refundable\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "gst"
     ]
@@ -1653,7 +2077,11 @@ export const ankiMcqs = [
       "No action is required"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (gst): the business receives a refund from the ATO. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "If GST Paid exceeds GST Collected, what happens? The business receives a refund from the ATO.",
+      "\"The business pays additional GST to the ATO\" mixes in tax reporting rules rather than the financial reporting treatment asked for.",
+      "\"GST Paid is transferred to revenue\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "gst"
     ]
@@ -1668,7 +2096,11 @@ export const ankiMcqs = [
       "It removes the need for GST accounting"
     ],
     "answer": 0,
-    "explanation": "The reasoning to apply (inventory): inventory balances are continuously updated, allowing businesses to monitor stock levels in real time. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "Why does the perpetual inventory system improve inventory control? Inventory balances are continuously updated, allowing businesses to monitor stock levels in real time.",
+      "\"It records cost of sales only at year-end\" does not answer the specific requirement in the question.",
+      "\"It eliminates the need for any physical counts\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "inventory"
     ]
@@ -1683,7 +2115,11 @@ export const ankiMcqs = [
       "One entry records freight-in and one records freight-out"
     ],
     "answer": 0,
-    "explanation": "The reasoning to apply (inventory sales, debit credit): one records revenue and the other records the reduction in inventory and recognition of cost of sales. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "Why are two entries required under the perpetual system for each sale? One records revenue and the other records the reduction in inventory and recognition of cost of sales.",
+      "\"One entry is for GST and one for revenue\" does not answer the specific requirement in the question.",
+      "\"One entry records freight-in and one records freight-out\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "inventory_sales",
       "debit_credit"
@@ -1699,7 +2135,11 @@ export const ankiMcqs = [
       "Because it is recorded as a liability"
     ],
     "answer": 0,
-    "explanation": "The reasoning to apply (inventory purchases): because it is part of the cost of getting inventory ready for sale. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "Why is freight-in included in inventory cost? Because it is part of the cost of getting inventory ready for sale.",
+      "\"Because it is a selling expense after the sale\" does not answer the specific requirement in the question.",
+      "\"Because it reduces sales revenue\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "inventory_purchases"
     ]
@@ -1714,7 +2154,11 @@ export const ankiMcqs = [
       "Because it reduces cost of sales"
     ],
     "answer": 0,
-    "explanation": "The reasoning to apply (inventory sales): because it is a selling expense incurred after the sale. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "Why is freight-out not included in inventory cost? Because it is a selling expense incurred after the sale.",
+      "\"Because it is part of the cost of getting inventory ready for sale\" does not answer the specific requirement in the question.",
+      "\"Because it is added to the Inventory account\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "inventory_sales"
     ]
@@ -1729,7 +2173,11 @@ export const ankiMcqs = [
       "Because they affect GST Collected"
     ],
     "answer": 0,
-    "explanation": "The reasoning to apply (inventory purchases): because the invoice is issued at the discounted amount only. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "Why are trade discounts not recorded? Because the invoice is issued at the discounted amount only.",
+      "\"Because they reduce cash paid at settlement\" does not answer the specific requirement in the question.",
+      "\"Because they are operating expenses\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "inventory_purchases"
     ]
@@ -1744,7 +2192,11 @@ export const ankiMcqs = [
       "Settlement discounts are never recorded in accounts"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (inventory purchases, inventory sales): settlement discounts reward prompt payment; trade discounts reduce list price before invoicing. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "the key difference between settlement discounts and trade discounts? Settlement discounts reward prompt payment; trade discounts reduce list price before invoicing.",
+      "\"Both reduce list price before invoicing\" does not answer the specific requirement in the question.",
+      "\"Trade discounts reward prompt payment only\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "inventory_purchases",
       "inventory_sales"
@@ -1760,7 +2212,11 @@ export const ankiMcqs = [
       "Operating expenses will be understated"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (inventory sales, error correction): revenue and accounts receivable will be overstated. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "What happens if sales returns are not recorded correctly? Revenue and accounts receivable will be overstated.",
+      "\"Cost of sales and inventory will be understated only\" does not answer the specific requirement in the question.",
+      "\"GST Paid will be overstated\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "inventory_sales",
       "error_correction"
@@ -1776,7 +2232,11 @@ export const ankiMcqs = [
       "It replaces the need for an income statement"
     ],
     "answer": 0,
-    "explanation": "The reasoning to apply (inventory sales, income statement): it measures how much profit remains after covering inventory costs. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "Why is gross profit important? It measures how much profit remains after covering inventory costs.",
+      "\"It measures total cash collected from customers\" does not answer the specific requirement in the question.",
+      "\"It equals net profit after tax\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "inventory_sales",
       "income_statement"
@@ -1792,7 +2252,11 @@ export const ankiMcqs = [
       "Improved inventory control under perpetual systems"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (inventory sales, income statement): rising inventory costs, falling selling prices, or increased competition. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "What does a declining gross profit rate potentially indicate? Rising inventory costs, falling selling prices, or increased competition.",
+      "\"More efficient operations and lower expenses\" does not answer the specific requirement in the question.",
+      "\"Higher net GST refunds from the ATO\" mixes in tax reporting rules rather than the financial reporting treatment asked for."
+    ],
     "tags": [
       "inventory_sales",
       "income_statement"
@@ -1808,7 +2272,11 @@ export const ankiMcqs = [
       "Because it reduces inventory cost"
     ],
     "answer": 0,
-    "explanation": "The reasoning to apply (gst): because the business owes that amount to the government. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "Why is GST Collected a liability? Because the business owes that amount to the government.",
+      "\"Because it can be claimed back from suppliers\" does not answer the specific requirement in the question.",
+      "\"Because it is part of sales revenue\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "gst"
     ]
@@ -1823,7 +2291,11 @@ export const ankiMcqs = [
       "Because it is part of cost of sales"
     ],
     "answer": 0,
-    "explanation": "The reasoning to apply (gst): because it can be claimed back from the tax authority. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "Why is GST Paid an asset? Because it can be claimed back from the tax authority.",
+      "\"Because the business owes it to the government\" does not answer the specific requirement in the question.",
+      "\"Because it is recorded as revenue\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "gst"
     ]
@@ -1838,7 +2310,11 @@ export const ankiMcqs = [
       "Reporting non-current assets and depreciation methods"
     ],
     "answer": 0,
-    "explanation": "The concept being tested (inventory): recording inventory transactions, understanding merchandising operations, preparing merchandising financial statements, and accounting for GST. The other options are related ideas or common mistakes, but they do not meet the specific requirement in the question stem.",
+    "explanation": [
+      "the overall focus of Chapter 4? Recording inventory transactions, understanding merchandising operations, preparing merchandising financial statements, and accounting for GST.",
+      "\"Adjusting entries, closing entries, and the accounting cycle\" does not answer the specific requirement in the question.",
+      "\"Cost flow assumptions such as FIFO and LIFO\" does not answer the specific requirement in the question."
+    ],
     "tags": [
       "inventory"
     ]

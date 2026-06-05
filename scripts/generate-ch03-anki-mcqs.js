@@ -308,7 +308,13 @@ function toMcq(card, answerPosition) {
     q: card.q,
     options,
     answer: answerPosition,
-    explanation: buildTeachingExplanation({ q: card.q, a: card.a, tags: card.tags }),
+    explanation: buildTeachingExplanation({
+      q: card.q,
+      a: options[answerPosition],
+      tags: card.tags,
+      options,
+      answer: answerPosition,
+    }),
     tags: card.tags ?? ["adjusting_entries"],
   };
 }
